@@ -22,7 +22,8 @@ docs/
 ├── how-to-find-real-insights.md  如何收集真实从业经验（方法论）
 ├── ai-integration-risks.md       直播 AI 集成能力与风险评估（TTS/LLM/数字人）
 ├── video-production-pipeline.md  短视频制作链路（趋势监控→批量制作→合规复刻→自动分发）
-└── ai-video-toolstack.md         AI 辅助视频制作工具栈（脚本/配音/音乐/视觉素材/剪辑/质量审查）
+├── ai-video-toolstack.md         AI 辅助视频制作工具栈（脚本/配音/音乐/视觉素材/剪辑/质量审查）
+└── solo-creator-playbook.md      个人自由职业创作者完整方案（直播/短视频/变现/工具/AI工作流）
 ```
 
 ## 规范
