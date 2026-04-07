@@ -1,1 +1,39 @@
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+
+# Node
+node_modules/
+pnpm-debug.log*
+.pnpm-store/
+.next/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Output / data (project-specific)
+output/*
+!output/.gitkeep
+data/*
+!data/.gitkeep
+
+# Editor
+.vscode/settings.json
+.idea/

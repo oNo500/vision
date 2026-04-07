@@ -1,0 +1,16 @@
+{
+  "name": "vision",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "py:install": "uv sync",
+    "py:test": "uv run pytest",
+    "py:lint": "uv run ruff check vision/ scripts/",
+    "py:format": "uv run ruff format vision/ scripts/"
+  },
+  "devDependencies": {},
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  }
+}
