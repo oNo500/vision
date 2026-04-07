@@ -27,11 +27,12 @@ pnpm install
 
 ```
 scripts/
-├── video/    # 视频处理脚本
-├── audio/    # 音频处理脚本
-└── live/     # 直播相关脚本
-data/         # 输入文件（不入库）
-output/       # 输出结果（不入库）
+├── intelligence/   # 情报与学习系统脚本
+├── video/          # 视频处理脚本
+├── audio/          # 音频处理脚本
+└── live/           # 直播相关脚本
+data/               # 输入文件（不入库）
+output/             # 输出结果（不入库）
 ```
 
 ---
@@ -96,15 +97,12 @@ pnpm add -D typescript # 开发依赖
 # 直接运行，观察输出
 uv run scripts/video/trim.py
 
-# 进入交互式环境调试
-uv run python -c "
-import scripts.video.trim as t
-# 手动调用函数
-"
-
 # 加断点（推荐）
 # 在代码中插入：
 import pdb; pdb.set_trace()
+
+# 或使用 breakpoint()（Python 3.7+）
+breakpoint()
 ```
 
 ### 查看依赖环境
