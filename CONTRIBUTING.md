@@ -4,11 +4,13 @@
 
 ### 依赖工具
 
-| 工具 | 用途 | 安装 |
+请按照各工具官网说明安装：
+
+| 工具 | 用途 | 官网 |
 |------|------|------|
-| [uv](https://docs.astral.sh/uv/) | Python 版本与依赖管理 | `curl -LsSf https://astral.sh/uv/install.sh \| sh` |
-| [fnm](https://github.com/Schniz/fnm) | Node 版本管理 | `brew install fnm` |
-| [pnpm](https://pnpm.io/) | Node 包管理 | `npm install -g pnpm` |
+| uv | Python 版本与依赖管理 | https://docs.astral.sh/uv/getting-started/installation/ |
+| fnm | Node 版本管理 | https://github.com/Schniz/fnm#installation |
+| pnpm | Node 包管理 | https://pnpm.io/installation |
 
 ### 初始化
 
