@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "py:install": "uv sync",
-    "py:test": "uv run pytest",
-    "py:lint": "uv run ruff check vision/ scripts/",
-    "py:format": "uv run ruff format vision/ scripts/"
+    "py:lint": "uv run ruff check scripts/",
+    "py:format": "uv run ruff format scripts/"
   },
   "devDependencies": {},
   "packageManager": "pnpm@10.33.0",

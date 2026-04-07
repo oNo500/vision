@@ -1,32 +1,22 @@
-.PHONY: install install-py
-.PHONY: test lint format
-.PHONY: help
+.PHONY: install lint format help
 
 # ── Install ────────────────────────────────────────────────────────────────────
 
-install: install-py
-
-install-py:
+install:
 	uv sync
-
-# ── Test ───────────────────────────────────────────────────────────────────────
-
-test:
-	uv run pytest
 
 # ── Lint & Format ──────────────────────────────────────────────────────────────
 
 lint:
-	uv run ruff check vision/ scripts/
+	uv run ruff check scripts/
 
 format:
-	uv run ruff format vision/ scripts/
+	uv run ruff format scripts/
 
 # ── Help ───────────────────────────────────────────────────────────────────────
 
 help:
 	@echo "Available commands:"
-	@echo "  make install    Install all dependencies"
-	@echo "  make test       Run tests"
+	@echo "  make install    Install dependencies"
 	@echo "  make lint       Run linter"
 	@echo "  make format     Format code"
