@@ -4,44 +4,59 @@
 
 ## 架构
 
-```
-MockEventCollector ──▶ event_queue ──▶ Orchestrator ──▶ tts_queue ──▶ TTSPlayer
-                                           │                              │
-                                     ScriptRunner                  Gemini TTS (Sulafat)
-                                     (get_state)                    或 macOS say
-                                           │
-                                       LLMClient
-                                    (Gemini 2.5 Flash)
+```mermaid
+graph LR
+    DY[抖音直播间] -->|WSS| MP[mitmproxy addon\ndouyin_proxy_addon.py]
+    MP -->|ws://127.0.0.1:2536| DC[DouyinEventCollector]
+    MOCK[MockEventCollector\n模拟事件] --> EQ
+
+    DC --> EQ[event_queue]
+    EQ --> OC[Orchestrator\nP0/P1 规则层]
+    OC -->|立即插队| TQ[tts_queue]
+
+    SR[ScriptRunner\n脚本段落推进] --> DA
+    OC -->|缓冲 P2/P3| DA[DirectorAgent\n主动控场 LLM]
+    KB[KnowledgeBase\n产品知识库] --> DA
+    DA --> TQ
+    TQ --> TTS[TTSPlayer\nGemini TTS / macOS say]
 ```
 
-四个并发组件各跑一个后台线程，主循环每 0.5s 轮询一次：
+多个并发组件各跑一个后台线程，主循环每 0.5s 轮询一次。
 
 | 模块 | 文件 | 职责 |
 |------|------|------|
 | `ScriptRunner` | `script_runner.py` | 按 YAML 脚本定时推进段落 |
-| `MockEventCollector` | `event_collector.py` | 回放模拟弹幕/礼物时间线 |
-| `Orchestrator` | `orchestrator.py` | 两层决策，输出 TTS 任务 |
+| `DouyinEventCollector` | `douyin_collector.py` | 连接本地 WS hub，接收真实弹幕 |
+| `MockEventCollector` | `event_collector.py` | 回放模拟弹幕/礼物时间线（开发用） |
+| `Orchestrator` | `orchestrator.py` | P0/P1 规则中断层，P2/P3 缓冲给 DirectorAgent |
+| `DirectorAgent` | `director_agent.py` | 主动控场：读脚本/知识库/互动，LLM 决定下一句台词 |
+| `KnowledgeBase` | `knowledge_base.py` | 加载产品 YAML，提供 LLM 上下文字符串 |
 | `TTSPlayer` | `tts_player.py` | 队列消费，调用 Gemini TTS 播音 |
 
-## 决策引擎（Orchestrator）
+## 决策架构
 
-**第一层：规则**（毫秒级响应）
+**规则层（Orchestrator）** — 毫秒级响应，P0/P1 立即插队 TTS
 
 | 优先级 | 触发条件 | 行为 |
 |--------|----------|------|
 | P0 | 礼物价值 ≥ 50 元 | 立即 TTS 致谢 |
 | P1 | 粉丝进场 | 立即 TTS 欢迎 |
-| P2 | 含问号的弹幕 | 缓冲 → LLM 判断 |
-| P3 | 其他弹幕/低价礼物 | 缓冲 → LLM 判断 |
+| P2 | 含问号的弹幕 | 缓冲 → DirectorAgent 处理 |
+| P3 | 其他弹幕/低价礼物 | 缓冲 → DirectorAgent 处理 |
 
-**第二层：LLM**（批量触发）
+**控场层（DirectorAgent）** — 主动驱动，持续输出
 
-满足以下任一条件时调用 Gemini 2.5 Flash：
+DirectorAgent 在两种情况下触发 LLM 调用：
+- TTS 队列空 + 没在说话 → 立即触发（防冷场）
+- 超过 15s 没有新输出 → 强制触发
 
-- 缓冲区达到 `llm_batch_size`（默认 5 条）
-- 距上次调用超过 `llm_interval`（默认 10s）且缓冲区非空
+每次触发，LLM 拿到完整上下文：
+- 当前脚本段落原文 + 关键词 + 剩余时间
+- 产品知识库（卖点、FAQ、禁用词）
+- 最近 10 条观众互动
+- 上一句说了什么
 
-LLM 返回三种决策：`respond` / `defer` / `skip`，`respond` 时同时生成 `content`（回复文案）和 `speech_prompt`（朗读风格）。
+LLM 输出下一句台词（改写脚本，自然口语化），同时给出 `speech_prompt`（朗读风格），两者一起送进 Gemini TTS。
 
 ## TTS 语音风格
 
@@ -73,10 +88,43 @@ GOOGLE_CLOUD_PROJECT=your-project-id
 
 ```bash
 uv run scripts/live/agent.py --mock
+uv run scripts/live/agent.py --mock --speed 5   # 加速 5 倍回放
 ```
 
-- LLM 用简单规则替代，检测问号触发回复
-- TTS 只打印日志，不调用 API
+LLM 用简单规则替代（检测问号触发回复），TTS 只打印日志，不调用 API。
+
+### 真实抖音弹幕模式
+
+> [!IMPORTANT]
+> 仅支持 **Windows**。依赖 [DouyinBarrageGrab](https://github.com/ape-byte/DouyinBarrageGrab) 作为弹幕抓取中间层，该工具通过系统代理拦截抖音 WSS 流量，原生处理了证书信任和协议解析，无需手动逆向。
+
+**第一步：安装并启动 DouyinBarrageGrab**
+
+从 [Releases](https://github.com/ape-byte/DouyinBarrageGrab/releases) 下载最新版，**以管理员身份**运行 `WssBarrageService.exe`。
+
+首次启动会自动安装系统代理证书，控制台标题会显示 WS 连接地址（默认 `ws://127.0.0.1:8888`）。
+
+**第二步：打开直播间**
+
+Chrome 进入抖音直播间（建议已登录，否则 `is_follower` 始终为 false）。观察 DouyinBarrageGrab 控制台是否有弹幕滚动，确认抓取正常。
+
+> [!IMPORTANT]
+> DouyinBarrageGrab 必须在浏览器进入直播间**之前**启动，已建立的 WS 连接无法补抓。
+
+**第三步：启动 Agent**
+
+```bash
+# 真实弹幕 + mock LLM（调试推荐）
+uv run scripts/live/agent.py --douyin --mock
+
+# 真实弹幕 + 真实 LLM + 真实 TTS（生产）
+uv run scripts/live/agent.py --douyin --script scripts/live/example_script.yaml
+```
+
+`DouyinEventCollector` 默认连接 `ws://127.0.0.1:8888`，与 DouyinBarrageGrab 默认端口一致。如需修改端口，在 `douyin_collector.py` 中调整 `_HUB_PORT`。
+
+> [!NOTE]
+> `--douyin` 控制事件来源，`--mock` 控制 LLM/TTS，两者正交可自由组合。
 
 ### 生产模式（Vertex AI + Gemini TTS）
 
@@ -85,14 +133,6 @@ uv run scripts/live/agent.py --script scripts/live/example_script.yaml
 ```
 
 需要 `GOOGLE_CLOUD_PROJECT` 已设置且项目开启了 Vertex AI API。
-
-### 加速回放（开发调试）
-
-```bash
-uv run scripts/live/agent.py --mock --speed 5
-```
-
-`--speed 5` 将模拟事件时间线加速 5 倍播放。
 
 ## 直播脚本格式
 
@@ -136,13 +176,19 @@ uv run pytest tests/live/ -v
 
 ```
 scripts/live/
-├── agent.py            入口，组装并启动所有组件
-├── orchestrator.py     两层决策引擎
-├── script_runner.py    脚本段落定时推进
-├── event_collector.py  模拟事件回放（待替换为真实 WebSocket）
-├── tts_player.py       TTS 队列消费，调用 Gemini TTS
-├── llm_client.py       Vertex AI Gemini 封装，输出 Decision
-├── schema.py           共享数据结构（Event / ScriptSegment / Decision）
-├── try_voices.py       声音试听脚本
-└── example_script.yaml 示例直播脚本
+├── agent.py                入口，组装并启动所有组件
+├── director_agent.py       主动控场 LLM 循环，决定下一句台词
+├── orchestrator.py         P0/P1 规则中断层，P2/P3 缓冲
+├── knowledge_base.py       加载产品 YAML，输出 LLM 上下文字符串
+├── script_runner.py        脚本段落定时推进
+├── douyin_collector.py     真实弹幕接收（连接本地 WS hub）
+├── douyin_proxy_addon.py   mitmproxy addon，拦截抖音 WSS 并转发
+├── event_collector.py      模拟事件回放（开发/测试用）
+├── tts_player.py           TTS 队列消费，调用 Gemini TTS
+├── llm_client.py           旧版 LLM 封装（保留备用）
+├── schema.py               共享数据结构（Event / ScriptSegment / Decision / DirectorOutput）
+├── try_voices.py           声音试听脚本
+├── data/
+│   └── product.yaml        产品介绍、FAQ、禁用词、必说词
+└── example_script.yaml     示例直播脚本
 ```
