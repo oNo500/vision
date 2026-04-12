@@ -2,15 +2,15 @@
 """
 agent.py — Live orchestration agent entry point.
 
-Usage (dev mode with mock events and mock LLM):
-    uv run scripts/live/agent.py --mock
+Usage (dev mode, mock LLM + mock TTS):
+    uv run src/live/agent.py --mock
 
-Usage (real Douyin events + mock LLM):
-    uv run scripts/live/agent.py --douyin --mock
+Usage (real Douyin events via CDP + mock LLM):
+    uv run src/live/agent.py --mock --cdp-url http://localhost:9222
 
 Usage (production, requires GCP credentials):
     export GOOGLE_CLOUD_PROJECT=your-project-id
-    uv run scripts/live/agent.py --script scripts/live/example_script.yaml
+    uv run src/live/agent.py --script src/live/example_script.yaml
 """
 from __future__ import annotations
 
@@ -48,8 +48,8 @@ _MOCK_EVENTS = [
     {"type": "danmaku", "user": "用户J", "text": "继续！",         "t": 104},
 ]
 
-_DEFAULT_PRODUCT_YAML = "scripts/live/data/product.yaml"
-_DEFAULT_SCRIPT_YAML = "scripts/live/example_script.yaml"
+_DEFAULT_PRODUCT_YAML = "src/live/data/product.yaml"
+_DEFAULT_SCRIPT_YAML = "src/live/example_script.yaml"
 
 
 def _make_vertex_llm_generate_fn(project: str, location: str = "us-central1", model: str = "gemini-2.5-flash"):
@@ -92,7 +92,10 @@ def main() -> None:
     parser.add_argument("--script", default=_DEFAULT_SCRIPT_YAML, help="Path to YAML script")
     parser.add_argument("--product", default=_DEFAULT_PRODUCT_YAML, help="Path to product knowledge YAML")
     parser.add_argument("--mock", action="store_true", help="Use mock LLM and mock TTS (dev mode)")
-    parser.add_argument("--douyin", action="store_true", help="Use real Douyin events via DouyinBarrageGrab WS")
+    parser.add_argument("--cdp-url", default=None, metavar="URL",
+                        help="Chrome DevTools Protocol URL, e.g. http://localhost:9222. "
+                             "When set, uses CdpEventCollector for real Douyin events. "
+                             "Omit to use mock event replay.")
     parser.add_argument("--speed", type=float, default=1.0, help="Mock event replay speed multiplier")
     parser.add_argument("--project", default=os.environ.get("GOOGLE_CLOUD_PROJECT"), help="GCP project ID")
     parser.add_argument("--audio-device", default=None, metavar="DEVICE",
@@ -100,8 +103,8 @@ def main() -> None:
                              "Omit to use the system default speaker (local dev)")
     args = parser.parse_args()
 
+    from src.live.cdp_collector import CdpEventCollector
     from src.live.director_agent import DirectorAgent
-    from src.live.douyin_collector import DouyinEventCollector
     from src.live.event_collector import MockEventCollector
     from src.live.knowledge_base import KnowledgeBase
     from src.live.orchestrator import Orchestrator
@@ -136,9 +139,9 @@ def main() -> None:
 
     # Wire components
     script_runner = ScriptRunner.from_yaml(args.script)
-    if args.douyin:
-        event_collector = DouyinEventCollector(out_queue=event_queue)
-        logger.info("Using DouyinEventCollector (hub ws://127.0.0.1:2536)")
+    if args.cdp_url:
+        event_collector = CdpEventCollector(out_queue=event_queue, cdp_url=args.cdp_url)
+        logger.info("Using CdpEventCollector (cdp=%s)", args.cdp_url)
     else:
         event_collector = MockEventCollector(_MOCK_EVENTS, event_queue, speed=args.speed)
     tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, audio_device=args.audio_device)
