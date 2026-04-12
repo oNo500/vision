@@ -28,13 +28,13 @@ export default function LivePage() {
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* left col */}
         <div className="flex w-80 shrink-0 flex-col gap-3 overflow-hidden border-r p-3">
-          <ScriptCard scriptState={scriptState} connected={connected} />
+          <ScriptCard scriptState={scriptState} running={connected} />
         </div>
 
         {/* center col */}
         <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
           <div className="shrink-0">
-            <AiStatusCard latest={aiOutputs[0] ?? null} queueDepth={session.state.queue_depth ?? 0} />
+            <AiStatusCard latest={aiOutputs[aiOutputs.length - 1] ?? null} queueDepth={session.state.queue_depth ?? 0} />
           </div>
           <div className="min-h-0 flex-1">
             <AiOutputLog outputs={aiOutputs} />
