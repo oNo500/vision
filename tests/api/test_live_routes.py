@@ -93,3 +93,19 @@ async def test_history(client):
     data = resp.json()
     assert len(data) == 1
     assert data[0]["type"] == "tts_output"
+
+
+@pytest.mark.asyncio
+async def test_script_next_returns_400_when_not_running(client):
+    client.app.state.session_manager.get_script_runner = MagicMock(return_value=None)
+    resp = await client.post("/live/script/next")
+    assert resp.status_code == 400
+    assert resp.json()["detail"] == "Session not running"
+
+
+@pytest.mark.asyncio
+async def test_script_prev_returns_400_when_not_running(client):
+    client.app.state.session_manager.get_script_runner = MagicMock(return_value=None)
+    resp = await client.post("/live/script/prev")
+    assert resp.status_code == 400
+    assert resp.json()["detail"] == "Session not running"
