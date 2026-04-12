@@ -15,10 +15,12 @@ export type LiveEvent = {
 }
 
 const MAX_EVENTS = 200
+const SKIP_TYPES = new Set(['ping', 'agent', 'script', 'tts_output'])
 
 export function useLiveStream() {
   const [events, setEvents] = useState<LiveEvent[]>([])
   const [connected, setConnected] = useState(false)
+  const [onlineCount, setOnlineCount] = useState<number | null>(null)
   const esRef = useRef<EventSource | null>(null)
 
   useEffect(() => {
@@ -29,11 +31,14 @@ export function useLiveStream() {
 
     es.onmessage = (e) => {
       try {
-        const event = JSON.parse(e.data) as LiveEvent & { type: string }
-        // skip internal events
-        if (event.type === 'ping' || event.type === 'agent' || event.type === 'script' || event.type === 'tts_output') {
+        const event = JSON.parse(e.data) as LiveEvent
+        if (SKIP_TYPES.has(event.type)) return
+
+        if (event.type === 'stats') {
+          setOnlineCount(event.value)
           return
         }
+
         setEvents((prev) => {
           const next = [event, ...prev]
           return next.length > MAX_EVENTS ? next.slice(0, MAX_EVENTS) : next
@@ -52,5 +57,5 @@ export function useLiveStream() {
     }
   }, [])
 
-  return { events, connected }
+  return { events, connected, onlineCount }
 }
