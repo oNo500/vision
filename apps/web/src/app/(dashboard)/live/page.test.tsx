@@ -1,7 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 
-// Mock all child components and hooks
+import type { AiOutput, ScriptState } from '@/features/live/hooks/use-live-stream'
+
+// Capture-prop mocks
 vi.mock('@/features/live/components/danmaku-feed', () => ({
   DanmakuFeed: () => <div data-testid="danmaku-feed" />,
 }))
@@ -9,17 +11,27 @@ vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
 }))
 vi.mock('@/features/live/components/script-card', () => ({
-  ScriptCard: () => <div data-testid="script-card" />,
+  ScriptCard: (props: { scriptState: ScriptState | null; running: boolean }) => (
+    <div data-testid="script-card" data-running={String(props.running)} />
+  ),
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
-  AiStatusCard: () => <div data-testid="ai-status-card" />,
+  AiStatusCard: (props: { latest: AiOutput | null; queueDepth: number }) => (
+    <div
+      data-testid="ai-status-card"
+      data-queue-depth={String(props.queueDepth)}
+      data-has-latest={String(props.latest !== null)}
+    />
+  ),
 }))
 vi.mock('@/features/live/components/ai-output-log', () => ({
-  AiOutputLog: () => <div data-testid="ai-output-log" />,
+  AiOutputLog: (props: { outputs: AiOutput[] }) => (
+    <div data-testid="ai-output-log" data-count={String(props.outputs.length)} />
+  ),
 }))
 vi.mock('@/features/live/hooks/use-live-session', () => ({
   useLiveSession: () => ({
-    state: { running: false },
+    state: { running: false, queue_depth: 0 },
     loading: false,
     error: null,
     start: vi.fn(),
@@ -54,5 +66,26 @@ describe('LivePage', () => {
   it('renders page title', () => {
     render(<LivePage />)
     expect(screen.getByText('直播控场')).toBeInTheDocument()
+  })
+
+  it('passes connected as running to ScriptCard', () => {
+    render(<LivePage />)
+    expect(screen.getByTestId('script-card')).toHaveAttribute('data-running', 'false')
+  })
+
+  it('passes last aiOutput as latest to AiStatusCard', () => {
+    render(<LivePage />)
+    // empty outputs → latest is null
+    expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-has-latest', 'false')
+  })
+
+  it('passes queue_depth from session state to AiStatusCard', () => {
+    render(<LivePage />)
+    expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-queue-depth', '0')
+  })
+
+  it('passes aiOutputs to AiOutputLog', () => {
+    render(<LivePage />)
+    expect(screen.getByTestId('ai-output-log')).toHaveAttribute('data-count', '0')
   })
 })
