@@ -96,6 +96,10 @@ class SessionManager:
             "ts": time.time(),
         })
 
+    def get_script_runner(self) -> ScriptRunner | None:
+        with self._lock:
+            return self._script_runner if self._running else None
+
     def get_state(self) -> dict:
         with self._lock:
             running = self._running
@@ -227,6 +231,7 @@ class SessionManager:
                     "type": "script",
                     "segment_id": state.get("segment_id"),
                     "remaining_seconds": state.get("remaining_seconds", 0),
+                    "segment_duration": state.get("segment_duration", 0),
                     "ts": time.time(),
                 })
 

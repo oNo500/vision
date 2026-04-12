@@ -80,6 +80,24 @@ def inject(
     return {"ok": True}
 
 
+@router.post("/script/next")
+def script_next(sm: SessionManager = Depends(get_session_manager)) -> dict:
+    runner = sm.get_script_runner()
+    if runner is None:
+        raise HTTPException(status_code=400, detail="Session not running")
+    runner.advance()
+    return sm.get_state()
+
+
+@router.post("/script/prev")
+def script_prev(sm: SessionManager = Depends(get_session_manager)) -> dict:
+    runner = sm.get_script_runner()
+    if runner is None:
+        raise HTTPException(status_code=400, detail="Session not running")
+    runner.rewind()
+    return sm.get_state()
+
+
 @router.get("/stream")
 async def stream(bus: EventBus = Depends(get_event_bus)):
     q = bus.subscribe()

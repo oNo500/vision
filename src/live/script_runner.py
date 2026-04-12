@@ -69,6 +69,7 @@ class ScriptRunner:
                 "interruptible": seg.interruptible,
                 "keywords": seg.keywords,
                 "remaining_seconds": remaining,
+                "segment_duration": seg.duration,
                 "finished": False,
             }
 
