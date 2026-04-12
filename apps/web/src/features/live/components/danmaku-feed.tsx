@@ -54,8 +54,7 @@ export function DanmakuFeed({ events, connected, onlineCount }: DanmakuFeedProps
 
   useEffect(() => {
     if (events.length > 0) onNewMessage()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [events.length])
+  }, [events.length, onNewMessage])
 
   return (
     <div className="flex min-h-0 flex-col overflow-hidden rounded-lg border bg-background">
