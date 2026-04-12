@@ -66,13 +66,13 @@ describe('AiStatusCard', () => {
   })
 
   it('queue depth text uses foreground color when > 0', () => {
-    const { container } = render(<AiStatusCard latest={mockAiOutput} queueDepth={3} />)
+    render(<AiStatusCard latest={mockAiOutput} queueDepth={3} />)
     const queueText = screen.getByText(/队列 3 句/)
     expect(queueText).toHaveClass('text-foreground')
   })
 
   it('queue depth text uses muted-foreground color when = 0', () => {
-    const { container } = render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
+    render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
     const queueText = screen.getByText(/队列 0 句/)
     expect(queueText).toHaveClass('text-muted-foreground')
   })
