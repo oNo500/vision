@@ -13,7 +13,7 @@ from src.live.knowledge_base import KnowledgeBase
 from src.live.orchestrator import Orchestrator
 from src.live.schema import Event
 from src.live.script_runner import ScriptRunner
-from src.live.tts_player import TTSPlayer
+from src.live.tts_player import TTSPlayer, _SENTINEL as _TTS_SENTINEL
 from src.shared.event_bus import EventBus
 
 logger = logging.getLogger(__name__)
@@ -34,6 +34,7 @@ class SessionManager:
         self._script_runner: ScriptRunner | None = None
         self._orchestrator: Orchestrator | None = None
         self._tts_queue: queue.Queue | None = None
+        self._broadcaster_stop: threading.Event = threading.Event()
 
     def start(
         self,
@@ -52,6 +53,7 @@ class SessionManager:
         except Exception:
             with self._lock:
                 self._running = False
+                self._tts_queue = None
             raise
 
         self._bus.publish({"type": "agent", "status": "started", "ts": time.time()})
@@ -69,6 +71,7 @@ class SessionManager:
             except Exception as e:
                 logger.warning("Error stopping component %s: %s", component, e)
         self._components.clear()
+        self._broadcaster_stop.set()
         self._script_runner = None
         self._orchestrator = None
         self._tts_queue = None
@@ -91,12 +94,14 @@ class SessionManager:
     def get_state(self) -> dict:
         with self._lock:
             running = self._running
-        if not running or self._script_runner is None:
+            script_runner = self._script_runner
+            tts_queue = self._tts_queue
+        if not running or script_runner is None:
             return {"running": False}
-        state = self._script_runner.get_state()
+        state = script_runner.get_state()
         return {
             "running": True,
-            "queue_depth": self._tts_queue.qsize() if self._tts_queue else 0,
+            "queue_depth": tts_queue.qsize() if tts_queue else 0,
             **state,
         }
 
@@ -158,6 +163,8 @@ class SessionManager:
         def _tts_put_with_publish(item, *args, **kwargs):
             original_tts_put(item, *args, **kwargs)
             content, speech_prompt = item
+            if content is _TTS_SENTINEL:
+                return
             self._bus.publish({
                 "type": "tts_output",
                 "content": content,
@@ -172,6 +179,8 @@ class SessionManager:
 
         def _event_put_with_publish(event: Event, *args, **kwargs):
             original_eq_put(event, *args, **kwargs)
+            state = script_runner.get_state()
+            orchestrator.handle_event(event, state)   # route P0/P1 to TTS, P2/P3 to buffer
             self._bus.publish({
                 "type": event.type,
                 "user": event.user,
@@ -198,8 +207,10 @@ class SessionManager:
         self._components = [script_runner, event_collector, tts_player, director]
 
         # Script state broadcaster thread
+        self._broadcaster_stop.clear()
+
         def _broadcast_script_state():
-            while self._running:
+            while not self._broadcaster_stop.wait(timeout=5.0):
                 state = script_runner.get_state()
                 self._bus.publish({
                     "type": "script",
@@ -207,7 +218,6 @@ class SessionManager:
                     "remaining_seconds": state.get("remaining_seconds", 0),
                     "ts": time.time(),
                 })
-                threading.Event().wait(timeout=5.0)
 
         broadcaster = threading.Thread(target=_broadcast_script_state, daemon=True, name="ScriptBroadcaster")
         broadcaster.start()
