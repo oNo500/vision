@@ -76,50 +76,92 @@ def _play_audio(pcm_data: bytes, device: str | None = None) -> None:
         subprocess.run(["aplay", tmp_path], check=True)
 
 
+_SAMPLE_RATE = 24000
+_TTS_MODEL = "gemini-2.5-flash-tts"
+
+
 def _make_gemini_speak(
-    project: str,
     voice: str = "Sulafat",
-    location: str = "us-central1",
     audio_device: str | None = None,
 ) -> Callable[[str, str | None], None]:
-    """Return a speak_fn backed by Gemini-2.5-Flash-TTS via Vertex AI.
+    """Return a speak_fn backed by Cloud Text-to-Speech streaming API.
 
-    Audio is PCM 16-bit 24kHz mono, played via sounddevice (cross-platform).
+    Uses streaming_synthesize so audio playback begins on the first chunk,
+    eliminating the multi-second wait of the non-streaming generate_content path.
+    Audio is PCM 16-bit 24kHz mono, streamed to sounddevice in real time.
 
     Args:
-        project: GCP project ID.
-        voice: Gemini TTS voice name.
-        location: Vertex AI region.
+        voice: Gemini TTS voice name (e.g. "Sulafat").
         audio_device: Output device name substring (e.g. "CABLE Input" for VB-Cable).
                       None uses the system default device.
     """
-    from google import genai
-    from google.genai import types
+    from google.cloud import texttospeech
 
-    client = genai.Client(vertexai=True, project=project, location=location)
+    client = texttospeech.TextToSpeechClient()
+
+    # Resolve sounddevice output device index once at startup
+    device_idx: int | None = None
+    if audio_device:
+        try:
+            import sounddevice as sd
+            for i, d in enumerate(sd.query_devices()):
+                if audio_device.lower() in d["name"].lower() and d["max_output_channels"] > 0:
+                    device_idx = i
+                    break
+            if device_idx is None:
+                logger.warning("Audio device %r not found, using default", audio_device)
+        except ImportError:
+            pass
 
     def _speak(text: str, speech_prompt: str | None = None) -> None:
         prompt = speech_prompt or _DEFAULT_SPEECH_PROMPT
-        contents = f"{prompt}：{text}"
-        try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash-preview-tts",
-                contents=contents,
-                config=types.GenerateContentConfig(
-                    response_modalities=["AUDIO"],
-                    speech_config=types.SpeechConfig(
-                        voice_config=types.VoiceConfig(
-                            prebuilt_voice_config=types.PrebuiltVoiceConfig(
-                                voice_name=voice,
-                            )
-                        )
-                    ),
-                ),
+        config_req = texttospeech.StreamingSynthesizeRequest(
+            streaming_config=texttospeech.StreamingSynthesizeConfig(
+                voice=texttospeech.VoiceSelectionParams(
+                    name=voice,
+                    language_code="cmn-CN",
+                    model_name=_TTS_MODEL,
+                )
             )
-            audio_data = response.candidates[0].content.parts[0].inline_data.data
-            _play_audio(audio_data, device=audio_device)
+        )
+
+        def _requests():
+            yield config_req
+            yield texttospeech.StreamingSynthesizeRequest(
+                input=texttospeech.StreamingSynthesisInput(
+                    text=text,
+                    prompt=prompt,
+                )
+            )
+
+        try:
+            import numpy as np
+            import sounddevice as sd
+
+            stream = sd.OutputStream(
+                samplerate=_SAMPLE_RATE,
+                channels=1,
+                dtype="int16",
+                device=device_idx,
+            )
+            stream.start()
+            try:
+                for response in client.streaming_synthesize(_requests()):
+                    chunk = np.frombuffer(response.audio_content, dtype=np.int16)
+                    stream.write(chunk)
+            finally:
+                stream.stop()
+                stream.close()
+
+        except ImportError:
+            # sounddevice not available — collect all chunks then play via afplay
+            chunks: list[bytes] = []
+            for response in client.streaming_synthesize(_requests()):
+                chunks.append(response.audio_content)
+            _play_audio(b"".join(chunks), device=None)
+
         except Exception as e:
-            logger.warning("Gemini TTS failed, falling back to say: %s", e)
+            logger.warning("Gemini streaming TTS failed, falling back to say: %s", e)
             _fallback_speak(text, None)
 
     return _speak
@@ -154,10 +196,10 @@ class TTSPlayer:
         self._queue = in_queue
         if speak_fn is not None:
             self._speak = speak_fn
-        elif project := os.environ.get("GOOGLE_CLOUD_PROJECT"):
-            self._speak = _make_gemini_speak(project, audio_device=audio_device)
+        elif os.environ.get("GOOGLE_CLOUD_PROJECT"):
+            self._speak = _make_gemini_speak(audio_device=audio_device)
             device_info = f" → {audio_device}" if audio_device else ""
-            logger.info("TTSPlayer using Gemini-2.5-Flash-TTS (Sulafat%s)", device_info)
+            logger.info("TTSPlayer using Gemini-2.5-Flash-TTS streaming (Sulafat%s)", device_info)
         else:
             self._speak = _fallback_speak
             logger.info("TTSPlayer using system TTS fallback")
