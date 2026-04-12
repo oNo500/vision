@@ -68,8 +68,9 @@ describe('LivePage', () => {
     expect(screen.getByText('直播控场')).toBeInTheDocument()
   })
 
-  it('passes connected as running to ScriptCard', () => {
+  it('passes session.state.running to ScriptCard', () => {
     render(<LivePage />)
+    // mock returns state.running = false
     expect(screen.getByTestId('script-card')).toHaveAttribute('data-running', 'false')
   })
 

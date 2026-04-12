@@ -28,7 +28,7 @@ export default function LivePage() {
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* left col */}
         <div className="flex w-80 shrink-0 flex-col gap-3 overflow-hidden border-r p-3">
-          <ScriptCard scriptState={scriptState} running={connected} />
+          <ScriptCard scriptState={scriptState} running={session.state.running} />
         </div>
 
         {/* center col */}

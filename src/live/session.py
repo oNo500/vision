@@ -232,6 +232,7 @@ class SessionManager:
                     "segment_id": state.get("segment_id"),
                     "remaining_seconds": state.get("remaining_seconds", 0),
                     "segment_duration": state.get("segment_duration", 0),
+                    "finished": state.get("finished", False),
                     "ts": time.time(),
                 })
 
