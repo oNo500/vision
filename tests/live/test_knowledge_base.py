@@ -63,3 +63,30 @@ def test_must_mention(kb):
     words = kb.must_mention_for_segment("product_core")
     assert "纯植物" in words
     assert kb.must_mention_for_segment("opening") == []
+
+
+def test_missing_keys_return_defaults(tmp_path):
+    """KnowledgeBase handles minimal YAML without crashing."""
+    p = tmp_path / "minimal.yaml"
+    p.write_text("product:\n  name: '测试'\nrules: {}\n", encoding="utf-8")
+    kb = KnowledgeBase(p)
+    assert kb.product_name == "测试"
+    assert kb.banned_words == []
+    assert kb.context_for_prompt()  # should not raise
+
+
+def test_faq_missing_keys_does_not_crash(tmp_path):
+    """context_for_prompt handles FAQ entries with missing q or a keys."""
+    yaml_text = textwrap.dedent("""\
+        product:
+          name: "测试"
+          faqs:
+            - q: "问题"
+            - a: "答案"
+        rules: {}
+    """)
+    p = tmp_path / "partial.yaml"
+    p.write_text(yaml_text, encoding="utf-8")
+    kb = KnowledgeBase(p)
+    ctx = kb.context_for_prompt()   # must not raise KeyError
+    assert "问题" in ctx

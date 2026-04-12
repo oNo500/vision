@@ -15,6 +15,8 @@ class KnowledgeBase:
 
     def __init__(self, path: str | Path) -> None:
         data = yaml.safe_load(Path(path).read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            raise ValueError(f"Expected a YAML mapping, got {type(data).__name__}")
         self._product = data.get("product", {})
         self._rules = data.get("rules", {})
 
@@ -41,6 +43,6 @@ class KnowledgeBase:
             lines.append(f"  - {sp}")
         lines.append("【常见问题】")
         for faq in p.get("faqs", []):
-            lines.append(f"  Q: {faq['q']}")
-            lines.append(f"  A: {faq['a']}")
+            lines.append(f"  Q: {faq.get('q', '')}")
+            lines.append(f"  A: {faq.get('a', '')}")
         return "\n".join(lines)
