@@ -2,8 +2,11 @@
 """
 agent.py — Live orchestration agent entry point.
 
-Usage (dev mode with mock events and system TTS):
-    uv run scripts/live/agent.py --script scripts/live/example_script.yaml --mock
+Usage (dev mode with mock events and mock LLM):
+    uv run scripts/live/agent.py --mock
+
+Usage (real Douyin events + mock LLM):
+    uv run scripts/live/agent.py --douyin --mock
 
 Usage (production, requires GCP credentials):
     export GOOGLE_CLOUD_PROJECT=your-project-id
@@ -12,6 +15,7 @@ Usage (production, requires GCP credentials):
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import os
 import queue
@@ -31,7 +35,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Mock events for development
 _MOCK_EVENTS = [
     {"type": "enter",   "user": "用户A", "is_follower": True,  "t": 5},
     {"type": "danmaku", "user": "用户B", "text": "这个怎么买？",    "t": 30},
@@ -45,66 +48,104 @@ _MOCK_EVENTS = [
     {"type": "danmaku", "user": "用户J", "text": "继续！",         "t": 104},
 ]
 
+_DEFAULT_PRODUCT_YAML = "scripts/live/data/product.yaml"
+_DEFAULT_SCRIPT_YAML = "scripts/live/example_script.yaml"
 
-def build_mock_llm():
-    """Return a simple mock LLM that echoes back a canned response."""
-    from scripts.live.schema import Decision
 
-    class MockLLM:
-        def decide(self, script_state, events):
-            questions = [e for e in events if e.text and "？" in e.text]
-            if questions:
-                return Decision(
-                    action="respond",
-                    content=f"感谢{questions[0].user}的提问！购买链接在直播间左下角～",
-                    reason="mock: contains question",
-                )
-            return Decision(action="skip", reason="mock: no question")
+def _make_vertex_llm_generate_fn(project: str, location: str = "us-central1", model: str = "gemini-2.5-flash"):
+    """Return a generate_fn(prompt) -> str backed by Vertex AI."""
+    import vertexai
+    from vertexai.generative_models import GenerativeModel
+    from scripts.live.director_agent import _SYSTEM_PROMPT
 
-    return MockLLM()
+    vertexai.init(project=project, location=location)
+    m = GenerativeModel(model_name=model, system_instruction=_SYSTEM_PROMPT)
+
+    def _generate(prompt: str) -> str:
+        response = m.generate_content(prompt)
+        return response.text
+
+    return _generate
+
+
+def _make_mock_llm_generate_fn():
+    """Return a simple mock generate_fn for dev mode."""
+    def _generate(prompt: str) -> str:
+        if "怎么买" in prompt or "哪里" in prompt or "优惠" in prompt:
+            content = "点左下角购物车就能下单，今天直播间专属价九十九！"
+            source = "interaction"
+        else:
+            content = "大家好，今天给大家带来一款超好用的面膜，感兴趣的扣1！"
+            source = "script"
+        return json.dumps({
+            "content": content,
+            "speech_prompt": "热情自然地介绍，语速稍快，像朋友聊天",
+            "source": source,
+            "reason": "mock",
+        }, ensure_ascii=False)
+
+    return _generate
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Live orchestration agent")
-    parser.add_argument("--script", default="scripts/live/example_script.yaml", help="Path to YAML script")
+    parser.add_argument("--script", default=_DEFAULT_SCRIPT_YAML, help="Path to YAML script")
+    parser.add_argument("--product", default=_DEFAULT_PRODUCT_YAML, help="Path to product knowledge YAML")
     parser.add_argument("--mock", action="store_true", help="Use mock LLM and mock TTS (dev mode)")
+    parser.add_argument("--douyin", action="store_true", help="Use real Douyin events via local mitmproxy hub")
     parser.add_argument("--speed", type=float, default=1.0, help="Mock event replay speed multiplier")
     parser.add_argument("--project", default=os.environ.get("GOOGLE_CLOUD_PROJECT"), help="GCP project ID")
     args = parser.parse_args()
 
+    from scripts.live.director_agent import DirectorAgent
+    from scripts.live.douyin_collector import DouyinEventCollector
     from scripts.live.event_collector import MockEventCollector
+    from scripts.live.knowledge_base import KnowledgeBase
     from scripts.live.orchestrator import Orchestrator
     from scripts.live.script_runner import ScriptRunner
     from scripts.live.tts_player import TTSPlayer
 
     # Queues
     event_queue: queue.Queue = queue.Queue()
-    tts_queue: queue.Queue[str] = queue.Queue()
+    tts_queue: queue.Queue[tuple[str, str | None]] = queue.Queue()
 
-    # LLM client
+    # LLM generate function
     if args.mock:
-        llm = build_mock_llm()
+        llm_generate = _make_mock_llm_generate_fn()
         logger.info("Running in MOCK mode (no Vertex AI calls)")
     else:
         if not args.project:
             logger.error("--project or GOOGLE_CLOUD_PROJECT required in production mode")
             sys.exit(1)
-        from scripts.live.llm_client import LLMClient
-        llm = LLMClient(project=args.project)
+        llm_generate = _make_vertex_llm_generate_fn(args.project)
 
     # TTS speak function
     if args.mock:
         def speak_fn(text: str, speech_prompt: str | None = None) -> None:
-            logger.info("[TTS MOCK] %s (prompt=%s)", text, speech_prompt)
-            time.sleep(0.3)   # simulate short playback
+            logger.info("[TTS MOCK] (%s) %s", speech_prompt or "default", text)
+            time.sleep(0.5)
     else:
-        speak_fn = None   # uses macOS `say` by default
+        speak_fn = None   # uses Gemini TTS via GOOGLE_CLOUD_PROJECT env var
+
+    # Knowledge base
+    kb = KnowledgeBase(args.product)
+    logger.info("KnowledgeBase loaded: %s", kb.product_name)
 
     # Wire components
     script_runner = ScriptRunner.from_yaml(args.script)
-    event_collector = MockEventCollector(_MOCK_EVENTS, event_queue, speed=args.speed)
+    if args.douyin:
+        event_collector = DouyinEventCollector(out_queue=event_queue)
+        logger.info("Using DouyinEventCollector (hub ws://127.0.0.1:2536)")
+    else:
+        event_collector = MockEventCollector(_MOCK_EVENTS, event_queue, speed=args.speed)
     tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn)
-    orchestrator = Orchestrator(tts_queue=tts_queue, llm_client=llm, llm_batch_size=5, llm_interval=10.0)
+    orchestrator = Orchestrator(tts_queue=tts_queue)
+    director = DirectorAgent(
+        tts_queue=tts_queue,
+        tts_player=tts_player,
+        knowledge_ctx=kb.context_for_prompt(),
+        llm_generate_fn=llm_generate,
+    )
 
     # Graceful shutdown
     stop_event = threading.Event()
@@ -120,16 +161,19 @@ def main() -> None:
     script_runner.start()
     event_collector.start()
     tts_player.start()
+    director.start(
+        get_state_fn=script_runner.get_state,
+        get_events_fn=orchestrator.get_events,
+    )
     logger.info("Agent running. Ctrl+C to stop.")
 
-    # Main loop: drain event queue and tick orchestrator
+    # Main loop: drain event queue into orchestrator
     while not stop_event.is_set():
         script_state = script_runner.get_state()
         if script_state.get("finished"):
             logger.info("Script finished.")
             break
 
-        # Drain all pending events
         while True:
             try:
                 event = event_queue.get_nowait()
@@ -137,11 +181,10 @@ def main() -> None:
             except queue.Empty:
                 break
 
-        # Time-based LLM flush
-        orchestrator.tick(script_state)
         stop_event.wait(timeout=0.5)
 
     # Teardown
+    director.stop()
     event_collector.stop()
     script_runner.stop()
     tts_player.stop()
