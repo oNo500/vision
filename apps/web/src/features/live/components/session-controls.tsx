@@ -16,7 +16,7 @@ function formatSeconds(s: number) {
 
 export function SessionControls({ state, loading, error, start, stop }: Props) {
   return (
-    <div className="flex flex-col gap-4 rounded-lg border bg-background p-4">
+    <div className="flex h-full flex-col gap-4 rounded-lg border bg-background p-4">
       {/* status row */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
