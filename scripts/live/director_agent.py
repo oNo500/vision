@@ -18,6 +18,7 @@ from scripts.live.schema import DirectorOutput, Event
 logger = logging.getLogger(__name__)
 
 MAX_SILENCE_SECONDS = 15.0   # force output if TTS has been idle this long
+MIN_SPEAK_INTERVAL = 5.0    # minimum seconds between director utterances (prevents spamming)
 
 _SYSTEM_PROMPT = """\
 你是一个经验丰富的带货主播，正在进行抖音直播。
@@ -140,11 +141,14 @@ class DirectorAgent:
             if state.get("finished"):
                 break
 
+            now = time.monotonic()
             queue_empty = self._tts_queue.empty()
             not_speaking = not self._tts_player.is_speaking
-            silence_too_long = (time.monotonic() - self._last_fired) >= MAX_SILENCE_SECONDS
+            since_last = now - self._last_fired
+            cooled_down = since_last >= MIN_SPEAK_INTERVAL
+            silence_too_long = since_last >= MAX_SILENCE_SECONDS
 
-            if (queue_empty and not_speaking) or silence_too_long:
+            if (queue_empty and not_speaking and cooled_down) or silence_too_long:
                 self._fire(state, get_events_fn())
 
             self._stop_event.wait(timeout=0.5)
