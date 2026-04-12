@@ -108,11 +108,13 @@ def test_director_enqueues_content():
     assert prompt == "热情"
 
 
-def test_director_skips_when_speaking():
+def test_director_pregens_while_speaking():
+    """Director should pre-generate next utterance even while TTS is speaking (queue lookahead)."""
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     mock_tts = MagicMock()
-    mock_tts.is_speaking = True
+    mock_tts.is_speaking = True   # TTS currently speaking
     mock_llm = MagicMock()
+    mock_llm.generate.return_value = '{"content": "下一句", "speech_prompt": "平稳", "source": "script", "reason": ""}'
 
     director = DirectorAgent(
         tts_queue=tts_q,
@@ -126,8 +128,9 @@ def test_director_skips_when_speaking():
         "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
     }
     director._fire(script_state, recent_events=[])
-    mock_llm.generate.assert_not_called()
-    assert tts_q.empty()
+    # Should still call LLM and enqueue (pre-generation while speaking)
+    mock_llm.generate.assert_called_once()
+    assert not tts_q.empty()
 
 
 def test_director_skips_empty_content():

@@ -18,7 +18,7 @@ from scripts.live.schema import DirectorOutput, Event
 logger = logging.getLogger(__name__)
 
 MAX_SILENCE_SECONDS = 15.0   # force output if TTS has been idle this long
-MIN_SPEAK_INTERVAL = 5.0    # minimum seconds between director utterances (prevents spamming)
+MIN_SPEAK_INTERVAL = 1.0    # minimum seconds between director LLM calls (prevents spamming)
 
 _SYSTEM_PROMPT = """\
 你是一个经验丰富的带货主播，正在进行抖音直播。
@@ -143,21 +143,19 @@ class DirectorAgent:
 
             now = time.monotonic()
             queue_empty = self._tts_queue.empty()
-            not_speaking = not self._tts_player.is_speaking
             since_last = now - self._last_fired
             cooled_down = since_last >= MIN_SPEAK_INTERVAL
             silence_too_long = since_last >= MAX_SILENCE_SECONDS
 
-            if (queue_empty and not_speaking and cooled_down) or silence_too_long:
+            # Pre-generate next utterance while TTS is still speaking (queue empty = ready for next)
+            if (queue_empty and cooled_down) or silence_too_long:
                 self._fire(state, get_events_fn())
 
             self._stop_event.wait(timeout=0.5)
 
     def _fire(self, script_state: dict, recent_events: list[Event]) -> None:
-        """Build context and call LLM; enqueue result if non-empty."""
-        if self._tts_player.is_speaking:
-            return
-
+        """Call LLM and enqueue next utterance. May be called while TTS is still speaking
+        to pre-buffer the next line and eliminate the gap between sentences."""
         prompt = build_director_prompt(
             script_state, self._knowledge_ctx, recent_events, self._last_said
         )
