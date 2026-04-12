@@ -8,6 +8,7 @@ license = { text = "MIT" }
 
 dependencies = [
     "google-cloud-aiplatform>=1.147.0",
+    "python-dotenv>=1.2.2",
     "pyttsx3>=2.99",
     "pyyaml>=6.0.3",
 ]
@@ -17,6 +18,9 @@ dev = [
     "pytest>=9.0.3",
     "ruff>=0.8.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [tool.ruff]
 target-version = "py313"
