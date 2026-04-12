@@ -1,6 +1,7 @@
 'use client'
 
 import { Toaster } from '@workspace/ui/components/sonner'
+import { TooltipProvider } from '@workspace/ui/components/tooltip'
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
 import * as React from 'react'
 
@@ -68,7 +69,9 @@ function ThemeHotkey() {
 
 export const AppProvider = ({ children }: Readonly<{ children: React.ReactNode }>) => (
   <ThemeProvider>
-    {children}
-    <Toaster />
+    <TooltipProvider>
+      {children}
+      <Toaster />
+    </TooltipProvider>
   </ThemeProvider>
 )

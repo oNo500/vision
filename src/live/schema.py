@@ -5,16 +5,43 @@ from dataclasses import dataclass, field
 
 
 @dataclass
+class UserInfo:
+    """Rich user metadata attached to each event."""
+
+    uid: int = 0                    # numeric user ID
+    display_id: str = ""            # custom douyin handle e.g. "douyin123"
+    sec_uid: str = ""               # profile unique key
+    gender: int = 0                 # 1=male 2=female 0=unknown
+    is_admin: bool = False          # room moderator
+    is_anchor: bool = False         # the streamer themselves
+    pay_grade: int = 0              # payment grade level
+    fans_club_name: str = ""        # fan club name (empty if not joined)
+    fans_club_level: int = 0        # fan club level (0 if not joined)
+    follow_status: int = 0          # 0=not following 1=following
+    follower_count: int = 0         # number of followers
+
+
+@dataclass
 class Event:
     """A single live-stream interaction event."""
 
-    type: str           # "danmaku" | "gift" | "enter"
-    user: str
+    type: str           # "danmaku" | "gift" | "enter" | "like" | "follow" | "fansclub" | "stats" | "end"
+    user: str           # display nickname
     t: float            # seconds since stream start (used by mock replay)
-    text: str | None = None    # danmaku text
-    gift: str | None = None    # gift name
-    value: int = 0             # gift monetary value in CNY
-    is_follower: bool = False  # whether user follows the streamer
+    text: str | None = None         # danmaku text / fansclub content
+    gift: str | None = None         # gift name
+    value: int = 0                  # like count / gift diamond count / online count
+    is_follower: bool = False       # whether user follows the streamer (legacy, use user_info)
+    user_info: UserInfo | None = None   # rich user metadata
+    # gift-specific
+    gift_count: int = 0             # incremental gift count
+    combo_count: int = 0            # cumulative combo count
+    # enter-specific
+    enter_type: int = 0             # 0=normal 6=via share
+    # stats-specific
+    total_pv: str = ""              # cumulative viewer count string e.g. "7.5万"
+    # full proto payload — all fields, including ones not promoted above
+    raw: dict | None = None
 
 
 @dataclass
