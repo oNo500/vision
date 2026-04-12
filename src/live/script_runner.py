@@ -41,6 +41,20 @@ class ScriptRunner:
         if self._thread and self._thread.is_alive():
             self._thread.join(timeout=2)
 
+    def advance(self) -> None:
+        """Skip to the next segment immediately (thread-safe)."""
+        with self._lock:
+            if self._index < len(self._script.segments) - 1:
+                self._index += 1
+                self._segment_start = time.monotonic()
+
+    def rewind(self) -> None:
+        """Jump back to the previous segment (thread-safe)."""
+        with self._lock:
+            if self._index > 0:
+                self._index -= 1
+                self._segment_start = time.monotonic()
+
     def get_state(self) -> dict:
         """Return a snapshot of current script state (thread-safe)."""
         with self._lock:
