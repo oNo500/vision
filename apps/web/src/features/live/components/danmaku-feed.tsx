@@ -1,9 +1,11 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 import { cn } from '@workspace/ui/lib/utils'
+import { ArrowDownIcon } from 'lucide-react'
 
+import { useScrollAnchor } from '../hooks/use-scroll-anchor'
 import type { LiveEvent } from '../hooks/use-live-stream'
 
 const TYPE_BADGE: Record<string, { label: string; cls: string }> = {
@@ -17,7 +19,6 @@ const TYPE_BADGE: Record<string, { label: string; cls: string }> = {
 
 function EventRow({ event }: { event: LiveEvent }) {
   const badge = TYPE_BADGE[event.type]
-  const isLike = event.type === 'like'
 
   const body = (() => {
     if (event.type === 'danmaku' || event.type === 'fansclub') return event.text
@@ -30,7 +31,7 @@ function EventRow({ event }: { event: LiveEvent }) {
   })()
 
   return (
-    <div className={cn('flex items-baseline gap-1.5 px-3 py-1 text-xs', isLike && 'opacity-35')}>
+    <div className={cn('flex items-baseline gap-1.5 px-3 py-1 text-xs', event.type === 'like' && 'opacity-35')}>
       {badge && (
         <span className={cn('shrink-0 rounded px-1 py-0.5 text-[10px] font-medium leading-none', badge.cls)}>
           {badge.label}
@@ -49,14 +50,16 @@ interface DanmakuFeedProps {
 }
 
 export function DanmakuFeed({ events, connected, onlineCount }: DanmakuFeedProps) {
-  const bottomRef = useRef<HTMLDivElement>(null)
+  const { scrollRef, isAtBottom, unread, scrollToBottom, onNewMessage } = useScrollAnchor()
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    if (events.length > 0) onNewMessage()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [events.length])
 
   return (
     <div className="flex min-h-0 flex-col overflow-hidden rounded-lg border bg-background">
+      {/* header */}
       <div className="flex shrink-0 items-center justify-between border-b px-3 py-2">
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold">互动</span>
@@ -72,14 +75,27 @@ export function DanmakuFeed({ events, connected, onlineCount }: DanmakuFeedProps
         </div>
       </div>
 
-      <div className="flex min-h-0 flex-1 flex-col-reverse overflow-y-auto py-1">
-        <div ref={bottomRef} />
-        {events.length === 0 ? (
-          <p className="py-8 text-center text-xs text-muted-foreground">
-            {connected ? '等待互动…' : '请先启动监听'}
-          </p>
-        ) : (
-          events.map((event, i) => <EventRow key={`${event.ts}-${i}`} event={event} />)
+      {/* feed */}
+      <div className="relative min-h-0 flex-1">
+        <div ref={scrollRef} className="absolute inset-0 overflow-y-auto py-1">
+          {events.length === 0 ? (
+            <p className="py-8 text-center text-xs text-muted-foreground">
+              {connected ? '等待互动…' : '请先启动监听'}
+            </p>
+          ) : (
+            events.map((event, i) => <EventRow key={`${event.ts}-${i}`} event={event} />)
+          )}
+        </div>
+
+        {/* jump-to-bottom button */}
+        {!isAtBottom && (
+          <button
+            onClick={() => scrollToBottom()}
+            className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full border bg-background/90 px-3 py-1.5 text-xs font-medium shadow-md backdrop-blur-sm transition-opacity hover:bg-muted"
+          >
+            <ArrowDownIcon className="size-3" />
+            {unread > 0 ? `${unread} 条新消息` : '跳到最新'}
+          </button>
         )}
       </div>
     </div>
