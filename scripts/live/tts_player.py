@@ -16,7 +16,7 @@ from collections.abc import Callable
 logger = logging.getLogger(__name__)
 
 
-def _make_gemini_speak(project: str, voice: str = "Aoede", location: str = "us-central1") -> Callable[[str], None]:
+def _make_gemini_speak(project: str, voice: str = "Sulafat", location: str = "us-central1") -> Callable[[str], None]:
     """Return a speak_fn backed by Gemini-2.5-Flash-TTS via Vertex AI.
 
     Audio is PCM 16-bit 24kHz mono; wrapped in a WAV and played via afplay.
