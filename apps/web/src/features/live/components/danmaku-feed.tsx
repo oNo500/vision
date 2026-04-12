@@ -12,20 +12,16 @@ const TYPE_BADGE: Record<string, { label: string; cls: string }> = {
   follow:   { label: '关注',   cls: 'bg-green-500/15 text-green-600 dark:text-green-400' },
   share:    { label: '分享',   cls: 'bg-purple-500/15 text-purple-600 dark:text-purple-400' },
   fansclub: { label: '粉丝团', cls: 'bg-orange-500/15 text-orange-600 dark:text-orange-400' },
-  like:     { label: '点赞',   cls: 'bg-pink-500/15 text-pink-600 dark:text-pink-400' },
-}
-
-function avatarInitial(name: string) {
-  return name ? name.slice(0, 1).toUpperCase() : '·'
+  like:     { label: '赞',     cls: 'bg-pink-500/15 text-pink-600 dark:text-pink-400' },
 }
 
 function EventRow({ event }: { event: LiveEvent }) {
   const badge = TYPE_BADGE[event.type]
-  const isCompact = event.type === 'like'
+  const isLike = event.type === 'like'
 
   const body = (() => {
     if (event.type === 'danmaku' || event.type === 'fansclub') return event.text
-    if (event.type === 'gift')   return `送出 ${event.gift}${event.value > 0 ? ` ×${event.value}` : ''}`
+    if (event.type === 'gift')   return `${event.gift}${event.value > 0 ? ` ×${event.value}` : ''}`
     if (event.type === 'enter')  return '进入直播间'
     if (event.type === 'follow') return '关注了主播'
     if (event.type === 'share')  return '分享了直播间'
@@ -34,25 +30,14 @@ function EventRow({ event }: { event: LiveEvent }) {
   })()
 
   return (
-    <div className={cn('flex items-start gap-2.5 px-3 py-2', isCompact && 'opacity-40')}>
-      <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-semibold text-muted-foreground">
-        {avatarInitial(event.user)}
-      </div>
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-1.5">
-          <span className="max-w-[120px] truncate text-xs font-medium text-foreground">
-            {event.user}
-          </span>
-          {badge && (
-            <span className={cn('shrink-0 rounded px-1 py-0.5 text-[10px] font-medium leading-none', badge.cls)}>
-              {badge.label}
-            </span>
-          )}
-        </div>
-        {body && (
-          <p className="mt-0.5 break-words text-sm text-muted-foreground">{body}</p>
-        )}
-      </div>
+    <div className={cn('flex items-baseline gap-1.5 px-3 py-1 text-xs', isLike && 'opacity-35')}>
+      {badge && (
+        <span className={cn('shrink-0 rounded px-1 py-0.5 text-[10px] font-medium leading-none', badge.cls)}>
+          {badge.label}
+        </span>
+      )}
+      <span className="shrink-0 font-medium text-foreground">{event.user}</span>
+      {body && <span className="min-w-0 truncate text-muted-foreground">{body}</span>}
     </div>
   )
 }
@@ -72,8 +57,7 @@ export function DanmakuFeed({ events, connected, onlineCount }: DanmakuFeedProps
 
   return (
     <div className="flex min-h-0 flex-col overflow-hidden rounded-lg border bg-background">
-      {/* header */}
-      <div className="flex shrink-0 items-center justify-between border-b px-3 py-2.5">
+      <div className="flex shrink-0 items-center justify-between border-b px-3 py-2">
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold">互动</span>
           {onlineCount != null && (
@@ -88,11 +72,10 @@ export function DanmakuFeed({ events, connected, onlineCount }: DanmakuFeedProps
         </div>
       </div>
 
-      {/* feed */}
-      <div className="flex min-h-0 flex-1 flex-col-reverse overflow-y-auto">
+      <div className="flex min-h-0 flex-1 flex-col-reverse overflow-y-auto py-1">
         <div ref={bottomRef} />
         {events.length === 0 ? (
-          <p className="py-12 text-center text-xs text-muted-foreground">
+          <p className="py-8 text-center text-xs text-muted-foreground">
             {connected ? '等待互动…' : '请先启动监听'}
           </p>
         ) : (
