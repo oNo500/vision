@@ -1,9 +1,8 @@
-"""Tests for Orchestrator two-layer decision engine."""
+"""Tests for Orchestrator P0/P1 rule interrupt layer."""
 import queue
-from unittest.mock import MagicMock
 
 from scripts.live.orchestrator import Orchestrator, classify_event
-from scripts.live.schema import Decision, Event
+from scripts.live.schema import Event
 
 INTERRUPTIBLE_STATE = {
     "segment_id": "opening",
@@ -14,14 +13,8 @@ INTERRUPTIBLE_STATE = {
     "segment_text": "Hello!",
 }
 
-NOT_INTERRUPTIBLE_STATE = {
-    **INTERRUPTIBLE_STATE,
-    "interruptible": False,
-    "segment_id": "product_core",
-}
 
-
-# --- classify_event tests ---
+# --- classify_event ---
 
 def test_classify_high_value_gift():
     e = Event(type="gift", user="X", gift="rocket", value=500, t=0)
@@ -53,12 +46,11 @@ def test_classify_plain_danmaku():
     assert classify_event(e) == "P3"
 
 
-# --- Orchestrator rule layer tests ---
+# --- Orchestrator rule layer ---
 
 def test_p0_gift_triggers_immediate_tts():
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
-    mock_llm = MagicMock()
-    orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=5, llm_interval=10.0)
+    orch = Orchestrator(tts_queue=tts_q)
 
     e = Event(type="gift", user="VIP", gift="rocket", value=500, t=0)
     orch.handle_event(e, INTERRUPTIBLE_STATE)
@@ -67,12 +59,11 @@ def test_p0_gift_triggers_immediate_tts():
     text, speech_prompt = tts_q.get_nowait()
     assert "VIP" in text
     assert speech_prompt is not None
-    mock_llm.decide.assert_not_called()
 
 
 def test_p1_follower_enter_triggers_tts():
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
-    orch = Orchestrator(tts_queue=tts_q, llm_client=MagicMock(), llm_batch_size=5, llm_interval=10.0)
+    orch = Orchestrator(tts_queue=tts_q)
 
     e = Event(type="enter", user="Fan", is_follower=True, t=0)
     orch.handle_event(e, INTERRUPTIBLE_STATE)
@@ -83,43 +74,37 @@ def test_p1_follower_enter_triggers_tts():
     assert speech_prompt is not None
 
 
-def test_not_interruptible_blocks_all_events():
+def test_p2_p3_go_to_buffer():
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
-    mock_llm = MagicMock()
-    orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=5, llm_interval=10.0)
-
-    # Even P0 gift should not emit TTS when segment is not interruptible
-    e = Event(type="gift", user="VIP", gift="rocket", value=500, t=0)
-    orch.handle_event(e, NOT_INTERRUPTIBLE_STATE)
-
-    assert tts_q.empty()
-    mock_llm.decide.assert_not_called()
-
-
-def test_p3_events_accumulate_in_buffer():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
-    orch = Orchestrator(tts_queue=tts_q, llm_client=MagicMock(), llm_batch_size=5, llm_interval=10.0)
+    orch = Orchestrator(tts_queue=tts_q)
 
     for i in range(3):
         e = Event(type="danmaku", user=f"User{i}", text="加油！", t=float(i))
         orch.handle_event(e, INTERRUPTIBLE_STATE)
 
-    assert tts_q.empty()   # not enough to trigger LLM yet
+    assert tts_q.empty()
     assert orch.buffer_size == 3
 
 
-def test_llm_triggered_at_batch_size():
+def test_get_events_clears_buffer():
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
-    mock_llm = MagicMock()
-    mock_llm.decide.return_value = Decision(action="respond", content="感谢大家！", reason="test")
-    orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=3, llm_interval=10.0)
+    orch = Orchestrator(tts_queue=tts_q)
 
-    for i in range(3):
-        e = Event(type="danmaku", user=f"User{i}", text="加油！", t=float(i))
-        orch.handle_event(e, INTERRUPTIBLE_STATE)
+    e = Event(type="danmaku", user="A", text="这个什么价格？", t=0)
+    orch.handle_event(e, INTERRUPTIBLE_STATE)
 
-    mock_llm.decide.assert_called_once()
-    assert not tts_q.empty()
-    text, speech_prompt = tts_q.get_nowait()
-    assert text == "感谢大家！"
-    assert speech_prompt is None   # no speech_prompt in mock Decision
+    events = orch.get_events()
+    assert len(events) == 1
+    assert orch.buffer_size == 0
+
+
+def test_finished_state_blocks_all():
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    orch = Orchestrator(tts_queue=tts_q)
+
+    finished = {**INTERRUPTIBLE_STATE, "finished": True}
+    e = Event(type="gift", user="VIP", gift="rocket", value=500, t=0)
+    orch.handle_event(e, finished)
+
+    assert tts_q.empty()
+    assert orch.buffer_size == 0
