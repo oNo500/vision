@@ -1,5 +1,5 @@
 """Tests for DirectorAgent."""
-from scripts.live.director_agent import build_director_prompt
+from scripts.live.director_agent import build_director_prompt, parse_director_response
 from scripts.live.schema import DirectorOutput, Event
 
 
@@ -46,3 +46,29 @@ def test_director_output_defaults():
     out = DirectorOutput(content="你好", speech_prompt="热情")
     assert out.source == "script"
     assert out.reason == ""
+
+
+def test_parse_valid_response():
+    raw = '{"content": "欢迎大家！", "speech_prompt": "热情欢快", "source": "script", "reason": "开场"}'
+    out = parse_director_response(raw)
+    assert out.content == "欢迎大家！"
+    assert out.speech_prompt == "热情欢快"
+    assert out.source == "script"
+
+
+def test_parse_missing_content_returns_empty():
+    raw = '{"speech_prompt": "热情", "source": "script", "reason": "test"}'
+    out = parse_director_response(raw)
+    assert out.content == ""
+
+
+def test_parse_invalid_json_returns_empty():
+    out = parse_director_response("not json at all")
+    assert out.content == ""
+    assert "parse error" in out.reason
+
+
+def test_parse_strips_markdown_fence():
+    raw = '```json\n{"content": "好的", "speech_prompt": "平稳", "source": "script", "reason": ""}\n```'
+    out = parse_director_response(raw)
+    assert out.content == "好的"

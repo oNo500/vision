@@ -9,9 +9,6 @@ from __future__ import annotations
 
 import json
 import logging
-import queue
-import threading
-import time
 
 from scripts.live.schema import DirectorOutput, Event
 
@@ -60,7 +57,7 @@ def build_director_prompt(
         f"=== 当前脚本段落 ===\n"
         f"段落ID：{script_state.get('segment_id', 'unknown')}\n"
         f"参考原文：{script_state.get('segment_text', '').strip()}\n"
-        f"关键词：{', '.join(script_state.get('keywords', []))}\n"
+        f"关键词：{', '.join(script_state.get('keywords') or [])}\n"
         f"剩余时间：{script_state.get('remaining_seconds', 0):.0f}s\n"
         f"必须贴近原文：{'是' if must_say else '否'}\n\n"
         f"=== 最近观众互动 ===\n{event_lines}\n\n"
@@ -77,7 +74,7 @@ def parse_director_response(raw: str) -> DirectorOutput:
             text = "\n".join(text.split("\n")[1:-1])
         data = json.loads(text)
         return DirectorOutput(
-            content=data["content"],
+            content=data.get("content", ""),
             speech_prompt=data.get("speech_prompt", "自然平稳地说"),
             source=data.get("source", "script"),
             reason=data.get("reason", ""),

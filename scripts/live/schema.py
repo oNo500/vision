@@ -72,6 +72,6 @@ class DirectorOutput:
     """Output from the DirectorAgent LLM call."""
 
     content: str                      # next thing to say
-    speech_prompt: str                # how to say it
+    speech_prompt: str = ""           # how to say it
     source: str = "script"            # "script" | "interaction" | "knowledge"
     reason: str = ""
