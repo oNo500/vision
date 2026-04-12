@@ -94,8 +94,8 @@ def main() -> None:
 
     # TTS speak function
     if args.mock:
-        def speak_fn(text: str) -> None:
-            logger.info("[TTS MOCK] %s", text)
+        def speak_fn(text: str, speech_prompt: str | None = None) -> None:
+            logger.info("[TTS MOCK] %s (prompt=%s)", text, speech_prompt)
             time.sleep(0.3)   # simulate short playback
     else:
         speak_fn = None   # uses macOS `say` by default

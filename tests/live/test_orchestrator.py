@@ -56,7 +56,7 @@ def test_classify_plain_danmaku():
 # --- Orchestrator rule layer tests ---
 
 def test_p0_gift_triggers_immediate_tts():
-    tts_q: queue.Queue[str] = queue.Queue()
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     mock_llm = MagicMock()
     orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=5, llm_interval=10.0)
 
@@ -64,25 +64,27 @@ def test_p0_gift_triggers_immediate_tts():
     orch.handle_event(e, INTERRUPTIBLE_STATE)
 
     assert not tts_q.empty()
-    text = tts_q.get_nowait()
+    text, speech_prompt = tts_q.get_nowait()
     assert "VIP" in text
+    assert speech_prompt is not None
     mock_llm.decide.assert_not_called()
 
 
 def test_p1_follower_enter_triggers_tts():
-    tts_q: queue.Queue[str] = queue.Queue()
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q, llm_client=MagicMock(), llm_batch_size=5, llm_interval=10.0)
 
     e = Event(type="enter", user="Fan", is_follower=True, t=0)
     orch.handle_event(e, INTERRUPTIBLE_STATE)
 
     assert not tts_q.empty()
-    text = tts_q.get_nowait()
+    text, speech_prompt = tts_q.get_nowait()
     assert "Fan" in text
+    assert speech_prompt is not None
 
 
 def test_not_interruptible_blocks_all_events():
-    tts_q: queue.Queue[str] = queue.Queue()
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     mock_llm = MagicMock()
     orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=5, llm_interval=10.0)
 
@@ -95,7 +97,7 @@ def test_not_interruptible_blocks_all_events():
 
 
 def test_p3_events_accumulate_in_buffer():
-    tts_q: queue.Queue[str] = queue.Queue()
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q, llm_client=MagicMock(), llm_batch_size=5, llm_interval=10.0)
 
     for i in range(3):
@@ -107,7 +109,7 @@ def test_p3_events_accumulate_in_buffer():
 
 
 def test_llm_triggered_at_batch_size():
-    tts_q: queue.Queue[str] = queue.Queue()
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     mock_llm = MagicMock()
     mock_llm.decide.return_value = Decision(action="respond", content="感谢大家！", reason="test")
     orch = Orchestrator(tts_queue=tts_q, llm_client=mock_llm, llm_batch_size=3, llm_interval=10.0)
@@ -118,4 +120,6 @@ def test_llm_triggered_at_batch_size():
 
     mock_llm.decide.assert_called_once()
     assert not tts_q.empty()
-    assert tts_q.get_nowait() == "感谢大家！"
+    text, speech_prompt = tts_q.get_nowait()
+    assert text == "感谢大家！"
+    assert speech_prompt is None   # no speech_prompt in mock Decision

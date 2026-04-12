@@ -47,7 +47,7 @@ class Orchestrator:
 
     def __init__(
         self,
-        tts_queue: queue.Queue[str],
+        tts_queue: queue.Queue[tuple[str, str | None]],
         llm_client: object,
         llm_batch_size: int = 5,
         llm_interval: float = 10.0,
@@ -79,10 +79,10 @@ class Orchestrator:
 
         if priority == "P0":
             text = f"感谢{event.user}送出{event.gift}！太感谢了！"
-            self._enqueue_tts(text)
+            self._enqueue_tts(text, "收到大额礼物时真情流露的惊喜，语气先快后慢，情绪有起伏")
         elif priority == "P1":
             text = f"欢迎{event.user}来到直播间！"
-            self._enqueue_tts(text)
+            self._enqueue_tts(text, "轻快热情地迎接新观众，像见到老朋友，语速稍快")
         elif priority == "P2":
             self._buffer.append(event)
             self._maybe_call_llm(script_state)
@@ -112,8 +112,8 @@ class Orchestrator:
         logger.info("[LLM] action=%s reason=%s", decision.action, decision.reason)
 
         if decision.action == "respond" and decision.content:
-            self._enqueue_tts(decision.content)
+            self._enqueue_tts(decision.content, decision.speech_prompt)
 
-    def _enqueue_tts(self, text: str) -> None:
-        self._tts_queue.put(text)
+    def _enqueue_tts(self, text: str, speech_prompt: str | None = None) -> None:
+        self._tts_queue.put((text, speech_prompt))
         logger.info("[TTS] Queued: %s", text[:60])

@@ -6,31 +6,31 @@ from scripts.live.tts_player import TTSPlayer
 
 
 def test_player_consumes_items():
-    q: queue.Queue[str] = queue.Queue()
+    q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     spoken = []
 
-    def mock_speak(text: str) -> None:
-        spoken.append(text)
+    def mock_speak(text: str, speech_prompt: str | None = None) -> None:
+        spoken.append((text, speech_prompt))
         time.sleep(0.05)   # simulate short speak time
 
     player = TTSPlayer(q, speak_fn=mock_speak)
     player.start()
-    q.put("Hello world")
-    q.put("How are you")
+    q.put(("Hello world", None))
+    q.put(("How are you", "快速热情"))
     time.sleep(0.5)
     player.stop()
-    assert spoken == ["Hello world", "How are you"]
+    assert spoken == [("Hello world", None), ("How are you", "快速热情")]
 
 
 def test_is_speaking_flag():
-    q: queue.Queue[str] = queue.Queue()
+    q: queue.Queue[tuple[str, str | None]] = queue.Queue()
 
-    def slow_speak(text: str) -> None:
+    def slow_speak(text: str, speech_prompt: str | None = None) -> None:
         time.sleep(0.2)
 
     player = TTSPlayer(q, speak_fn=slow_speak)
     player.start()
-    q.put("Something long")
+    q.put(("Something long", None))
     time.sleep(0.05)
     assert player.is_speaking is True
     time.sleep(0.3)
@@ -39,8 +39,8 @@ def test_is_speaking_flag():
 
 
 def test_stop_is_idempotent():
-    q: queue.Queue[str] = queue.Queue()
-    player = TTSPlayer(q, speak_fn=lambda t: None)
+    q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    player = TTSPlayer(q, speak_fn=lambda t, p=None: None)
     player.start()
     player.stop()
     player.stop()   # should not raise
