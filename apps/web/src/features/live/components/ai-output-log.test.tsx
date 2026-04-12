@@ -1,12 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import { beforeAll, describe, expect, it, vi } from 'vitest'
 
+
 import type { AiOutput } from '../hooks/use-live-stream'
 import { AiOutputLog } from './ai-output-log'
 
-vi.mock('@/config/env', () => ({
-  env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
-}))
 
 // jsdom does not implement scrollIntoView
 beforeAll(() => {

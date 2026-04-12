@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 import { cn } from '@workspace/ui/lib/utils'
 
@@ -11,6 +11,9 @@ const SOURCE_CFG = {
   agent:  { label: 'agent',  cls: 'bg-secondary text-secondary-foreground' },
   inject: { label: 'inject', cls: 'bg-muted text-muted-foreground' },
 } as const
+
+/** Treat scroll position as "at bottom" if within this many pixels of the end. */
+const SCROLL_BOTTOM_THRESHOLD = 32
 
 interface AiOutputLogProps {
   outputs: AiOutput[]
@@ -25,11 +28,11 @@ export function AiOutputLog({ outputs }: AiOutputLogProps) {
   const bottomRef = useRef<HTMLDivElement>(null)
   const isAtBottomRef = useRef(true)
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const el = scrollRef.current
     if (!el) return
-    isAtBottomRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 32
-  }
+    isAtBottomRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < SCROLL_BOTTOM_THRESHOLD
+  }, [])
 
   useEffect(() => {
     if (isAtBottomRef.current) {
@@ -54,8 +57,8 @@ export function AiOutputLog({ outputs }: AiOutputLogProps) {
         {outputs.length === 0 ? (
           <p className="text-sm text-muted-foreground">暂无输出记录</p>
         ) : (
-          outputs.map((output) => (
-            <div key={output.ts} className="rounded-md border bg-background p-2.5 text-sm">
+          outputs.map((output, i) => (
+            <div key={`${output.ts}-${i}`} className="rounded-md border bg-background p-2.5 text-sm">
               <div className="mb-1 flex items-center gap-2">
                 <span
                   className={cn(
