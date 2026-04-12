@@ -32,7 +32,7 @@ async def test_log_tts(db):
 
 @pytest.mark.asyncio
 async def test_log_event(db):
-    await db.log_event(type="danmaku", payload={"user": "A", "text": "hi"}, ts=1001.0)
+    await db.log_event(event_type="danmaku", payload={"user": "A", "text": "hi"}, ts=1001.0)
     rows = await db._conn.execute_fetchall("SELECT type FROM event_log")
     assert rows[0][0] == "danmaku"
 
@@ -52,6 +52,7 @@ async def test_get_history_events_only(db):
     await db.log_event("danmaku", {"user": "A"}, 1001.0)
     rows = await db.get_history(limit=10, type_filter="events")
     assert len(rows) == 1
+    # type column is the event_log.type value, not overwritten by payload keys
     assert rows[0]["type"] == "danmaku"
 
 
@@ -72,3 +73,16 @@ async def test_get_history_respects_limit(db):
         await db.log_tts(f"msg{i}", None, "script", float(i))
     rows = await db.get_history(limit=3, type_filter="tts_output")
     assert len(rows) == 3
+
+
+@pytest.mark.asyncio
+async def test_get_history_limit_across_tables(db):
+    for i in range(3):
+        await db.log_tts(f"tts{i}", None, "script", float(i + 10))
+    for i in range(3):
+        await db.log_event("danmaku", {"user": f"u{i}"}, float(i))
+    rows = await db.get_history(limit=4, type_filter=None)
+    assert len(rows) == 4
+    # first 4 by ts descending: tts2(12), tts1(11), tts0(10), danmaku2(2)
+    assert rows[0]["ts"] == 12.0
+    assert rows[3]["ts"] == 2.0

@@ -42,51 +42,58 @@ class Database:
     async def close(self) -> None:
         if self._conn:
             await self._conn.close()
+            self._conn = None
 
     async def log_tts(
         self, content: str, speech_prompt: str | None, source: str, ts: float
     ) -> None:
+        if self._conn is None:
+            raise RuntimeError("Database not initialized. Call await db.init() first.")
         await self._conn.execute(
             "INSERT INTO tts_log (content, speech_prompt, source, ts) VALUES (?, ?, ?, ?)",
             (content, speech_prompt, source, ts),
         )
         await self._conn.commit()
 
-    async def log_event(self, type: str, payload: dict, ts: float) -> None:
+    async def log_event(self, event_type: str, payload: dict, ts: float) -> None:
+        if self._conn is None:
+            raise RuntimeError("Database not initialized. Call await db.init() first.")
         await self._conn.execute(
             "INSERT INTO event_log (type, payload, ts) VALUES (?, ?, ?)",
-            (type, json.dumps(payload, ensure_ascii=False), ts),
+            (event_type, json.dumps(payload, ensure_ascii=False), ts),
         )
         await self._conn.commit()
 
     async def get_history(
         self, limit: int = 100, type_filter: str | None = None
     ) -> list[dict]:
+        if self._conn is None:
+            raise RuntimeError("Database not initialized. Call await db.init() first.")
         limit = min(limit, 500)
         rows: list[dict] = []
 
         if type_filter != "events":
             async with self._conn.execute(
-                "SELECT content, speech_prompt, source, ts FROM tts_log ORDER BY ts DESC LIMIT ?",
-                (limit,),
+                "SELECT content, speech_prompt, source, ts FROM tts_log ORDER BY ts DESC",
             ) as cur:
                 async for row in cur:
                     rows.append({
                         "type": "tts_output",
-                        "content": row[0],
-                        "speech_prompt": row[1],
-                        "source": row[2],
                         "ts": row[3],
+                        "payload": {
+                            "content": row[0],
+                            "speech_prompt": row[1],
+                            "source": row[2],
+                        },
                     })
 
         if type_filter != "tts_output":
             async with self._conn.execute(
-                "SELECT type, payload, ts FROM event_log ORDER BY ts DESC LIMIT ?",
-                (limit,),
+                "SELECT type, payload, ts FROM event_log ORDER BY ts DESC",
             ) as cur:
                 async for row in cur:
                     payload = json.loads(row[1])
-                    rows.append({"type": row[0], "ts": row[2], **payload})
+                    rows.append({"type": row[0], "ts": row[2], "payload": payload})
 
         rows.sort(key=lambda r: r["ts"], reverse=True)
         return rows[:limit]
