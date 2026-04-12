@@ -37,7 +37,7 @@ class LiveScript:
     segments: list[ScriptSegment]
 
     @classmethod
-    def from_dict(cls, data: dict) -> "LiveScript":
+    def from_dict(cls, data: dict) -> LiveScript:
         meta = data.get("meta", {})
         segments = [
             ScriptSegment(
