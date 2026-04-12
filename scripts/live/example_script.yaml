@@ -1,0 +1,33 @@
+meta:
+  title: "产品介绍直播示例"
+  total_duration: 3600
+
+segments:
+  - id: "opening"
+    duration: 120
+    interruptible: true
+    text: |
+      大家好，欢迎来到今天的直播间！我是主播，今天给大家带来一款超级好用的产品。
+      先点个关注再走哦，直播间会有福利送出～
+    keywords: ["欢迎", "开场", "关注"]
+
+  - id: "product_core"
+    duration: 300
+    interruptible: false
+    text: |
+      接下来重点介绍这款产品的三大核心功能。第一个功能是……
+    keywords: ["产品", "功能", "介绍"]
+
+  - id: "qa_open"
+    duration: 180
+    interruptible: true
+    text: |
+      好，现在开放提问环节！有什么问题都可以在弹幕区留言，我来一一解答。
+    keywords: ["提问", "互动", "答疑"]
+
+  - id: "closing"
+    duration: 60
+    interruptible: true
+    text: |
+      感谢大家今天的陪伴！记得点关注，下次直播不迷路。拜拜～
+    keywords: ["结尾", "感谢", "关注"]
