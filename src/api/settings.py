@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     google_cloud_project: str | None = None
     default_script_path: str = "src/live/example_script.yaml"
     default_product_path: str = "src/live/data/product.yaml"
+    cdp_url: str = "http://localhost:9222"
 
 
 @lru_cache

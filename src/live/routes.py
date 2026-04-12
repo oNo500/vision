@@ -45,7 +45,7 @@ def start(
             product_path=body.product or s.default_product_path,
             mock=body.mock,
             project=body.project or s.google_cloud_project,
-            cdp_url=body.cdp_url,
+            cdp_url=body.cdp_url or s.cdp_url,
         )
     except SessionAlreadyRunningError as e:
         raise HTTPException(status_code=409, detail=str(e))
