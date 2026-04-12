@@ -1,5 +1,13 @@
 """Tests for DirectorAgent."""
-from scripts.live.director_agent import build_director_prompt, parse_director_response
+import queue
+import time
+from unittest.mock import MagicMock
+
+from scripts.live.director_agent import (
+    DirectorAgent,
+    build_director_prompt,
+    parse_director_response,
+)
 from scripts.live.schema import DirectorOutput, Event
 
 
@@ -72,3 +80,95 @@ def test_parse_strips_markdown_fence():
     raw = '```json\n{"content": "好的", "speech_prompt": "平稳", "source": "script", "reason": ""}\n```'
     out = parse_director_response(raw)
     assert out.content == "好的"
+
+
+def test_director_enqueues_content():
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = False
+    mock_llm = MagicMock()
+    mock_llm.generate.return_value = '{"content": "大家好！", "speech_prompt": "热情", "source": "script", "reason": "test"}'
+
+    script_state = {
+        "segment_id": "opening", "segment_text": "欢迎", "interruptible": True,
+        "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
+    }
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="【产品】测试面膜",
+        llm_generate_fn=mock_llm.generate,
+    )
+
+    director._fire(script_state, recent_events=[])
+    assert not tts_q.empty()
+    text, prompt = tts_q.get_nowait()
+    assert text == "大家好！"
+    assert prompt == "热情"
+
+
+def test_director_skips_when_speaking():
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = True
+    mock_llm = MagicMock()
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="",
+        llm_generate_fn=mock_llm.generate,
+    )
+
+    script_state = {
+        "segment_id": "opening", "segment_text": "", "interruptible": True,
+        "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
+    }
+    director._fire(script_state, recent_events=[])
+    mock_llm.generate.assert_not_called()
+    assert tts_q.empty()
+
+
+def test_director_skips_empty_content():
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = False
+    mock_llm = MagicMock()
+    mock_llm.generate.return_value = "not valid json"  # parse_director_response returns content=""
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="",
+        llm_generate_fn=mock_llm.generate,
+    )
+    script_state = {
+        "segment_id": "opening", "segment_text": "", "interruptible": True,
+        "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
+    }
+    director._fire(script_state, recent_events=[])
+    assert tts_q.empty()  # empty content is not enqueued
+
+
+def test_director_stops_cleanly():
+    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = False
+    mock_llm = MagicMock()
+    mock_llm.generate.return_value = '{"content": "测试", "speech_prompt": "平稳", "source": "script", "reason": ""}'
+
+    get_state = MagicMock(return_value={
+        "segment_id": "opening", "segment_text": "测试", "interruptible": True,
+        "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
+    })
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="",
+        llm_generate_fn=mock_llm.generate,
+    )
+    director.start(get_state_fn=get_state, get_events_fn=lambda: [])
+    time.sleep(0.2)
+    director.stop()   # must not hang

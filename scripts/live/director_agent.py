@@ -9,6 +9,9 @@ from __future__ import annotations
 
 import json
 import logging
+import queue
+import threading
+import time
 
 from scripts.live.schema import DirectorOutput, Event
 
@@ -82,3 +85,89 @@ def parse_director_response(raw: str) -> DirectorOutput:
     except (json.JSONDecodeError, KeyError, TypeError) as e:
         logger.warning("Director parse error: %s | raw=%s", e, raw[:200])
         return DirectorOutput(content="", speech_prompt="", source="script", reason=f"parse error: {e}")
+
+
+class DirectorAgent:
+    """Proactive TTS driver. Fires whenever TTS is idle or silence exceeds threshold.
+
+    Args:
+        tts_queue: Queue of (text, speech_prompt) tuples consumed by TTSPlayer.
+        tts_player: TTSPlayer instance; used to check `is_speaking`.
+        knowledge_ctx: Pre-formatted product knowledge string for LLM prompt.
+        llm_generate_fn: Callable(prompt: str) -> str. Returns raw LLM JSON text.
+    """
+
+    def __init__(
+        self,
+        tts_queue: queue.Queue[tuple[str, str | None]],
+        tts_player: object,
+        knowledge_ctx: str,
+        llm_generate_fn,
+    ) -> None:
+        self._tts_queue = tts_queue
+        self._tts_player = tts_player
+        self._knowledge_ctx = knowledge_ctx
+        self._llm_generate = llm_generate_fn
+        self._last_said = ""
+        self._last_fired = 0.0
+        self._stop_event = threading.Event()
+        self._thread: threading.Thread | None = None
+
+    def start(self, get_state_fn, get_events_fn) -> None:
+        """Start the director background thread.
+
+        Args:
+            get_state_fn: Callable() -> dict (current script state snapshot).
+            get_events_fn: Callable() -> list[Event] (recent buffered events).
+        """
+        self._thread = threading.Thread(
+            target=self._run,
+            args=(get_state_fn, get_events_fn),
+            daemon=True,
+            name="DirectorAgent",
+        )
+        self._thread.start()
+        logger.info("DirectorAgent started")
+
+    def stop(self) -> None:
+        self._stop_event.set()
+        if self._thread and self._thread.is_alive():
+            self._thread.join(timeout=5)
+
+    def _run(self, get_state_fn, get_events_fn) -> None:
+        while not self._stop_event.is_set():
+            state = get_state_fn()
+            if state.get("finished"):
+                break
+
+            queue_empty = self._tts_queue.empty()
+            not_speaking = not self._tts_player.is_speaking
+            silence_too_long = (time.monotonic() - self._last_fired) >= MAX_SILENCE_SECONDS
+
+            if (queue_empty and not_speaking) or silence_too_long:
+                self._fire(state, get_events_fn())
+
+            self._stop_event.wait(timeout=0.5)
+
+    def _fire(self, script_state: dict, recent_events: list[Event]) -> None:
+        """Build context and call LLM; enqueue result if non-empty."""
+        if self._tts_player.is_speaking:
+            return
+
+        prompt = build_director_prompt(
+            script_state, self._knowledge_ctx, recent_events, self._last_said
+        )
+        try:
+            raw = self._llm_generate(prompt)
+            output = parse_director_response(raw)
+        except Exception as e:
+            logger.error("Director LLM call failed: %s", e)
+            return
+
+        if not output.content:
+            return
+
+        self._tts_queue.put((output.content, output.speech_prompt))
+        self._last_said = output.content
+        self._last_fired = time.monotonic()
+        logger.info("[DIRECTOR] %s (%s): %s", output.source, output.reason, output.content[:60])
