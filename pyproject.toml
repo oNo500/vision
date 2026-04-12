@@ -8,6 +8,7 @@ license = { text = "MIT" }
 
 dependencies = [
     "google-cloud-aiplatform>=1.147.0",
+    "google-genai>=1.72.0",
     "python-dotenv>=1.2.2",
     "pyttsx3>=2.99",
     "pyyaml>=6.0.3",

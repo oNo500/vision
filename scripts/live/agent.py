@@ -18,11 +18,11 @@ import queue
 import signal
 import sys
 import threading
+import time
 
 from dotenv import load_dotenv
 
 load_dotenv()
-import time
 
 logging.basicConfig(
     level=logging.INFO,
