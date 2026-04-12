@@ -14,7 +14,7 @@ api:
 	uv run uvicorn src.api.main:app --reload --port 8000
 
 web:
-	pnpm --filter api-web dev
+	pnpm --filter web dev
 
 # ── Test ───────────────────────────────────────────────────────────────────────
 
@@ -28,11 +28,11 @@ test-watch:
 
 lint:
 	uv run ruff check src/
-	pnpm --filter api-web lint
+	pnpm --filter web lint
 
 format:
 	uv run ruff format src/
-	pnpm --filter api-web format
+	pnpm --filter web format
 
 # ── Help ───────────────────────────────────────────────────────────────────────
 
