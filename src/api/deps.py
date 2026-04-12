@@ -1,0 +1,19 @@
+"""FastAPI dependency injection helpers."""
+from __future__ import annotations
+
+from fastapi import Request
+from src.live.session import SessionManager
+from src.shared.db import Database
+from src.shared.event_bus import EventBus
+
+
+def get_session_manager(request: Request) -> SessionManager:
+    return request.app.state.session_manager
+
+
+def get_event_bus(request: Request) -> EventBus:
+    return request.app.state.event_bus
+
+
+def get_db(request: Request) -> Database:
+    return request.app.state.db
