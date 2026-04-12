@@ -3,9 +3,9 @@ import { cn } from '@workspace/ui/lib/utils'
 import type { AiOutput } from '../hooks/use-live-stream'
 
 const SOURCE_CFG = {
-  script: { label: 'script', cls: 'bg-blue-500/15 text-blue-600 dark:text-blue-400' },
-  agent:  { label: 'agent',  cls: 'bg-violet-500/15 text-violet-600 dark:text-violet-400' },
-  inject: { label: 'inject', cls: 'bg-orange-500/15 text-orange-600 dark:text-orange-400' },
+  script: { label: 'script', cls: 'bg-primary/15 text-primary' },
+  agent:  { label: 'agent',  cls: 'bg-secondary text-secondary-foreground' },
+  inject: { label: 'inject', cls: 'bg-muted text-muted-foreground' },
 } as const
 
 interface AiStatusCardProps {
@@ -14,7 +14,6 @@ interface AiStatusCardProps {
 }
 
 export function AiStatusCard({ latest, queueDepth }: AiStatusCardProps) {
-  const sourceCfg = latest ? SOURCE_CFG[latest.source] : null
 
   return (
     <div className="rounded-lg border bg-background p-4">
@@ -31,12 +30,10 @@ export function AiStatusCard({ latest, queueDepth }: AiStatusCardProps) {
       {latest ? (
         <div className="space-y-1.5">
           <div className="flex items-center gap-2">
-            <span className="size-1.5 shrink-0 rounded-full bg-emerald-500" />
-            {sourceCfg && (
-              <span className={cn('rounded px-1.5 py-px text-[10px] font-medium leading-none', sourceCfg.cls)}>
-                {sourceCfg.label}
-              </span>
-            )}
+            <span className="size-1.5 shrink-0 rounded-full bg-primary" />
+            <span className={cn('rounded px-1.5 py-px text-[10px] font-medium leading-none', SOURCE_CFG[latest.source].cls)}>
+              {SOURCE_CFG[latest.source].label}
+            </span>
           </div>
           <p className="line-clamp-2 text-sm leading-relaxed text-foreground">
             {latest.content}

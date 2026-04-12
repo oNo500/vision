@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 
 import type { AiOutput } from '../hooks/use-live-stream'
 import { AiStatusCard } from './ai-status-card'
@@ -18,10 +18,6 @@ const mockAiOutput: AiOutput = {
 }
 
 describe('AiStatusCard', () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-  })
-
   it('shows "等待 AI 输出…" when latest is null', () => {
     render(<AiStatusCard latest={null} queueDepth={0} />)
     expect(screen.getByText('等待 AI 输出…')).toBeInTheDocument()
