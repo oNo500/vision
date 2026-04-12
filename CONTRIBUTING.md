@@ -15,12 +15,7 @@
 ### 初始化
 
 ```bash
-# Python 环境
-uv sync
-
-# Node 环境（有 Node 脚本时）
-fnm use        # 自动读取 .nvmrc
-pnpm install
+make install
 ```
 
 ---
@@ -28,102 +23,83 @@ pnpm install
 ## 目录结构
 
 ```
-scripts/
-├── intelligence/   # 情报与学习系统脚本
-├── video/          # 视频处理脚本
-├── audio/          # 音频处理脚本
-└── live/           # 直播相关脚本
+src/
+├── api/            # FastAPI 服务（路由、依赖注入、配置）
+├── live/           # 直播控场 Agent
+├── video/          # 视频处理
+├── audio/          # 音频处理
+├── intelligence/   # 情报与学习系统
+└── shared/         # 跨模块共享（EventBus、DB）
+apps/
+└── web/            # Next.js 前端（直播控场 Web UI）
 data/               # 输入文件（不入库）
 output/             # 输出结果（不入库）
 ```
 
 ---
 
-## 新增脚本
+## 开发
 
-### Python 脚本
-
-在对应目录下新建 `.py` 文件，顶部说明脚本用途和用法：
-
-```python
-#!/usr/bin/env python3
-"""
-trim.py — 裁剪视频片段
-
-用法:
-    uv run scripts/video/trim.py input.mp4 --start 10 --end 30
-"""
-```
-
-运行方式：
+### 启动服务
 
 ```bash
-uv run scripts/video/trim.py
+make api    # FastAPI 后端 → localhost:8000
+make web    # Next.js 前端 → localhost:3000
 ```
 
-### Node 脚本
+两个命令需要分别在独立终端中运行。
 
-在对应目录下新建 `.mjs` 或 `.ts` 文件：
+### 测试
 
 ```bash
-node scripts/video/trim.mjs
-# 或
-pnpm tsx scripts/video/trim.ts
+make test          # 运行所有 Python 测试
+make test-watch    # 监听模式
+```
+
+### 代码规范
+
+```bash
+make lint      # 检查（Python + 前端）
+make format    # 自动格式化（Python + 前端）
 ```
 
 ---
 
 ## 依赖管理
 
-### 添加 Python 依赖
+### Python 依赖
 
 ```bash
 uv add yt-dlp          # 运行时依赖
 uv add --dev ruff      # 开发依赖
 ```
 
-### 添加 Node 依赖
+### Node 依赖
 
 ```bash
-pnpm add execa         # 运行时依赖
-pnpm add -D typescript # 开发依赖
+pnpm --filter web add <package>        # 前端运行时依赖
+pnpm --filter web add -D <package>     # 前端开发依赖
 ```
 
 ---
 
-## 调试
+## 新增模块
 
-### Python 脚本
+### Python 模块（`src/`）
 
-```bash
-# 直接运行，观察输出
-uv run scripts/video/trim.py
+在对应子目录新建 `.py` 文件，顶部说明用途：
 
-# 加断点（推荐）
-# 在代码中插入：
-import pdb; pdb.set_trace()
+```python
+"""
+module.py — 简短描述
 
-# 或使用 breakpoint()（Python 3.7+）
-breakpoint()
+用法:
+    uv run src/live/module.py
+"""
 ```
 
-### 查看依赖环境
+测试文件与源文件同目录放置（`foo.py` + `foo_test.py`）。
 
-```bash
-uv run python -c "import sys; print(sys.executable)"  # 确认用的是哪个 Python
-uv pip list                                            # 查看已安装的包
-```
+### 前端页面（`apps/web/`）
 
----
-
-## 代码规范
-
-Python 使用 ruff 做格式化和 lint：
-
-```bash
-make lint      # 检查
-make format    # 自动修复
-```
-
-> [!TIP]
-> 脚本放 `data/` 读输入、写结果到 `output/`，避免污染源码目录。
+路由文件放 `src/app/(dashboard)/` 路由组下，业务逻辑下沉到 `src/features/`。
