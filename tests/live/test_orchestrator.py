@@ -1,8 +1,8 @@
 """Tests for Orchestrator P0/P1 rule interrupt layer."""
 import queue
 
-from scripts.live.orchestrator import Orchestrator, classify_event
-from scripts.live.schema import Event
+from src.live.orchestrator import Orchestrator, classify_event
+from src.live.schema import Event
 
 INTERRUPTIBLE_STATE = {
     "segment_id": "opening",

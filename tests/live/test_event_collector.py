@@ -2,8 +2,8 @@
 import queue
 import time
 
-from scripts.live.event_collector import MockEventCollector
-from scripts.live.schema import Event
+from src.live.event_collector import MockEventCollector
+from src.live.schema import Event
 
 MOCK_EVENTS = [
     {"type": "enter", "user": "Alice", "is_follower": True, "t": 0.0},

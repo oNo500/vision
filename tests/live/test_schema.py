@@ -1,5 +1,5 @@
 """Tests for schema dataclasses."""
-from scripts.live.schema import Decision, Event, LiveScript, ScriptSegment
+from src.live.schema import Decision, Event, LiveScript, ScriptSegment
 
 
 def test_event_creation():

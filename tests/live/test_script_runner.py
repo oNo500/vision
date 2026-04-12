@@ -1,8 +1,8 @@
 """Tests for ScriptRunner segment advance logic."""
 import time
 
-from scripts.live.schema import LiveScript
-from scripts.live.script_runner import ScriptRunner
+from src.live.schema import LiveScript
+from src.live.script_runner import ScriptRunner
 
 SAMPLE_DATA = {
     "meta": {"title": "Test", "total_duration": 300},

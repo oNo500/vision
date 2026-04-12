@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from scripts.live.knowledge_base import KnowledgeBase
+from src.live.knowledge_base import KnowledgeBase
 
 
 SAMPLE_YAML = textwrap.dedent("""\

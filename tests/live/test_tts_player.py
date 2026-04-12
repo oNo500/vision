@@ -2,7 +2,7 @@
 import queue
 import time
 
-from scripts.live.tts_player import TTSPlayer
+from src.live.tts_player import TTSPlayer
 
 
 def test_player_consumes_items():

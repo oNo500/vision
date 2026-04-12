@@ -3,12 +3,12 @@ import queue
 import time
 from unittest.mock import MagicMock
 
-from scripts.live.director_agent import (
+from src.live.director_agent import (
     DirectorAgent,
     build_director_prompt,
     parse_director_response,
 )
-from scripts.live.schema import DirectorOutput, Event
+from src.live.schema import DirectorOutput, Event
 
 
 SCRIPT_STATE = {

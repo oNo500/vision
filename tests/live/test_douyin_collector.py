@@ -13,8 +13,8 @@ import time
 
 import pytest
 
-from scripts.live.douyin_collector import DouyinEventCollector
-from scripts.live.schema import Event
+from src.live.douyin_collector import DouyinEventCollector
+from src.live.schema import Event
 
 # Use a different port from the production hub to avoid conflicts.
 _TEST_PORT = 2537

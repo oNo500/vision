@@ -1,6 +1,6 @@
 """Tests for LLMClient prompt building and response parsing."""
-from scripts.live.llm_client import LLMClient, build_prompt
-from scripts.live.schema import Event
+from src.live.llm_client import LLMClient, build_prompt
+from src.live.schema import Event
 
 SAMPLE_STATE = {
     "segment_id": "qa_open",
