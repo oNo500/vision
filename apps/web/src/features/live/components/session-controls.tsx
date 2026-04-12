@@ -8,18 +8,25 @@ import type { useLiveSession } from '../hooks/use-live-session'
 
 type Props = ReturnType<typeof useLiveSession>
 
+function formatSeconds(s: number) {
+  const m = Math.floor(s / 60)
+  const sec = Math.floor(s % 60)
+  return `${m}:${String(sec).padStart(2, '0')}`
+}
+
 export function SessionControls({ state, loading, error, start, stop }: Props) {
   return (
-    <div className="flex flex-col gap-3 rounded-lg border bg-background p-4">
+    <div className="flex flex-col gap-4 rounded-lg border bg-background p-4">
+      {/* status row */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span
             className={cn(
               'size-2 rounded-full',
-              state.running ? 'animate-pulse bg-green-500' : 'bg-muted-foreground',
+              state.running ? 'animate-pulse bg-green-500' : 'bg-muted-foreground/40',
             )}
           />
-          <span className="text-sm font-medium">
+          <span className="text-sm font-semibold">
             {state.running ? '直播中' : '未开始'}
           </span>
         </div>
@@ -37,26 +44,23 @@ export function SessionControls({ state, loading, error, start, stop }: Props) {
         )}
       </div>
 
+      {/* stats grid */}
       {state.running && (
-        <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
-          {state.segment_id && (
-            <div>
-              <span className="font-medium text-foreground">段落</span>
-              <span className="ml-1">{state.segment_id}</span>
-            </div>
-          )}
-          {state.remaining_seconds !== undefined && (
-            <div>
-              <span className="font-medium text-foreground">剩余</span>
-              <span className="ml-1">{state.remaining_seconds}s</span>
-            </div>
-          )}
-          {state.queue_depth !== undefined && (
-            <div>
-              <span className="font-medium text-foreground">队列</span>
-              <span className="ml-1">{state.queue_depth}</span>
-            </div>
-          )}
+        <div className="grid grid-cols-3 divide-x rounded-md border text-center text-xs">
+          <div className="px-3 py-2">
+            <p className="text-muted-foreground">段落</p>
+            <p className="mt-0.5 font-medium text-foreground truncate">{state.segment_id ?? '—'}</p>
+          </div>
+          <div className="px-3 py-2">
+            <p className="text-muted-foreground">剩余</p>
+            <p className="mt-0.5 font-medium tabular-nums text-foreground">
+              {state.remaining_seconds != null ? formatSeconds(state.remaining_seconds) : '—'}
+            </p>
+          </div>
+          <div className="px-3 py-2">
+            <p className="text-muted-foreground">TTS 队列</p>
+            <p className="mt-0.5 font-medium tabular-nums text-foreground">{state.queue_depth ?? 0}</p>
+          </div>
         </div>
       )}
 
