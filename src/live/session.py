@@ -46,6 +46,7 @@ class SessionManager:
         product_path: str,
         mock: bool,
         project: str | None,
+        cdp_url: str | None = None,
     ) -> None:
         with self._lock:
             if self._running:
@@ -53,7 +54,7 @@ class SessionManager:
             self._running = True
 
         try:
-            self._build_and_start(script_path, product_path, mock, project)
+            self._build_and_start(script_path, product_path, mock, project, cdp_url)
         except Exception:
             with self._lock:
                 self._running = False
@@ -115,6 +116,7 @@ class SessionManager:
         product_path: str,
         mock: bool,
         project: str | None,
+        cdp_url: str | None = None,
     ) -> None:
         event_queue: queue.Queue[Event] = queue.Queue()
         tts_queue: queue.Queue[tuple[str, str | None]] = queue.Queue()
@@ -151,7 +153,12 @@ class SessionManager:
             speak_fn = None
 
         script_runner = ScriptRunner.from_yaml(script_path)
-        event_collector = MockEventCollector([], event_queue)
+        if cdp_url:
+            from src.live.cdp_collector import CdpEventCollector
+            event_collector = CdpEventCollector(out_queue=event_queue, cdp_url=cdp_url)
+            logger.info("Using CdpEventCollector (cdp=%s)", cdp_url)
+        else:
+            event_collector = MockEventCollector([], event_queue)
         orchestrator = Orchestrator(tts_queue=tts_queue)
         tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn)
         director = DirectorAgent(

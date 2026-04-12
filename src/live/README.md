@@ -97,6 +97,8 @@ uv run src/live/agent.py --cdp-url http://localhost:9222 --audio-device "CABLE I
 
 ## 快速开始
 
+Agent 通过 FastAPI 服务控制，不再支持独立 CLI。
+
 ### 环境准备
 
 ```bash
@@ -110,14 +112,21 @@ gcloud auth application-default login
 GOOGLE_CLOUD_PROJECT=your-project-id
 ```
 
+### 启动服务
+
+```bash
+uv run uvicorn src.api.main:app --reload --port 8000
+```
+
 ### Mock 模式（无需 GCP，本地开发）
 
 ```bash
-uv run src/live/agent.py --mock
-uv run src/live/agent.py --mock --speed 5   # 加速 5 倍回放
+curl -X POST http://localhost:8000/live/start \
+  -H "Content-Type: application/json" \
+  -d '{"mock": true}'
 ```
 
-LLM 用简单规则替代（检测问号触发回复），TTS 只打印日志，不调用 API。
+LLM 用固定回复替代，TTS 只打印日志，不调用 API。
 
 ### 真实抖音弹幕模式
 
@@ -139,22 +148,23 @@ Windows：
 
 在该 Chrome 窗口中打开抖音直播间，登录账号。
 
-**第三步：启动 Agent**
+**第三步：通过 API 启动 Agent**
 
 ```bash
-uv run src/live/agent.py --cdp-url http://localhost:9222
+curl -X POST http://localhost:8000/live/start \
+  -H "Content-Type: application/json" \
+  -d '{"cdp_url": "http://localhost:9222"}'
 ```
-
-`CdpEventCollector` 自动发现直播间 Tab。
 
 > [!NOTE]
 > proto 定义来源：[saermart/DouyinLiveWebFetcher](https://github.com/saermart/DouyinLiveWebFetcher)
 
-
 ### 生产模式（Vertex AI + Gemini TTS）
 
 ```bash
-uv run src/live/agent.py --script src/live/example_script.yaml
+curl -X POST http://localhost:8000/live/start \
+  -H "Content-Type: application/json" \
+  -d '{"script": "src/live/example_script.yaml"}'
 ```
 
 需要 `GOOGLE_CLOUD_PROJECT` 已设置且项目开启了 Vertex AI API。
@@ -201,7 +211,6 @@ uv run pytest tests/live/ -v
 
 ```
 src/live/
-├── agent.py                入口，组装并启动所有组件
 ├── session.py              SessionManager，供 FastAPI 调用的生命周期管理
 ├── routes.py               FastAPI router（/live/*），HTTP 接口层
 ├── director_agent.py       主动控场 LLM 循环，决定下一句台词
