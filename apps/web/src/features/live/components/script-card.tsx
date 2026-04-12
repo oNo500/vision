@@ -15,7 +15,8 @@ interface ScriptCardProps {
 }
 
 async function postScriptNav(direction: 'next' | 'prev'): Promise<void> {
-  await fetch(`${env.NEXT_PUBLIC_API_URL}/live/script/${direction}`, { method: 'POST' })
+  const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/script/${direction}`, { method: 'POST' })
+  if (!res.ok) throw new Error(`script nav failed: ${res.status}`)
 }
 
 export function ScriptCard({ scriptState, running }: ScriptCardProps) {
@@ -26,6 +27,8 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
     setLoading(true)
     try {
       await postScriptNav(direction)
+    } catch (err) {
+      console.error('Script navigation failed:', err)
     } finally {
       setLoading(false)
     }
@@ -33,7 +36,9 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
 
   const progress =
     scriptState && scriptState.segment_duration > 0
-      ? ((scriptState.segment_duration - scriptState.remaining_seconds) / scriptState.segment_duration) * 100
+      ? Math.max(0, Math.min(100,
+          ((scriptState.segment_duration - scriptState.remaining_seconds) / scriptState.segment_duration) * 100,
+        ))
       : 0
 
   const remaining = scriptState

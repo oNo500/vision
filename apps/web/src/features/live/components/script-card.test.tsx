@@ -1,0 +1,68 @@
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+
+import type { ScriptState } from '../hooks/use-live-stream'
+import { ScriptCard } from './script-card'
+
+vi.mock('@/config/env', () => ({
+  env: {
+    NEXT_PUBLIC_API_URL: 'http://localhost:8000',
+  },
+}))
+
+const mockScriptState: ScriptState = {
+  segment_id: 'seg-01',
+  remaining_seconds: 30,
+  segment_duration: 60,
+  finished: false,
+}
+
+describe('ScriptCard', () => {
+  beforeEach(() => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true }))
+  })
+
+  it('renders "未开始" when scriptState is null', () => {
+    render(<ScriptCard scriptState={null} running={false} />)
+    expect(screen.getByText('未开始')).toBeInTheDocument()
+  })
+
+  it('renders segment_id badge when scriptState has a segment_id', () => {
+    render(<ScriptCard scriptState={mockScriptState} running={true} />)
+    expect(screen.getByText('seg-01')).toBeInTheDocument()
+  })
+
+  it('buttons are disabled when running is false', () => {
+    render(<ScriptCard scriptState={mockScriptState} running={false} />)
+    const buttons = screen.getAllByRole('button')
+    for (const button of buttons) {
+      expect(button).toBeDisabled()
+    }
+  })
+
+  it('buttons are enabled when running is true and loading is false', () => {
+    render(<ScriptCard scriptState={mockScriptState} running={true} />)
+    const buttons = screen.getAllByRole('button')
+    for (const button of buttons) {
+      expect(button).not.toBeDisabled()
+    }
+  })
+
+  it('progress bar width is "0%" when scriptState is null', () => {
+    const { container } = render(<ScriptCard scriptState={null} running={false} />)
+    const progressBar = container.querySelector('.bg-primary')
+    expect(progressBar).toHaveStyle({ width: '0%' })
+  })
+
+  it('calls fetch with POST to correct URL when next button clicked', async () => {
+    const user = userEvent.setup()
+    render(<ScriptCard scriptState={mockScriptState} running={true} />)
+    const nextButton = screen.getByRole('button', { name: /下一段/ })
+    await user.click(nextButton)
+    expect(fetch).toHaveBeenCalledWith(
+      'http://localhost:8000/live/script/next',
+      { method: 'POST' },
+    )
+  })
+})
