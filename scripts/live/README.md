@@ -69,6 +69,32 @@ TTS 内容以 `"{speech_prompt}：{text}"` 形式传入 Gemini，语气和语速
 
 默认声音：**Sulafat**（Gemini TTS 内置，效果最接近自然带货口吻）
 
+## OBS 推流接入
+
+TTS 音频默认输出到系统默认扬声器（本地监听）。指定 `--audio-device` 后输出到虚拟音频设备，OBS 采集该设备混入直播流。
+
+```
+Gemini TTS ──→ VB-Cable（虚拟音频）──→ OBS 采集 ──→ 抖音直播
+你的麦克风 ──→ OBS 采集 ──┘
+```
+
+**第一步：安装 VB-Cable**
+
+下载安装 [VB-Audio Virtual Cable](https://vb-audio.com/Cable/)，安装后重启。设备名为 `CABLE Input`。
+
+**第二步：OBS 配置**
+
+音频混音器 → 添加音频输入采集 → 选择 `CABLE Output`（VB-Cable 的接收端）。
+
+**第三步：启动 Agent**
+
+```bash
+uv run scripts/live/agent.py --douyin --audio-device "CABLE Input"
+```
+
+> [!NOTE]
+> `--audio-device` 做模糊匹配，`"CABLE"` 也能匹配到 `CABLE Input`。不指定时使用系统默认设备（适合本地开发）。
+
 ## 快速开始
 
 ### 环境准备

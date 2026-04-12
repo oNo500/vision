@@ -13,19 +13,27 @@ from scripts.live.schema import Decision, Event
 logger = logging.getLogger(__name__)
 
 _SYSTEM_PROMPT = """\
-你是一个直播控场助手，负责决定是否回应观众互动。
+你是一个直播控场助手，负责决定是否回应观众互动，并为 TTS 提供朗读风格指引。
 
 规则：
-- 保持主播的热情、亲切风格
+- 保持主播的热情、亲切风格，像跟朋友聊天
 - 不得提及竞品或负面信息
-- 回复简短，不超过30字
+- 回复简短，不超过20字
 - 人设约束：[待填充]
 - 禁用词：[待填充]
+
+speech_prompt 填写方式：用一句话描述朗读时的情绪、语速和语气，要具体到场景。
+例如：
+- "收到大额礼物时真情流露的惊喜，语气先快后慢，情绪有起伏"
+- "轻快热情地迎接新观众，像见到老朋友，语速稍快"
+- "紧迫真诚地催单，语速偏快像跟闺蜜说悄悄话"
+- "耐心温和回答问题，语速适中像朋友聊天"
 
 请根据当前直播状态和待处理互动，返回严格的 JSON，格式：
 {
   "action": "respond" | "defer" | "skip",
-  "content": "回复文案（仅 action=respond 时填写）",
+  "content": "回复文案（仅 action=respond 时填写，不超过20字）",
+  "speech_prompt": "朗读风格描述（仅 action=respond 时填写）",
   "interrupt_script": false,
   "reason": "决策理由"
 }
@@ -86,6 +94,7 @@ class LLMClient:
             return Decision(
                 action=data.get("action", "skip"),
                 content=data.get("content"),
+                speech_prompt=data.get("speech_prompt"),
                 interrupt_script=data.get("interrupt_script", False),
                 reason=data.get("reason", ""),
             )

@@ -92,9 +92,12 @@ def main() -> None:
     parser.add_argument("--script", default=_DEFAULT_SCRIPT_YAML, help="Path to YAML script")
     parser.add_argument("--product", default=_DEFAULT_PRODUCT_YAML, help="Path to product knowledge YAML")
     parser.add_argument("--mock", action="store_true", help="Use mock LLM and mock TTS (dev mode)")
-    parser.add_argument("--douyin", action="store_true", help="Use real Douyin events via local mitmproxy hub")
+    parser.add_argument("--douyin", action="store_true", help="Use real Douyin events via DouyinBarrageGrab WS")
     parser.add_argument("--speed", type=float, default=1.0, help="Mock event replay speed multiplier")
     parser.add_argument("--project", default=os.environ.get("GOOGLE_CLOUD_PROJECT"), help="GCP project ID")
+    parser.add_argument("--audio-device", default=None, metavar="DEVICE",
+                        help="Output audio device name substring for OBS/streaming, e.g. 'CABLE Input' (VB-Cable). "
+                             "Omit to use the system default speaker (local dev)")
     args = parser.parse_args()
 
     from scripts.live.director_agent import DirectorAgent
@@ -138,7 +141,7 @@ def main() -> None:
         logger.info("Using DouyinEventCollector (hub ws://127.0.0.1:2536)")
     else:
         event_collector = MockEventCollector(_MOCK_EVENTS, event_queue, speed=args.speed)
-    tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn)
+    tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, audio_device=args.audio_device)
     orchestrator = Orchestrator(tts_queue=tts_queue)
     director = DirectorAgent(
         tts_queue=tts_queue,
