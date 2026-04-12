@@ -19,6 +19,10 @@ from src.shared.event_bus import EventBus
 logger = logging.getLogger(__name__)
 
 
+class SessionAlreadyRunningError(RuntimeError):
+    pass
+
+
 class SessionManager:
     """Manages a single live Agent session.
 
@@ -45,7 +49,7 @@ class SessionManager:
     ) -> None:
         with self._lock:
             if self._running:
-                raise RuntimeError("Session already running")
+                raise SessionAlreadyRunningError("Session already running")
             self._running = True
 
         try:

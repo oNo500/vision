@@ -39,7 +39,8 @@ async def test_start_agent(client):
 
 @pytest.mark.asyncio
 async def test_start_agent_already_running(client):
-    client.app.state.session_manager.start = MagicMock(side_effect=RuntimeError("already running"))
+    from src.live.session import SessionAlreadyRunningError
+    client.app.state.session_manager.start = MagicMock(side_effect=SessionAlreadyRunningError("Session already running"))
     resp = await client.post("/live/start", json={"mock": True})
     assert resp.status_code == 409
 

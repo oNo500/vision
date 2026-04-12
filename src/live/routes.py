@@ -6,12 +6,13 @@ import json
 import logging
 import time
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from src.api.deps import get_db, get_event_bus, get_session_manager
-from src.live.session import SessionManager
+from src.api.settings import get_settings
+from src.live.session import SessionAlreadyRunningError, SessionManager
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
 
@@ -36,7 +37,6 @@ def start(
     body: StartRequest,
     sm: SessionManager = Depends(get_session_manager),
 ) -> dict:
-    from src.api.settings import get_settings
     s = get_settings()
     try:
         sm.start(
@@ -45,9 +45,9 @@ def start(
             mock=body.mock,
             project=body.project or s.google_cloud_project,
         )
+    except SessionAlreadyRunningError as e:
+        raise HTTPException(status_code=409, detail=str(e))
     except RuntimeError as e:
-        if "already running" in str(e):
-            raise HTTPException(status_code=409, detail=str(e))
         raise HTTPException(status_code=400, detail=str(e))
     return sm.get_state()
 
@@ -93,13 +93,17 @@ async def stream(bus: EventBus = Depends(get_event_bus)):
         finally:
             bus.unsubscribe(q)
 
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 @router.get("/history")
 async def history(
-    limit: int = 100,
-    type: str | None = None,
+    limit: int = Query(default=100, ge=1, le=500),
+    type_filter: str | None = Query(default=None, alias="type"),
     db: Database = Depends(get_db),
 ) -> list[dict]:
-    return await db.get_history(limit=limit, type_filter=type)
+    return await db.get_history(limit=limit, type_filter=type_filter)
