@@ -60,7 +60,18 @@ class LiveScript:
 class Decision:
     """Output from the orchestrator decision engine."""
 
-    action: str                  # "respond" | "defer" | "skip"
-    content: str | None = None   # TTS text (required when action == "respond")
+    action: str                   # "respond" | "defer" | "skip"
+    content: str | None = None    # TTS text (required when action == "respond")
+    speech_prompt: str | None = None  # how to speak it (tone + speed hint for TTS)
     interrupt_script: bool = False
+    reason: str = ""
+
+
+@dataclass
+class DirectorOutput:
+    """Output from the DirectorAgent LLM call."""
+
+    content: str                      # next thing to say
+    speech_prompt: str                # how to say it
+    source: str = "script"            # "script" | "interaction" | "knowledge"
     reason: str = ""
