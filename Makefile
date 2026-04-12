@@ -11,6 +11,7 @@ install:
 dev: api web
 
 api:
+	open -na "Google Chrome" --args --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cdp || true
 	uv run uvicorn src.api.main:app --reload --port 8000
 
 web:
@@ -41,7 +42,7 @@ help:
 	@echo "Usage: make <target>"
 	@echo ""
 	@echo "  install      Install Python + Node dependencies"
-	@echo "  api          Start FastAPI backend  (localhost:8000)"
+	@echo "  api          Start Chrome (port 9222) + FastAPI backend (localhost:8000)"
 	@echo "  web          Start Next.js frontend (localhost:3000)"
 	@echo "  test         Run Python tests"
 	@echo "  test-watch   Run Python tests in watch mode"
