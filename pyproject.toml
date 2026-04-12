@@ -11,9 +11,11 @@ dependencies = [
     "google-cloud-texttospeech>=2.17.0",
     "google-genai>=1.72.0",
     "mitmproxy>=12.2.1",
+    "numpy>=2.4.4",
     "python-dotenv>=1.2.2",
     "pyttsx3>=2.99",
     "pyyaml>=6.0.3",
+    "sounddevice>=0.5.5",
 ]
 
 [dependency-groups]

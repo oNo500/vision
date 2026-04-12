@@ -18,7 +18,7 @@ from scripts.live.schema import DirectorOutput, Event
 logger = logging.getLogger(__name__)
 
 MAX_SILENCE_SECONDS = 15.0   # force output if TTS has been idle this long
-MIN_SPEAK_INTERVAL = 1.0    # minimum seconds between director LLM calls (prevents spamming)
+MIN_SPEAK_INTERVAL = 8.0    # minimum seconds between director LLM calls — must be > typical TTS duration
 
 _SYSTEM_PROMPT = """\
 你是一个经验丰富的带货主播，正在进行抖音直播。
@@ -111,6 +111,7 @@ class DirectorAgent:
         self._llm_generate = llm_generate_fn
         self._last_said = ""
         self._last_fired = 0.0
+        self._llm_in_flight = False   # True while a background LLM call is running
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None
 
@@ -142,34 +143,45 @@ class DirectorAgent:
                 break
 
             now = time.monotonic()
-            queue_empty = self._tts_queue.empty()
+            queue_low = self._tts_queue.qsize() <= 1   # fire when queue is almost empty
             since_last = now - self._last_fired
             cooled_down = since_last >= MIN_SPEAK_INTERVAL
             silence_too_long = since_last >= MAX_SILENCE_SECONDS
 
-            # Pre-generate next utterance while TTS is still speaking (queue empty = ready for next)
-            if (queue_empty and cooled_down) or silence_too_long:
-                self._fire(state, get_events_fn())
+            # Fire async: pre-generate when queue has ≤1 item left so the next line is ready
+            # before the current one finishes. Skip if LLM is already in flight.
+            if not self._llm_in_flight and ((queue_low and cooled_down) or silence_too_long):
+                events = get_events_fn()
+                t = threading.Thread(
+                    target=self._fire, args=(state, events), daemon=True, name="DirectorFire"
+                )
+                t.start()
 
             self._stop_event.wait(timeout=0.5)
 
     def _fire(self, script_state: dict, recent_events: list[Event]) -> None:
-        """Call LLM and enqueue next utterance. May be called while TTS is still speaking
-        to pre-buffer the next line and eliminate the gap between sentences."""
-        prompt = build_director_prompt(
-            script_state, self._knowledge_ctx, recent_events, self._last_said
-        )
+        """Call LLM in a background thread and enqueue next utterance.
+
+        Runs concurrently with TTS playback so the next line is ready the moment
+        the current one finishes — eliminating the inter-sentence gap.
+        """
+        self._llm_in_flight = True
+        self._last_fired = time.monotonic()   # mark fired immediately to enforce cooldown
         try:
+            prompt = build_director_prompt(
+                script_state, self._knowledge_ctx, recent_events, self._last_said
+            )
             raw = self._llm_generate(prompt)
             output = parse_director_response(raw)
         except Exception as e:
             logger.error("Director LLM call failed: %s", e)
             return
+        finally:
+            self._llm_in_flight = False
 
         if not output.content:
             return
 
         self._tts_queue.put((output.content, output.speech_prompt))
         self._last_said = output.content
-        self._last_fired = time.monotonic()
         logger.info("[DIRECTOR] %s (%s): %s", output.source, output.reason, output.content[:60])
