@@ -1,7 +1,8 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
+
+import Link from 'next/link'
 
 import { ChevronDownIcon, ChevronRightIcon } from 'lucide-react'
 
@@ -10,7 +11,6 @@ import { env } from '@/config/env'
 import type { LivePlan } from '@/features/live/hooks/use-plan'
 
 export function PlanPanel() {
-  const router = useRouter()
   const [plan, setPlan] = useState<LivePlan | null>(null)
   const [open, setOpen] = useState(true)
 
@@ -30,12 +30,12 @@ export function PlanPanel() {
     return (
       <div className="border-b px-5 py-2 text-sm text-muted-foreground">
         未加载方案 —{' '}
-        <button
+        <Link
+          href={appPaths.dashboard.livePlans.href}
           className="underline"
-          onClick={() => router.push(appPaths.dashboard.livePlans.href)}
         >
           前往方案库
-        </button>
+        </Link>
       </div>
     )
   }
@@ -48,14 +48,13 @@ export function PlanPanel() {
       >
         {open ? <ChevronDownIcon className="size-4" /> : <ChevronRightIcon className="size-4" />}
         当前方案：{plan.name}
-        <span className="ml-2 font-normal text-muted-foreground text-xs">
-          <button
-            className="underline"
-            onClick={(e) => { e.stopPropagation(); router.push(appPaths.dashboard.livePlans.href) }}
-          >
-            切换方案 ↗
-          </button>
-        </span>
+        <Link
+          href={appPaths.dashboard.livePlans.href}
+          className="ml-2 text-xs font-normal text-muted-foreground underline"
+          onClick={(e) => e.stopPropagation()}
+        >
+          切换方案 ↗
+        </Link>
       </button>
       {open && (
         <div className="mt-1.5 flex gap-6 text-muted-foreground text-xs pl-6">
