@@ -16,43 +16,54 @@ function formatSeconds(s: number) {
 
 export function SessionControls({ state, loading, error, start, stop }: Props) {
   return (
-    <div className="flex h-full flex-col gap-3 rounded-lg border bg-background p-4">
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2">
-          <span className={cn('size-2 rounded-full', state.running ? 'animate-pulse bg-green-500' : 'bg-muted-foreground/40')} />
-          <span className="text-sm font-semibold">{state.running ? '直播中' : '未开始'}</span>
-        </div>
-
-        {state.running && (
-          <div className="flex items-center gap-3 text-xs text-muted-foreground">
-            {state.segment_id && (
-              <span>段落 <span className="font-medium text-foreground">{state.segment_id}</span></span>
-            )}
-            {state.remaining_seconds != null && (
-              <span>剩余 <span className="tabular-nums font-medium text-foreground">{formatSeconds(state.remaining_seconds)}</span></span>
-            )}
-            {state.queue_depth != null && (
-              <span>队列 <span className="tabular-nums font-medium text-foreground">{state.queue_depth}</span></span>
-            )}
-          </div>
-        )}
-
-        <div className="ml-auto">
-          {state.running ? (
-            <Button variant="destructive" size="sm" disabled={loading} onClick={stop}>
-              <CircleStopIcon className="mr-1.5 size-3.5" />
-              停止
-            </Button>
-          ) : (
-            <Button size="sm" disabled={loading} onClick={start}>
-              <RadioIcon className="mr-1.5 size-3.5" />
-              开始监听
-            </Button>
-          )}
-        </div>
+    <div className="flex items-center gap-3">
+      {/* status indicator */}
+      <div className="flex items-center gap-2">
+        <span className={cn(
+          'size-2 rounded-full',
+          state.running ? 'animate-pulse bg-emerald-500' : 'bg-muted-foreground/30',
+        )} />
+        <span className={cn(
+          'text-sm font-medium',
+          state.running ? 'text-foreground' : 'text-muted-foreground',
+        )}>
+          {state.running ? '直播中' : '未开始'}
+        </span>
       </div>
 
-      {error && <p className="text-xs text-destructive">{error}</p>}
+      {/* meta: segment / remaining / queue */}
+      {state.running && (
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          {state.segment_id && (
+            <span className="rounded-md bg-muted px-2 py-0.5 font-mono font-medium text-foreground">
+              {state.segment_id}
+            </span>
+          )}
+          {state.remaining_seconds != null && (
+            <span>剩余 <span className="tabular-nums font-medium text-foreground">{formatSeconds(state.remaining_seconds)}</span></span>
+          )}
+          {state.queue_depth != null && (
+            <span>队列 <span className="tabular-nums font-medium text-foreground">{state.queue_depth}</span></span>
+          )}
+        </div>
+      )}
+
+      {/* action button */}
+      <div className="ml-auto">
+        {state.running ? (
+          <Button variant="destructive" size="sm" disabled={loading} onClick={stop}>
+            <CircleStopIcon className="mr-1.5 size-3.5" />
+            停止
+          </Button>
+        ) : (
+          <Button size="sm" disabled={loading} onClick={start}>
+            <RadioIcon className="mr-1.5 size-3.5" />
+            开始监听
+          </Button>
+        )}
+      </div>
+
+      {error && <span className="text-xs text-destructive">{error}</span>}
     </div>
   )
 }
