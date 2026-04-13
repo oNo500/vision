@@ -4,8 +4,12 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import aiosqlite
+
+if TYPE_CHECKING:
+    from src.live.plan_store import PlanStore
 
 logger = logging.getLogger(__name__)
 
@@ -39,12 +43,21 @@ class Database:
     def __init__(self, path: str = "vision.db") -> None:
         self._path = path
         self._conn: aiosqlite.Connection | None = None
+        self._plan_store: "PlanStore | None" = None
 
     async def init(self) -> None:
         self._conn = await aiosqlite.connect(self._path)
         await self._conn.executescript(_SCHEMA)
         await self._conn.commit()
+        from src.live.plan_store import PlanStore
+        self._plan_store = PlanStore(self._conn)
         logger.info("Database ready at %s", self._path)
+
+    @property
+    def plan_store(self) -> "PlanStore":
+        if self._plan_store is None:
+            raise RuntimeError("Database not initialized. Call await db.init() first.")
+        return self._plan_store
 
     async def close(self) -> None:
         if self._conn:

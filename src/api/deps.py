@@ -22,3 +22,7 @@ def get_event_bus(request: Request) -> EventBus:
 
 def get_db(request: Request) -> Database:
     return request.app.state.db
+
+
+def get_plan_store(request: Request):
+    return request.app.state.db.plan_store

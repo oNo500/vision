@@ -37,6 +37,7 @@ class SessionManager:
         self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
         self._strategy: str = "immediate"
+        self._active_plan: dict | None = None
 
     def start(
         self,
@@ -124,6 +125,14 @@ class SessionManager:
             raise ValueError(f"Unknown strategy: {strategy}")
         with self._lock:
             self._strategy = strategy
+
+    def load_plan(self, plan: dict) -> None:
+        with self._lock:
+            self._active_plan = plan
+
+    def get_active_plan(self) -> dict | None:
+        with self._lock:
+            return self._active_plan
 
     def get_tts_queue(self) -> "queue.Queue | None":
         with self._lock:

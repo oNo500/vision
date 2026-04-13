@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.settings import get_settings
 from src.live.routes import router as live_router
+from src.live.plan_routes import router as plan_router
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
 from src.live.session import SessionManager
@@ -45,6 +46,7 @@ def create_app() -> FastAPI:
     )
 
     app.include_router(live_router)
+    app.include_router(plan_router)
 
     @app.get("/health")
     def health() -> dict:
