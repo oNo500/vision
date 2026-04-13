@@ -4,20 +4,11 @@ import { useCallback, useEffect, useState } from 'react'
 
 import Link from 'next/link'
 
-import { Button } from '@workspace/ui/components/button'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@workspace/ui/components/sheet'
-import { toast } from '@workspace/ui/components/sonner'
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 import { appPaths } from '@/config/app-paths'
 import { env } from '@/config/env'
 import type { LivePlan } from '@/features/live/hooks/use-plan'
-import type { ScriptState } from '@/features/live/hooks/use-live-stream'
-
-async function postScriptNav(direction: 'next' | 'prev'): Promise<void> {
-  const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/script/${direction}`, { method: 'POST' })
-  if (!res.ok) throw new Error(`script nav failed: ${res.status}`)
-}
 
 function PlanPreviewSheet({ plan }: { plan: LivePlan }) {
   return (
@@ -153,14 +144,8 @@ function PlanPreviewSheet({ plan }: { plan: LivePlan }) {
   )
 }
 
-interface PlanPanelProps {
-  scriptState: ScriptState | null
-  running: boolean
-}
-
-export function PlanPanel({ scriptState, running }: PlanPanelProps) {
+export function PlanPanel() {
   const [plan, setPlan] = useState<LivePlan | null>(null)
-  const [navLoading, setNavLoading] = useState(false)
 
   const fetchActive = useCallback(async () => {
     try {
@@ -174,28 +159,6 @@ export function PlanPanel({ scriptState, running }: PlanPanelProps) {
 
   useEffect(() => { fetchActive() }, [fetchActive])
 
-  async function handleNav(direction: 'next' | 'prev') {
-    if (!running || navLoading) return
-    setNavLoading(true)
-    try {
-      await postScriptNav(direction)
-    } catch {
-      toast.error('Script navigation failed')
-    } finally {
-      setNavLoading(false)
-    }
-  }
-
-  const progress = scriptState && scriptState.segment_duration > 0
-    ? Math.max(0, Math.min(100,
-        ((scriptState.segment_duration - scriptState.remaining_seconds) / scriptState.segment_duration) * 100,
-      ))
-    : 0
-
-  const remaining = scriptState
-    ? `${Math.floor(scriptState.remaining_seconds / 60)}:${String(Math.floor(scriptState.remaining_seconds % 60)).padStart(2, '0')}`
-    : null
-
   if (!plan) {
     return (
       <div className="border-b px-5 py-2 text-sm text-muted-foreground">
@@ -208,52 +171,15 @@ export function PlanPanel({ scriptState, running }: PlanPanelProps) {
   }
 
   return (
-    <div className="border-b">
-      {/* top row: plan info + nav */}
-      <div className="flex items-center gap-3 px-5 py-2 text-sm">
-        <span className="font-medium">{plan.name}</span>
-        {scriptState?.title ? (
-          <span className="text-muted-foreground">·</span>
-        ) : null}
-        {scriptState?.title && (
-          <span className="font-medium text-primary">{scriptState.title}</span>
-        )}
-        {remaining && (
-          <span className="tabular-nums text-xs text-muted-foreground">剩余 {remaining}</span>
-        )}
-        <div className="flex items-center gap-1">
-          <Button variant="ghost" size="sm" className="h-6 px-1.5" disabled={!running || navLoading} onClick={() => handleNav('prev')}>
-            <ChevronLeftIcon className="size-3.5" />
-          </Button>
-          <Button variant="ghost" size="sm" className="h-6 px-1.5" disabled={!running || navLoading} onClick={() => handleNav('next')}>
-            <ChevronRightIcon className="size-3.5" />
-          </Button>
-        </div>
-        <PlanPreviewSheet plan={plan} />
-        <Link href={appPaths.dashboard.livePlans.href} className="ml-auto text-xs text-muted-foreground underline">
-          切换方案 ↗
-        </Link>
-      </div>
-
-      {/* progress bar — only when running */}
-      {scriptState && (
-        <div className="h-0.5 w-full bg-muted">
-          <div
-            className="h-full bg-primary transition-all duration-1000"
-            style={{ width: `${progress}%` }}
-          />
-        </div>
-      )}
-
-      {/* cue strip — only when there are cues */}
-      {scriptState?.cue && scriptState.cue.length > 0 && (
-        <div className="flex items-baseline gap-3 border-t bg-primary/5 px-5 py-1.5 text-xs">
-          <span className="shrink-0 font-semibold text-primary/70">
-            {scriptState.must_say ? '必说' : '融入'}
-          </span>
-          <span className="text-foreground">{scriptState.cue.join('　')}</span>
-        </div>
-      )}
+    <div className="flex items-center gap-3 border-b px-5 py-2 text-sm">
+      <span className="font-medium">{plan.name}</span>
+      <span className="text-xs text-muted-foreground">
+        {plan.product.name}{plan.product.price ? ` · ${plan.product.price}` : ''} · {plan.script.segments.length} 段
+      </span>
+      <PlanPreviewSheet plan={plan} />
+      <Link href={appPaths.dashboard.livePlans.href} className="ml-auto text-xs text-muted-foreground underline">
+        切换方案 ↗
+      </Link>
     </div>
   )
 }

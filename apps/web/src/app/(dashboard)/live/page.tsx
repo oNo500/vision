@@ -6,6 +6,7 @@ import { AiOutputLog } from '@/features/live/components/ai-output-log'
 import { AiStatusCard } from '@/features/live/components/ai-status-card'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
 import { PlanPanel } from '@/features/live/components/plan-panel'
+import { ScriptCard } from '@/features/live/components/script-card'
 import { SessionControls } from '@/features/live/components/session-controls'
 import { useAiSession } from '@/features/live/hooks/use-ai-session'
 import { useDanmakuSession } from '@/features/live/hooks/use-danmaku-session'
@@ -24,7 +25,7 @@ export default function LivePage() {
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       {/* plan panel */}
-      <PlanPanel scriptState={scriptState} running={aiSession.state.running} />
+      <PlanPanel />
 
       {/* top bar */}
       <div className="shrink-0 border-b px-5 py-3">
@@ -39,6 +40,11 @@ export default function LivePage() {
       {/* body — client-only to avoid SSR hydration mismatch */}
       {mounted && (
         <div className="flex min-h-0 flex-1 overflow-hidden">
+          {/* left col: script progress */}
+          <div className="flex w-64 shrink-0 flex-col overflow-hidden border-r">
+            <ScriptCard scriptState={scriptState} running={aiSession.state.running} />
+          </div>
+
           {/* center col */}
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
             <div className="shrink-0">

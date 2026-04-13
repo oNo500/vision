@@ -39,7 +39,7 @@ describe('PlanPanel', () => {
       json: async () => ({ plan: null }),
     } as Response)
 
-    render(<PlanPanel scriptState={null} running={false} />)
+    render(<PlanPanel />)
     await waitFor(() => expect(screen.getByText(/未加载方案/)).toBeInTheDocument())
     expect(screen.getByText(/前往方案库/)).toBeInTheDocument()
   })
@@ -50,25 +50,8 @@ describe('PlanPanel', () => {
       json: async () => ({ plan: mockPlan }),
     } as Response)
 
-    render(<PlanPanel scriptState={null} running={false} />)
+    render(<PlanPanel />)
     await waitFor(() => expect(screen.getByText('夏季护肤套装')).toBeInTheDocument())
     expect(screen.getByText(/切换方案/)).toBeInTheDocument()
-  })
-
-  it('shows script title and remaining time when running', async () => {
-    vi.mocked(fetch).mockResolvedValueOnce({
-      ok: true,
-      json: async () => ({ plan: mockPlan }),
-    } as Response)
-
-    const scriptState = {
-      segment_id: 's1', title: '产品介绍', goal: '讲卖点', cue: ['益生菌'], must_say: false,
-      remaining_seconds: 90, segment_duration: 300, finished: false,
-    }
-
-    render(<PlanPanel scriptState={scriptState} running={true} />)
-    await waitFor(() => expect(screen.getByText('夏季护肤套装')).toBeInTheDocument())
-    expect(screen.getByText('产品介绍')).toBeInTheDocument()
-    expect(screen.getByText(/1:30/)).toBeInTheDocument()
   })
 })

@@ -46,53 +46,46 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
     : '--:--'
 
   return (
-    <div className="rounded-lg border bg-background p-4">
-      <div className="mb-3 flex items-center justify-between">
-        <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">脚本进度</span>
-        {scriptState?.segment_id && (
-          <span className="rounded bg-muted px-2 py-0.5 font-mono text-xs text-foreground">
-            {scriptState.segment_id}
-          </span>
-        )}
-      </div>
-
-      {/* progress bar */}
-      <div className="mb-1 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-        <div
-          className="h-full rounded-full bg-primary transition-all duration-1000"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-      <div className="mb-3 text-right text-xs tabular-nums text-muted-foreground">剩余 {remaining}</div>
-
-      {/* segment info */}
-      {scriptState?.segment_id ? (
-        <div className="mb-4 space-y-2">
-          {scriptState.title && (
-            <p className="text-sm font-medium text-foreground">{scriptState.title}</p>
-          )}
-          {scriptState.goal && (
-            <p className="text-xs leading-relaxed text-muted-foreground">{scriptState.goal}</p>
-          )}
-          {scriptState.cue.length > 0 && (
-            <div className="rounded border border-dashed border-muted-foreground/40 bg-muted/50 px-3 py-2">
-              <p className="mb-1 text-xs font-medium text-muted-foreground">
-                话术{scriptState.must_say ? '（必说）' : '（融入）'}
-              </p>
-              <ul className="space-y-0.5">
-                {scriptState.cue.map((line, i) => (
-                  <li key={i} className="text-xs text-foreground">· {line}</li>
-                ))}
-              </ul>
-            </div>
-          )}
+    <div className="flex h-full flex-col gap-3 overflow-y-auto p-4">
+      {/* progress */}
+      <div>
+        <div className="mb-1 flex items-center justify-between text-xs text-muted-foreground">
+          <span>{scriptState?.title ?? '未开始'}</span>
+          <span className="tabular-nums">{remaining}</span>
         </div>
-      ) : (
-        <p className="mb-4 text-sm text-muted-foreground">未开始</p>
+        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
+          <div
+            className="h-full rounded-full bg-primary transition-all duration-1000"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+
+      {/* goal */}
+      {scriptState?.goal && (
+        <p className="text-xs leading-relaxed text-muted-foreground">{scriptState.goal}</p>
       )}
 
-      {/* nav buttons */}
-      <div className="flex gap-2">
+      {/* cue */}
+      {scriptState?.cue && scriptState.cue.length > 0 && (
+        <div className="rounded-lg border-l-2 border-primary/50 bg-primary/5 py-2 pl-3 pr-2">
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-primary/70">
+            话术 · {scriptState.must_say ? '必说' : '融入'}
+          </p>
+          <ul className="space-y-1">
+            {scriptState.cue.map((line, i) => (
+              <li key={i} className="text-xs leading-relaxed">{line}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {!scriptState && (
+        <p className="text-xs text-muted-foreground">直播开始后显示当前阶段</p>
+      )}
+
+      {/* nav */}
+      <div className="mt-auto flex gap-2">
         <Button
           variant="outline"
           size="sm"

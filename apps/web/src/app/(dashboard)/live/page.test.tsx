@@ -5,15 +5,18 @@ import type { AiOutput } from '@/features/live/hooks/use-live-stream'
 
 // Capture-prop mocks
 vi.mock('@/features/live/components/plan-panel', () => ({
-  PlanPanel: (props: { scriptState: unknown; running: boolean }) => (
-    <div data-testid="plan-panel" data-running={String(props.running)} />
-  ),
+  PlanPanel: () => <div data-testid="plan-panel" />,
 }))
 vi.mock('@/features/live/components/danmaku-feed', () => ({
   DanmakuFeed: () => <div data-testid="danmaku-feed" />,
 }))
 vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
+}))
+vi.mock('@/features/live/components/script-card', () => ({
+  ScriptCard: (props: { running: boolean }) => (
+    <div data-testid="script-card" data-running={String(props.running)} />
+  ),
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
   AiStatusCard: (props: { latest: AiOutput | null; queueDepth: number }) => (
@@ -69,6 +72,7 @@ describe('LivePage', () => {
   it('renders main layout components', () => {
     render(<LivePage />)
     expect(screen.getByTestId('plan-panel')).toBeInTheDocument()
+    expect(screen.getByTestId('script-card')).toBeInTheDocument()
     expect(screen.getByTestId('ai-status-card')).toBeInTheDocument()
     expect(screen.getByTestId('ai-output-log')).toBeInTheDocument()
     expect(screen.getByTestId('danmaku-feed')).toBeInTheDocument()
@@ -80,10 +84,9 @@ describe('LivePage', () => {
     expect(screen.getByText('直播控场')).toBeInTheDocument()
   })
 
-  it('passes session.state.running to PlanPanel', () => {
+  it('passes session.state.running to ScriptCard', () => {
     render(<LivePage />)
-    // mock returns state.running = false
-    expect(screen.getByTestId('plan-panel')).toHaveAttribute('data-running', 'false')
+    expect(screen.getByTestId('script-card')).toHaveAttribute('data-running', 'false')
   })
 
   it('passes last aiOutput as latest to AiStatusCard', () => {

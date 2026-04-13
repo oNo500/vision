@@ -37,9 +37,9 @@ describe('ScriptCard', () => {
     expect(screen.getByText('未开始')).toBeInTheDocument()
   })
 
-  it('renders segment_id badge when scriptState has a segment_id', () => {
+  it('renders segment title when scriptState is provided', () => {
     render(<ScriptCard scriptState={mockScriptState} running={true} />)
-    expect(screen.getByText('seg-01')).toBeInTheDocument()
+    expect(screen.getByText('产品介绍')).toBeInTheDocument()
   })
 
   it('buttons are disabled when running is false', () => {
