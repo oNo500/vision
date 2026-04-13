@@ -72,11 +72,14 @@ class TTSPlayer:
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
         on_play: Callable[[str, str | None], None] | None = None,
+        google_cloud_project: str | None = None,
     ) -> None:
         self._queue = in_queue
         self._speak_fn = speak_fn          # None → use Gemini persistent session
         self._audio_device = audio_device
         self._on_play = on_play            # called just before each sentence is spoken
+        # Prefer explicit project arg; fall back to env var for backwards compat
+        self._google_cloud_project = google_cloud_project or os.environ.get("GOOGLE_CLOUD_PROJECT")
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None
         self._is_speaking = False
@@ -84,7 +87,7 @@ class TTSPlayer:
 
         if speak_fn is not None:
             logger.info("TTSPlayer using custom speak_fn")
-        elif os.environ.get("GOOGLE_CLOUD_PROJECT"):
+        elif self._google_cloud_project:
             device_info = f" → {audio_device}" if audio_device else ""
             logger.info("TTSPlayer using Gemini-2.5-Flash-TTS persistent session (Sulafat%s)", device_info)
         else:
@@ -328,7 +331,7 @@ class TTSPlayer:
     def _run(self) -> None:
         if self._speak_fn is not None:
             self._run_with_speak_fn()
-        elif os.environ.get("GOOGLE_CLOUD_PROJECT"):
+        elif self._google_cloud_project:
             try:
                 import sounddevice  # noqa: F401
                 import numpy  # noqa: F401

@@ -261,7 +261,7 @@ class SessionManager:
                 "ts": time.time(),
             })
 
-        tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, on_play=_on_play)
+        tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, on_play=_on_play, google_cloud_project=project)
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
