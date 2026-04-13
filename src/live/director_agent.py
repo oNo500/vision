@@ -104,11 +104,13 @@ class DirectorAgent:
         tts_player: object,
         knowledge_ctx: str,
         llm_generate_fn,
+        urgent_queue: queue.Queue | None = None,
     ) -> None:
         self._tts_queue = tts_queue
         self._tts_player = tts_player
         self._knowledge_ctx = knowledge_ctx
         self._llm_generate = llm_generate_fn
+        self._urgent_queue = urgent_queue
         self._last_said = ""
         self._last_fired = 0.0
         self._llm_in_flight = False   # True while a background LLM call is running
@@ -167,9 +169,21 @@ class DirectorAgent:
         """
         self._llm_in_flight = True
         self._last_fired = time.monotonic()   # mark fired immediately to enforce cooldown
+
+        # Drain urgent P0/P1 events (intelligent mode)
+        urgent_events: list[Event] = []
+        if self._urgent_queue is not None:
+            while True:
+                try:
+                    urgent_events.append(self._urgent_queue.get_nowait())
+                except queue.Empty:
+                    break
+
+        all_events = urgent_events + recent_events
+
         try:
             prompt = build_director_prompt(
-                script_state, self._knowledge_ctx, recent_events, self._last_said
+                script_state, self._knowledge_ctx, all_events, self._last_said
             )
             raw = self._llm_generate(prompt)
             output = parse_director_response(raw)

@@ -154,6 +154,63 @@ def test_director_skips_empty_content():
     assert tts_q.empty()  # empty content is not enqueued
 
 
+def test_director_drains_urgent_queue_before_regular_events():
+    tts_q = queue.Queue()
+    urgent_q = queue.Queue()
+    spoken = []
+
+    def fake_llm(prompt: str) -> str:
+        import json
+        spoken.append(prompt)
+        return json.dumps({"content": "response", "speech_prompt": "", "source": "agent", "reason": ""})
+
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = False
+
+    from src.live.schema import Event
+    urgent_event = Event(type="gift", user="Alice", gift="rocket", value=100, t=0)
+    urgent_q.put(urgent_event)
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="product knowledge",
+        llm_generate_fn=fake_llm,
+        urgent_queue=urgent_q,
+    )
+
+    script_state = {"segment_id": "seg1", "segment_text": "intro", "remaining_seconds": 30, "finished": False, "keywords": [], "must_say": False}
+    director._fire(script_state, [])
+
+    assert len(spoken) == 1
+    assert "Alice" in spoken[0]  # urgent event user appears in prompt
+
+
+def test_director_without_urgent_queue_works_normally():
+    tts_q = queue.Queue()
+    spoken = []
+
+    def fake_llm(prompt: str) -> str:
+        import json
+        spoken.append(prompt)
+        return json.dumps({"content": "hello", "speech_prompt": "", "source": "script", "reason": ""})
+
+    mock_tts = MagicMock()
+    mock_tts.is_speaking = False
+
+    director = DirectorAgent(
+        tts_queue=tts_q,
+        tts_player=mock_tts,
+        knowledge_ctx="ctx",
+        llm_generate_fn=fake_llm,
+        urgent_queue=None,
+    )
+
+    script_state = {"segment_id": "seg1", "segment_text": "text", "remaining_seconds": 30, "finished": False, "keywords": [], "must_say": False}
+    director._fire(script_state, [])
+    assert len(spoken) == 1
+
+
 def test_director_stops_cleanly():
     tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
     mock_tts = MagicMock()
