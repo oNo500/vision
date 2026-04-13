@@ -169,10 +169,15 @@ class DirectorAgent:
 
             now = time.monotonic()
             queue_depth = self._tts_queue.qsize()
-            queue_needs_fill = queue_depth < TARGET_QUEUE_DEPTH
+            with self._count_lock:
+                in_flight = self._llm_in_flight_count
+            # Count in-flight LLM calls as "pending sentences" to avoid over-scheduling.
+            # Without this, concurrent LLM calls all see qsize < TARGET and keep firing.
+            effective_depth = queue_depth + in_flight
+            queue_needs_fill = effective_depth < TARGET_QUEUE_DEPTH
             silence_too_long = (now - self._last_silence_check) >= MAX_SILENCE_SECONDS and queue_depth == 0
 
-            # Fire async: keep the TTS queue filled to TARGET_QUEUE_DEPTH.
+            # Fire async: keep effective queue depth at TARGET_QUEUE_DEPTH.
             # Allow up to MAX_CONCURRENT_LLM parallel calls; semaphore blocks if saturated.
             can_acquire = self._llm_semaphore.acquire(blocking=False)
             if can_acquire and (queue_needs_fill or silence_too_long):
