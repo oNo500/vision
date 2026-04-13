@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
+import { toast } from '@workspace/ui/components/sonner'
+
 import { env } from '@/config/env'
 
 type SessionState = {
@@ -44,12 +46,15 @@ export function useLiveSession() {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(data.detail ?? 'Failed to start')
+        const msg = (data as { detail?: string }).detail ?? 'Failed to start'
+        setError(msg)
+        toast.error(msg)
       } else {
         setState(data)
       }
     } catch {
       setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
     } finally {
       setLoading(false)
     }
@@ -64,12 +69,15 @@ export function useLiveSession() {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(data.detail ?? 'Failed to stop')
+        const msg = (data as { detail?: string }).detail ?? 'Failed to stop'
+        setError(msg)
+        toast.error(msg)
       } else {
         setState(data)
       }
     } catch {
       setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
     } finally {
       setLoading(false)
     }

@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
+import { toast } from '@workspace/ui/components/sonner'
+
 import { env } from '@/config/env'
 
 type AiSessionState = {
@@ -40,9 +42,17 @@ export function useAiSession() {
         body: JSON.stringify({}),
       })
       const data = await res.json()
-      if (!res.ok) setError((data as { detail?: string }).detail ?? 'Failed to start')
-      else setState(data as AiSessionState)
-    } catch { setError('Cannot reach backend') }
+      if (!res.ok) {
+        const msg = (data as { detail?: string }).detail ?? 'Failed to start'
+        setError(msg)
+        toast.error(msg)
+      } else {
+        setState(data as AiSessionState)
+      }
+    } catch {
+      setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
+    }
     finally { setLoading(false) }
   }, [])
 
@@ -52,9 +62,17 @@ export function useAiSession() {
     try {
       const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/session/stop`, { method: 'POST' })
       const data = await res.json()
-      if (!res.ok) setError((data as { detail?: string }).detail ?? 'Failed to stop')
-      else setState(data as AiSessionState)
-    } catch { setError('Cannot reach backend') }
+      if (!res.ok) {
+        const msg = (data as { detail?: string }).detail ?? 'Failed to stop'
+        setError(msg)
+        toast.error(msg)
+      } else {
+        setState(data as AiSessionState)
+      }
+    } catch {
+      setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
+    }
     finally { setLoading(false) }
   }, [])
 

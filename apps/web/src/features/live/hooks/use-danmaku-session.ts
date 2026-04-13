@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
+import { toast } from '@workspace/ui/components/sonner'
+
 import { env } from '@/config/env'
 
 type DanmakuSessionState = {
@@ -37,9 +39,17 @@ export function useDanmakuSession() {
         body: JSON.stringify({}),
       })
       const data = await res.json()
-      if (!res.ok) setError((data as { detail?: string }).detail ?? 'Failed to start danmaku')
-      else setState(data as DanmakuSessionState)
-    } catch { setError('Cannot reach backend') }
+      if (!res.ok) {
+        const msg = (data as { detail?: string }).detail ?? 'Failed to start danmaku'
+        setError(msg)
+        toast.error(msg)
+      } else {
+        setState(data as DanmakuSessionState)
+      }
+    } catch {
+      setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
+    }
     finally { setLoading(false) }
   }, [])
 
@@ -49,9 +59,17 @@ export function useDanmakuSession() {
     try {
       const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/danmaku/stop`, { method: 'POST' })
       const data = await res.json()
-      if (!res.ok) setError((data as { detail?: string }).detail ?? 'Failed to stop danmaku')
-      else setState(data as DanmakuSessionState)
-    } catch { setError('Cannot reach backend') }
+      if (!res.ok) {
+        const msg = (data as { detail?: string }).detail ?? 'Failed to stop danmaku'
+        setError(msg)
+        toast.error(msg)
+      } else {
+        setState(data as DanmakuSessionState)
+      }
+    } catch {
+      setError('Cannot reach backend')
+      toast.error('Cannot reach backend')
+    }
     finally { setLoading(false) }
   }, [])
 
