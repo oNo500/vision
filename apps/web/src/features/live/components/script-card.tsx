@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import { Button } from '@workspace/ui/components/button'
+import { toast } from '@workspace/ui/components/sonner'
 import { cn } from '@workspace/ui/lib/utils'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
@@ -27,8 +28,8 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
     setLoading(true)
     try {
       await postScriptNav(direction)
-    } catch (err) {
-      console.error('Script navigation failed:', err)
+    } catch {
+      toast.error('Script navigation failed')
     } finally {
       setLoading(false)
     }

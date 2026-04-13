@@ -11,6 +11,10 @@ vi.mock('@/config/env', () => ({
   },
 }))
 
+vi.mock('@workspace/ui/components/sonner', () => ({
+  toast: { error: vi.fn() },
+}))
+
 const mockScriptState: ScriptState = {
   segment_id: 'seg-01',
   remaining_seconds: 30,
@@ -20,6 +24,7 @@ const mockScriptState: ScriptState = {
 
 describe('ScriptCard', () => {
   beforeEach(() => {
+    vi.clearAllMocks()
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true }))
   })
 
@@ -64,5 +69,31 @@ describe('ScriptCard', () => {
       'http://localhost:8000/live/script/next',
       { method: 'POST' },
     )
+  })
+
+  it('shows error toast when script navigation fails with non-ok response', async () => {
+    const { toast } = await import('@workspace/ui/components/sonner')
+    const user = userEvent.setup()
+
+    vi.mocked(fetch).mockResolvedValue({ ok: false } as Response)
+
+    render(<ScriptCard scriptState={mockScriptState} running={true} />)
+    const nextButton = screen.getByRole('button', { name: /下一段/ })
+    await user.click(nextButton)
+
+    expect(toast.error).toHaveBeenCalledOnce()
+  })
+
+  it('shows error toast when script navigation throws (network error)', async () => {
+    const { toast } = await import('@workspace/ui/components/sonner')
+    const user = userEvent.setup()
+
+    vi.mocked(fetch).mockRejectedValue(new Error('Network error'))
+
+    render(<ScriptCard scriptState={mockScriptState} running={true} />)
+    const prevButton = screen.getByRole('button', { name: /上一段/ })
+    await user.click(prevButton)
+
+    expect(toast.error).toHaveBeenCalledOnce()
   })
 })
