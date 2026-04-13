@@ -27,7 +27,8 @@ logger = logging.getLogger(__name__)
 
 _DEFAULT_SPEECH_PROMPT = "带货主播收到互动时真情流露的回应，语气自然有情绪起伏，像在跟朋友聊天"
 _SAMPLE_RATE = 24000
-_SILENCE_FRAMES = 2400   # 100ms silence between sentences (at 24 kHz)
+_SILENCE_FRAMES = 480    # 20ms micro-gap between sentences (at 24 kHz)
+_FADE_FRAMES = 240       # 10ms fade-in/out to avoid click/pop at splice boundaries
 _SENTINEL = object()
 
 
@@ -267,6 +268,12 @@ class TTSPlayer:
 
             import numpy as np
             pcm = np.frombuffer(response.audio_content, dtype=np.int16).astype(np.float32) / 32768.0
+            # Fade in/out to prevent click/pop at splice boundaries caused by
+            # non-zero sample values at the start/end of each TTS clip.
+            if len(pcm) > _FADE_FRAMES * 2:
+                fade = np.linspace(0.0, 1.0, _FADE_FRAMES, dtype=np.float32)
+                pcm[:_FADE_FRAMES] *= fade
+                pcm[-_FADE_FRAMES:] *= fade[::-1]
             duration = len(pcm) / _SAMPLE_RATE
             logger.info("[TTS] Synthesized %.1fs: %s", duration, item.text[:60])
 
@@ -291,6 +298,10 @@ class TTSPlayer:
 
         device_idx = self._resolve_device_idx()
         silence = np.zeros(_SILENCE_FRAMES, dtype=np.float32)
+        # One blocksize of silence written during idle to prevent buffer underrun.
+        # Without this, the OutputStream drains when synthesis is slower than expected
+        # and the hardware reports an underrun → audible pop/glitch.
+        keepalive = np.zeros(960, dtype=np.float32)
 
         stream = sd.OutputStream(
             samplerate=_SAMPLE_RATE,
@@ -306,6 +317,7 @@ class TTSPlayer:
                 try:
                     item = self._pcm_queue.get(timeout=0.2)
                 except queue.Empty:
+                    stream.write(keepalive)
                     continue
                 if item is _SENTINEL:
                     self._pcm_queue.task_done()
