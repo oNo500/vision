@@ -99,6 +99,9 @@ async def delete_plan(
     active = sm.get_active_plan()
     if active and active.get("id") == plan_id:
         raise HTTPException(status_code=409, detail="Cannot delete the currently loaded plan")
+    plan = await store.get(plan_id)
+    if plan is None:
+        raise HTTPException(status_code=404, detail="Plan not found")
     await store.delete(plan_id)
     return Response(status_code=204)
 
@@ -118,4 +121,4 @@ async def load_plan(
     if plan is None:
         raise HTTPException(status_code=404, detail="Plan not found")
     sm.load_plan(plan)
-    return plan
+    return {"plan": plan}

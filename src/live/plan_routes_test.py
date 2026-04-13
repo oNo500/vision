@@ -75,3 +75,42 @@ def test_active_plan_none_initially(client: TestClient):
     resp = client.get("/live/plans/active")
     assert resp.status_code == 200
     assert resp.json() == {"plan": None}
+
+
+def test_load_plan(client: TestClient):
+    plan = _create_plan(client)
+    resp = client.post(f"/live/plans/{plan['id']}/load")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["plan"]["id"] == plan["id"]
+    # Now GET /active should return the loaded plan
+    active_resp = client.get("/live/plans/active")
+    assert active_resp.status_code == 200
+    assert active_resp.json()["plan"]["id"] == plan["id"]
+
+
+def test_load_plan_not_found(client: TestClient):
+    resp = client.post("/live/plans/nonexistent/load")
+    assert resp.status_code == 404
+
+
+def test_delete_active_plan_returns_409(client: TestClient):
+    plan = _create_plan(client)
+    client.post(f"/live/plans/{plan['id']}/load")
+    resp = client.delete(f"/live/plans/{plan['id']}")
+    assert resp.status_code == 409
+
+
+def test_delete_nonexistent_plan_returns_404(client: TestClient):
+    resp = client.delete("/live/plans/nonexistent")
+    assert resp.status_code == 404
+
+
+def test_update_nonexistent_plan_returns_404(client: TestClient):
+    resp = client.put("/live/plans/nonexistent", json={
+        "name": "X",
+        "product": {"name": "", "description": "", "price": "", "highlights": [], "faq": []},
+        "persona": {"name": "", "style": "", "catchphrases": [], "forbidden_words": []},
+        "script": {"segments": []},
+    })
+    assert resp.status_code == 404
