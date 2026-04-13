@@ -137,11 +137,59 @@ class ScriptSegment:
 
 选型理由：用户指定，该库由 Atlassian 维护，无依赖、体积小、性能好，专为列表排序设计。
 
-**实现要点：**
-- 每个 segment 卡片左侧放 drag handle（`⠿` 图标），只有拖 handle 才触发拖拽，避免与卡片内输入框冲突
-- 拖拽结束后调用 `savePlan` 持久化新顺序
-- 拖拽中显示半透明占位符，提示插入位置
-- 安装：`pnpm add @atlaskit/pragmatic-drag-and-drop` （仅 `apps/web`）
+**安装（仅 `apps/web`）：**
+
+```bash
+pnpm add @atlaskit/pragmatic-drag-and-drop
+pnpm add @atlaskit/pragmatic-drag-and-drop-hitbox
+pnpm add @atlaskit/pragmatic-drag-and-drop-react-drop-indicator
+```
+
+**实现模式：**
+
+每个 segment 卡片用 `useEffect` + `combine` 同时注册 `draggable` 和 `dropTargetForElements`，drag handle 元素单独绑定 `dragHandle` ref 限制拖拽触发区域，避免与卡片内 input/textarea 冲突。
+
+列表容器（segments wrapper）注册 `monitorForElements`，在 `onDrop` 回调中用 `reorderWithEdge` 计算新顺序，然后调用 `savePlan` 持久化。
+
+拖拽中显示 `DropIndicator`（来自 `@atlaskit/pragmatic-drag-and-drop-react-drop-indicator/list-item`）作为插入位置提示。
+
+```tsx
+// 每个卡片
+useEffect(() => {
+  return combine(
+    draggable({
+      element: cardRef.current,
+      dragHandle: handleRef.current,   // 只有 handle 区域能触发拖拽
+      getInitialData: () => ({ index }),
+    }),
+    dropTargetForElements({
+      element: cardRef.current,
+      getData: ({ input, element }) =>
+        attachInstruction(data, { element, input, operations: { 'reorder-before': 'available', 'reorder-after': 'available' }, axis: 'vertical' }),
+    }),
+  );
+}, [index]);
+
+// 列表容器
+useEffect(() => {
+  return monitorForElements({
+    onDrop({ source, location }) {
+      const target = location.current.dropTargets[0];
+      if (!target) return;
+      const instruction = extractInstruction(target.data);
+      if (!instruction) return;
+      const reordered = reorderWithEdge({
+        list: segments,
+        startIndex: source.data.index,
+        indexOfTarget: target.data.index,
+        closestEdgeOfTarget: instruction.operation === 'reorder-before' ? 'top' : 'bottom',
+        axis: 'vertical',
+      });
+      savePlan({ ...plan, script: { segments: reordered } });
+    },
+  });
+}, [segments]);
+```
 
 ## Scope
 
