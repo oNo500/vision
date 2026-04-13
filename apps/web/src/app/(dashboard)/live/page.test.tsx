@@ -3,7 +3,11 @@ import { describe, expect, it, vi } from 'vitest'
 
 import type { AiOutput } from '@/features/live/hooks/use-live-stream'
 
-// Capture-prop mocks
+vi.mock('@/features/live/components/plan-sidebar', () => ({
+  PlanSidebar: (props: { running: boolean }) => (
+    <div data-testid="plan-sidebar" data-running={String(props.running)} />
+  ),
+}))
 vi.mock('@/features/live/components/plan-panel', () => ({
   PlanPanel: () => <div data-testid="plan-panel" />,
 }))
@@ -12,11 +16,6 @@ vi.mock('@/features/live/components/danmaku-feed', () => ({
 }))
 vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
-}))
-vi.mock('@/features/live/components/script-card', () => ({
-  ScriptCard: (props: { running: boolean }) => (
-    <div data-testid="script-card" data-running={String(props.running)} />
-  ),
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
   AiStatusCard: (props: { latest: AiOutput | null; queueDepth: number }) => (
@@ -62,6 +61,17 @@ vi.mock('@/features/live/hooks/use-live-stream', () => ({
     scriptState: null,
   }),
 }))
+vi.mock('@/features/live/hooks/use-plan-active', () => ({
+  usePlanActive: () => ({
+    id: '1',
+    name: '示例方案',
+    created_at: '',
+    updated_at: '',
+    product: { name: '护肤套装', description: '', price: '299', highlights: [], faq: [] },
+    persona: { name: '小美', style: '', catchphrases: [], forbidden_words: [] },
+    script: { segments: [] },
+  }),
+}))
 vi.mock('@/config/env', () => ({
   env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
 }))
@@ -71,8 +81,7 @@ import LivePage from './page'
 describe('LivePage', () => {
   it('renders main layout components', () => {
     render(<LivePage />)
-    expect(screen.getByTestId('plan-panel')).toBeInTheDocument()
-    expect(screen.getByTestId('script-card')).toBeInTheDocument()
+    expect(screen.getByTestId('plan-sidebar')).toBeInTheDocument()
     expect(screen.getByTestId('ai-status-card')).toBeInTheDocument()
     expect(screen.getByTestId('ai-output-log')).toBeInTheDocument()
     expect(screen.getByTestId('danmaku-feed')).toBeInTheDocument()
@@ -84,14 +93,13 @@ describe('LivePage', () => {
     expect(screen.getByText('直播控场')).toBeInTheDocument()
   })
 
-  it('passes session.state.running to ScriptCard', () => {
+  it('passes session.state.running to PlanSidebar', () => {
     render(<LivePage />)
-    expect(screen.getByTestId('script-card')).toHaveAttribute('data-running', 'false')
+    expect(screen.getByTestId('plan-sidebar')).toHaveAttribute('data-running', 'false')
   })
 
   it('passes last aiOutput as latest to AiStatusCard', () => {
     render(<LivePage />)
-    // empty outputs → latest is null
     expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-has-latest', 'false')
   })
 

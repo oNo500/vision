@@ -6,12 +6,13 @@ import { AiOutputLog } from '@/features/live/components/ai-output-log'
 import { AiStatusCard } from '@/features/live/components/ai-status-card'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
 import { PlanPanel } from '@/features/live/components/plan-panel'
-import { ScriptCard } from '@/features/live/components/script-card'
+import { PlanSidebar } from '@/features/live/components/plan-sidebar'
 import { SessionControls } from '@/features/live/components/session-controls'
 import { useAiSession } from '@/features/live/hooks/use-ai-session'
 import { useDanmakuSession } from '@/features/live/hooks/use-danmaku-session'
 import { useStrategy } from '@/features/live/hooks/use-strategy'
 import { useLiveStream } from '@/features/live/hooks/use-live-stream'
+import { usePlanActive } from '@/features/live/hooks/use-plan-active'
 
 export default function LivePage() {
   const [mounted, setMounted] = useState(false)
@@ -21,12 +22,10 @@ export default function LivePage() {
   const danmakuSession = useDanmakuSession()
   const strategy = useStrategy()
   const { events, connected, onlineCount, aiOutputs, scriptState } = useLiveStream()
+  const plan = usePlanActive()
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-      {/* plan panel */}
-      <PlanPanel />
-
       {/* top bar */}
       <div className="shrink-0 border-b px-5 py-3">
         <div className="flex items-center gap-4">
@@ -40,10 +39,15 @@ export default function LivePage() {
       {/* body — client-only to avoid SSR hydration mismatch */}
       {mounted && (
         <div className="flex min-h-0 flex-1 overflow-hidden">
-          {/* left col: script progress */}
-          <div className="flex w-64 shrink-0 flex-col overflow-hidden border-r">
-            <ScriptCard scriptState={scriptState} running={aiSession.state.running} />
-          </div>
+          {/* left col: plan sidebar */}
+          {plan && (
+            <PlanSidebar plan={plan} scriptState={scriptState} running={aiSession.state.running} />
+          )}
+          {!plan && (
+            <div className="flex w-64 shrink-0 items-center justify-center border-r text-xs text-muted-foreground">
+              <PlanPanel />
+            </div>
+          )}
 
           {/* center col */}
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
