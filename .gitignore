@@ -37,3 +37,4 @@ data/*
 # Editor
 .vscode/settings.json
 .idea/
+vision.db
