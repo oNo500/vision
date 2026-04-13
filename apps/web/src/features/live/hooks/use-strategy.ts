@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
+import { toast } from '@workspace/ui/components/sonner'
+
 import { env } from '@/config/env'
 
 export type Strategy = 'immediate' | 'intelligent'
@@ -26,8 +28,12 @@ export function useStrategy() {
       if (res.ok) {
         const data = await res.json() as { strategy: Strategy }
         setStrategyState(data.strategy)
+      } else {
+        toast.error('Strategy update failed')
       }
-    } catch { /* ignore */ }
+    } catch {
+      toast.error('Cannot reach backend')
+    }
   }, [])
 
   return { strategy, setStrategy }
