@@ -16,6 +16,34 @@ from src.shared.event_bus import EventBus
 logger = logging.getLogger(__name__)
 
 
+def _build_persona_ctx(persona: dict) -> str:
+    """Build a persona context string for the director prompt."""
+    parts = [f"主播：{persona.get('name', '')}"]
+    if persona.get("style"):
+        parts.append(f"风格：{persona['style']}")
+    if persona.get("catchphrases"):
+        parts.append(f"口头禅：{'、'.join(persona['catchphrases'])}")
+    if persona.get("forbidden_words"):
+        parts.append(f"禁用词：{'、'.join(persona['forbidden_words'])}")
+    return " | ".join(parts)
+
+
+def _build_knowledge_ctx_from_plan(product: dict) -> str:
+    """Build a knowledge context string from plan product data."""
+    lines = [
+        f"【产品】{product.get('name', '')} — {product.get('description', '')}",
+        f"【价格】¥{product.get('price', '')}",
+        "【亮点】",
+    ]
+    for h in product.get("highlights", []):
+        lines.append(f"  - {h}")
+    lines.append("【常见问题】")
+    for faq in product.get("faq", []):
+        lines.append(f"  Q: {faq.get('question', '')}")
+        lines.append(f"  A: {faq.get('answer', '')}")
+    return "\n".join(lines)
+
+
 class SessionAlreadyRunningError(RuntimeError):
     pass
 
@@ -154,7 +182,33 @@ class SessionManager:
         self._tts_queue = tts_queue
         self._urgent_queue = urgent_queue
 
-        kb = KnowledgeBase(product_path)
+        # Derive context from loaded plan or fall back to file-based sources
+        active_plan = self._active_plan
+        if active_plan:
+            knowledge_ctx = _build_knowledge_ctx_from_plan(active_plan.get("product", {}))
+            persona_ctx = _build_persona_ctx(active_plan.get("persona", {}))
+            from src.live.schema import LiveScript, ScriptSegment
+            segments_data = active_plan.get("script", {}).get("segments", [])
+            live_script = LiveScript(
+                title=active_plan["name"],
+                total_duration=sum(s.get("duration", 0) for s in segments_data),
+                segments=[
+                    ScriptSegment(
+                        id=s["id"],
+                        duration=s["duration"],
+                        text=s["text"],
+                        interruptible=not s.get("must_say", False),
+                        keywords=s.get("keywords", []),
+                    )
+                    for s in segments_data
+                ],
+            )
+            script_runner = ScriptRunner(live_script)
+        else:
+            kb = KnowledgeBase(product_path)
+            knowledge_ctx = kb.context_for_prompt()
+            persona_ctx = ""
+            script_runner = ScriptRunner.from_yaml(script_path)
 
         if mock:
             import json as _json
@@ -184,8 +238,6 @@ class SessionManager:
         else:
             speak_fn = None
 
-        script_runner = ScriptRunner.from_yaml(script_path)
-
         def get_events_fn() -> list:
             return []  # No Orchestrator — DanmakuManager wires this separately
 
@@ -193,9 +245,10 @@ class SessionManager:
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
-            knowledge_ctx=kb.context_for_prompt(),
+            knowledge_ctx=knowledge_ctx,
             llm_generate_fn=llm_generate,
             urgent_queue=urgent_queue,
+            persona_ctx=persona_ctx,
         )
 
         original_tts_put = tts_queue.put
