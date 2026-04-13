@@ -89,7 +89,7 @@ class TTSPlayer:
             logger.info("TTSPlayer using custom speak_fn")
         elif self._google_cloud_project:
             device_info = f" → {audio_device}" if audio_device else ""
-            logger.info("TTSPlayer using Gemini-2.5-Flash-TTS persistent session (Sulafat%s)", device_info)
+            logger.info("TTSPlayer using Cloud TTS non-streaming (cmn-CN-Chirp3-HD-Sulafat%s)", device_info)
         else:
             logger.info("TTSPlayer using system TTS fallback")
 
@@ -162,11 +162,12 @@ class TTSPlayer:
     # ------------------------------------------------------------------
 
     def _run_gemini(self) -> None:
-        """Gemini TTS: single gRPC session + single OutputStream for all sentences.
+        """Gemini TTS: one synthesize_speech call per sentence, play with sd.play()+sd.wait().
 
-        Architecture: _requests() generator reads directly from in_queue, so gRPC
-        receives each sentence the moment it arrives — no intermediate _pipe buffer.
-        This avoids the 5s idle timeout that fires when _pipe empties between sentences.
+        Each sentence is a separate API call, returning complete PCM before playback starts.
+        This gives exact sentence boundaries: qsize() is the true count of unplayed sentences,
+        and sd.wait() fires precisely when each sentence finishes.
+        Latency (~300-500ms per call) is hidden by DirectorAgent's pre-generation queue.
         """
         import numpy as np
         import sounddevice as sd
@@ -174,78 +175,50 @@ class TTSPlayer:
 
         client = texttospeech.TextToSpeechClient()
         device_idx = self._resolve_device_idx()
-        voice = "Sulafat"
 
         while not self._stop_event.is_set():
-            # Each iteration = one gRPC session (restarted on error / after SENTINEL)
-            sd_stream = sd.OutputStream(
-                samplerate=_SAMPLE_RATE,
-                channels=1,
-                dtype="int16",
-                device=device_idx,
-                blocksize=960,
-            )
-            sd_stream.start()
+            try:
+                text, speech_prompt = self._queue.get(timeout=0.2)
+            except queue.Empty:
+                continue
+            if text is _SENTINEL:
+                self._queue.task_done()
+                break
 
-            _session_done = threading.Event()
-            error_holder: list[Exception | None] = [None]
-
-            # _requests() drives the gRPC session from a background thread.
-            # It reads directly from in_queue so gRPC never idles between sentences.
-            def _requests(stop=self._stop_event):
-                yield texttospeech.StreamingSynthesizeRequest(
-                    streaming_config=texttospeech.StreamingSynthesizeConfig(
-                        voice=texttospeech.VoiceSelectionParams(
-                            name=voice,
-                            language_code="cmn-CN",
-                            model_name=_TTS_MODEL,
-                        )
-                    )
+            logger.info("[TTS] Synthesizing: %s", text[:60])
+            try:
+                response = client.synthesize_speech(
+                    input=texttospeech.SynthesisInput(text=text),
+                    voice=texttospeech.VoiceSelectionParams(
+                        language_code="cmn-CN",
+                        name="cmn-CN-Chirp3-HD-Sulafat",
+                    ),
+                    audio_config=texttospeech.AudioConfig(
+                        audio_encoding=texttospeech.AudioEncoding.LINEAR16,
+                        sample_rate_hertz=_SAMPLE_RATE,
+                    ),
                 )
-                while not stop.is_set():
-                    try:
-                        text, speech_prompt = self._queue.get(timeout=0.5)
-                    except queue.Empty:
-                        continue
-                    if text is _SENTINEL:
-                        self._queue.task_done()
-                        return
-                    logger.info("[TTS] Speaking: %s", text[:60])
-                    if self._on_play:
-                        self._on_play(text, speech_prompt)
-                    with self._lock:
-                        self._is_speaking = True
-                    yield texttospeech.StreamingSynthesizeRequest(
-                        input=texttospeech.StreamingSynthesisInput(
-                            text=text,
-                            prompt=speech_prompt or _DEFAULT_SPEECH_PROMPT,
-                        )
-                    )
-                    self._queue.task_done()
-                    with self._lock:
-                        self._is_speaking = False
-                    logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
+            except Exception as e:
+                logger.error("[TTS] Synthesis failed: %s", e)
+                self._queue.task_done()
+                continue
 
-            def _consume(holder=error_holder):
-                try:
-                    for response in client.streaming_synthesize(_requests()):
-                        chunk = np.frombuffer(response.audio_content, dtype=np.int16)
-                        sd_stream.write(chunk)
-                except Exception as e:
-                    holder[0] = e
-                finally:
-                    _session_done.set()
+            pcm = np.frombuffer(response.audio_content, dtype=np.int16).astype(np.float32) / 32768.0
+            duration = len(pcm) / _SAMPLE_RATE
+            logger.info("[TTS] Speaking (%.1fs): %s", duration, text[:60])
 
-            consumer = threading.Thread(target=_consume, daemon=True, name="TTSConsumer")
-            consumer.start()
-            _session_done.wait()
-
-            sd_stream.stop()
-            sd_stream.close()
-
-            if error_holder[0] and not self._stop_event.is_set():
-                logger.warning("TTS session error: %s — restarting", error_holder[0])
-                self._stop_event.wait(timeout=1.0)
+            if self._on_play:
+                self._on_play(text, speech_prompt)
+            with self._lock:
+                self._is_speaking = True
+            try:
+                sd.play(pcm, samplerate=_SAMPLE_RATE, device=device_idx)
+                sd.wait()
+            finally:
+                with self._lock:
+                    self._is_speaking = False
+                self._queue.task_done()
+                logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
 
     # ------------------------------------------------------------------
     # Fallback path (no GCP project)
