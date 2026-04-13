@@ -32,8 +32,10 @@ class PersonaBody(BaseModel):
 
 class SegmentBody(BaseModel):
     id: str
-    text: str
+    title: str = ""
+    goal: str = ""
     duration: int
+    cue: list[str] = []
     must_say: bool = False
     keywords: list[str] = []
 
