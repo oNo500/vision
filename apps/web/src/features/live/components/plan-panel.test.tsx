@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { PlanPanel } from './plan-panel'
@@ -24,7 +24,7 @@ const mockPlan = {
   updated_at: '2026-04-13T00:00:00Z',
   product: { name: '护肤套装', description: '', price: '299', highlights: [], faq: [] },
   persona: { name: '温柔姐姐', style: '专业亲切', catchphrases: [], forbidden_words: [] },
-  script: { segments: [{ id: 's1', text: '开场', duration: 60, must_say: false, keywords: [] }] },
+  script: { segments: [{ id: 's1', title: '开场预热', goal: '欢迎观众', duration: 60, cue: [], must_say: false, keywords: [] }] },
 }
 
 describe('PlanPanel', () => {
@@ -44,36 +44,25 @@ describe('PlanPanel', () => {
     expect(screen.getByText(/前往方案库/)).toBeInTheDocument()
   })
 
-  it('shows plan name and details when plan is loaded', async () => {
+  it('shows plan name and summary when plan is loaded', async () => {
     vi.mocked(fetch).mockResolvedValueOnce({
       ok: true,
       json: async () => ({ plan: mockPlan }),
     } as Response)
 
     render(<PlanPanel />)
-    await waitFor(() => expect(screen.getByText(/夏季护肤套装/)).toBeInTheDocument())
-    // The details row uses "产品：护肤套装 · ¥299" — match the span text
-    expect(screen.getByText(/产品：护肤套装/)).toBeInTheDocument()
-    expect(screen.getByText(/人设：温柔姐姐/)).toBeInTheDocument()
-    expect(screen.getByText(/1 个段落/)).toBeInTheDocument()
+    await waitFor(() => expect(screen.getByText('夏季护肤套装')).toBeInTheDocument())
+    expect(screen.getByText(/1 段/)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /预览方案/ })).toBeInTheDocument()
   })
 
-  it('toggles collapse when header button is clicked', async () => {
+  it('shows 切换方案 link when plan is loaded', async () => {
     vi.mocked(fetch).mockResolvedValueOnce({
       ok: true,
       json: async () => ({ plan: mockPlan }),
     } as Response)
 
     render(<PlanPanel />)
-    await waitFor(() => expect(screen.getByText(/夏季护肤套装/)).toBeInTheDocument())
-
-    // Initially expanded — details visible
-    expect(screen.getByText(/产品：护肤套装/)).toBeInTheDocument()
-
-    // Click the header button to collapse
-    fireEvent.click(screen.getAllByRole('button')[0])
-
-    // Details should be hidden
-    expect(screen.queryByText(/产品：护肤套装/)).not.toBeInTheDocument()
+    await waitFor(() => expect(screen.getByText(/切换方案/)).toBeInTheDocument())
   })
 })
