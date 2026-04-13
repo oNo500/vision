@@ -7,14 +7,18 @@ import { AiStatusCard } from '@/features/live/components/ai-status-card'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
 import { ScriptCard } from '@/features/live/components/script-card'
 import { SessionControls } from '@/features/live/components/session-controls'
-import { useLiveSession } from '@/features/live/hooks/use-live-session'
+import { useAiSession } from '@/features/live/hooks/use-ai-session'
+import { useDanmakuSession } from '@/features/live/hooks/use-danmaku-session'
+import { useStrategy } from '@/features/live/hooks/use-strategy'
 import { useLiveStream } from '@/features/live/hooks/use-live-stream'
 
 export default function LivePage() {
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
 
-  const session = useLiveSession()
+  const aiSession = useAiSession()
+  const danmakuSession = useDanmakuSession()
+  const strategy = useStrategy()
   const { events, connected, onlineCount, aiOutputs, scriptState } = useLiveStream()
 
   return (
@@ -24,23 +28,26 @@ export default function LivePage() {
         <div className="flex items-center gap-4">
           <h1 className="text-sm font-semibold">直播控场</h1>
           <div className="flex-1">
-            <SessionControls {...session} />
+            <SessionControls aiSession={aiSession} danmakuSession={danmakuSession} strategy={strategy} />
           </div>
         </div>
       </div>
 
-      {/* body — rendered only after client mount to avoid SSR/hydration mismatch */}
+      {/* body — client-only to avoid SSR hydration mismatch */}
       {mounted && (
         <div className="flex min-h-0 flex-1 overflow-hidden">
           {/* left col */}
           <div className="flex w-80 shrink-0 flex-col gap-3 overflow-hidden border-r p-3">
-            <ScriptCard scriptState={scriptState} running={session.state.running} />
+            <ScriptCard scriptState={scriptState} running={aiSession.state.running} />
           </div>
 
           {/* center col */}
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
             <div className="shrink-0">
-              <AiStatusCard latest={aiOutputs[aiOutputs.length - 1] ?? null} queueDepth={session.state.queue_depth ?? 0} />
+              <AiStatusCard
+                latest={aiOutputs[aiOutputs.length - 1] ?? null}
+                queueDepth={aiSession.state.queue_depth ?? 0}
+              />
             </div>
             <div className="min-h-0 flex-1">
               <AiOutputLog outputs={aiOutputs} />

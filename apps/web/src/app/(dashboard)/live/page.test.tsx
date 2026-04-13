@@ -29,14 +29,26 @@ vi.mock('@/features/live/components/ai-output-log', () => ({
     <div data-testid="ai-output-log" data-count={String(props.outputs.length)} />
   ),
 }))
-vi.mock('@/features/live/hooks/use-live-session', () => ({
-  useLiveSession: () => ({
+vi.mock('@/features/live/hooks/use-ai-session', () => ({
+  useAiSession: () => ({
     state: { running: false, queue_depth: 0 },
     loading: false,
     error: null,
     start: vi.fn(),
     stop: vi.fn(),
   }),
+}))
+vi.mock('@/features/live/hooks/use-danmaku-session', () => ({
+  useDanmakuSession: () => ({
+    state: { running: false, buffer_size: 0 },
+    loading: false,
+    error: null,
+    start: vi.fn(),
+    stop: vi.fn(),
+  }),
+}))
+vi.mock('@/features/live/hooks/use-strategy', () => ({
+  useStrategy: () => ({ strategy: 'immediate', setStrategy: vi.fn() }),
 }))
 vi.mock('@/features/live/hooks/use-live-stream', () => ({
   useLiveStream: () => ({
