@@ -162,6 +162,7 @@ class DirectorAgent:
             self._thread.join(timeout=5)
 
     def _run(self, get_state_fn, get_events_fn) -> None:
+        last_fire_time = 0.0
         while not self._stop_event.is_set():
             state = get_state_fn()
             if state.get("finished"):
@@ -175,14 +176,16 @@ class DirectorAgent:
             # Without this, concurrent LLM calls all see qsize < TARGET and keep firing.
             effective_depth = queue_depth + in_flight
             queue_needs_fill = effective_depth < TARGET_QUEUE_DEPTH
-            silence_too_long = (now - self._last_silence_check) >= MAX_SILENCE_SECONDS and queue_depth == 0
+            # Safety net: if nothing has been fired for MAX_SILENCE_SECONDS and queue is empty,
+            # force a generation regardless of in-flight count.
+            # Track last_fire_time (updated every fire) so the timer resets correctly.
+            silence_too_long = (now - last_fire_time) >= MAX_SILENCE_SECONDS and effective_depth == 0
 
             # Fire async: keep effective queue depth at TARGET_QUEUE_DEPTH.
             # Allow up to MAX_CONCURRENT_LLM parallel calls; semaphore blocks if saturated.
             can_acquire = self._llm_semaphore.acquire(blocking=False)
             if can_acquire and (queue_needs_fill or silence_too_long):
-                if silence_too_long:
-                    self._last_silence_check = now
+                last_fire_time = now
                 events = get_events_fn()
                 t = threading.Thread(
                     target=self._fire, args=(state, events), daemon=True, name="DirectorFire"

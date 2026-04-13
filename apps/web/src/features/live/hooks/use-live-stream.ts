@@ -175,6 +175,10 @@ export function useLiveStream() {
       es.close()
       esRef.current = null
       setConnected(false)
+      // Clear transient playback state on disconnect — stale queue items
+      // would pile up on reconnect since the server won't re-send past events.
+      setTtsQueue([])
+      setNowPlaying(null)
     }
   }, [])
 

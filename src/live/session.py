@@ -137,9 +137,11 @@ class SessionManager:
         if not running or script_runner is None:
             return {"running": False, "strategy": strategy}
         state = script_runner.get_state()
+        # tts_queue.qsize() only counts items not yet picked up by the synth thread.
+        # Use director.pending_depth which includes in-flight LLM calls + tts_queue.
         return {
             "running": True,
-            "tts_queue_depth": tts_queue.qsize() if tts_queue else 0,
+            "tts_queue_depth": (tts_queue.qsize() + tts_player._pcm_queue.qsize()) if tts_queue else 0,
             "urgent_queue_depth": urgent_queue.qsize() if urgent_queue else 0,
             "tts_speaking": tts_player.is_speaking if tts_player else False,
             "llm_generating": director.is_generating if director else False,
@@ -148,18 +150,24 @@ class SessionManager:
         }
 
     def get_tts_queue_snapshot(self) -> list[dict]:
-        """Return a snapshot of pending TtsItems for the front-end queue panel."""
+        """Return a snapshot of pending TtsItems for the front-end queue panel.
+
+        Includes items in both in_queue (waiting for synthesis) and pcm_queue
+        (synthesized, waiting for playback) for an accurate picture.
+        """
         with self._lock:
             if not self._running:
                 return []
             q = self._tts_queue
-        if q is None:
+            player = self._tts_player
+        if q is None or player is None:
             return []
-        items = list(q.queue)
+        text_items = [i for i in list(q.queue) if isinstance(i, TtsItem)]
+        pcm_items = [i for i in list(player._pcm_queue.queue) if hasattr(i, "id")]
+        all_items = text_items + pcm_items
         return [
             {"id": item.id, "content": item.text, "speech_prompt": item.speech_prompt}
-            for item in items
-            if isinstance(item, TtsItem)
+            for item in all_items
         ]
 
     def get_strategy(self) -> str:
