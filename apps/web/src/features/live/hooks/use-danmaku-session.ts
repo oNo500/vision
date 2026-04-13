@@ -40,7 +40,8 @@ export function useDanmakuSession() {
       })
       const data = await res.json()
       if (!res.ok) {
-        const msg = (data as { detail?: string }).detail ?? 'Failed to start danmaku'
+        const detail = (data as { detail?: unknown }).detail
+        const msg = typeof detail === 'string' ? detail : 'Failed to start danmaku'
         setError(msg)
         toast.error(msg)
       } else {
@@ -60,7 +61,8 @@ export function useDanmakuSession() {
       const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/danmaku/stop`, { method: 'POST' })
       const data = await res.json()
       if (!res.ok) {
-        const msg = (data as { detail?: string }).detail ?? 'Failed to stop danmaku'
+        const detail = (data as { detail?: unknown }).detail
+        const msg = typeof detail === 'string' ? detail : 'Failed to stop danmaku'
         setError(msg)
         toast.error(msg)
       } else {

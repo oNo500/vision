@@ -57,7 +57,8 @@ export function usePlans() {
         })
         if (!res.ok) {
           const data = await res.json()
-          toast.error((data as { detail?: string }).detail ?? 'Failed to load plan')
+          const detail = (data as { detail?: unknown }).detail
+          toast.error(typeof detail === 'string' ? detail : 'Failed to load plan')
           return false
         }
         return true

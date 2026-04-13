@@ -46,7 +46,8 @@ export function useLiveSession() {
       })
       const data = await res.json()
       if (!res.ok) {
-        const msg = (data as { detail?: string }).detail ?? 'Failed to start'
+        const detail = (data as { detail?: unknown }).detail
+        const msg = typeof detail === 'string' ? detail : 'Failed to start'
         setError(msg)
         toast.error(msg)
       } else {
@@ -69,7 +70,8 @@ export function useLiveSession() {
       })
       const data = await res.json()
       if (!res.ok) {
-        const msg = (data as { detail?: string }).detail ?? 'Failed to stop'
+        const detail = (data as { detail?: unknown }).detail
+        const msg = typeof detail === 'string' ? detail : 'Failed to stop'
         setError(msg)
         toast.error(msg)
       } else {

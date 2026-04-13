@@ -69,7 +69,9 @@ export function usePlan(id: string) {
         })
         const result = await res.json()
         if (!res.ok) {
-          toast.error((result as { detail?: string }).detail ?? 'Failed to save plan')
+          const detail = (result as { detail?: unknown }).detail
+          const msg = typeof detail === 'string' ? detail : 'Failed to save plan'
+          toast.error(msg)
         } else {
           setPlan(result as LivePlan)
           toast.success('Plan saved')
