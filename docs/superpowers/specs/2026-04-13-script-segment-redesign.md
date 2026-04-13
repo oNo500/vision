@@ -122,12 +122,26 @@ class ScriptSegment:
 
 改为：
 ```
-[input: 阶段名称]           placeholder: "如：产品介绍、限时促单"
+[drag handle ⠿]  [input: 阶段名称]           placeholder: "如：产品介绍、限时促单"
 [textarea: AI 指令]         placeholder: "告诉 AI 这段做什么，比如：重点介绍益生菌成分，引导观众点购物车"
 [TagInput: 锚点话术]        placeholder: "回车添加，AI 会在合适时机自然说出"
 [必须全部说完 checkbox]     label: "锚点话术必须全部说完"
 [时长] [关键词 TagInput]
 ```
+
+现有的 up/down 按钮移除，改为拖拽排序。
+
+## Drag and Drop
+
+使用 `@atlaskit/pragmatic-drag-and-drop` 实现 segment 列表拖拽排序。
+
+选型理由：用户指定，该库由 Atlassian 维护，无依赖、体积小、性能好，专为列表排序设计。
+
+**实现要点：**
+- 每个 segment 卡片左侧放 drag handle（`⠿` 图标），只有拖 handle 才触发拖拽，避免与卡片内输入框冲突
+- 拖拽结束后调用 `savePlan` 持久化新顺序
+- 拖拽中显示半透明占位符，提示插入位置
+- 安装：`pnpm add @atlaskit/pragmatic-drag-and-drop` （仅 `apps/web`）
 
 ## Scope
 
@@ -136,5 +150,5 @@ class ScriptSegment:
 - `src/live/session.py` — `_build_and_start` 中 segment 构造更新
 - `src/live/plan_store.py` — `get()` 加 normalize 兼容旧数据
 - `apps/web/src/features/live/hooks/use-plan.ts` — `Segment` 类型更新
-- `apps/web/src/app/(dashboard)/live/plans/[id]/page.tsx` — 编辑器 UI 更新
+- `apps/web/src/app/(dashboard)/live/plans/[id]/page.tsx` — 编辑器 UI 更新（新字段 + 拖拽，移除 up/down 按钮）
 - `scripts/seed_plans.py` — 示例方案更新为新字段结构
