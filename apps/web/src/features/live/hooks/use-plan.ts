@@ -25,8 +25,10 @@ export type Persona = {
 
 export type Segment = {
   id: string
-  text: string
+  title: string
+  goal: string
   duration: number
+  cue: string[]
   must_say: boolean
   keywords: string[]
 }
