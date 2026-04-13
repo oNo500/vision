@@ -70,7 +70,7 @@ function SegmentCard({
   seg: Segment
   index: number
   total: number
-  onUpdate: (key: string, value: unknown) => void
+  onUpdate: <K extends keyof Segment>(key: K, value: Segment[K]) => void
   onRemove: () => void
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -195,8 +195,7 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
         if (!instruction) return
         const startIndex = source.data.index as number
         const targetIndex = target.data.index as number
-        let finishIndex = instruction.operation === 'reorder-before' ? targetIndex : targetIndex + 1
-        if (finishIndex > plan.script.segments.length - 1) finishIndex = plan.script.segments.length - 1
+        const finishIndex = instruction.operation === 'reorder-before' ? targetIndex : targetIndex + 1
         if (startIndex === finishIndex) return
         const reordered = reorder({
           list: plan.script.segments,
@@ -220,7 +219,7 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
     savePlan({ ...plan, persona: { ...plan.persona, [key]: value } })
   }
 
-  function updateSegment(index: number, key: string, value: unknown) {
+  function updateSegment<K extends keyof Segment>(index: number, key: K, value: Segment[K]) {
     if (!plan) return
     const segments = plan.script.segments.map((s, i) =>
       i === index ? { ...s, [key]: value } : s
