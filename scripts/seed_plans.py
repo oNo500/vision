@@ -50,98 +50,98 @@ SAMPLE_PLAN = {
         "forbidden_words": ["最便宜", "全网最低", "治疗", "无副作用", "药用级"],
     },
     # Script design: each segment = one phase of the live session.
-    # - text: instructions for the AI director (NOT a verbatim script);
-    #         the AI reads this as context and speaks naturally around it.
-    # - duration: how long this phase lasts in seconds; the AI fills the
-    #             time by responding to danmaku and proactively talking.
-    # - must_say: True = the AI must deliver the text verbatim before
-    #             the phase ends (e.g., price announcements, CTAs).
-    #             False = text is a guide only; AI improvises freely.
-    # - keywords: topics the AI should weave in during this phase.
+    # - title: phase name (e.g., "开场预热")
+    # - goal: the strategic intent for this phase (what to accomplish)
+    # - duration: how long this phase lasts in seconds
+    # - cue: key talking points or verbatim lines (may be empty)
+    # - must_say: True = deliver cue items verbatim; False = cue is optional context
+    # - keywords: topics to naturally weave in during this phase
     "script": {
         "segments": [
             {
                 "id": "s1",
-                "text": (
-                    "【开场预热 · 5分钟】"
-                    "欢迎新进来的观众，自我介绍，告诉大家今天直播的主题是护肤好物分享。"
-                    "引导点关注、开小黄车，营造轻松氛围，让观众留下来。"
-                ),
+                "title": "开场预热",
+                "goal": "欢迎新进来的观众，自我介绍，告诉大家今天直播主题是护肤好物分享。引导点关注、开小黄车，营造轻松氛围。",
                 "duration": 300,
+                "cue": [],
                 "must_say": False,
                 "keywords": ["关注", "小黄车", "今天带来"],
             },
             {
                 "id": "s2",
-                "text": (
-                    "【产品介绍 · 20分钟】"
-                    "重点讲解瑷尔博士益生菌水乳的核心卖点：益生菌科技修护屏障、72小时补水、0酒精0香精适合敏感肌。"
-                    "结合自身使用体验，回应弹幕里的皮肤问题，引导观众点击购物车。"
-                ),
+                "title": "产品介绍",
+                "goal": "重点讲解益生菌修护屏障、72小时补水、0酒精0香精适合敏感肌。结合自身使用体验，回应弹幕里的皮肤问题，引导观众点击购物车。",
                 "duration": 1200,
+                "cue": [
+                    "2000亿活性益生菌，专门修护皮肤屏障",
+                    "72小时持续补水，上脸不黏腻",
+                    "0酒精0香精，敏感肌亲测可用",
+                ],
                 "must_say": False,
                 "keywords": ["益生菌", "屏障", "敏感肌", "72小时", "购物车"],
             },
             {
                 "id": "s3",
-                "text": (
-                    "【互动答疑 · 15分钟】"
-                    "专门回答弹幕里的产品问题：成分、用法、适合肤质、与其他产品叠加顺序等。"
-                    "保持轻松对话感，鼓励观众把问题打在弹幕里，逐一解答。"
-                ),
+                "title": "互动答疑",
+                "goal": "专门回答弹幕里的产品问题：成分、用法、适合肤质、与其他产品叠加顺序等。保持轻松对话感，鼓励观众把问题打在弹幕里。",
                 "duration": 900,
+                "cue": [],
                 "must_say": False,
                 "keywords": ["问题", "成分", "用法", "敏感肌", "孕妇"],
             },
             {
                 "id": "s4",
-                "text": (
-                    "【限时促单 · 5分钟】"
-                    "直播间专属价299元，原价399元，买正装送同款旅行小样。库存有限，引导立即下单。"
-                ),
+                "title": "限时促单",
+                "goal": "制造紧迫感，引导立即下单。",
                 "duration": 300,
+                "cue": [
+                    "直播间专属价299，原价399",
+                    "买正装送同款旅行小样",
+                    "库存不多了，家人们冲",
+                ],
                 "must_say": True,
                 "keywords": ["299", "限时", "库存", "小样", "下单"],
             },
             {
                 "id": "s5",
-                "text": (
-                    "【产品介绍（第二轮） · 20分钟】"
-                    "新进来的观众较多，重新介绍产品卖点，侧重真实使用感受和对比其他同类产品的差异。"
-                    "继续响应弹幕，保持场子热度。"
-                ),
+                "title": "产品介绍（第二轮）",
+                "goal": "新进来的观众较多，重新介绍产品卖点，侧重真实使用感受和对比其他同类产品的差异。继续响应弹幕，保持场子热度。",
                 "duration": 1200,
+                "cue": [
+                    "2000亿活性益生菌，专门修护皮肤屏障",
+                    "72小时持续补水，上脸不黏腻",
+                ],
                 "must_say": False,
                 "keywords": ["益生菌", "对比", "使用感受", "购物车"],
             },
             {
                 "id": "s6",
-                "text": (
-                    "【互动游戏 · 10分钟】"
-                    "发起弹幕互动：让观众打出自己的肤质，按肤质给出不同的护肤建议，顺带植入产品适用场景。"
-                    "气氛活跃后再引导下单。"
-                ),
+                "title": "互动游戏",
+                "goal": "发起弹幕互动：让观众打出自己的肤质，按肤质给出不同的护肤建议，顺带植入产品适用场景。气氛活跃后再引导下单。",
                 "duration": 600,
+                "cue": [],
                 "must_say": False,
                 "keywords": ["肤质", "弹幕", "互动", "护肤建议"],
             },
             {
                 "id": "s7",
-                "text": (
-                    "【第二次促单 · 5分钟】"
-                    "再次强调直播间价格优惠和赠品，提醒库存告急，给还在犹豫的观众最后一推。"
-                ),
+                "title": "第二次促单",
+                "goal": "再次强调直播间价格优惠和赠品，提醒库存告急，给还在犹豫的观众最后一推。",
                 "duration": 300,
+                "cue": [
+                    "直播间专属价299，原价399",
+                    "买正装送同款旅行小样",
+                    "最后机会，库存告急",
+                ],
                 "must_say": True,
                 "keywords": ["299", "赠品", "库存", "最后机会"],
             },
             {
                 "id": "s8",
-                "text": (
-                    "【收尾预告 · 5分钟】"
-                    "感谢今天的观众和下单的宝宝，预告下次直播时间和主题，引导关注账号，温馨道别。"
-                ),
+                "title": "收尾预告",
+                "goal": "感谢今天的观众和下单的宝宝，预告下次直播时间和主题，引导关注账号，温馨道别。",
                 "duration": 300,
+                "cue": [],
                 "must_say": False,
                 "keywords": ["感谢", "下次直播", "关注", "再见"],
             },
