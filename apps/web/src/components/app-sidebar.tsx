@@ -9,7 +9,7 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from '@workspace/ui/components/sidebar'
-import { RadioIcon, Settings2Icon } from 'lucide-react'
+import { BookOpenIcon, RadioIcon, Settings2Icon } from 'lucide-react'
 import * as React from 'react'
 
 import { NavMain } from '@/components/nav-main'
@@ -21,6 +21,13 @@ const navItems = [
     url: appPaths.dashboard.live.href,
     icon: <RadioIcon />,
     isActive: true,
+    items: [],
+  },
+  {
+    title: '方案库',
+    url: appPaths.dashboard.livePlans.href,
+    icon: <BookOpenIcon />,
+    isActive: false,
     items: [],
   },
   {
