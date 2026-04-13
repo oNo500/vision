@@ -49,9 +49,11 @@ class ScriptSegment:
     """One timed segment of the live script."""
 
     id: str
+    title: str           # phase name shown in UI and logs, e.g. "产品介绍"
+    goal: str            # AI directive: what to do in this phase
     duration: int        # planned duration in seconds
-    text: str            # TTS content
-    interruptible: bool = True
+    cue: list[str] = field(default_factory=list)   # anchor lines AI weaves in naturally
+    must_say: bool = False   # True = all cue lines must be delivered verbatim
     keywords: list[str] = field(default_factory=list)
 
 
@@ -69,12 +71,14 @@ class LiveScript:
         segments = [
             ScriptSegment(
                 id=s["id"],
+                title=s.get("title", f"段落{i + 1}"),
+                goal=s.get("goal", s.get("text", "")),   # migrate: text -> goal
                 duration=s["duration"],
-                text=s["text"],
-                interruptible=s.get("interruptible", True),
+                cue=s.get("cue", []),
+                must_say=s.get("must_say", False),
                 keywords=s.get("keywords", []),
             )
-            for s in data.get("segments", [])
+            for i, s in enumerate(data.get("segments", []))
         ]
         return cls(
             title=meta.get("title", ""),

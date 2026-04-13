@@ -59,14 +59,16 @@ class ScriptRunner:
         """Return a snapshot of current script state (thread-safe)."""
         with self._lock:
             if self._index >= len(self._script.segments):
-                return {"segment_id": None, "interruptible": False, "remaining_seconds": 0, "finished": True}
+                return {"segment_id": None, "must_say": False, "remaining_seconds": 0, "finished": True}
             seg = self._script.segments[self._index]
             elapsed = time.monotonic() - self._segment_start
             remaining = max(0.0, seg.duration - elapsed)
             return {
                 "segment_id": seg.id,
-                "segment_text": seg.text,
-                "interruptible": seg.interruptible,
+                "title": seg.title,
+                "goal": seg.goal,
+                "cue": seg.cue,
+                "must_say": seg.must_say,
                 "keywords": seg.keywords,
                 "remaining_seconds": remaining,
                 "segment_duration": seg.duration,
