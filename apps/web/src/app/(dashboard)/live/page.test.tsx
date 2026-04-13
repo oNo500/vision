@@ -4,6 +4,9 @@ import { describe, expect, it, vi } from 'vitest'
 import type { AiOutput, ScriptState } from '@/features/live/hooks/use-live-stream'
 
 // Capture-prop mocks
+vi.mock('@/features/live/components/plan-panel', () => ({
+  PlanPanel: () => <div data-testid="plan-panel" />,
+}))
 vi.mock('@/features/live/components/danmaku-feed', () => ({
   DanmakuFeed: () => <div data-testid="danmaku-feed" />,
 }))

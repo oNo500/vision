@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { AiOutputLog } from '@/features/live/components/ai-output-log'
 import { AiStatusCard } from '@/features/live/components/ai-status-card'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
+import { PlanPanel } from '@/features/live/components/plan-panel'
 import { ScriptCard } from '@/features/live/components/script-card'
 import { SessionControls } from '@/features/live/components/session-controls'
 import { useAiSession } from '@/features/live/hooks/use-ai-session'
@@ -23,6 +24,9 @@ export default function LivePage() {
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+      {/* plan panel */}
+      <PlanPanel />
+
       {/* top bar */}
       <div className="shrink-0 border-b px-5 py-3">
         <div className="flex items-center gap-4">
