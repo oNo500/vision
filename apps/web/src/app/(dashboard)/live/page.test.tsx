@@ -1,22 +1,19 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 
-import type { AiOutput, ScriptState } from '@/features/live/hooks/use-live-stream'
+import type { AiOutput } from '@/features/live/hooks/use-live-stream'
 
 // Capture-prop mocks
 vi.mock('@/features/live/components/plan-panel', () => ({
-  PlanPanel: () => <div data-testid="plan-panel" />,
+  PlanPanel: (props: { scriptState: unknown; running: boolean }) => (
+    <div data-testid="plan-panel" data-running={String(props.running)} />
+  ),
 }))
 vi.mock('@/features/live/components/danmaku-feed', () => ({
   DanmakuFeed: () => <div data-testid="danmaku-feed" />,
 }))
 vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
-}))
-vi.mock('@/features/live/components/script-card', () => ({
-  ScriptCard: (props: { scriptState: ScriptState | null; running: boolean }) => (
-    <div data-testid="script-card" data-running={String(props.running)} />
-  ),
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
   AiStatusCard: (props: { latest: AiOutput | null; queueDepth: number }) => (
@@ -69,9 +66,9 @@ vi.mock('@/config/env', () => ({
 import LivePage from './page'
 
 describe('LivePage', () => {
-  it('renders all three columns', () => {
+  it('renders main layout components', () => {
     render(<LivePage />)
-    expect(screen.getByTestId('script-card')).toBeInTheDocument()
+    expect(screen.getByTestId('plan-panel')).toBeInTheDocument()
     expect(screen.getByTestId('ai-status-card')).toBeInTheDocument()
     expect(screen.getByTestId('ai-output-log')).toBeInTheDocument()
     expect(screen.getByTestId('danmaku-feed')).toBeInTheDocument()
@@ -83,10 +80,10 @@ describe('LivePage', () => {
     expect(screen.getByText('直播控场')).toBeInTheDocument()
   })
 
-  it('passes session.state.running to ScriptCard', () => {
+  it('passes session.state.running to PlanPanel', () => {
     render(<LivePage />)
     // mock returns state.running = false
-    expect(screen.getByTestId('script-card')).toHaveAttribute('data-running', 'false')
+    expect(screen.getByTestId('plan-panel')).toHaveAttribute('data-running', 'false')
   })
 
   it('passes last aiOutput as latest to AiStatusCard', () => {
