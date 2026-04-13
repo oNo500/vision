@@ -23,6 +23,10 @@ export type AiOutput = {
 
 export type ScriptState = {
   segment_id: string
+  title: string
+  goal: string
+  cue: string[]
+  must_say: boolean
   remaining_seconds: number
   segment_duration: number
   finished: boolean
@@ -88,6 +92,10 @@ export function useLiveStream() {
         if (type === 'script') {
           setScriptState({
             segment_id: raw['segment_id'] as string,
+            title: (raw['title'] as string) ?? '',
+            goal: (raw['goal'] as string) ?? '',
+            cue: (raw['cue'] as string[]) ?? [],
+            must_say: (raw['must_say'] as boolean) ?? false,
             remaining_seconds: raw['remaining_seconds'] as number,
             segment_duration: (raw['segment_duration'] as number) ?? 0,
             finished: (raw['finished'] as boolean) ?? false,

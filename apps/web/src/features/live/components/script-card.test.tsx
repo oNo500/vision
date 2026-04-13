@@ -17,6 +17,10 @@ vi.mock('@workspace/ui/components/sonner', () => ({
 
 const mockScriptState: ScriptState = {
   segment_id: 'seg-01',
+  title: '产品介绍',
+  goal: '重点讲解产品卖点',
+  cue: ['益生菌修护屏障'],
+  must_say: false,
   remaining_seconds: 30,
   segment_duration: 60,
   finished: false,

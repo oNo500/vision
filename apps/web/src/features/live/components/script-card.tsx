@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 import { Button } from '@workspace/ui/components/button'
 import { toast } from '@workspace/ui/components/sonner'
-import { cn } from '@workspace/ui/lib/utils'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 import { env } from '@/config/env'
@@ -66,13 +65,31 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
       </div>
       <div className="mb-3 text-right text-xs tabular-nums text-muted-foreground">剩余 {remaining}</div>
 
-      {/* segment text */}
-      <p className={cn(
-        'mb-4 line-clamp-2 text-sm leading-relaxed text-foreground',
-        !scriptState && 'text-muted-foreground',
-      )}>
-        {scriptState?.segment_id ? '（脚本运行中）' : '未开始'}
-      </p>
+      {/* segment info */}
+      {scriptState?.segment_id ? (
+        <div className="mb-4 space-y-2">
+          {scriptState.title && (
+            <p className="text-sm font-medium text-foreground">{scriptState.title}</p>
+          )}
+          {scriptState.goal && (
+            <p className="text-xs leading-relaxed text-muted-foreground">{scriptState.goal}</p>
+          )}
+          {scriptState.cue.length > 0 && (
+            <div className="rounded border border-dashed border-muted-foreground/40 bg-muted/50 px-3 py-2">
+              <p className="mb-1 text-xs font-medium text-muted-foreground">
+                话术{scriptState.must_say ? '（必说）' : '（融入）'}
+              </p>
+              <ul className="space-y-0.5">
+                {scriptState.cue.map((line, i) => (
+                  <li key={i} className="text-xs text-foreground">· {line}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      ) : (
+        <p className="mb-4 text-sm text-muted-foreground">未开始</p>
+      )}
 
       {/* nav buttons */}
       <div className="flex gap-2">
