@@ -49,42 +49,101 @@ SAMPLE_PLAN = {
         ],
         "forbidden_words": ["最便宜", "全网最低", "治疗", "无副作用", "药用级"],
     },
+    # Script design: each segment = one phase of the live session.
+    # - text: instructions for the AI director (NOT a verbatim script);
+    #         the AI reads this as context and speaks naturally around it.
+    # - duration: how long this phase lasts in seconds; the AI fills the
+    #             time by responding to danmaku and proactively talking.
+    # - must_say: True = the AI must deliver the text verbatim before
+    #             the phase ends (e.g., price announcements, CTAs).
+    #             False = text is a guide only; AI improvises freely.
+    # - keywords: topics the AI should weave in during this phase.
     "script": {
         "segments": [
             {
                 "id": "s1",
-                "text": "宝宝们注意看！今天给大家带来一个我回购三次的水乳套装，就是这个瑷尔博士益生菌系列。",
-                "duration": 15,
-                "must_say": True,
-                "keywords": ["瑷尔博士", "益生菌", "回购"],
+                "text": (
+                    "【开场预热 · 5分钟】"
+                    "欢迎新进来的观众，自我介绍，告诉大家今天直播的主题是护肤好物分享。"
+                    "引导点关注、开小黄车，营造轻松氛围，让观众留下来。"
+                ),
+                "duration": 300,
+                "must_say": False,
+                "keywords": ["关注", "小黄车", "今天带来"],
             },
             {
                 "id": "s2",
-                "text": "咱们直播间今天专属价299，原价399，买就送同款旅行小样，数量有限，冲就完了！",
-                "duration": 10,
-                "must_say": True,
-                "keywords": ["299", "直播间专属", "小样"],
+                "text": (
+                    "【产品介绍 · 20分钟】"
+                    "重点讲解瑷尔博士益生菌水乳的核心卖点：益生菌科技修护屏障、72小时补水、0酒精0香精适合敏感肌。"
+                    "结合自身使用体验，回应弹幕里的皮肤问题，引导观众点击购物车。"
+                ),
+                "duration": 1200,
+                "must_say": False,
+                "keywords": ["益生菌", "屏障", "敏感肌", "72小时", "购物车"],
             },
             {
                 "id": "s3",
-                "text": "这套水乳的核心是2000亿活性益生菌，专门修护皮肤屏障。我之前换季总过敏，用了这个之后好多了。",
-                "duration": 20,
+                "text": (
+                    "【互动答疑 · 15分钟】"
+                    "专门回答弹幕里的产品问题：成分、用法、适合肤质、与其他产品叠加顺序等。"
+                    "保持轻松对话感，鼓励观众把问题打在弹幕里，逐一解答。"
+                ),
+                "duration": 900,
                 "must_say": False,
-                "keywords": ["益生菌", "屏障", "过敏"],
+                "keywords": ["问题", "成分", "用法", "敏感肌", "孕妇"],
             },
             {
                 "id": "s4",
-                "text": "有宝宝问敏感肌能用吗？能用！0酒精0香精，皮肤科做过测试的，孕妇也没问题。",
-                "duration": 15,
-                "must_say": False,
-                "keywords": ["敏感肌", "0酒精", "孕妇"],
+                "text": (
+                    "【限时促单 · 5分钟】"
+                    "直播间专属价299元，原价399元，买正装送同款旅行小样。库存有限，引导立即下单。"
+                ),
+                "duration": 300,
+                "must_say": True,
+                "keywords": ["299", "限时", "库存", "小样", "下单"],
             },
             {
                 "id": "s5",
-                "text": "家人们最后再说一遍，库存不多了，299拿走水乳套装加小样，不买绝对后悔，现在下单！",
-                "duration": 10,
+                "text": (
+                    "【产品介绍（第二轮） · 20分钟】"
+                    "新进来的观众较多，重新介绍产品卖点，侧重真实使用感受和对比其他同类产品的差异。"
+                    "继续响应弹幕，保持场子热度。"
+                ),
+                "duration": 1200,
+                "must_say": False,
+                "keywords": ["益生菌", "对比", "使用感受", "购物车"],
+            },
+            {
+                "id": "s6",
+                "text": (
+                    "【互动游戏 · 10分钟】"
+                    "发起弹幕互动：让观众打出自己的肤质，按肤质给出不同的护肤建议，顺带植入产品适用场景。"
+                    "气氛活跃后再引导下单。"
+                ),
+                "duration": 600,
+                "must_say": False,
+                "keywords": ["肤质", "弹幕", "互动", "护肤建议"],
+            },
+            {
+                "id": "s7",
+                "text": (
+                    "【第二次促单 · 5分钟】"
+                    "再次强调直播间价格优惠和赠品，提醒库存告急，给还在犹豫的观众最后一推。"
+                ),
+                "duration": 300,
                 "must_say": True,
-                "keywords": ["299", "库存", "下单"],
+                "keywords": ["299", "赠品", "库存", "最后机会"],
+            },
+            {
+                "id": "s8",
+                "text": (
+                    "【收尾预告 · 5分钟】"
+                    "感谢今天的观众和下单的宝宝，预告下次直播时间和主题，引导关注账号，温馨道别。"
+                ),
+                "duration": 300,
+                "must_say": False,
+                "keywords": ["感谢", "下次直播", "关注", "再见"],
             },
         ]
     },
