@@ -48,6 +48,7 @@ def build_director_prompt(
     knowledge_ctx: str,
     recent_events: list[Event],
     last_said: str,
+    persona_ctx: str = "",
 ) -> str:
     """Build the user-turn prompt for the director LLM call."""
     event_lines = "\n".join(
@@ -56,7 +57,11 @@ def build_director_prompt(
     ) or "  （暂无互动）"
 
     must_say = script_state.get("must_say", False)
+
+    persona_section = f"=== 主播人设 ===\n{persona_ctx}\n\n" if persona_ctx else ""
+
     return (
+        f"{persona_section}"
         f"=== 产品知识 ===\n{knowledge_ctx}\n\n"
         f"=== 当前脚本段落 ===\n"
         f"段落ID：{script_state.get('segment_id', 'unknown')}\n"
@@ -96,6 +101,7 @@ class DirectorAgent:
         tts_player: TTSPlayer instance; used to check `is_speaking`.
         knowledge_ctx: Pre-formatted product knowledge string for LLM prompt.
         llm_generate_fn: Callable(prompt: str) -> str. Returns raw LLM JSON text.
+        persona_ctx: Optional persona information (e.g., streamer name, style, forbidden words).
     """
 
     def __init__(
@@ -105,10 +111,12 @@ class DirectorAgent:
         knowledge_ctx: str,
         llm_generate_fn,
         urgent_queue: queue.Queue | None = None,
+        persona_ctx: str = "",
     ) -> None:
         self._tts_queue = tts_queue
         self._tts_player = tts_player
         self._knowledge_ctx = knowledge_ctx
+        self._persona_ctx = persona_ctx
         self._llm_generate = llm_generate_fn
         self._urgent_queue = urgent_queue
         self._last_said = ""
@@ -183,7 +191,7 @@ class DirectorAgent:
 
         try:
             prompt = build_director_prompt(
-                script_state, self._knowledge_ctx, all_events, self._last_said
+                script_state, self._knowledge_ctx, all_events, self._last_said, self._persona_ctx
             )
             raw = self._llm_generate(prompt)
             output = parse_director_response(raw)
