@@ -17,8 +17,9 @@ from src.live.schema import DirectorOutput, Event
 
 logger = logging.getLogger(__name__)
 
-MAX_SILENCE_SECONDS = 15.0   # force output if TTS has been idle this long
-MIN_SPEAK_INTERVAL = 8.0    # minimum seconds between director LLM calls — must be > typical TTS duration
+MAX_SILENCE_SECONDS = 15.0   # force a generation if TTS has been idle this long (safety net)
+TARGET_QUEUE_DEPTH = 5       # keep this many sentences pre-generated in the TTS queue
+MAX_CONCURRENT_LLM = 2       # max parallel LLM calls (avoids flooding, keeps context fresh)
 
 _SYSTEM_PROMPT = """\
 你是一个经验丰富的带货主播，正在进行抖音直播。
@@ -127,8 +128,10 @@ class DirectorAgent:
         self._llm_generate = llm_generate_fn
         self._urgent_queue = urgent_queue
         self._last_said = ""
-        self._last_fired = 0.0
-        self._llm_in_flight = False   # True while a background LLM call is running
+        self._last_silence_check = 0.0
+        self._llm_semaphore = threading.Semaphore(MAX_CONCURRENT_LLM)
+        self._llm_in_flight_count = 0  # number of LLM calls currently running
+        self._count_lock = threading.Lock()
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None
 
@@ -150,7 +153,8 @@ class DirectorAgent:
 
     @property
     def is_generating(self) -> bool:
-        return self._llm_in_flight
+        with self._count_lock:
+            return self._llm_in_flight_count > 0
 
     def stop(self) -> None:
         self._stop_event.set()
@@ -164,19 +168,24 @@ class DirectorAgent:
                 break
 
             now = time.monotonic()
-            queue_low = self._tts_queue.qsize() <= 1   # fire when queue is almost empty
-            since_last = now - self._last_fired
-            cooled_down = since_last >= MIN_SPEAK_INTERVAL
-            silence_too_long = since_last >= MAX_SILENCE_SECONDS
+            queue_depth = self._tts_queue.qsize()
+            queue_needs_fill = queue_depth < TARGET_QUEUE_DEPTH
+            silence_too_long = (now - self._last_silence_check) >= MAX_SILENCE_SECONDS and queue_depth == 0
 
-            # Fire async: pre-generate when queue has ≤1 item left so the next line is ready
-            # before the current one finishes. Skip if LLM is already in flight.
-            if not self._llm_in_flight and ((queue_low and cooled_down) or silence_too_long):
+            # Fire async: keep the TTS queue filled to TARGET_QUEUE_DEPTH.
+            # Allow up to MAX_CONCURRENT_LLM parallel calls; semaphore blocks if saturated.
+            can_acquire = self._llm_semaphore.acquire(blocking=False)
+            if can_acquire and (queue_needs_fill or silence_too_long):
+                if silence_too_long:
+                    self._last_silence_check = now
                 events = get_events_fn()
                 t = threading.Thread(
                     target=self._fire, args=(state, events), daemon=True, name="DirectorFire"
                 )
                 t.start()
+            elif can_acquire:
+                # acquired but no work needed — release immediately
+                self._llm_semaphore.release()
 
             self._stop_event.wait(timeout=0.5)
 
@@ -186,8 +195,8 @@ class DirectorAgent:
         Runs concurrently with TTS playback so the next line is ready the moment
         the current one finishes — eliminating the inter-sentence gap.
         """
-        self._llm_in_flight = True
-        self._last_fired = time.monotonic()   # mark fired immediately to enforce cooldown
+        with self._count_lock:
+            self._llm_in_flight_count += 1
 
         # Drain urgent P0/P1 events (intelligent mode)
         urgent_events: list[Event] = []
@@ -210,7 +219,9 @@ class DirectorAgent:
             logger.error("Director LLM call failed: %s", e)
             return
         finally:
-            self._llm_in_flight = False
+            with self._count_lock:
+                self._llm_in_flight_count -= 1
+            self._llm_semaphore.release()
 
         if not output.content:
             return
