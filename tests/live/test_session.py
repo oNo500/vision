@@ -30,14 +30,34 @@ def test_initial_state_is_stopped(manager):
     assert state["running"] is False
 
 
+def _patch_session_start(manager, **kwargs):
+    """Helper to start manager with all components mocked."""
+    with patch("src.live.session.ScriptRunner") as MockSR, \
+         patch("src.live.session.KnowledgeBase") as MockKB, \
+         patch("src.live.session.TTSPlayer") as MockTTS, \
+         patch("src.live.session.DirectorAgent") as MockDA:
+        for Mock in [MockSR, MockTTS, MockDA]:
+            Mock.return_value.start = MagicMock()
+            Mock.return_value.stop = MagicMock()
+        MockSR.from_yaml.return_value = MockSR.return_value
+        MockKB.return_value.context_for_prompt.return_value = "ctx"
+        MockKB.return_value.product_name = "Test"
+        MockDA.return_value.start = MagicMock()
+        manager.start(
+            script_path="src/live/example_script.yaml",
+            product_path="src/live/data/product.yaml",
+            mock=True,
+            project=None,
+            **kwargs,
+        )
+
+
 def test_start_sets_running(manager):
     with patch("src.live.session.ScriptRunner") as MockSR, \
          patch("src.live.session.KnowledgeBase") as MockKB, \
-         patch("src.live.session.MockEventCollector") as MockEC, \
          patch("src.live.session.TTSPlayer") as MockTTS, \
-         patch("src.live.session.Orchestrator") as MockOrch, \
          patch("src.live.session.DirectorAgent") as MockDA:
-        for Mock in [MockSR, MockEC, MockTTS, MockOrch, MockDA]:
+        for Mock in [MockSR, MockTTS, MockDA]:
             Mock.return_value.start = MagicMock()
             Mock.return_value.stop = MagicMock()
         MockSR.from_yaml.return_value = MockSR.return_value
@@ -58,11 +78,9 @@ def test_start_sets_running(manager):
 def test_start_twice_raises(manager):
     with patch("src.live.session.ScriptRunner") as MockSR, \
          patch("src.live.session.KnowledgeBase") as MockKB, \
-         patch("src.live.session.MockEventCollector") as MockEC, \
          patch("src.live.session.TTSPlayer") as MockTTS, \
-         patch("src.live.session.Orchestrator") as MockOrch, \
          patch("src.live.session.DirectorAgent") as MockDA:
-        for Mock in [MockSR, MockEC, MockTTS, MockOrch, MockDA]:
+        for Mock in [MockSR, MockTTS, MockDA]:
             Mock.return_value.start = MagicMock()
             Mock.return_value.stop = MagicMock()
         MockSR.from_yaml.return_value = MockSR.return_value
@@ -84,11 +102,9 @@ def test_stop_when_not_running_raises(manager):
 def test_stop_sets_not_running(manager):
     with patch("src.live.session.ScriptRunner") as MockSR, \
          patch("src.live.session.KnowledgeBase") as MockKB, \
-         patch("src.live.session.MockEventCollector") as MockEC, \
          patch("src.live.session.TTSPlayer") as MockTTS, \
-         patch("src.live.session.Orchestrator") as MockOrch, \
          patch("src.live.session.DirectorAgent") as MockDA:
-        for Mock in [MockSR, MockEC, MockTTS, MockOrch, MockDA]:
+        for Mock in [MockSR, MockTTS, MockDA]:
             Mock.return_value.start = MagicMock()
             Mock.return_value.stop = MagicMock()
         MockSR.from_yaml.return_value = MockSR.return_value
@@ -104,3 +120,26 @@ def test_stop_sets_not_running(manager):
 def test_inject_when_not_running_raises(manager):
     with pytest.raises(RuntimeError, match="not running"):
         manager.inject("hello", None)
+
+
+def test_default_strategy_is_immediate(manager):
+    assert manager.get_strategy() == "immediate"
+
+
+def test_set_strategy_changes_value(manager):
+    manager.set_strategy("intelligent")
+    assert manager.get_strategy() == "intelligent"
+
+
+def test_set_invalid_strategy_raises(manager):
+    with pytest.raises(ValueError):
+        manager.set_strategy("unknown")
+
+
+def test_get_state_includes_strategy(manager):
+    state = manager.get_state()
+    assert "strategy" in state
+
+
+def test_urgent_queue_none_when_not_running(manager):
+    assert manager.get_urgent_queue() is None

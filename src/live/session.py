@@ -1,4 +1,4 @@
-"""SessionManager — owns Agent lifecycle and wires EventBus callbacks."""
+"""SessionManager — owns AI Agent lifecycle and wires EventBus callbacks."""
 from __future__ import annotations
 
 import logging
@@ -8,10 +8,7 @@ import threading
 from typing import Any
 
 from src.live.director_agent import DirectorAgent
-from src.live.event_collector import MockEventCollector
 from src.live.knowledge_base import KnowledgeBase
-from src.live.orchestrator import Orchestrator
-from src.live.schema import Event
 from src.live.script_runner import ScriptRunner
 from src.live.tts_player import TTSPlayer, _SENTINEL as _TTS_SENTINEL
 from src.shared.event_bus import EventBus
@@ -24,10 +21,10 @@ class SessionAlreadyRunningError(RuntimeError):
 
 
 class SessionManager:
-    """Manages a single live Agent session.
+    """Manages a single live AI Agent session (AI components only).
 
     Wires EventBus.publish into Agent components as callbacks without
-    modifying their internals.
+    modifying their internals. Danmaku/event components live in DanmakuManager.
     """
 
     def __init__(self, event_bus: EventBus) -> None:
@@ -36,9 +33,10 @@ class SessionManager:
         self._lock = threading.Lock()
         self._components: list[Any] = []
         self._script_runner: ScriptRunner | None = None
-        self._orchestrator: Orchestrator | None = None
         self._tts_queue: queue.Queue | None = None
+        self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
+        self._strategy: str = "immediate"
 
     def start(
         self,
@@ -46,7 +44,6 @@ class SessionManager:
         product_path: str,
         mock: bool,
         project: str | None,
-        cdp_url: str | None = None,
     ) -> None:
         with self._lock:
             if self._running:
@@ -54,11 +51,12 @@ class SessionManager:
             self._running = True
 
         try:
-            self._build_and_start(script_path, product_path, mock, project, cdp_url)
+            self._build_and_start(script_path, product_path, mock, project)
         except Exception:
             with self._lock:
                 self._running = False
                 self._tts_queue = None
+                self._urgent_queue = None
             raise
 
         self._bus.publish({"type": "agent", "status": "started", "ts": time.time()})
@@ -78,8 +76,8 @@ class SessionManager:
         self._components.clear()
         self._broadcaster_stop.set()
         self._script_runner = None
-        self._orchestrator = None
         self._tts_queue = None
+        self._urgent_queue = None
         self._bus.publish({"type": "agent", "status": "stopped", "ts": time.time()})
         logger.info("SessionManager: agent stopped")
 
@@ -105,14 +103,34 @@ class SessionManager:
             running = self._running
             script_runner = self._script_runner
             tts_queue = self._tts_queue
+            strategy = self._strategy
         if not running or script_runner is None:
-            return {"running": False}
+            return {"running": False, "strategy": strategy}
         state = script_runner.get_state()
         return {
             "running": True,
             "queue_depth": tts_queue.qsize() if tts_queue else 0,
+            "strategy": strategy,
             **state,
         }
+
+    def get_strategy(self) -> str:
+        with self._lock:
+            return self._strategy
+
+    def set_strategy(self, strategy: str) -> None:
+        if strategy not in ("immediate", "intelligent"):
+            raise ValueError(f"Unknown strategy: {strategy}")
+        with self._lock:
+            self._strategy = strategy
+
+    def get_tts_queue(self) -> "queue.Queue | None":
+        with self._lock:
+            return self._tts_queue if self._running else None
+
+    def get_urgent_queue(self) -> "queue.Queue | None":
+        with self._lock:
+            return self._urgent_queue if self._running else None
 
     def _build_and_start(
         self,
@@ -120,11 +138,11 @@ class SessionManager:
         product_path: str,
         mock: bool,
         project: str | None,
-        cdp_url: str | None = None,
     ) -> None:
-        event_queue: queue.Queue[Event] = queue.Queue()
         tts_queue: queue.Queue[tuple[str, str | None]] = queue.Queue()
+        urgent_queue: queue.Queue = queue.Queue(maxsize=10)
         self._tts_queue = tts_queue
+        self._urgent_queue = urgent_queue
 
         kb = KnowledgeBase(product_path)
 
@@ -157,22 +175,19 @@ class SessionManager:
             speak_fn = None
 
         script_runner = ScriptRunner.from_yaml(script_path)
-        if cdp_url:
-            from src.live.cdp_collector import CdpEventCollector
-            event_collector = CdpEventCollector(out_queue=event_queue, cdp_url=cdp_url)
-            logger.info("Using CdpEventCollector (cdp=%s)", cdp_url)
-        else:
-            event_collector = MockEventCollector([], event_queue)
-        orchestrator = Orchestrator(tts_queue=tts_queue)
+
+        def get_events_fn() -> list:
+            return []  # No Orchestrator — DanmakuManager wires this separately
+
         tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn)
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
             knowledge_ctx=kb.context_for_prompt(),
             llm_generate_fn=llm_generate,
+            urgent_queue=urgent_queue,
         )
 
-        # Wire EventBus callbacks by wrapping queue.put methods
         original_tts_put = tts_queue.put
 
         def _tts_put_with_publish(item, *args, **kwargs):
@@ -190,38 +205,17 @@ class SessionManager:
 
         tts_queue.put = _tts_put_with_publish
 
-        original_eq_put = event_queue.put
-
-        def _event_put_with_publish(event: Event, *args, **kwargs):
-            original_eq_put(event, *args, **kwargs)
-            state = script_runner.get_state()
-            orchestrator.handle_event(event, state)   # route P0/P1 to TTS, P2/P3 to buffer
-            self._bus.publish({
-                "type": event.type,
-                "user": event.user,
-                "text": event.text,
-                "gift": event.gift,
-                "value": event.value,
-                "is_follower": event.is_follower,
-                "ts": time.time(),
-            })
-
-        event_queue.put = _event_put_with_publish
-
         self._script_runner = script_runner
-        self._orchestrator = orchestrator
 
         script_runner.start()
-        event_collector.start()
         tts_player.start()
         director.start(
             get_state_fn=script_runner.get_state,
-            get_events_fn=orchestrator.get_events,
+            get_events_fn=get_events_fn,
         )
 
-        self._components = [script_runner, event_collector, tts_player, director]
+        self._components = [script_runner, tts_player, director]
 
-        # Script state broadcaster thread
         self._broadcaster_stop.clear()
 
         def _broadcast_script_state():
