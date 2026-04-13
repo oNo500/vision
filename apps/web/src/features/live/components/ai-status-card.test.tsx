@@ -18,7 +18,6 @@ const mockAiOutput: AiOutput = {
 }
 
 const defaultProps = {
-  nowPlaying: null,
   latest: null,
   ttsQueueDepth: 0,
   urgentQueueDepth: 0,
@@ -82,17 +81,5 @@ describe('AiStatusCard', () => {
   it('displays AI 状态 header', () => {
     render(<AiStatusCard {...defaultProps} />)
     expect(screen.getByText('AI 状态')).toBeInTheDocument()
-  })
-
-  it('shows now playing content when provided', () => {
-    const playing: AiOutput = { ...mockAiOutput, content: '正在播报中的台词' }
-    render(<AiStatusCard {...defaultProps} nowPlaying={playing} />)
-    expect(screen.getByText('正在播')).toBeInTheDocument()
-    expect(screen.getByText('正在播报中的台词')).toBeInTheDocument()
-  })
-
-  it('does not show now playing section when nowPlaying is null', () => {
-    render(<AiStatusCard {...defaultProps} />)
-    expect(screen.queryByText('正在播')).not.toBeInTheDocument()
   })
 })

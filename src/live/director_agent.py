@@ -114,7 +114,7 @@ class DirectorAgent:
 
     def __init__(
         self,
-        tts_queue: queue.Queue[tuple[str, str | None]],
+        tts_queue: queue.Queue,
         tts_player: object,
         knowledge_ctx: str,
         llm_generate_fn,
@@ -231,6 +231,6 @@ class DirectorAgent:
         if not output.content:
             return
 
-        self._tts_queue.put((output.content, output.speech_prompt))
+        self._tts_player.put(output.content, output.speech_prompt)
         self._last_said = output.content
         logger.info("[DIRECTOR] %s (%s): %s", output.source, output.reason, output.content[:60])

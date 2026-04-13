@@ -1,50 +1,57 @@
-"""TTSPlayer — async TTS queue consumer.
+"""TTSPlayer — two-stage TTS pipeline with auditable queue.
 
-In development, accepts a ``speak_fn`` for easy mocking.
-Default production backend: Gemini-2.5-Flash-TTS via Cloud Text-to-Speech (cmn-CN).
-Fallback: macOS ``say`` command.
+Architecture:
+  in_queue (TtsItem)  →  synthesize thread  →  pcm_queue (PcmItem)  →  playback thread
+                                                                          ↓
+                                                               continuous OutputStream
+                                                               (no stop/start = no artifacts)
 
-Queue items are (text, speech_prompt) tuples; speech_prompt may be None.
+Each TtsItem has a stable UUID so the front-end can display, edit, or delete
+pending sentences before they are synthesized or played.
 
-Architecture (Gemini TTS path):
-  A single streaming_synthesize gRPC session and a single sounddevice OutputStream
-  run for the lifetime of the player.  All sentences are yielded into the same gRPC
-  call, so only the very first sentence incurs the ~1.5s connection setup cost.
-  Subsequent sentences play with only the natural ~120ms pause between them.
-
-  Session lifecycle:
-    start() → opens OutputStream + starts _run() thread
-    _run()  → opens gRPC session, yields sentences from in_queue in real time
-              → on error, closes gRPC + reopens (re-incurs one 1.5s penalty)
-    stop()  → signals _run() to exit, closes OutputStream
+Events fired via on_queued / on_play / on_done callbacks (wired by SessionManager
+to the EventBus so the front-end receives SSE updates).
 """
 from __future__ import annotations
 
+import dataclasses
 import logging
 import os
 import queue
 import subprocess
 import threading
+import uuid
 from collections.abc import Callable
 
 logger = logging.getLogger(__name__)
 
 _DEFAULT_SPEECH_PROMPT = "带货主播收到互动时真情流露的回应，语气自然有情绪起伏，像在跟朋友聊天"
 _SAMPLE_RATE = 24000
-_TTS_MODEL = "gemini-2.5-flash-tts"
-_SENTINEL = object()   # put into in_queue to signal shutdown
+_SILENCE_FRAMES = 2400   # 100ms silence between sentences (at 24 kHz)
+_SENTINEL = object()
 
 
-def _play_audio(pcm_data: bytes, device_idx: int | None = None) -> None:
-    """Play raw PCM via sounddevice (blocking)."""
-    import numpy as np
-    import sounddevice as sd
-    audio = np.frombuffer(pcm_data, dtype=np.int16).astype(np.float32) / 32768.0
-    sd.play(audio, samplerate=_SAMPLE_RATE, device=device_idx)
-    sd.wait()
+@dataclasses.dataclass
+class TtsItem:
+    id: str
+    text: str
+    speech_prompt: str | None
+
+    @staticmethod
+    def create(text: str, speech_prompt: str | None) -> "TtsItem":
+        return TtsItem(id=str(uuid.uuid4()), text=text, speech_prompt=speech_prompt)
 
 
-def _fallback_speak(text: str, _prompt=None) -> None:
+@dataclasses.dataclass
+class PcmItem:
+    id: str
+    text: str
+    speech_prompt: str | None
+    pcm: "np.ndarray"  # float32, shape (N,)
+    duration: float
+
+
+def _fallback_speak(text: str, _prompt: str | None = None) -> None:
     """macOS `say` fallback."""
     try:
         subprocess.run(["say", text], check=True, timeout=30)
@@ -53,40 +60,49 @@ def _fallback_speak(text: str, _prompt=None) -> None:
 
 
 class TTSPlayer:
-    """Consumes (text, speech_prompt) items from a queue and speaks them one at a time.
+    """Two-stage TTS: synthesize thread + continuous playback thread.
 
-    In mock/dev mode, pass ``speak_fn`` to override TTS entirely.
-    In production, set ``GOOGLE_CLOUD_PROJECT`` and sounddevice + numpy will be used
-    with a persistent Gemini streaming session for gap-free playback.
+    The in_queue holds TtsItem objects (text + id).  The synthesize thread
+    converts each to PCM and puts PcmItem into pcm_queue.  The playback thread
+    reads pcm_queue and writes into a continuously-open OutputStream so there
+    are no start/stop artifacts between sentences.
 
     Args:
-        in_queue:    Queue of (text, speech_prompt | None) tuples.
-        speak_fn:    Override for all TTS.  If given, the persistent-session path
-                     is skipped and each item is handled by speak_fn(text, prompt).
-        audio_device: Sounddevice output device name substring.  None = default.
+        in_queue:         Queue[TtsItem] — fed by DirectorAgent / inject.
+        speak_fn:         Override for mock/test; skips synthesis entirely.
+        audio_device:     Sounddevice output device name substring.
+        on_queued:        Called when a TtsItem enters in_queue (for SSE).
+        on_play:          Called just before a sentence starts playing.
+        on_done:          Called after a sentence finishes playing.
+        google_cloud_project: GCP project for Cloud TTS.
     """
 
     def __init__(
         self,
-        in_queue: queue.Queue[tuple[str, str | None]],
+        in_queue: queue.Queue,
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
-        on_play: Callable[[str, str | None], None] | None = None,
+        on_queued: Callable[[TtsItem], None] | None = None,
+        on_play: Callable[[TtsItem], None] | None = None,
+        on_done: Callable[[TtsItem], None] | None = None,
         google_cloud_project: str | None = None,
     ) -> None:
         self._queue = in_queue
-        self._speak_fn = speak_fn          # None → use Gemini persistent session
+        self._speak_fn = speak_fn
         self._audio_device = audio_device
-        self._on_play = on_play            # called just before each sentence is spoken
-        # Prefer explicit project arg; fall back to env var for backwards compat
+        self._on_queued = on_queued
+        self._on_play = on_play
+        self._on_done = on_done
         self._google_cloud_project = google_cloud_project or os.environ.get("GOOGLE_CLOUD_PROJECT")
         self._stop_event = threading.Event()
-        self._thread: threading.Thread | None = None
+        self._synth_thread: threading.Thread | None = None
+        self._play_thread: threading.Thread | None = None
         self._is_speaking = False
         self._lock = threading.Lock()
+        self._pcm_queue: queue.Queue = queue.Queue(maxsize=10)
 
         if speak_fn is not None:
-            logger.info("TTSPlayer using custom speak_fn")
+            logger.info("TTSPlayer using custom speak_fn (mock)")
         elif self._google_cloud_project:
             device_info = f" → {audio_device}" if audio_device else ""
             logger.info("TTSPlayer using Cloud TTS non-streaming (cmn-CN-Chirp3-HD-Sulafat%s)", device_info)
@@ -98,20 +114,221 @@ class TTSPlayer:
         with self._lock:
             return self._is_speaking
 
+    def put(self, text: str, speech_prompt: str | None) -> TtsItem:
+        """Create a TtsItem, fire on_queued, and enqueue it. Returns the item."""
+        item = TtsItem.create(text, speech_prompt)
+        if self._on_queued:
+            self._on_queued(item)
+        self._queue.put(item)
+        return item
+
     def start(self) -> None:
-        self._thread = threading.Thread(target=self._run, daemon=True, name="TTSPlayer")
-        self._thread.start()
+        if self._speak_fn is not None:
+            self._synth_thread = threading.Thread(
+                target=self._run_mock, daemon=True, name="TTSSynth"
+            )
+            self._synth_thread.start()
+        elif self._google_cloud_project:
+            try:
+                import sounddevice  # noqa: F401
+                import numpy  # noqa: F401
+            except ImportError:
+                logger.warning("sounddevice/numpy not available, using fallback TTS")
+                self._synth_thread = threading.Thread(
+                    target=self._run_fallback, daemon=True, name="TTSSynth"
+                )
+                self._synth_thread.start()
+                return
+            self._synth_thread = threading.Thread(
+                target=self._run_synth, daemon=True, name="TTSSynth"
+            )
+            self._play_thread = threading.Thread(
+                target=self._run_play, daemon=True, name="TTSPlay"
+            )
+            self._synth_thread.start()
+            self._play_thread.start()
+        else:
+            self._synth_thread = threading.Thread(
+                target=self._run_fallback, daemon=True, name="TTSSynth"
+            )
+            self._synth_thread.start()
         logger.info("TTSPlayer started")
 
     def stop(self) -> None:
         self._stop_event.set()
-        # Unblock the queue.get() inside _run
+        # Unblock synth thread
         try:
-            self._queue.put_nowait((_SENTINEL, None))
+            self._queue.put_nowait(_SENTINEL)
         except queue.Full:
             pass
-        if self._thread and self._thread.is_alive():
-            self._thread.join(timeout=8)
+        # Unblock play thread
+        try:
+            self._pcm_queue.put_nowait(_SENTINEL)
+        except queue.Full:
+            pass
+        if self._synth_thread and self._synth_thread.is_alive():
+            self._synth_thread.join(timeout=8)
+        if self._play_thread and self._play_thread.is_alive():
+            self._play_thread.join(timeout=8)
+
+    # ------------------------------------------------------------------
+    # Mock path
+    # ------------------------------------------------------------------
+
+    def _run_mock(self) -> None:
+        while not self._stop_event.is_set():
+            try:
+                item = self._queue.get(timeout=0.2)
+            except queue.Empty:
+                continue
+            if item is _SENTINEL:
+                self._queue.task_done()
+                break
+            logger.info("[TTS MOCK] %s", item.text[:60])
+            if self._on_play:
+                self._on_play(item)
+            with self._lock:
+                self._is_speaking = True
+            try:
+                self._speak_fn(item.text, item.speech_prompt)
+            finally:
+                with self._lock:
+                    self._is_speaking = False
+                self._queue.task_done()
+                if self._on_done:
+                    self._on_done(item)
+                logger.info("[TTS MOCK] Done, queue size=%d", self._queue.qsize())
+
+    # ------------------------------------------------------------------
+    # Fallback path
+    # ------------------------------------------------------------------
+
+    def _run_fallback(self) -> None:
+        while not self._stop_event.is_set():
+            try:
+                item = self._queue.get(timeout=0.2)
+            except queue.Empty:
+                continue
+            if item is _SENTINEL:
+                self._queue.task_done()
+                break
+            logger.info("[TTS] Speaking: %s", item.text[:60])
+            if self._on_play:
+                self._on_play(item)
+            with self._lock:
+                self._is_speaking = True
+            try:
+                _fallback_speak(item.text, item.speech_prompt)
+            finally:
+                with self._lock:
+                    self._is_speaking = False
+                self._queue.task_done()
+                if self._on_done:
+                    self._on_done(item)
+                logger.info("[TTS] Done, queue size=%d", self._queue.qsize())
+
+    # ------------------------------------------------------------------
+    # Cloud TTS synthesis thread
+    # ------------------------------------------------------------------
+
+    def _run_synth(self) -> None:
+        """Pull TtsItems from in_queue, synthesize to PCM, push PcmItems to pcm_queue."""
+        from google.cloud import texttospeech
+
+        client = texttospeech.TextToSpeechClient()
+
+        while not self._stop_event.is_set():
+            try:
+                item = self._queue.get(timeout=0.2)
+            except queue.Empty:
+                continue
+            if item is _SENTINEL:
+                self._queue.task_done()
+                self._pcm_queue.put(_SENTINEL)
+                break
+
+            logger.info("[TTS] Synthesizing: %s", item.text[:60])
+            try:
+                response = client.synthesize_speech(
+                    input=texttospeech.SynthesisInput(text=item.text),
+                    voice=texttospeech.VoiceSelectionParams(
+                        language_code="cmn-CN",
+                        name="cmn-CN-Chirp3-HD-Sulafat",
+                    ),
+                    audio_config=texttospeech.AudioConfig(
+                        audio_encoding=texttospeech.AudioEncoding.LINEAR16,
+                        sample_rate_hertz=_SAMPLE_RATE,
+                    ),
+                )
+            except Exception as e:
+                logger.error("[TTS] Synthesis failed: %s", e)
+                self._queue.task_done()
+                continue
+
+            import numpy as np
+            pcm = np.frombuffer(response.audio_content, dtype=np.int16).astype(np.float32) / 32768.0
+            duration = len(pcm) / _SAMPLE_RATE
+            logger.info("[TTS] Synthesized %.1fs: %s", duration, item.text[:60])
+
+            pcm_item = PcmItem(
+                id=item.id,
+                text=item.text,
+                speech_prompt=item.speech_prompt,
+                pcm=pcm,
+                duration=duration,
+            )
+            self._queue.task_done()
+            self._pcm_queue.put(pcm_item)
+
+    # ------------------------------------------------------------------
+    # Continuous playback thread
+    # ------------------------------------------------------------------
+
+    def _run_play(self) -> None:
+        """Pull PcmItems from pcm_queue, write into a persistent OutputStream."""
+        import numpy as np
+        import sounddevice as sd
+
+        device_idx = self._resolve_device_idx()
+        silence = np.zeros(_SILENCE_FRAMES, dtype=np.float32)
+
+        stream = sd.OutputStream(
+            samplerate=_SAMPLE_RATE,
+            channels=1,
+            dtype="float32",
+            device=device_idx,
+            blocksize=960,
+        )
+        stream.start()
+
+        try:
+            while not self._stop_event.is_set():
+                try:
+                    item = self._pcm_queue.get(timeout=0.2)
+                except queue.Empty:
+                    continue
+                if item is _SENTINEL:
+                    self._pcm_queue.task_done()
+                    break
+
+                if self._on_play:
+                    self._on_play(TtsItem(id=item.id, text=item.text, speech_prompt=item.speech_prompt))
+                with self._lock:
+                    self._is_speaking = True
+
+                logger.info("[TTS] Playing (%.1fs): %s", item.duration, item.text[:60])
+                stream.write(item.pcm)
+                stream.write(silence)  # brief gap between sentences
+
+                with self._lock:
+                    self._is_speaking = False
+                self._pcm_queue.task_done()
+                if self._on_done:
+                    self._on_done(TtsItem(id=item.id, text=item.text, speech_prompt=item.speech_prompt))
+                logger.info("[TTS] Done playing, pcm_queue size=%d", self._pcm_queue.qsize())
+        finally:
+            stream.stop()
+            stream.close()
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -129,140 +346,3 @@ class TTSPlayer:
             pass
         logger.warning("Audio device %r not found, using default", self._audio_device)
         return None
-
-    # ------------------------------------------------------------------
-    # Mock / speak_fn path
-    # ------------------------------------------------------------------
-
-    def _run_with_speak_fn(self) -> None:
-        """Simple loop used when a custom speak_fn is provided (mock/test)."""
-        while not self._stop_event.is_set():
-            try:
-                text, speech_prompt = self._queue.get(timeout=0.2)
-            except queue.Empty:
-                continue
-            if text is _SENTINEL:
-                self._queue.task_done()
-                break
-            logger.info("[TTS] Speaking: %s", text[:60])
-            if self._on_play:
-                self._on_play(text, speech_prompt)
-            with self._lock:
-                self._is_speaking = True
-            try:
-                self._speak_fn(text, speech_prompt)
-            finally:
-                with self._lock:
-                    self._is_speaking = False
-                self._queue.task_done()
-                logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
-
-    # ------------------------------------------------------------------
-    # Gemini persistent-session path
-    # ------------------------------------------------------------------
-
-    def _run_gemini(self) -> None:
-        """Gemini TTS: one synthesize_speech call per sentence, play with sd.play()+sd.wait().
-
-        Each sentence is a separate API call, returning complete PCM before playback starts.
-        This gives exact sentence boundaries: qsize() is the true count of unplayed sentences,
-        and sd.wait() fires precisely when each sentence finishes.
-        Latency (~300-500ms per call) is hidden by DirectorAgent's pre-generation queue.
-        """
-        import numpy as np
-        import sounddevice as sd
-        from google.cloud import texttospeech
-
-        client = texttospeech.TextToSpeechClient()
-        device_idx = self._resolve_device_idx()
-
-        while not self._stop_event.is_set():
-            try:
-                text, speech_prompt = self._queue.get(timeout=0.2)
-            except queue.Empty:
-                continue
-            if text is _SENTINEL:
-                self._queue.task_done()
-                break
-
-            logger.info("[TTS] Synthesizing: %s", text[:60])
-            try:
-                response = client.synthesize_speech(
-                    input=texttospeech.SynthesisInput(text=text),
-                    voice=texttospeech.VoiceSelectionParams(
-                        language_code="cmn-CN",
-                        name="cmn-CN-Chirp3-HD-Sulafat",
-                    ),
-                    audio_config=texttospeech.AudioConfig(
-                        audio_encoding=texttospeech.AudioEncoding.LINEAR16,
-                        sample_rate_hertz=_SAMPLE_RATE,
-                    ),
-                )
-            except Exception as e:
-                logger.error("[TTS] Synthesis failed: %s", e)
-                self._queue.task_done()
-                continue
-
-            pcm = np.frombuffer(response.audio_content, dtype=np.int16).astype(np.float32) / 32768.0
-            duration = len(pcm) / _SAMPLE_RATE
-            logger.info("[TTS] Speaking (%.1fs): %s", duration, text[:60])
-
-            if self._on_play:
-                self._on_play(text, speech_prompt)
-            with self._lock:
-                self._is_speaking = True
-            try:
-                sd.play(pcm, samplerate=_SAMPLE_RATE, device=device_idx)
-                sd.wait()
-            finally:
-                with self._lock:
-                    self._is_speaking = False
-                self._queue.task_done()
-                logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
-
-    # ------------------------------------------------------------------
-    # Fallback path (no GCP project)
-    # ------------------------------------------------------------------
-
-    def _run_fallback(self) -> None:
-        while not self._stop_event.is_set():
-            try:
-                text, speech_prompt = self._queue.get(timeout=0.2)
-            except queue.Empty:
-                continue
-            if text is _SENTINEL:
-                self._queue.task_done()
-                break
-            logger.info("[TTS] Speaking: %s", text[:60])
-            if self._on_play:
-                self._on_play(text, speech_prompt)
-            with self._lock:
-                self._is_speaking = True
-            try:
-                _fallback_speak(text, speech_prompt)
-            finally:
-                with self._lock:
-                    self._is_speaking = False
-                self._queue.task_done()
-                logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
-
-    # ------------------------------------------------------------------
-    # Entry point
-    # ------------------------------------------------------------------
-
-    def _run(self) -> None:
-        if self._speak_fn is not None:
-            self._run_with_speak_fn()
-        elif self._google_cloud_project:
-            try:
-                import sounddevice  # noqa: F401
-                import numpy  # noqa: F401
-                self._run_gemini()
-            except ImportError:
-                logger.warning("sounddevice/numpy not available, using fallback TTS")
-                self._run_fallback()
-            except Exception as e:
-                logger.error("Gemini TTS session fatal error: %s", e)
-                self._run_fallback()
-        else:
-            self._run_fallback()

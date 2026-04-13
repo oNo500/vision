@@ -9,7 +9,6 @@ const SOURCE_CFG = {
 } as const
 
 interface AiStatusCardProps {
-  nowPlaying: AiOutput | null
   latest: AiOutput | null
   ttsQueueDepth: number
   urgentQueueDepth: number
@@ -17,8 +16,7 @@ interface AiStatusCardProps {
   llmGenerating: boolean
 }
 
-export function AiStatusCard({ nowPlaying, latest, ttsQueueDepth, urgentQueueDepth, ttsSpeaking, llmGenerating }: AiStatusCardProps) {
-
+export function AiStatusCard({ latest, ttsQueueDepth, urgentQueueDepth, ttsSpeaking, llmGenerating }: AiStatusCardProps) {
   return (
     <div className="rounded-lg border bg-background p-4">
       <div className="mb-3 flex items-center justify-between">
@@ -53,21 +51,6 @@ export function AiStatusCard({ nowPlaying, latest, ttsQueueDepth, urgentQueueDep
         </div>
       </div>
 
-      {/* Now playing */}
-      {nowPlaying ? (
-        <div className="mb-3 rounded-md border border-primary/30 bg-primary/5 px-3 py-2">
-          <div className="mb-1 flex items-center gap-1.5">
-            <span className="size-1.5 animate-pulse rounded-full bg-primary" />
-            <span className="text-[10px] font-medium text-primary">正在播</span>
-          </div>
-          <p className="text-sm leading-relaxed text-foreground">{nowPlaying.content}</p>
-          {nowPlaying.speech_prompt && (
-            <p className="mt-0.5 text-[10px] text-muted-foreground">{nowPlaying.speech_prompt}</p>
-          )}
-        </div>
-      ) : null}
-
-      {/* Latest queued */}
       {latest ? (
         <div className="space-y-1.5">
           <div className="flex items-center gap-2">

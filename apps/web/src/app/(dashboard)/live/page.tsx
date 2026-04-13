@@ -8,6 +8,7 @@ import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
 import { PlanPanel } from '@/features/live/components/plan-panel'
 import { PlanSidebar } from '@/features/live/components/plan-sidebar'
 import { SessionControls } from '@/features/live/components/session-controls'
+import { TtsQueuePanel } from '@/features/live/components/tts-queue-panel'
 import { useAiSession } from '@/features/live/hooks/use-ai-session'
 import { useDanmakuSession } from '@/features/live/hooks/use-danmaku-session'
 import { useStrategy } from '@/features/live/hooks/use-strategy'
@@ -21,7 +22,7 @@ export default function LivePage() {
   const aiSession = useAiSession()
   const danmakuSession = useDanmakuSession()
   const strategy = useStrategy()
-  const { events, connected, onlineCount, aiOutputs, nowPlaying, scriptState } = useLiveStream()
+  const { events, connected, onlineCount, aiOutputs, nowPlaying, ttsQueue, scriptState } = useLiveStream()
   const plan = usePlanActive()
 
   return (
@@ -53,13 +54,15 @@ export default function LivePage() {
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
             <div className="shrink-0">
               <AiStatusCard
-                nowPlaying={nowPlaying}
                 latest={aiOutputs[aiOutputs.length - 1] ?? null}
                 ttsQueueDepth={aiSession.state.tts_queue_depth ?? 0}
                 urgentQueueDepth={aiSession.state.urgent_queue_depth ?? 0}
                 ttsSpeaking={aiSession.state.tts_speaking ?? false}
                 llmGenerating={aiSession.state.llm_generating ?? false}
               />
+            </div>
+            <div className="shrink-0 rounded-lg border bg-background p-4">
+              <TtsQueuePanel nowPlaying={nowPlaying} queue={ttsQueue} />
             </div>
             <div className="min-h-0 flex-1">
               <AiOutputLog outputs={aiOutputs} />

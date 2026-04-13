@@ -10,7 +10,7 @@ from typing import Any
 from src.live.director_agent import DirectorAgent
 from src.live.knowledge_base import KnowledgeBase
 from src.live.script_runner import ScriptRunner
-from src.live.tts_player import TTSPlayer, _SENTINEL as _TTS_SENTINEL
+from src.live.tts_player import TTSPlayer, TtsItem
 from src.shared.event_bus import EventBus
 
 logger = logging.getLogger(__name__)
@@ -118,15 +118,8 @@ class SessionManager:
         with self._lock:
             if not self._running:
                 raise RuntimeError("Session not running")
-            tts_queue = self._tts_queue
-        tts_queue.put((content, speech_prompt))
-        self._bus.publish({
-            "type": "tts_output",
-            "content": content,
-            "speech_prompt": speech_prompt,
-            "source": "inject",
-            "ts": time.time(),
-        })
+            tts_player = self._tts_player
+        tts_player.put(content, speech_prompt)
 
     def get_script_runner(self) -> ScriptRunner | None:
         with self._lock:
@@ -153,6 +146,21 @@ class SessionManager:
             "strategy": strategy,
             **state,
         }
+
+    def get_tts_queue_snapshot(self) -> list[dict]:
+        """Return a snapshot of pending TtsItems for the front-end queue panel."""
+        with self._lock:
+            if not self._running:
+                return []
+            q = self._tts_queue
+        if q is None:
+            return []
+        items = list(q.queue)
+        return [
+            {"id": item.id, "content": item.text, "speech_prompt": item.speech_prompt}
+            for item in items
+            if isinstance(item, TtsItem)
+        ]
 
     def get_strategy(self) -> str:
         with self._lock:
@@ -244,24 +252,44 @@ class SessionManager:
             def llm_generate(prompt: str) -> str:
                 return _model.generate_content(prompt).text
 
-        if mock:
-            def speak_fn(text: str, speech_prompt: str | None = None) -> None:
-                logger.info("[TTS MOCK] %s", text)
-        else:
-            speak_fn = None
+        speak_fn = (lambda text, prompt=None: logger.info("[TTS MOCK] %s", text)) if mock else None
 
         def get_events_fn() -> list:
             return []  # No Orchestrator — DanmakuManager wires this separately
 
-        def _on_play(text: str, speech_prompt: str | None) -> None:
+        def _on_queued(item: TtsItem) -> None:
             self._bus.publish({
-                "type": "tts_playing",
-                "content": text,
-                "speech_prompt": speech_prompt,
+                "type": "tts_queued",
+                "id": item.id,
+                "content": item.text,
+                "speech_prompt": item.speech_prompt,
                 "ts": time.time(),
             })
 
-        tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, on_play=_on_play, google_cloud_project=project)
+        def _on_play(item: TtsItem) -> None:
+            self._bus.publish({
+                "type": "tts_playing",
+                "id": item.id,
+                "content": item.text,
+                "speech_prompt": item.speech_prompt,
+                "ts": time.time(),
+            })
+
+        def _on_done(item: TtsItem) -> None:
+            self._bus.publish({
+                "type": "tts_done",
+                "id": item.id,
+                "ts": time.time(),
+            })
+
+        tts_player = TTSPlayer(
+            tts_queue,
+            speak_fn=speak_fn,
+            on_queued=_on_queued,
+            on_play=_on_play,
+            on_done=_on_done,
+            google_cloud_project=project,
+        )
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
@@ -270,23 +298,6 @@ class SessionManager:
             urgent_queue=urgent_queue,
             persona_ctx=persona_ctx,
         )
-
-        original_tts_put = tts_queue.put
-
-        def _tts_put_with_publish(item, *args, **kwargs):
-            original_tts_put(item, *args, **kwargs)
-            content, speech_prompt = item
-            if content is _TTS_SENTINEL:
-                return
-            self._bus.publish({
-                "type": "tts_output",
-                "content": content,
-                "speech_prompt": speech_prompt,
-                "source": "agent",
-                "ts": time.time(),
-            })
-
-        tts_queue.put = _tts_put_with_publish
 
         self._script_runner = script_runner
         self._tts_player = tts_player

@@ -21,6 +21,12 @@ export type AiOutput = {
   ts: number
 }
 
+export type TtsQueueItem = {
+  id: string
+  content: string
+  speech_prompt: string | null
+}
+
 export type ScriptState = {
   segment_id: string
   title: string
@@ -33,7 +39,7 @@ export type ScriptState = {
 }
 
 const MAX_EVENTS = 200
-const SKIP_TYPES = new Set(['ping', 'agent', 'script', 'tts_output', 'tts_playing'])
+const SKIP_TYPES = new Set(['ping', 'agent', 'script', 'tts_output', 'tts_playing', 'tts_queued', 'tts_done'])
 const EVENTS_KEY = 'live_events_cache'
 const AI_OUTPUTS_KEY = 'live_ai_outputs_cache'
 
@@ -59,6 +65,7 @@ export function useLiveStream() {
   const [events, setEvents] = useState<LiveEvent[]>([])
   const [aiOutputs, setAiOutputs] = useState<AiOutput[]>([])
   const [nowPlaying, setNowPlaying] = useState<AiOutput | null>(null)
+  const [ttsQueue, setTtsQueue] = useState<TtsQueueItem[]>([])
   const [scriptState, setScriptState] = useState<ScriptState | null>(null)
   const [connected, setConnected] = useState(false)
   const [onlineCount, setOnlineCount] = useState<number | null>(null)
@@ -121,12 +128,30 @@ export function useLiveStream() {
         }
 
         if (type === 'tts_playing') {
+          const id = raw['id'] as string
           setNowPlaying({
             content: raw['content'] as string,
             source: 'agent',
             speech_prompt: (raw['speech_prompt'] as string) ?? '',
             ts: raw['ts'] as number,
           })
+          // Remove from pending queue — it's now playing
+          setTtsQueue((prev) => prev.filter((item) => item.id !== id))
+          return
+        }
+
+        if (type === 'tts_queued') {
+          const item: TtsQueueItem = {
+            id: raw['id'] as string,
+            content: raw['content'] as string,
+            speech_prompt: (raw['speech_prompt'] as string | null) ?? null,
+          }
+          setTtsQueue((prev) => [...prev, item])
+          return
+        }
+
+        if (type === 'tts_done') {
+          setNowPlaying(null)
           return
         }
 
@@ -153,5 +178,5 @@ export function useLiveStream() {
     }
   }, [])
 
-  return { events, connected, onlineCount, aiOutputs, nowPlaying, scriptState }
+  return { events, connected, onlineCount, aiOutputs, nowPlaying, ttsQueue, scriptState }
 }
