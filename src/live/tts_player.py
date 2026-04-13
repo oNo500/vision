@@ -162,7 +162,12 @@ class TTSPlayer:
     # ------------------------------------------------------------------
 
     def _run_gemini(self) -> None:
-        """Gemini TTS: single gRPC session + single OutputStream for all sentences."""
+        """Gemini TTS: single gRPC session + single OutputStream for all sentences.
+
+        Architecture: _requests() generator reads directly from in_queue, so gRPC
+        receives each sentence the moment it arrives — no intermediate _pipe buffer.
+        This avoids the 5s idle timeout that fires when _pipe empties between sentences.
+        """
         import numpy as np
         import sounddevice as sd
         from google.cloud import texttospeech
@@ -182,11 +187,12 @@ class TTSPlayer:
             )
             sd_stream.start()
 
-            # Internal pipe: _requests() reads from this to yield sentences
-            _pipe: queue.Queue = queue.Queue()
             _session_done = threading.Event()
+            error_holder: list[Exception | None] = [None]
 
-            def _requests(pipe=_pipe):
+            # _requests() drives the gRPC session from a background thread.
+            # It reads directly from in_queue so gRPC never idles between sentences.
+            def _requests(stop=self._stop_event):
                 yield texttospeech.StreamingSynthesizeRequest(
                     streaming_config=texttospeech.StreamingSynthesizeConfig(
                         voice=texttospeech.VoiceSelectionParams(
@@ -196,24 +202,33 @@ class TTSPlayer:
                         )
                     )
                 )
-                while True:
-                    item = pipe.get()
-                    if item is _SENTINEL:
+                while not stop.is_set():
+                    try:
+                        text, speech_prompt = self._queue.get(timeout=0.5)
+                    except queue.Empty:
+                        continue
+                    if text is _SENTINEL:
+                        self._queue.task_done()
                         return
-                    text, prompt = item
+                    logger.info("[TTS] Speaking: %s", text[:60])
+                    if self._on_play:
+                        self._on_play(text, speech_prompt)
+                    with self._lock:
+                        self._is_speaking = True
                     yield texttospeech.StreamingSynthesizeRequest(
                         input=texttospeech.StreamingSynthesisInput(
                             text=text,
-                            prompt=prompt or _DEFAULT_SPEECH_PROMPT,
+                            prompt=speech_prompt or _DEFAULT_SPEECH_PROMPT,
                         )
                     )
+                    self._queue.task_done()
+                    with self._lock:
+                        self._is_speaking = False
+                    logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
 
-            # Start the gRPC consumer in a background thread
-            error_holder: list[Exception | None] = [None]
-
-            def _consume(pipe=_pipe, holder=error_holder):
+            def _consume(holder=error_holder):
                 try:
-                    for response in client.streaming_synthesize(_requests(pipe)):
+                    for response in client.streaming_synthesize(_requests()):
                         chunk = np.frombuffer(response.audio_content, dtype=np.int16)
                         sd_stream.write(chunk)
                 except Exception as e:
@@ -223,79 +238,13 @@ class TTSPlayer:
 
             consumer = threading.Thread(target=_consume, daemon=True, name="TTSConsumer")
             consumer.start()
-
-            # Feed sentences from in_queue → _pipe → gRPC session
-            session_ok = True
-            while not self._stop_event.is_set():
-                try:
-                    text, speech_prompt = self._queue.get(timeout=0.5)
-                except queue.Empty:
-                    # Check if gRPC session died unexpectedly
-                    if _session_done.is_set() and not self._stop_event.is_set():
-                        logger.warning("TTS gRPC session ended unexpectedly, restarting")
-                        session_ok = False
-                        break
-                    continue
-
-                if text is _SENTINEL:
-                    self._queue.task_done()
-                    _pipe.put(_SENTINEL)
-                    _session_done.wait(timeout=5)
-                    session_ok = False
-                    self._stop_event.set()
-                    break
-
-                logger.info("[TTS] Speaking: %s", text[:60])
-                if self._on_play:
-                    self._on_play(text, speech_prompt)
-                with self._lock:
-                    self._is_speaking = True
-
-                # Feed to gRPC session
-                _pipe.put((text, speech_prompt))
-
-                # Wait until this sentence's audio has been sent to gRPC AND played.
-                # Strategy: wait for pipe to be consumed (text sent to API), then
-                # wait for the sounddevice buffer to drain using stream.write() latency.
-                # Since we can't know exact sentence duration here, we wait for the
-                # NEXT queue item to arrive — if none arrives before timeout, we know
-                # the sentence is done being spoken.
-                #
-                # Simpler approach: peek at next item from in_queue with a short timeout.
-                # If the next item is ready, the previous sentence must be finishing up;
-                # go ahead and feed it. This creates natural back-pressure.
-                #
-                # Actually the simplest correct approach: _pipe tracks completion.
-                # We wait for _pipe to be empty (item consumed by _requests generator).
-                # Once consumed, the text is in-flight to gRPC. Then we need to wait
-                # for the audio to play. We estimate duration from queue timing.
-                #
-                # For now: mark done only when next item taken from in_queue.
-                # The is_speaking flag covers the playback period.
-
-                # Signal completion: we'll update is_speaking when the next sentence starts
-                # or when the queue stays empty for a moment.
-                self._queue.task_done()
-                with self._lock:
-                    self._is_speaking = False
-                logger.info("[TTS] Done speaking, queue size=%d", self._queue.qsize())
-
-                if _session_done.is_set():
-                    logger.warning("TTS gRPC session ended, restarting")
-                    session_ok = False
-                    break
-
-            # Teardown this session
-            if not _session_done.is_set():
-                _pipe.put(_SENTINEL)
-                _session_done.wait(timeout=5)
+            _session_done.wait()
 
             sd_stream.stop()
             sd_stream.close()
 
-            if error_holder[0]:
-                logger.warning("TTS session error: %s", error_holder[0])
-                # Brief pause before retry to avoid hammering on errors
+            if error_holder[0] and not self._stop_event.is_set():
+                logger.warning("TTS session error: %s — restarting", error_holder[0])
                 self._stop_event.wait(timeout=1.0)
 
     # ------------------------------------------------------------------
