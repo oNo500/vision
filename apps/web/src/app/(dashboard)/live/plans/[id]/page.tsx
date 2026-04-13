@@ -1,14 +1,20 @@
 'use client'
 
-import { use, useState } from 'react'
+import { use, useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 import { Button } from '@workspace/ui/components/button'
 import { Input } from '@workspace/ui/components/input'
 import { Label } from '@workspace/ui/components/label'
 
+import { combine } from '@atlaskit/pragmatic-drag-and-drop/combine'
+import { draggable, dropTargetForElements, monitorForElements } from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
+import { attachInstruction, extractInstruction } from '@atlaskit/pragmatic-drag-and-drop-hitbox/list-item'
+import { DropIndicator } from '@atlaskit/pragmatic-drag-and-drop-react-drop-indicator/list-item'
+import { reorder } from '@atlaskit/pragmatic-drag-and-drop/reorder'
+
 import { appPaths } from '@/config/app-paths'
-import { usePlan, type LivePlan, type Segment } from '@/features/live/hooks/use-plan'
+import { usePlan, type Segment } from '@/features/live/hooks/use-plan'
 import { usePlans } from '@/features/live/hooks/use-plans'
 
 function TagInput({
@@ -54,12 +60,153 @@ function TagInput({
   )
 }
 
+function SegmentCard({
+  seg,
+  index,
+  total,
+  onUpdate,
+  onRemove,
+}: {
+  seg: Segment
+  index: number
+  total: number
+  onUpdate: (key: string, value: unknown) => void
+  onRemove: () => void
+}) {
+  const cardRef = useRef<HTMLDivElement>(null)
+  const handleRef = useRef<HTMLDivElement>(null)
+  const [closestEdge, setClosestEdge] = useState<'top' | 'bottom' | null>(null)
+  const [isDragging, setIsDragging] = useState(false)
+
+  useEffect(() => {
+    const card = cardRef.current
+    const handle = handleRef.current
+    if (!card || !handle) return
+
+    return combine(
+      draggable({
+        element: card,
+        dragHandle: handle,
+        getInitialData: () => ({ type: 'segment', index }),
+        onDragStart: () => setIsDragging(true),
+        onDrop: () => setIsDragging(false),
+      }),
+      dropTargetForElements({
+        element: card,
+        canDrop: ({ source }) => source.data.type === 'segment' && source.data.index !== index,
+        getData: ({ input, element }) =>
+          attachInstruction({ type: 'segment', index }, {
+            element,
+            input,
+            operations: { 'reorder-before': 'available', 'reorder-after': 'available' },
+            axis: 'vertical',
+          }),
+        onDrag: ({ self }) => {
+          const instruction = extractInstruction(self.data)
+          setClosestEdge(instruction ? (instruction.operation === 'reorder-before' ? 'top' : 'bottom') : null)
+        },
+        onDragLeave: () => setClosestEdge(null),
+        onDrop: () => setClosestEdge(null),
+      }),
+    )
+  }, [index])
+
+  return (
+    <div
+      ref={cardRef}
+      className={`relative rounded border p-4 flex flex-col gap-3 ${isDragging ? 'opacity-40' : ''}`}
+    >
+      {closestEdge && <DropIndicator edge={closestEdge} />}
+      <div className="flex items-center gap-2">
+        <div
+          ref={handleRef}
+          className="cursor-grab text-muted-foreground select-none px-1 text-lg"
+          title="拖拽排序"
+        >
+          &#10815;
+        </div>
+        <Input
+          className="flex-1"
+          value={seg.title}
+          onChange={(e) => onUpdate('title', e.target.value)}
+          placeholder="阶段名称，如：产品介绍、限时促单"
+        />
+        <span className="text-xs text-muted-foreground">{index + 1}/{total}</span>
+        <Button variant="ghost" size="sm" onClick={onRemove}>x</Button>
+      </div>
+      <textarea
+        className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        value={seg.goal}
+        onChange={(e) => onUpdate('goal', e.target.value)}
+        rows={2}
+        placeholder="告诉 AI 这段做什么，如：重点介绍益生菌成分，引导观众点购物车"
+      />
+      <div className="flex flex-col gap-1">
+        <span className="text-xs text-muted-foreground">锚点话术（AI 会在合适时机自然说出）</span>
+        <TagInput
+          value={seg.cue}
+          onChange={(v) => onUpdate('cue', v)}
+          placeholder="回车添加，AI 会在合适时机自然融入"
+        />
+      </div>
+      <div className="flex gap-4 items-center text-sm flex-wrap">
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={seg.must_say}
+            onChange={(e) => onUpdate('must_say', e.target.checked)}
+          />
+          锚点话术必须全部说完
+        </label>
+        <label className="flex items-center gap-2">
+          时长(秒)
+          <Input
+            type="number"
+            className="w-20"
+            value={seg.duration}
+            onChange={(e) => onUpdate('duration', Number(e.target.value))}
+          />
+        </label>
+      </div>
+      <div className="flex flex-col gap-1">
+        <span className="text-xs text-muted-foreground">关键词</span>
+        <TagInput value={seg.keywords} onChange={(v) => onUpdate('keywords', v)} placeholder="回车添加" />
+      </div>
+    </div>
+  )
+}
+
 export default function PlanEditorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
   const router = useRouter()
   const { plan, saving, savePlan } = usePlan(id)
   const { loadPlan } = usePlans()
   const [tab, setTab] = useState<'product' | 'persona' | 'script'>('product')
+  const listRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    return monitorForElements({
+      canMonitor: ({ source }) => source.data.type === 'segment',
+      onDrop({ source, location }) {
+        if (!plan) return
+        const target = location.current.dropTargets[0]
+        if (!target) return
+        const instruction = extractInstruction(target.data)
+        if (!instruction) return
+        const startIndex = source.data.index as number
+        const targetIndex = target.data.index as number
+        let finishIndex = instruction.operation === 'reorder-before' ? targetIndex : targetIndex + 1
+        if (finishIndex > plan.script.segments.length - 1) finishIndex = plan.script.segments.length - 1
+        if (startIndex === finishIndex) return
+        const reordered = reorder({
+          list: plan.script.segments,
+          startIndex,
+          finishIndex,
+        })
+        savePlan({ ...plan, script: { segments: reordered } })
+      },
+    })
+  }, [plan, savePlan])
 
   if (!plan) return <div className="p-6 text-sm text-muted-foreground">加载中…</div>
 
@@ -85,8 +232,10 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
     if (!plan) return
     const newSeg: Segment = {
       id: `seg-${Date.now()}`,
-      text: '',
-      duration: 60,
+      title: '',
+      goal: '',
+      duration: 300,
+      cue: [],
       must_say: false,
       keywords: [],
     }
@@ -96,15 +245,6 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
   function removeSegment(index: number) {
     if (!plan) return
     const segments = plan.script.segments.filter((_, i) => i !== index)
-    savePlan({ ...plan, script: { segments } })
-  }
-
-  function moveSegment(index: number, direction: 'up' | 'down') {
-    if (!plan) return
-    const segments = [...plan.script.segments]
-    const target = direction === 'up' ? index - 1 : index + 1
-    if (target < 0 || target >= segments.length) return
-    ;[segments[index], segments[target]] = [segments[target], segments[index]]
     savePlan({ ...plan, script: { segments } })
   }
 
@@ -227,48 +367,16 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
           )}
 
           {tab === 'script' && (
-            <div className="flex flex-col gap-3 max-w-2xl">
+            <div className="flex flex-col gap-3" ref={listRef}>
               {plan.script.segments.map((seg, i) => (
-                <div key={seg.id} className="rounded border p-4 flex flex-col gap-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-muted-foreground w-6">{i + 1}</span>
-                    <div className="flex gap-1 ml-auto">
-                      <Button variant="ghost" size="sm" onClick={() => moveSegment(i, 'up')} disabled={i === 0}>up</Button>
-                      <Button variant="ghost" size="sm" onClick={() => moveSegment(i, 'down')} disabled={i === plan.script.segments.length - 1}>down</Button>
-                      <Button variant="ghost" size="sm" onClick={() => removeSegment(i)}>x</Button>
-                    </div>
-                  </div>
-                  <textarea
-                    className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                    value={seg.text}
-                    onChange={(e) => updateSegment(i, 'text', e.target.value)}
-                    rows={2}
-                    placeholder="脚本内容"
-                  />
-                  <div className="flex gap-4 items-center text-sm">
-                    <label className="flex items-center gap-2">
-                      时长(秒)
-                      <Input
-                        type="number"
-                        className="w-20"
-                        value={seg.duration}
-                        onChange={(e) => updateSegment(i, 'duration', Number(e.target.value))}
-                      />
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input
-                        type="checkbox"
-                        checked={seg.must_say}
-                        onChange={(e) => updateSegment(i, 'must_say', e.target.checked)}
-                      />
-                      必须贴近原文
-                    </label>
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <span className="text-xs text-muted-foreground">关键词</span>
-                    <TagInput value={seg.keywords} onChange={(v) => updateSegment(i, 'keywords', v)} placeholder="回车添加" />
-                  </div>
-                </div>
+                <SegmentCard
+                  key={seg.id}
+                  seg={seg}
+                  index={i}
+                  total={plan.script.segments.length}
+                  onUpdate={(key, value) => updateSegment(i, key, value)}
+                  onRemove={() => removeSegment(i)}
+                />
               ))}
               <Button variant="outline" className="self-start" onClick={addSegment}>+ 添加段落</Button>
             </div>
