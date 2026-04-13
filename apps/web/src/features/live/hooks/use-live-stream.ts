@@ -33,7 +33,7 @@ export type ScriptState = {
 }
 
 const MAX_EVENTS = 200
-const SKIP_TYPES = new Set(['ping', 'agent', 'script', 'tts_output'])
+const SKIP_TYPES = new Set(['ping', 'agent', 'script', 'tts_output', 'tts_playing'])
 const EVENTS_KEY = 'live_events_cache'
 const AI_OUTPUTS_KEY = 'live_ai_outputs_cache'
 
@@ -58,6 +58,7 @@ function saveCache<T>(key: string, items: T[]): void {
 export function useLiveStream() {
   const [events, setEvents] = useState<LiveEvent[]>([])
   const [aiOutputs, setAiOutputs] = useState<AiOutput[]>([])
+  const [nowPlaying, setNowPlaying] = useState<AiOutput | null>(null)
   const [scriptState, setScriptState] = useState<ScriptState | null>(null)
   const [connected, setConnected] = useState(false)
   const [onlineCount, setOnlineCount] = useState<number | null>(null)
@@ -119,6 +120,16 @@ export function useLiveStream() {
           return
         }
 
+        if (type === 'tts_playing') {
+          setNowPlaying({
+            content: raw['content'] as string,
+            source: 'agent',
+            speech_prompt: (raw['speech_prompt'] as string) ?? '',
+            ts: raw['ts'] as number,
+          })
+          return
+        }
+
         // live interaction events
         if (SKIP_TYPES.has(type)) return
         const event = raw as unknown as LiveEvent
@@ -142,5 +153,5 @@ export function useLiveStream() {
     }
   }, [])
 
-  return { events, connected, onlineCount, aiOutputs, scriptState }
+  return { events, connected, onlineCount, aiOutputs, nowPlaying, scriptState }
 }

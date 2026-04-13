@@ -21,7 +21,7 @@ export default function LivePage() {
   const aiSession = useAiSession()
   const danmakuSession = useDanmakuSession()
   const strategy = useStrategy()
-  const { events, connected, onlineCount, aiOutputs, scriptState } = useLiveStream()
+  const { events, connected, onlineCount, aiOutputs, nowPlaying, scriptState } = useLiveStream()
   const plan = usePlanActive()
 
   return (
@@ -53,6 +53,7 @@ export default function LivePage() {
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
             <div className="shrink-0">
               <AiStatusCard
+                nowPlaying={nowPlaying}
                 latest={aiOutputs[aiOutputs.length - 1] ?? null}
                 ttsQueueDepth={aiSession.state.tts_queue_depth ?? 0}
                 urgentQueueDepth={aiSession.state.urgent_queue_depth ?? 0}

@@ -245,7 +245,15 @@ class SessionManager:
         def get_events_fn() -> list:
             return []  # No Orchestrator — DanmakuManager wires this separately
 
-        tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn)
+        def _on_play(text: str, speech_prompt: str | None) -> None:
+            self._bus.publish({
+                "type": "tts_playing",
+                "content": text,
+                "speech_prompt": speech_prompt,
+                "ts": time.time(),
+            })
+
+        tts_player = TTSPlayer(tts_queue, speak_fn=speak_fn, on_play=_on_play)
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,

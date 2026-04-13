@@ -71,10 +71,12 @@ class TTSPlayer:
         in_queue: queue.Queue[tuple[str, str | None]],
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
+        on_play: Callable[[str, str | None], None] | None = None,
     ) -> None:
         self._queue = in_queue
         self._speak_fn = speak_fn          # None → use Gemini persistent session
         self._audio_device = audio_device
+        self._on_play = on_play            # called just before each sentence is spoken
         self._stop_event = threading.Event()
         self._thread: threading.Thread | None = None
         self._is_speaking = False
@@ -140,6 +142,8 @@ class TTSPlayer:
                 self._queue.task_done()
                 break
             logger.info("[TTS] Speaking: %s", text[:60])
+            if self._on_play:
+                self._on_play(text, speech_prompt)
             with self._lock:
                 self._is_speaking = True
             try:
@@ -239,6 +243,8 @@ class TTSPlayer:
                     break
 
                 logger.info("[TTS] Speaking: %s", text[:60])
+                if self._on_play:
+                    self._on_play(text, speech_prompt)
                 with self._lock:
                     self._is_speaking = True
 
@@ -303,6 +309,8 @@ class TTSPlayer:
                 self._queue.task_done()
                 break
             logger.info("[TTS] Speaking: %s", text[:60])
+            if self._on_play:
+                self._on_play(text, speech_prompt)
             with self._lock:
                 self._is_speaking = True
             try:

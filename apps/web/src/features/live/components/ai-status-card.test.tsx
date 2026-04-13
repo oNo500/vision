@@ -17,70 +17,80 @@ const mockAiOutput: AiOutput = {
   ts: 1234567890,
 }
 
+const defaultProps = {
+  nowPlaying: null,
+  latest: null,
+  ttsQueueDepth: 0,
+  urgentQueueDepth: 0,
+}
+
 describe('AiStatusCard', () => {
   it('shows "等待 AI 输出…" when latest is null', () => {
-    render(<AiStatusCard latest={null} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    render(<AiStatusCard {...defaultProps} />)
     expect(screen.getByText('等待 AI 输出…')).toBeInTheDocument()
   })
 
   it('shows latest.content when provided', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    render(<AiStatusCard {...defaultProps} latest={mockAiOutput} />)
     expect(screen.getByText('This is AI generated text')).toBeInTheDocument()
   })
 
   it('shows correct source badge label for script source', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    render(<AiStatusCard {...defaultProps} latest={mockAiOutput} />)
     expect(screen.getByText('script')).toBeInTheDocument()
   })
 
   it('shows correct source badge label for agent source', () => {
-    const agentOutput: AiOutput = {
-      ...mockAiOutput,
-      source: 'agent',
-    }
-    render(<AiStatusCard latest={agentOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    const agentOutput: AiOutput = { ...mockAiOutput, source: 'agent' }
+    render(<AiStatusCard {...defaultProps} latest={agentOutput} />)
     expect(screen.getByText('agent')).toBeInTheDocument()
   })
 
   it('shows correct source badge label for inject source', () => {
-    const injectOutput: AiOutput = {
-      ...mockAiOutput,
-      source: 'inject',
-    }
-    render(<AiStatusCard latest={injectOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    const injectOutput: AiOutput = { ...mockAiOutput, source: 'inject' }
+    render(<AiStatusCard {...defaultProps} latest={injectOutput} />)
     expect(screen.getByText('inject')).toBeInTheDocument()
   })
 
   it('shows tts queue depth', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={5} urgentQueueDepth={0} />)
+    render(<AiStatusCard {...defaultProps} ttsQueueDepth={5} />)
     expect(screen.getByText(/TTS 5 句/)).toBeInTheDocument()
   })
 
   it('shows urgent queue depth', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={3} />)
+    render(<AiStatusCard {...defaultProps} urgentQueueDepth={3} />)
     expect(screen.getByText(/紧急 3/)).toBeInTheDocument()
   })
 
   it('tts queue text uses foreground color when > 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={3} urgentQueueDepth={0} />)
-    const queueText = screen.getByText(/TTS 3 句/)
-    expect(queueText).toHaveClass('text-foreground')
+    render(<AiStatusCard {...defaultProps} ttsQueueDepth={3} />)
+    expect(screen.getByText(/TTS 3 句/)).toHaveClass('text-foreground')
   })
 
   it('tts queue text uses muted-foreground color when = 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
-    const queueText = screen.getByText(/TTS 0 句/)
-    expect(queueText).toHaveClass('text-muted-foreground')
+    render(<AiStatusCard {...defaultProps} />)
+    expect(screen.getByText(/TTS 0 句/)).toHaveClass('text-muted-foreground')
   })
 
   it('urgent queue text uses amber color when > 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={2} />)
-    const urgentText = screen.getByText(/紧急 2/)
-    expect(urgentText).toHaveClass('text-amber-500')
+    render(<AiStatusCard {...defaultProps} urgentQueueDepth={2} />)
+    expect(screen.getByText(/紧急 2/)).toHaveClass('text-amber-500')
   })
 
   it('displays AI 状态 header', () => {
-    render(<AiStatusCard latest={null} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    render(<AiStatusCard {...defaultProps} />)
     expect(screen.getByText('AI 状态')).toBeInTheDocument()
+  })
+
+  it('shows now playing content when provided', () => {
+    const playing: AiOutput = { ...mockAiOutput, content: '正在播报中的台词' }
+    render(<AiStatusCard {...defaultProps} nowPlaying={playing} />)
+    expect(screen.getByText('正在播')).toBeInTheDocument()
+    expect(screen.getByText('正在播报中的台词')).toBeInTheDocument()
+  })
+
+  it('does not show now playing section when nowPlaying is null', () => {
+    render(<AiStatusCard {...defaultProps} />)
+    expect(screen.queryByText('正在播')).not.toBeInTheDocument()
   })
 })
