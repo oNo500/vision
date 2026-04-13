@@ -16,98 +16,128 @@ function PlanPreviewSheet({ plan }: { plan: LivePlan }) {
       <SheetTrigger className="rounded px-2 py-0.5 text-xs hover:bg-muted">
         预览方案
       </SheetTrigger>
-      <SheetContent side="right" className="w-[480px] overflow-y-auto">
-        <SheetHeader>
-          <SheetTitle>{plan.name}</SheetTitle>
+      <SheetContent side="right" className="flex w-[520px] flex-col gap-0 overflow-hidden p-0">
+        <SheetHeader className="border-b px-6 py-4">
+          <SheetTitle className="text-base">{plan.name}</SheetTitle>
         </SheetHeader>
 
-        <div className="mt-4 space-y-6 text-sm">
+        <div className="flex-1 overflow-y-auto px-6 py-4 text-sm">
           {/* product */}
-          <section>
-            <h3 className="mb-2 font-semibold">产品</h3>
+          <div className="mb-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">产品</p>
             <p className="font-medium">{plan.product.name}</p>
-            {plan.product.price && <p className="text-muted-foreground">价格：{plan.product.price}</p>}
-            {plan.product.description && <p className="mt-1 text-muted-foreground">{plan.product.description}</p>}
+            {plan.product.price && (
+              <p className="mt-0.5 text-muted-foreground">{plan.product.price}</p>
+            )}
+            {plan.product.description && (
+              <p className="mt-2 leading-relaxed text-muted-foreground">{plan.product.description}</p>
+            )}
             {plan.product.highlights.length > 0 && (
-              <ul className="mt-2 space-y-0.5 text-muted-foreground">
-                {plan.product.highlights.map((h, i) => <li key={i}>· {h}</li>)}
+              <ul className="mt-3 space-y-1">
+                {plan.product.highlights.map((h, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground">
+                    <span className="mt-0.5 shrink-0 text-primary">✓</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
               </ul>
             )}
             {plan.product.faq.length > 0 && (
-              <div className="mt-3 space-y-2">
-                <p className="font-medium text-foreground">常见问题</p>
+              <div className="mt-4 space-y-3 rounded-lg bg-muted/50 p-3">
+                <p className="text-xs font-medium text-muted-foreground">常见问题</p>
                 {plan.product.faq.map((f, i) => (
-                  <div key={i}>
-                    <p className="font-medium">Q: {f.question}</p>
-                    <p className="text-muted-foreground">A: {f.answer}</p>
+                  <div key={i} className="space-y-0.5">
+                    <p className="font-medium">Q：{f.question}</p>
+                    <p className="text-muted-foreground">A：{f.answer}</p>
                   </div>
                 ))}
               </div>
             )}
-          </section>
+          </div>
 
-          {/* persona */}
-          <section>
-            <h3 className="mb-2 font-semibold">人设</h3>
-            <p><span className="text-muted-foreground">名称：</span>{plan.persona.name}</p>
-            {plan.persona.style && <p><span className="text-muted-foreground">风格：</span>{plan.persona.style}</p>}
+          <div className="mb-6 border-t pt-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">人设</p>
+            <div className="flex gap-4">
+              <div>
+                <p className="text-xs text-muted-foreground">名称</p>
+                <p className="mt-0.5 font-medium">{plan.persona.name}</p>
+              </div>
+              {plan.persona.style && (
+                <div className="flex-1">
+                  <p className="text-xs text-muted-foreground">风格</p>
+                  <p className="mt-0.5">{plan.persona.style}</p>
+                </div>
+              )}
+            </div>
             {plan.persona.catchphrases.length > 0 && (
-              <div className="mt-2">
-                <p className="text-muted-foreground">口头禅</p>
-                <div className="mt-1 flex flex-wrap gap-1">
+              <div className="mt-3">
+                <p className="mb-1.5 text-xs text-muted-foreground">口头禅</p>
+                <div className="flex flex-wrap gap-1.5">
                   {plan.persona.catchphrases.map((c, i) => (
-                    <span key={i} className="rounded bg-muted px-2 py-0.5 text-xs">{c}</span>
+                    <span key={i} className="rounded-full border px-2.5 py-0.5 text-xs">{c}</span>
                   ))}
                 </div>
               </div>
             )}
             {plan.persona.forbidden_words.length > 0 && (
-              <div className="mt-2">
-                <p className="text-muted-foreground">禁用词</p>
-                <div className="mt-1 flex flex-wrap gap-1">
+              <div className="mt-3">
+                <p className="mb-1.5 text-xs text-muted-foreground">禁用词</p>
+                <div className="flex flex-wrap gap-1.5">
                   {plan.persona.forbidden_words.map((w, i) => (
-                    <span key={i} className="rounded bg-destructive/10 px-2 py-0.5 text-xs text-destructive">{w}</span>
+                    <span key={i} className="rounded-full bg-destructive/10 px-2.5 py-0.5 text-xs text-destructive">{w}</span>
                   ))}
                 </div>
               </div>
             )}
-          </section>
+          </div>
 
           {/* script */}
-          <section>
-            <h3 className="mb-2 font-semibold">脚本（{plan.script.segments.length} 段）</h3>
-            <div className="space-y-3">
+          <div className="border-t pt-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              脚本 · {plan.script.segments.length} 段 · 共 {Math.round(plan.script.segments.reduce((s, g) => s + g.duration, 0) / 60)} 分钟
+            </p>
+            <div className="space-y-2">
               {plan.script.segments.map((seg, i) => (
-                <div key={seg.id} className="rounded border p-3">
-                  <div className="mb-1 flex items-center gap-2">
-                    <span className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">{i + 1}</span>
-                    <span className="font-medium">{seg.title || seg.id}</span>
-                    <span className="ml-auto text-xs text-muted-foreground">
-                      {Math.floor(seg.duration / 60)}min
+                <div key={seg.id} className="rounded-lg border bg-background">
+                  <div className="flex items-center gap-2.5 px-3 py-2.5">
+                    <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-muted text-[10px] font-mono font-semibold text-muted-foreground">
+                      {i + 1}
+                    </span>
+                    <span className="flex-1 font-medium">{seg.title || seg.id}</span>
+                    <span className="text-xs text-muted-foreground">
+                      {seg.duration >= 60 ? `${Math.floor(seg.duration / 60)}min` : `${seg.duration}s`}
                     </span>
                   </div>
-                  {seg.goal && <p className="text-xs text-muted-foreground">{seg.goal}</p>}
-                  {seg.cue.length > 0 && (
-                    <div className="mt-2 rounded border-l-2 border-primary/40 pl-2">
-                      <p className="text-xs font-medium text-muted-foreground mb-1">
-                        话术{seg.must_say ? '（必说）' : '（融入）'}
-                      </p>
-                      {seg.cue.map((line, j) => (
-                        <p key={j} className="text-xs">· {line}</p>
-                      ))}
-                    </div>
-                  )}
-                  {seg.keywords.length > 0 && (
-                    <div className="mt-2 flex flex-wrap gap-1">
-                      {seg.keywords.map((kw, j) => (
-                        <span key={j} className="rounded bg-muted px-1.5 py-0.5 text-xs text-muted-foreground">{kw}</span>
-                      ))}
+                  {(seg.goal || seg.cue.length > 0 || seg.keywords.length > 0) && (
+                    <div className="border-t px-3 pb-3 pt-2 space-y-2">
+                      {seg.goal && (
+                        <p className="text-xs leading-relaxed text-muted-foreground">{seg.goal}</p>
+                      )}
+                      {seg.cue.length > 0 && (
+                        <div className="rounded border-l-2 border-primary/50 bg-primary/5 py-1.5 pl-3 pr-2">
+                          <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-primary/70">
+                            话术 {seg.must_say ? '· 必说' : '· 融入'}
+                          </p>
+                          <ul className="space-y-0.5">
+                            {seg.cue.map((line, j) => (
+                              <li key={j} className="text-xs text-foreground">{line}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {seg.keywords.length > 0 && (
+                        <div className="flex flex-wrap gap-1">
+                          {seg.keywords.map((kw, j) => (
+                            <span key={j} className="rounded bg-muted px-1.5 py-0.5 text-[10px] text-muted-foreground">{kw}</span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
               ))}
             </div>
-          </section>
+          </div>
         </div>
       </SheetContent>
     </Sheet>
