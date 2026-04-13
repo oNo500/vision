@@ -108,3 +108,59 @@ def test_finished_state_blocks_all():
 
     assert tts_q.empty()
     assert orch.buffer_size == 0
+
+
+# --- Strategy routing ---
+
+import queue as _queue
+
+
+def test_p0_intelligent_strategy_goes_to_urgent_queue():
+    tts_q = _queue.Queue()
+    urgent_q = _queue.Queue()
+    orch = Orchestrator(
+        tts_queue=tts_q,
+        get_strategy_fn=lambda: "intelligent",
+        urgent_queue=urgent_q,
+    )
+    event = Event(type="gift", user="Alice", gift="rocket", value=100, t=0)
+    orch.handle_event(event, {"finished": False})
+    assert urgent_q.qsize() == 1
+    assert tts_q.qsize() == 0
+
+
+def test_p0_immediate_strategy_goes_to_tts():
+    tts_q = _queue.Queue()
+    urgent_q = _queue.Queue()
+    orch = Orchestrator(
+        tts_queue=tts_q,
+        get_strategy_fn=lambda: "immediate",
+        urgent_queue=urgent_q,
+    )
+    event = Event(type="gift", user="Alice", gift="rocket", value=100, t=0)
+    orch.handle_event(event, {"finished": False})
+    assert tts_q.qsize() == 1
+    assert urgent_q.qsize() == 0
+
+
+def test_urgent_queue_full_drops_event():
+    tts_q = _queue.Queue()
+    urgent_q = _queue.Queue(maxsize=1)
+    urgent_q.put("already_full")
+    orch = Orchestrator(
+        tts_queue=tts_q,
+        get_strategy_fn=lambda: "intelligent",
+        urgent_queue=urgent_q,
+    )
+    event = Event(type="gift", user="Bob", gift="rose", value=100, t=0)
+    # Should not raise, just log warning
+    orch.handle_event(event, {"finished": False})
+    assert urgent_q.qsize() == 1  # still 1, not 2
+
+
+def test_default_strategy_is_immediate():
+    tts_q = _queue.Queue()
+    orch = Orchestrator(tts_queue=tts_q)
+    event = Event(type="gift", user="Alice", gift="rocket", value=100, t=0)
+    orch.handle_event(event, {"finished": False})
+    assert tts_q.qsize() == 1
