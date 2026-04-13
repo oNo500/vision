@@ -54,7 +54,8 @@ export default function LivePage() {
             <div className="shrink-0">
               <AiStatusCard
                 latest={aiOutputs[aiOutputs.length - 1] ?? null}
-                queueDepth={aiSession.state.tts_queue_depth ?? 0}
+                ttsQueueDepth={aiSession.state.tts_queue_depth ?? 0}
+                urgentQueueDepth={aiSession.state.urgent_queue_depth ?? 0}
               />
             </div>
             <div className="min-h-0 flex-1">

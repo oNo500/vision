@@ -10,21 +10,30 @@ const SOURCE_CFG = {
 
 interface AiStatusCardProps {
   latest: AiOutput | null
-  queueDepth: number
+  ttsQueueDepth: number
+  urgentQueueDepth: number
 }
 
-export function AiStatusCard({ latest, queueDepth }: AiStatusCardProps) {
+export function AiStatusCard({ latest, ttsQueueDepth, urgentQueueDepth }: AiStatusCardProps) {
 
   return (
     <div className="rounded-lg border bg-background p-4">
       <div className="mb-3 flex items-center justify-between">
         <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">AI 状态</span>
-        <span className={cn(
-          'text-xs tabular-nums',
-          queueDepth > 0 ? 'text-foreground' : 'text-muted-foreground',
-        )}>
-          队列 {queueDepth} 句
-        </span>
+        <div className="flex items-center gap-3">
+          <span className={cn(
+            'text-xs tabular-nums',
+            urgentQueueDepth > 0 ? 'text-amber-500' : 'text-muted-foreground',
+          )}>
+            紧急 {urgentQueueDepth}
+          </span>
+          <span className={cn(
+            'text-xs tabular-nums',
+            ttsQueueDepth > 0 ? 'text-foreground' : 'text-muted-foreground',
+          )}>
+            TTS {ttsQueueDepth} 句
+          </span>
+        </div>
       </div>
 
       {latest ? (

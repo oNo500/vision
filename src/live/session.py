@@ -133,6 +133,7 @@ class SessionManager:
             running = self._running
             script_runner = self._script_runner
             tts_queue = self._tts_queue
+            urgent_queue = self._urgent_queue
             strategy = self._strategy
         if not running or script_runner is None:
             return {"running": False, "strategy": strategy}
@@ -140,6 +141,7 @@ class SessionManager:
         return {
             "running": True,
             "tts_queue_depth": tts_queue.qsize() if tts_queue else 0,
+            "urgent_queue_depth": urgent_queue.qsize() if urgent_queue else 0,
             "strategy": strategy,
             **state,
         }

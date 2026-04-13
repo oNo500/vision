@@ -19,17 +19,17 @@ const mockAiOutput: AiOutput = {
 
 describe('AiStatusCard', () => {
   it('shows "等待 AI 输出…" when latest is null', () => {
-    render(<AiStatusCard latest={null} queueDepth={0} />)
+    render(<AiStatusCard latest={null} ttsQueueDepth={0} urgentQueueDepth={0} />)
     expect(screen.getByText('等待 AI 输出…')).toBeInTheDocument()
   })
 
   it('shows latest.content when provided', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
     expect(screen.getByText('This is AI generated text')).toBeInTheDocument()
   })
 
   it('shows correct source badge label for script source', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
     expect(screen.getByText('script')).toBeInTheDocument()
   })
 
@@ -38,7 +38,7 @@ describe('AiStatusCard', () => {
       ...mockAiOutput,
       source: 'agent',
     }
-    render(<AiStatusCard latest={agentOutput} queueDepth={0} />)
+    render(<AiStatusCard latest={agentOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
     expect(screen.getByText('agent')).toBeInTheDocument()
   })
 
@@ -47,40 +47,40 @@ describe('AiStatusCard', () => {
       ...mockAiOutput,
       source: 'inject',
     }
-    render(<AiStatusCard latest={injectOutput} queueDepth={0} />)
+    render(<AiStatusCard latest={injectOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
     expect(screen.getByText('inject')).toBeInTheDocument()
   })
 
-  it('shows queue depth number', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={5} />)
-    expect(screen.getByText(/队列 5 句/)).toBeInTheDocument()
+  it('shows tts queue depth', () => {
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={5} urgentQueueDepth={0} />)
+    expect(screen.getByText(/TTS 5 句/)).toBeInTheDocument()
   })
 
-  it('shows queue depth as 0 when queueDepth is 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
-    expect(screen.getByText(/队列 0 句/)).toBeInTheDocument()
+  it('shows urgent queue depth', () => {
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={3} />)
+    expect(screen.getByText(/紧急 3/)).toBeInTheDocument()
   })
 
-  it('queue depth text uses foreground color when > 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={3} />)
-    const queueText = screen.getByText(/队列 3 句/)
+  it('tts queue text uses foreground color when > 0', () => {
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={3} urgentQueueDepth={0} />)
+    const queueText = screen.getByText(/TTS 3 句/)
     expect(queueText).toHaveClass('text-foreground')
   })
 
-  it('queue depth text uses muted-foreground color when = 0', () => {
-    render(<AiStatusCard latest={mockAiOutput} queueDepth={0} />)
-    const queueText = screen.getByText(/队列 0 句/)
+  it('tts queue text uses muted-foreground color when = 0', () => {
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    const queueText = screen.getByText(/TTS 0 句/)
     expect(queueText).toHaveClass('text-muted-foreground')
   })
 
-  it('displays AI 状态 header', () => {
-    render(<AiStatusCard latest={null} queueDepth={0} />)
-    expect(screen.getByText('AI 状态')).toBeInTheDocument()
+  it('urgent queue text uses amber color when > 0', () => {
+    render(<AiStatusCard latest={mockAiOutput} ttsQueueDepth={0} urgentQueueDepth={2} />)
+    const urgentText = screen.getByText(/紧急 2/)
+    expect(urgentText).toHaveClass('text-amber-500')
   })
 
-  it('renders without crashing with null latest and positive queueDepth', () => {
-    render(<AiStatusCard latest={null} queueDepth={10} />)
-    expect(screen.getByText('等待 AI 输出…')).toBeInTheDocument()
-    expect(screen.getByText(/队列 10 句/)).toBeInTheDocument()
+  it('displays AI 状态 header', () => {
+    render(<AiStatusCard latest={null} ttsQueueDepth={0} urgentQueueDepth={0} />)
+    expect(screen.getByText('AI 状态')).toBeInTheDocument()
   })
 })

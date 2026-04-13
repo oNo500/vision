@@ -18,10 +18,11 @@ vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
-  AiStatusCard: (props: { latest: AiOutput | null; queueDepth: number }) => (
+  AiStatusCard: (props: { latest: AiOutput | null; ttsQueueDepth: number; urgentQueueDepth: number }) => (
     <div
       data-testid="ai-status-card"
-      data-queue-depth={String(props.queueDepth)}
+      data-tts-queue-depth={String(props.ttsQueueDepth)}
+      data-urgent-queue-depth={String(props.urgentQueueDepth)}
       data-has-latest={String(props.latest !== null)}
     />
   ),
@@ -103,9 +104,10 @@ describe('LivePage', () => {
     expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-has-latest', 'false')
   })
 
-  it('passes queue_depth from session state to AiStatusCard', () => {
+  it('passes tts_queue_depth from session state to AiStatusCard', () => {
     render(<LivePage />)
-    expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-queue-depth', '0')
+    expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-tts-queue-depth', '0')
+    expect(screen.getByTestId('ai-status-card')).toHaveAttribute('data-urgent-queue-depth', '0')
   })
 
   it('passes aiOutputs to AiOutputLog', () => {
