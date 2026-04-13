@@ -9,7 +9,7 @@ import { Label } from '@workspace/ui/components/label'
 
 import { combine } from '@atlaskit/pragmatic-drag-and-drop/combine'
 import { draggable, dropTargetForElements, monitorForElements } from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
-import { attachInstruction, extractInstruction } from '@atlaskit/pragmatic-drag-and-drop-hitbox/list-item'
+import { attachInstruction, extractInstruction, type Instruction } from '@atlaskit/pragmatic-drag-and-drop-hitbox/list-item'
 import { DropIndicator } from '@atlaskit/pragmatic-drag-and-drop-react-drop-indicator/list-item'
 import { reorder } from '@atlaskit/pragmatic-drag-and-drop/reorder'
 
@@ -75,7 +75,7 @@ function SegmentCard({
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
   const handleRef = useRef<HTMLDivElement>(null)
-  const [closestEdge, setClosestEdge] = useState<'top' | 'bottom' | null>(null)
+  const [closestEdge, setClosestEdge] = useState<Instruction | null>(null)
   const [isDragging, setIsDragging] = useState(false)
 
   useEffect(() => {
@@ -102,8 +102,7 @@ function SegmentCard({
             axis: 'vertical',
           }),
         onDrag: ({ self }) => {
-          const instruction = extractInstruction(self.data)
-          setClosestEdge(instruction ? (instruction.operation === 'reorder-before' ? 'top' : 'bottom') : null)
+          setClosestEdge(extractInstruction(self.data))
         },
         onDragLeave: () => setClosestEdge(null),
         onDrop: () => setClosestEdge(null),
@@ -116,7 +115,7 @@ function SegmentCard({
       ref={cardRef}
       className={`relative rounded border p-4 flex flex-col gap-3 ${isDragging ? 'opacity-40' : ''}`}
     >
-      {closestEdge && <DropIndicator edge={closestEdge} />}
+      {closestEdge && <DropIndicator instruction={closestEdge} />}
       <div className="flex items-center gap-2">
         <div
           ref={handleRef}
