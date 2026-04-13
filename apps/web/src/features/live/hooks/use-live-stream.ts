@@ -52,12 +52,20 @@ function saveCache<T>(key: string, items: T[]): void {
 }
 
 export function useLiveStream() {
-  const [events, setEvents] = useState<LiveEvent[]>(() => loadCache<LiveEvent>(EVENTS_KEY))
-  const [aiOutputs, setAiOutputs] = useState<AiOutput[]>(() => loadCache<AiOutput>(AI_OUTPUTS_KEY))
+  const [events, setEvents] = useState<LiveEvent[]>([])
+  const [aiOutputs, setAiOutputs] = useState<AiOutput[]>([])
   const [scriptState, setScriptState] = useState<ScriptState | null>(null)
   const [connected, setConnected] = useState(false)
   const [onlineCount, setOnlineCount] = useState<number | null>(null)
   const esRef = useRef<EventSource | null>(null)
+
+  useEffect(() => {
+    // Restore cache on client only (avoids SSR/hydration mismatch)
+    const cachedEvents = loadCache<LiveEvent>(EVENTS_KEY)
+    const cachedOutputs = loadCache<AiOutput>(AI_OUTPUTS_KEY)
+    if (cachedEvents.length > 0) setEvents(cachedEvents)
+    if (cachedOutputs.length > 0) setAiOutputs(cachedOutputs)
+  }, [])
 
   useEffect(() => {
     const es = new EventSource(`${env.NEXT_PUBLIC_API_URL}/live/stream`)
