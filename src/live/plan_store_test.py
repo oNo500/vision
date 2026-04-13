@@ -9,16 +9,7 @@ import aiosqlite
 import pytest
 
 from src.live.plan_store import PlanStore
-
-_SCHEMA = """
-CREATE TABLE IF NOT EXISTS live_plans (
-    id TEXT PRIMARY KEY,
-    name TEXT NOT NULL,
-    data TEXT NOT NULL,
-    created_at TEXT NOT NULL,
-    updated_at TEXT NOT NULL
-);
-"""
+from src.shared.db import _SCHEMA
 
 
 def _make_plan(name: str = "Test Plan") -> dict:
@@ -89,3 +80,9 @@ async def test_delete(store: PlanStore):
 async def test_get_nonexistent(store: PlanStore):
     result = await store.get("nonexistent-id")
     assert result is None
+
+
+@pytest.mark.asyncio
+async def test_delete_nonexistent(store: PlanStore):
+    """delete() should not raise for a non-existent id."""
+    await store.delete("nonexistent-id")  # should not raise

@@ -26,6 +26,8 @@ class PlanStore:
 
     async def create(self, data: dict) -> dict:
         """Insert a new plan. Returns the full plan dict with id + timestamps."""
+        if "name" not in data:
+            raise ValueError("name is required")
         plan_id = str(uuid.uuid4())
         now = _now_iso()
         plan = {
@@ -78,10 +80,12 @@ class PlanStore:
             "persona": data.get("persona", existing["persona"]),
             "script": data.get("script", existing["script"]),
         }
-        await self._conn.execute(
+        cursor = await self._conn.execute(
             "UPDATE live_plans SET name = ?, data = ?, updated_at = ? WHERE id = ?",
             (updated["name"], json.dumps(updated, ensure_ascii=False), now, plan_id),
         )
+        if cursor.rowcount == 0:
+            return None
         await self._conn.commit()
         return updated
 
