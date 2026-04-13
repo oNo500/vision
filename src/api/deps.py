@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from fastapi import Request
+from src.live.danmaku_manager import DanmakuManager
 from src.live.session import SessionManager
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
@@ -9,6 +10,10 @@ from src.shared.event_bus import EventBus
 
 def get_session_manager(request: Request) -> SessionManager:
     return request.app.state.session_manager
+
+
+def get_danmaku_manager(request: Request) -> DanmakuManager:
+    return request.app.state.danmaku_manager
 
 
 def get_event_bus(request: Request) -> EventBus:

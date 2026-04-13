@@ -10,8 +10,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from src.api.deps import get_db, get_event_bus, get_session_manager
+from src.api.deps import get_danmaku_manager, get_db, get_event_bus, get_session_manager
 from src.api.settings import get_settings
+from src.live.danmaku_manager import DanmakuManager
 from src.live.session import SessionAlreadyRunningError, SessionManager
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
@@ -26,6 +27,22 @@ class StartRequest(BaseModel):
     mock: bool = False
     project: str | None = None
     cdp_url: str | None = None
+
+
+class SessionStartRequest(BaseModel):
+    script: str | None = None
+    product: str | None = None
+    mock: bool = False
+    project: str | None = None
+
+
+class DanmakuStartRequest(BaseModel):
+    mock: bool = False
+    cdp_url: str | None = None
+
+
+class StrategyRequest(BaseModel):
+    strategy: str
 
 
 class InjectRequest(BaseModel):
@@ -45,7 +62,7 @@ def start(
             product_path=body.product or s.default_product_path,
             mock=body.mock,
             project=body.project or s.google_cloud_project,
-            cdp_url=body.cdp_url or s.cdp_url,
+            # cdp_url now belongs to DanmakuManager — use /live/danmaku/start
         )
     except SessionAlreadyRunningError as e:
         raise HTTPException(status_code=409, detail=str(e))
@@ -127,3 +144,90 @@ async def history(
     db: Database = Depends(get_db),
 ) -> list[dict]:
     return await db.get_history(limit=limit, type_filter=type_filter)
+
+
+@router.post("/session/start")
+def session_start(
+    body: SessionStartRequest,
+    sm: SessionManager = Depends(get_session_manager),
+) -> dict:
+    s = get_settings()
+    try:
+        sm.start(
+            script_path=body.script or s.default_script_path,
+            product_path=body.product or s.default_product_path,
+            mock=body.mock,
+            project=body.project or s.google_cloud_project,
+        )
+    except SessionAlreadyRunningError as e:
+        raise HTTPException(status_code=409, detail=str(e))
+    except RuntimeError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return sm.get_state()
+
+
+@router.post("/session/stop")
+def session_stop(sm: SessionManager = Depends(get_session_manager)) -> dict:
+    try:
+        sm.stop()
+    except RuntimeError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return sm.get_state()
+
+
+@router.get("/session/state")
+def session_state(sm: SessionManager = Depends(get_session_manager)) -> dict:
+    return sm.get_state()
+
+
+@router.post("/danmaku/start")
+def danmaku_start(
+    body: DanmakuStartRequest,
+    sm: SessionManager = Depends(get_session_manager),
+    dm: DanmakuManager = Depends(get_danmaku_manager),
+) -> dict:
+    s = get_settings()
+    tts_queue = sm.get_tts_queue()
+    urgent_queue = sm.get_urgent_queue()
+    try:
+        dm.start(
+            mock=body.mock,
+            cdp_url=body.cdp_url or s.cdp_url,
+            tts_queue=tts_queue,
+            get_strategy_fn=sm.get_strategy,
+            urgent_queue=urgent_queue,
+        )
+    except RuntimeError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return dm.get_state()
+
+
+@router.post("/danmaku/stop")
+def danmaku_stop(dm: DanmakuManager = Depends(get_danmaku_manager)) -> dict:
+    try:
+        dm.stop()
+    except RuntimeError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return dm.get_state()
+
+
+@router.get("/danmaku/state")
+def danmaku_state(dm: DanmakuManager = Depends(get_danmaku_manager)) -> dict:
+    return dm.get_state()
+
+
+@router.get("/strategy")
+def get_strategy(sm: SessionManager = Depends(get_session_manager)) -> dict:
+    return {"strategy": sm.get_strategy()}
+
+
+@router.post("/strategy")
+def set_strategy(
+    body: StrategyRequest,
+    sm: SessionManager = Depends(get_session_manager),
+) -> dict:
+    try:
+        sm.set_strategy(body.strategy)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return {"strategy": sm.get_strategy()}

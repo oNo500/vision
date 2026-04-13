@@ -13,6 +13,7 @@ from src.live.routes import router as live_router
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
 from src.live.session import SessionManager
+from src.live.danmaku_manager import DanmakuManager
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +28,7 @@ def create_app() -> FastAPI:
         app.state.db = Database(settings.vision_db_path)
         await app.state.db.init()
         app.state.session_manager = SessionManager(app.state.event_bus)
+        app.state.danmaku_manager = DanmakuManager(app.state.event_bus)
         logger.info("Vision API started")
         yield
         await app.state.db.close()
