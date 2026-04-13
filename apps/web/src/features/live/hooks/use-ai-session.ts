@@ -10,6 +10,8 @@ type AiSessionState = {
   running: boolean
   tts_queue_depth?: number
   urgent_queue_depth?: number
+  tts_speaking?: boolean
+  llm_generating?: boolean
   segment_id?: string
   remaining_seconds?: number
   strategy?: string

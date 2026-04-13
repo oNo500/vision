@@ -18,11 +18,13 @@ vi.mock('@/features/live/components/session-controls', () => ({
   SessionControls: () => <div data-testid="session-controls" />,
 }))
 vi.mock('@/features/live/components/ai-status-card', () => ({
-  AiStatusCard: (props: { nowPlaying: AiOutput | null; latest: AiOutput | null; ttsQueueDepth: number; urgentQueueDepth: number }) => (
+  AiStatusCard: (props: { nowPlaying: AiOutput | null; latest: AiOutput | null; ttsQueueDepth: number; urgentQueueDepth: number; ttsSpeaking: boolean; llmGenerating: boolean }) => (
     <div
       data-testid="ai-status-card"
       data-tts-queue-depth={String(props.ttsQueueDepth)}
       data-urgent-queue-depth={String(props.urgentQueueDepth)}
+      data-tts-speaking={String(props.ttsSpeaking)}
+      data-llm-generating={String(props.llmGenerating)}
       data-has-latest={String(props.latest !== null)}
       data-has-now-playing={String(props.nowPlaying !== null)}
     />

@@ -148,6 +148,10 @@ class DirectorAgent:
         self._thread.start()
         logger.info("DirectorAgent started")
 
+    @property
+    def is_generating(self) -> bool:
+        return self._llm_in_flight
+
     def stop(self) -> None:
         self._stop_event.set()
         if self._thread and self._thread.is_alive():

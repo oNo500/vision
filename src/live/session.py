@@ -61,6 +61,8 @@ class SessionManager:
         self._lock = threading.Lock()
         self._components: list[Any] = []
         self._script_runner: ScriptRunner | None = None
+        self._tts_player: TTSPlayer | None = None
+        self._director: DirectorAgent | None = None
         self._tts_queue: queue.Queue | None = None
         self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
@@ -105,6 +107,8 @@ class SessionManager:
         self._components.clear()
         self._broadcaster_stop.set()
         self._script_runner = None
+        self._tts_player = None
+        self._director = None
         self._tts_queue = None
         self._urgent_queue = None
         self._bus.publish({"type": "agent", "status": "stopped", "ts": time.time()})
@@ -134,6 +138,8 @@ class SessionManager:
             script_runner = self._script_runner
             tts_queue = self._tts_queue
             urgent_queue = self._urgent_queue
+            tts_player = self._tts_player
+            director = self._director
             strategy = self._strategy
         if not running or script_runner is None:
             return {"running": False, "strategy": strategy}
@@ -142,6 +148,8 @@ class SessionManager:
             "running": True,
             "tts_queue_depth": tts_queue.qsize() if tts_queue else 0,
             "urgent_queue_depth": urgent_queue.qsize() if urgent_queue else 0,
+            "tts_speaking": tts_player.is_speaking if tts_player else False,
+            "llm_generating": director.is_generating if director else False,
             "strategy": strategy,
             **state,
         }
@@ -281,6 +289,8 @@ class SessionManager:
         tts_queue.put = _tts_put_with_publish
 
         self._script_runner = script_runner
+        self._tts_player = tts_player
+        self._director = director
 
         script_runner.start()
         tts_player.start()

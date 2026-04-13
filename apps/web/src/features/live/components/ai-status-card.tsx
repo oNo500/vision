@@ -13,9 +13,11 @@ interface AiStatusCardProps {
   latest: AiOutput | null
   ttsQueueDepth: number
   urgentQueueDepth: number
+  ttsSpeaking: boolean
+  llmGenerating: boolean
 }
 
-export function AiStatusCard({ nowPlaying, latest, ttsQueueDepth, urgentQueueDepth }: AiStatusCardProps) {
+export function AiStatusCard({ nowPlaying, latest, ttsQueueDepth, urgentQueueDepth, ttsSpeaking, llmGenerating }: AiStatusCardProps) {
 
   return (
     <div className="rounded-lg border bg-background p-4">
@@ -32,7 +34,21 @@ export function AiStatusCard({ nowPlaying, latest, ttsQueueDepth, urgentQueueDep
             'text-xs tabular-nums',
             ttsQueueDepth > 0 ? 'text-foreground' : 'text-muted-foreground',
           )}>
-            TTS {ttsQueueDepth} 句
+            队列 {ttsQueueDepth}
+          </span>
+          <span className={cn(
+            'flex items-center gap-1 text-xs',
+            llmGenerating ? 'text-blue-500' : 'text-muted-foreground',
+          )}>
+            {llmGenerating && <span className="size-1.5 animate-pulse rounded-full bg-blue-500" />}
+            生成{llmGenerating ? '中' : '待机'}
+          </span>
+          <span className={cn(
+            'flex items-center gap-1 text-xs',
+            ttsSpeaking ? 'text-green-500' : 'text-muted-foreground',
+          )}>
+            {ttsSpeaking && <span className="size-1.5 animate-pulse rounded-full bg-green-500" />}
+            播报{ttsSpeaking ? '中' : '待机'}
           </span>
         </div>
       </div>

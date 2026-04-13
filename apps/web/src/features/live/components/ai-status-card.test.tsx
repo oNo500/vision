@@ -22,6 +22,8 @@ const defaultProps = {
   latest: null,
   ttsQueueDepth: 0,
   urgentQueueDepth: 0,
+  ttsSpeaking: false,
+  llmGenerating: false,
 }
 
 describe('AiStatusCard', () => {
@@ -54,7 +56,7 @@ describe('AiStatusCard', () => {
 
   it('shows tts queue depth', () => {
     render(<AiStatusCard {...defaultProps} ttsQueueDepth={5} />)
-    expect(screen.getByText(/TTS 5 句/)).toBeInTheDocument()
+    expect(screen.getByText(/队列 5/)).toBeInTheDocument()
   })
 
   it('shows urgent queue depth', () => {
@@ -64,12 +66,12 @@ describe('AiStatusCard', () => {
 
   it('tts queue text uses foreground color when > 0', () => {
     render(<AiStatusCard {...defaultProps} ttsQueueDepth={3} />)
-    expect(screen.getByText(/TTS 3 句/)).toHaveClass('text-foreground')
+    expect(screen.getByText(/队列 3/)).toHaveClass('text-foreground')
   })
 
   it('tts queue text uses muted-foreground color when = 0', () => {
     render(<AiStatusCard {...defaultProps} />)
-    expect(screen.getByText(/TTS 0 句/)).toHaveClass('text-muted-foreground')
+    expect(screen.getByText(/队列 0/)).toHaveClass('text-muted-foreground')
   })
 
   it('urgent queue text uses amber color when > 0', () => {

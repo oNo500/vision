@@ -57,6 +57,8 @@ export default function LivePage() {
                 latest={aiOutputs[aiOutputs.length - 1] ?? null}
                 ttsQueueDepth={aiSession.state.tts_queue_depth ?? 0}
                 urgentQueueDepth={aiSession.state.urgent_queue_depth ?? 0}
+                ttsSpeaking={aiSession.state.tts_speaking ?? false}
+                llmGenerating={aiSession.state.llm_generating ?? false}
               />
             </div>
             <div className="min-h-0 flex-1">
