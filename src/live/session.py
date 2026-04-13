@@ -85,7 +85,8 @@ class SessionManager:
         with self._lock:
             if not self._running:
                 raise RuntimeError("Session not running")
-        self._tts_queue.put((content, speech_prompt))
+            tts_queue = self._tts_queue
+        tts_queue.put((content, speech_prompt))
         self._bus.publish({
             "type": "tts_output",
             "content": content,
