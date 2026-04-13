@@ -89,6 +89,7 @@ class ScriptRunner:
     def _run(self) -> None:
         while not self._stop_event.is_set():
             advanced = False
+            new_index = None
             with self._lock:
                 if self._index >= len(self._script.segments):
                     break
@@ -98,11 +99,10 @@ class ScriptRunner:
                     self._index += 1
                     self._segment_start = time.monotonic()
                     advanced = True
+                    new_index = self._index
 
             if advanced:
-                with self._lock:
-                    new_index = self._index
-                if new_index < len(self._script.segments):
+                if new_index is not None and new_index < len(self._script.segments):
                     next_seg = self._script.segments[new_index]
                     logger.info("[SCRIPT] → segment %s", next_seg.id)
                 else:

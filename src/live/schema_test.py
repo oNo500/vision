@@ -58,3 +58,28 @@ def test_script_segment_no_interruptible_field():
     """ScriptSegment must not have an 'interruptible' attribute."""
     seg = ScriptSegment(id="s1", title="开场", goal="欢迎", duration=60)
     assert not hasattr(seg, "interruptible")
+
+
+def test_live_script_from_dict_migrates_text_to_goal():
+    """Old segments with 'text' field are migrated to 'goal' on load."""
+    data = {
+        "meta": {"title": "旧格式", "total_duration": 60},
+        "segments": [{"id": "s1", "text": "开场白内容", "duration": 60}],
+    }
+    script = LiveScript.from_dict(data)
+    assert script.segments[0].goal == "开场白内容"
+    assert script.segments[0].title == "段落1"
+
+
+def test_live_script_from_dict_auto_title():
+    """Segments without 'title' get auto-generated title '段落N'."""
+    data = {
+        "meta": {"title": "无标题", "total_duration": 120},
+        "segments": [
+            {"id": "s1", "goal": "开场", "duration": 60},
+            {"id": "s2", "goal": "促单", "duration": 60},
+        ],
+    }
+    script = LiveScript.from_dict(data)
+    assert script.segments[0].title == "段落1"
+    assert script.segments[1].title == "段落2"
