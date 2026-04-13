@@ -53,22 +53,29 @@ def build_director_prompt(
     """Build the user-turn prompt for the director LLM call."""
     event_lines = "\n".join(
         f"  - [{e.type}] {e.user}: {e.text or e.gift or '(进场)'}"
-        for e in recent_events[-10:]   # cap at 10 most recent
+        for e in recent_events[-10:]
     ) or "  （暂无互动）"
 
-    must_say = script_state.get("must_say", False)
-
     persona_section = f"=== 主播人设 ===\n{persona_ctx}\n\n" if persona_ctx else ""
+
+    must_say = script_state.get("must_say", False)
+    cue = script_state.get("cue") or []
+    if cue:
+        cue_label = "以下话术必须全部逐字说出" if must_say else "请在合适时机自然融入，尽量覆盖"
+        cue_lines = "\n".join(f"  - {line}" for line in cue)
+        cue_section = f"锚点话术（{cue_label}）：\n{cue_lines}\n"
+    else:
+        cue_section = ""
 
     return (
         f"{persona_section}"
         f"=== 产品知识 ===\n{knowledge_ctx}\n\n"
         f"=== 当前脚本段落 ===\n"
-        f"段落ID：{script_state.get('segment_id', 'unknown')}\n"
-        f"参考原文：{script_state.get('segment_text', '').strip()}\n"
+        f"阶段：{script_state.get('title', '')}\n"
+        f"目标：{script_state.get('goal', '').strip()}\n"
+        f"{cue_section}"
         f"关键词：{', '.join(script_state.get('keywords') or [])}\n"
-        f"剩余时间：{script_state.get('remaining_seconds', 0):.0f}s\n"
-        f"必须贴近原文：{'是' if must_say else '否'}\n\n"
+        f"剩余时间：{script_state.get('remaining_seconds', 0):.0f}s\n\n"
         f"=== 最近观众互动 ===\n{event_lines}\n\n"
         f"=== 上一句说的 ===\n{last_said or '（开场，还没说过话）'}\n\n"
         f"请决定下一句说什么。"
