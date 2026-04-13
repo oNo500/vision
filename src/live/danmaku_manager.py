@@ -53,6 +53,7 @@ class DanmakuManager:
             if not self._running:
                 raise RuntimeError("DanmakuManager not running")
             self._running = False
+            self._orchestrator = None
 
         for component in reversed(self._components):
             try:
@@ -60,7 +61,6 @@ class DanmakuManager:
             except Exception as e:
                 logger.warning("Error stopping component %s: %s", component, e)
         self._components.clear()
-        self._orchestrator = None
         self._bus.publish({"type": "agent", "status": "danmaku_stopped", "ts": time.time()})
         logger.info("DanmakuManager: stopped")
 
@@ -95,7 +95,7 @@ class DanmakuManager:
             urgent_queue=urgent_queue,
         )
 
-        if cdp_url:
+        if not mock and cdp_url:
             from src.live.cdp_collector import CdpEventCollector
             event_collector = CdpEventCollector(out_queue=event_queue, cdp_url=cdp_url)
             logger.info("DanmakuManager: using CdpEventCollector (cdp=%s)", cdp_url)
