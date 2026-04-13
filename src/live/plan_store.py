@@ -14,6 +14,17 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _normalize_segment(seg: dict, index: int) -> dict:
+    """Migrate old-format segment (text field) to new format (goal/title/cue)."""
+    if "text" in seg and "goal" not in seg:
+        new_seg = {k: v for k, v in seg.items() if k != "text"}
+        new_seg["goal"] = seg["text"]
+        new_seg.setdefault("title", f"段落{index + 1}")
+        new_seg.setdefault("cue", [])
+        return new_seg
+    return seg
+
+
 class PlanStore:
     """Thin async CRUD wrapper around the live_plans table.
 
@@ -57,14 +68,17 @@ class PlanStore:
         return rows
 
     async def get(self, plan_id: str) -> dict | None:
-        """Return full plan dict or None if not found."""
+        """Return full plan dict or None if not found. Normalizes old segment format."""
         async with self._conn.execute(
             "SELECT data FROM live_plans WHERE id = ?", (plan_id,)
         ) as cur:
             row = await cur.fetchone()
         if row is None:
             return None
-        return json.loads(row[0])
+        plan = json.loads(row[0])
+        segments = plan.get("script", {}).get("segments", [])
+        plan["script"]["segments"] = [_normalize_segment(s, i) for i, s in enumerate(segments)]
+        return plan
 
     async def update(self, plan_id: str, data: dict) -> dict | None:
         """Replace plan data. Returns updated plan or None if not found."""

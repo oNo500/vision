@@ -21,8 +21,8 @@ def _make_plan() -> dict:
         },
         "script": {
             "segments": [
-                {"id": "s1", "text": "欢迎来到直播间", "duration": 60,
-                 "must_say": True, "keywords": ["好产品"]},
+                {"id": "s1", "title": "开场", "goal": "欢迎来到直播间", "duration": 60,
+                 "cue": ["欢迎"], "must_say": True, "keywords": ["好产品"]},
             ]
         },
     }

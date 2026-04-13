@@ -19,8 +19,9 @@ def _make_plan(name: str = "Test Plan") -> dict:
                     "highlights": ["h1"], "faq": [{"question": "Q", "answer": "A"}]},
         "persona": {"name": "主播", "style": "friendly",
                     "catchphrases": ["买它!"], "forbidden_words": ["违禁"]},
-        "script": {"segments": [{"id": "s1", "text": "开场白", "duration": 60,
-                                  "must_say": True, "keywords": ["产品"]}]},
+        "script": {"segments": [{"id": "s1", "title": "开场", "goal": "欢迎观众",
+                                  "duration": 60, "cue": ["欢迎来到直播间"],
+                                  "must_say": False, "keywords": ["产品"]}]},
     }
 
 
@@ -44,7 +45,7 @@ async def test_create_and_get(store: PlanStore):
     assert fetched is not None
     assert fetched["product"]["name"] == "P"
     assert fetched["persona"]["forbidden_words"] == ["违禁"]
-    assert fetched["script"]["segments"][0]["must_say"] is True
+    assert fetched["script"]["segments"][0]["must_say"] is False
 
 
 @pytest.mark.asyncio
@@ -86,3 +87,35 @@ async def test_get_nonexistent(store: PlanStore):
 async def test_delete_nonexistent(store: PlanStore):
     """delete() should not raise for a non-existent id."""
     await store.delete("nonexistent-id")  # should not raise
+
+
+@pytest.mark.asyncio
+async def test_get_normalizes_old_text_field(store: PlanStore):
+    """Segments stored with old 'text' field are migrated on read."""
+    plan_id = str(uuid.uuid4())
+    now = datetime.now(timezone.utc).isoformat()
+    old_data = json.dumps({
+        "id": plan_id,
+        "name": "Old Plan",
+        "created_at": now,
+        "updated_at": now,
+        "product": {},
+        "persona": {},
+        "script": {
+            "segments": [
+                {"id": "s1", "text": "开场白", "duration": 60, "must_say": True, "keywords": ["k1"]}
+            ]
+        },
+    })
+    await store._conn.execute(
+        "INSERT INTO live_plans (id, name, data, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+        (plan_id, "Old Plan", old_data, now, now),
+    )
+    await store._conn.commit()
+
+    plan = await store.get(plan_id)
+    seg = plan["script"]["segments"][0]
+    assert seg["goal"] == "开场白"
+    assert seg["title"] == "段落1"
+    assert "text" not in seg
+    assert seg["cue"] == []

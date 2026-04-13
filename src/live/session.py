@@ -195,12 +195,14 @@ class SessionManager:
                 segments=[
                     ScriptSegment(
                         id=s["id"],
+                        title=s.get("title", f"段落{i + 1}"),
+                        goal=s.get("goal", ""),
                         duration=s["duration"],
-                        text=s["text"],
-                        interruptible=not s.get("must_say", False),
+                        cue=s.get("cue", []),
+                        must_say=s.get("must_say", False),
                         keywords=s.get("keywords", []),
                     )
-                    for s in segments_data
+                    for i, s in enumerate(segments_data)
                 ],
             )
             script_runner = ScriptRunner(live_script)
