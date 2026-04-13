@@ -139,7 +139,7 @@ class SessionManager:
         state = script_runner.get_state()
         return {
             "running": True,
-            "queue_depth": tts_queue.qsize() if tts_queue else 0,
+            "tts_queue_depth": tts_queue.qsize() if tts_queue else 0,
             "strategy": strategy,
             **state,
         }

@@ -8,7 +8,7 @@ import { env } from '@/config/env'
 
 type AiSessionState = {
   running: boolean
-  queue_depth?: number
+  tts_queue_depth?: number
   segment_id?: string
   remaining_seconds?: number
   strategy?: string
