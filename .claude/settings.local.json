@@ -11,7 +11,8 @@
       "Bash(ls c:/Users/xwwr1/.openclaw/workspace/notes/05_githubbook/vision/apps/web/.env*)",
       "Bash(ls c:/Users/xwwr1/.openclaw/workspace/notes/05_githubbook/vision/.env*)",
       "Bash(uv --version)",
-      "Bash(pnpm --version)"
+      "Bash(pnpm --version)",
+      "Bash(winget install:*)"
     ]
   }
 }
