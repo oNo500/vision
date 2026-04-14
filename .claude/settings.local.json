@@ -12,7 +12,8 @@
       "Bash(ls c:/Users/xwwr1/.openclaw/workspace/notes/05_githubbook/vision/.env*)",
       "Bash(uv --version)",
       "Bash(pnpm --version)",
-      "Bash(winget install:*)"
+      "Bash(winget install:*)",
+      "Bash(gh.exe pr create --title 'chore\\(settings\\): allow winget install permission' --body ':*)"
     ]
   }
 }
