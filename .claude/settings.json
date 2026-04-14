@@ -39,7 +39,18 @@
       "Bash(cmd /c \"taskkill /PID 8316 /F & taskkill /PID 28344 /F\")",
       "Bash(cmd /c \"taskkill /PID 15096 /F\")",
       "Bash(cmd /c \"taskkill /F /IM uvicorn.exe 2>nul & taskkill /F /IM python.exe 2>nul & taskkill /F /IM pythonw.exe 2>nul\")",
-      "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 15096\\\\\"\")"
+      "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 15096\\\\\"\")",
+      "Bash(git config:*)",
+      "Bash(gh auth:*)",
+      "Bash(powershell.exe -NoProfile -Command ':*)",
+      "Bash(where git-credential-manager:*)",
+      "Bash(where gh:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/xwwr1/AppData/Local/**)",
+      "Bash(git-credential-manager github:*)",
+      "Bash(powershell.exe -NoProfile:*)",
+      "Bash(git credential:*)",
+      "Bash(python3 -c ':*)"
     ]
   }
 }
