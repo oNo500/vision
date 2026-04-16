@@ -98,11 +98,24 @@ class CdpEventCollector:
         finally:
             loop.close()
 
+    def _resolve_ws_url(self) -> str:
+        """Fetch webSocketDebuggerUrl from the CDP HTTP endpoint (no proxy)."""
+        import json as _json
+        import urllib.request
+        http_url = self._cdp_url.rstrip("/")
+        # Bypass system proxy (e.g. WssBarrageServer) for localhost requests
+        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+        with opener.open(f"{http_url}/json/version", timeout=5) as r:
+            return _json.load(r)["webSocketDebuggerUrl"]
+
     async def _listen(self) -> None:
         from playwright.async_api import async_playwright
 
+        ws_url = await asyncio.get_event_loop().run_in_executor(None, self._resolve_ws_url)
+        logger.info("CDP WebSocket URL: %s", ws_url)
+
         async with async_playwright() as pw:
-            browser = await pw.chromium.connect_over_cdp(self._cdp_url)
+            browser = await pw.chromium.connect_over_cdp(ws_url)
             page = await self._find_live_page(browser)
             if page is None:
                 logger.error("No Douyin live page found in Chrome. Open a live room first.")
@@ -112,6 +125,10 @@ class CdpEventCollector:
             await cdp.send("Network.enable")
             cdp.on("Network.webSocketFrameReceived", self._on_ws_frame)
 
+            # Reload so the WebSocket connection is established after Network.enable,
+            # otherwise CDP won't capture frames from pre-existing connections.
+            logger.info("Reloading live page to capture WebSocket from start: %s", page.url)
+            await page.reload()
             logger.info("Listening for WebSocket frames on: %s", page.url)
 
             # Keep alive until stop() is called

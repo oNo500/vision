@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv sync:*)",
+      "Bash(uv run:*)",
+      "Bash(PYTHONIOENCODING=utf-8 uv run scripts/live/agent.py --script scripts/live/example_script.yaml)",
+      "Bash(GOOGLE_CLOUD_PROJECT=project-254695ab-b6c8-4cac-a79 uv run scripts/live/agent.py --script scripts/live/example_script.yaml)",
+      "Bash(GOOGLE_CLOUD_PROJECT=project-254695ab-b6c8-4cac-a79 uv run python -m scripts.live.agent --script scripts/live/example_script.yaml)",
+      "Read(//c/Users/xwwr1/Documents/WindowsPowerShell/**)",
+      "Read(//c/Users/xwwr1/Documents/PowerShell/**)",
+      "Bash(ls c:/Users/xwwr1/.openclaw/workspace/notes/05_githubbook/vision/apps/web/.env*)",
+      "Bash(ls c:/Users/xwwr1/.openclaw/workspace/notes/05_githubbook/vision/.env*)",
+      "Bash(uv --version)",
+      "Bash(pnpm --version)",
+      "Bash(winget install:*)",
+      "Bash(gh.exe pr create --title 'chore\\(settings\\): allow winget install permission' --body ':*)"
+    ]
+  }
+}
