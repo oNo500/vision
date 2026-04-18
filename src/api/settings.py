@@ -11,8 +11,8 @@ class Settings(BaseSettings):
     app_name: str = "Vision API"
     vision_db_path: str = "vision.db"
     google_cloud_project: str | None = None
-    default_script_path: str = "src/live/example_script.yaml"
-    default_product_path: str = "src/live/data/product.yaml"
+    default_script_path: str = "python-packages/live/src/vision_live/example_script.yaml"
+    default_product_path: str = "python-packages/live/src/vision_live/data/product.yaml"
     cdp_url: str = "http://localhost:9222"
     # LLM provider routing (see docs/superpowers/specs/2026-04-18-litellm-provider-switch-design.md)
     llm_provider: str = "vertex_ai"

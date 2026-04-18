@@ -2,8 +2,8 @@
 from __future__ import annotations
 
 from fastapi import Request
-from src.live.danmaku_manager import DanmakuManager
-from src.live.session import SessionManager
+from vision_live.danmaku_manager import DanmakuManager
+from vision_live.session import SessionManager
 from vision_shared.db import Database
 from vision_shared.event_bus import EventBus
 
