@@ -6,6 +6,15 @@ resolution-markers = [
     "python_full_version < '3.14'",
 ]
 
+[manifest]
+members = [
+    "vision",
+    "vision-api",
+    "vision-intelligence",
+    "vision-live",
+    "vision-shared",
+]
+
 [[package]]
 name = "aiohappyeyeballs"
 version = "2.6.1"
@@ -6275,6 +6284,96 @@ dev = [
     { name = "pytest", specifier = ">=9.0.3" },
     { name = "pytest-asyncio", specifier = ">=0.24" },
     { name = "ruff", specifier = ">=0.8.0" },
+]
+
+[[package]]
+name = "vision-api"
+version = "0.1.0"
+source = { editable = "python-packages/api" }
+dependencies = [
+    { name = "fastapi" },
+    { name = "pydantic-settings" },
+    { name = "python-multipart" },
+    { name = "uvicorn", extra = ["standard"] },
+    { name = "vision-intelligence" },
+    { name = "vision-live" },
+    { name = "vision-shared" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.115" },
+    { name = "pydantic-settings", specifier = ">=2.0" },
+    { name = "python-multipart", specifier = ">=0.0.9" },
+    { name = "uvicorn", extras = ["standard"], specifier = ">=0.30" },
+    { name = "vision-intelligence", editable = "python-packages/intelligence" },
+    { name = "vision-live", editable = "python-packages/live" },
+    { name = "vision-shared", editable = "python-packages/shared" },
+]
+
+[[package]]
+name = "vision-intelligence"
+version = "0.1.0"
+source = { editable = "python-packages/intelligence" }
+dependencies = [
+    { name = "vision-shared" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "vision-shared", editable = "python-packages/shared" }]
+
+[[package]]
+name = "vision-live"
+version = "0.1.0"
+source = { editable = "python-packages/live" }
+dependencies = [
+    { name = "betterproto" },
+    { name = "chromadb" },
+    { name = "google-cloud-aiplatform" },
+    { name = "google-cloud-texttospeech" },
+    { name = "google-genai" },
+    { name = "litellm" },
+    { name = "mitmproxy" },
+    { name = "numpy" },
+    { name = "playwright" },
+    { name = "pyttsx3" },
+    { name = "sentence-transformers" },
+    { name = "sounddevice" },
+    { name = "vision-shared" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "betterproto", specifier = ">=2.0.0b7" },
+    { name = "chromadb", specifier = ">=0.5.0" },
+    { name = "google-cloud-aiplatform", specifier = ">=1.147.0" },
+    { name = "google-cloud-texttospeech", specifier = ">=2.17.0" },
+    { name = "google-genai", specifier = ">=1.72.0" },
+    { name = "litellm", specifier = ">=1.50.0" },
+    { name = "mitmproxy", specifier = ">=12.2.1" },
+    { name = "numpy", specifier = ">=2.4.4" },
+    { name = "playwright", specifier = ">=1.49.0" },
+    { name = "pyttsx3", specifier = ">=2.99" },
+    { name = "sentence-transformers", specifier = ">=3.0.0" },
+    { name = "sounddevice", specifier = ">=0.5.5" },
+    { name = "vision-shared", editable = "python-packages/shared" },
+]
+
+[[package]]
+name = "vision-shared"
+version = "0.1.0"
+source = { editable = "python-packages/shared" }
+dependencies = [
+    { name = "aiosqlite" },
+    { name = "python-dotenv" },
+    { name = "pyyaml" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "aiosqlite", specifier = ">=0.20" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
 ]
 
 [[package]]
