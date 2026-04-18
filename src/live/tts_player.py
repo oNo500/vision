@@ -114,6 +114,8 @@ class TTSPlayer:
         self._synth_thread: threading.Thread | None = None
         self._play_thread: threading.Thread | None = None
         self._is_speaking = False
+        self._in_flight: dict[str, TtsItem] = {}
+        self._in_flight_lock = threading.Lock()
         self._lock = threading.Lock()
         self._pcm_queue: OrderedItemStore = OrderedItemStore(maxsize=10)
 
@@ -129,6 +131,14 @@ class TTSPlayer:
     def is_speaking(self) -> bool:
         with self._lock:
             return self._is_speaking
+
+    def get_in_flight_ref(self) -> dict:
+        """Return the in-flight registry (dict of items currently being synthesized).
+
+        SessionManager passes this into tts_mutations.remove_by_id so cancellations
+        can race-safely mark items that have already been get()-ed but not yet put().
+        """
+        return self._in_flight
 
     def put(self, text: str, speech_prompt: str | None, urgent: bool = False) -> TtsItem:
         """Create a TtsItem, fire on_queued, and enqueue it. Returns the item."""
@@ -263,6 +273,10 @@ class TTSPlayer:
                 self._pcm_queue.put(_SENTINEL)
                 break
 
+            # Register as in-flight so cross-container remove can find it
+            with self._in_flight_lock:
+                self._in_flight[item.id] = item
+
             logger.info("[TTS] Synthesizing: %s", item.text[:60])
             try:
                 response = client.synthesize_speech(
@@ -279,6 +293,8 @@ class TTSPlayer:
             except Exception as e:
                 logger.error("[TTS] Synthesis failed: %s", e)
                 self._queue.task_done()
+                with self._in_flight_lock:
+                    self._in_flight.pop(item.id, None)
                 continue
 
             import numpy as np
@@ -301,6 +317,14 @@ class TTSPlayer:
                 urgent=item.urgent,
             )
             self._queue.task_done()
+
+            with self._in_flight_lock:
+                self._in_flight.pop(item.id, None)
+
+            if item.cancel_flag:
+                logger.info("[TTS] Cancelled in-flight item %s, discarding PCM", item.id)
+                continue
+
             self._pcm_queue.put(pcm_item)
             if self._on_synthesized:
                 self._on_synthesized(pcm_item)

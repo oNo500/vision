@@ -73,3 +73,15 @@ def test_on_synthesized_accepts_none_without_error():
         speak_fn=lambda _text, _prompt: None,
     )
     assert player is not None  # smoke: no exception during __init__
+
+
+def test_tts_player_exposes_in_flight_registry():
+    """The TTSPlayer exposes a dict[id → TtsItem] for items currently being synthesized.
+    Consumers (SessionManager) pass this dict into tts_mutations.remove_by_id."""
+    player = TTSPlayer(
+        in_queue=OrderedItemStore(),
+        speak_fn=lambda _t, _p: None,
+    )
+    ref = player.get_in_flight_ref()
+    assert isinstance(ref, dict)
+    assert ref is player.get_in_flight_ref()  # same reference each time
