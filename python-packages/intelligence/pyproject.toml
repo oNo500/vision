@@ -1,12 +1,27 @@
 [project]
 name = "vision-intelligence"
 version = "0.1.0"
-description = "Vision intelligence modules (competitor monitoring, topic discovery, content ingestion)"
+description = "Vision intelligence modules (video ASR, competitor monitoring, topic discovery)"
 requires-python = ">=3.13"
 license = { text = "MIT" }
 dependencies = [
     "vision-shared",
+    "yt-dlp>=2025.1.0",
+    "demucs>=4.0.1",
+    "ffmpeg-python>=0.2.0",
+    "google-genai>=1.72.0",
+    "litellm>=1.50.0",
+    "typer>=0.12.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.0",
+    "structlog>=24.4.0",
+    "tenacity>=9.0.0",
+    "jieba>=0.42.1",
+    "opencc-python-reimplemented>=0.1.7",
 ]
+
+[project.scripts]
+vision-video-asr = "vision_intelligence.video_asr.cli:app"
 
 [build-system]
 requires = ["hatchling"]
