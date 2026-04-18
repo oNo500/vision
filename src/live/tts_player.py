@@ -39,10 +39,17 @@ class TtsItem:
     id: str
     text: str
     speech_prompt: str | None
+    stage: str = "pending"       # "pending" | "synthesized"
+    urgent: bool = False
 
     @staticmethod
-    def create(text: str, speech_prompt: str | None) -> "TtsItem":
-        return TtsItem(id=str(uuid.uuid4()), text=text, speech_prompt=speech_prompt)
+    def create(text: str, speech_prompt: str | None, urgent: bool = False) -> "TtsItem":
+        return TtsItem(
+            id=str(uuid.uuid4()),
+            text=text,
+            speech_prompt=speech_prompt,
+            urgent=urgent,
+        )
 
 
 @dataclasses.dataclass
@@ -52,6 +59,8 @@ class PcmItem:
     speech_prompt: str | None
     pcm: "np.ndarray"  # float32, shape (N,)
     duration: float
+    stage: str = "synthesized"
+    urgent: bool = False
 
 
 def _fallback_speak(text: str, _prompt: str | None = None) -> None:
@@ -285,6 +294,7 @@ class TTSPlayer:
                 speech_prompt=item.speech_prompt,
                 pcm=pcm,
                 duration=duration,
+                urgent=item.urgent,
             )
             self._queue.task_done()
             self._pcm_queue.put(pcm_item)
