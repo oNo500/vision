@@ -41,6 +41,7 @@ class TtsItem:
     speech_prompt: str | None
     stage: str = "pending"       # "pending" | "synthesized"
     urgent: bool = False
+    cancel_flag: bool = False    # set by remove() when the item is in-flight
 
     @staticmethod
     def create(text: str, speech_prompt: str | None, urgent: bool = False) -> "TtsItem":
