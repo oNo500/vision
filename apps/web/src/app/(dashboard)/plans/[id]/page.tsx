@@ -265,7 +265,7 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
         <button
           type="button"
           className="text-sm text-muted-foreground hover:text-foreground"
-          onClick={() => router.push(appPaths.dashboard.livePlans.href)}
+          onClick={() => router.push(appPaths.dashboard.plans.href)}
         >
           &larr; 方案库
         </button>

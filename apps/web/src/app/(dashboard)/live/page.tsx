@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
+import { PageHeader } from '@/components/page-header'
 import { AiOutputLog } from '@/features/live/components/ai-output-log'
 import { AiStatusCard } from '@/features/live/components/ai-status-card'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
@@ -27,15 +28,12 @@ export default function LivePage() {
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-      {/* top bar */}
-      <div className="shrink-0 border-b px-5 py-3">
-        <div className="flex items-center gap-4">
-          <h1 className="text-sm font-semibold">直播控场</h1>
-          <div className="flex-1">
-            <SessionControls aiSession={aiSession} danmakuSession={danmakuSession} strategy={strategy} />
-          </div>
+      <PageHeader>
+        <h1 className="text-sm font-semibold">直播控场</h1>
+        <div className="flex-1">
+          <SessionControls aiSession={aiSession} danmakuSession={danmakuSession} strategy={strategy} />
         </div>
-      </div>
+      </PageHeader>
 
       {/* body — client-only to avoid SSR hydration mismatch */}
       {mounted && (

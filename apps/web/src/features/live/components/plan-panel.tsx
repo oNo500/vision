@@ -12,7 +12,7 @@ export function PlanPanel() {
     return (
       <div className="px-4 text-center text-xs text-muted-foreground">
         未加载方案 —{' '}
-        <Link href={appPaths.dashboard.livePlans.href} className="underline">
+        <Link href={appPaths.dashboard.plans.href} className="underline">
           前往方案库
         </Link>
       </div>
