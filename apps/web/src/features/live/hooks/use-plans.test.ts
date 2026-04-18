@@ -30,7 +30,7 @@ describe('usePlans', () => {
 
     const { result } = renderHook(() => usePlans())
     await waitFor(() => expect(result.current.plans).toHaveLength(2))
-    expect(result.current.plans[0].name).toBe('Plan A')
+    expect(result.current.plans[0]!.name).toBe('Plan A')
   })
 
   it('shows error toast when deletePlan fails', async () => {
