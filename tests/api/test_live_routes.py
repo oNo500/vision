@@ -7,7 +7,7 @@ from httpx import AsyncClient, ASGITransport
 
 @pytest_asyncio.fixture
 async def client():
-    from src.api.main import create_app
+    from vision_api.main import create_app
     app = create_app()
     # Provide mock state directly — bypass lifespan
     app.state.session_manager = MagicMock()

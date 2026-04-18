@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import Response
 from pydantic import BaseModel
 
-from src.api.deps import get_plan_store, get_session_manager
+from vision_api.deps import get_plan_store, get_session_manager
 from vision_live.plan_store import PlanStore
 from vision_live.session import SessionManager
 

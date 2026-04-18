@@ -8,7 +8,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.api.settings import get_settings
+from vision_api.settings import get_settings
 from vision_live.routes import router as live_router
 from vision_live.plan_routes import router as plan_router
 from vision_live.rag_routes import router as rag_router
@@ -61,3 +61,15 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
+
+
+def run() -> None:
+    """Console-script entry point: `uv run vision-api`."""
+    import uvicorn
+
+    uvicorn.run(
+        "vision_api.main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=False,
+    )
