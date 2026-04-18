@@ -18,7 +18,7 @@ from src.live.schema import DirectorOutput, Event
 logger = logging.getLogger(__name__)
 
 MAX_SILENCE_SECONDS = 15.0   # force a generation if TTS has been idle this long (safety net)
-TARGET_QUEUE_DEPTH = 5       # keep this many sentences pre-generated in the TTS queue
+TARGET_QUEUE_DEPTH = 10      # keep this many sentences pre-generated as pending text
 MAX_CONCURRENT_LLM = 2       # max parallel LLM calls (avoids flooding, keeps context fresh)
 
 _SYSTEM_PROMPT = """\

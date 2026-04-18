@@ -117,7 +117,7 @@ class TTSPlayer:
         self._in_flight: dict[str, TtsItem] = {}
         self._in_flight_lock = threading.Lock()
         self._lock = threading.Lock()
-        self._pcm_queue: OrderedItemStore = OrderedItemStore(maxsize=10)
+        self._pcm_queue: OrderedItemStore = OrderedItemStore(maxsize=3)
 
         if speak_fn is not None:
             logger.info("TTSPlayer using custom speak_fn (mock)")
