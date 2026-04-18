@@ -14,8 +14,8 @@ from src.api.deps import get_danmaku_manager, get_db, get_event_bus, get_session
 from src.api.settings import get_settings
 from src.live.danmaku_manager import DanmakuManager
 from src.live.session import SessionAlreadyRunningError, SessionManager
-from src.shared.db import Database
-from src.shared.event_bus import EventBus
+from vision_shared.db import Database
+from vision_shared.event_bus import EventBus
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/live")

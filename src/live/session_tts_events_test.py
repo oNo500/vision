@@ -164,7 +164,7 @@ def test_publish_tts_reordered(bus_with_collector):
 
 def test_session_remove_tts_finds_pending_and_publishes():
     from src.live.session import SessionManager
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def __init__(self): self.events: list[dict] = []
@@ -194,7 +194,7 @@ def test_session_remove_tts_finds_pending_and_publishes():
 
 def test_session_remove_tts_returns_false_when_id_missing():
     from src.live.session import SessionManager
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def publish(self, _ev): pass
@@ -224,7 +224,7 @@ def test_session_remove_tts_returns_false_when_not_running():
 def test_session_edit_tts_pending_updates_in_place():
     from src.live.session import SessionManager
     from src.live.tts_mutations import UNSET
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def __init__(self): self.events: list[dict] = []
@@ -254,7 +254,7 @@ def test_session_edit_tts_pending_updates_in_place():
 def test_session_edit_tts_returns_false_when_id_missing():
     from src.live.session import SessionManager
     from src.live.tts_mutations import UNSET
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def publish(self, _ev): pass
@@ -274,7 +274,7 @@ def test_session_edit_tts_returns_false_when_id_missing():
 
 def test_session_reorder_tts_valid_ids():
     from src.live.session import SessionManager
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def __init__(self): self.events: list[dict] = []
@@ -305,7 +305,7 @@ def test_session_reorder_tts_valid_ids():
 
 def test_session_reorder_tts_returns_false_on_mismatched_ids():
     from src.live.session import SessionManager
-    from src.shared.ordered_item_store import OrderedItemStore
+    from vision_shared.ordered_item_store import OrderedItemStore
 
     class _StubBus:
         def publish(self, _ev): pass

@@ -4,7 +4,7 @@ from __future__ import annotations
 import time
 
 from src.live.tts_player import TTSPlayer, TtsItem
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 
 def test_player_consumes_items_in_order():

@@ -8,7 +8,7 @@ import time
 
 import pytest
 
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 
 @dataclasses.dataclass

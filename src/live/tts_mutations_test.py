@@ -5,7 +5,7 @@ import numpy as np
 
 from src.live.tts_mutations import UNSET, edit_by_id, remove_by_id, reorder_stage
 from src.live.tts_player import PcmItem, TtsItem
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 
 def _pcm(id_: str, text: str = "x", urgent: bool = False) -> PcmItem:
