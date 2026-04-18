@@ -12,7 +12,7 @@ install:
 
 api:
 	start "" "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\temp\chrome-cdp"
-	uv run uvicorn src.api.main:app --host 127.0.0.1 --port 8090
+	uv run uvicorn vision_api.main:app --host 127.0.0.1 --port 8090
 
 web:
 	start "Vision Web" cmd /k "cd /d %CD% && pnpm --filter web dev"
@@ -24,19 +24,19 @@ dev: api web
 # ── Test ───────────────────────────────────────────────────────────────────────
 
 test:
-	uv run pytest tests/ -v
+	uv run pytest python-packages/ -v
 
 test-watch:
-	uv run pytest tests/ -v --tb=short -f
+	uv run pytest python-packages/ -v --tb=short -f
 
 # ── Lint & Format ──────────────────────────────────────────────────────────────
 
 lint:
-	uv run ruff check src/
+	uv run ruff check python-packages/
 	pnpm --filter web lint
 
 format:
-	uv run ruff format src/
+	uv run ruff format python-packages/
 	pnpm --filter web format
 
 # ── Help ───────────────────────────────────────────────────────────────────────
