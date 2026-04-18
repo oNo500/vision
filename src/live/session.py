@@ -163,8 +163,8 @@ class SessionManager:
             player = self._tts_player
         if q is None or player is None:
             return []
-        text_items = [i for i in list(q.queue) if isinstance(i, TtsItem)]
-        pcm_items = [i for i in list(player._pcm_queue.queue) if hasattr(i, "id")]
+        text_items = [i for i in q.snapshot() if isinstance(i, TtsItem)]
+        pcm_items = [i for i in player._pcm_queue.snapshot() if hasattr(i, "id")]
         all_items = text_items + pcm_items
         return [
             {"id": item.id, "content": item.text, "speech_prompt": item.speech_prompt}
