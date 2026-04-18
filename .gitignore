@@ -42,3 +42,6 @@ vision.db
 # Claude Code local settings (machine-specific permissions, paths, PIDs)
 .claude/settings.json
 .claude/settings.local.json
+
+# Git worktrees (superpowers workflow)
+.worktrees/
