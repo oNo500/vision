@@ -112,6 +112,7 @@ def test_snapshot_returns_items_in_order_without_mutating_store():
         store.put(it)
 
     snap = store.snapshot()
-    assert snap == items  # same order, same objects
+    assert len(snap) == len(items)
+    assert all(a is b for a, b in zip(snap, items))  # order preserved, same object refs
     assert snap is not store._items  # copy, not alias
     assert store.qsize() == 3  # not consumed
