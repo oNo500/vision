@@ -3,17 +3,11 @@
 import { useEffect, useRef, useState } from 'react'
 
 import { Button } from '@workspace/ui/components/button'
-import { toast } from '@workspace/ui/components/sonner'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, ChevronsDownUpIcon, ChevronsUpDownIcon } from 'lucide-react'
 
-import { env } from '@/config/env'
 import type { ScriptState } from '@/features/live/hooks/use-live-stream'
 import type { LivePlan } from '@/features/live/hooks/use-plan'
-
-async function postScriptNav(direction: 'next' | 'prev'): Promise<void> {
-  const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/script/${direction}`, { method: 'POST' })
-  if (!res.ok) throw new Error(`script nav failed: ${res.status}`)
-}
+import { apiFetch } from '@/lib/api-fetch'
 
 interface PlanSidebarProps {
   plan: LivePlan
@@ -47,9 +41,10 @@ export function PlanSidebar({ plan, scriptState, running }: PlanSidebarProps) {
     if (!running || navLoading) return
     setNavLoading(true)
     try {
-      await postScriptNav(direction)
-    } catch {
-      toast.error('Script navigation failed')
+      await apiFetch<unknown>(`live/script/${direction}`, {
+        method: 'POST',
+        fallbackError: 'Script navigation failed',
+      })
     } finally {
       setNavLoading(false)
     }

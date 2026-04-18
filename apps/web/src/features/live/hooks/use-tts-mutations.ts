@@ -2,11 +2,11 @@
 
 import { useCallback, useState } from 'react'
 
-import { toast } from '@workspace/ui/components/sonner'
-
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 type EditPatch = { text: string; speech_prompt?: string | null }
+
+const NETWORK_ERROR = '无法连接到后端'
 
 export function useTtsMutations() {
   const [loading, setLoading] = useState(false)
@@ -14,16 +14,12 @@ export function useTtsMutations() {
   const remove = useCallback(async (id: string): Promise<boolean> => {
     setLoading(true)
     try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/tts/queue/${id}`, { method: 'DELETE' })
-      if (!res.ok) {
-        const data = (await res.json().catch(() => ({}))) as { detail?: unknown }
-        toast.error(typeof data.detail === 'string' ? data.detail : '删除失败')
-        return false
-      }
-      return true
-    } catch {
-      toast.error('无法连接到后端')
-      return false
+      const res = await apiFetch<unknown>(`live/tts/queue/${id}`, {
+        method: 'DELETE',
+        fallbackError: '删除失败',
+        networkError: NETWORK_ERROR,
+      })
+      return res.ok
     } finally {
       setLoading(false)
     }
@@ -32,20 +28,13 @@ export function useTtsMutations() {
   const edit = useCallback(async (id: string, patch: EditPatch): Promise<boolean> => {
     setLoading(true)
     try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/tts/queue/${id}`, {
+      const res = await apiFetch<unknown>(`live/tts/queue/${id}`, {
         method: 'PATCH',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(patch),
+        body: patch,
+        fallbackError: '编辑失败',
+        networkError: NETWORK_ERROR,
       })
-      if (!res.ok) {
-        const data = (await res.json().catch(() => ({}))) as { detail?: unknown }
-        toast.error(typeof data.detail === 'string' ? data.detail : '编辑失败')
-        return false
-      }
-      return true
-    } catch {
-      toast.error('无法连接到后端')
-      return false
+      return res.ok
     } finally {
       setLoading(false)
     }
@@ -54,20 +43,13 @@ export function useTtsMutations() {
   const reorder = useCallback(async (stage: 'pending' | 'synthesized', ids: string[]): Promise<boolean> => {
     setLoading(true)
     try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/tts/queue/reorder`, {
+      const res = await apiFetch<unknown>('live/tts/queue/reorder', {
         method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ stage, ids }),
+        body: { stage, ids },
+        fallbackError: '顺序已过时，请重试',
+        networkError: NETWORK_ERROR,
       })
-      if (!res.ok) {
-        const data = (await res.json().catch(() => ({}))) as { detail?: unknown }
-        toast.error(typeof data.detail === 'string' ? data.detail : '顺序已过时，请重试')
-        return false
-      }
-      return true
-    } catch {
-      toast.error('无法连接到后端')
-      return false
+      return res.ok
     } finally {
       setLoading(false)
     }

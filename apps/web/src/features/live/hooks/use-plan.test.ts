@@ -3,12 +3,13 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { usePlan } from './use-plan'
 
-vi.mock('@/config/env', () => ({
-  env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
-}))
-
 vi.mock('@workspace/ui/components/sonner', () => ({
   toast: { error: vi.fn(), success: vi.fn() },
+}))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
 }))
 
 const mockPlan = {
@@ -24,25 +25,21 @@ const mockPlan = {
 describe('usePlan', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    vi.stubGlobal('fetch', vi.fn())
   })
 
   it('fetches plan by id', async () => {
-    vi.mocked(fetch).mockResolvedValueOnce({
-      ok: true,
-      json: async () => mockPlan,
-    } as Response)
+    mockApiFetch.mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
 
     const { result } = renderHook(() => usePlan('1'))
     await waitFor(() => expect(result.current.plan).not.toBeNull())
     expect(result.current.plan?.name).toBe('Plan A')
   })
 
-  it('shows error toast when save fails', async () => {
+  it('does not toast-success when save fails', async () => {
     const { toast } = await import('@workspace/ui/components/sonner')
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => mockPlan } as Response)
-      .mockResolvedValueOnce({ ok: false, json: async () => ({}) } as Response)
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
+      .mockResolvedValueOnce({ ok: false, status: 400 })
 
     const { result } = renderHook(() => usePlan('1'))
     await waitFor(() => expect(result.current.plan).not.toBeNull())
@@ -51,14 +48,15 @@ describe('usePlan', () => {
       await result.current.savePlan(mockPlan)
     })
 
-    expect(toast.error).toHaveBeenCalledOnce()
+    // apiFetch is responsible for the error toast; usePlan only shows success.
+    expect(toast.success).not.toHaveBeenCalled()
   })
 
   it('shows success toast when save succeeds', async () => {
     const { toast } = await import('@workspace/ui/components/sonner')
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => mockPlan } as Response)
-      .mockResolvedValueOnce({ ok: true, json: async () => mockPlan } as Response)
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
 
     const { result } = renderHook(() => usePlan('1'))
     await waitFor(() => expect(result.current.plan).not.toBeNull())

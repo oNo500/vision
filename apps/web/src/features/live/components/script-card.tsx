@@ -3,20 +3,14 @@
 import { useState } from 'react'
 
 import { Button } from '@workspace/ui/components/button'
-import { toast } from '@workspace/ui/components/sonner'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 import type { ScriptState } from '../hooks/use-live-stream'
 
 interface ScriptCardProps {
   scriptState: ScriptState | null
   running: boolean
-}
-
-async function postScriptNav(direction: 'next' | 'prev'): Promise<void> {
-  const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/script/${direction}`, { method: 'POST' })
-  if (!res.ok) throw new Error(`script nav failed: ${res.status}`)
 }
 
 export function ScriptCard({ scriptState, running }: ScriptCardProps) {
@@ -26,9 +20,10 @@ export function ScriptCard({ scriptState, running }: ScriptCardProps) {
     if (!running || loading) return
     setLoading(true)
     try {
-      await postScriptNav(direction)
-    } catch {
-      toast.error('Script navigation failed')
+      await apiFetch<unknown>(`live/script/${direction}`, {
+        method: 'POST',
+        fallbackError: 'Script navigation failed',
+      })
     } finally {
       setLoading(false)
     }

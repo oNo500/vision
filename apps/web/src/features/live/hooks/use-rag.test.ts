@@ -3,16 +3,17 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { useRag } from './use-rag'
 
-vi.mock('@/config/env', () => ({
-  env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
-}))
-
 vi.mock('@workspace/ui/components/sonner', () => ({
   toast: {
     error: vi.fn(),
     success: vi.fn(),
     info: vi.fn(),
   },
+}))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
 }))
 
 const emptyStatus = {
@@ -30,24 +31,23 @@ const idleBuild = {
   last_error: null,
 }
 
-function mockJson(body: unknown, init: ResponseInit = {}) {
-  return {
-    ok: init.status === undefined || init.status < 400,
-    status: init.status ?? 200,
-    json: async () => body,
-  } as Response
+function ok<T>(data: T, status = 200) {
+  return { ok: true as const, data, status }
+}
+
+function fail(status = 400) {
+  return { ok: false as const, status }
 }
 
 describe('useRag', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    vi.stubGlobal('fetch', vi.fn())
   })
 
   it('fetches status and build status on mount', async () => {
-    vi.mocked(fetch)
-      .mockResolvedValueOnce(mockJson(emptyStatus))
-      .mockResolvedValueOnce(mockJson(idleBuild))
+    mockApiFetch
+      .mockResolvedValueOnce(ok(emptyStatus))
+      .mockResolvedValueOnce(ok(idleBuild))
 
     const { result } = renderHook(() => useRag('p1'))
     await waitFor(() => expect(result.current.status).not.toBeNull())
@@ -57,11 +57,11 @@ describe('useRag', () => {
   })
 
   it('uploads file and refetches status', async () => {
-    vi.mocked(fetch)
-      .mockResolvedValueOnce(mockJson(emptyStatus))    // initial status
-      .mockResolvedValueOnce(mockJson(idleBuild))      // initial build
-      .mockResolvedValueOnce(mockJson({ rel_path: 'scripts/a.md', overwritten: false }, { status: 201 }))
-      .mockResolvedValueOnce(mockJson({ ...emptyStatus, file_count: 1 }))
+    mockApiFetch
+      .mockResolvedValueOnce(ok(emptyStatus))
+      .mockResolvedValueOnce(ok(idleBuild))
+      .mockResolvedValueOnce(ok({ rel_path: 'scripts/a.md', overwritten: false }, 201))
+      .mockResolvedValueOnce(ok({ ...emptyStatus, file_count: 1 }))
 
     const { result } = renderHook(() => useRag('p1'))
     await waitFor(() => expect(result.current.status).not.toBeNull())
@@ -74,17 +74,18 @@ describe('useRag', () => {
 
     await waitFor(() => expect(result.current.status?.file_count).toBe(1))
 
-    const uploadCall = vi.mocked(fetch).mock.calls[2]!
-    expect(uploadCall[0]).toBe('http://localhost:8000/live/plans/p1/rag/files')
-    expect((uploadCall[1] as RequestInit).method).toBe('POST')
+    const uploadCall = mockApiFetch.mock.calls[2]!
+    expect(uploadCall[0]).toBe('live/plans/p1/rag/files')
+    expect(uploadCall[1].method).toBe('POST')
+    expect(uploadCall[1].body).toBeInstanceOf(FormData)
   })
 
   it('surfaces 409 during rebuild as info toast', async () => {
     const { toast } = await import('@workspace/ui/components/sonner')
-    vi.mocked(fetch)
-      .mockResolvedValueOnce(mockJson(emptyStatus))
-      .mockResolvedValueOnce(mockJson(idleBuild))
-      .mockResolvedValueOnce(mockJson({ detail: 'build already running' }, { status: 409 }))
+    mockApiFetch
+      .mockResolvedValueOnce(ok(emptyStatus))
+      .mockResolvedValueOnce(ok(idleBuild))
+      .mockResolvedValueOnce(fail(409))
 
     const { result } = renderHook(() => useRag('p1'))
     await waitFor(() => expect(result.current.status).not.toBeNull())
@@ -97,11 +98,11 @@ describe('useRag', () => {
   })
 
   it('deletes file and refetches', async () => {
-    vi.mocked(fetch)
-      .mockResolvedValueOnce(mockJson(emptyStatus))
-      .mockResolvedValueOnce(mockJson(idleBuild))
-      .mockResolvedValueOnce({ ok: true, status: 204, json: async () => ({}) } as Response)
-      .mockResolvedValueOnce(mockJson({ ...emptyStatus, file_count: 0 }))
+    mockApiFetch
+      .mockResolvedValueOnce(ok(emptyStatus))
+      .mockResolvedValueOnce(ok(idleBuild))
+      .mockResolvedValueOnce(ok({}, 204))
+      .mockResolvedValueOnce(ok({ ...emptyStatus, file_count: 0 }))
 
     const { result } = renderHook(() => useRag('p1'))
     await waitFor(() => expect(result.current.status).not.toBeNull())
@@ -110,16 +111,16 @@ describe('useRag', () => {
       await result.current.remove('scripts', 'a.md')
     })
 
-    const deleteCall = vi.mocked(fetch).mock.calls[2]!
-    expect(deleteCall[0]).toBe('http://localhost:8000/live/plans/p1/rag/files/scripts/a.md')
-    expect((deleteCall[1] as RequestInit).method).toBe('DELETE')
+    const deleteCall = mockApiFetch.mock.calls[2]!
+    expect(deleteCall[0]).toBe('live/plans/p1/rag/files/scripts/a.md')
+    expect(deleteCall[1].method).toBe('DELETE')
   })
 
   it('rebuild flips buildStatus.running true immediately on 202', async () => {
-    vi.mocked(fetch)
-      .mockResolvedValueOnce(mockJson(emptyStatus))
-      .mockResolvedValueOnce(mockJson(idleBuild))
-      .mockResolvedValueOnce(mockJson({ scheduled: true }, { status: 202 }))
+    mockApiFetch
+      .mockResolvedValueOnce(ok(emptyStatus))
+      .mockResolvedValueOnce(ok(idleBuild))
+      .mockResolvedValueOnce(ok({ scheduled: true }, 202))
 
     const { result } = renderHook(() => useRag('p1'))
     await waitFor(() => expect(result.current.status).not.toBeNull())

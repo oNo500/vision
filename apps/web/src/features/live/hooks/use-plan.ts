@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 import { toast } from '@workspace/ui/components/sonner'
 
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 export type FaqItem = { question: string; answer: string }
 
@@ -48,10 +48,8 @@ export function usePlan(id: string) {
   const [saving, setSaving] = useState(false)
 
   const fetchPlan = useCallback(async () => {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans/${id}`)
-      if (res.ok) setPlan(await res.json())
-    } catch { /* backend unreachable */ }
+    const res = await apiFetch<LivePlan>(`live/plans/${id}`, { silent: true })
+    if (res.ok) setPlan(res.data)
   }, [id])
 
   useEffect(() => {
@@ -62,22 +60,15 @@ export function usePlan(id: string) {
     async (data: Partial<LivePlan> & { name: string }) => {
       setSaving(true)
       try {
-        const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans/${id}`, {
+        const res = await apiFetch<LivePlan>(`live/plans/${id}`, {
           method: 'PUT',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify(data),
+          body: data,
+          fallbackError: 'Failed to save plan',
         })
-        const result = await res.json()
-        if (!res.ok) {
-          const detail = (result as { detail?: unknown }).detail
-          const msg = typeof detail === 'string' ? detail : 'Failed to save plan'
-          toast.error(msg)
-        } else {
-          setPlan(result as LivePlan)
+        if (res.ok) {
+          setPlan(res.data)
           toast.success('Plan saved')
         }
-      } catch {
-        toast.error('Cannot reach backend')
       } finally {
         setSaving(false)
       }

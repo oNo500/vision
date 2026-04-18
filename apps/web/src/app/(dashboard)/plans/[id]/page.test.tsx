@@ -30,8 +30,12 @@ vi.mock('react', async (importOriginal) => {
 })
 
 vi.mock('next/navigation', () => ({ useRouter: () => ({ push: vi.fn() }) }))
-vi.mock('@/config/env', () => ({ env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' } }))
 vi.mock('next/link', () => ({ default: ({ children, href }: { children: React.ReactNode; href: string }) => <a href={href}>{children}</a> }))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
+}))
 vi.mock('@atlaskit/pragmatic-drag-and-drop/element/adapter', () => ({
   draggable: () => () => {},
   dropTargetForElements: () => () => {},
@@ -62,7 +66,8 @@ const mockPlan = {
 }
 
 beforeEach(() => {
-  global.fetch = vi.fn().mockResolvedValue({ ok: true, json: async () => mockPlan })
+  vi.clearAllMocks()
+  mockApiFetch.mockResolvedValue({ ok: true, data: mockPlan, status: 200 })
 })
 
 async function renderAndNavigateToScript() {

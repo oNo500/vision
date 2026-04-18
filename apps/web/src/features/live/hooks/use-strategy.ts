@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
-import { toast } from '@workspace/ui/components/sonner'
-
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 export type Strategy = 'immediate' | 'intelligent'
 
@@ -12,28 +10,20 @@ export function useStrategy() {
   const [strategy, setStrategyState] = useState<Strategy>('immediate')
 
   useEffect(() => {
-    fetch(`${env.NEXT_PUBLIC_API_URL}/live/strategy`)
-      .then((r) => r.json())
-      .then((d: { strategy: Strategy }) => setStrategyState(d.strategy))
-      .catch(() => {})
+    let cancelled = false
+    apiFetch<{ strategy: Strategy }>('live/strategy', { silent: true }).then((res) => {
+      if (!cancelled && res.ok) setStrategyState(res.data.strategy)
+    })
+    return () => { cancelled = true }
   }, [])
 
   const setStrategy = useCallback(async (s: Strategy) => {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/strategy`, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ strategy: s }),
-      })
-      if (res.ok) {
-        const data = await res.json() as { strategy: Strategy }
-        setStrategyState(data.strategy)
-      } else {
-        toast.error('Strategy update failed')
-      }
-    } catch {
-      toast.error('Cannot reach backend')
-    }
+    const res = await apiFetch<{ strategy: Strategy }>('live/strategy', {
+      method: 'POST',
+      body: { strategy: s },
+      fallbackError: 'Strategy update failed',
+    })
+    if (res.ok) setStrategyState(res.data.strategy)
   }, [])
 
   return { strategy, setStrategy }

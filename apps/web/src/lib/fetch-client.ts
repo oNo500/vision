@@ -1,9 +1,9 @@
 import { createClient } from '@infra-x/fwrap'
 
-import type { RequestOptions } from '@infra-x/fwrap'
+import { env } from '@/config/env'
 
 export const fetchClient = createClient({
-  //   prefixUrl:,
+  prefixUrl: env.NEXT_PUBLIC_API_URL,
   timeout: 30_000,
   retry: {
     limit: 2,
@@ -24,12 +24,3 @@ export const fetchClient = createClient({
     },
   ],
 })
-
-export interface FetchClientOptions extends Omit<RequestOptions, 'prefixUrl'> {
-  next?: {
-    revalidate?: number
-    tags?: string[]
-  }
-}
-
-// TODO: use fetchClient Example
