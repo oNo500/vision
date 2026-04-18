@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import queue
 import threading
+import time
 from typing import Generic, Protocol, TypeVar
 
 
@@ -45,10 +46,9 @@ class OrderedItemStore(Generic[T]):
                     while len(self._items) >= self._maxsize:
                         self._not_full.wait()
                 else:
-                    import time as _time
-                    deadline = _time.monotonic() + timeout
+                    deadline = time.monotonic() + timeout
                     while len(self._items) >= self._maxsize:
-                        remaining = deadline - _time.monotonic()
+                        remaining = deadline - time.monotonic()
                         if remaining <= 0:
                             raise queue.Full
                         self._not_full.wait(timeout=remaining)
@@ -67,10 +67,9 @@ class OrderedItemStore(Generic[T]):
                 while not self._items:
                     self._not_empty.wait()
             else:
-                import time as _time
-                deadline = _time.monotonic() + timeout
+                deadline = time.monotonic() + timeout
                 while not self._items:
-                    remaining = deadline - _time.monotonic()
+                    remaining = deadline - time.monotonic()
                     if remaining <= 0:
                         raise queue.Empty
                     self._not_empty.wait(timeout=remaining)

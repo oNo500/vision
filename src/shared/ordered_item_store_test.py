@@ -4,7 +4,6 @@ from __future__ import annotations
 import dataclasses
 import queue
 import threading
-import time
 
 import pytest
 
@@ -77,13 +76,15 @@ def test_get_blocks_until_put_from_another_thread():
     store: OrderedItemStore[_Item] = OrderedItemStore()
 
     got: list[_Item] = []
+    ready = threading.Event()
 
     def _consumer():
+        ready.set()
         got.append(store.get(timeout=2))
 
     t = threading.Thread(target=_consumer, daemon=True)
     t.start()
-    time.sleep(0.05)  # let consumer enter wait
+    ready.wait(timeout=1)
     store.put(_Item(id="x", value=42))
     t.join(timeout=2)
 
@@ -95,3 +96,10 @@ def test_task_done_is_callable():
     store.put(_Item(id="a", value=1))
     store.get(timeout=1)
     store.task_done()  # no-op, must not raise
+
+
+def test_put_full_times_out():
+    store: OrderedItemStore[_Item] = OrderedItemStore(maxsize=1)
+    store.put(_Item(id="a", value=1))
+    with pytest.raises(queue.Full):
+        store.put(_Item(id="b", value=2), timeout=0.05)
