@@ -24,8 +24,6 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/live/plans/{plan_id}/rag")
 
 
-_KNOWN_CATEGORIES = ("scripts", "competitor_clips", "product_manual", "qa_log")
-_ALLOWED_SUFFIXES = (".md", ".txt")
 _MAX_UPLOAD_BYTES = 5 * 1024 * 1024   # 5 MB
 _FILENAME_SAFE_RE = re.compile(r"[^a-zA-Z0-9\u4e00-\u9fa5._-]")
 
@@ -81,45 +79,7 @@ def _run_build_sync(request: Request, plan_id: str) -> None:
 
 @router.get("/")
 def get_status(plan_id: str) -> dict:
-    plan_root = rag_cli.DATA_ROOT / plan_id
-    index_root = rag_cli.INDEX_ROOT / plan_id
-    meta_path = index_root / "meta.json"
-
-    meta = rag_cli._load_meta(meta_path)
-    meta_sources = meta.get("sources", {})
-
-    sources_on_disk = []
-    current_hashes: dict[str, str] = {}
-    if plan_root.is_dir():
-        for src in rag_cli._scan_sources(plan_root):
-            h = rag_cli._compute_file_hash(src.path)
-            current_hashes[src.rel_path] = h
-            indexed_entry = meta_sources.get(src.rel_path)
-            sources_on_disk.append({
-                "rel_path": src.rel_path,
-                "category": src.category,
-                "chunks": (indexed_entry or {}).get("chunks", 0),
-                "sha256": h,
-                "indexed": bool(indexed_entry and indexed_entry.get("sha256") == h),
-            })
-
-    indexed = bool(meta) and (
-        (index_root / "chroma.sqlite3").exists()
-        or (index_root / "chroma.sqlite").exists()
-    )
-
-    # dirty = any file missing from meta, sha mismatch, or meta source gone from disk
-    added_or_changed, removed = rag_cli._diff_sources(meta_sources, current_hashes)
-    dirty = bool(added_or_changed or removed)
-
-    return {
-        "indexed": indexed,
-        "dirty": dirty,
-        "chunk_count": meta.get("chunk_count", 0),
-        "build_time": meta.get("build_time"),
-        "file_count": len(sources_on_disk),
-        "sources": sources_on_disk,
-    }
+    return rag_cli.get_plan_status(plan_id)
 
 
 # ---------------------------------------------------------------------------
@@ -133,18 +93,18 @@ async def upload_file(
     category: str = Form(...),
     file: UploadFile = File(...),
 ) -> dict:
-    if category not in _KNOWN_CATEGORIES:
+    if category not in rag_cli.KNOWN_CATEGORIES:
         raise HTTPException(
             status_code=400,
-            detail=f"category must be one of {_KNOWN_CATEGORIES}",
+            detail=f"category must be one of {rag_cli.KNOWN_CATEGORIES}",
         )
 
     raw_name = file.filename or ""
     suffix = Path(raw_name).suffix.lower()
-    if suffix not in _ALLOWED_SUFFIXES:
+    if suffix not in rag_cli.ALLOWED_SUFFIXES:
         raise HTTPException(
             status_code=400,
-            detail=f"only {_ALLOWED_SUFFIXES} allowed",
+            detail=f"only {rag_cli.ALLOWED_SUFFIXES} allowed",
         )
 
     safe_name = _sanitize_filename(raw_name)
@@ -175,7 +135,7 @@ async def upload_file(
 
 @router.delete("/files/{category}/{filename}", status_code=204)
 def delete_file(plan_id: str, category: str, filename: str) -> Response:
-    if category not in _KNOWN_CATEGORIES:
+    if category not in rag_cli.KNOWN_CATEGORIES:
         raise HTTPException(status_code=400, detail="unknown category")
 
     safe_name = _sanitize_filename(filename)
@@ -186,10 +146,12 @@ def delete_file(plan_id: str, category: str, filename: str) -> Response:
     target = plan_root / category / safe_name
     _check_plan_path(target, plan_root)
 
-    if not target.exists() or not target.is_file():
-        raise HTTPException(status_code=404, detail="file not found")
-
-    target.unlink()
+    try:
+        target.unlink()
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="file not found") from None
+    except IsADirectoryError:
+        raise HTTPException(status_code=400, detail="not a file") from None
     return Response(status_code=204)
 
 

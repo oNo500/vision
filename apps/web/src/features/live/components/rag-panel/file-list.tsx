@@ -5,17 +5,11 @@ import { useState } from 'react'
 import { Button } from '@workspace/ui/components/button'
 
 import {
+  CATEGORY_LABELS,
   RAG_CATEGORIES,
   type RagCategory,
   type RagSource,
 } from '@/features/live/hooks/use-rag'
-
-const CATEGORY_LABELS: Record<RagCategory, string> = {
-  scripts: '脚本',
-  competitor_clips: '爆款片段',
-  product_manual: '产品手册',
-  qa_log: '社群问答',
-}
 
 export function FileList({
   sources,

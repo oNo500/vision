@@ -69,7 +69,7 @@ describe('useRag', () => {
     const file = new File(['hello'], 'a.md', { type: 'text/markdown' })
 
     await act(async () => {
-      await result.current.upload(file, 'scripts')
+      await result.current.upload([file], 'scripts')
     })
 
     await waitFor(() => expect(result.current.status?.file_count).toBe(1))

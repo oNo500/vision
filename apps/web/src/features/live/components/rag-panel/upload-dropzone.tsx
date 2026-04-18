@@ -5,22 +5,16 @@ import { useRef, useState, type DragEvent } from 'react'
 import { Button } from '@workspace/ui/components/button'
 
 import {
+  CATEGORY_LABELS,
   RAG_CATEGORIES,
   type RagCategory,
 } from '@/features/live/hooks/use-rag'
-
-const CATEGORY_LABELS: Record<RagCategory, string> = {
-  scripts: '脚本',
-  competitor_clips: '爆款片段',
-  product_manual: '产品手册',
-  qa_log: '社群问答',
-}
 
 export function UploadDropzone({
   onUpload,
   disabled = false,
 }: {
-  onUpload: (file: File, category: RagCategory) => Promise<boolean>
+  onUpload: (files: File[], category: RagCategory) => Promise<boolean[]>
   disabled?: boolean
 }) {
   const [category, setCategory] = useState<RagCategory>('scripts')
@@ -29,9 +23,7 @@ export function UploadDropzone({
 
   async function handleFiles(files: FileList | null) {
     if (!files || files.length === 0) return
-    for (const file of Array.from(files)) {
-      await onUpload(file, category)
-    }
+    await onUpload(Array.from(files), category)
   }
 
   function onDrop(e: DragEvent<HTMLDivElement>) {

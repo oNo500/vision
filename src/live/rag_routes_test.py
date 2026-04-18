@@ -38,7 +38,7 @@ def client(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
         for f in (data_root / plan_id).rglob("*"):
             if f.is_file() and f.suffix in (".md", ".txt"):
                 rel = f.relative_to(data_root / plan_id).as_posix()
-                sources[rel] = {"sha256": rag_cli._compute_file_hash(f), "chunks": 1}
+                sources[rel] = {"sha256": rag_cli.compute_file_hash(f), "chunks": 1}
         meta = {
             "build_time": "2026-04-18T12:00:00Z",
             "chunk_count": len(sources),
