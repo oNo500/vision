@@ -23,6 +23,8 @@ import threading
 import uuid
 from collections.abc import Callable
 
+from src.shared.ordered_item_store import OrderedItemStore
+
 logger = logging.getLogger(__name__)
 
 _DEFAULT_SPEECH_PROMPT = "带货主播收到互动时真情流露的回应，语气自然有情绪起伏，像在跟朋友聊天"
@@ -100,7 +102,7 @@ class TTSPlayer:
         self._play_thread: threading.Thread | None = None
         self._is_speaking = False
         self._lock = threading.Lock()
-        self._pcm_queue: queue.Queue = queue.Queue(maxsize=10)
+        self._pcm_queue: OrderedItemStore = OrderedItemStore(maxsize=10)
 
         if speak_fn is not None:
             logger.info("TTSPlayer using custom speak_fn (mock)")
