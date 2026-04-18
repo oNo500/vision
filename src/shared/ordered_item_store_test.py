@@ -103,3 +103,15 @@ def test_put_full_times_out():
     store.put(_Item(id="a", value=1))
     with pytest.raises(queue.Full):
         store.put(_Item(id="b", value=2), timeout=0.05)
+
+
+def test_snapshot_returns_items_in_order_without_mutating_store():
+    store: OrderedItemStore[_Item] = OrderedItemStore()
+    items = [_Item(id=f"i{i}", value=i) for i in range(3)]
+    for it in items:
+        store.put(it)
+
+    snap = store.snapshot()
+    assert snap == items  # same order, same objects
+    assert snap is not store._items  # copy, not alias
+    assert store.qsize() == 3  # not consumed

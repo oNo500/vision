@@ -80,3 +80,10 @@ class OrderedItemStore[T: _HasId]:
     def task_done(self) -> None:
         """No-op. Present for queue.Queue compatibility; we don't track joins."""
         return None
+
+    # ----- Read-only views -----
+
+    def snapshot(self) -> list[T]:
+        """Return a shallow copy of current items in order. Thread-safe."""
+        with self._lock:
+            return list(self._items)
