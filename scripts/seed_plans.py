@@ -9,13 +9,8 @@ from __future__ import annotations
 
 import argparse
 import asyncio
-import sys
-from pathlib import Path
 
-# Add project root to sys.path so src imports work.
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from vision_shared.db import Database  # noqa: E402
+from vision_shared.db import Database
 
 SAMPLE_PLAN = {
     "name": "示例方案 · 垆土铁棍山药粉",
