@@ -13,7 +13,7 @@ dev: api web
 api:
 	-lsof -ti:8000 | xargs kill -9 2>/dev/null
 	open -na "Google Chrome" --args --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cdp || true
-	GRPC_VERBOSITY=NONE GLOG_minloglevel=3 uv run uvicorn src.api.main:app --reload --port 8000
+	GRPC_VERBOSITY=NONE GLOG_minloglevel=3 uv run uvicorn vision_api.main:app --reload --port 8000
 
 web:
 	pnpm --filter web dev
@@ -21,19 +21,19 @@ web:
 # ── Test ───────────────────────────────────────────────────────────────────────
 
 test:
-	uv run pytest tests/ -v
+	uv run pytest python-packages/ -v
 
 test-watch:
-	uv run pytest tests/ -v --tb=short -f
+	uv run pytest python-packages/ -v --tb=short -f
 
 # ── Lint & Format ──────────────────────────────────────────────────────────────
 
 lint:
-	uv run ruff check src/
+	uv run ruff check python-packages/
 	pnpm --filter web lint
 
 format:
-	uv run ruff format src/
+	uv run ruff format python-packages/
 	pnpm --filter web format
 
 # ── Help ───────────────────────────────────────────────────────────────────────

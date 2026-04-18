@@ -2,7 +2,7 @@
 
 Marked slow because it downloads ~400MB on first run. Run explicitly with:
 
-    uv run pytest src/live/rag_integration_test.py -m slow -v
+    uv run pytest python-packages/live/src/vision_live/rag_integration_test.py -m slow -v
 
 Skipped by default so CI / normal runs stay fast.
 """

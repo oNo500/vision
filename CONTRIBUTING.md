@@ -94,7 +94,7 @@ pnpm --filter web add -D <package>     # 前端开发依赖
 module.py — 简短描述
 
 用法:
-    uv run src/live/module.py
+    uv run python -m vision_live.module
 """
 ```
 
