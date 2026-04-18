@@ -43,13 +43,13 @@ export default function LivePage() {
             <PlanSidebar plan={plan} scriptState={scriptState} running={aiSession.state.running} />
           )}
           {!plan && (
-            <div className="flex w-64 shrink-0 items-center justify-center border-r text-xs text-muted-foreground">
+            <div className="flex min-w-0 flex-1 items-center justify-center border-r text-xs text-muted-foreground">
               <PlanPanel />
             </div>
           )}
 
           {/* center col */}
-          <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
+          <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-3 overflow-hidden p-3">
             <div className="shrink-0">
               <AiStatusCard
                 latest={aiOutputs[aiOutputs.length - 1] ?? null}
