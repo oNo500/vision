@@ -30,24 +30,19 @@ EVENTS = [
 
 
 def test_build_prompt_contains_segment_text():
-    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS, last_said="")
+    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS)
     assert "大家好" in prompt
 
 
 def test_build_prompt_contains_knowledge():
-    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS, last_said="")
+    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS)
     assert "超能面膜" in prompt
 
 
 def test_build_prompt_contains_events():
-    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS, last_said="")
+    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS)
     assert "Alice" in prompt
     assert "好期待" in prompt
-
-
-def test_build_prompt_contains_last_said():
-    prompt = build_director_prompt(SCRIPT_STATE, KNOWLEDGE_CTX, EVENTS, last_said="欢迎大家来到直播间")
-    assert "欢迎大家来到直播间" in prompt
 
 
 def test_director_output_defaults():
@@ -102,10 +97,10 @@ def test_director_enqueues_content():
     )
 
     director._fire(script_state, recent_events=[])
-    assert not tts_q.empty()
-    text, prompt = tts_q.get_nowait()
-    assert text == "大家好！"
-    assert prompt == "热情"
+    mock_tts.put.assert_called_once()
+    args, kwargs = mock_tts.put.call_args
+    assert args[0] == "大家好！"
+    assert args[1] == "热情"
 
 
 def test_director_pregens_while_speaking():
@@ -130,7 +125,7 @@ def test_director_pregens_while_speaking():
     director._fire(script_state, recent_events=[])
     # Should still call LLM and enqueue (pre-generation while speaking)
     mock_llm.generate.assert_called_once()
-    assert not tts_q.empty()
+    mock_tts.put.assert_called_once()
 
 
 def test_director_skips_empty_content():
@@ -151,7 +146,7 @@ def test_director_skips_empty_content():
         "keywords": [], "remaining_seconds": 60.0, "finished": False, "must_say": False,
     }
     director._fire(script_state, recent_events=[])
-    assert tts_q.empty()  # empty content is not enqueued
+    mock_tts.put.assert_not_called()
 
 
 def test_director_drains_urgent_queue_before_regular_events():

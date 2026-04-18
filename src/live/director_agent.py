@@ -14,6 +14,7 @@ import threading
 import time
 
 from src.live.schema import DirectorOutput, Event
+from src.live.session_memory import SessionMemory
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +24,7 @@ MAX_CONCURRENT_LLM = 2       # max parallel LLM calls (avoids flooding, keeps co
 
 _SYSTEM_PROMPT = """\
 你是一个经验丰富的带货主播，正在进行抖音直播。
-你的任务是：根据当前直播脚本段落、产品知识和观众互动，决定下一句要说什么。
+你的任务是：根据当前直播脚本段落、产品知识、观众互动和历史记忆，决定下一句要说什么。
 
 规则：
 - 优先回应观众互动（问题、礼物、热情弹幕），但不能忽视脚本进度
@@ -33,12 +34,24 @@ _SYSTEM_PROMPT = """\
 - 禁用词不得出现在输出中
 - speech_prompt 描述朗读时的情绪、语速和语气（一句话，要具体）
 
+记忆使用规则（非常重要）：
+- 优先讲未覆盖的锚点话术（cue 列表中标记 ✗ 的）
+- 避免 5 分钟内重复同一 topic_tag
+- 如果"最近问答"里有相似问题，不要重复回答，可引申到下一卖点
+- topic_tag 用"类别:具体内容"格式，例如 "成分:益生菌"、"FAQ:怎么吃"、"价格优势"
+- cue_hits 列出本句实际覆盖的锚点话术原文（必须是 cue 列表里的字符串）
+- is_qa_answer=true 时填入 answered_question（原始问题文本）
+
 返回严格的 JSON，格式：
 {
   "content": "下一句台词（不超过30字）",
   "speech_prompt": "朗读风格描述",
   "source": "script" | "interaction" | "knowledge",
-  "reason": "决策理由（简短）"
+  "reason": "决策理由（简短）",
+  "topic_tag": "成分:益生菌",
+  "cue_hits": ["新西兰原装"],
+  "is_qa_answer": false,
+  "answered_question": null
 }
 不要输出 JSON 以外的任何内容。
 """
@@ -48,10 +61,19 @@ def build_director_prompt(
     script_state: dict,
     knowledge_ctx: str,
     recent_events: list[Event],
-    last_said: str,
+    memory: SessionMemory | None = None,
     persona_ctx: str = "",
 ) -> str:
-    """Build the user-turn prompt for the director LLM call."""
+    """Build the user-turn prompt for the director LLM call.
+
+    Args:
+        script_state: current ScriptRunner snapshot (title/goal/cue/...).
+        knowledge_ctx: pre-rendered product knowledge block.
+        recent_events: buffered P2/P3 events (last 10 rendered).
+        memory: optional SessionMemory; when provided, renders four extra
+            sections (recent utterances, topic summary, cue status, recent QA).
+        persona_ctx: optional persona description.
+    """
     event_lines = "\n".join(
         f"  - [{e.type}] {e.user}: {e.text or e.gift or '(进场)'}"
         for e in recent_events[-10:]
@@ -68,6 +90,22 @@ def build_director_prompt(
     else:
         cue_section = ""
 
+    memory_section = ""
+    if memory is not None:
+        segment_id = script_state.get("segment_id") or ""
+        cue_status = memory.render_cue_status(segment_id, cue) if cue else ""
+        memory_section = (
+            f"=== 最近说过（防复读） ===\n{memory.render_recent()}\n\n"
+            f"=== 全场已讲话题（避免重复） ===\n{memory.render_topic_summary()}\n\n"
+        )
+        if cue_status:
+            memory_section += (
+                f"=== 当前段落锚点覆盖情况 ===\n{cue_status}\n\n"
+            )
+        memory_section += (
+            f"=== 最近问答（避免重复回答） ===\n{memory.render_recent_qa()}\n\n"
+        )
+
     return (
         f"{persona_section}"
         f"=== 产品知识 ===\n{knowledge_ctx}\n\n"
@@ -78,7 +116,7 @@ def build_director_prompt(
         f"关键词：{', '.join(script_state.get('keywords') or [])}\n"
         f"剩余时间：{script_state.get('remaining_seconds', 0):.0f}s\n\n"
         f"=== 最近观众互动 ===\n{event_lines}\n\n"
-        f"=== 上一句说的 ===\n{last_said or '（开场，还没说过话）'}\n\n"
+        f"{memory_section}"
         f"请决定下一句说什么。"
     )
 
@@ -90,11 +128,18 @@ def parse_director_response(raw: str) -> DirectorOutput:
         if text.startswith("```"):
             text = "\n".join(text.split("\n")[1:-1])
         data = json.loads(text)
+        cue_hits = data.get("cue_hits") or []
+        if not isinstance(cue_hits, list):
+            cue_hits = []
         return DirectorOutput(
             content=data.get("content", ""),
             speech_prompt=data.get("speech_prompt", "自然平稳地说"),
             source=data.get("source", "script"),
             reason=data.get("reason", ""),
+            topic_tag=data.get("topic_tag") or None,
+            cue_hits=[str(c) for c in cue_hits],
+            is_qa_answer=bool(data.get("is_qa_answer", False)),
+            answered_question=data.get("answered_question") or None,
         )
     except (json.JSONDecodeError, KeyError, TypeError) as e:
         logger.warning("Director parse error: %s | raw=%s", e, raw[:200])
@@ -110,6 +155,8 @@ class DirectorAgent:
         knowledge_ctx: Pre-formatted product knowledge string for LLM prompt.
         llm_generate_fn: Callable(prompt: str) -> str. Returns raw LLM JSON text.
         persona_ctx: Optional persona information (e.g., streamer name, style, forbidden words).
+        memory: Optional SessionMemory for layered history (recent/topic/cue/qa).
+            When None, the prompt falls back to the pre-memory structure.
     """
 
     def __init__(
@@ -120,6 +167,7 @@ class DirectorAgent:
         llm_generate_fn,
         urgent_queue: queue.Queue | None = None,
         persona_ctx: str = "",
+        memory: SessionMemory | None = None,
     ) -> None:
         self._tts_queue = tts_queue
         self._tts_player = tts_player
@@ -127,7 +175,7 @@ class DirectorAgent:
         self._persona_ctx = persona_ctx
         self._llm_generate = llm_generate_fn
         self._urgent_queue = urgent_queue
-        self._last_said = ""
+        self._memory = memory
         self._last_silence_check = 0.0
         self._llm_semaphore = threading.Semaphore(MAX_CONCURRENT_LLM)
         self._llm_in_flight_count = 0  # number of LLM calls currently running
@@ -219,7 +267,11 @@ class DirectorAgent:
 
         try:
             prompt = build_director_prompt(
-                script_state, self._knowledge_ctx, all_events, self._last_said, self._persona_ctx
+                script_state=script_state,
+                knowledge_ctx=self._knowledge_ctx,
+                recent_events=all_events,
+                memory=self._memory,
+                persona_ctx=self._persona_ctx,
             )
             raw = self._llm_generate(prompt)
             output = parse_director_response(raw)
@@ -234,6 +286,20 @@ class DirectorAgent:
         if not output.content:
             return
 
-        self._tts_player.put(output.content, output.speech_prompt, urgent=bool(urgent_events))
-        self._last_said = output.content
+        tts_item = self._tts_player.put(
+            output.content, output.speech_prompt, urgent=bool(urgent_events)
+        )
+        if self._memory is not None:
+            cue_list = script_state.get("cue") or []
+            valid_cue_hits = [c for c in output.cue_hits if c in cue_list]
+            utterance_id = getattr(tts_item, "id", "")
+            self._memory.record_utterance(
+                text=output.content,
+                topic_tag=output.topic_tag,
+                utterance_id=utterance_id,
+                segment_id=script_state.get("segment_id"),
+                cue_hits=valid_cue_hits,
+            )
+            if output.is_qa_answer and output.answered_question:
+                self._memory.record_qa(output.answered_question, output.content)
         logger.info("[DIRECTOR] %s (%s): %s", output.source, output.reason, output.content[:60])

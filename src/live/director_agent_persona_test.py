@@ -19,7 +19,6 @@ def test_persona_ctx_appears_in_prompt():
         script_state=_base_state(),
         knowledge_ctx="product knowledge",
         recent_events=[],
-        last_said="",
         persona_ctx="主播：小美 | 风格：热情 | 禁用词：骗子",
     )
     assert "小美" in prompt
@@ -31,7 +30,6 @@ def test_persona_ctx_empty_does_not_break():
         script_state=_base_state(),
         knowledge_ctx="product knowledge",
         recent_events=[],
-        last_said="",
         persona_ctx="",
     )
     assert "product knowledge" in prompt
@@ -43,6 +41,5 @@ def test_persona_ctx_default_is_empty():
         script_state=_base_state(),
         knowledge_ctx="product knowledge",
         recent_events=[],
-        last_said="",
     )
     assert isinstance(prompt, str)

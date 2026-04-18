@@ -106,3 +106,7 @@ class DirectorOutput:
     speech_prompt: str = ""           # how to say it
     source: str = "script"            # "script" | "interaction" | "knowledge"
     reason: str = ""
+    topic_tag: str | None = None      # e.g. "成分:益生菌", fed into SessionMemory
+    cue_hits: list[str] = field(default_factory=list)    # cue lines covered by this utterance
+    is_qa_answer: bool = False        # whether this utterance answers a viewer question
+    answered_question: str | None = None  # the question this utterance answers (raw text)
