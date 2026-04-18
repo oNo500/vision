@@ -3,7 +3,7 @@
 import { monitorForElements } from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
 import { extractInstruction } from '@atlaskit/pragmatic-drag-and-drop-hitbox/list-item'
 import { reorder } from '@atlaskit/pragmatic-drag-and-drop/reorder'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 import type { PipelineItem as PipelineItemType } from '@/features/live/hooks/use-live-stream'
 
@@ -23,6 +23,26 @@ type Props = {
 }
 
 export function StageSection({ title, stage, items, onRemove, onEdit, onReorder, listHeight }: Props) {
+  const listRef = useRef<HTMLDivElement>(null)
+  const userScrolledRef = useRef(false)
+
+  // Auto-stick to bottom (the "next to leave" end) when idle.
+  // Once the user scrolls up, respect that until they scroll back to bottom.
+  useEffect(() => {
+    const el = listRef.current
+    if (!el) return
+    if (!userScrolledRef.current) {
+      el.scrollTop = el.scrollHeight
+    }
+  }, [items])
+
+  function handleScroll() {
+    const el = listRef.current
+    if (!el) return
+    const atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 4
+    userScrolledRef.current = !atBottom
+  }
+
   useEffect(() => {
     return monitorForElements({
       canMonitor: ({ source }) =>
@@ -50,6 +70,8 @@ export function StageSection({ title, stage, items, onRemove, onEdit, onReorder,
         <span>{items.length}</span>
       </div>
       <div
+        ref={listRef}
+        onScroll={handleScroll}
         className="flex flex-col gap-1.5 overflow-y-auto"
         style={{ height: listHeight }}
       >

@@ -62,7 +62,7 @@ export function BroadcastPipeline({
             onRemove={onRemove}
             onEdit={onEdit}
             onReorder={onReorder}
-            listHeight={120}
+            listHeight={210}
           />
           <NowPlayingCard item={nowPlayingItem} />
           <div className="min-h-0 flex-1 overflow-auto">
