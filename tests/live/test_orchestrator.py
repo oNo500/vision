@@ -3,6 +3,7 @@ import queue
 
 from src.live.orchestrator import Orchestrator, classify_event
 from src.live.schema import Event
+from src.live.tts_player import TtsItem
 
 INTERRUPTIBLE_STATE = {
     "segment_id": "opening",
@@ -49,33 +50,35 @@ def test_classify_plain_danmaku():
 # --- Orchestrator rule layer ---
 
 def test_p0_gift_triggers_immediate_tts():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    tts_q: queue.Queue[TtsItem] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q)
 
     e = Event(type="gift", user="VIP", gift="rocket", value=500, t=0)
     orch.handle_event(e, INTERRUPTIBLE_STATE)
 
     assert not tts_q.empty()
-    text, speech_prompt = tts_q.get_nowait()
-    assert "VIP" in text
-    assert speech_prompt is not None
+    item = tts_q.get_nowait()
+    assert isinstance(item, TtsItem)
+    assert "VIP" in item.text
+    assert item.speech_prompt is not None
 
 
 def test_p1_follower_enter_triggers_tts():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    tts_q: queue.Queue[TtsItem] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q)
 
     e = Event(type="enter", user="Fan", is_follower=True, t=0)
     orch.handle_event(e, INTERRUPTIBLE_STATE)
 
     assert not tts_q.empty()
-    text, speech_prompt = tts_q.get_nowait()
-    assert "Fan" in text
-    assert speech_prompt is not None
+    item = tts_q.get_nowait()
+    assert isinstance(item, TtsItem)
+    assert "Fan" in item.text
+    assert item.speech_prompt is not None
 
 
 def test_p2_p3_go_to_buffer():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    tts_q: queue.Queue[TtsItem] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q)
 
     for i in range(3):
@@ -87,7 +90,7 @@ def test_p2_p3_go_to_buffer():
 
 
 def test_get_events_clears_buffer():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    tts_q: queue.Queue[TtsItem] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q)
 
     e = Event(type="danmaku", user="A", text="这个什么价格？", t=0)
@@ -99,7 +102,7 @@ def test_get_events_clears_buffer():
 
 
 def test_finished_state_blocks_all():
-    tts_q: queue.Queue[tuple[str, str | None]] = queue.Queue()
+    tts_q: queue.Queue[TtsItem] = queue.Queue()
     orch = Orchestrator(tts_queue=tts_q)
 
     finished = {**INTERRUPTIBLE_STATE, "finished": True}

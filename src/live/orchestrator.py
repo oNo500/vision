@@ -7,9 +7,11 @@ from __future__ import annotations
 import logging
 import queue
 import threading
-from typing import Callable
+from collections.abc import Callable
+from typing import Any
 
 from src.live.schema import Event
+from src.live.tts_player import TtsItem
 
 logger = logging.getLogger(__name__)
 
@@ -39,7 +41,9 @@ class Orchestrator:
     """P0/P1 rule interrupt layer. Buffers P2/P3 for the DirectorAgent.
 
     Args:
-        tts_queue: Queue of (text, speech_prompt) tuples for TTSPlayer.
+        tts_queue: Queue of TtsItem objects consumed by TTSPlayer. Accepts any
+            object with a Queue-compatible `put()` — production wires this to
+            an OrderedItemStore[TtsItem]; tests use queue.Queue.
         get_strategy_fn: Callable returning the current response strategy.
             "immediate" (default) — hardcoded template text → tts_queue.
             "intelligent" — puts the event into urgent_queue for DirectorAgent.
@@ -48,7 +52,7 @@ class Orchestrator:
 
     def __init__(
         self,
-        tts_queue: queue.Queue[tuple[str, str | None]],
+        tts_queue: Any,
         get_strategy_fn: Callable[[], str] | None = None,
         urgent_queue: queue.Queue | None = None,
     ) -> None:
@@ -99,5 +103,5 @@ class Orchestrator:
             return len(self._buffer)
 
     def _enqueue_tts(self, text: str, speech_prompt: str | None = None) -> None:
-        self._tts_queue.put((text, speech_prompt))
+        self._tts_queue.put(TtsItem.create(text, speech_prompt))
         logger.info("[TTS] Interrupt queued: %s", text[:60])
