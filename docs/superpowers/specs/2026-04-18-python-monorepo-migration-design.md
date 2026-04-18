@@ -143,7 +143,7 @@ dev = [
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["python-packages"]
-python_files = ["*.test.py"]
+python_files = ["*_test.py"]
 markers = [
     "slow: tests that download models / run real embeddings",
 ]
@@ -328,20 +328,23 @@ packages = ["src/vision_api"]
 
 ### 6.1 Test Location
 
-全部就近（constitution 硬要求）。迁移后所有测试文件紧邻对应源文件，统一命名 `*.test.py`（与 `src/live/` 现有风格一致）。
+全部就近（constitution 硬要求）。迁移后所有测试文件紧邻对应源文件，统一命名 `*_test.py`（与 `src/live/` 现有风格一致）。
 
 根目录 `tests/` 当前有：
 
-- `tests/api/test_live_routes.py` → 迁到 `python-packages/api/src/vision_api/live_routes.test.py`
-- `tests/shared/test_db.py` → 迁到 `python-packages/shared/src/vision_shared/db.test.py`
-- `tests/shared/test_event_bus.py` → 迁到 `python-packages/shared/src/vision_shared/event_bus.test.py`
+- `tests/api/test_live_routes.py` → 迁到 `python-packages/api/src/vision_api/live_routes_test.py`
+- `tests/shared/test_db.py` → 迁到 `python-packages/shared/src/vision_shared/db_test.py`
+- `tests/shared/test_event_bus.py` → 迁到 `python-packages/shared/src/vision_shared/event_bus_test.py`
+
+> [!NOTE]
+> 命名锁定为 `*_test.py`（pytest 默认风格）。现状 `src/live/` 已有 28 个测试文件都是 `*_test.py` 风格，`src/live/` 并非 `*.test.py`；`tests/` 下旧文件在迁移时同步改名为 `*_test.py`。
 
 迁完后删除根 `tests/` 目录（含 `__init__.py`）。
 
 ### 6.2 Pytest Config
 
 - 根 `pyproject.toml` 设 `testpaths = ["python-packages"]`
-- 命名统一为 `*.test.py`（需要在根 `pyproject.toml` 的 `[tool.pytest.ini_options]` 加 `python_files = ["*.test.py"]`，因为 pytest 默认只收 `test_*.py` / `*_test.py`）
+- 命名统一为 `*_test.py`（pytest 默认风格之一，无需额外 `python_files` 配置，但保留 `python_files = ["*_test.py"]` 以让意图显式）
 
 ### 6.3 Regression Safety Net
 
