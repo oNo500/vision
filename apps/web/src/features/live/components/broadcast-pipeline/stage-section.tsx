@@ -51,16 +51,21 @@ export function StageSection({ title, stage, items, onRemove, onEdit, onReorder 
         <p className="text-[11px] text-muted-foreground">—</p>
       ) : (
         <div className="flex flex-col gap-1.5">
-          {items.map((item, idx) => (
-            <PipelineItem
-              key={item.id}
-              item={item}
-              index={idx}
-              stage={stage}
-              onRemove={onRemove}
-              onEdit={onEdit}
-            />
-          ))}
+          {items.map((_, displayIdx) => {
+            const dataIdx = items.length - 1 - displayIdx
+            const item = items[dataIdx]
+            if (!item) return null
+            return (
+              <PipelineItem
+                key={item.id}
+                item={item}
+                index={dataIdx}
+                stage={stage}
+                onRemove={onRemove}
+                onEdit={onEdit}
+              />
+            )
+          })}
         </div>
       )}
     </section>
