@@ -442,6 +442,229 @@ git commit -m "refactor(monorepo): migrate src/shared -> vision_shared"
 
 ---
 
+### Task 4.5: Break `vision_shared` → `src.live` reverse dependency
+
+**Added after Task 4.** Code review on commit `fd79670` found that `vision_shared/db.py` imports `PlanStore` from `src.live.plan_store` inside `Database.init()`. This reverses the intended `live → shared` dependency direction and will cause a circular dep once Task 6 renames `src.live.plan_store` to `vision_live.plan_store` (vision-live depends on vision-shared, so vision-shared cannot import from vision-live).
+
+Fix: remove `PlanStore` ownership from `Database`. `Database` becomes a plain SQLite wrapper exposing a `conn` property; `PlanStore` is instantiated by callers (lifespan in `vision_api/main.py`, script glue in `seed_plans.py`).
+
+**Files:**
+- Modify: `python-packages/shared/src/vision_shared/db.py` (remove PlanStore plumbing, expose `conn`)
+- Modify: `src/api/main.py` (instantiate `PlanStore` in lifespan, set `app.state.plan_store`)
+- Modify: `src/api/deps.py` (`get_plan_store` reads `app.state.plan_store`)
+- Modify: `scripts/seed_plans.py` (use `PlanStore(db.conn)` explicitly)
+
+- [ ] **Step 4.5.1: Rewrite `vision_shared/db.py`**
+
+Replace the whole file contents with:
+
+```python
+"""SQLite persistence via aiosqlite."""
+from __future__ import annotations
+
+import json
+import logging
+
+import aiosqlite
+
+logger = logging.getLogger(__name__)
+
+_SCHEMA = """
+CREATE TABLE IF NOT EXISTS tts_log (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    content       TEXT NOT NULL,
+    speech_prompt TEXT,
+    source        TEXT,
+    ts            REAL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS event_log (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    type    TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    ts      REAL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS live_plans (
+    id         TEXT PRIMARY KEY,
+    name       TEXT NOT NULL,
+    data       TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+"""
+
+
+class Database:
+    """Async SQLite wrapper. Use `await db.init()` before any other call."""
+
+    def __init__(self, path: str = "vision.db") -> None:
+        self._path = path
+        self._conn: aiosqlite.Connection | None = None
+
+    async def init(self) -> None:
+        self._conn = await aiosqlite.connect(self._path)
+        await self._conn.executescript(_SCHEMA)
+        await self._conn.commit()
+        logger.info("Database ready at %s", self._path)
+
+    @property
+    def conn(self) -> aiosqlite.Connection:
+        if self._conn is None:
+            raise RuntimeError("Database not initialized. Call await db.init() first.")
+        return self._conn
+
+    async def close(self) -> None:
+        if self._conn:
+            await self._conn.close()
+            self._conn = None
+
+    async def log_tts(
+        self, content: str, speech_prompt: str | None, source: str, ts: float
+    ) -> None:
+        await self.conn.execute(
+            "INSERT INTO tts_log (content, speech_prompt, source, ts) VALUES (?, ?, ?, ?)",
+            (content, speech_prompt, source, ts),
+        )
+        await self.conn.commit()
+
+    async def log_event(self, event_type: str, payload: dict, ts: float) -> None:
+        await self.conn.execute(
+            "INSERT INTO event_log (type, payload, ts) VALUES (?, ?, ?)",
+            (event_type, json.dumps(payload, ensure_ascii=False), ts),
+        )
+        await self.conn.commit()
+
+    async def get_history(
+        self, limit: int = 100, type_filter: str | None = None
+    ) -> list[dict]:
+        limit = min(limit, 500)
+        rows: list[dict] = []
+
+        if type_filter != "events":
+            async with self.conn.execute(
+                "SELECT content, speech_prompt, source, ts FROM tts_log ORDER BY ts DESC",
+            ) as cur:
+                async for row in cur:
+                    rows.append({
+                        "type": "tts_output",
+                        "ts": row[3],
+                        "payload": {
+                            "content": row[0],
+                            "speech_prompt": row[1],
+                            "source": row[2],
+                        },
+                    })
+
+        if type_filter != "tts_output":
+            async with self.conn.execute(
+                "SELECT type, payload, ts FROM event_log ORDER BY ts DESC",
+            ) as cur:
+                async for row in cur:
+                    payload = json.loads(row[1])
+                    rows.append({"type": row[0], "ts": row[2], "payload": payload})
+
+        rows.sort(key=lambda r: r["ts"], reverse=True)
+        return rows[:limit]
+```
+
+Changes versus prior version:
+- Remove `TYPE_CHECKING` import and the `if TYPE_CHECKING: from src.live.plan_store import PlanStore` block
+- Remove unused `from pathlib import Path`
+- Remove `_plan_store` field, `plan_store` property, and the runtime `from src.live.plan_store import PlanStore` in `init()`
+- Replace repeated `if self._conn is None: raise ...` guards by exposing `conn` property with the guard centralised
+- Behaviour of `log_tts` / `log_event` / `get_history` is unchanged
+
+- [ ] **Step 4.5.2: Update `src/api/main.py` lifespan to instantiate `PlanStore`**
+
+Locate the lifespan block (around lines 26-38). Apply this diff:
+
+```diff
+ from src.live.routes import router as live_router
+ from src.live.plan_routes import router as plan_router
+ from src.live.rag_routes import router as rag_router
++from src.live.plan_store import PlanStore
+ from vision_shared.db import Database
+ from vision_shared.event_bus import EventBus
+ from src.live.session import SessionManager
+ from src.live.danmaku_manager import DanmakuManager
+ ...
+     @asynccontextmanager
+     async def lifespan(app: FastAPI):
+         loop = asyncio.get_running_loop()
+         app.state.event_bus = EventBus(loop)
+         app.state.db = Database(settings.vision_db_path)
+         await app.state.db.init()
++        app.state.plan_store = PlanStore(app.state.db.conn)
+         app.state.session_manager = SessionManager(app.state.event_bus)
+         app.state.danmaku_manager = DanmakuManager(app.state.event_bus)
+         app.state.rag_builds = {}
+```
+
+- [ ] **Step 4.5.3: Update `src/api/deps.py`**
+
+Change `get_plan_store` to read from `app.state.plan_store`:
+
+```diff
+ def get_plan_store(request: Request):
+-    return request.app.state.db.plan_store
++    return request.app.state.plan_store
+```
+
+- [ ] **Step 4.5.4: Update `scripts/seed_plans.py`**
+
+Inside `async def seed(...)`, change the plan store access:
+
+```diff
+ async def seed(db_path: str) -> None:
+     db = Database(db_path)
+     await db.init()
+
+-    store = db.plan_store
++    from src.live.plan_store import PlanStore
++    store = PlanStore(db.conn)
+     existing = await store.list_all()
+```
+
+> [!NOTE]
+> Keep the `from src.live.plan_store` import in `seed_plans.py` for now. It will be rewritten to `from vision_live.plan_store` automatically in Task 6 via the same sed sweep.
+
+- [ ] **Step 4.5.5: Run shared package tests**
+
+```bash
+uv run pytest python-packages/shared -q
+```
+
+Expected: shared tests pass.
+
+- [ ] **Step 4.5.6: Run the full test suite**
+
+```bash
+uv run pytest -q 2>&1 | tail -5
+```
+
+Expected: `332 passed` (possibly `332 passed, 1 warning`). Any regression means a consumer of `db.plan_store` was missed.
+
+- [ ] **Step 4.5.7: Smoke-start the API to validate lifespan**
+
+```bash
+uv run uvicorn src.api.main:app --host 127.0.0.1 --port 8765 &
+SERVER_PID=$!
+sleep 4
+curl -s http://127.0.0.1:8765/health
+kill $SERVER_PID
+wait $SERVER_PID 2>/dev/null
+```
+
+Expected: curl prints `{"status":"healthy"}`. Server logs show `Database ready at vision.db` with no tracebacks. (Use port 8765 to avoid collisions; doesn't matter which port.)
+
+- [ ] **Step 4.5.8: Commit**
+
+```bash
+git add -A
+git commit -m "refactor(shared): decouple Database from PlanStore to preserve layering"
+```
+
+---
+
 ## Phase C — Migrate `intelligence` (empty, just placeholder)
 
 ### Task 5: Verify `intelligence` package stub + remove legacy `src/intelligence/`
