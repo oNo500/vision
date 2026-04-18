@@ -179,6 +179,7 @@ dependencies = [
     "structlog>=24.4.0",
     "tenacity>=9.0.0",
     "jieba>=0.42.1",
+    "opencc-python-reimplemented>=0.1.7",   # 繁简统一
 ]
 
 [project.scripts]
@@ -285,7 +286,9 @@ CREATE TABLE video_sources (
   downloaded_at TEXT,
   processed_at TEXT,
   bgm_removed INTEGER,               -- 0 | 1
-  asr_model TEXT
+  asr_model TEXT,
+  reviewed INTEGER NOT NULL DEFAULT 0,  -- 0 | 1，本轮不实现 review 流程，但 schema 占位
+  reviewed_at TEXT
 );
 
 CREATE TABLE transcript_segments (
@@ -357,6 +360,49 @@ CREATE TABLE asr_job_videos (
 
 > [!NOTE]
 > `transcript_fts` 与 `transcript_segments` 在代码里显式双写（见 `storage.py`）。不用 SQLite trigger，便于后续变更调度。
+
+### 6.5 Data Cleaning Strategy
+
+Gemini 原始输出不能直接入库/上线，需要在管线内部做统一清洗。职责按阶段划分：
+
+#### 6.5.1 `merger.py` 清洗（转录阶段内部）
+
+合并切片时执行，对每个 segment：
+
+- **丢弃空段**：`text.strip() == ""` 直接跳过
+- **时间戳修正**：`start > end` 时交换两值并打 warning log
+- **重叠去重**：相邻切片的重叠窗口（10s）里若文本字符串相似度 > 0.9（`difflib.SequenceMatcher`）判定为同一句，保留前一切片的版本
+- **标点规范化**：半角 → 全角（`, . ? ! ;` → `，。？！；`），但保留中英夹杂里英文词内的半角（"iPhone 15"、"AI" 等识别规则见 `merger.py` 注释）
+- **繁简统一**：`opencc t2s` 转换为简体（即使素材都是简体也无伤，失败场景简单可控）
+
+输出为 segment 的 `text` 字段（已清洗）。
+
+#### 6.5.2 `storage.py` 生成 `text_normalized`
+
+入库前从 `text` 派生 `text_normalized`：
+
+1. `text` 已经过 §6.5.1 的清洗
+2. 对 `text` 调 `jieba.cut` 得到词列表
+3. 词之间用空格拼接 → `text_normalized`
+4. 同时写入 `transcript_segments.text_normalized` 与 `transcript_fts.text_normalized`
+
+查询时（CLI `search` 子命令 / FastAPI `/search` 端点）对用户输入也先过 jieba，拼成空格分隔的 FTS5 query string。
+
+#### 6.5.3 `analyzer.py` 输入过滤（风格档案阶段）
+
+生成 `style.json` 前先过滤 segment 集合：
+
+- **只保留 `speaker == "host"`**：风格档案是主播专属，其他 speaker 的话不参与统计
+- **丢弃 `confidence < 0.6`**：低置信度段视为 Gemini 不确定，不当作真实话术
+- 过滤后的文本再喂给 Gemini 做摘要与风格抽取
+
+#### 6.5.4 Review 字段（未来扩展）
+
+`video_sources` 表预留 `reviewed INTEGER DEFAULT 0` + `reviewed_at` 字段。本轮 spec **不实现** 人工校对流程（CLI / UI 都不做）。未来接入时只需：
+
+- 新增 `vision-video-asr review <video_id>` 子命令或 Web UI 审核页
+- 校对通过后 `UPDATE video_sources SET reviewed = 1, reviewed_at = ... WHERE video_id = ?`
+- 下游消费方（RAG / DirectorAgent）可按 `reviewed = 1` 过滤，避免未审核数据污染生产
 
 ## 7. FastAPI Endpoints
 
@@ -454,10 +500,10 @@ asr:
 - `sources/yt_dlp_source_test.py` — mock subprocess，验证 yt-dlp 参数构造 + 元数据抽取
 - `preprocessor_test.py` — mock demucs / ffmpeg，验证切片边界和文件命名
 - `asr/gemini_test.py` — mock genai client，验证 prompt 构造 + response_schema + tenacity 重试
-- `merger_test.py` — fixture 切片 JSON，验证重叠去重 + 时间戳单调
+- `merger_test.py` — fixture 切片 JSON，验证重叠去重 + 时间戳单调 + §6.5.1 清洗（空段 / start>end / 标点规范化 / 繁简统一）
 - `renderer_test.py` — snapshot md / srt 输出
-- `analyzer_test.py` — mock genai，验证风格字段抽取
-- `storage_test.py` — in-memory SQLite + FTS5 检索，jieba 分词结果验证
+- `analyzer_test.py` — mock genai，验证风格字段抽取 + §6.5.3 输入过滤（speaker != host 被排除 / confidence < 0.6 被排除）
+- `storage_test.py` — in-memory SQLite + FTS5 检索，§6.5.2 `text_normalized` 生成链（jieba 分词结果验证）
 - `jobs_test.py` — mock pipeline，验证 asyncio.Task 生命周期 + 幂等
 - `pipeline_test.py` — 端到端（mock 外部调用），验证 7 阶段 + 状态机 + 断点续跑
 - `video_asr_routes_test.py` — FastAPI TestClient，验证 HTTP 契约 + SSE 回放 + API key
@@ -526,3 +572,5 @@ asr:
 - **Makefile `asr` target**：加
 - **LLM gateway**：沿用 LiteLLM + `google-genai`（不引入 LangChain）
 - **Vertex 凭证**：ADC
+- **数据清洗**：加 §6.5 三层清洗策略（merger / storage / analyzer），review 字段 schema 占位但本轮不实现功能
+- **繁简统一工具**：`opencc-python-reimplemented`（而非手写字典）
