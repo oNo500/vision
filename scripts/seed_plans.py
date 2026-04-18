@@ -159,7 +159,8 @@ async def seed(db_path: str) -> None:
     db = Database(db_path)
     await db.init()
 
-    store = db.plan_store
+    from src.live.plan_store import PlanStore
+    store = PlanStore(db.conn)
     existing = await store.list_all()
     names = {p["name"] for p in existing}
 

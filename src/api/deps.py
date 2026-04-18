@@ -25,4 +25,4 @@ def get_db(request: Request) -> Database:
 
 
 def get_plan_store(request: Request):
-    return request.app.state.db.plan_store
+    return request.app.state.plan_store
