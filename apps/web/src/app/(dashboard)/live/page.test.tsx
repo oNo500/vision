@@ -3,6 +3,9 @@ import { describe, expect, it, vi } from 'vitest'
 
 import type { AiOutput } from '@/features/live/hooks/use-live-stream'
 
+vi.mock('@/components/page-header', () => ({
+  PageHeader: ({ children }: { children: React.ReactNode }) => <div data-testid="page-header">{children}</div>,
+}))
 vi.mock('@/features/live/components/plan-sidebar', () => ({
   PlanSidebar: (props: { running: boolean }) => (
     <div data-testid="plan-sidebar" data-running={String(props.running)} />
