@@ -12,6 +12,7 @@ from src.api.settings import get_settings
 from src.live.routes import router as live_router
 from src.live.plan_routes import router as plan_router
 from src.live.rag_routes import router as rag_router
+from src.live.plan_store import PlanStore
 from vision_shared.db import Database
 from vision_shared.event_bus import EventBus
 from src.live.session import SessionManager
@@ -29,6 +30,7 @@ def create_app() -> FastAPI:
         app.state.event_bus = EventBus(loop)
         app.state.db = Database(settings.vision_db_path)
         await app.state.db.init()
+        app.state.plan_store = PlanStore(app.state.db.conn)
         app.state.session_manager = SessionManager(app.state.event_bus)
         app.state.danmaku_manager = DanmakuManager(app.state.event_bus)
         app.state.rag_builds = {}
