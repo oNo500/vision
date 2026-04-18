@@ -114,7 +114,7 @@ def test_snapshot_returns_items_in_order_without_mutating_store():
 
     snap = store.snapshot()
     assert len(snap) == len(items)
-    assert all(a is b for a, b in zip(snap, items))  # order preserved, same object refs
+    assert all(a is b for a, b in zip(snap, items, strict=True))  # order preserved, same object refs
     assert snap is not store._items  # copy, not alias
     assert store.qsize() == 3  # not consumed
 
@@ -184,6 +184,13 @@ def test_edit_replaces_item_with_mutator_result():
 def test_edit_returns_false_when_id_missing():
     store: OrderedItemStore[_Item] = OrderedItemStore()
     assert store.edit("missing", lambda it: it) is False
+
+
+def test_edit_raises_when_mutator_changes_id():
+    store: OrderedItemStore[_Item] = OrderedItemStore()
+    store.put(_Item(id="a", value=1))
+    with pytest.raises(ValueError, match="preserve id"):
+        store.edit("a", lambda _: _Item(id="different", value=2))
 
 
 def test_concurrent_put_get_and_remove_converges_to_consistent_state():

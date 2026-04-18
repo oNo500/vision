@@ -107,7 +107,13 @@ class OrderedItemStore[T: _HasId]:
         with self._lock:
             for i, it in enumerate(self._items):
                 if it.id == item_id:
-                    self._items[i] = mutator(it)
+                    new_it = mutator(it)
+                    if new_it.id != item_id:
+                        raise ValueError(
+                            f"edit mutator must preserve id "
+                            f"(got {new_it.id!r}, expected {item_id!r})"
+                        )
+                    self._items[i] = new_it
                     return True
             return False
 
