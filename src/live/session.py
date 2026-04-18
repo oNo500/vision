@@ -10,7 +10,7 @@ from typing import Any
 from src.live.director_agent import DirectorAgent
 from src.live.knowledge_base import KnowledgeBase
 from src.live.script_runner import ScriptRunner
-from src.live.tts_player import TTSPlayer, TtsItem
+from src.live.tts_player import PcmItem, TTSPlayer, TtsItem
 from src.shared.event_bus import EventBus
 from src.shared.ordered_item_store import OrderedItemStore
 
@@ -43,6 +43,27 @@ def _build_knowledge_ctx_from_plan(product: dict) -> str:
         lines.append(f"  Q: {faq.get('question', '')}")
         lines.append(f"  A: {faq.get('answer', '')}")
     return "\n".join(lines)
+
+
+def _publish_tts_queued(bus, item: TtsItem) -> None:
+    bus.publish({
+        "type": "tts_queued",
+        "id": item.id,
+        "content": item.text,
+        "speech_prompt": item.speech_prompt,
+        "stage": item.stage,
+        "urgent": item.urgent,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_synthesized(bus, item: PcmItem) -> None:
+    bus.publish({
+        "type": "tts_synthesized",
+        "id": item.id,
+        "stage": item.stage,
+        "ts": time.time(),
+    })
 
 
 class SessionAlreadyRunningError(RuntimeError):
@@ -267,13 +288,10 @@ class SessionManager:
             return []  # No Orchestrator — DanmakuManager wires this separately
 
         def _on_queued(item: TtsItem) -> None:
-            self._bus.publish({
-                "type": "tts_queued",
-                "id": item.id,
-                "content": item.text,
-                "speech_prompt": item.speech_prompt,
-                "ts": time.time(),
-            })
+            _publish_tts_queued(self._bus, item)
+
+        def _on_synthesized(item: PcmItem) -> None:
+            _publish_tts_synthesized(self._bus, item)
 
         def _on_play(item: TtsItem) -> None:
             self._bus.publish({
@@ -295,6 +313,7 @@ class SessionManager:
             tts_queue,
             speak_fn=speak_fn,
             on_queued=_on_queued,
+            on_synthesized=_on_synthesized,
             on_play=_on_play,
             on_done=_on_done,
             google_cloud_project=project,
