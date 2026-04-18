@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.api.settings import get_settings
 from src.live.routes import router as live_router
 from src.live.plan_routes import router as plan_router
+from src.live.rag_routes import router as rag_router
 from src.shared.db import Database
 from src.shared.event_bus import EventBus
 from src.live.session import SessionManager
@@ -30,6 +31,7 @@ def create_app() -> FastAPI:
         await app.state.db.init()
         app.state.session_manager = SessionManager(app.state.event_bus)
         app.state.danmaku_manager = DanmakuManager(app.state.event_bus)
+        app.state.rag_builds = {}
         logger.info("Vision API started")
         yield
         await app.state.db.close()
@@ -47,6 +49,7 @@ def create_app() -> FastAPI:
 
     app.include_router(live_router)
     app.include_router(plan_router)
+    app.include_router(rag_router)
 
     @app.get("/health")
     def health() -> dict:
