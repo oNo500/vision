@@ -82,7 +82,7 @@ class TTSPlayer:
 
     def __init__(
         self,
-        in_queue: queue.Queue,
+        in_queue: OrderedItemStore,
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
         on_queued: Callable[[TtsItem], None] | None = None,

@@ -12,6 +12,7 @@ from src.live.knowledge_base import KnowledgeBase
 from src.live.script_runner import ScriptRunner
 from src.live.tts_player import TTSPlayer, TtsItem
 from src.shared.event_bus import EventBus
+from src.shared.ordered_item_store import OrderedItemStore
 
 logger = logging.getLogger(__name__)
 
@@ -63,7 +64,7 @@ class SessionManager:
         self._script_runner: ScriptRunner | None = None
         self._tts_player: TTSPlayer | None = None
         self._director: DirectorAgent | None = None
-        self._tts_queue: queue.Queue | None = None
+        self._tts_queue: OrderedItemStore | None = None
         self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
         self._strategy: str = "immediate"
@@ -188,7 +189,7 @@ class SessionManager:
         with self._lock:
             return self._active_plan
 
-    def get_tts_queue(self) -> "queue.Queue | None":
+    def get_tts_queue(self) -> "OrderedItemStore | None":
         with self._lock:
             return self._tts_queue if self._running else None
 
@@ -203,7 +204,7 @@ class SessionManager:
         mock: bool,
         project: str | None,
     ) -> None:
-        tts_queue: queue.Queue[tuple[str, str | None]] = queue.Queue()
+        tts_queue: OrderedItemStore[TtsItem] = OrderedItemStore()
         urgent_queue: queue.Queue = queue.Queue(maxsize=10)
         self._tts_queue = tts_queue
         self._urgent_queue = urgent_queue
