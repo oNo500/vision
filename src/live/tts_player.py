@@ -129,9 +129,9 @@ class TTSPlayer:
         with self._lock:
             return self._is_speaking
 
-    def put(self, text: str, speech_prompt: str | None) -> TtsItem:
+    def put(self, text: str, speech_prompt: str | None, urgent: bool = False) -> TtsItem:
         """Create a TtsItem, fire on_queued, and enqueue it. Returns the item."""
-        item = TtsItem.create(text, speech_prompt)
+        item = TtsItem.create(text, speech_prompt, urgent=urgent)
         if self._on_queued:
             self._on_queued(item)
         self._queue.put(item)

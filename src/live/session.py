@@ -188,7 +188,13 @@ class SessionManager:
         pcm_items = [i for i in player._pcm_queue.snapshot() if hasattr(i, "id")]
         all_items = text_items + pcm_items
         return [
-            {"id": item.id, "content": item.text, "speech_prompt": item.speech_prompt}
+            {
+                "id": item.id,
+                "content": item.text,
+                "speech_prompt": item.speech_prompt,
+                "stage": item.stage,
+                "urgent": item.urgent,
+            }
             for item in all_items
         ]
 

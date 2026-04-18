@@ -234,6 +234,6 @@ class DirectorAgent:
         if not output.content:
             return
 
-        self._tts_player.put(output.content, output.speech_prompt)
+        self._tts_player.put(output.content, output.speech_prompt, urgent=bool(urgent_events))
         self._last_said = output.content
         logger.info("[DIRECTOR] %s (%s): %s", output.source, output.reason, output.content[:60])
