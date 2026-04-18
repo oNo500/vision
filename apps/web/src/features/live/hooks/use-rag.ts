@@ -38,6 +38,13 @@ export const RAG_CATEGORIES = [
 
 export type RagCategory = (typeof RAG_CATEGORIES)[number]
 
+export const CATEGORY_LABELS: Record<RagCategory, string> = {
+  scripts: '脚本',
+  competitor_clips: '爆款片段',
+  product_manual: '产品手册',
+  qa_log: '社群问答',
+}
+
 const BUILD_POLL_INTERVAL_MS = 1500
 
 function base(planId: string): string {
@@ -66,7 +73,15 @@ export function useRag(planId: string) {
       const res = await fetch(`${base(planId)}/rebuild/status`)
       if (res.ok) {
         const next = (await res.json()) as RagBuildStatus
-        setBuildStatus(next)
+        // Shallow-equal guard: avoid re-renders from 1.5s polling that fetches
+        // the same object every tick while nothing is running.
+        setBuildStatus((prev) =>
+          prev.running === next.running
+            && prev.last_build_time === next.last_build_time
+            && prev.last_error === next.last_error
+            ? prev
+            : next,
+        )
         return next
       }
     } catch { /* backend unreachable */ }
@@ -74,8 +89,7 @@ export function useRag(planId: string) {
   }, [planId])
 
   useEffect(() => {
-    refetch()
-    refetchBuildStatus()
+    Promise.all([refetch(), refetchBuildStatus()])
   }, [refetch, refetchBuildStatus])
 
   // Poll build status while running, stop when it flips to idle.
@@ -106,9 +120,8 @@ export function useRag(planId: string) {
     }
   }, [buildStatus.running, refetch, refetchBuildStatus])
 
-  const upload = useCallback(
-    async (file: File, category: RagCategory) => {
-      setLoading(true)
+  const uploadOne = useCallback(
+    async (file: File, category: RagCategory): Promise<boolean> => {
       try {
         const form = new FormData()
         form.append('category', category)
@@ -120,22 +133,35 @@ export function useRag(planId: string) {
         if (!res.ok) {
           const detail = await res.json().catch(() => null)
           toast.error(
-            typeof detail?.detail === 'string' ? detail.detail : 'Upload failed',
+            typeof detail?.detail === 'string' ? detail.detail : `Upload failed: ${file.name}`,
           )
           return false
         }
         const body = (await res.json()) as { overwritten: boolean; rel_path: string }
         toast.success(body.overwritten ? `Overwrote ${body.rel_path}` : `Uploaded ${body.rel_path}`)
-        await refetch()
         return true
       } catch {
         toast.error('Cannot reach backend')
         return false
+      }
+    },
+    [planId],
+  )
+
+  // Runs all uploads concurrently; refetches status exactly once after the
+  // batch settles, regardless of success mix.
+  const upload = useCallback(
+    async (files: File[], category: RagCategory): Promise<boolean[]> => {
+      setLoading(true)
+      try {
+        const results = await Promise.all(files.map((f) => uploadOne(f, category)))
+        await refetch()
+        return results
       } finally {
         setLoading(false)
       }
     },
-    [planId, refetch],
+    [uploadOne, refetch],
   )
 
   const remove = useCallback(

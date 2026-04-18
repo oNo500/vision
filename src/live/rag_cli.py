@@ -32,8 +32,8 @@ from src.live.rag_chunking import chunk_markdown
 
 logger = logging.getLogger(__name__)
 
-_KNOWN_CATEGORIES = ("scripts", "competitor_clips", "product_manual", "qa_log")
-_ALLOWED_SUFFIXES = (".md", ".txt")
+KNOWN_CATEGORIES = ("scripts", "competitor_clips", "product_manual", "qa_log")
+ALLOWED_SUFFIXES = (".md", ".txt")
 
 DATA_ROOT = Path("data/talk_points")
 INDEX_ROOT = Path(".rag")
@@ -45,7 +45,7 @@ class SourceFile:
 
     path: Path         # absolute path
     rel_path: str      # e.g. "scripts/opening.md"
-    category: str      # one of _KNOWN_CATEGORIES
+    category: str      # one of KNOWN_CATEGORIES
 
 
 # ---------------------------------------------------------------------------
@@ -53,28 +53,28 @@ class SourceFile:
 # ---------------------------------------------------------------------------
 
 
-def _scan_sources(plan_root: Path) -> list[SourceFile]:
+def scan_sources(plan_root: Path) -> list[SourceFile]:
     """Walk data/talk_points/<plan_id>/ and return known-category files."""
     result: list[SourceFile] = []
-    for category in _KNOWN_CATEGORIES:
+    for category in KNOWN_CATEGORIES:
         cat_dir = plan_root / category
         if not cat_dir.is_dir():
             continue
         for path in sorted(cat_dir.rglob("*")):
-            if not path.is_file() or path.suffix.lower() not in _ALLOWED_SUFFIXES:
+            if not path.is_file() or path.suffix.lower() not in ALLOWED_SUFFIXES:
                 continue
             rel = path.relative_to(plan_root).as_posix()
             result.append(SourceFile(path=path, rel_path=rel, category=category))
     return result
 
 
-def _compute_file_hash(path: Path) -> str:
+def compute_file_hash(path: Path) -> str:
     h = hashlib.sha256()
     h.update(path.read_bytes())
     return h.hexdigest()
 
 
-def _load_meta(meta_path: Path) -> dict:
+def load_meta(meta_path: Path) -> dict:
     if not meta_path.exists():
         return {}
     return json.loads(meta_path.read_text(encoding="utf-8"))
@@ -88,7 +88,7 @@ def _save_meta(meta_path: Path, data: dict) -> None:
     )
 
 
-def _diff_sources(
+def diff_sources(
     prev_meta_sources: dict,
     current_hashes: dict[str, str],
 ) -> tuple[list[str], list[str]]:
@@ -105,6 +105,49 @@ def _diff_sources(
 
 
 # ---------------------------------------------------------------------------
+# status (shared by CLI `info` and /live/plans/<id>/rag GET)
+# ---------------------------------------------------------------------------
+
+
+def get_plan_status(plan_id: str) -> dict:
+    """Return the full status payload for a plan.
+
+    Shape matches the HTTP contract of GET /live/plans/{plan_id}/rag/.
+    """
+    plan_root = DATA_ROOT / plan_id
+    index_root = INDEX_ROOT / plan_id
+    meta = load_meta(index_root / "meta.json")
+    meta_sources = meta.get("sources", {})
+
+    sources_on_disk: list[dict] = []
+    current_hashes: dict[str, str] = {}
+    if plan_root.is_dir():
+        for src in scan_sources(plan_root):
+            h = compute_file_hash(src.path)
+            current_hashes[src.rel_path] = h
+            indexed_entry = meta_sources.get(src.rel_path)
+            sources_on_disk.append({
+                "rel_path": src.rel_path,
+                "category": src.category,
+                "chunks": (indexed_entry or {}).get("chunks", 0),
+                "sha256": h,
+                "indexed": bool(indexed_entry and indexed_entry.get("sha256") == h),
+            })
+
+    indexed = bool(meta) and (index_root / "chroma.sqlite3").exists()
+    added_or_changed, removed = diff_sources(meta_sources, current_hashes)
+
+    return {
+        "indexed": indexed,
+        "dirty": bool(added_or_changed or removed),
+        "chunk_count": meta.get("chunk_count", 0),
+        "build_time": meta.get("build_time"),
+        "file_count": len(sources_on_disk),
+        "sources": sources_on_disk,
+    }
+
+
+# ---------------------------------------------------------------------------
 # commands (integration path, imports chromadb + sentence-transformers lazily)
 # ---------------------------------------------------------------------------
 
@@ -118,16 +161,16 @@ def cmd_build(plan_id: str) -> int:
         print(f"error: {plan_root} does not exist", file=sys.stderr)
         return 2
 
-    sources = _scan_sources(plan_root)
+    sources = scan_sources(plan_root)
     if not sources:
         print(f"warning: no files found under {plan_root}", file=sys.stderr)
         return 1
 
-    current_hashes = {s.rel_path: _compute_file_hash(s.path) for s in sources}
-    prev_meta = _load_meta(meta_path)
+    current_hashes = {s.rel_path: compute_file_hash(s.path) for s in sources}
+    prev_meta = load_meta(meta_path)
     prev_sources = prev_meta.get("sources", {})
 
-    added_or_changed, removed = _diff_sources(prev_sources, current_hashes)
+    added_or_changed, removed = diff_sources(prev_sources, current_hashes)
 
     if not added_or_changed and not removed:
         print(f"up to date ({len(sources)} files, {prev_meta.get('chunk_count', 0)} chunks)")
@@ -226,7 +269,7 @@ def cmd_query(plan_id: str, query_text: str, k: int = 5) -> int:
 
 def cmd_info(plan_id: str) -> int:
     meta_path = INDEX_ROOT / plan_id / "meta.json"
-    meta = _load_meta(meta_path)
+    meta = load_meta(meta_path)
     if not meta:
         print(f"no index for plan {plan_id}")
         return 1
