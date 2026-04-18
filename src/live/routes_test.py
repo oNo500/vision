@@ -24,3 +24,32 @@ def test_tts_queue_snapshot_endpoint_returns_empty_when_not_running(client):
     response = client.get("/live/tts/queue/snapshot")
     assert response.status_code == 200
     assert response.json() == []
+
+
+def test_delete_tts_queue_item_returns_404_when_not_running(client):
+    response = client.delete("/live/tts/queue/any-id")
+    assert response.status_code == 404
+
+
+def test_patch_tts_queue_item_returns_404_when_not_running(client):
+    response = client.patch("/live/tts/queue/any-id", json={"text": "new"})
+    assert response.status_code == 404
+
+
+def test_reorder_tts_queue_returns_400_when_not_running(client):
+    response = client.post(
+        "/live/tts/queue/reorder",
+        json={"stage": "pending", "ids": []},
+    )
+    assert response.status_code == 400
+
+
+def test_patch_tts_queue_requires_text(client):
+    """Missing `text` in body → FastAPI 422."""
+    response = client.patch("/live/tts/queue/x", json={})
+    assert response.status_code == 422
+
+
+def test_reorder_tts_queue_requires_stage_and_ids(client):
+    response = client.post("/live/tts/queue/reorder", json={"stage": "pending"})
+    assert response.status_code == 422
