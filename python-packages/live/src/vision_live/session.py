@@ -371,7 +371,7 @@ class SessionManager:
                     "reason": "mock",
                 }, ensure_ascii=False)
         else:
-            from src.api.settings import get_settings
+            from vision_api.settings import get_settings
             from vision_live.director_agent import _SYSTEM_PROMPT
             from vision_live.llm_client import LLMClient
 
