@@ -85,6 +85,16 @@ def state(sm: SessionManager = Depends(get_session_manager)) -> dict:
     return sm.get_state()
 
 
+@router.get("/tts/queue/snapshot")
+def tts_queue_snapshot(sm: SessionManager = Depends(get_session_manager)) -> list[dict]:
+    """Return a snapshot of pending + synthesized TTS items.
+
+    Used by the frontend to rehydrate pipeline state on SSE reconnect.
+    Returns [] when no session is running.
+    """
+    return sm.get_tts_queue_snapshot()
+
+
 @router.post("/inject")
 def inject(
     body: InjectRequest,
