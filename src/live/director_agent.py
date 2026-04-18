@@ -13,6 +13,7 @@ import queue
 import threading
 import time
 
+from src.live.rag import TalkPoint, TalkPointRAG
 from src.live.schema import DirectorOutput, Event
 from src.live.session_memory import SessionMemory
 
@@ -57,12 +58,17 @@ _SYSTEM_PROMPT = """\
 """
 
 
+_TALK_POINT_MAX_CHARS = 200
+_TALK_POINT_MAX_COUNT = 5
+
+
 def build_director_prompt(
     script_state: dict,
     knowledge_ctx: str,
     recent_events: list[Event],
     memory: SessionMemory | None = None,
     persona_ctx: str = "",
+    talk_points: list[TalkPoint] | None = None,
 ) -> str:
     """Build the user-turn prompt for the director LLM call.
 
@@ -73,6 +79,8 @@ def build_director_prompt(
         memory: optional SessionMemory; when provided, renders four extra
             sections (recent utterances, topic summary, cue status, recent QA).
         persona_ctx: optional persona description.
+        talk_points: optional RAG hits; rendered as a reference section when
+            non-empty. Capped at 5 points, each truncated to 200 chars.
     """
     event_lines = "\n".join(
         f"  - [{e.type}] {e.user}: {e.text or e.gift or '(进场)'}"
@@ -106,6 +114,18 @@ def build_director_prompt(
             f"=== 最近问答（避免重复回答） ===\n{memory.render_recent_qa()}\n\n"
         )
 
+    rag_section = ""
+    if talk_points:
+        rendered = []
+        for tp in talk_points[:_TALK_POINT_MAX_COUNT]:
+            snippet = tp.text[:_TALK_POINT_MAX_CHARS]
+            rendered.append(f"  [{tp.source}] {snippet}")
+        rag_section = (
+            "=== 相关话术参考（可自然化用，非必读）===\n"
+            + "\n".join(rendered)
+            + "\n\n"
+        )
+
     return (
         f"{persona_section}"
         f"=== 产品知识 ===\n{knowledge_ctx}\n\n"
@@ -117,6 +137,7 @@ def build_director_prompt(
         f"剩余时间：{script_state.get('remaining_seconds', 0):.0f}s\n\n"
         f"=== 最近观众互动 ===\n{event_lines}\n\n"
         f"{memory_section}"
+        f"{rag_section}"
         f"请决定下一句说什么。"
     )
 
@@ -157,6 +178,10 @@ class DirectorAgent:
         persona_ctx: Optional persona information (e.g., streamer name, style, forbidden words).
         memory: Optional SessionMemory for layered history (recent/topic/cue/qa).
             When None, the prompt falls back to the pre-memory structure.
+        rag: Optional TalkPointRAG for retrieval-augmented context. When None,
+            no retrieval happens.
+        on_rag_miss: Optional zero-arg callback invoked when a RAG query
+            returns no results above threshold (for EventBus observability).
     """
 
     def __init__(
@@ -168,6 +193,8 @@ class DirectorAgent:
         urgent_queue: queue.Queue | None = None,
         persona_ctx: str = "",
         memory: SessionMemory | None = None,
+        rag: TalkPointRAG | None = None,
+        on_rag_miss=None,
     ) -> None:
         self._tts_queue = tts_queue
         self._tts_player = tts_player
@@ -176,6 +203,8 @@ class DirectorAgent:
         self._llm_generate = llm_generate_fn
         self._urgent_queue = urgent_queue
         self._memory = memory
+        self._rag = rag
+        self._on_rag_miss = on_rag_miss
         self._last_silence_check = 0.0
         self._llm_semaphore = threading.Semaphore(MAX_CONCURRENT_LLM)
         self._llm_in_flight_count = 0  # number of LLM calls currently running
@@ -265,6 +294,27 @@ class DirectorAgent:
 
         all_events = urgent_events + recent_events
 
+        talk_points: list[TalkPoint] = []
+        if self._rag is not None:
+            try:
+                danmaku_texts = [
+                    e.text for e in all_events
+                    if e.type == "danmaku" and e.text
+                ]
+                talk_points = self._rag.query(
+                    segment_goal=script_state.get("goal", ""),
+                    recent_danmaku=danmaku_texts,
+                    k=_TALK_POINT_MAX_COUNT,
+                )
+            except Exception as e:
+                logger.warning("RAG query failed, degrading to no-RAG: %s", e)
+                talk_points = []
+            if not talk_points and self._on_rag_miss is not None:
+                try:
+                    self._on_rag_miss()
+                except Exception as e:
+                    logger.warning("on_rag_miss callback raised: %s", e)
+
         try:
             prompt = build_director_prompt(
                 script_state=script_state,
@@ -272,6 +322,7 @@ class DirectorAgent:
                 recent_events=all_events,
                 memory=self._memory,
                 persona_ctx=self._persona_ctx,
+                talk_points=talk_points,
             )
             raw = self._llm_generate(prompt)
             output = parse_director_response(raw)
