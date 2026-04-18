@@ -4,7 +4,7 @@ from __future__ import annotations
 import pytest
 from fastapi.testclient import TestClient
 
-from src.api.main import create_app
+from vision_api.main import create_app
 
 
 @pytest.fixture
@@ -12,7 +12,7 @@ def client(tmp_path):
     import os
     os.environ["VISION_DB_PATH"] = str(tmp_path / "test.db")
     # Clear lru_cache so settings picks up the new env var
-    from src.api.settings import get_settings
+    from vision_api.settings import get_settings
     get_settings.cache_clear()
     app = create_app()
     with TestClient(app, raise_server_exceptions=True) as c:

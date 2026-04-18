@@ -10,8 +10,8 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from src.api.deps import get_danmaku_manager, get_db, get_event_bus, get_session_manager
-from src.api.settings import get_settings
+from vision_api.deps import get_danmaku_manager, get_db, get_event_bus, get_session_manager
+from vision_api.settings import get_settings
 from vision_live.danmaku_manager import DanmakuManager
 from vision_live.session import SessionAlreadyRunningError, SessionManager
 from vision_shared.db import Database
