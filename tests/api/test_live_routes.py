@@ -40,7 +40,7 @@ async def test_start_agent(client):
 
 @pytest.mark.asyncio
 async def test_start_agent_already_running(client):
-    from src.live.session import SessionAlreadyRunningError
+    from vision_live.session import SessionAlreadyRunningError
     client.app.state.session_manager.start = MagicMock(side_effect=SessionAlreadyRunningError("Session already running"))
     resp = await client.post("/live/start", json={"mock": True})
     assert resp.status_code == 409
@@ -133,7 +133,7 @@ async def test_session_stop(client):
 
 @pytest.mark.asyncio
 async def test_session_start_twice_returns_409(client):
-    from src.live.session import SessionAlreadyRunningError
+    from vision_live.session import SessionAlreadyRunningError
     client.app.state.session_manager.start = MagicMock(side_effect=SessionAlreadyRunningError("already running"))
     resp = await client.post("/live/session/start", json={"mock": True})
     assert resp.status_code == 409
