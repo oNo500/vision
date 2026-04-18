@@ -6,7 +6,7 @@ import time as _time
 import numpy as np
 
 from src.live.tts_player import PcmItem, TtsItem, TTSPlayer
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 
 def test_tts_item_create_defaults_stage_pending_not_urgent():

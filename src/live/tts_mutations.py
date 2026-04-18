@@ -6,7 +6,7 @@ agent lifecycle. These functions do not publish SSE; callers do.
 from __future__ import annotations
 
 from src.live.tts_player import PcmItem, TtsItem
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 
 class _UnsetType:

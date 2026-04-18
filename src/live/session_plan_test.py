@@ -4,7 +4,7 @@ from __future__ import annotations
 from unittest.mock import MagicMock
 
 from src.live.session import SessionManager, _build_persona_ctx, _build_knowledge_ctx_from_plan
-from src.shared.event_bus import EventBus
+from vision_shared.event_bus import EventBus
 
 
 def _make_plan() -> dict:

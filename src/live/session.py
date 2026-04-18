@@ -13,8 +13,8 @@ from src.live.rag import load_rag_for_plan
 from src.live.script_runner import ScriptRunner
 from src.live.session_memory import SessionMemory
 from src.live.tts_player import PcmItem, TTSPlayer, TtsItem
-from src.shared.event_bus import EventBus
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.event_bus import EventBus
+from vision_shared.ordered_item_store import OrderedItemStore
 
 logger = logging.getLogger(__name__)
 

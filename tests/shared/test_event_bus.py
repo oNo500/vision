@@ -1,7 +1,7 @@
 """Tests for EventBus pub/sub."""
 import asyncio
 import pytest
-from src.shared.event_bus import EventBus
+from vision_shared.event_bus import EventBus
 
 
 @pytest.fixture
