@@ -10,6 +10,7 @@ from __future__ import annotations
 import queue
 import threading
 import time
+from collections.abc import Callable
 from typing import Protocol
 
 
@@ -80,6 +81,35 @@ class OrderedItemStore[T: _HasId]:
     def task_done(self) -> None:
         """No-op. Present for queue.Queue compatibility; we don't track joins."""
         return None
+
+    # ----- Mutations by id -----
+
+    def remove(self, item_id: str) -> T | None:
+        with self._lock:
+            for i, it in enumerate(self._items):
+                if it.id == item_id:
+                    removed = self._items.pop(i)
+                    self._not_full.notify()
+                    return removed
+            return None
+
+    def move(self, item_id: str, to_index: int) -> bool:
+        with self._lock:
+            for i, it in enumerate(self._items):
+                if it.id == item_id:
+                    self._items.pop(i)
+                    idx = max(0, min(to_index, len(self._items)))
+                    self._items.insert(idx, it)
+                    return True
+            return False
+
+    def edit(self, item_id: str, mutator: Callable[[T], T]) -> bool:
+        with self._lock:
+            for i, it in enumerate(self._items):
+                if it.id == item_id:
+                    self._items[i] = mutator(it)
+                    return True
+            return False
 
     # ----- Read-only views -----
 
