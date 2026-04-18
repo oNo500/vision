@@ -23,7 +23,7 @@ import threading
 import uuid
 from collections.abc import Callable
 
-from src.shared.ordered_item_store import OrderedItemStore
+from vision_shared.ordered_item_store import OrderedItemStore
 
 logger = logging.getLogger(__name__)
 

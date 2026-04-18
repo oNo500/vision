@@ -10,7 +10,7 @@ from typing import Any, Callable
 from src.live.event_collector import MockEventCollector
 from src.live.orchestrator import Orchestrator
 from src.live.schema import Event
-from src.shared.event_bus import EventBus
+from vision_shared.event_bus import EventBus
 
 logger = logging.getLogger(__name__)
 

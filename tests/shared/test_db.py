@@ -2,7 +2,7 @@
 import asyncio
 import pytest
 import pytest_asyncio
-from src.shared.db import Database
+from vision_shared.db import Database
 
 
 @pytest_asyncio.fixture

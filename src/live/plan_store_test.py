@@ -9,7 +9,7 @@ import aiosqlite
 import pytest
 
 from src.live.plan_store import PlanStore
-from src.shared.db import _SCHEMA
+from vision_shared.db import _SCHEMA
 
 
 def _make_plan(name: str = "Test Plan") -> dict:

@@ -6245,6 +6245,7 @@ dependencies = [
     { name = "sentence-transformers" },
     { name = "sounddevice" },
     { name = "uvicorn", extra = ["standard"] },
+    { name = "vision-shared" },
 ]
 
 [package.dev-dependencies]
@@ -6276,6 +6277,7 @@ requires-dist = [
     { name = "sentence-transformers", specifier = ">=3.0.0" },
     { name = "sounddevice", specifier = ">=0.5.5" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.30" },
+    { name = "vision-shared", editable = "python-packages/shared" },
 ]
 
 [package.metadata.requires-dev]

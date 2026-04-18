@@ -12,8 +12,8 @@ from src.api.settings import get_settings
 from src.live.routes import router as live_router
 from src.live.plan_routes import router as plan_router
 from src.live.rag_routes import router as rag_router
-from src.shared.db import Database
-from src.shared.event_bus import EventBus
+from vision_shared.db import Database
+from vision_shared.event_bus import EventBus
 from src.live.session import SessionManager
 from src.live.danmaku_manager import DanmakuManager
 
