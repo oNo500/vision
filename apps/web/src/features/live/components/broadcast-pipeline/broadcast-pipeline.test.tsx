@@ -5,6 +5,25 @@ import type { PipelineItem } from '@/features/live/hooks/use-live-stream'
 
 import { BroadcastPipeline } from './index'
 
+vi.mock('@atlaskit/pragmatic-drag-and-drop/element/adapter', () => ({
+  draggable: () => () => {},
+  dropTargetForElements: () => () => {},
+  monitorForElements: () => () => {},
+}))
+vi.mock('@atlaskit/pragmatic-drag-and-drop/combine', () => ({
+  combine: (...fns: Array<() => void>) => () => fns.forEach((f) => f()),
+}))
+vi.mock('@atlaskit/pragmatic-drag-and-drop-hitbox/list-item', () => ({
+  attachInstruction: (data: unknown) => data,
+  extractInstruction: () => ({ operation: 'reorder-after' }),
+}))
+vi.mock('@atlaskit/pragmatic-drag-and-drop-react-drop-indicator/list-item', () => ({
+  DropIndicator: () => null,
+}))
+vi.mock('@atlaskit/pragmatic-drag-and-drop/reorder', () => ({
+  reorder: ({ list }: { list: unknown[] }) => list,
+}))
+
 vi.mock('@/features/live/hooks/use-tts-mutations', () => ({
   useTtsMutations: () => ({ remove: vi.fn(), edit: vi.fn(), reorder: vi.fn(), loading: false }),
 }))

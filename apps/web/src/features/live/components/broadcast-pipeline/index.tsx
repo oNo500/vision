@@ -22,11 +22,14 @@ export function BroadcastPipeline({
   pending, synthesized, nowPlayingItem, history,
   llmGenerating, ttsSpeaking, urgentCount,
 }: Props) {
-  const { remove, edit } = useTtsMutations()
+  const { remove, edit, reorder: reorderApi } = useTtsMutations()
 
   const onRemove = (id: string) => { void remove(id) }
   const onEdit = (id: string, text: string, speech_prompt: string | null) => {
     void edit(id, { text, speech_prompt })
+  }
+  const onReorder = (stage: 'pending' | 'synthesized', newIds: string[]) => {
+    void reorderApi(stage, newIds)
   }
 
   return (
@@ -39,8 +42,8 @@ export function BroadcastPipeline({
         urgentCount={urgentCount}
       />
       <div className="flex min-h-0 flex-1 flex-col overflow-auto">
-        <StageSection title="待合成" items={pending} onRemove={onRemove} onEdit={onEdit} />
-        <StageSection title="已合成" items={synthesized} onRemove={onRemove} onEdit={onEdit} />
+        <StageSection title="待合成" stage="pending" items={pending} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
+        <StageSection title="已合成" stage="synthesized" items={synthesized} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
         <NowPlayingCard item={nowPlayingItem} />
         <HistorySection items={history} />
       </div>
