@@ -8,6 +8,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from vision_api.api_key import ApiKeyMiddleware
 from vision_api.settings import get_settings
 from vision_live.routes import router as live_router
 from vision_live.plan_routes import router as plan_router
@@ -41,7 +42,6 @@ def create_app() -> FastAPI:
 
     app = FastAPI(title=settings.app_name, lifespan=lifespan)
 
-    from vision_api.api_key import ApiKeyMiddleware
     app.add_middleware(
         ApiKeyMiddleware, api_key=settings.vision_api_key,
         protected_prefixes=("/api/intelligence/",),

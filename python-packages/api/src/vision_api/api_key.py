@@ -3,8 +3,9 @@ from __future__ import annotations
 
 from typing import Sequence
 
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.responses import JSONResponse
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
+from starlette.requests import Request
+from starlette.responses import JSONResponse, Response
 
 
 _PROTECTED_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
@@ -16,7 +17,7 @@ class ApiKeyMiddleware(BaseHTTPMiddleware):
         self._key = api_key
         self._prefixes = tuple(protected_prefixes)
 
-    async def dispatch(self, request, call_next):
+    async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
         if request.method in _PROTECTED_METHODS and \
            any(request.url.path.startswith(p) for p in self._prefixes):
             header = request.headers.get("x-api-key")
