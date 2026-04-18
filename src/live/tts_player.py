@@ -84,6 +84,7 @@ class TTSPlayer:
         speak_fn:         Override for mock/test; skips synthesis entirely.
         audio_device:     Sounddevice output device name substring.
         on_queued:        Called when a TtsItem enters in_queue (for SSE).
+        on_synthesized:   Called after a TtsItem has been converted to PCM and entered pcm_queue.
         on_play:          Called just before a sentence starts playing.
         on_done:          Called after a sentence finishes playing.
         google_cloud_project: GCP project for Cloud TTS.
@@ -95,6 +96,7 @@ class TTSPlayer:
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
         on_queued: Callable[[TtsItem], None] | None = None,
+        on_synthesized: Callable[[PcmItem], None] | None = None,
         on_play: Callable[[TtsItem], None] | None = None,
         on_done: Callable[[TtsItem], None] | None = None,
         google_cloud_project: str | None = None,
@@ -103,6 +105,7 @@ class TTSPlayer:
         self._speak_fn = speak_fn
         self._audio_device = audio_device
         self._on_queued = on_queued
+        self._on_synthesized = on_synthesized
         self._on_play = on_play
         self._on_done = on_done
         self._google_cloud_project = google_cloud_project or os.environ.get("GOOGLE_CLOUD_PROJECT")
@@ -298,6 +301,8 @@ class TTSPlayer:
             )
             self._queue.task_done()
             self._pcm_queue.put(pcm_item)
+            if self._on_synthesized:
+                self._on_synthesized(pcm_item)
 
     # ------------------------------------------------------------------
     # Continuous playback thread
