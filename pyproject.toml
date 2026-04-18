@@ -50,9 +50,8 @@ dev = [
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
-pythonpath = ["."]
-testpaths = ["src", "tests", "python-packages"]
-python_files = ["*_test.py", "test_*.py"]
+testpaths = ["python-packages"]
+python_files = ["*_test.py"]
 markers = [
     "slow: tests that download models / run real embeddings",
 ]
