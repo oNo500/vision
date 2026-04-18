@@ -152,7 +152,15 @@ output/transcripts/
     ├── transcript.md
     ├── transcript.srt
     ├── summary.md
-    └── style.json
+    ├── style.json
+    └── stages/              # 每阶段留档 manifest（详见 §6.6）
+        ├── 01-ingest.json
+        ├── 02-preprocess.json
+        ├── 03-transcribe.json
+        ├── 04-merge.json
+        ├── 05-render.json
+        ├── 06-analyze.json
+        └── 07-load.json
 ```
 
 ## 5. Package Dependencies
@@ -404,6 +412,68 @@ Gemini 原始输出不能直接入库/上线，需要在管线内部做统一清
 - 校对通过后 `UPDATE video_sources SET reviewed = 1, reviewed_at = ... WHERE video_id = ?`
 - 下游消费方（RAG / DirectorAgent）可按 `reviewed = 1` 过滤，避免未审核数据污染生产
 
+### 6.6 Stage Manifests
+
+每个 pipeline 阶段完成时写一份 JSON manifest 到 `output/transcripts/<video_id>/stages/NN-<name>.json`，记录该阶段的参数、输入输出、耗时、成本。用途：
+
+- **从任意阶段重跑**：CLI `rerun --from-stage <name>` 会读取前序 manifest 恢复上下文
+- **审计**：看到某视频的产物，能立刻知道用的是哪个 prompt 版本、哪个模型、花了多少钱
+- **对比**：换 prompt 或模型后重跑，manifest 差异直接反映配置差异
+
+#### 6.6.1 通用 schema
+
+每份 manifest 都含以下字段（阶段特定字段另有扩展，见 6.6.2）：
+
+```jsonc
+{
+  "stage": "transcribe",                    // ingest | preprocess | transcribe | merge | render | analyze | load
+  "video_id": "0y3O90vyKNo",
+  "status": "done",                         // done | failed
+  "started_at": "2026-04-18T12:00:00+08:00",
+  "finished_at": "2026-04-18T12:03:15+08:00",
+  "duration_sec": 195.3,
+  "inputs": ["audio.m4a"],                  // 相对 <video_id>/ 的路径
+  "outputs": ["vocals.wav", "chunks/*.wav"],
+  "tool_versions": {                        // 关键依赖版本
+    "yt-dlp": "2025.1.15",
+    "demucs": "4.0.1",
+    "ffmpeg": "7.1",
+    "google-genai": "1.72.0"
+  },
+  "pipeline_version": "0.1.0",              // 本包的 __version__
+  "error": null                             // status=failed 时填 traceback 摘要
+}
+```
+
+#### 6.6.2 阶段特定字段
+
+- **`01-ingest.json`**：`url`、`downloaded_bytes`、`source_metadata`（title / uploader / duration_sec / 原始 yt-dlp info 摘要）
+- **`02-preprocess.json`**：`demucs_model`、`bgm_removed`、`chunk_count`、`chunk_duration_sec`、`chunk_overlap_sec`、`sample_rate`、`channels`
+- **`03-transcribe.json`**：
+  - `model`（`gemini-2.5-flash`）
+  - `prompt_version`（`prompts/transcribe.md` 的 git sha 或内容 sha256，前 12 位）
+  - `response_schema_version`（pydantic model `__version__` 或 schema 哈希）
+  - `chunks_transcribed`、`chunks_failed`、`retries`
+  - `tokens_in`、`tokens_out`、`estimated_cost_usd`
+- **`04-merge.json`**：`segments_in`（切片合计）、`segments_out`（合并后）、`dedup_count`、`timestamp_fixes`、`empty_dropped`、`punctuation_normalized`、`t2s_converted`
+- **`05-render.json`**：`outputs`（`transcript.md` / `transcript.srt`）、`renderer_version`、`total_segments`、`total_duration_sec`
+- **`06-analyze.json`**：
+  - `model`（同 03）
+  - `prompt_version`（`prompts/summarize.md` + `prompts/style.md` 合并 hash）
+  - `segments_in`、`segments_filtered_out`（§6.5.3 的 non-host / low-confidence 过滤数量）
+  - `tokens_in`、`tokens_out`、`estimated_cost_usd`
+- **`07-load.json`**：`rows_inserted`（`{video_sources: 1, transcript_segments: 342, transcript_fts: 342, style_profiles: 1}`）
+
+#### 6.6.3 读写语义
+
+- `pipeline.py` 在进入每阶段前 instantiate manifest 对象，finally 块写磁盘（无论成败都写）
+- 重跑时 `pipeline.py` 读已有 manifest，若 `status == "done"` 且 `inputs` hash 没变 → 跳过该阶段
+- `rerun --from-stage transcribe` 显式删除 `03-transcribe.json` 及之后所有阶段的 manifest，然后走正常管线
+- **Manifest 是权威真相源**（和 `pipeline_runs` 表并存）：表便于 SQL 查询，manifest 便于人读 + git diff + 单文件移植
+
+> [!NOTE]
+> `stages/` 和 `pipeline_runs` 表不是冗余 —— 前者是"产物级"落盘（每视频自包含、可带走、可人读），后者是"调度级"状态机（可 JOIN、可索引、可查多视频聚合）。两者信息基本重叠，允许偶然漂移；`pipeline_runs` 是状态机当前态的视图，`stages/` 是历史存档。
+
 ## 7. FastAPI Endpoints
 
 所有端点挂在 `/api/intelligence/video-asr/`：
@@ -461,8 +531,11 @@ uv run vision-video-asr run --url https://www.youtube.com/watch?v=0y3O90vyKNo
 # 查 job 进度（CLI 直接读 SQLite，不走 HTTP）
 uv run vision-video-asr status <job_id>
 
-# 单阶段重跑
+# 单阶段重跑（显式列出要跑的阶段）
 uv run vision-video-asr rerun <video_id> --stages transcribe,merge
+
+# 从某阶段起重跑（之前阶段的产物 / manifest 保留并复用）
+uv run vision-video-asr rerun <video_id> --from-stage transcribe
 
 # 跨视频 FTS5 检索
 uv run vision-video-asr search "家人们晚上好" --limit 20
@@ -505,7 +578,7 @@ asr:
 - `analyzer_test.py` — mock genai，验证风格字段抽取 + §6.5.3 输入过滤（speaker != host 被排除 / confidence < 0.6 被排除）
 - `storage_test.py` — in-memory SQLite + FTS5 检索，§6.5.2 `text_normalized` 生成链（jieba 分词结果验证）
 - `jobs_test.py` — mock pipeline，验证 asyncio.Task 生命周期 + 幂等
-- `pipeline_test.py` — 端到端（mock 外部调用），验证 7 阶段 + 状态机 + 断点续跑
+- `pipeline_test.py` — 端到端（mock 外部调用），验证 7 阶段 + 状态机 + 断点续跑 + §6.6 每阶段 manifest 写入 + `rerun --from-stage` 跳过已完成阶段 + 删除后续阶段 manifest
 - `video_asr_routes_test.py` — FastAPI TestClient，验证 HTTP 契约 + SSE 回放 + API key
 
 **不写自动化**：真实 Gemini / 真实 yt-dlp / 真实 Demucs 集成测试。首次手动跑 14 视频就是冒烟测试。
@@ -574,3 +647,4 @@ asr:
 - **Vertex 凭证**：ADC
 - **数据清洗**：加 §6.5 三层清洗策略（merger / storage / analyzer），review 字段 schema 占位但本轮不实现功能
 - **繁简统一工具**：`opencc-python-reimplemented`（而非手写字典）
+- **阶段留档**：加 §6.6 每阶段 `stages/NN-<name>.json` manifest，记 prompt 版本 / 模型 / 成本 / 输入输出；CLI 新增 `rerun --from-stage` 子命令（不走 SQLite metadata_json，不给产物文件名带 hash）
