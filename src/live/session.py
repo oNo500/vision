@@ -66,6 +66,43 @@ def _publish_tts_synthesized(bus, item: PcmItem) -> None:
     })
 
 
+def _publish_tts_removed(bus, item_id: str, stage: str) -> None:
+    bus.publish({
+        "type": "tts_removed",
+        "id": item_id,
+        "stage": stage,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_edited(bus, new_item: TtsItem, old_id: str | None, stage: str) -> None:
+    """Publish tts_edited.
+
+    - In-place edit: old_id is None. Event's id == new_id == new_item.id.
+    - Id swap (synth→pending): old_id is the pre-swap id. Event's id = old_id,
+      new_id = new_item.id.
+    """
+    effective_id = old_id if old_id is not None else new_item.id
+    bus.publish({
+        "type": "tts_edited",
+        "id": effective_id,
+        "new_id": new_item.id,
+        "content": new_item.text,
+        "speech_prompt": new_item.speech_prompt,
+        "stage": stage,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_reordered(bus, stage: str, ids: list[str]) -> None:
+    bus.publish({
+        "type": "tts_reordered",
+        "stage": stage,
+        "ids": ids,
+        "ts": time.time(),
+    })
+
+
 class SessionAlreadyRunningError(RuntimeError):
     pass
 
@@ -197,6 +234,59 @@ class SessionManager:
             }
             for item in all_items
         ]
+
+    def remove_tts(self, item_id: str) -> bool:
+        from src.live.tts_mutations import remove_by_id
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        result = remove_by_id(q, player._pcm_queue, player.get_in_flight_ref(), item_id)
+        if result is None:
+            return False
+        stage, _ = result
+        _publish_tts_removed(self._bus, item_id, stage)
+        return True
+
+    def edit_tts(self, item_id: str, new_text: str, new_speech_prompt) -> bool:
+        from src.live.tts_mutations import edit_by_id
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        result = edit_by_id(q, player._pcm_queue, item_id, new_text, new_speech_prompt)
+        if result is None:
+            return False
+        stage, new_item, old_id = result
+        _publish_tts_edited(self._bus, new_item, old_id, stage)
+        return True
+
+    def reorder_tts(self, stage: str, ids: list[str]) -> bool:
+        from src.live.tts_mutations import reorder_stage
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        ok = reorder_stage(q, player._pcm_queue, stage, ids)
+        if not ok:
+            return False
+        _publish_tts_reordered(self._bus, stage, ids)
+        return True
 
     def get_strategy(self) -> str:
         with self._lock:
