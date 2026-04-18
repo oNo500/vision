@@ -7,9 +7,10 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarRail,
+  SidebarTrigger,
 } from '@workspace/ui/components/sidebar'
 import { BookOpenIcon, RadioIcon, Settings2Icon } from 'lucide-react'
+import Link from 'next/link'
 import * as React from 'react'
 
 import { NavMain } from '@/components/nav-main'
@@ -20,14 +21,12 @@ const navItems = [
     title: 'Live',
     url: appPaths.dashboard.live.href,
     icon: <RadioIcon />,
-    isActive: true,
     items: [],
   },
   {
     title: '方案库',
-    url: appPaths.dashboard.livePlans.href,
+    url: appPaths.dashboard.plans.href,
     icon: <BookOpenIcon />,
-    isActive: false,
     items: [],
   },
   {
@@ -40,11 +39,11 @@ const navItems = [
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
         <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton size="lg" render={<a href={appPaths.home.href} />}>
+          <SidebarMenuItem className="flex items-center gap-2">
+            <SidebarMenuButton size="lg" render={<Link href={appPaths.home.href} />}>
               <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
                 <RadioIcon className="size-4" />
               </div>
@@ -53,13 +52,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <span className="truncate text-xs">直播控场</span>
               </div>
             </SidebarMenuButton>
+            <SidebarTrigger className="shrink-0" />
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={navItems} />
       </SidebarContent>
-      <SidebarRail />
     </Sidebar>
   )
 }

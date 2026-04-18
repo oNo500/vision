@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 import { Button } from '@workspace/ui/components/button'
 import { toast } from '@workspace/ui/components/sonner'
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from 'lucide-react'
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, ChevronsDownUpIcon, ChevronsUpDownIcon } from 'lucide-react'
 
 import { env } from '@/config/env'
 import type { ScriptState } from '@/features/live/hooks/use-live-stream'
@@ -64,15 +64,34 @@ export function PlanSidebar({ plan, scriptState, running }: PlanSidebarProps) {
     })
   }
 
+  const allCollapsed = plan.script.segments.length > 0
+    && collapsed.size === plan.script.segments.length
+
+  function toggleAll() {
+    setCollapsed(allCollapsed ? new Set() : new Set(plan.script.segments.map(s => s.id)))
+  }
+
   return (
-    <div className="flex h-full w-64 shrink-0 flex-col overflow-hidden border-r">
+    <div className="flex h-full min-w-0 flex-1 flex-col overflow-hidden border-r">
       {/* plan meta */}
-      <div className="shrink-0 border-b px-3 py-2.5">
-        <p className="text-xs font-semibold">{plan.name}</p>
-        <p className="mt-0.5 truncate text-[11px] text-muted-foreground">
-          {plan.product.name}{plan.product.price ? ` · ${plan.product.price}` : ''}
-          {' · '}{plan.script.segments.length} 段
-        </p>
+      <div className="flex shrink-0 items-start gap-2 border-b px-3 py-2.5">
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-xs font-semibold">{plan.name}</p>
+          <p className="mt-0.5 truncate text-[11px] text-muted-foreground">
+            {plan.product.name}{plan.product.price ? ` · ${plan.product.price}` : ''}
+            {' · '}{plan.script.segments.length} 段
+          </p>
+        </div>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="size-6 shrink-0"
+          onClick={toggleAll}
+          aria-label={allCollapsed ? '展开全部' : '收起全部'}
+          title={allCollapsed ? '展开全部' : '收起全部'}
+        >
+          {allCollapsed ? <ChevronsUpDownIcon className="size-4" /> : <ChevronsDownUpIcon className="size-4" />}
+        </Button>
       </div>
 
       {/* segments list */}

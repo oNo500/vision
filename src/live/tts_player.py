@@ -23,6 +23,8 @@ import threading
 import uuid
 from collections.abc import Callable
 
+from src.shared.ordered_item_store import OrderedItemStore
+
 logger = logging.getLogger(__name__)
 
 _DEFAULT_SPEECH_PROMPT = "带货主播收到互动时真情流露的回应，语气自然有情绪起伏，像在跟朋友聊天"
@@ -37,10 +39,18 @@ class TtsItem:
     id: str
     text: str
     speech_prompt: str | None
+    stage: str = "pending"       # "pending" | "synthesized"
+    urgent: bool = False
+    cancel_flag: bool = False    # set by remove() when the item is in-flight
 
     @staticmethod
-    def create(text: str, speech_prompt: str | None) -> "TtsItem":
-        return TtsItem(id=str(uuid.uuid4()), text=text, speech_prompt=speech_prompt)
+    def create(text: str, speech_prompt: str | None, urgent: bool = False) -> "TtsItem":
+        return TtsItem(
+            id=str(uuid.uuid4()),
+            text=text,
+            speech_prompt=speech_prompt,
+            urgent=urgent,
+        )
 
 
 @dataclasses.dataclass
@@ -50,6 +60,8 @@ class PcmItem:
     speech_prompt: str | None
     pcm: "np.ndarray"  # float32, shape (N,)
     duration: float
+    stage: str = "synthesized"
+    urgent: bool = False
 
 
 def _fallback_speak(text: str, _prompt: str | None = None) -> None:
@@ -73,6 +85,7 @@ class TTSPlayer:
         speak_fn:         Override for mock/test; skips synthesis entirely.
         audio_device:     Sounddevice output device name substring.
         on_queued:        Called when a TtsItem enters in_queue (for SSE).
+        on_synthesized:   Called after a TtsItem has been converted to PCM and entered pcm_queue.
         on_play:          Called just before a sentence starts playing.
         on_done:          Called after a sentence finishes playing.
         google_cloud_project: GCP project for Cloud TTS.
@@ -80,10 +93,11 @@ class TTSPlayer:
 
     def __init__(
         self,
-        in_queue: queue.Queue,
+        in_queue: OrderedItemStore,
         speak_fn: Callable[[str, str | None], None] | None = None,
         audio_device: str | None = None,
         on_queued: Callable[[TtsItem], None] | None = None,
+        on_synthesized: Callable[[PcmItem], None] | None = None,
         on_play: Callable[[TtsItem], None] | None = None,
         on_done: Callable[[TtsItem], None] | None = None,
         google_cloud_project: str | None = None,
@@ -92,6 +106,7 @@ class TTSPlayer:
         self._speak_fn = speak_fn
         self._audio_device = audio_device
         self._on_queued = on_queued
+        self._on_synthesized = on_synthesized
         self._on_play = on_play
         self._on_done = on_done
         self._google_cloud_project = google_cloud_project or os.environ.get("GOOGLE_CLOUD_PROJECT")
@@ -99,8 +114,10 @@ class TTSPlayer:
         self._synth_thread: threading.Thread | None = None
         self._play_thread: threading.Thread | None = None
         self._is_speaking = False
+        self._in_flight: dict[str, TtsItem] = {}
+        self._in_flight_lock = threading.Lock()
         self._lock = threading.Lock()
-        self._pcm_queue: queue.Queue = queue.Queue(maxsize=10)
+        self._pcm_queue: OrderedItemStore = OrderedItemStore(maxsize=3)
 
         if speak_fn is not None:
             logger.info("TTSPlayer using custom speak_fn (mock)")
@@ -115,9 +132,17 @@ class TTSPlayer:
         with self._lock:
             return self._is_speaking
 
-    def put(self, text: str, speech_prompt: str | None) -> TtsItem:
+    def get_in_flight_ref(self) -> dict:
+        """Return the in-flight registry (dict of items currently being synthesized).
+
+        SessionManager passes this into tts_mutations.remove_by_id so cancellations
+        can race-safely mark items that have already been get()-ed but not yet put().
+        """
+        return self._in_flight
+
+    def put(self, text: str, speech_prompt: str | None, urgent: bool = False) -> TtsItem:
         """Create a TtsItem, fire on_queued, and enqueue it. Returns the item."""
-        item = TtsItem.create(text, speech_prompt)
+        item = TtsItem.create(text, speech_prompt, urgent=urgent)
         if self._on_queued:
             self._on_queued(item)
         self._queue.put(item)
@@ -248,6 +273,10 @@ class TTSPlayer:
                 self._pcm_queue.put(_SENTINEL)
                 break
 
+            # Register as in-flight so cross-container remove can find it
+            with self._in_flight_lock:
+                self._in_flight[item.id] = item
+
             logger.info("[TTS] Synthesizing: %s", item.text[:60])
             try:
                 response = client.synthesize_speech(
@@ -264,6 +293,8 @@ class TTSPlayer:
             except Exception as e:
                 logger.error("[TTS] Synthesis failed: %s", e)
                 self._queue.task_done()
+                with self._in_flight_lock:
+                    self._in_flight.pop(item.id, None)
                 continue
 
             import numpy as np
@@ -283,9 +314,20 @@ class TTSPlayer:
                 speech_prompt=item.speech_prompt,
                 pcm=pcm,
                 duration=duration,
+                urgent=item.urgent,
             )
             self._queue.task_done()
+
+            with self._in_flight_lock:
+                self._in_flight.pop(item.id, None)
+
+            if item.cancel_flag:
+                logger.info("[TTS] Cancelled in-flight item %s, discarding PCM", item.id)
+                continue
+
             self._pcm_queue.put(pcm_item)
+            if self._on_synthesized:
+                self._on_synthesized(pcm_item)
 
     # ------------------------------------------------------------------
     # Continuous playback thread

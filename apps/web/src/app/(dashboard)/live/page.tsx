@@ -2,13 +2,12 @@
 
 import { useEffect, useState } from 'react'
 
-import { AiOutputLog } from '@/features/live/components/ai-output-log'
-import { AiStatusCard } from '@/features/live/components/ai-status-card'
+import { PageHeader } from '@/components/page-header'
+import { BroadcastPipeline } from '@/features/live/components/broadcast-pipeline'
 import { DanmakuFeed } from '@/features/live/components/danmaku-feed'
 import { PlanPanel } from '@/features/live/components/plan-panel'
 import { PlanSidebar } from '@/features/live/components/plan-sidebar'
 import { SessionControls } from '@/features/live/components/session-controls'
-import { TtsQueuePanel } from '@/features/live/components/tts-queue-panel'
 import { useAiSession } from '@/features/live/hooks/use-ai-session'
 import { useDanmakuSession } from '@/features/live/hooks/use-danmaku-session'
 import { useStrategy } from '@/features/live/hooks/use-strategy'
@@ -22,20 +21,20 @@ export default function LivePage() {
   const aiSession = useAiSession()
   const danmakuSession = useDanmakuSession()
   const strategy = useStrategy()
-  const { events, connected, onlineCount, aiOutputs, nowPlaying, ttsQueue, scriptState } = useLiveStream()
+  const {
+    events, connected, onlineCount, scriptState,
+    pending, synthesized, nowPlayingItem, history, urgentCount,
+  } = useLiveStream()
   const plan = usePlanActive()
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-      {/* top bar */}
-      <div className="shrink-0 border-b px-5 py-3">
-        <div className="flex items-center gap-4">
-          <h1 className="text-sm font-semibold">直播控场</h1>
-          <div className="flex-1">
-            <SessionControls aiSession={aiSession} danmakuSession={danmakuSession} strategy={strategy} />
-          </div>
+      <PageHeader>
+        <h1 className="text-sm font-semibold">直播控场</h1>
+        <div className="flex-1">
+          <SessionControls aiSession={aiSession} danmakuSession={danmakuSession} strategy={strategy} />
         </div>
-      </div>
+      </PageHeader>
 
       {/* body — client-only to avoid SSR hydration mismatch */}
       {mounted && (
@@ -45,28 +44,22 @@ export default function LivePage() {
             <PlanSidebar plan={plan} scriptState={scriptState} running={aiSession.state.running} />
           )}
           {!plan && (
-            <div className="flex w-64 shrink-0 items-center justify-center border-r text-xs text-muted-foreground">
+            <div className="flex min-w-0 flex-1 items-center justify-center border-r text-xs text-muted-foreground">
               <PlanPanel />
             </div>
           )}
 
           {/* center col */}
-          <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden p-3">
-            <div className="shrink-0">
-              <AiStatusCard
-                latest={aiOutputs[aiOutputs.length - 1] ?? null}
-                ttsQueueDepth={aiSession.state.tts_queue_depth ?? 0}
-                urgentQueueDepth={aiSession.state.urgent_queue_depth ?? 0}
-                ttsSpeaking={aiSession.state.tts_speaking ?? false}
-                llmGenerating={aiSession.state.llm_generating ?? false}
-              />
-            </div>
-            <div className="shrink-0 rounded-lg border bg-background p-4">
-              <TtsQueuePanel nowPlaying={nowPlaying} queue={ttsQueue} />
-            </div>
-            <div className="min-h-0 flex-1">
-              <AiOutputLog outputs={aiOutputs} />
-            </div>
+          <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden p-3">
+            <BroadcastPipeline
+              pending={pending}
+              synthesized={synthesized}
+              nowPlayingItem={nowPlayingItem}
+              history={history}
+              llmGenerating={aiSession.state.llm_generating ?? false}
+              ttsSpeaking={aiSession.state.tts_speaking ?? false}
+              urgentCount={urgentCount}
+            />
           </div>
 
           {/* right col: danmaku feed */}

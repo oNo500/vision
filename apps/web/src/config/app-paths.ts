@@ -8,11 +8,11 @@ export const appPaths = {
     live: {
       href: '/live',
     },
-    livePlans: {
-      href: '/live/plans',
+    plans: {
+      href: '/plans',
     },
-    livePlan: (id: string) => ({
-      href: `/live/plans/${id}`,
+    plan: (id: string) => ({
+      href: `/plans/${id}`,
     }),
   },
 }

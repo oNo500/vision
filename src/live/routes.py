@@ -50,6 +50,16 @@ class InjectRequest(BaseModel):
     speech_prompt: str | None = None
 
 
+class EditTtsRequest(BaseModel):
+    text: str
+    speech_prompt: str | None = None
+
+
+class ReorderTtsRequest(BaseModel):
+    stage: str
+    ids: list[str]
+
+
 @router.post("/start")
 def start(
     body: StartRequest,
@@ -83,6 +93,54 @@ def stop(sm: SessionManager = Depends(get_session_manager)) -> dict:
 @router.get("/state")
 def state(sm: SessionManager = Depends(get_session_manager)) -> dict:
     return sm.get_state()
+
+
+@router.get("/tts/queue/snapshot")
+def tts_queue_snapshot(sm: SessionManager = Depends(get_session_manager)) -> list[dict]:
+    """Return a snapshot of pending + synthesized TTS items.
+
+    Used by the frontend to rehydrate pipeline state on SSE reconnect.
+    Returns [] when no session is running.
+    """
+    return sm.get_tts_queue_snapshot()
+
+
+@router.delete("/tts/queue/{item_id}")
+def delete_tts_item(
+    item_id: str,
+    sm: SessionManager = Depends(get_session_manager),
+) -> dict:
+    ok = sm.remove_tts(item_id)
+    if not ok:
+        raise HTTPException(status_code=404, detail="item not found or session not running")
+    return {"ok": True}
+
+
+@router.patch("/tts/queue/{item_id}")
+def edit_tts_item(
+    item_id: str,
+    body: EditTtsRequest,
+    sm: SessionManager = Depends(get_session_manager),
+) -> dict:
+    from src.live.tts_mutations import UNSET
+
+    body_dict = body.model_dump(exclude_unset=True)
+    prompt = body_dict.get("speech_prompt", UNSET)
+    ok = sm.edit_tts(item_id, body.text, prompt)
+    if not ok:
+        raise HTTPException(status_code=404, detail="item not found or session not running")
+    return {"ok": True}
+
+
+@router.post("/tts/queue/reorder")
+def reorder_tts_items(
+    body: ReorderTtsRequest,
+    sm: SessionManager = Depends(get_session_manager),
+) -> dict:
+    ok = sm.reorder_tts(body.stage, body.ids)
+    if not ok:
+        raise HTTPException(status_code=400, detail="reorder rejected: stage unknown or ids mismatch")
+    return {"ok": True}
 
 
 @router.post("/inject")

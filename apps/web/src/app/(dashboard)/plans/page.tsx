@@ -5,13 +5,14 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@workspace/ui/components/button'
 import { toast } from '@workspace/ui/components/sonner'
 
+import { PageHeader } from '@/components/page-header'
 import { appPaths } from '@/config/app-paths'
 import { env } from '@/config/env'
 import { usePlans } from '@/features/live/hooks/use-plans'
 
 export default function LivePlansPage() {
   const router = useRouter()
-  const { plans, loading, fetchPlans, deletePlan, loadPlan } = usePlans()
+  const { plans, loading, deletePlan, loadPlan } = usePlans()
 
   async function handleCreate() {
     try {
@@ -27,7 +28,7 @@ export default function LivePlansPage() {
       })
       if (!res.ok) { toast.error('Failed to create plan'); return }
       const plan = await res.json()
-      router.push(appPaths.dashboard.livePlan((plan as { id: string }).id).href)
+      router.push(appPaths.dashboard.plan((plan as { id: string }).id).href)
     } catch {
       toast.error('Cannot reach backend')
     }
@@ -43,10 +44,12 @@ export default function LivePlansPage() {
 
   return (
     <div className="flex flex-col gap-4 p-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-lg font-semibold">方案库</h1>
-        <Button onClick={handleCreate} disabled={loading}>+ 新建方案</Button>
-      </div>
+      <PageHeader>
+        <h1 className="text-sm font-semibold">方案库</h1>
+        <div className="flex flex-1 justify-end">
+          <Button size="sm" onClick={handleCreate} disabled={loading}>+ 新建方案</Button>
+        </div>
+      </PageHeader>
 
       {plans.length === 0 ? (
         <p className="text-sm text-muted-foreground">暂无方案，点击「新建方案」开始</p>
@@ -70,7 +73,7 @@ export default function LivePlansPage() {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => router.push(appPaths.dashboard.livePlan(plan.id).href)}
+                    onClick={() => router.push(appPaths.dashboard.plan(plan.id).href)}
                   >
                     编辑
                   </Button>

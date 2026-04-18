@@ -10,8 +10,9 @@ from typing import Any
 from src.live.director_agent import DirectorAgent
 from src.live.knowledge_base import KnowledgeBase
 from src.live.script_runner import ScriptRunner
-from src.live.tts_player import TTSPlayer, TtsItem
+from src.live.tts_player import PcmItem, TTSPlayer, TtsItem
 from src.shared.event_bus import EventBus
+from src.shared.ordered_item_store import OrderedItemStore
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +45,64 @@ def _build_knowledge_ctx_from_plan(product: dict) -> str:
     return "\n".join(lines)
 
 
+def _publish_tts_queued(bus, item: TtsItem) -> None:
+    bus.publish({
+        "type": "tts_queued",
+        "id": item.id,
+        "content": item.text,
+        "speech_prompt": item.speech_prompt,
+        "stage": item.stage,
+        "urgent": item.urgent,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_synthesized(bus, item: PcmItem) -> None:
+    bus.publish({
+        "type": "tts_synthesized",
+        "id": item.id,
+        "stage": item.stage,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_removed(bus, item_id: str, stage: str) -> None:
+    bus.publish({
+        "type": "tts_removed",
+        "id": item_id,
+        "stage": stage,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_edited(bus, new_item: TtsItem, old_id: str | None, stage: str) -> None:
+    """Publish tts_edited.
+
+    - In-place edit: old_id is None. Event's id == new_id == new_item.id.
+    - Id swap (synth→pending): old_id is the pre-swap id. Event's id = old_id,
+      new_id = new_item.id.
+    """
+    effective_id = old_id if old_id is not None else new_item.id
+    bus.publish({
+        "type": "tts_edited",
+        "id": effective_id,
+        "new_id": new_item.id,
+        "content": new_item.text,
+        "speech_prompt": new_item.speech_prompt,
+        "stage": stage,
+        "ts": time.time(),
+    })
+
+
+def _publish_tts_reordered(bus, stage: str, ids: list[str]) -> None:
+    bus.publish({
+        "type": "tts_reordered",
+        "stage": stage,
+        "ids": ids,
+        "ts": time.time(),
+    })
+
+
 class SessionAlreadyRunningError(RuntimeError):
     pass
 
@@ -63,7 +122,7 @@ class SessionManager:
         self._script_runner: ScriptRunner | None = None
         self._tts_player: TTSPlayer | None = None
         self._director: DirectorAgent | None = None
-        self._tts_queue: queue.Queue | None = None
+        self._tts_queue: OrderedItemStore | None = None
         self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
         self._strategy: str = "immediate"
@@ -162,13 +221,72 @@ class SessionManager:
             player = self._tts_player
         if q is None or player is None:
             return []
-        text_items = [i for i in list(q.queue) if isinstance(i, TtsItem)]
-        pcm_items = [i for i in list(player._pcm_queue.queue) if hasattr(i, "id")]
+        text_items = [i for i in q.snapshot() if isinstance(i, TtsItem)]
+        pcm_items = [i for i in player._pcm_queue.snapshot() if hasattr(i, "id")]
         all_items = text_items + pcm_items
         return [
-            {"id": item.id, "content": item.text, "speech_prompt": item.speech_prompt}
+            {
+                "id": item.id,
+                "content": item.text,
+                "speech_prompt": item.speech_prompt,
+                "stage": item.stage,
+                "urgent": item.urgent,
+            }
             for item in all_items
         ]
+
+    def remove_tts(self, item_id: str) -> bool:
+        from src.live.tts_mutations import remove_by_id
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        result = remove_by_id(q, player._pcm_queue, player.get_in_flight_ref(), item_id)
+        if result is None:
+            return False
+        stage, _ = result
+        _publish_tts_removed(self._bus, item_id, stage)
+        return True
+
+    def edit_tts(self, item_id: str, new_text: str, new_speech_prompt) -> bool:
+        from src.live.tts_mutations import edit_by_id
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        result = edit_by_id(q, player._pcm_queue, item_id, new_text, new_speech_prompt)
+        if result is None:
+            return False
+        stage, new_item, old_id = result
+        _publish_tts_edited(self._bus, new_item, old_id, stage)
+        return True
+
+    def reorder_tts(self, stage: str, ids: list[str]) -> bool:
+        from src.live.tts_mutations import reorder_stage
+
+        with self._lock:
+            if not self._running:
+                return False
+            q = self._tts_queue
+            player = self._tts_player
+        if q is None or player is None:
+            return False
+
+        ok = reorder_stage(q, player._pcm_queue, stage, ids)
+        if not ok:
+            return False
+        _publish_tts_reordered(self._bus, stage, ids)
+        return True
 
     def get_strategy(self) -> str:
         with self._lock:
@@ -188,7 +306,7 @@ class SessionManager:
         with self._lock:
             return self._active_plan
 
-    def get_tts_queue(self) -> "queue.Queue | None":
+    def get_tts_queue(self) -> "OrderedItemStore | None":
         with self._lock:
             return self._tts_queue if self._running else None
 
@@ -203,7 +321,7 @@ class SessionManager:
         mock: bool,
         project: str | None,
     ) -> None:
-        tts_queue: queue.Queue[tuple[str, str | None]] = queue.Queue()
+        tts_queue: OrderedItemStore[TtsItem] = OrderedItemStore()
         urgent_queue: queue.Queue = queue.Queue(maxsize=10)
         self._tts_queue = tts_queue
         self._urgent_queue = urgent_queue
@@ -266,13 +384,10 @@ class SessionManager:
             return []  # No Orchestrator — DanmakuManager wires this separately
 
         def _on_queued(item: TtsItem) -> None:
-            self._bus.publish({
-                "type": "tts_queued",
-                "id": item.id,
-                "content": item.text,
-                "speech_prompt": item.speech_prompt,
-                "ts": time.time(),
-            })
+            _publish_tts_queued(self._bus, item)
+
+        def _on_synthesized(item: PcmItem) -> None:
+            _publish_tts_synthesized(self._bus, item)
 
         def _on_play(item: TtsItem) -> None:
             self._bus.publish({
@@ -294,6 +409,7 @@ class SessionManager:
             tts_queue,
             speak_fn=speak_fn,
             on_queued=_on_queued,
+            on_synthesized=_on_synthesized,
             on_play=_on_play,
             on_done=_on_done,
             google_cloud_project=project,
