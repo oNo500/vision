@@ -274,6 +274,15 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
           value={plan.name}
           onChange={(e) => savePlan({ ...plan, name: e.target.value })}
         />
+        <div className="flex flex-1 justify-end">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => router.push(appPaths.dashboard.planRag(id).href)}
+          >
+            话术库
+          </Button>
+        </div>
       </div>
 
       {/* body */}

@@ -14,5 +14,8 @@ export const appPaths = {
     plan: (id: string) => ({
       href: `/plans/${id}`,
     }),
+    planRag: (id: string) => ({
+      href: `/plans/${id}/rag`,
+    }),
   },
 }
