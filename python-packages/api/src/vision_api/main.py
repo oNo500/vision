@@ -41,6 +41,12 @@ def create_app() -> FastAPI:
 
     app = FastAPI(title=settings.app_name, lifespan=lifespan)
 
+    from vision_api.api_key import ApiKeyMiddleware
+    app.add_middleware(
+        ApiKeyMiddleware, api_key=settings.vision_api_key,
+        protected_prefixes=("/api/intelligence/",),
+    )
+
     app.add_middleware(
         CORSMiddleware,
         allow_origins=["http://localhost:3000", "http://localhost:3001"],
