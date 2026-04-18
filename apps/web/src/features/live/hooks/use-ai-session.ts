@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
-import { toast } from '@workspace/ui/components/sonner'
-
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 type AiSessionState = {
   running: boolean
@@ -23,10 +21,8 @@ export function useAiSession() {
   const [error, setError] = useState<string | null>(null)
 
   const fetchState = useCallback(async () => {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/session/state`)
-      if (res.ok) setState(await res.json())
-    } catch { /* backend unreachable */ }
+    const res = await apiFetch<AiSessionState>('live/session/state', { silent: true })
+    if (res.ok) setState(res.data)
   }, [])
 
   useEffect(() => {
@@ -35,51 +31,30 @@ export function useAiSession() {
     return () => clearInterval(id)
   }, [fetchState])
 
-  const start = useCallback(async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/session/start`, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({}),
-      })
-      const data = await res.json()
-      if (!res.ok) {
-        const detail = (data as { detail?: unknown }).detail
-        const msg = typeof detail === 'string' ? detail : 'Failed to start'
-        setError(msg)
-        toast.error(msg)
-      } else {
-        setState(data as AiSessionState)
+  const transition = useCallback(
+    async (path: string, fallback: string, body?: Record<string, unknown>) => {
+      setLoading(true)
+      setError(null)
+      try {
+        const res = await apiFetch<AiSessionState>(path, {
+          method: 'POST',
+          body,
+          fallbackError: fallback,
+        })
+        if (res.ok) {
+          setState(res.data)
+        } else {
+          setError(fallback)
+        }
+      } finally {
+        setLoading(false)
       }
-    } catch {
-      setError('Cannot reach backend')
-      toast.error('Cannot reach backend')
-    }
-    finally { setLoading(false) }
-  }, [])
+    },
+    [],
+  )
 
-  const stop = useCallback(async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/session/stop`, { method: 'POST' })
-      const data = await res.json()
-      if (!res.ok) {
-        const detail = (data as { detail?: unknown }).detail
-        const msg = typeof detail === 'string' ? detail : 'Failed to stop'
-        setError(msg)
-        toast.error(msg)
-      } else {
-        setState(data as AiSessionState)
-      }
-    } catch {
-      setError('Cannot reach backend')
-      toast.error('Cannot reach backend')
-    }
-    finally { setLoading(false) }
-  }, [])
+  const start = useCallback(() => transition('live/session/start', 'Failed to start', {}), [transition])
+  const stop = useCallback(() => transition('live/session/stop', 'Failed to stop'), [transition])
 
   return { state, loading, error, start, stop }
 }

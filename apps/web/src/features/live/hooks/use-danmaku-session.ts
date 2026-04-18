@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
-import { toast } from '@workspace/ui/components/sonner'
-
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 type DanmakuSessionState = {
   running: boolean
@@ -17,10 +15,8 @@ export function useDanmakuSession() {
   const [error, setError] = useState<string | null>(null)
 
   const fetchState = useCallback(async () => {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/danmaku/state`)
-      if (res.ok) setState(await res.json())
-    } catch { /* backend unreachable */ }
+    const res = await apiFetch<DanmakuSessionState>('live/danmaku/state', { silent: true })
+    if (res.ok) setState(res.data)
   }, [])
 
   useEffect(() => {
@@ -29,51 +25,30 @@ export function useDanmakuSession() {
     return () => clearInterval(id)
   }, [fetchState])
 
-  const start = useCallback(async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/danmaku/start`, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({}),
-      })
-      const data = await res.json()
-      if (!res.ok) {
-        const detail = (data as { detail?: unknown }).detail
-        const msg = typeof detail === 'string' ? detail : 'Failed to start danmaku'
-        setError(msg)
-        toast.error(msg)
-      } else {
-        setState(data as DanmakuSessionState)
+  const transition = useCallback(
+    async (path: string, fallback: string, body?: Record<string, unknown>) => {
+      setLoading(true)
+      setError(null)
+      try {
+        const res = await apiFetch<DanmakuSessionState>(path, {
+          method: 'POST',
+          body,
+          fallbackError: fallback,
+        })
+        if (res.ok) {
+          setState(res.data)
+        } else {
+          setError(fallback)
+        }
+      } finally {
+        setLoading(false)
       }
-    } catch {
-      setError('Cannot reach backend')
-      toast.error('Cannot reach backend')
-    }
-    finally { setLoading(false) }
-  }, [])
+    },
+    [],
+  )
 
-  const stop = useCallback(async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/danmaku/stop`, { method: 'POST' })
-      const data = await res.json()
-      if (!res.ok) {
-        const detail = (data as { detail?: unknown }).detail
-        const msg = typeof detail === 'string' ? detail : 'Failed to stop danmaku'
-        setError(msg)
-        toast.error(msg)
-      } else {
-        setState(data as DanmakuSessionState)
-      }
-    } catch {
-      setError('Cannot reach backend')
-      toast.error('Cannot reach backend')
-    }
-    finally { setLoading(false) }
-  }, [])
+  const start = useCallback(() => transition('live/danmaku/start', 'Failed to start danmaku', {}), [transition])
+  const stop = useCallback(() => transition('live/danmaku/stop', 'Failed to stop danmaku'), [transition])
 
   return { state, loading, error, start, stop }
 }

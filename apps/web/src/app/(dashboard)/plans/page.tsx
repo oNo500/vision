@@ -7,31 +7,25 @@ import { toast } from '@workspace/ui/components/sonner'
 
 import { PageHeader } from '@/components/page-header'
 import { appPaths } from '@/config/app-paths'
-import { env } from '@/config/env'
 import { usePlans } from '@/features/live/hooks/use-plans'
+import { apiFetch } from '@/lib/api-fetch'
 
 export default function LivePlansPage() {
   const router = useRouter()
   const { plans, loading, deletePlan, loadPlan } = usePlans()
 
   async function handleCreate() {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans`, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          name: '新方案',
-          product: { name: '', description: '', price: '', highlights: [], faq: [] },
-          persona: { name: '', style: '', catchphrases: [], forbidden_words: [] },
-          script: { segments: [] },
-        }),
-      })
-      if (!res.ok) { toast.error('Failed to create plan'); return }
-      const plan = await res.json()
-      router.push(appPaths.dashboard.plan((plan as { id: string }).id).href)
-    } catch {
-      toast.error('Cannot reach backend')
-    }
+    const res = await apiFetch<{ id: string }>('live/plans', {
+      method: 'POST',
+      body: {
+        name: '新方案',
+        product: { name: '', description: '', price: '', highlights: [], faq: [] },
+        persona: { name: '', style: '', catchphrases: [], forbidden_words: [] },
+        script: { segments: [] },
+      },
+      fallbackError: 'Failed to create plan',
+    })
+    if (res.ok) router.push(appPaths.dashboard.plan(res.data.id).href)
   }
 
   async function handleLoad(id: string) {

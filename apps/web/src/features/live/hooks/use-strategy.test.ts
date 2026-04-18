@@ -3,71 +3,55 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { useStrategy } from './use-strategy'
 
-vi.mock('@/config/env', () => ({
-  env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
-}))
-
 vi.mock('@workspace/ui/components/sonner', () => ({
   toast: { error: vi.fn() },
+}))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
 }))
 
 describe('useStrategy', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    vi.stubGlobal('fetch', vi.fn())
   })
 
-  it('shows error toast when setStrategy POST fails with non-ok response', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
+  it('loads initial strategy on mount', async () => {
+    mockApiFetch.mockResolvedValueOnce({
+      ok: true, data: { strategy: 'intelligent' }, status: 200,
+    })
+    const { result } = renderHook(() => useStrategy())
+    await waitFor(() => expect(result.current.strategy).toBe('intelligent'))
+  })
 
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ strategy: 'immediate' }) } as Response)
-      .mockResolvedValueOnce({ ok: false, json: async () => ({}) } as Response)
+  it('does not change strategy when POST fails', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: { strategy: 'immediate' }, status: 200 })
+      .mockResolvedValueOnce({ ok: false, status: 400 })
 
     const { result } = renderHook(() => useStrategy())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(result.current.strategy).toBe('immediate'))
 
     await act(async () => {
       await result.current.setStrategy('intelligent')
     })
 
-    expect(toast.error).toHaveBeenCalledOnce()
+    expect(result.current.strategy).toBe('immediate')
   })
 
-  it('shows error toast when setStrategy POST throws (network error)', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ strategy: 'immediate' }) } as Response)
-      .mockRejectedValueOnce(new Error('Network error'))
+  it('updates strategy when POST succeeds', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: { strategy: 'immediate' }, status: 200 })
+      .mockResolvedValueOnce({ ok: true, data: { strategy: 'intelligent' }, status: 200 })
 
     const { result } = renderHook(() => useStrategy())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(result.current.strategy).toBe('immediate'))
 
     await act(async () => {
       await result.current.setStrategy('intelligent')
     })
 
-    expect(toast.error).toHaveBeenCalledOnce()
-  })
-
-  it('does not show error toast when setStrategy succeeds', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ strategy: 'immediate' }) } as Response)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ strategy: 'intelligent' }) } as Response)
-
-    const { result } = renderHook(() => useStrategy())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
-
-    await act(async () => {
-      await result.current.setStrategy('intelligent')
-    })
-
-    expect(toast.error).not.toHaveBeenCalled()
+    expect(result.current.strategy).toBe('intelligent')
   })
 })

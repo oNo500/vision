@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
-import { toast } from '@workspace/ui/components/sonner'
-
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 export type PlanSummary = {
   id: string
@@ -17,10 +15,8 @@ export function usePlans() {
   const [loading, setLoading] = useState(false)
 
   const fetchPlans = useCallback(async () => {
-    try {
-      const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans`)
-      if (res.ok) setPlans(await res.json())
-    } catch { /* backend unreachable */ }
+    const res = await apiFetch<PlanSummary[]>('live/plans', { silent: true })
+    if (res.ok) setPlans(res.data)
   }, [])
 
   useEffect(() => {
@@ -31,16 +27,11 @@ export function usePlans() {
     async (id: string) => {
       setLoading(true)
       try {
-        const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans/${id}`, {
+        const res = await apiFetch<unknown>(`live/plans/${id}`, {
           method: 'DELETE',
+          fallbackError: 'Failed to delete plan',
         })
-        if (!res.ok) {
-          toast.error('Failed to delete plan')
-        } else {
-          await fetchPlans()
-        }
-      } catch {
-        toast.error('Cannot reach backend')
+        if (res.ok) await fetchPlans()
       } finally {
         setLoading(false)
       }
@@ -52,19 +43,11 @@ export function usePlans() {
     async (id: string): Promise<boolean> => {
       setLoading(true)
       try {
-        const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/plans/${id}/load`, {
+        const res = await apiFetch<unknown>(`live/plans/${id}/load`, {
           method: 'POST',
+          fallbackError: 'Failed to load plan',
         })
-        if (!res.ok) {
-          const data = await res.json()
-          const detail = (data as { detail?: unknown }).detail
-          toast.error(typeof detail === 'string' ? detail : 'Failed to load plan')
-          return false
-        }
-        return true
-      } catch {
-        toast.error('Cannot reach backend')
-        return false
+        return res.ok
       } finally {
         setLoading(false)
       }

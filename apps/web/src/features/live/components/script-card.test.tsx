@@ -5,14 +5,13 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { ScriptState } from '../hooks/use-live-stream'
 import { ScriptCard } from './script-card'
 
-vi.mock('@/config/env', () => ({
-  env: {
-    NEXT_PUBLIC_API_URL: 'http://localhost:8000',
-  },
-}))
-
 vi.mock('@workspace/ui/components/sonner', () => ({
   toast: { error: vi.fn() },
+}))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
 }))
 
 const mockScriptState: ScriptState = {
@@ -29,7 +28,7 @@ const mockScriptState: ScriptState = {
 describe('ScriptCard', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true }))
+    mockApiFetch.mockResolvedValue({ ok: true, data: {}, status: 200 })
   })
 
   it('renders "未开始" when scriptState is null', () => {
@@ -64,40 +63,25 @@ describe('ScriptCard', () => {
     expect(progressBar).toHaveStyle({ width: '0%' })
   })
 
-  it('calls fetch with POST to correct URL when next button clicked', async () => {
+  it('calls apiFetch with POST to correct path when next button clicked', async () => {
     const user = userEvent.setup()
     render(<ScriptCard scriptState={mockScriptState} running={true} />)
     const nextButton = screen.getByRole('button', { name: /下一段/ })
     await user.click(nextButton)
-    expect(fetch).toHaveBeenCalledWith(
-      'http://localhost:8000/live/script/next',
-      { method: 'POST' },
+    expect(mockApiFetch).toHaveBeenCalledWith(
+      'live/script/next',
+      expect.objectContaining({ method: 'POST' }),
     )
   })
 
-  it('shows error toast when script navigation fails with non-ok response', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
+  it('calls apiFetch when prev button clicked', async () => {
     const user = userEvent.setup()
-
-    vi.mocked(fetch).mockResolvedValue({ ok: false } as Response)
-
-    render(<ScriptCard scriptState={mockScriptState} running={true} />)
-    const nextButton = screen.getByRole('button', { name: /下一段/ })
-    await user.click(nextButton)
-
-    expect(toast.error).toHaveBeenCalledOnce()
-  })
-
-  it('shows error toast when script navigation throws (network error)', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-    const user = userEvent.setup()
-
-    vi.mocked(fetch).mockRejectedValue(new Error('Network error'))
-
     render(<ScriptCard scriptState={mockScriptState} running={true} />)
     const prevButton = screen.getByRole('button', { name: /上一段/ })
     await user.click(prevButton)
-
-    expect(toast.error).toHaveBeenCalledOnce()
+    expect(mockApiFetch).toHaveBeenCalledWith(
+      'live/script/prev',
+      expect.objectContaining({ method: 'POST' }),
+    )
   })
 })

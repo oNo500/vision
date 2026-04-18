@@ -3,100 +3,58 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { useAiSession } from './use-ai-session'
 
-vi.mock('@/config/env', () => ({
-  env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
-}))
-
 vi.mock('@workspace/ui/components/sonner', () => ({
   toast: { error: vi.fn() },
+}))
+
+const mockApiFetch = vi.fn()
+vi.mock('@/lib/api-fetch', () => ({
+  apiFetch: (...args: unknown[]) => mockApiFetch(...args),
 }))
 
 describe('useAiSession', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: async () => ({ running: false }),
-    }))
+    mockApiFetch.mockResolvedValue({ ok: true, data: { running: false }, status: 200 })
   })
 
-  it('shows error toast when start fails with non-ok response', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: false }) } as Response)
-      .mockResolvedValueOnce({ ok: false, json: async () => ({ detail: 'No script loaded' }) } as Response)
+  it('sets error state when start fails', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: { running: false }, status: 200 })
+      .mockResolvedValueOnce({ ok: false, status: 400 })
 
     const { result } = renderHook(() => useAiSession())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(mockApiFetch).toHaveBeenCalled())
 
     await act(async () => { await result.current.start() })
 
-    expect(toast.error).toHaveBeenCalledOnce()
+    expect(result.current.error).toBe('Failed to start')
   })
 
-  it('shows error toast when start throws (network error)', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: false }) } as Response)
-      .mockRejectedValueOnce(new Error('Network error'))
+  it('clears error when start succeeds', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: { running: false }, status: 200 })
+      .mockResolvedValueOnce({ ok: true, data: { running: true }, status: 200 })
 
     const { result } = renderHook(() => useAiSession())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(mockApiFetch).toHaveBeenCalled())
 
     await act(async () => { await result.current.start() })
 
-    expect(toast.error).toHaveBeenCalledOnce()
+    expect(result.current.error).toBeNull()
+    expect(result.current.state.running).toBe(true)
   })
 
-  it('shows error toast when stop fails with non-ok response', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: true }) } as Response)
-      .mockResolvedValueOnce({ ok: false, json: async () => ({ detail: 'Not running' }) } as Response)
+  it('sets error state when stop fails', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: { running: true }, status: 200 })
+      .mockResolvedValueOnce({ ok: false, status: 400 })
 
     const { result } = renderHook(() => useAiSession())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(mockApiFetch).toHaveBeenCalled())
 
     await act(async () => { await result.current.stop() })
 
-    expect(toast.error).toHaveBeenCalledOnce()
-  })
-
-  it('shows error toast when stop throws (network error)', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: true }) } as Response)
-      .mockRejectedValueOnce(new Error('Network error'))
-
-    const { result } = renderHook(() => useAiSession())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
-
-    await act(async () => { await result.current.stop() })
-
-    expect(toast.error).toHaveBeenCalledOnce()
-  })
-
-  it('does not show error toast when start succeeds', async () => {
-    const { toast } = await import('@workspace/ui/components/sonner')
-
-    vi.mocked(fetch)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: false }) } as Response)
-      .mockResolvedValueOnce({ ok: true, json: async () => ({ running: true }) } as Response)
-
-    const { result } = renderHook(() => useAiSession())
-
-    await waitFor(() => expect(fetch).toHaveBeenCalledTimes(1))
-
-    await act(async () => { await result.current.start() })
-
-    expect(toast.error).not.toHaveBeenCalled()
+    expect(result.current.error).toBe('Failed to stop')
   })
 })

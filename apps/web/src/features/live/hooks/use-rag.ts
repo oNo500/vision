@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { toast } from '@workspace/ui/components/sonner'
 
-import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 export type RagSource = {
   rel_path: string
@@ -48,7 +48,7 @@ export const CATEGORY_LABELS: Record<RagCategory, string> = {
 const BUILD_POLL_INTERVAL_MS = 1500
 
 function base(planId: string): string {
-  return `${env.NEXT_PUBLIC_API_URL}/live/plans/${planId}/rag`
+  return `live/plans/${planId}/rag`
 }
 
 export function useRag(planId: string) {
@@ -62,30 +62,24 @@ export function useRag(planId: string) {
   const pollTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const refetch = useCallback(async () => {
-    try {
-      const res = await fetch(`${base(planId)}/`)
-      if (res.ok) setStatus(await res.json())
-    } catch { /* backend unreachable */ }
+    const res = await apiFetch<RagStatus>(`${base(planId)}/`, { silent: true })
+    if (res.ok) setStatus(res.data)
   }, [planId])
 
   const refetchBuildStatus = useCallback(async () => {
-    try {
-      const res = await fetch(`${base(planId)}/rebuild/status`)
-      if (res.ok) {
-        const next = (await res.json()) as RagBuildStatus
-        // Shallow-equal guard: avoid re-renders from 1.5s polling that fetches
-        // the same object every tick while nothing is running.
-        setBuildStatus((prev) =>
-          prev.running === next.running
-            && prev.last_build_time === next.last_build_time
-            && prev.last_error === next.last_error
-            ? prev
-            : next,
-        )
-        return next
-      }
-    } catch { /* backend unreachable */ }
-    return null
+    const res = await apiFetch<RagBuildStatus>(`${base(planId)}/rebuild/status`, { silent: true })
+    if (!res.ok) return null
+    const next = res.data
+    // Shallow-equal guard: avoid re-renders from 1.5s polling that fetches
+    // the same object every tick while nothing is running.
+    setBuildStatus((prev) =>
+      prev.running === next.running
+        && prev.last_build_time === next.last_build_time
+        && prev.last_error === next.last_error
+        ? prev
+        : next,
+    )
+    return next
   }, [planId])
 
   useEffect(() => {
@@ -122,28 +116,23 @@ export function useRag(planId: string) {
 
   const uploadOne = useCallback(
     async (file: File, category: RagCategory): Promise<boolean> => {
-      try {
-        const form = new FormData()
-        form.append('category', category)
-        form.append('file', file)
-        const res = await fetch(`${base(planId)}/files`, {
+      const form = new FormData()
+      form.append('category', category)
+      form.append('file', file)
+      const res = await apiFetch<{ overwritten: boolean; rel_path: string }>(
+        `${base(planId)}/files`,
+        {
           method: 'POST',
           body: form,
-        })
-        if (!res.ok) {
-          const detail = await res.json().catch(() => null)
-          toast.error(
-            typeof detail?.detail === 'string' ? detail.detail : `Upload failed: ${file.name}`,
-          )
-          return false
-        }
-        const body = (await res.json()) as { overwritten: boolean; rel_path: string }
-        toast.success(body.overwritten ? `Overwrote ${body.rel_path}` : `Uploaded ${body.rel_path}`)
-        return true
-      } catch {
-        toast.error('Cannot reach backend')
-        return false
+          fallbackError: `Upload failed: ${file.name}`,
+        },
+      )
+      if (res.ok) {
+        toast.success(
+          res.data.overwritten ? `Overwrote ${res.data.rel_path}` : `Uploaded ${res.data.rel_path}`,
+        )
       }
+      return res.ok
     },
     [planId],
   )
@@ -168,20 +157,15 @@ export function useRag(planId: string) {
     async (category: RagCategory, filename: string) => {
       setLoading(true)
       try {
-        const res = await fetch(
+        const res = await apiFetch<unknown>(
           `${base(planId)}/files/${category}/${encodeURIComponent(filename)}`,
-          { method: 'DELETE' },
+          { method: 'DELETE', fallbackError: 'Delete failed' },
         )
-        if (!res.ok) {
-          toast.error('Delete failed')
-          return false
+        if (res.ok) {
+          toast.success(`Deleted ${category}/${filename}`)
+          await refetch()
         }
-        toast.success(`Deleted ${category}/${filename}`)
-        await refetch()
-        return true
-      } catch {
-        toast.error('Cannot reach backend')
-        return false
+        return res.ok
       } finally {
         setLoading(false)
       }
@@ -192,21 +176,18 @@ export function useRag(planId: string) {
   const rebuild = useCallback(async () => {
     setLoading(true)
     try {
-      const res = await fetch(`${base(planId)}/rebuild`, { method: 'POST' })
-      if (res.status === 409) {
-        toast.info('Build already running')
-        return false
-      }
+      const res = await apiFetch<unknown>(`${base(planId)}/rebuild`, {
+        method: 'POST',
+        silent: true,
+      })
       if (!res.ok) {
-        toast.error('Failed to start rebuild')
+        if (res.status === 409) toast.info('Build already running')
+        else toast.error('Failed to start rebuild')
         return false
       }
       // Optimistically flip to running so polling kicks in.
       setBuildStatus((prev) => ({ ...prev, running: true, last_error: null }))
       return true
-    } catch {
-      toast.error('Cannot reach backend')
-      return false
     } finally {
       setLoading(false)
     }

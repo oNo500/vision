@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 
 import { env } from '@/config/env'
+import { apiFetch } from '@/lib/api-fetch'
 
 export type LiveEvent = {
   type: string
@@ -226,32 +227,26 @@ export function useLiveStream() {
 
     es.onopen = async () => {
       setConnected(true)
-      try {
-        const res = await fetch(`${env.NEXT_PUBLIC_API_URL}/live/tts/queue/snapshot`)
-        if (res.ok) {
-          const snap = (await res.json()) as Array<{
-            id: string
-            content: string
-            speech_prompt: string | null
-            stage: PipelineStage
-            urgent: boolean
-          }>
-          setPipeline((prev) => {
-            const keep = prev.filter((p) => p.stage === 'playing' || p.stage === 'done')
-            const fresh: PipelineItem[] = snap.map((s) => ({
-              id: s.id,
-              content: s.content,
-              speech_prompt: s.speech_prompt,
-              stage: s.stage,
-              urgent: s.urgent,
-              ts: Date.now() / 1000,
-            }))
-            return [...keep, ...fresh]
-          })
-        }
-      } catch {
-        // ignore; SSE events will catch up
-      }
+      const res = await apiFetch<Array<{
+        id: string
+        content: string
+        speech_prompt: string | null
+        stage: PipelineStage
+        urgent: boolean
+      }>>('live/tts/queue/snapshot', { silent: true })
+      if (!res.ok) return   // SSE events will catch up
+      setPipeline((prev) => {
+        const keep = prev.filter((p) => p.stage === 'playing' || p.stage === 'done')
+        const fresh: PipelineItem[] = res.data.map((s) => ({
+          id: s.id,
+          content: s.content,
+          speech_prompt: s.speech_prompt,
+          stage: s.stage,
+          urgent: s.urgent,
+          ts: Date.now() / 1000,
+        }))
+        return [...keep, ...fresh]
+      })
     }
 
     es.onmessage = (e) => {
