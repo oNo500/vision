@@ -10,17 +10,14 @@ from __future__ import annotations
 import queue
 import threading
 import time
-from typing import Generic, Protocol, TypeVar
+from typing import Protocol
 
 
 class _HasId(Protocol):
     id: str
 
 
-T = TypeVar("T", bound=_HasId)
-
-
-class OrderedItemStore(Generic[T]):
+class OrderedItemStore[T: _HasId]:
     """List-backed queue with optional maxsize and blocking get/put."""
 
     def __init__(self, maxsize: int = 0) -> None:
