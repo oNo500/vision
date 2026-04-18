@@ -31,6 +31,9 @@ pnpm-debug.log*
 # Output / data (project-specific)
 output/*
 !output/.gitkeep
+!output/transcripts/
+output/transcripts/*
+!output/transcripts/.gitkeep
 data/*
 !data/.gitkeep
 
