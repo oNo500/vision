@@ -247,6 +247,7 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
   }
 
   async function handleSaveAndLoad() {
+    if (!plan) return
     await savePlan(plan)
     const ok = await loadPlan(id)
     if (ok) router.push(appPaths.dashboard.live.href)
