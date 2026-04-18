@@ -4,7 +4,6 @@ from __future__ import annotations
 import asyncio
 import json
 from pathlib import Path
-from typing import Annotated, Literal
 
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
@@ -53,7 +52,9 @@ async def create_job(body: JobCreate, request: Request) -> dict:
             )
             try:
                 await run_video(ctx)
-            except Exception:
+            except Exception as exc:
+                import structlog
+                structlog.get_logger().error("video_pipeline_error", video_id=vid, error=str(exc))
                 continue
         await st.set_job_status(job_id, "done")
 
@@ -99,13 +100,18 @@ async def job_events(job_id: str, request: Request) -> EventSourceResponse:
     last_event_id = request.headers.get("last-event-id")
 
     async def generator():
-        last_seen = int(last_event_id) if last_event_id else 0
+        try:
+            last_seen = int(last_event_id) if last_event_id else 0
+        except ValueError:
+            last_seen = 0
         while True:
             conn = st._conn
             cur = await conn.execute(
-                "SELECT rowid, video_id, stage, status, finished_at "
-                "FROM pipeline_runs WHERE rowid > ? ORDER BY rowid",
-                (last_seen,))
+                "SELECT pr.rowid, pr.video_id, pr.stage, pr.status, pr.finished_at "
+                "FROM pipeline_runs pr "
+                "JOIN asr_job_videos ajv ON pr.video_id = ajv.video_id "
+                "WHERE ajv.job_id = ? AND pr.rowid > ? ORDER BY pr.rowid",
+                (job_id, last_seen))
             rows = await cur.fetchall()
             for r in rows:
                 last_seen = r[0]
