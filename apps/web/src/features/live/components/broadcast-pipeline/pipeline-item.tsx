@@ -14,6 +14,7 @@ import { DropIndicator } from '@atlaskit/pragmatic-drag-and-drop-react-drop-indi
 import { Button } from '@workspace/ui/components/button'
 import { cn } from '@workspace/ui/lib/utils'
 import { GripVerticalIcon, PencilIcon, TrashIcon } from 'lucide-react'
+import { motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 
 import type { PipelineItem as PipelineItemType } from '@/features/live/hooks/use-live-stream'
@@ -73,7 +74,8 @@ export function PipelineItem({ item, index, stage, onRemove, onEdit }: Props) {
 
   return (
     <>
-      <div
+      <motion.div
+        layoutId={item.id}
         ref={cardRef}
         className={cn(
           'group relative rounded-md border px-3 py-2 text-sm',
@@ -121,7 +123,7 @@ export function PipelineItem({ item, index, stage, onRemove, onEdit }: Props) {
             <TrashIcon className="size-3" />
           </Button>
         </div>
-      </div>
+      </motion.div>
       {editing && (
         <PipelineItemEditor
           item={item}

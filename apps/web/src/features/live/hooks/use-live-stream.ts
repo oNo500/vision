@@ -348,6 +348,14 @@ export function useLiveStream() {
       })),
     [pending, synthesized],
   )
+  const nowPlayingItem = useMemo(
+    () => pipeline.find((p) => p.stage === 'playing') ?? null,
+    [pipeline],
+  )
+  const urgentCount = useMemo(
+    () => pipeline.filter((p) => p.urgent && (p.stage === 'pending' || p.stage === 'synthesized')).length,
+    [pipeline],
+  )
 
   // Persist history so cached outputs survive a full page reload.
   useEffect(() => {
@@ -361,11 +369,13 @@ export function useLiveStream() {
     onlineCount,
     aiOutputs,
     nowPlaying,
+    nowPlayingItem,
     ttsQueue,
     scriptState,
     pending,
     synthesized,
     history,
     pipeline,
+    urgentCount,
   }
 }

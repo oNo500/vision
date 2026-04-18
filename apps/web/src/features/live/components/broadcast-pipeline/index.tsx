@@ -1,5 +1,7 @@
 'use client'
 
+import { LayoutGroup } from 'motion/react'
+
 import type { PipelineItem } from '@/features/live/hooks/use-live-stream'
 import { useTtsMutations } from '@/features/live/hooks/use-tts-mutations'
 
@@ -41,12 +43,14 @@ export function BroadcastPipeline({
         synthesizedCount={synthesized.length}
         urgentCount={urgentCount}
       />
-      <div className="flex min-h-0 flex-1 flex-col overflow-auto">
-        <StageSection title="待合成" stage="pending" items={pending} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
-        <StageSection title="已合成" stage="synthesized" items={synthesized} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
-        <NowPlayingCard item={nowPlayingItem} />
-        <HistorySection items={history} />
-      </div>
+      <LayoutGroup>
+        <div className="flex min-h-0 flex-1 flex-col overflow-auto">
+          <StageSection title="待合成" stage="pending" items={pending} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
+          <StageSection title="已合成" stage="synthesized" items={synthesized} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
+          <NowPlayingCard item={nowPlayingItem} />
+          <HistorySection items={history} />
+        </div>
+      </LayoutGroup>
     </div>
   )
 }
