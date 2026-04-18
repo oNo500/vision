@@ -18,9 +18,11 @@ type Props = {
   onRemove: (id: string) => void
   onEdit: (id: string, text: string, speech_prompt: string | null) => void
   onReorder: (stage: Stage, newIds: string[]) => void
+  /** Fixed pixel height for the scrollable list region. Keeps layout stable as items come and go. */
+  listHeight: number
 }
 
-export function StageSection({ title, stage, items, onRemove, onEdit, onReorder }: Props) {
+export function StageSection({ title, stage, items, onRemove, onEdit, onReorder, listHeight }: Props) {
   useEffect(() => {
     return monitorForElements({
       canMonitor: ({ source }) =>
@@ -42,16 +44,19 @@ export function StageSection({ title, stage, items, onRemove, onEdit, onReorder 
   }, [items, onReorder, stage])
 
   return (
-    <section className="flex flex-col gap-1.5 p-3">
+    <section className="flex shrink-0 flex-col gap-1.5 p-3">
       <div className="flex items-center justify-between text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
         <span>{title}</span>
         <span>{items.length}</span>
       </div>
-      {items.length === 0 ? (
-        <p className="text-[11px] text-muted-foreground">—</p>
-      ) : (
-        <div className="flex flex-col gap-1.5">
-          {items.map((_, displayIdx) => {
+      <div
+        className="flex flex-col gap-1.5 overflow-y-auto"
+        style={{ height: listHeight }}
+      >
+        {items.length === 0 ? (
+          <p className="text-[11px] text-muted-foreground">—</p>
+        ) : (
+          items.map((_, displayIdx) => {
             const dataIdx = items.length - 1 - displayIdx
             const item = items[dataIdx]
             if (!item) return null
@@ -65,9 +70,9 @@ export function StageSection({ title, stage, items, onRemove, onEdit, onReorder 
                 onEdit={onEdit}
               />
             )
-          })}
-        </div>
-      )}
+          })
+        )}
+      </div>
     </section>
   )
 }

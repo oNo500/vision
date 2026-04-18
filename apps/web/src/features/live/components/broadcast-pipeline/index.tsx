@@ -44,11 +44,30 @@ export function BroadcastPipeline({
         urgentCount={urgentCount}
       />
       <LayoutGroup>
-        <div className="flex min-h-0 flex-1 flex-col overflow-auto">
-          <StageSection title="待合成" stage="pending" items={pending} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
-          <StageSection title="已合成" stage="synthesized" items={synthesized} onRemove={onRemove} onEdit={onEdit} onReorder={onReorder} />
+        {/* Fixed-row layout so operating on one stage doesn't shift others */}
+        <div className="flex min-h-0 flex-1 flex-col">
+          <StageSection
+            title="待合成"
+            stage="pending"
+            items={pending}
+            onRemove={onRemove}
+            onEdit={onEdit}
+            onReorder={onReorder}
+            listHeight={360}
+          />
+          <StageSection
+            title="已合成"
+            stage="synthesized"
+            items={synthesized}
+            onRemove={onRemove}
+            onEdit={onEdit}
+            onReorder={onReorder}
+            listHeight={120}
+          />
           <NowPlayingCard item={nowPlayingItem} />
-          <HistorySection items={history} />
+          <div className="min-h-0 flex-1 overflow-auto">
+            <HistorySection items={history} />
+          </div>
         </div>
       </LayoutGroup>
     </div>
