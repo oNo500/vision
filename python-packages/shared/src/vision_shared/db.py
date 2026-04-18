@@ -3,13 +3,8 @@ from __future__ import annotations
 
 import json
 import logging
-from pathlib import Path
-from typing import TYPE_CHECKING
 
 import aiosqlite
-
-if TYPE_CHECKING:
-    from src.live.plan_store import PlanStore
 
 logger = logging.getLogger(__name__)
 
@@ -43,21 +38,18 @@ class Database:
     def __init__(self, path: str = "vision.db") -> None:
         self._path = path
         self._conn: aiosqlite.Connection | None = None
-        self._plan_store: "PlanStore | None" = None
 
     async def init(self) -> None:
         self._conn = await aiosqlite.connect(self._path)
         await self._conn.executescript(_SCHEMA)
         await self._conn.commit()
-        from src.live.plan_store import PlanStore
-        self._plan_store = PlanStore(self._conn)
         logger.info("Database ready at %s", self._path)
 
     @property
-    def plan_store(self) -> "PlanStore":
-        if self._plan_store is None:
+    def conn(self) -> aiosqlite.Connection:
+        if self._conn is None:
             raise RuntimeError("Database not initialized. Call await db.init() first.")
-        return self._plan_store
+        return self._conn
 
     async def close(self) -> None:
         if self._conn:
@@ -67,33 +59,27 @@ class Database:
     async def log_tts(
         self, content: str, speech_prompt: str | None, source: str, ts: float
     ) -> None:
-        if self._conn is None:
-            raise RuntimeError("Database not initialized. Call await db.init() first.")
-        await self._conn.execute(
+        await self.conn.execute(
             "INSERT INTO tts_log (content, speech_prompt, source, ts) VALUES (?, ?, ?, ?)",
             (content, speech_prompt, source, ts),
         )
-        await self._conn.commit()
+        await self.conn.commit()
 
     async def log_event(self, event_type: str, payload: dict, ts: float) -> None:
-        if self._conn is None:
-            raise RuntimeError("Database not initialized. Call await db.init() first.")
-        await self._conn.execute(
+        await self.conn.execute(
             "INSERT INTO event_log (type, payload, ts) VALUES (?, ?, ?)",
             (event_type, json.dumps(payload, ensure_ascii=False), ts),
         )
-        await self._conn.commit()
+        await self.conn.commit()
 
     async def get_history(
         self, limit: int = 100, type_filter: str | None = None
     ) -> list[dict]:
-        if self._conn is None:
-            raise RuntimeError("Database not initialized. Call await db.init() first.")
         limit = min(limit, 500)
         rows: list[dict] = []
 
         if type_filter != "events":
-            async with self._conn.execute(
+            async with self.conn.execute(
                 "SELECT content, speech_prompt, source, ts FROM tts_log ORDER BY ts DESC",
             ) as cur:
                 async for row in cur:
@@ -108,7 +94,7 @@ class Database:
                     })
 
         if type_filter != "tts_output":
-            async with self._conn.execute(
+            async with self.conn.execute(
                 "SELECT type, payload, ts FROM event_log ORDER BY ts DESC",
             ) as cur:
                 async for row in cur:
