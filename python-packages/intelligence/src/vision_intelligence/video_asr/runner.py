@@ -1,7 +1,6 @@
 """CLI command implementations — thin wrappers over pipeline/storage."""
 from __future__ import annotations
 
-import asyncio
 import json
 import sys
 from pathlib import Path
@@ -9,7 +8,6 @@ from pathlib import Path
 import aiosqlite
 
 from vision_intelligence.video_asr.config import VideoAsrSettings
-from vision_intelligence.video_asr.jobs import JobManager
 from vision_intelligence.video_asr.pipeline import PipelineContext, run_video
 from vision_intelligence.video_asr.sources.registry import get_source
 from vision_intelligence.video_asr.sources.yaml_loader import load_sources
