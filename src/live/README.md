@@ -32,6 +32,8 @@ graph LR
 | `DirectorAgent` | `director_agent.py` | 主动控场：读脚本/知识库/互动，LLM 决定下一句台词 |
 | `KnowledgeBase` | `knowledge_base.py` | 加载产品 YAML，提供 LLM 上下文字符串 |
 | `TTSPlayer` | `tts_player.py` | 队列消费，调用 Gemini TTS 播音 |
+| `SessionMemory` | `session_memory.py` | 场内分层记忆（最近说过 / 话题时间线 / cue 覆盖 / 问答去重） |
+| `TalkPointRAG` | `rag.py` | 话术库语义检索（bge-base-zh + ChromaDB），塞 prompt 参考 |
 
 ## 决策架构
 
@@ -223,7 +225,57 @@ src/live/
 ├── schema.py               共享数据结构（Event / ScriptSegment / Decision / DirectorOutput）
 ├── proto_douyin.py         抖音 WebSocket 协议 protobuf 定义
 ├── try_voices.py           声音试听脚本
+├── session_memory.py       分层记忆（recent/topic/cue/qa）
+├── rag.py                  TalkPointRAG 检索层
+├── rag_chunking.py         markdown 段级切分
+├── rag_cli.py              话术库 CLI（build/query/info/clear）
 ├── data/
 │   └── product.yaml        产品介绍、FAQ、禁用词、必说词
 └── example_script.yaml     示例直播脚本
 ```
+
+## 话术库 RAG
+
+每次 DirectorAgent 生成台词前，从本地向量库检索 3-5 条最相关的话术塞进
+prompt，让 LLM 的输出更贴合你的产品和风格。
+
+### 数据目录
+
+```
+data/talk_points/<plan_id>/
+├── scripts/              自己写的直播脚本
+├── competitor_clips/     爆款话术片段
+├── product_manual/       产品手册、详情页
+└── qa_log/               社群问答
+```
+
+文件支持 `.md` / `.txt`，按段落自动切分（~500 字），不保留跨文件顺序。
+
+### 构建索引
+
+```bash
+# 首次：下载 bge-base-zh-v1.5 模型（~400MB），生成 .rag/<plan_id>/
+uv run python -m src.live.rag_cli build <plan_id>
+
+# 查询测试
+uv run python -m src.live.rag_cli query <plan_id> "产品介绍要点"
+
+# 查看元信息
+uv run python -m src.live.rag_cli info <plan_id>
+
+# 清除
+uv run python -m src.live.rag_cli clear <plan_id>
+```
+
+后续 rebuild 只重索引变更的文件（按 sha256 比对）。
+
+### 运行时行为
+
+SessionManager 启动时自动尝试加载 `.rag/<plan_id>/`：
+
+- 找到索引 → 接入 DirectorAgent，每次 fire 前查询 top-5
+- 找不到 → 静默跳过，直播正常进行，prompt 不带 RAG 段
+- 查询失败 / 相似度都 < 0.5 → 发布 `rag_miss` EventBus 事件，便于前端显示
+
+阈值 `min_score=0.5`（cosine similarity）过滤低质匹配。数据覆盖不够时宁
+可不塞，也别让 LLM 被误导。

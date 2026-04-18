@@ -9,6 +9,7 @@ from typing import Any
 
 from src.live.director_agent import DirectorAgent
 from src.live.knowledge_base import KnowledgeBase
+from src.live.rag import load_rag_for_plan
 from src.live.script_runner import ScriptRunner
 from src.live.session_memory import SessionMemory
 from src.live.tts_player import PcmItem, TTSPlayer, TtsItem
@@ -422,6 +423,22 @@ class SessionManager:
             google_cloud_project=project,
         )
         memory = SessionMemory()
+
+        rag = None
+        if active_plan and not mock:
+            try:
+                rag = load_rag_for_plan(active_plan["id"])
+                if rag is None:
+                    logger.info(
+                        "RAG: no index for plan %s (run `python -m src.live.rag_cli build %s` to create)",
+                        active_plan["id"], active_plan["id"],
+                    )
+            except Exception as e:
+                logger.warning("RAG load failed for plan %s: %s", active_plan["id"], e)
+
+        def _on_rag_miss() -> None:
+            self._bus.publish({"type": "rag_miss", "ts": time.time()})
+
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
@@ -430,6 +447,8 @@ class SessionManager:
             urgent_queue=urgent_queue,
             persona_ctx=persona_ctx,
             memory=memory,
+            rag=rag,
+            on_rag_miss=_on_rag_miss if rag is not None else None,
         )
 
         self._script_runner = script_runner
