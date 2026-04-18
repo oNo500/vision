@@ -129,6 +129,64 @@ export function applyLiveEvent(prev: PipelineItem[], raw: Record<string, unknown
     return updated
   }
 
+  if (type === 'tts_removed' && id) {
+    const idx = prev.findIndex((p) => p.id === id)
+    if (idx < 0) return prev
+    return prev.filter((p) => p.id !== id)
+  }
+
+  if (type === 'tts_edited' && id) {
+    const newId = raw['new_id'] as string | undefined
+    const content = raw['content'] as string | undefined
+    const speech_prompt = (raw['speech_prompt'] as string | null | undefined) ?? null
+    const idx = prev.findIndex((p) => p.id === id)
+
+    if (newId && newId !== id) {
+      // id swap: retire old, append new at pending tail
+      const filtered = prev.filter((p) => p.id !== id)
+      return [
+        ...filtered,
+        {
+          id: newId,
+          content: content ?? '',
+          speech_prompt,
+          stage: (raw['stage'] as PipelineStage) ?? 'pending',
+          urgent: Boolean(raw['urgent']),
+          ts: (raw['ts'] as number) ?? Date.now() / 1000,
+        },
+      ]
+    }
+
+    const current = prev[idx]
+    if (idx < 0 || !current) return prev
+    const updated = [...prev]
+    updated[idx] = {
+      ...current,
+      content: content ?? current.content,
+      speech_prompt,
+    }
+    return updated
+  }
+
+  if (type === 'tts_reordered') {
+    const stage = raw['stage'] as PipelineStage
+    const ids = raw['ids'] as string[] | undefined
+    if (!ids || !Array.isArray(ids)) return prev
+
+    const staged = prev.filter((p) => p.stage === stage)
+    if (staged.length !== ids.length) return prev
+    const byId = new Map(staged.map((p) => [p.id, p]))
+    if (ids.some((id_) => !byId.has(id_))) return prev
+
+    const reorderedStage: PipelineItem[] = ids.map((id_) => byId.get(id_)!)
+    const others = prev.filter((p) => p.stage !== stage)
+
+    // Preserve non-target-stage items; append reordered stage at the end.
+    // Derived views (pending/synthesized/playing/done) filter by stage so
+    // absolute order in the combined array doesn't affect UI presentation.
+    return [...others, ...reorderedStage]
+  }
+
   return prev
 }
 
