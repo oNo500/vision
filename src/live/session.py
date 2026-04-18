@@ -10,6 +10,7 @@ from typing import Any
 from src.live.director_agent import DirectorAgent
 from src.live.knowledge_base import KnowledgeBase
 from src.live.script_runner import ScriptRunner
+from src.live.session_memory import SessionMemory
 from src.live.tts_player import PcmItem, TTSPlayer, TtsItem
 from src.shared.event_bus import EventBus
 from src.shared.ordered_item_store import OrderedItemStore
@@ -122,6 +123,7 @@ class SessionManager:
         self._script_runner: ScriptRunner | None = None
         self._tts_player: TTSPlayer | None = None
         self._director: DirectorAgent | None = None
+        self._memory: SessionMemory | None = None
         self._tts_queue: OrderedItemStore | None = None
         self._urgent_queue: queue.Queue | None = None
         self._broadcaster_stop: threading.Event = threading.Event()
@@ -168,6 +170,7 @@ class SessionManager:
         self._script_runner = None
         self._tts_player = None
         self._director = None
+        self._memory = None
         self._tts_queue = None
         self._urgent_queue = None
         self._bus.publish({"type": "agent", "status": "stopped", "ts": time.time()})
@@ -414,6 +417,7 @@ class SessionManager:
             on_done=_on_done,
             google_cloud_project=project,
         )
+        memory = SessionMemory()
         director = DirectorAgent(
             tts_queue=tts_queue,
             tts_player=tts_player,
@@ -421,11 +425,13 @@ class SessionManager:
             llm_generate_fn=llm_generate,
             urgent_queue=urgent_queue,
             persona_ctx=persona_ctx,
+            memory=memory,
         )
 
         self._script_runner = script_runner
         self._tts_player = tts_player
         self._director = director
+        self._memory = memory
 
         script_runner.start()
         tts_player.start()
