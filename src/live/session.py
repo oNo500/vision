@@ -370,16 +370,20 @@ class SessionManager:
                     "reason": "mock",
                 }, ensure_ascii=False)
         else:
-            if not project:
-                raise ValueError("project required in production mode")
-            import vertexai
-            from vertexai.generative_models import GenerativeModel
+            from src.api.settings import get_settings
             from src.live.director_agent import _SYSTEM_PROMPT
-            vertexai.init(project=project, location="us-central1")
-            _model = GenerativeModel(model_name="gemini-2.5-flash", system_instruction=_SYSTEM_PROMPT)
+            from src.live.llm_client import LLMClient
+
+            settings = get_settings()
+            client = LLMClient(
+                model=settings.llm_model,
+                api_base=settings.llm_api_base,
+                api_key=settings.llm_api_key,
+                project=project or settings.google_cloud_project,
+            )
 
             def llm_generate(prompt: str) -> str:
-                return _model.generate_content(prompt).text
+                return client.generate(prompt, system=_SYSTEM_PROMPT)
 
         speak_fn = (lambda text, prompt=None: logger.info("[TTS MOCK] %s", text)) if mock else None
 
