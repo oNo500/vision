@@ -1,4 +1,4 @@
-import { act, renderHook, waitFor } from '@testing-library/react'
+import { waitFor } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { PlanRagLibraries } from './plan-rag-libraries'
@@ -51,8 +51,8 @@ describe('PlanRagLibraries', () => {
     render(<PlanRagLibraries planId="plan-1" />)
     await waitFor(() => {
       const checkboxes = screen.getAllByRole('checkbox') as HTMLInputElement[]
-      expect(checkboxes[0].checked).toBe(true)
-      expect(checkboxes[1].checked).toBe(false)
+      expect(checkboxes[0]!.checked).toBe(true)
+      expect(checkboxes[1]!.checked).toBe(false)
     })
   })
 
@@ -63,7 +63,7 @@ describe('PlanRagLibraries', () => {
     render(<PlanRagLibraries planId="plan-1" />)
     await waitFor(() => screen.getAllByRole('checkbox'))
 
-    fireEvent.click(screen.getAllByRole('checkbox')[0])
+    fireEvent.click(screen.getAllByRole('checkbox')[0]!)
     fireEvent.click(screen.getByRole('button', { name: '保存' }))
 
     await waitFor(() => {
