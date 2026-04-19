@@ -68,3 +68,47 @@ describe('usePlan', () => {
     expect(toast.success).toHaveBeenCalledOnce()
   })
 })
+
+describe('usePlan.importStyleFromVideo', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+  })
+
+  it('calls import-to-plan endpoint and returns true on success', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
+      .mockResolvedValueOnce({ ok: true, data: { video_id: 'BV1abc', plan_id: '1', status: 'merged' }, status: 200 })
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
+
+    const { result } = renderHook(() => usePlan('1'))
+    await waitFor(() => expect(result.current.plan).not.toBeNull())
+
+    let success: boolean | undefined
+    await act(async () => {
+      success = await result.current.importStyleFromVideo('BV1abc')
+    })
+    expect(success).toBe(true)
+    expect(mockApiFetch).toHaveBeenCalledWith(
+      'api/intelligence/video-asr/videos/BV1abc/import-to-plan',
+      expect.objectContaining({ method: 'POST', body: { plan_id: '1' } }),
+    )
+    expect(mockApiFetch).toHaveBeenCalledTimes(3) // initial fetch + import POST + re-fetch
+    const { toast } = await import('@workspace/ui/components/sonner')
+    expect(vi.mocked(toast.success)).toHaveBeenCalledWith('风格已导入，重新加载方案中…')
+  })
+
+  it('returns false on API error', async () => {
+    mockApiFetch
+      .mockResolvedValueOnce({ ok: true, data: mockPlan, status: 200 })
+      .mockResolvedValueOnce({ ok: false, data: null, status: 404 })
+
+    const { result } = renderHook(() => usePlan('1'))
+    await waitFor(() => expect(result.current.plan).not.toBeNull())
+
+    let success: boolean | undefined
+    await act(async () => {
+      success = await result.current.importStyleFromVideo('BV1abc')
+    })
+    expect(success).toBe(false)
+  })
+})

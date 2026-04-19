@@ -46,6 +46,7 @@ export type LivePlan = {
 export function usePlan(id: string) {
   const [plan, setPlan] = useState<LivePlan | null>(null)
   const [saving, setSaving] = useState(false)
+  const [importing, setImporting] = useState(false)
 
   const fetchPlan = useCallback(async () => {
     const res = await apiFetch<LivePlan>(`live/plans/${id}`, { silent: true })
@@ -76,5 +77,25 @@ export function usePlan(id: string) {
     [id],
   )
 
-  return { plan, saving, savePlan, fetchPlan }
+  const importStyleFromVideo = useCallback(
+    async (videoId: string): Promise<boolean> => {
+      setImporting(true)
+      try {
+        const res = await apiFetch<unknown>(
+          `api/intelligence/video-asr/videos/${videoId}/import-to-plan`,
+          { method: 'POST', body: { plan_id: id }, fallbackError: '导入失败' },
+        )
+        if (res.ok) {
+          toast.success('风格已导入，重新加载方案中…')
+          await fetchPlan()
+        }
+        return res.ok
+      } finally {
+        setImporting(false)
+      }
+    },
+    [id, fetchPlan],
+  )
+
+  return { plan, saving, savePlan, fetchPlan, importStyleFromVideo, importing }
 }
