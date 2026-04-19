@@ -22,11 +22,22 @@ def _run_demucs(input_path: Path, output_path: Path) -> None:
     model = get_model("htdemucs")
     model.eval()
 
+    # CUDA > MPS (shifts=1 broken on MPS) > CPU
+    if torch.cuda.is_available():
+        device = "cuda"
+        shifts = 1
+    elif torch.backends.mps.is_available():
+        device = "mps"
+        shifts = 0  # shifts=1 causes incorrect results on MPS
+    else:
+        device = "cpu"
+        shifts = 1
+
     wav = _load_audio_ffmpeg(input_path, model.samplerate)
     wav = wav.unsqueeze(0)  # (1, channels, samples)
 
     with torch.no_grad():
-        sources = apply_model(model, wav, device="cpu", shifts=1, split=True,
+        sources = apply_model(model, wav, device=device, shifts=shifts, split=True,
                               overlap=0.25, progress=False)[0]
 
     vocal_idx = model.sources.index("vocals")
