@@ -20,6 +20,6 @@ Transcribe the speech in the audio into Chinese text. For each utterance produce
 1. Output Simplified Chinese even if the speaker uses Traditional; keep English technical terms intact (AI, iPhone, CTA, RAG).
 2. Use full-width Chinese punctuation (，。？！：；), not half-width.
 3. Split on natural sentence boundaries, not filler breaths.
-4. If a segment is pure BGM, coughing, or unintelligible, omit it.
+4. If a segment is pure BGM, singing/song lyrics, coughing, or unintelligible, omit it. Singing voices are background content even if the lyrics are audible — do not transcribe them.
 5. Keep the host's identity consistent within this chunk (same voice = same `host` tag).
 6. If uncertain of a proper noun, transcribe phonetically and lower the confidence.

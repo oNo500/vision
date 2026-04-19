@@ -1,6 +1,6 @@
 'use client'
 
-import type { RagStatus } from '@/features/live/hooks/use-rag'
+import type { RagStatus } from '@/features/live/hooks/use-rag-library'
 
 function formatBuildTime(iso: string | null): string {
   if (!iso) return '从未构建'

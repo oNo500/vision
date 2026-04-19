@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { env } from '@/config/env'
 import { apiFetch } from '@/lib/api-fetch'
 import type { VideoItem } from './use-videos'
 
@@ -20,10 +21,11 @@ export function useVideoDetail(videoId: string): VideoDetail {
   useEffect(() => {
     let mounted = true
     const base = `api/intelligence/video-asr/videos/${videoId}`
+    const headers = env.NEXT_PUBLIC_API_KEY ? { 'X-API-Key': env.NEXT_PUBLIC_API_KEY } : undefined
     Promise.all([
-      apiFetch<VideoItem>(base, { silent: true }),
-      apiFetch<string>(`${base}/transcript.md`, { silent: true }),
-      apiFetch<string>(`${base}/summary`, { silent: true }),
+      apiFetch<VideoItem>(base, { silent: true, headers }),
+      apiFetch<string>(`${base}/transcript.md`, { silent: true, headers }),
+      apiFetch<string>(`${base}/summary`, { silent: true, headers }),
     ]).then(([metaRes, transcriptRes, summaryRes]) => {
       if (!mounted) return
       if (metaRes.ok) setMeta(metaRes.data)

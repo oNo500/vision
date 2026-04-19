@@ -39,7 +39,7 @@ export function ImportTranscriptTab({
   if (videos.length === 0) {
     return (
       <div className="p-6 text-sm text-muted-foreground">
-        暂无已完成的转录视频。先运行视频转录流程。
+        暂无已完成的转录视频。先运行ASR流程。
       </div>
     )
   }

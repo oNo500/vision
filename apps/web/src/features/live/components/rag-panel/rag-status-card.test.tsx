@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 
-import type { RagStatus } from '@/features/live/hooks/use-rag'
+import type { RagStatus } from '@/features/live/hooks/use-rag-library'
 
 import { RagStatusCard } from './rag-status-card'
 

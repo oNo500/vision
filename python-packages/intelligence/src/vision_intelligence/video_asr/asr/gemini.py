@@ -33,12 +33,23 @@ def _load_prompt() -> str:
 
 
 def _log_gemini_retry(retry_state) -> None:
-    log.warning(
-        "gemini_retry",
-        attempt=retry_state.attempt_number,
-        wait_sec=round(retry_state.next_action.sleep, 1) if retry_state.next_action else None,
-        error=str(retry_state.outcome.exception()) if retry_state.outcome else None,
+    attempt = retry_state.attempt_number
+    wait_sec = round(retry_state.next_action.sleep, 1) if retry_state.next_action else None
+    error = str(retry_state.outcome.exception()) if retry_state.outcome else None
+    log.warning("gemini_retry", attempt=attempt, wait_sec=wait_sec, error=error)
+    # write retry state to a sidecar file so SSE can surface it
+    audio_path: Path | None = retry_state.args[0] if retry_state.args else (
+        retry_state.kwargs.get("audio_path")
     )
+    if audio_path is not None:
+        try:
+            import json as _json
+            audio_path.with_suffix(".retry").write_text(
+                _json.dumps({"attempt": attempt, "wait_sec": wait_sec, "error": error}),
+                encoding="utf-8",
+            )
+        except Exception:
+            pass
 
 
 def _is_retryable(exc: BaseException) -> bool:
@@ -57,32 +68,33 @@ def _is_retryable(exc: BaseException) -> bool:
 
 
 @retry(
-    stop=stop_after_attempt(8),
+    stop=stop_after_attempt(2),
     wait=wait_exponential(multiplier=2, min=15, max=180),
     retry=retry_if_exception(_is_retryable),
     before_sleep=_log_gemini_retry,
     reraise=True,
 )
 def _call_gemini_audio(
-    *, client, model: str, audio_bytes: bytes, audio_path: Path, prompt: str,
+    *, client, model: str, audio_path: Path, prompt: str,
 ) -> tuple[_ResponseModel, dict]:
     import json
     from google.genai import types as gtypes
 
-    if len(audio_bytes) > 15 * 1024 * 1024:
-        log.info("gemini_files_api", chunk_size_mb=round(len(audio_bytes) / 1024 / 1024, 2))
+    _FILES_API_THRESHOLD = 15 * 1024 * 1024
+    file_size = audio_path.stat().st_size
+    config = gtypes.GenerateContentConfig(
+        response_mime_type="application/json",
+        temperature=0,
+        thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+    )
+    if file_size > _FILES_API_THRESHOLD:
+        log.info("gemini_files_api", chunk_size_mb=round(file_size / 1024 / 1024, 2))
         uploaded = None
         try:
             uploaded = client.files.upload(file=audio_path)
             part = gtypes.Part.from_uri(file_uri=uploaded.uri, mime_type="audio/wav")
             resp = client.models.generate_content(
-                model=model,
-                contents=[prompt, part],
-                config=gtypes.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    temperature=0,
-                    thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
-                ),
+                model=model, contents=[prompt, part], config=config,
             )
         finally:
             if uploaded is not None:
@@ -91,17 +103,11 @@ def _call_gemini_audio(
                 except Exception:
                     pass
     else:
+        part = gtypes.Part.from_bytes(
+            data=audio_path.read_bytes(), mime_type="audio/wav",
+        )
         resp = client.models.generate_content(
-            model=model,
-            contents=[
-                prompt,
-                gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
-            ],
-            config=gtypes.GenerateContentConfig(
-                response_mime_type="application/json",
-                temperature=0,
-                thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
-            ),
+            model=model, contents=[prompt, part], config=config,
         )
 
     usage = {
@@ -138,12 +144,11 @@ class GeminiTranscriber:
     def transcribe_chunk(
         self, audio_path: Path, *, chunk_id: int, start_offset: float,
     ) -> tuple[ChunkTranscript, dict]:
-        audio_bytes = audio_path.read_bytes()
         client = self._get_client()
         prompt = _load_prompt()
         parsed, usage = _call_gemini_audio(
             client=client, model=self.model,
-            audio_bytes=audio_bytes, audio_path=audio_path, prompt=prompt,
+            audio_path=audio_path, prompt=prompt,
         )
         segments = [
             SegmentRecord(

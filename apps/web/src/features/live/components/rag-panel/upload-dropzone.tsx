@@ -8,7 +8,7 @@ import {
   CATEGORY_LABELS,
   RAG_CATEGORIES,
   type RagCategory,
-} from '@/features/live/hooks/use-rag'
+} from '@/features/live/hooks/use-rag-library'
 
 export function UploadDropzone({
   onUpload,

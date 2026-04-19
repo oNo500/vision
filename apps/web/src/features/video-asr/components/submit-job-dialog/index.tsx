@@ -4,11 +4,12 @@ import { useState } from 'react'
 import {
   Sheet,
   SheetContent,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
+  SheetDescription,
 } from '@workspace/ui/components/sheet'
 import { Button } from '@workspace/ui/components/button'
+import { Label } from '@workspace/ui/components/label'
 
 type Props = {
   open: boolean
@@ -34,29 +35,37 @@ export function SubmitJobDialog({ open, onOpenChange, onSubmit, submitting }: Pr
   }
 
   return (
-    <Sheet open={open} onOpenChange={(isOpen) => onOpenChange(isOpen)}>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>提交视频转录任务</SheetTitle>
+    <Sheet open={open} onOpenChange={onOpenChange}>
+      <SheetContent className="flex flex-col gap-0 p-0 sm:max-w-lg">
+        <SheetHeader className="border-b px-6 py-5">
+          <SheetTitle>新建转录任务</SheetTitle>
+          <SheetDescription>支持 B 站、YouTube 等平台链接</SheetDescription>
         </SheetHeader>
-        <div className="flex flex-col gap-3 py-4">
-          <textarea
-            className="min-h-[150px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-ring"
-            placeholder="每行一个 URL，支持 B 站、YouTube"
-            rows={6}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-          <p className="text-xs text-muted-foreground">{urls.length} 个 URL</p>
+
+        <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-6 py-5">
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="urls">视频 URL</Label>
+            <textarea
+              id="urls"
+              className="min-h-[180px] w-full resize-none rounded-md border border-input bg-background px-3 py-2.5 text-sm leading-relaxed placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              placeholder={"https://www.bilibili.com/video/BV...\nhttps://www.youtube.com/watch?v=..."}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <p className="text-xs text-muted-foreground">
+              每行一个链接{urls.length > 0 ? `，已输入 ${urls.length} 个` : ''}
+            </p>
+          </div>
         </div>
-        <SheetFooter>
-          <Button variant="outline" onClick={() => onOpenChange(false)}>
+
+        <div className="flex items-center justify-end gap-2 border-t px-6 py-4">
+          <Button variant="outline" onClick={() => onOpenChange(false)} disabled={submitting}>
             取消
           </Button>
           <Button disabled={urls.length === 0 || submitting} onClick={handleSubmit}>
-            {submitting ? '提交中...' : '提交'}
+            {submitting ? '提交中...' : `提交${urls.length > 1 ? ` (${urls.length})` : ''}`}
           </Button>
-        </SheetFooter>
+        </div>
       </SheetContent>
     </Sheet>
   )

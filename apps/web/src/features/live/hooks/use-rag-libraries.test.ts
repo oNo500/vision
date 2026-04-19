@@ -24,7 +24,7 @@ describe('useRagLibraries', () => {
     mockApiFetch.mockResolvedValueOnce(ok(libs))
     const { result } = renderHook(() => useRagLibraries())
     await waitFor(() => expect(result.current.libraries).toHaveLength(1))
-    expect(result.current.libraries[0].id).toBe('dong-yuhui')
+    expect(result.current.libraries[0]?.id).toBe('dong-yuhui')
   })
 
   it('creates library and refetches', async () => {

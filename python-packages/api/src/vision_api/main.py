@@ -16,7 +16,6 @@ from vision_api.video_asr_routes import router as video_asr_router
 from vision_api.rag_library_routes import router as rag_library_router
 from vision_live.routes import router as live_router
 from vision_live.plan_routes import router as plan_router
-from vision_live.rag_routes import router as rag_router
 from vision_live.plan_store import PlanStore
 from vision_shared.db import Database
 from vision_shared.event_bus import EventBus
@@ -75,7 +74,6 @@ def create_app() -> FastAPI:
 
     app.include_router(live_router)
     app.include_router(plan_router)
-    app.include_router(rag_router)
     app.include_router(video_asr_router)
     app.include_router(rag_library_router)
 

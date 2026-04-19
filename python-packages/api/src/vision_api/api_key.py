@@ -18,6 +18,8 @@ class ApiKeyMiddleware(BaseHTTPMiddleware):
         self._prefixes = tuple(protected_prefixes)
 
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
+        if not self._key:
+            return await call_next(request)
         if request.method in _PROTECTED_METHODS and \
            any(request.url.path.startswith(p) for p in self._prefixes):
             header = request.headers.get("x-api-key")

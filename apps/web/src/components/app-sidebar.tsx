@@ -30,13 +30,13 @@ const navItems = [
     items: [],
   },
   {
-    title: '素材库',
+    title: 'RAG',
     url: appPaths.dashboard.libraries.href,
     icon: <DatabaseIcon />,
     items: [],
   },
   {
-    title: '视频转录',
+    title: 'ASR',
     url: appPaths.dashboard.videoAsr.href,
     icon: <FileVideoIcon />,
     items: [],

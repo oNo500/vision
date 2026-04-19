@@ -22,7 +22,7 @@ export default function VideoAsrDetailPage({
           className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
         >
           <ChevronLeftIcon className="size-4" />
-          视频转录
+          ASR
         </Link>
         <span className="font-mono text-sm text-muted-foreground">{videoId}</span>
       </PageHeader>

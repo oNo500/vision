@@ -40,8 +40,8 @@ describe('useVideoProgress', () => {
     const { result } = renderHook(() => useVideoProgress('BV1abc'))
     act(() => {
       MockEventSource.instance?.emit('progress', {
-        stages: [{ stage: 'ingest', status: 'done', duration_sec: 5 }],
-        transcribe_progress: { done: 2, total: 4, chunks: [] },
+        stages: [{ stage: 'ingest', status: 'done', duration_sec: 5, started_at: null }],
+        transcribe_progress: { done: 2, total: 4, chunks: [], retrying: [] },
         cost_usd: 0.01,
       })
     })
@@ -56,8 +56,8 @@ describe('useVideoProgress', () => {
     const allStages = ['ingest', 'preprocess', 'transcribe', 'merge', 'render', 'analyze', 'load']
     act(() => {
       MockEventSource.instance?.emit('progress', {
-        stages: allStages.map((s) => ({ stage: s, status: 'done', duration_sec: 1 })),
-        transcribe_progress: { done: 1, total: 1, chunks: [] },
+        stages: allStages.map((s) => ({ stage: s, status: 'done', duration_sec: 1, started_at: null })),
+        transcribe_progress: { done: 1, total: 1, chunks: [], retrying: [] },
         cost_usd: 0.05,
       })
     })

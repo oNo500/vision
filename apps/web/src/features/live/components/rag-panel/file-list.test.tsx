@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it, vi } from 'vitest'
 
-import type { RagSource } from '@/features/live/hooks/use-rag'
+import type { RagSource } from '@/features/live/hooks/use-rag-library'
 
 import { FileList } from './file-list'
 

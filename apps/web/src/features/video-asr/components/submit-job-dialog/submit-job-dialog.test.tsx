@@ -14,7 +14,7 @@ describe('SubmitJobDialog', () => {
     render(
       <SubmitJobDialog open onOpenChange={() => {}} onSubmit={onSubmit} submitting={false} />
     )
-    const textarea = screen.getByPlaceholderText(/URL/)
+    const textarea = screen.getByRole('textbox')
     fireEvent.change(textarea, {
       target: { value: 'https://www.bilibili.com/video/BV1abc\nhttps://www.bilibili.com/video/BV2def' },
     })
@@ -41,7 +41,7 @@ describe('SubmitJobDialog', () => {
       <SubmitJobDialog open onOpenChange={() => {}} onSubmit={vi.fn()} submitting={true} />
     )
     // input has a URL so normally enabled, but submitting=true disables it
-    const textarea = screen.getByPlaceholderText(/URL/)
+    const textarea = screen.getByRole('textbox')
     fireEvent.change(textarea, { target: { value: 'https://example.com' } })
     const submitBtn = screen.getAllByRole('button').find((b) => b.textContent?.includes('提交中'))
     expect(submitBtn).toBeDisabled()

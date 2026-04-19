@@ -6,7 +6,44 @@ import { toast } from '@workspace/ui/components/sonner'
 
 import { apiFetch } from '@/lib/api-fetch'
 
-import type { RagBuildStatus, RagCategory, RagStatus } from './use-rag'
+export type RagSource = {
+  rel_path: string
+  category: RagCategory
+  chunks: number
+  sha256: string
+  indexed: boolean
+}
+
+export type RagStatus = {
+  indexed: boolean
+  dirty: boolean
+  chunk_count: number
+  build_time: string | null
+  file_count: number
+  sources: RagSource[]
+}
+
+export type RagBuildStatus = {
+  running: boolean
+  last_build_time: string | null
+  last_error: string | null
+}
+
+export const RAG_CATEGORIES = [
+  'scripts',
+  'competitor_clips',
+  'product_manual',
+  'qa_log',
+] as const
+
+export type RagCategory = (typeof RAG_CATEGORIES)[number]
+
+export const CATEGORY_LABELS: Record<RagCategory, string> = {
+  scripts: '脚本',
+  competitor_clips: '爆款片段',
+  product_manual: '产品手册',
+  qa_log: '社群问答',
+}
 
 const BASE = (libId: string) => `api/intelligence/rag-libraries/${libId}`
 const BUILD_POLL_MS = 1500

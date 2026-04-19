@@ -1,0 +1,6 @@
+
+> web@0.1.0 typecheck /Users/xiu/code/vision/apps/web
+> tsc -b --noEmit
+
+src/features/live/hooks/use-rag-libraries.test.ts(27,12): error TS2532: Object is possibly 'undefined'.
+ ELIFECYCLE  Command failed with exit code 2.

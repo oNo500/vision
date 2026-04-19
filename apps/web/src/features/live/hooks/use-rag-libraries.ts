@@ -34,7 +34,7 @@ export function useRagLibraries() {
         fallbackError: '创建失败',
       })
       if (res.ok) {
-        toast.success(`已创建素材库 ${name}`)
+        toast.success(`已创建RAG ${name}`)
         await refetch()
       }
       return res.ok
@@ -51,7 +51,7 @@ export function useRagLibraries() {
         fallbackError: '删除失败',
       })
       if (res.ok) {
-        toast.success('已删除素材库')
+        toast.success('已删除RAG')
         await refetch()
       }
       return res.ok

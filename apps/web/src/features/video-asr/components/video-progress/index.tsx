@@ -1,5 +1,7 @@
 'use client'
 
+import { Tooltip } from '@base-ui/react/tooltip'
+import { InfoIcon } from 'lucide-react'
 import type { VideoProgressState } from '@/features/video-asr/hooks/use-video-progress'
 
 const STATUS_ICON: Record<string, string> = {
@@ -28,8 +30,25 @@ const STAGE_LABELS: Record<string, string> = {
   load: '入库',
 }
 
+const STAGE_TIPS: Record<string, string> = {
+  ingest: '通过 yt-dlp 下载视频及元数据',
+  preprocess: '分离人声、切分音频片段',
+  transcribe: '并发调用 Gemini / FunASR 识别各片段。Gemini 失败时自动重试最多 2 次（首次等 15s，第二次等 30s），可重试错误包括：429 限流、5xx 错误、截断响应。',
+  merge: '合并片段结果、去重、清洗文本',
+  render: '生成 .md 转录稿和 .srt 字幕文件',
+  analyze: '用 LLM 生成摘要与风格分析',
+  load: '将结果写入数据库',
+}
+
 type Props = {
   state: VideoProgressState
+}
+
+function formatElapsed(sec: number): string {
+  if (sec < 60) return `${sec.toFixed(0)}s`
+  const m = Math.floor(sec / 60)
+  const s = Math.floor(sec % 60)
+  return `${m}:${String(s).padStart(2, '0')}`
 }
 
 export function VideoProgress({ state }: Props) {
@@ -41,17 +60,51 @@ export function VideoProgress({ state }: Props) {
       {STAGE_ORDER.map((name) => {
         const s = stageMap.get(name)
         const status = s?.status ?? 'pending'
+
+        let elapsed: string = ''
+        if (s?.duration_sec != null) {
+          elapsed = `${s.duration_sec.toFixed(1)}s`
+        } else if (status === 'running' && s?.started_at) {
+          const sec = (state.now - new Date(s.started_at).getTime()) / 1000
+          elapsed = formatElapsed(sec)
+        }
+
         return (
           <div key={name} className="flex items-center gap-3">
             <span className={`w-4 text-center ${STATUS_COLOR[status] ?? 'text-muted-foreground'}`}>
               {STATUS_ICON[status] ?? '○'}
             </span>
-            <span className="w-20 text-muted-foreground">{STAGE_LABELS[name] ?? name}</span>
-            <span className="w-16 tabular-nums text-xs text-muted-foreground">
-              {s?.duration_sec != null ? `${s.duration_sec.toFixed(1)}s` : ''}
+            <span className="flex w-20 items-center gap-1 text-muted-foreground">
+              {STAGE_LABELS[name] ?? name}
+              <Tooltip.Root>
+                <Tooltip.Trigger
+                  delay={300}
+                  className="flex cursor-default items-center text-muted-foreground/40 hover:text-muted-foreground transition-colors"
+                  render={<span />}
+                >
+                  <InfoIcon size={11} />
+                </Tooltip.Trigger>
+                <Tooltip.Portal>
+                  <Tooltip.Positioner side="right" sideOffset={8}>
+                    <Tooltip.Popup className="z-50 max-w-[200px] rounded-md bg-foreground px-2.5 py-1.5 text-xs text-background">
+                      {STAGE_TIPS[name]}
+                    </Tooltip.Popup>
+                  </Tooltip.Positioner>
+                </Tooltip.Portal>
+              </Tooltip.Root>
             </span>
-            {name === 'transcribe' && status === 'running' && (
-              <span className="text-xs text-muted-foreground">{done} / {total ?? '?'}</span>
+            <span className={`w-16 tabular-nums text-xs ${status === 'running' ? 'text-blue-500' : 'text-muted-foreground'}`}>
+              {elapsed}
+            </span>
+            {name === 'transcribe' && status !== 'pending' && (
+              <span className="text-xs text-muted-foreground">
+                {done} / {total ?? '?'}
+                {state.transcribeProgress.retrying.length > 0 && (
+                  <span className="ml-2 text-yellow-500">
+                    重试 {state.transcribeProgress.retrying.map(r => `#${r.id}(${r.attempt}次)`).join(' ')}
+                  </span>
+                )}
+              </span>
             )}
           </div>
         )

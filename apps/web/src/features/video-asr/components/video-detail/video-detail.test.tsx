@@ -5,10 +5,13 @@ import { VideoDetail } from './index'
 vi.mock('@/config/env', () => ({
   env: { NEXT_PUBLIC_API_URL: 'http://localhost:8000' },
 }))
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({ push: vi.fn() }),
+}))
 vi.mock('@/features/video-asr/hooks/use-video-progress', () => ({
   useVideoProgress: () => ({
     stages: [],
-    transcribeProgress: { done: 0, total: null, chunks: [] },
+    transcribeProgress: { done: 0, total: null, chunks: [], retrying: [] },
     costUsd: 0,
     finished: true,
     connected: false,

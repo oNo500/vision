@@ -8,6 +8,7 @@ from pathlib import Path
 import structlog
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
+from vision_intelligence.video_asr.asr.gemini import _is_retryable
 from vision_intelligence.video_asr.models import (
     RawTranscript, SegmentRecord, StyleProfile,
 )
@@ -15,18 +16,10 @@ from vision_intelligence.video_asr.models import (
 log = structlog.get_logger()
 
 
-def _is_retryable(exc: BaseException) -> bool:
-    name = type(exc).__name__
-    msg = str(exc)
-    return (
-        "RESOURCE_EXHAUSTED" in msg
-        or "429" in msg
-        or "SSL" in msg
-        or "EOF" in msg
-        or "ConnectError" in name
-        or "TimeoutError" in name
-        or "ServiceUnavailable" in name
-    )
+def _log_analyze_retry(retry_state) -> None:
+    log.warning("analyze_retry", attempt=retry_state.attempt_number,
+                wait_sec=round(retry_state.next_action.sleep, 1) if retry_state.next_action else None,
+                error=str(retry_state.outcome.exception()) if retry_state.outcome else None)
 
 
 @dataclass

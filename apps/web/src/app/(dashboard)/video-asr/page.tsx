@@ -22,7 +22,7 @@ export default function VideoAsrPage() {
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <PageHeader>
-        <h1 className="text-sm font-semibold">视频转录</h1>
+        <h1 className="text-sm font-semibold">ASR</h1>
         <div className="flex-1" />
         <Button size="sm" onClick={() => setDialogOpen(true)}>提交任务</Button>
       </PageHeader>

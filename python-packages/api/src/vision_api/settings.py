@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     llm_model: str = "vertex_ai/gemini-2.5-flash"
     llm_api_base: str | None = None
     llm_api_key: str | None = None
-    vision_api_key: str = "dev-key"
+    vision_api_key: str = ""
 
 
 @lru_cache

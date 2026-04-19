@@ -9,7 +9,7 @@ import {
   RAG_CATEGORIES,
   type RagCategory,
   type RagSource,
-} from '@/features/live/hooks/use-rag'
+} from '@/features/live/hooks/use-rag-library'
 
 export function FileList({
   sources,

@@ -9,9 +9,9 @@ vi.mock('@/config/env', () => ({
 
 const mockState: VideoProgressState = {
   stages: [
-    { stage: 'ingest', status: 'done', duration_sec: 5.2 },
-    { stage: 'preprocess', status: 'done', duration_sec: 30.1 },
-    { stage: 'transcribe', status: 'running', duration_sec: null },
+    { stage: 'ingest', status: 'done', duration_sec: 5.2, started_at: null },
+    { stage: 'preprocess', status: 'done', duration_sec: 30.1, started_at: null },
+    { stage: 'transcribe', status: 'running', duration_sec: null, started_at: '2026-01-01T00:00:00Z' },
   ],
   transcribeProgress: {
     done: 4,
@@ -20,10 +20,12 @@ const mockState: VideoProgressState = {
       { id: 0, engine: 'gemini-2.5-flash' },
       { id: 1, engine: 'funasr-paraformer-large' },
     ],
+    retrying: [],
   },
   costUsd: 0.0456,
   finished: false,
   connected: true,
+  now: Date.now(),
 }
 
 describe('VideoProgress', () => {

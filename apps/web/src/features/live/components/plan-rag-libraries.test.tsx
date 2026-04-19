@@ -34,7 +34,7 @@ describe('PlanRagLibraries', () => {
     mockUseRagLibraries.mockReturnValue({ libraries: [] })
     mockApiFetch.mockResolvedValueOnce(ok({ rag_library_ids: [] }))
     render(<PlanRagLibraries planId="plan-1" />)
-    expect(screen.getByText(/暂无素材库/)).toBeTruthy()
+    expect(screen.getByText(/暂无RAG/)).toBeTruthy()
   })
 
   it('renders checkboxes for each library', async () => {

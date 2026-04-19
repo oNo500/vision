@@ -20,7 +20,7 @@ export default function LibraryDetailPage({ params }: { params: Promise<{ id: st
           className="text-sm text-muted-foreground hover:text-foreground"
           onClick={() => router.push(appPaths.dashboard.libraries.href)}
         >
-          ← 素材库
+          ← RAG
         </button>
       </div>
       <div className="flex-1 overflow-y-auto">

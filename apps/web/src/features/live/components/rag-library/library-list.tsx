@@ -21,9 +21,9 @@ export function LibraryList() {
   return (
     <div className="flex flex-col gap-4 p-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-sm font-semibold">素材库</h1>
+        <h1 className="text-sm font-semibold">RAG</h1>
         <Button size="sm" onClick={() => setShowCreate(true)} disabled={loading}>
-          + 新建素材库
+          + 新建RAG
         </Button>
       </div>
 
@@ -53,7 +53,7 @@ export function LibraryList() {
       )}
 
       {libraries.length === 0 ? (
-        <p className="text-sm text-muted-foreground">暂无素材库，点击「新建素材库」开始</p>
+        <p className="text-sm text-muted-foreground">暂无RAG，点击「新建RAG」开始</p>
       ) : (
         <div className="flex flex-col gap-2">
           {libraries.map((lib) => (

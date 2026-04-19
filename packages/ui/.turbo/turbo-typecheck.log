@@ -1,0 +1,4 @@
+
+> @workspace/ui@0.0.0 typecheck /Users/xiu/code/vision/packages/ui
+> tsc --noEmit
+

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 
+import { env } from '@/config/env'
 import { apiFetch } from '@/lib/api-fetch'
 
 export type VideoItem = {
@@ -20,7 +21,8 @@ export function useVideos() {
   const [loading, setLoading] = useState(true)
 
   const refresh = useCallback(async () => {
-    const res = await apiFetch<VideoItem[]>('api/intelligence/video-asr/videos', { silent: true })
+    const headers = env.NEXT_PUBLIC_API_KEY ? { 'X-API-Key': env.NEXT_PUBLIC_API_KEY } : undefined
+    const res = await apiFetch<VideoItem[]>('api/intelligence/video-asr/videos', { silent: true, headers })
     if (res.ok) setVideos(res.data)
     setLoading(false)
   }, [])
