@@ -9,7 +9,7 @@ import {
   SidebarMenuItem,
   SidebarTrigger,
 } from '@workspace/ui/components/sidebar'
-import { BookOpenIcon, RadioIcon, Settings2Icon } from 'lucide-react'
+import { BookOpenIcon, DatabaseIcon, RadioIcon, Settings2Icon } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
 
@@ -27,6 +27,12 @@ const navItems = [
     title: '方案库',
     url: appPaths.dashboard.plans.href,
     icon: <BookOpenIcon />,
+    items: [],
+  },
+  {
+    title: '素材库',
+    url: appPaths.dashboard.libraries.href,
+    icon: <DatabaseIcon />,
     items: [],
   },
   {
