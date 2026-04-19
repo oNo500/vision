@@ -4,15 +4,21 @@ from __future__ import annotations
 import asyncio
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import aiosqlite
+import structlog
 
 from vision_intelligence.video_asr.config import VideoAsrSettings
-from vision_intelligence.video_asr.pipeline import PipelineContext, run_video
+from vision_intelligence.video_asr.manifest import read_manifest, write_manifest
+from vision_intelligence.video_asr.models import StageManifest
+from vision_intelligence.video_asr.pipeline import PipelineContext, _stage_ingest, run_video
 from vision_intelligence.video_asr.sources.registry import get_source
-from vision_intelligence.video_asr.sources.yaml_loader import load_sources
+from vision_intelligence.video_asr.sources.yaml_loader import SourceEntry, load_sources
 from vision_intelligence.video_asr.storage import VideoAsrStorage
+
+_DOWNLOAD_COMPLETE_PCT = 99
 
 
 async def _open_storage(settings: VideoAsrSettings) -> tuple[aiosqlite.Connection, VideoAsrStorage]:
@@ -133,6 +139,11 @@ async def download_sources(
     *, sources_yaml: Path | None, url: str | None, concurrency: int = 3,
 ) -> None:
     """Download audio for all sources (ingest stage only), concurrently."""
+    from rich.progress import (
+        BarColumn, Progress, SpinnerColumn,
+        TaskProgressColumn, TextColumn, TimeElapsedColumn,
+    )
+
     if not sources_yaml and not url:
         sys.stderr.write("Must provide --sources or --url\n")
         sys.exit(2)
@@ -142,63 +153,93 @@ async def download_sources(
         if sources_yaml:
             entries = load_sources(str(sources_yaml))
         else:
-            from vision_intelligence.video_asr.sources.yaml_loader import SourceEntry
             src = get_source(url)
             video_id = src.extract_video_id(url)
             entries = [SourceEntry(video_id=video_id, url=url, source=src.name)]
 
         sem = asyncio.Semaphore(concurrency)
 
-        async def _download_one(entry) -> None:
-            async with sem:
-                video_dir = Path(settings.output_root) / entry.video_id
-                video_dir.mkdir(parents=True, exist_ok=True)
-                ctx = PipelineContext(
-                    video_id=entry.video_id, url=entry.url,
-                    video_dir=video_dir, storage=st, settings=settings,
-                )
-                # run_video skips stages with existing DONE manifests;
-                # stop after ingest by raising StopIteration via a wrapper
-                from vision_intelligence.video_asr.manifest import read_manifest
-                if read_manifest(video_dir, "ingest") and \
-                        read_manifest(video_dir, "ingest").status == "done":
-                    print(f"[{entry.video_id}] ingest already done, skipping")
-                    return
-                try:
-                    await _run_ingest(ctx)
-                    print(f"[{entry.video_id}] downloaded")
-                except Exception as exc:
-                    import structlog
-                    structlog.get_logger().error(
-                        "download_error", video_id=entry.video_id, error=str(exc))
-                    print(f"[{entry.video_id}] FAILED: {exc!r}")
+        def _make_cb(task_id, progress):
+            def cb(downloaded: int, total: int | None) -> None:
+                if total:
+                    pct = downloaded / total * 100
+                    if pct >= 99.9:
+                        progress.update(task_id, completed=_DOWNLOAD_COMPLETE_PCT,
+                                        status="[cyan]converting...")
+                    else:
+                        progress.update(task_id, completed=pct,
+                                        status=f"[yellow]{pct:.0f}% downloading...")
+                else:
+                    mb = downloaded / 1024 / 1024
+                    progress.update(task_id, status=f"[yellow]{mb:.1f}MB downloading...")
+            return cb
 
-        await asyncio.gather(*[_download_one(e) for e in entries])
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[bold]{task.description}"),
+            BarColumn(),
+            TaskProgressColumn(),
+            TimeElapsedColumn(),
+            TextColumn("{task.fields[status]}"),
+        ) as progress:
+            overall = progress.add_task(
+                f"Total  (concurrency={concurrency})",
+                total=len(entries), status="",
+            )
+            task_ids = {
+                e.video_id: progress.add_task(
+                    e.video_id, total=100, start=False, status="queued",
+                )
+                for e in entries
+            }
+
+            async def _download_one(entry) -> None:
+                async with sem:
+                    video_dir = Path(settings.output_root) / entry.video_id
+                    video_dir.mkdir(parents=True, exist_ok=True)
+                    tid = task_ids[entry.video_id]
+                    m = read_manifest(video_dir, "ingest")
+                    if m and m.status == "done":
+                        progress.update(tid, completed=100, status="[green]skipped")
+                        progress.advance(overall)
+                        return
+                    progress.start_task(tid)
+                    progress.update(tid, status="[yellow]downloading...")
+                    ctx = PipelineContext(
+                        video_id=entry.video_id, url=entry.url,
+                        video_dir=video_dir, storage=st, settings=settings,
+                        progress_cb=_make_cb(tid, progress),
+                    )
+                    try:
+                        await _run_ingest(ctx)
+                        progress.update(tid, completed=100, status="[green]done")
+                    except Exception as exc:
+                        structlog.get_logger().error(
+                            "download_error", video_id=entry.video_id, error=str(exc))
+                        progress.update(tid, completed=100, status=f"[red]FAILED: {exc!r}")
+                    finally:
+                        progress.advance(overall)
+
+            await asyncio.gather(*[_download_one(e) for e in entries])
     finally:
         await conn.close()
 
 
+def _now() -> str:
+    return datetime.now(timezone.utc).astimezone().isoformat()
+
+
+def _delta_sec(a: str, b: str) -> float:
+    return (datetime.fromisoformat(b) - datetime.fromisoformat(a)).total_seconds()
+
+
 async def _run_ingest(ctx: PipelineContext) -> None:
     """Run only the ingest stage, writing manifest and storage row."""
-    from datetime import datetime, timezone
-
-    from vision_intelligence.video_asr.manifest import write_manifest
-    from vision_intelligence.video_asr.models import StageManifest
-    from vision_intelligence.video_asr.pipeline import _stage_ingest
-
-    def _now() -> str:
-        return datetime.now(timezone.utc).astimezone().isoformat()
-
-    def _delta_sec(a: str, b: str) -> float:
-        from datetime import datetime
-        fmt = datetime.fromisoformat
-        return (fmt(b) - fmt(a)).total_seconds()
-
+    started = _now()
     await ctx.storage.set_pipeline_run(
         video_id=ctx.video_id, stage="ingest",
-        status="running", started_at=_now(),
+        status="running", started_at=started,
     )
-    started = _now()
     try:
         extra = await _stage_ingest(ctx) or {}
         finished = _now()

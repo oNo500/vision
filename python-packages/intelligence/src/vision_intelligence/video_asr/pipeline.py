@@ -30,6 +30,7 @@ class PipelineContext:
     storage: Any  # VideoAsrStorage
     settings: Any  # VideoAsrSettings
     pipeline_version: str = "0.1.0"
+    progress_cb: Any = None  # ProgressCallback | None, injected by CLI for rich progress
 
 
 def _now() -> str:
@@ -51,7 +52,7 @@ async def _stage_ingest(ctx: PipelineContext) -> dict:
     src = get_source(ctx.url)
     meta = src.fetch_metadata(ctx.url)
     audio_out = ctx.video_dir / "audio.m4a"
-    bytes_written = src.download_audio(ctx.url, audio_out)
+    bytes_written = src.download_audio(ctx.url, audio_out, progress_cb=ctx.progress_cb)
 
     (ctx.video_dir / "source.json").write_text(
         meta.model_dump_json(indent=2), encoding="utf-8")

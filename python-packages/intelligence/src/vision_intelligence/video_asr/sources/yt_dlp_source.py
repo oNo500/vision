@@ -1,11 +1,13 @@
 """yt-dlp based source for YouTube + Bilibili."""
 from __future__ import annotations
 
-import json
 import re
-import subprocess
+import shutil
+import time
+from collections.abc import Callable
 from pathlib import Path
-from typing import Literal
+
+import yt_dlp
 
 from vision_intelligence.video_asr.models import SourceMetadata, SourceName
 
@@ -13,23 +15,63 @@ from vision_intelligence.video_asr.models import SourceMetadata, SourceName
 _YT_ID_RE = re.compile(r"[?&]v=([A-Za-z0-9_-]+?)(?:&|$)")
 _BV_RE = re.compile(r"/video/(BV[A-Za-z0-9]+)")
 
+# Callback type: (downloaded_bytes, total_bytes | None) -> None
+ProgressCallback = Callable[[int, int | None], None]
+
+_PROGRESS_INTERVAL = 0.1  # seconds between progress updates
+
+
+def _ffmpeg_dir() -> str | None:
+    p = shutil.which("ffmpeg")
+    return str(Path(p).parent) if p else None
+
 
 def _run_yt_dlp_json(url: str) -> dict:
-    """Shell out to yt-dlp --dump-json. Separated for test mocking."""
-    proc = subprocess.run(
-        ["yt-dlp", "--dump-json", "--no-warnings", url],
-        capture_output=True, text=True, check=True,
-    )
-    return json.loads(proc.stdout)
+    """Fetch video metadata via yt-dlp Python API."""
+    with yt_dlp.YoutubeDL({"quiet": True, "no_warnings": True}) as ydl:
+        return ydl.extract_info(url, download=False)
 
 
-def _run_yt_dlp_download(url: str, output: str) -> int:
-    """Shell out to yt-dlp. Returns bytes written. output must be the final file path."""
-    subprocess.run(
-        ["yt-dlp", "-x", "--audio-format", "m4a",
-         "--audio-quality", "0", "-o", output, url],
-        capture_output=True, text=True, check=True,
-    )
+def _run_yt_dlp_download(
+    url: str, output: str, progress_cb: ProgressCallback | None = None
+) -> int:
+    """Download audio via yt-dlp Python API. Returns bytes written."""
+    last_update = 0.0
+
+    def _hook(d: dict) -> None:
+        nonlocal last_update
+        if progress_cb is None:
+            return
+        if d["status"] == "downloading":
+            now = time.monotonic()
+            if now - last_update < _PROGRESS_INTERVAL:
+                return
+            last_update = now
+            downloaded = d.get("downloaded_bytes", 0)
+            total = d.get("total_bytes") or d.get("total_bytes_estimate")
+            progress_cb(downloaded, total)
+        elif d["status"] == "finished":
+            total = d.get("total_bytes") or d.get("total_bytes_estimate")
+            progress_cb(total or 0, total)
+
+    opts = {
+        "format": "bestaudio/best",
+        "outtmpl": output,
+        "postprocessors": [{
+            "key": "FFmpegExtractAudio",
+            "preferredcodec": "m4a",
+            "preferredquality": "0",
+        }],
+        "continuedl": True,
+        "quiet": True,
+        "no_warnings": True,
+        "progress_hooks": [_hook],
+    }
+    ffmpeg = _ffmpeg_dir()
+    if ffmpeg:
+        opts["ffmpeg_location"] = ffmpeg
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        ydl.download([url])
     return Path(output).stat().st_size
 
 
@@ -65,6 +107,9 @@ class YtDlpSource:
             duration_sec=float(info["duration"]) if info.get("duration") else None,
         )
 
-    def download_audio(self, url: str, out_path: Path) -> int:
+    def download_audio(
+        self, url: str, out_path: Path,
+        progress_cb: ProgressCallback | None = None,
+    ) -> int:
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        return _run_yt_dlp_download(url, str(out_path))
+        return _run_yt_dlp_download(url, str(out_path), progress_cb)
