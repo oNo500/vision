@@ -29,6 +29,11 @@ CREATE TABLE IF NOT EXISTS live_plans (
     created_at TEXT NOT NULL,
     updated_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS rag_libraries (
+    id         TEXT PRIMARY KEY,
+    name       TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
 """
 
 
