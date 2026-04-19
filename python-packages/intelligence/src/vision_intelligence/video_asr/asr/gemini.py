@@ -7,7 +7,6 @@ from typing import Literal
 from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
-from vision_intelligence.video_asr.gemini_lock import gemini_lock
 from vision_intelligence.video_asr.models import (
     ChunkTranscript, SegmentRecord, Speaker,
 )
@@ -57,29 +56,29 @@ def _call_gemini_audio(
     """Return (parsed response, usage dict). Wrapped for test mocking + retry."""
     import json
     from google.genai import types as gtypes
-    with gemini_lock():
-        resp = client.models.generate_content(
-            model=model,
-            contents=[
-                prompt,
-                gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
-            ],
-            config=gtypes.GenerateContentConfig(
-                response_mime_type="application/json",
-                temperature=0.2,
-            ),
-        )
-        usage = {
-            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-        }
-        text = resp.text or ""
-        if not text.strip():
-            raise ValueError(f"Gemini returned empty response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
-        data = json.loads(text)
-        # Gemini sometimes returns a bare list instead of {"segments": [...]}
-        if isinstance(data, list):
-            data = {"segments": data}
+    resp = client.models.generate_content(
+        model=model,
+        contents=[
+            prompt,
+            gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
+        ],
+        config=gtypes.GenerateContentConfig(
+            response_mime_type="application/json",
+            temperature=0,
+            thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+        ),
+    )
+    usage = {
+        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+    }
+    text = resp.text or ""
+    if not text.strip():
+        raise ValueError(f"Gemini returned empty response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
+    data = json.loads(text)
+    # Gemini sometimes returns a bare list instead of {"segments": [...]}
+    if isinstance(data, list):
+        data = {"segments": data}
     parsed = _ResponseModel.model_validate(data)
     return parsed, usage
 
@@ -103,7 +102,7 @@ class GeminiTranscriber:
 
     def transcribe_chunk(
         self, audio_path: Path, *, chunk_id: int, start_offset: float,
-    ) -> ChunkTranscript:
+    ) -> tuple[ChunkTranscript, dict]:
         audio_bytes = audio_path.read_bytes()
         client = self._get_client()
         prompt = _load_prompt()
@@ -127,8 +126,4 @@ class GeminiTranscriber:
         ]
         ct = ChunkTranscript(chunk_id=chunk_id, start_offset=start_offset,
                              segments=segments, asr_engine=self.model)
-        return ct
-
-    def last_usage_for_chunk(self) -> dict:
-        """Placeholder -- pipeline should capture via wrapped call instead."""
-        return {}
+        return ct, usage

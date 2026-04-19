@@ -125,13 +125,13 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
         async with sem:
             audio = chunks_dir / f"chunk_{i:03d}.wav"
 
-            def _work():
+            def _work() -> tuple:
                 done_file = chunks_dir / f"chunk_{i:03d}.json"
                 if done_file.exists():
                     from vision_intelligence.video_asr.models import ChunkTranscript
-                    return ChunkTranscript.model_validate_json(done_file.read_text())
+                    return ChunkTranscript.model_validate_json(done_file.read_text()), {}
                 try:
-                    ct = gemini.transcribe_chunk(
+                    ct, usage = gemini.transcribe_chunk(
                         audio, chunk_id=i, start_offset=start_offset,
                     )
                 except Exception as exc:
@@ -142,11 +142,12 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
                     ct = _get_funasr().transcribe_chunk(
                         audio, chunk_id=i, start_offset=start_offset,
                     )
+                    usage = {}
                 done_file.write_text(ct.model_dump_json(indent=2), encoding="utf-8")
-                return ct
-            ct = await asyncio.to_thread(_work)
-            total_in += 0
-            total_out += 0
+                return ct, usage
+            ct, usage = await asyncio.to_thread(_work)
+            total_in += usage.get("input_tokens", 0)
+            total_out += usage.get("output_tokens", 0)
 
     tasks = [do_chunk(i, start) for i, (start, _) in enumerate(boundaries)]
     await asyncio.gather(*tasks)
