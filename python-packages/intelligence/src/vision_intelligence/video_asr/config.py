@@ -18,7 +18,7 @@ class VideoAsrSettings(BaseSettings):
     )
 
     output_root: str = _default_output_root()
-    chunk_duration_sec: int = 1200
+    chunk_duration_sec: int = 600
     chunk_overlap_sec: int = 10
     transcribe_concurrency: int = 3
     gemini_model: str = "gemini-2.5-flash"
