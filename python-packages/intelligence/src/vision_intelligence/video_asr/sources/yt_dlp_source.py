@@ -72,6 +72,7 @@ def _run_yt_dlp_download(
         "continuedl": True,
         "quiet": True,
         "no_warnings": True,
+        "noprogress": True,
         "progress_hooks": [_hook],
     }
     ffmpeg = _ffmpeg_dir()
