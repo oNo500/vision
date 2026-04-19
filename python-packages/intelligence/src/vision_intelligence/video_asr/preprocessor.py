@@ -7,20 +7,50 @@ from pathlib import Path
 
 
 def _run_demucs(input_path: Path, output_path: Path) -> None:
-    """Run demucs htdemucs; extract the 'vocals' stem to output_path."""
-    tmp = output_path.parent / "_demucs_out"
-    tmp.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
-        ["python", "-m", "demucs.separate",
-         "-n", "htdemucs", "--two-stems=vocals",
-         "-o", str(tmp), str(input_path)],
+    """Run demucs htdemucs via Python API; write vocals with soundfile.
+
+    Avoids torchaudio.save() entirely — soundfile uses libsndfile (pure C),
+    so this works on Mac, Linux, and Windows without torchcodec.
+    """
+    import numpy as np
+    import soundfile as sf
+    import torch
+    from demucs.apply import apply_model
+    from demucs.audio import convert_audio
+    from demucs.pretrained import get_model
+
+    model = get_model("htdemucs")
+    model.eval()
+
+    # Load audio via ffmpeg into a float32 tensor at model's sample rate
+    wav = _load_audio_ffmpeg(input_path, model.samplerate)
+    wav = wav.unsqueeze(0)  # (1, channels, samples)
+
+    with torch.no_grad():
+        sources = apply_model(model, wav, device="cpu", shifts=1, split=True,
+                              overlap=0.25, progress=False)[0]
+
+    vocal_idx = model.sources.index("vocals")
+    vocals = sources[vocal_idx]  # (channels, samples)
+
+    # Resample to 16kHz mono for downstream chunks
+    vocals_16k = convert_audio(vocals, model.samplerate, 16000, 1)
+    audio_np = vocals_16k.squeeze(0).numpy().astype(np.float32)
+    sf.write(str(output_path), audio_np, 16000, subtype="PCM_16")
+
+
+def _load_audio_ffmpeg(path: Path, sample_rate: int):
+    """Load audio file into a (channels, samples) float32 tensor via ffmpeg."""
+    import numpy as np
+    import torch
+
+    proc = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(path),
+         "-f", "f32le", "-ar", str(sample_rate), "-ac", "2", "pipe:1"],
         capture_output=True, check=True,
     )
-    found = list(tmp.rglob("vocals.wav"))
-    if not found:
-        raise RuntimeError(f"demucs did not produce vocals.wav in {tmp}")
-    shutil.move(str(found[0]), str(output_path))
-    shutil.rmtree(tmp, ignore_errors=True)
+    audio = np.frombuffer(proc.stdout, dtype=np.float32).reshape(-1, 2).T  # (2, samples)
+    return torch.from_numpy(audio.copy())
 
 
 def _probe_duration(path: Path) -> float:

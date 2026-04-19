@@ -19,6 +19,7 @@ dependencies = [
     "jieba>=0.42.1",
     "opencc-python-reimplemented>=0.1.7",
     "rich>=13.0",
+    "soundfile>=0.13.1",
 ]
 
 [project.scripts]
