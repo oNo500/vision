@@ -3,10 +3,6 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { useVideos } from './use-videos'
 
-vi.mock('@workspace/ui/components/sonner', () => ({
-  toast: { error: vi.fn(), success: vi.fn() },
-}))
-
 const mockApiFetch = vi.fn()
 vi.mock('@/lib/api-fetch', () => ({
   apiFetch: (...args: unknown[]) => mockApiFetch(...args),
