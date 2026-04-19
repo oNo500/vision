@@ -1,19 +1,16 @@
 'use client'
 
-import { useState } from 'react'
 import { Button } from '@workspace/ui/components/button'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@workspace/ui/components/tabs'
 import { useRagLibrary } from '@/features/live/hooks/use-rag-library'
 import { FileList } from '@/features/live/components/rag-panel/file-list'
 import { RagStatusCard } from '@/features/live/components/rag-panel/rag-status-card'
 import { UploadDropzone } from '@/features/live/components/rag-panel/upload-dropzone'
 import { ImportTranscriptTab } from './import-transcript-tab'
 
-type Tab = 'files' | 'import'
-
 export function LibraryDetail({ libId, libName }: { libId: string; libName: string }) {
   const { status, buildStatus, loading, upload, remove, rebuild, importTranscript } =
     useRagLibrary(libId)
-  const [tab, setTab] = useState<Tab>('files')
 
   if (!status) {
     return <div className="p-6 text-sm text-muted-foreground">加载中…</div>
@@ -35,33 +32,19 @@ export function LibraryDetail({ libId, libName }: { libId: string; libName: stri
 
       <RagStatusCard status={status} />
 
-      <div className="flex gap-2 border-b">
-        <button
-          type="button"
-          className={`pb-2 text-sm ${tab === 'files' ? 'border-b-2 border-foreground font-medium' : 'text-muted-foreground'}`}
-          onClick={() => setTab('files')}
-        >
-          文件
-        </button>
-        <button
-          type="button"
-          className={`pb-2 text-sm ${tab === 'import' ? 'border-b-2 border-foreground font-medium' : 'text-muted-foreground'}`}
-          onClick={() => setTab('import')}
-        >
-          从转录导入
-        </button>
-      </div>
-
-      {tab === 'files' && (
-        <>
+      <Tabs defaultValue="files">
+        <TabsList>
+          <TabsTrigger value="files">文件</TabsTrigger>
+          <TabsTrigger value="import">从 ASR 导入</TabsTrigger>
+        </TabsList>
+        <TabsContent value="files" className="flex flex-col gap-4 pt-2">
           <UploadDropzone onUpload={upload} disabled={loading || buildStatus.running} />
           <FileList sources={status.sources} onDelete={remove} disabled={loading || buildStatus.running} />
-        </>
-      )}
-
-      {tab === 'import' && (
-        <ImportTranscriptTab onImport={importTranscript} />
-      )}
+        </TabsContent>
+        <TabsContent value="import" className="pt-2">
+          <ImportTranscriptTab onImport={importTranscript} />
+        </TabsContent>
+      </Tabs>
 
       {buildStatus.last_error && !buildStatus.running && (
         <div className="rounded border border-destructive bg-destructive/10 p-3 text-xs text-destructive whitespace-pre-wrap">
