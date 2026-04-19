@@ -58,7 +58,9 @@ def merge_chunks(chunks: list[ChunkTranscript]) -> MergedTranscript:
     for s in all_segs:
         if merged:
             prev = merged[-1]
-            # Overlap window (last 15s) + near-text match -> skip
+            # Segments from the chunk overlap zone have nearly identical timestamps
+            # across adjacent chunks. The +5.0 tolerance absorbs minor boundary drift
+            # from ffmpeg slice rounding. Both conditions required to avoid false drops.
             if s.start <= prev.end + 5.0 and _is_near_duplicate(s.text, prev.text):
                 continue
         merged.append(s)
