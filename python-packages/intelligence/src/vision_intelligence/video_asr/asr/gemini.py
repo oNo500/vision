@@ -64,23 +64,46 @@ def _is_retryable(exc: BaseException) -> bool:
     reraise=True,
 )
 def _call_gemini_audio(
-    *, client, model: str, audio_bytes: bytes, prompt: str,
+    *, client, model: str, audio_bytes: bytes, audio_path: Path, prompt: str,
 ) -> tuple[_ResponseModel, dict]:
-    """Return (parsed response, usage dict). Wrapped for test mocking + retry."""
     import json
     from google.genai import types as gtypes
-    resp = client.models.generate_content(
-        model=model,
-        contents=[
-            prompt,
-            gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
-        ],
-        config=gtypes.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0,
-            thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
-        ),
-    )
+
+    if len(audio_bytes) > 15 * 1024 * 1024:
+        log.info("gemini_files_api", chunk_size_mb=round(len(audio_bytes) / 1024 / 1024, 2))
+        uploaded = None
+        try:
+            uploaded = client.files.upload(file=audio_path)
+            part = gtypes.Part.from_uri(file_uri=uploaded.uri, mime_type="audio/wav")
+            resp = client.models.generate_content(
+                model=model,
+                contents=[prompt, part],
+                config=gtypes.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0,
+                    thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+                ),
+            )
+        finally:
+            if uploaded is not None:
+                try:
+                    client.files.delete(name=uploaded.name)
+                except Exception:
+                    pass
+    else:
+        resp = client.models.generate_content(
+            model=model,
+            contents=[
+                prompt,
+                gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
+            ],
+            config=gtypes.GenerateContentConfig(
+                response_mime_type="application/json",
+                temperature=0,
+                thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+            ),
+        )
+
     usage = {
         "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
         "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
@@ -89,7 +112,6 @@ def _call_gemini_audio(
     if not text.strip():
         raise ValueError(f"Gemini returned empty response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
     data = json.loads(text)
-    # Gemini sometimes returns a bare list instead of {"segments": [...]}
     if isinstance(data, list):
         data = {"segments": data}
     parsed = _ResponseModel.model_validate(data)
@@ -121,7 +143,7 @@ class GeminiTranscriber:
         prompt = _load_prompt()
         parsed, usage = _call_gemini_audio(
             client=client, model=self.model,
-            audio_bytes=audio_bytes, prompt=prompt,
+            audio_bytes=audio_bytes, audio_path=audio_path, prompt=prompt,
         )
         segments = [
             SegmentRecord(
