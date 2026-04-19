@@ -276,3 +276,14 @@ class VideoAsrStorage:
                 "duration_sec": row[3],
             })
         return rows
+
+    async def get_host_segments(self, video_id: str) -> list[dict]:
+        """Return host speaker segments ordered by start time."""
+        cur = await self._conn.execute(
+            """SELECT start, "end", text FROM transcript_segments
+               WHERE video_id = ? AND speaker = 'host'
+               ORDER BY start""",
+            (video_id,),
+        )
+        rows = await cur.fetchall()
+        return [{"start": r[0], "end": r[1], "text": r[2]} for r in rows]

@@ -149,6 +149,34 @@ async def delete_file(
     return Response(status_code=204)
 
 
+def _segments_to_markdown(
+    video_id: str,
+    segments: list[dict],
+    *,
+    window_sec: float = 30.0,
+) -> str:
+    """Aggregate host segments into paragraph chunks by time window."""
+    if not segments:
+        return f"# {video_id}\n\n（无主播话术片段）\n"
+
+    lines: list[str] = [f"# {video_id}\n"]
+    bucket: list[str] = []
+    bucket_start: float = segments[0]["start"]
+
+    for seg in segments:
+        if bucket and seg["start"] - bucket_start > window_sec:
+            lines.append("\n".join(bucket))
+            lines.append("")
+            bucket = []
+            bucket_start = seg["start"]
+        bucket.append(seg["text"])
+
+    if bucket:
+        lines.append("\n".join(bucket))
+
+    return "\n\n".join(lines) + "\n"
+
+
 @router.post("/{lib_id}/import-transcript")
 async def import_transcript(
     lib_id: str,
@@ -160,22 +188,26 @@ async def import_transcript(
     if lib is None:
         raise HTTPException(status_code=404, detail="Library not found")
 
-    settings = request.app.state.video_asr_settings
-    video_dir = Path(settings.output_root) / body.video_id
-    transcript_md = video_dir / "transcript.md"
-    summary_md = video_dir / "summary.md"
+    st = getattr(request.app.state, "video_asr_storage", None)
+    if st is None:
+        raise HTTPException(status_code=503, detail="ASR storage not available")
 
-    if not transcript_md.exists():
-        raise HTTPException(status_code=404, detail=f"transcript for video '{body.video_id}' not found")
+    settings = getattr(request.app.state, "video_asr_settings", None)
+    if settings is None:
+        raise HTTPException(status_code=503, detail="ASR settings not available")
+
+    segments = await st.get_host_segments(body.video_id)
 
     imported: list[str] = []
 
     dest_clips = rag_cli.DATA_ROOT / lib_id / "competitor_clips"
     dest_clips.mkdir(parents=True, exist_ok=True)
     clip_target = dest_clips / f"{body.video_id}.md"
-    clip_target.write_bytes(transcript_md.read_bytes())
+    clip_target.write_text(
+        _segments_to_markdown(body.video_id, segments), encoding="utf-8"
+    )
     imported.append(f"competitor_clips/{body.video_id}.md")
-
+    summary_md = Path(settings.output_root) / body.video_id / "summary.md"
     if summary_md.exists():
         dest_scripts = rag_cli.DATA_ROOT / lib_id / "scripts"
         dest_scripts.mkdir(parents=True, exist_ok=True)
