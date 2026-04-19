@@ -1,5 +1,5 @@
 import { renderHook, waitFor } from '@testing-library/react'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { useVideoDetail } from './use-video-detail'
 
 const mockApiFetch = vi.fn()
@@ -11,6 +11,10 @@ vi.mock('@/config/env', () => ({
 }))
 
 describe('useVideoDetail', () => {
+  afterEach(() => {
+    vi.clearAllMocks()
+  })
+
   it('fetches metadata, transcript and summary in parallel', async () => {
     mockApiFetch
       .mockResolvedValueOnce({

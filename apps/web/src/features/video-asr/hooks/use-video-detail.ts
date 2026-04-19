@@ -18,17 +18,20 @@ export function useVideoDetail(videoId: string): VideoDetail {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    let mounted = true
     const base = `api/intelligence/video-asr/videos/${videoId}`
     Promise.all([
       apiFetch<VideoItem>(base, { silent: true }),
       apiFetch<string>(`${base}/transcript.md`, { silent: true }),
       apiFetch<string>(`${base}/summary`, { silent: true }),
     ]).then(([metaRes, transcriptRes, summaryRes]) => {
+      if (!mounted) return
       if (metaRes.ok) setMeta(metaRes.data)
       if (transcriptRes.ok) setTranscriptMd(transcriptRes.data)
       if (summaryRes.ok) setSummaryMd(summaryRes.data)
       setLoading(false)
     })
+    return () => { mounted = false }
   }, [videoId])
 
   return { meta, transcriptMd, summaryMd, loading }
