@@ -52,6 +52,8 @@ def _call_gemini_audio(
         ),
     )
     parsed: _ResponseModel = resp.parsed
+    if parsed is None:
+        raise ValueError(f"Gemini returned null parsed response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
     usage = {
         "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
         "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
