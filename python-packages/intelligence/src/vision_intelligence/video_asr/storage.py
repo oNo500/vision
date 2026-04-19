@@ -236,7 +236,7 @@ class VideoAsrStorage:
     ) -> str:
         h = _urls_hash(urls)
         cur = await self._conn.execute(
-            "SELECT job_id FROM asr_jobs WHERE urls_hash = ? AND status = 'running'",
+            "SELECT job_id FROM asr_jobs WHERE urls_hash = ?",
             (h,))
         row = await cur.fetchone()
         if row:
