@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 
 import { appPaths } from '@/config/app-paths'
 import { PlanRagLibraries } from '@/features/live/components/plan-rag-libraries'
+import { ImportToLibraryPanel } from '@/features/live/components/rag-library/import-to-library-panel'
 
 export default function PlanRagPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
@@ -21,8 +22,15 @@ export default function PlanRagPage({ params }: { params: Promise<{ id: string }
           ← 方案编辑
         </button>
       </div>
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 divide-y overflow-y-auto">
         <PlanRagLibraries planId={id} />
+        <div className="flex flex-col gap-3 p-6">
+          <h2 className="text-base font-semibold">从视频导入到素材库</h2>
+          <p className="text-sm text-muted-foreground">
+            选择目标素材库，再选择视频，将主播话术片段导入供检索使用。
+          </p>
+          <ImportToLibraryPanel />
+        </div>
       </div>
     </div>
   )
