@@ -4,7 +4,7 @@ import { use } from 'react'
 import { useRouter } from 'next/navigation'
 
 import { appPaths } from '@/config/app-paths'
-import { RagPanel } from '@/features/live/components/rag-panel'
+import { PlanRagLibraries } from '@/features/live/components/plan-rag-libraries'
 
 export default function PlanRagPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
@@ -18,11 +18,11 @@ export default function PlanRagPage({ params }: { params: Promise<{ id: string }
           className="text-sm text-muted-foreground hover:text-foreground"
           onClick={() => router.push(appPaths.dashboard.plan(id).href)}
         >
-          &larr; 方案编辑
+          ← 方案编辑
         </button>
       </div>
       <div className="flex-1 overflow-y-auto">
-        <RagPanel planId={id} />
+        <PlanRagLibraries planId={id} />
       </div>
     </div>
   )
