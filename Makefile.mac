@@ -36,6 +36,11 @@ format:
 	uv run ruff format python-packages/
 	pnpm --filter web format
 
+# ── Video ASR ──────────────────────────────────────────────────────────────────
+
+asr:
+	uv run vision-video-asr run --sources config/video_asr/sources.yaml
+
 # ── Help ───────────────────────────────────────────────────────────────────────
 
 help:

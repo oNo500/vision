@@ -1,0 +1,108 @@
+"""Gemini 2.5 Flash ASR via google-genai (Vertex AI, ADC)."""
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Literal
+
+from pydantic import BaseModel, Field
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+from vision_intelligence.video_asr.models import (
+    ChunkTranscript, SegmentRecord, Speaker,
+)
+
+
+class _SegmentModel(BaseModel):
+    start: float
+    end: float
+    speaker: Literal["host", "guest", "other", "unknown"]
+    text: str
+    confidence: float = Field(ge=0.0, le=1.0)
+
+
+class _ResponseModel(BaseModel):
+    segments: list[_SegmentModel]
+
+
+def _load_prompt() -> str:
+    here = Path(__file__).parent.parent / "prompts" / "transcribe.md"
+    return here.read_text(encoding="utf-8")
+
+
+@retry(
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=2, min=2, max=30),
+    reraise=True,
+)
+def _call_gemini_audio(
+    *, client, model: str, audio_bytes: bytes, prompt: str,
+) -> tuple[_ResponseModel, dict]:
+    """Return (parsed response, usage dict). Wrapped for test mocking + retry."""
+    from google.genai import types as gtypes
+    resp = client.models.generate_content(
+        model=model,
+        contents=[
+            prompt,
+            gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
+        ],
+        config=gtypes.GenerateContentConfig(
+            response_mime_type="application/json",
+            response_schema=_ResponseModel,
+            temperature=0.2,
+        ),
+    )
+    parsed: _ResponseModel = resp.parsed
+    usage = {
+        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+    }
+    return parsed, usage
+
+
+class GeminiTranscriber:
+    name = "gemini"
+
+    def __init__(self, *, model: str, project: str, location: str) -> None:
+        self.model = model
+        self.project = project
+        self.location = location
+        self._client = None
+
+    def _get_client(self):
+        if self._client is None:
+            from google import genai
+            self._client = genai.Client(
+                vertexai=True, project=self.project, location=self.location,
+            )
+        return self._client
+
+    def transcribe_chunk(
+        self, audio_path: Path, *, chunk_id: int, start_offset: float,
+    ) -> ChunkTranscript:
+        audio_bytes = audio_path.read_bytes()
+        client = self._get_client()
+        prompt = _load_prompt()
+        parsed, usage = _call_gemini_audio(
+            client=client, model=self.model,
+            audio_bytes=audio_bytes, prompt=prompt,
+        )
+        segments = [
+            SegmentRecord(
+                idx=i,
+                start=s.start + start_offset,
+                end=s.end + start_offset,
+                speaker=s.speaker,
+                text=s.text,
+                text_normalized="",  # filled by merger/storage later
+                confidence=s.confidence,
+                chunk_id=chunk_id,
+            )
+            for i, s in enumerate(parsed.segments)
+        ]
+        ct = ChunkTranscript(chunk_id=chunk_id, start_offset=start_offset,
+                             segments=segments)
+        return ct
+
+    def last_usage_for_chunk(self) -> dict:
+        """Placeholder -- pipeline should capture via wrapped call instead."""
+        return {}

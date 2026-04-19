@@ -103,3 +103,40 @@ module.py — 简短描述
 ### 前端页面（`apps/web/`）
 
 路由文件放 `src/app/(dashboard)/` 路由组下，业务逻辑下沉到 `src/features/`。
+
+---
+
+## Video ASR 管线
+
+### 前置条件
+
+- `brew install ffmpeg`
+- `gcloud auth application-default login`（Vertex AI ADC 凭证）
+- `.env` 里配置：
+  ```
+  VIDEO_ASR_GCP_PROJECT=<your gcp project>
+  VIDEO_ASR_GCP_LOCATION=us-central1
+  VISION_API_KEY=<任意 secret；HTTP 写端点校验用>
+  ```
+
+### 跑首批视频
+
+```bash
+make -f Makefile.mac asr
+# or
+uv run vision-video-asr run --sources config/video_asr/sources.yaml
+```
+
+产物落盘到 `output/transcripts/<video_id>/` 与 `vision.db`。
+
+### 搜索已转录内容
+
+```bash
+uv run vision-video-asr search "家人们晚上好" --limit 20
+```
+
+### 从某阶段重跑
+
+```bash
+uv run vision-video-asr rerun <video_id> --from-stage transcribe
+```
