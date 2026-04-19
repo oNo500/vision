@@ -1,15 +1,11 @@
-"""RAG retrieval for DirectorAgent — TalkPointRAG queries a ChromaDB collection.
-
-The embedder and collection are injected so tests can substitute lightweight
-fakes without pulling in torch or HuggingFace. Production wiring lives in
-``load_rag_for_plan`` (used by SessionManager).
-"""
+"""RAG retrieval for DirectorAgent — TalkPointRAG queries ChromaDB collections."""
 from __future__ import annotations
 
 import logging
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Protocol
+
+from vision_live.embedder import Embedder, get_default_embedder
 
 logger = logging.getLogger(__name__)
 
@@ -19,8 +15,6 @@ _DEFAULT_K = 5
 
 @dataclass
 class TalkPoint:
-    """A single retrieved chunk plus enough metadata to attribute it in the prompt."""
-
     id: str
     text: str
     source: str
@@ -28,33 +22,27 @@ class TalkPoint:
     chunk_index: int
 
 
-class _Embedder(Protocol):
-    def encode(self, text: str): ...
-
-
 def _build_query(segment_goal: str, recent_danmaku: list[str]) -> str:
-    """Concatenate the segment goal with up to the last 3 danmaku texts."""
     danmaku_tail = " ".join(recent_danmaku[-3:])
     return f"{segment_goal} {danmaku_tail}".strip()
 
 
 class TalkPointRAG:
-    """Semantic retrieval over a per-plan ChromaDB collection.
+    """Semantic retrieval over one or more ChromaDB collections.
 
     Args:
-        collection: any object with a ``query(**kwargs)`` method matching
-            ChromaDB's ``Collection.query`` shape.
-        embedder: any object with ``encode(text)`` returning a list/array of floats.
-        min_score: cosine similarity floor; chunks below are dropped silently.
+        collections: list of ChromaDB Collection objects.
+        embedder: any object with embed(texts) -> list[list[float]].
+        min_score: cosine similarity floor.
     """
 
     def __init__(
         self,
-        collection,
-        embedder: _Embedder,
+        collections: list,
+        embedder: Embedder,
         min_score: float = _DEFAULT_MIN_SCORE,
     ) -> None:
-        self._collection = collection
+        self._collections = collections
         self._embedder = embedder
         self._min_score = min_score
 
@@ -65,36 +53,34 @@ class TalkPointRAG:
         k: int = _DEFAULT_K,
     ) -> list[TalkPoint]:
         query_text = _build_query(segment_goal, recent_danmaku)
-        embedding = self._embedder.encode(query_text)
-        if hasattr(embedding, "tolist"):
-            embedding = embedding.tolist()
+        embedding = self._embedder.embed([query_text])[0]
 
-        results = self._collection.query(
-            query_embeddings=[list(embedding)],
-            n_results=k,
-        )
+        candidates: list[tuple[float, TalkPoint]] = []
+        for collection in self._collections:
+            results = collection.query(
+                query_embeddings=[list(embedding)],
+                n_results=k,
+            )
+            docs = _first(results.get("documents"))
+            metas = _first(results.get("metadatas"))
+            distances = _first(results.get("distances"))
+            for doc, meta, dist in zip(docs, metas, distances, strict=True):
+                similarity = 1.0 - float(dist)
+                if similarity < self._min_score:
+                    continue
+                candidates.append((similarity, TalkPoint(
+                    id=str(meta.get("id", "")),
+                    text=doc,
+                    source=str(meta.get("source", "")),
+                    category=str(meta.get("category", "")),
+                    chunk_index=int(meta.get("chunk_index", 0)),
+                )))
 
-        docs = _first(results.get("documents"))
-        metas = _first(results.get("metadatas"))
-        distances = _first(results.get("distances"))
-
-        points: list[TalkPoint] = []
-        for doc, meta, dist in zip(docs, metas, distances, strict=True):
-            similarity = 1.0 - float(dist)
-            if similarity < self._min_score:
-                continue
-            points.append(TalkPoint(
-                id=str(meta.get("id", "")),
-                text=doc,
-                source=str(meta.get("source", "")),
-                category=str(meta.get("category", "")),
-                chunk_index=int(meta.get("chunk_index", 0)),
-            ))
-        return points
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        return [tp for _, tp in candidates[:k]]
 
 
 def _first(maybe_nested) -> list:
-    """Chroma wraps per-query results in an outer list; unwrap the first query's list."""
     if not maybe_nested:
         return []
     if isinstance(maybe_nested, list) and maybe_nested and isinstance(maybe_nested[0], list):
@@ -102,31 +88,32 @@ def _first(maybe_nested) -> list:
     return list(maybe_nested)
 
 
-def load_rag_for_plan(plan_id: str, rag_root: str | Path = ".rag") -> TalkPointRAG | None:
-    """Open a pre-built index for the given plan; return None if missing.
+def load_rag_for_libraries(
+    library_ids: list[str],
+    rag_root: str | Path = ".rag",
+    project: str | None = None,
+    location: str = "us-central1",
+) -> TalkPointRAG | None:
+    """Open pre-built indexes for given libraries; return None if none found."""
+    import chromadb
 
-    Lazy-imports chromadb and sentence-transformers so the dependency is only
-    required on the production path, not in unit tests.
-    """
-    path = Path(rag_root) / plan_id
-    if not (path / "chroma.sqlite3").exists() and not (path / "chroma.sqlite").exists():
-        logger.info("RAG: no index at %s, skipping", path)
+    rag_root = Path(rag_root)
+    collections = []
+    for lib_id in library_ids:
+        path = rag_root / lib_id
+        db_file = path / "chroma.sqlite3"
+        if not db_file.exists():
+            logger.info("RAG: no index at %s, skipping", path)
+            continue
+        try:
+            client = chromadb.PersistentClient(path=str(path))
+            collection = client.get_collection(f"talkpoints_{lib_id}")
+            collections.append(collection)
+        except Exception as e:
+            logger.warning("RAG: collection for %s not found: %s", lib_id, e)
+
+    if not collections:
         return None
 
-    try:
-        import chromadb
-        from sentence_transformers import SentenceTransformer
-    except ImportError as e:
-        logger.warning("RAG unavailable, missing deps: %s", e)
-        return None
-
-    client = chromadb.PersistentClient(path=str(path))
-    collection_name = f"talkpoints_{plan_id}"
-    try:
-        collection = client.get_collection(collection_name)
-    except Exception as e:
-        logger.warning("RAG: collection %s not found: %s", collection_name, e)
-        return None
-
-    embedder = SentenceTransformer("BAAI/bge-base-zh-v1.5")
-    return TalkPointRAG(collection, embedder)
+    embedder = get_default_embedder(project=project, location=location)
+    return TalkPointRAG(collections=collections, embedder=embedder)

@@ -178,7 +178,7 @@ def cmd_build(plan_id: str) -> int:
 
     # lazy imports keep rag_cli importable without these heavy deps
     import chromadb
-    from sentence_transformers import SentenceTransformer
+    from vision_live.embedder import get_default_embedder
 
     index_root.mkdir(parents=True, exist_ok=True)
     client = chromadb.PersistentClient(path=str(index_root))
@@ -192,7 +192,7 @@ def cmd_build(plan_id: str) -> int:
     if to_purge:
         collection.delete(where={"source": {"$in": list(to_purge)}})
 
-    embedder = SentenceTransformer("BAAI/bge-base-zh-v1.5")
+    embedder = get_default_embedder()
 
     new_sources_meta = dict(prev_sources)
     for rel in removed:
@@ -213,7 +213,7 @@ def cmd_build(plan_id: str) -> int:
             continue
 
         ids = [f"{src.rel_path}::{i}" for i in range(len(chunks))]
-        embeddings = embedder.encode(chunks, normalize_embeddings=True)
+        embeddings = embedder.embed(chunks)
         metadatas = [
             {
                 "id": ids[i],
@@ -225,7 +225,7 @@ def cmd_build(plan_id: str) -> int:
         ]
         collection.add(
             ids=ids,
-            embeddings=[e.tolist() for e in embeddings],
+            embeddings=embeddings,
             documents=chunks,
             metadatas=metadatas,
         )
@@ -241,7 +241,7 @@ def cmd_build(plan_id: str) -> int:
     _save_meta(meta_path, {
         "build_time": datetime.now(timezone.utc).isoformat(),
         "chunk_count": total_chunks,
-        "embedder": "BAAI/bge-base-zh-v1.5",
+        "embedder": "text-multilingual-embedding-002",
         "sources": new_sources_meta,
     })
 
@@ -250,9 +250,9 @@ def cmd_build(plan_id: str) -> int:
 
 
 def cmd_query(plan_id: str, query_text: str, k: int = 5) -> int:
-    from vision_live.rag import load_rag_for_plan
+    from vision_live.rag import load_rag_for_libraries
 
-    rag = load_rag_for_plan(plan_id)
+    rag = load_rag_for_libraries([plan_id])
     if rag is None:
         print(f"error: no index for plan {plan_id} (run `build` first)", file=sys.stderr)
         return 2

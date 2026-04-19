@@ -1,7 +1,5 @@
-"""Tests for TalkPointRAG — retrieval layer over a ChromaDB collection."""
+"""Tests for TalkPointRAG — retrieval layer over ChromaDB collections."""
 from __future__ import annotations
-
-from types import SimpleNamespace
 
 import pytest
 
@@ -46,9 +44,9 @@ class _FakeEmbedder:
     def __init__(self) -> None:
         self.last_input: str | None = None
 
-    def encode(self, text: str):
-        self.last_input = text
-        return [0.1, 0.2, 0.3]
+    def embed(self, texts: list[str]) -> list[list[float]]:
+        self.last_input = texts[0] if texts else None
+        return [[0.1, 0.2, 0.3]] * len(texts)
 
 
 class _FakeCollection:
@@ -84,7 +82,7 @@ def test_query_returns_points_above_threshold():
         metas=[_meta(0), _meta(1)],
         distances=[0.2, 0.3],   # sim 0.8 and 0.7
     )
-    rag = TalkPointRAG(coll, _FakeEmbedder(), min_score=0.5)
+    rag = TalkPointRAG(collections=[coll], embedder=_FakeEmbedder(), min_score=0.5)
     points = rag.query("goal", [], k=2)
 
     assert len(points) == 2
@@ -99,7 +97,7 @@ def test_query_filters_below_threshold():
         metas=[_meta(0), _meta(1)],
         distances=[0.1, 0.8],   # sim 0.9 and 0.2
     )
-    rag = TalkPointRAG(coll, _FakeEmbedder(), min_score=0.5)
+    rag = TalkPointRAG(collections=[coll], embedder=_FakeEmbedder(), min_score=0.5)
     points = rag.query("goal", [], k=2)
 
     assert len(points) == 1
@@ -112,13 +110,13 @@ def test_query_all_below_threshold_returns_empty():
         metas=[_meta(0), _meta(1)],
         distances=[0.7, 0.9],   # both low sim
     )
-    rag = TalkPointRAG(coll, _FakeEmbedder(), min_score=0.5)
+    rag = TalkPointRAG(collections=[coll], embedder=_FakeEmbedder(), min_score=0.5)
     assert rag.query("goal", []) == []
 
 
 def test_query_empty_collection_returns_empty():
     coll = _FakeCollection(docs=[], metas=[], distances=[])
-    rag = TalkPointRAG(coll, _FakeEmbedder())
+    rag = TalkPointRAG(collections=[coll], embedder=_FakeEmbedder())
     assert rag.query("goal", []) == []
 
 
@@ -130,7 +128,7 @@ def test_query_empty_collection_returns_empty():
 def test_query_passes_embedding_to_collection():
     coll = _FakeCollection(docs=[], metas=[], distances=[])
     embedder = _FakeEmbedder()
-    rag = TalkPointRAG(coll, embedder)
+    rag = TalkPointRAG(collections=[coll], embedder=embedder)
 
     rag.query("segment goal", ["d1"], k=7)
 
@@ -145,17 +143,17 @@ def test_query_passes_embedding_to_collection():
 
 def test_query_default_k_is_5():
     coll = _FakeCollection(docs=[], metas=[], distances=[])
-    rag = TalkPointRAG(coll, _FakeEmbedder())
+    rag = TalkPointRAG(collections=[coll], embedder=_FakeEmbedder())
     rag.query("goal", [])
     assert coll.last_kwargs["n_results"] == 5
 
 
 def test_embedder_exception_propagates():
     class BoomEmbedder:
-        def encode(self, _text):
+        def embed(self, texts: list[str]) -> list[list[float]]:
             raise RuntimeError("oom")
 
-    rag = TalkPointRAG(_FakeCollection([], [], []), BoomEmbedder())
+    rag = TalkPointRAG(collections=[_FakeCollection([], [], [])], embedder=BoomEmbedder())
     with pytest.raises(RuntimeError):
         rag.query("goal", [])
 
@@ -168,3 +166,38 @@ def test_embedder_exception_propagates():
 def test_talk_point_fields():
     tp = TalkPoint(id="x", text="t", source="s.md", category="scripts", chunk_index=3)
     assert tp.id == "x" and tp.chunk_index == 3
+
+
+# ---------------------------------------------------------------------------
+# multi-collection merge
+# ---------------------------------------------------------------------------
+
+
+def test_multi_collection_merge_deduplicates_by_score():
+    """TalkPointRAG with two collections merges and sorts by similarity."""
+    from vision_live.rag import TalkPointRAG
+    from vision_live.embedder import FakeEmbedder
+
+    class FakeCollection:
+        def __init__(self, doc: str, distance: float) -> None:
+            self._doc = doc
+            self._distance = distance
+
+        def query(self, query_embeddings, n_results):
+            return {
+                "documents": [[self._doc]],
+                "metadatas": [[{"id": self._doc, "source": "src", "category": "scripts", "chunk_index": 0}]],
+                "distances": [[self._distance]],
+            }
+
+    emb = FakeEmbedder()
+    rag = TalkPointRAG(
+        collections=[FakeCollection("a", 0.1), FakeCollection("b", 0.3)],
+        embedder=emb,
+        min_score=0.5,
+    )
+    results = rag.query("goal", [], k=5)
+    # distance 0.1 -> similarity 0.9; distance 0.3 -> similarity 0.7; both above 0.5
+    assert len(results) == 2
+    assert results[0].text == "a"  # higher similarity first
+    assert results[1].text == "b"
