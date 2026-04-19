@@ -36,7 +36,9 @@ export function VideoList({ videos, loading }: Props) {
         >
           <div className="min-w-0 flex-1">
             <div className="truncate font-medium">{v.title ?? v.video_id}</div>
-            <div className="truncate text-xs text-muted-foreground">{v.uploader ?? ''} · {v.source}</div>
+            <div className="truncate text-xs text-muted-foreground">
+              {[v.uploader, v.source].filter(Boolean).join(' · ')}
+            </div>
           </div>
           <div className="shrink-0 tabular-nums text-xs text-muted-foreground">{formatDuration(v.duration_sec)}</div>
           <div className="shrink-0 text-xs text-muted-foreground">{v.processed_at ? new Date(v.processed_at).toLocaleDateString('zh-CN') : ''}</div>

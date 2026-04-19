@@ -29,10 +29,10 @@ const mockState: VideoProgressState = {
 describe('VideoProgress', () => {
   afterEach(() => vi.clearAllMocks())
 
-  it('renders stage names', () => {
+  it('renders stage labels in Chinese', () => {
     render(<VideoProgress state={mockState} />)
-    expect(screen.getByText('ingest')).toBeDefined()
-    expect(screen.getByText('transcribe')).toBeDefined()
+    expect(screen.getByText('下载')).toBeDefined()
+    expect(screen.getByText('转录')).toBeDefined()
   })
 
   it('shows chunk progress for transcribe stage', () => {

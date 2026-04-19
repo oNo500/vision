@@ -18,6 +18,16 @@ const STATUS_COLOR: Record<string, string> = {
 
 const STAGE_ORDER = ['ingest', 'preprocess', 'transcribe', 'merge', 'render', 'analyze', 'load']
 
+const STAGE_LABELS: Record<string, string> = {
+  ingest: '下载',
+  preprocess: '预处理',
+  transcribe: '转录',
+  merge: '合并',
+  render: '渲染',
+  analyze: '分析',
+  load: '入库',
+}
+
 type Props = {
   state: VideoProgressState
 }
@@ -36,7 +46,7 @@ export function VideoProgress({ state }: Props) {
             <span className={`w-4 text-center ${STATUS_COLOR[status] ?? 'text-muted-foreground'}`}>
               {STATUS_ICON[status] ?? '○'}
             </span>
-            <span className="w-20 text-muted-foreground">{name}</span>
+            <span className="w-20 text-muted-foreground">{STAGE_LABELS[name] ?? name}</span>
             <span className="w-16 tabular-nums text-xs text-muted-foreground">
               {s?.duration_sec != null ? `${s.duration_sec.toFixed(1)}s` : ''}
             </span>
