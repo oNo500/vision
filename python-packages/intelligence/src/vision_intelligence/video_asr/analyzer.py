@@ -5,12 +5,14 @@ from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
+import structlog
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
-from vision_intelligence.video_asr.gemini_lock import gemini_lock
 from vision_intelligence.video_asr.models import (
     RawTranscript, SegmentRecord, StyleProfile,
 )
+
+log = structlog.get_logger()
 
 
 def _is_retryable(exc: BaseException) -> bool:
@@ -46,42 +48,54 @@ def _load(name: str) -> str:
     return (Path(__file__).parent / "prompts" / name).read_text(encoding="utf-8")
 
 
+def _log_analyze_retry(retry_state) -> None:
+    log.warning("analyze_retry", attempt=retry_state.attempt_number,
+                wait_sec=round(retry_state.next_action.sleep, 1),
+                error=str(retry_state.outcome.exception()))
+
+
 @retry(stop=stop_after_attempt(8),
        wait=wait_exponential(multiplier=2, min=15, max=180),
-       retry=retry_if_exception(_is_retryable), reraise=True)
+       retry=retry_if_exception(_is_retryable),
+       before_sleep=_log_analyze_retry, reraise=True)
 def _call_summary(*, client, model: str, transcript_text: str) -> tuple[str, dict]:
-    with gemini_lock():
-        resp = client.models.generate_content(
-            model=model,
-            contents=[_load("summarize.md"), transcript_text],
-        )
-        usage = {
-            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-        }
+    from google.genai import types as gtypes
+    resp = client.models.generate_content(
+        model=model,
+        contents=[_load("summarize.md"), transcript_text],
+        config=gtypes.GenerateContentConfig(
+            temperature=0,
+            thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+        ),
+    )
+    usage = {
+        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+    }
     return resp.text, usage
 
 
 @retry(stop=stop_after_attempt(8),
        wait=wait_exponential(multiplier=2, min=15, max=180),
-       retry=retry_if_exception(_is_retryable), reraise=True)
+       retry=retry_if_exception(_is_retryable),
+       before_sleep=_log_analyze_retry, reraise=True)
 def _call_style(*, client, model: str, host_text: str) -> tuple[dict, dict]:
     from google.genai import types as gtypes
     import json
-    with gemini_lock():
-        resp = client.models.generate_content(
-            model=model,
-            contents=[_load("style.md"), host_text],
-            config=gtypes.GenerateContentConfig(
-                response_mime_type="application/json",
-                temperature=0.2,
-            ),
-        )
-        data = json.loads(resp.text)
-        usage = {
-            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-        }
+    resp = client.models.generate_content(
+        model=model,
+        contents=[_load("style.md"), host_text],
+        config=gtypes.GenerateContentConfig(
+            response_mime_type="application/json",
+            temperature=0,
+            thinking_config=gtypes.ThinkingConfig(thinking_budget=0),
+        ),
+    )
+    data = json.loads(resp.text)
+    usage = {
+        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+    }
     return data, usage
 
 
@@ -106,6 +120,8 @@ def analyze_transcript(
 ) -> AnalyzeResult:
     from google import genai
     client = genai.Client(vertexai=True, project=project, location=location)
+
+    log.info("analyze_start", video_id=raw.video_id, segments=len(raw.segments))
 
     full_text = "\n".join(f"[{s.speaker}] {s.text}" for s in raw.segments)
     summary_md, summary_usage = _call_summary(
@@ -139,6 +155,10 @@ def analyze_transcript(
         tone_tags=style_dict.get("tone_tags", []),
         english_ratio=english_chars / total_chars if total_chars else 0.0,
     )
+
+    total_in = summary_usage["input_tokens"] + style_usage["input_tokens"]
+    total_out = summary_usage["output_tokens"] + style_usage["output_tokens"]
+    log.info("analyze_done", video_id=raw.video_id, tokens_in=total_in, tokens_out=total_out)
 
     return AnalyzeResult(
         summary_md=summary_md,
