@@ -31,6 +31,7 @@ dev = [
 asyncio_mode = "auto"
 testpaths = ["python-packages"]
 python_files = ["*_test.py"]
+addopts = "-m 'not slow'"
 markers = [
     "slow: tests that download models / run real embeddings",
 ]

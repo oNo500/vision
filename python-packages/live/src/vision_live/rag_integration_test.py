@@ -64,12 +64,12 @@ def test_build_creates_index_and_loads(plan_dirs):
 
 
 def test_query_retrieves_semantic_matches(plan_dirs, monkeypatch: pytest.MonkeyPatch):
-    from vision_live.rag import load_rag_for_plan
+    from vision_live.rag import load_rag_for_libraries
 
     plan_id, _, index_root = plan_dirs
     cmd_build(plan_id)
 
-    rag = load_rag_for_plan(plan_id, rag_root=index_root)
+    rag = load_rag_for_libraries([plan_id], rag_root=index_root)
     assert rag is not None
 
     # Query about ingredient count → should hit at least one of the two
@@ -99,12 +99,12 @@ def test_incremental_build_skips_unchanged(plan_dirs, capsys):
 
 
 def test_query_unrelated_topic_may_return_nothing(plan_dirs):
-    from vision_live.rag import load_rag_for_plan
+    from vision_live.rag import load_rag_for_libraries
 
     plan_id, _, index_root = plan_dirs
     cmd_build(plan_id)
 
-    rag = load_rag_for_plan(plan_id, rag_root=index_root)
+    rag = load_rag_for_libraries([plan_id], rag_root=index_root)
     # deliberately unrelated query; threshold 0.5 may filter everything
     points = rag.query("股票基金房地产投资", [], k=3)
     # either empty or very few — we just assert the call doesn't error
