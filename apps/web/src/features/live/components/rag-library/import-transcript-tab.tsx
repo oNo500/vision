@@ -12,10 +12,8 @@ type VideoSummary = {
 }
 
 export function ImportTranscriptTab({
-  libId,
   onImport,
 }: {
-  libId: string
   onImport: (videoId: string) => Promise<boolean>
 }) {
   const [videos, setVideos] = useState<VideoSummary[]>([])

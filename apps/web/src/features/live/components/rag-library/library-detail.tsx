@@ -60,7 +60,7 @@ export function LibraryDetail({ libId, libName }: { libId: string; libName: stri
       )}
 
       {tab === 'import' && (
-        <ImportTranscriptTab libId={libId} onImport={importTranscript} />
+        <ImportTranscriptTab onImport={importTranscript} />
       )}
 
       {buildStatus.last_error && !buildStatus.running && (
