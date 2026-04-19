@@ -46,12 +46,14 @@ class FunasrTranscriber:
                     speaker="unknown",
                     text=text,
                     text_normalized="",
-                    confidence=0.8,
+                    confidence=0.95,
                     chunk_id=chunk_id,
+                    asr_engine="funasr-paraformer-large",
                 ))
                 idx += 1
         return ChunkTranscript(
             chunk_id=chunk_id,
             start_offset=start_offset,
             segments=segments,
+            asr_engine="funasr-paraformer-large",
         )

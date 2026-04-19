@@ -121,11 +121,12 @@ class GeminiTranscriber:
                 text_normalized="",  # filled by merger/storage later
                 confidence=s.confidence,
                 chunk_id=chunk_id,
+                asr_engine=self.model,
             )
             for i, s in enumerate(parsed.segments)
         ]
         ct = ChunkTranscript(chunk_id=chunk_id, start_offset=start_offset,
-                             segments=segments)
+                             segments=segments, asr_engine=self.model)
         return ct
 
     def last_usage_for_chunk(self) -> dict:

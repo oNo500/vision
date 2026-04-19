@@ -31,12 +31,14 @@ class SegmentRecord(BaseModel):
     text_normalized: str
     confidence: float = Field(ge=0.0, le=1.0)
     chunk_id: int
+    asr_engine: str = "gemini"
 
 
 class ChunkTranscript(BaseModel):
     chunk_id: int
     start_offset: float
     segments: list[SegmentRecord]
+    asr_engine: str = "gemini"
 
 
 class RawTranscript(BaseModel):
