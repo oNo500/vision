@@ -3,10 +3,8 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    import aiosqlite
+import aiosqlite
 
 
 def _now_iso() -> str:
@@ -16,18 +14,18 @@ def _now_iso() -> str:
 class RagLibraryStore:
     """Thin async CRUD wrapper around the rag_libraries table."""
 
-    def __init__(self, conn: "aiosqlite.Connection") -> None:
+    def __init__(self, conn: aiosqlite.Connection) -> None:
         self._conn = conn
 
     async def create(self, lib_id: str, name: str) -> dict:
-        existing = await self.get(lib_id)
-        if existing is not None:
-            raise ValueError(f"Library '{lib_id}' already exists")
         now = _now_iso()
-        await self._conn.execute(
-            "INSERT INTO rag_libraries (id, name, created_at) VALUES (?, ?, ?)",
-            (lib_id, name, now),
-        )
+        try:
+            await self._conn.execute(
+                "INSERT INTO rag_libraries (id, name, created_at) VALUES (?, ?, ?)",
+                (lib_id, name, now),
+            )
+        except aiosqlite.IntegrityError:
+            raise ValueError(f"Library '{lib_id}' already exists")
         await self._conn.commit()
         return {"id": lib_id, "name": name, "created_at": now}
 
@@ -50,5 +48,6 @@ class RagLibraryStore:
         return {"id": row[0], "name": row[1], "created_at": row[2]}
 
     async def delete(self, lib_id: str) -> None:
+        """Delete by id. No-op if not found."""
         await self._conn.execute("DELETE FROM rag_libraries WHERE id = ?", (lib_id,))
         await self._conn.commit()
