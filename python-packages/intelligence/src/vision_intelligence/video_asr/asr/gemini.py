@@ -4,12 +4,15 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Literal
 
+import structlog
 from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 from vision_intelligence.video_asr.models import (
     ChunkTranscript, SegmentRecord, Speaker,
 )
+
+log = structlog.get_logger()
 
 
 class _SegmentModel(BaseModel):
@@ -27,6 +30,15 @@ class _ResponseModel(BaseModel):
 def _load_prompt() -> str:
     here = Path(__file__).parent.parent / "prompts" / "transcribe.md"
     return here.read_text(encoding="utf-8")
+
+
+def _log_gemini_retry(retry_state) -> None:
+    log.warning(
+        "gemini_retry",
+        attempt=retry_state.attempt_number,
+        wait_sec=round(retry_state.next_action.sleep, 1) if retry_state.next_action else None,
+        error=str(retry_state.outcome.exception()) if retry_state.outcome else None,
+    )
 
 
 def _is_retryable(exc: BaseException) -> bool:
@@ -48,6 +60,7 @@ def _is_retryable(exc: BaseException) -> bool:
     stop=stop_after_attempt(8),
     wait=wait_exponential(multiplier=2, min=15, max=180),
     retry=retry_if_exception(_is_retryable),
+    before_sleep=_log_gemini_retry,
     reraise=True,
 )
 def _call_gemini_audio(

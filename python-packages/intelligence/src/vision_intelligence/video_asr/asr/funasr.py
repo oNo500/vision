@@ -3,7 +3,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import structlog
+
 from vision_intelligence.video_asr.models import ChunkTranscript, SegmentRecord
+
+log = structlog.get_logger()
 
 
 class FunasrTranscriber:
@@ -14,6 +18,7 @@ class FunasrTranscriber:
 
     def _get_model(self):
         if self._model is None:
+            log.info("funasr_model_loading")
             from funasr import AutoModel
             self._model = AutoModel(
                 model="iic/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
@@ -21,6 +26,7 @@ class FunasrTranscriber:
                 punc_model="iic/punc_ct-transformer_zh-cn-common-vocab272727-pytorch",
                 disable_update=True,
             )
+            log.info("funasr_model_ready")
         return self._model
 
     def transcribe_chunk(

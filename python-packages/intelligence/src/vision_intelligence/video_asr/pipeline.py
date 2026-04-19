@@ -2,19 +2,20 @@
 from __future__ import annotations
 
 import asyncio
-import logging
 import subprocess
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import structlog
+
 from vision_intelligence.video_asr.manifest import (
     manifest_path, read_manifest, write_manifest,
 )
 from vision_intelligence.video_asr.models import StageManifest, StageName
 
-logger = logging.getLogger(__name__)
+log = structlog.get_logger()
 
 _STAGE_ORDER: list[StageName] = [
     "ingest", "preprocess", "transcribe", "merge",
@@ -124,6 +125,7 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
         nonlocal total_in, total_out
         async with sem:
             audio = chunks_dir / f"chunk_{i:03d}.wav"
+            chunk_start = _now()
 
             def _work() -> tuple:
                 done_file = chunks_dir / f"chunk_{i:03d}.json"
@@ -132,29 +134,36 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
                     return ChunkTranscript.model_validate_json(done_file.read_text()), {}
                 if not audio.exists():
                     raise FileNotFoundError(f"chunk wav missing: {audio}")
+                audio_size_mb = audio.stat().st_size / (1024 * 1024)
+                log.info("chunk_start", chunk_id=i, audio_size_mb=round(audio_size_mb, 2))
                 try:
                     ct, usage = gemini.transcribe_chunk(
                         audio, chunk_id=i, start_offset=start_offset,
                     )
                     engine = ct.asr_engine
                 except Exception as exc:
-                    logger.warning(
-                        "chunk %03d Gemini failed (%s), falling back to FunASR",
-                        i, exc,
-                    )
+                    log.warning("chunk_fallback", chunk_id=i, reason=str(exc))
                     ct = _get_funasr().transcribe_chunk(
                         audio, chunk_id=i, start_offset=start_offset,
                     )
                     usage = {}
                     engine = ct.asr_engine
                 if not ct.segments:
-                    logger.warning(
-                        "chunk %03d returned 0 segments from %s", i, engine,
+                    log.warning(
+                        "chunk_empty", chunk_id=i, engine=engine,
                     )
                     raise ValueError(f"chunk {i:03d} returned 0 segments from {engine}")
                 done_file.write_text(ct.model_dump_json(indent=2), encoding="utf-8")
                 return ct, usage
             ct, usage = await asyncio.to_thread(_work)
+            chunk_duration = _delta_sec(chunk_start, _now())
+            log.info(
+                "chunk_done",
+                chunk_id=i,
+                engine=ct.asr_engine,
+                segments=len(ct.segments),
+                duration_sec=round(chunk_duration, 2),
+            )
             total_in += usage.get("input_tokens", 0)
             total_out += usage.get("output_tokens", 0)
 
@@ -352,7 +361,7 @@ async def run_video(
     for stage in _STAGE_ORDER:
         existing = read_manifest(ctx.video_dir, stage)
         if existing and existing.status == "done":
-            logger.info("skip done stage %s for %s", stage, ctx.video_id)
+            log.info("stage_skip", stage=stage, video_id=ctx.video_id, reason="already_done")
             continue
 
         await ctx.storage.set_pipeline_run(
@@ -361,12 +370,15 @@ async def run_video(
         )
         started = _now()
         fn = _get_stage_fn(stage)
+        log.info("stage_start", stage=stage, video_id=ctx.video_id)
         last_exc: Exception | None = None
         for attempt in range(3):
             if attempt > 0:
-                logger.warning(
-                    "stage %s attempt %d/3 after error: %s",
-                    stage, attempt + 1, last_exc,
+                log.warning(
+                    "stage_retry",
+                    stage=stage,
+                    attempt=attempt + 1,
+                    error=str(last_exc),
                 )
                 await asyncio.sleep(5)
             try:
@@ -377,6 +389,12 @@ async def run_video(
                 last_exc = e
         if last_exc is not None:
             finished = _now()
+            log.error(
+                "stage_failed",
+                stage=stage,
+                video_id=ctx.video_id,
+                error=repr(last_exc),
+            )
             m = StageManifest(
                 stage=stage, video_id=ctx.video_id, status="failed",
                 started_at=started, finished_at=finished,
@@ -393,6 +411,12 @@ async def run_video(
             )
             raise last_exc
         finished = _now()
+        log.info(
+            "stage_done",
+            stage=stage,
+            video_id=ctx.video_id,
+            duration_sec=round(_delta_sec(started, finished), 2),
+        )
         m = StageManifest(
             stage=stage, video_id=ctx.video_id, status="done",
             started_at=started, finished_at=finished,
