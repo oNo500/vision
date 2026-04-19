@@ -3,11 +3,16 @@ from __future__ import annotations
 
 import asyncio
 import json
+import re
+import uuid
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
+from vision_intelligence.video_asr.manifest import read_manifest
+
+from vision_intelligence.video_asr.pipeline import _STAGE_ORDER
 
 router = APIRouter(prefix="/api/intelligence/video-asr", tags=["video-asr"])
 
@@ -241,9 +246,8 @@ async def video_progress(video_id: str, request: Request) -> EventSourceResponse
     st = request.app.state.video_asr_storage
     settings = request.app.state.video_asr_settings
 
-    _STAGE_ORDER = ["ingest", "preprocess", "transcribe", "merge", "render", "analyze", "load"]
-
     async def generator():
+        last_payload: str | None = None
         while True:
             if await request.is_disconnected():
                 break
@@ -255,7 +259,7 @@ async def video_progress(video_id: str, request: Request) -> EventSourceResponse
             )
             rows = await cur.fetchall()
             stages = [
-                {"stage": r[0], "status": r[1], "duration_sec": r[2]}
+                {"stage": r[0], "status": r[1], "duration_sec": r[2], "started_at": r[3]}
                 for r in rows
             ]
 
@@ -263,30 +267,37 @@ async def video_progress(video_id: str, request: Request) -> EventSourceResponse
             chunks_dir = video_dir / "chunks"
 
             total_chunks = None
-            preprocess_manifest = video_dir / "02-preprocess.json"
-            if preprocess_manifest.exists():
-                try:
-                    pm = json.loads(preprocess_manifest.read_text(encoding="utf-8"))
-                    boundaries = pm.get("extra", {}).get("boundaries") or pm.get("boundaries")
-                    if boundaries is not None:
-                        total_chunks = len(boundaries)
-                except Exception:
-                    pass
+            pm = read_manifest(video_dir, "preprocess")
+            if pm is not None:
+                boundaries = (pm.extra or {}).get("boundaries")
+                if boundaries is not None:
+                    total_chunks = len(boundaries)
 
             chunk_info = []
+            retrying_chunks: list[dict] = []
             if chunks_dir.exists():
                 for p in sorted(
                     p for p in chunks_dir.glob("chunk_???.json")
                     if p.stem.count('_') == 1
                 ):
                     try:
-                        data = json.loads(p.read_text(encoding="utf-8"))
+                        head = p.read_bytes()[:256].decode("utf-8", errors="replace")
+                        m = re.search(r'"asr_engine"\s*:\s*"([^"]*)"', head)
+                        engine = m.group(1) if m else ""
                         chunk_idx = int(p.stem.split('_')[1])
-                        chunk_info.append({"id": chunk_idx, "engine": data.get("asr_engine", "")})
+                        chunk_info.append({"id": chunk_idx, "engine": engine})
+                    except Exception:
+                        pass
+                for p in chunks_dir.glob("chunk_???.retry"):
+                    try:
+                        import json as _json
+                        retry_data = _json.loads(p.read_text(encoding="utf-8"))
+                        chunk_idx = int(p.stem.split('_')[1])
+                        retrying_chunks.append({"id": chunk_idx, **retry_data})
                     except Exception:
                         pass
 
-            transcribe_progress = {"done": len(chunk_info), "total": total_chunks, "chunks": chunk_info}
+            transcribe_progress = {"done": len(chunk_info), "total": total_chunks, "chunks": chunk_info, "retrying": retrying_chunks}
 
             cur = await conn.execute(
                 "SELECT COALESCE(SUM(estimated_cost_usd), 0) FROM llm_usage WHERE video_id = ?",
@@ -300,14 +311,16 @@ async def video_progress(video_id: str, request: Request) -> EventSourceResponse
                 "transcribe_progress": transcribe_progress,
                 "cost_usd": cost_usd,
             }, ensure_ascii=False)
-            yield {"event": "progress", "data": payload}
+            if payload != last_payload:
+                last_payload = payload
+                yield {"event": "progress", "data": payload}
 
             stage_statuses = {r["stage"]: r["status"] for r in stages}
-            all_done = all(
-                stage_statuses.get(s) in ("done", "failed") for s in _STAGE_ORDER
-            ) and len(stages) == len(_STAGE_ORDER)
-            any_failed = any(v == "failed" for v in stage_statuses.values())
-            if all_done or any_failed:
+            all_done = (
+                len(stages) == len(_STAGE_ORDER)
+                and all(stage_statuses.get(s) in ("done", "failed") for s in _STAGE_ORDER)
+            )
+            if all_done:
                 break
 
             await asyncio.sleep(2.0)
@@ -315,8 +328,87 @@ async def video_progress(video_id: str, request: Request) -> EventSourceResponse
     return EventSourceResponse(generator())
 
 
+@router.delete("/videos/{video_id}")
+async def delete_video(video_id: str, request: Request) -> dict:
+    import shutil
+    st = request.app.state.video_asr_storage
+    settings = request.app.state.video_asr_settings
+    conn = st._conn
+    for table in ("transcript_segments", "transcript_fts", "pipeline_runs", "llm_usage", "asr_job_videos", "video_sources"):
+        await conn.execute(f"DELETE FROM {table} WHERE video_id = ?", (video_id,))
+    await conn.commit()
+    video_dir = _video_dir(settings, video_id)
+    if video_dir.exists():
+        shutil.rmtree(video_dir)
+    return {"deleted": video_id}
+
+
 @router.get("/search")
 async def search(request: Request, q: str, limit: int = 50) -> list[dict]:
     from vision_intelligence.video_asr.cleaning import jieba_tokenize
     st = request.app.state.video_asr_storage
     return await st.search_segments(jieba_tokenize(q), limit=limit)
+
+
+class ImportToPlanBody(BaseModel):
+    plan_id: str
+
+
+@router.post("/videos/{video_id}/import-to-plan")
+async def import_to_plan(video_id: str, body: ImportToPlanBody, request: Request) -> dict:
+    st = getattr(request.app.state, "video_asr_storage", None)
+    if st is None:
+        raise HTTPException(503, "ASR storage not available")
+    plan_store = getattr(request.app.state, "plan_store", None)
+    if plan_store is None:
+        raise HTTPException(503, "plan store not available")
+
+    sp = await st.get_style_profile(video_id)
+    if sp is None:
+        raise HTTPException(404, "style profile not found — run analyze stage first")
+
+    plan = await plan_store.get(body.plan_id)
+    if plan is None:
+        raise HTTPException(404, "plan not found")
+
+    persona = dict(plan.get("persona") or {})
+    existing_style = persona.get("style", "")
+    new_tags = "、".join(sp.tone_tags) if sp.tone_tags else ""
+    if new_tags:
+        persona["style"] = f"{existing_style}、{new_tags}" if existing_style else new_tags
+
+    existing_phrases = set(persona.get("catchphrases") or [])
+    persona["catchphrases"] = list(existing_phrases | set(sp.catchphrases))
+
+    segments = list((plan.get("script") or {}).get("segments") or [])
+    existing_titles = {s.get("title") for s in segments}
+
+    if sp.opening_hooks and "开场" not in existing_titles:
+        segments.insert(0, {
+            "id": f"seg-{uuid.uuid4().hex[:8]}",
+            "title": "开场",
+            "goal": "吸引观众注意，建立信任感",
+            "duration": 120,
+            "cue": list(sp.opening_hooks),
+            "must_say": False,
+            "keywords": [],
+        })
+
+    if sp.cta_patterns and "行动号召" not in existing_titles:
+        segments.append({
+            "id": f"seg-{uuid.uuid4().hex[:8]}",
+            "title": "行动号召",
+            "goal": "引导观众下单、点击购物车",
+            "duration": 60,
+            "cue": list(sp.cta_patterns),
+            "must_say": False,
+            "keywords": [],
+        })
+
+    updated = {
+        **plan,
+        "persona": persona,
+        "script": {**(plan.get("script") or {}), "segments": segments},
+    }
+    await plan_store.update(body.plan_id, updated)
+    return {"video_id": video_id, "plan_id": body.plan_id, "status": "merged"}
