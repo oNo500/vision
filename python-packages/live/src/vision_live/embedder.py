@@ -36,12 +36,19 @@ class VertexEmbedder:
         self._project = project
         self._location = location
         self._model = model
+        self._client = None  # lazy-initialized on first embed call
+
+    def _get_client(self):
+        if self._client is None:
+            from google import genai
+
+            self._client = genai.Client(vertexai=True, project=self._project, location=self._location)
+        return self._client
 
     def embed(self, texts: list[str]) -> list[list[float]]:
-        from google import genai
         from google.genai import types as gtypes
 
-        client = genai.Client(vertx_ai_mode=True, project=self._project, location=self._location)
+        client = self._get_client()
         result: list[list[float]] = []
         for i in range(0, len(texts), _BATCH_SIZE):
             batch = texts[i : i + _BATCH_SIZE]
