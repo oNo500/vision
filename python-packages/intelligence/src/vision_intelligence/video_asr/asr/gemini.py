@@ -18,7 +18,7 @@ class _SegmentModel(BaseModel):
     end: float
     speaker: Literal["host", "guest", "other", "unknown"]
     text: str
-    confidence: float = Field(ge=0.0, le=1.0)
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
 
 
 class _ResponseModel(BaseModel):
