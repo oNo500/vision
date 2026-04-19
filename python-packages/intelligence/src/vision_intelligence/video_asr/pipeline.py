@@ -120,9 +120,10 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
 
     sem = asyncio.Semaphore(ctx.settings.transcribe_concurrency)
     total_in = total_out = 0
+    chunks_failed = 0
 
     async def do_chunk(i: int, start_offset: float) -> None:
-        nonlocal total_in, total_out
+        nonlocal total_in, total_out, chunks_failed
         async with sem:
             audio = chunks_dir / f"chunk_{i:03d}.wav"
             chunk_start = _now()
@@ -168,7 +169,11 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
             total_out += usage.get("output_tokens", 0)
 
     tasks = [do_chunk(i, start) for i, (start, _) in enumerate(boundaries)]
-    await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    for r in results:
+        if isinstance(r, BaseException):
+            chunks_failed += 1
+            log.warning("chunk_failed_final", error=str(r))
 
     prompt_file = Path(__file__).parent / "prompts" / "transcribe.md"
     prompt_hash = hashlib.sha256(prompt_file.read_bytes()).hexdigest()[:12]
@@ -188,7 +193,7 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
         "outputs": ["chunks/*.json"],
         "model": ctx.settings.gemini_model,
         "chunks_transcribed": len(boundaries),
-        "chunks_failed": 0,
+        "chunks_failed": chunks_failed,
         "tokens_in": total_in, "tokens_out": total_out,
         "estimated_cost_usd": cost,
         "prompt_version": prompt_hash,
@@ -205,7 +210,7 @@ async def _stage_merge(ctx: PipelineContext) -> dict:
 
     chunks = [
         ChunkTranscript.model_validate_json(p.read_text(encoding="utf-8"))
-        for p in sorted(chunks_dir.glob("chunk_*.json"))
+        for p in sorted(p for p in chunks_dir.glob("chunk_???.json") if p.stem.count('_') == 1)
     ]
     in_count = sum(len(c.segments) for c in chunks)
     merged = merge_chunks(chunks)
