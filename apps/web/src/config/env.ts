@@ -7,6 +7,7 @@ export const env = createEnv({
     NEXT_PUBLIC_APP_NAME: z.string().optional().default('Vision'),
     NEXT_PUBLIC_APP_URL: z.url().optional().default('http://localhost:3000'),
     NEXT_PUBLIC_API_URL: z.url().optional().default('http://localhost:8000'),
+    NEXT_PUBLIC_API_KEY: z.string().optional().default(''),
   },
   shared: {
     NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
@@ -16,5 +17,6 @@ export const env = createEnv({
     NEXT_PUBLIC_APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    NEXT_PUBLIC_API_KEY: process.env.NEXT_PUBLIC_API_KEY,
   },
 })
