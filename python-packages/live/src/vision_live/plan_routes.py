@@ -118,10 +118,9 @@ async def update_plan_rag_libraries(
     body: RagLibrariesBody,
     store: PlanStore = Depends(get_plan_store),
 ) -> dict:
-    plan = await store.get(plan_id)
-    if plan is None:
+    updated = await store.update(plan_id, {"rag_library_ids": body.library_ids})
+    if updated is None:
         raise HTTPException(status_code=404, detail="Plan not found")
-    updated = await store.update(plan_id, {**plan, "rag_library_ids": body.library_ids})
     return updated
 
 

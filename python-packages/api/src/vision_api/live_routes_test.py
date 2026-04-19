@@ -203,7 +203,6 @@ async def plan_client(tmp_path):
     import aiosqlite
     from vision_api.main import create_app
     from vision_live.plan_store import PlanStore
-    from vision_shared.db import Database
 
     db_path = str(tmp_path / "test.db")
     from vision_api.settings import get_settings
@@ -259,4 +258,14 @@ async def test_put_plan_rag_libraries_replaces(plan_client):
     plan_id = r.json()["id"]
     await plan_client.put(f"live/plans/{plan_id}/rag-libraries", json={"library_ids": ["a"]})
     r = await plan_client.put(f"live/plans/{plan_id}/rag-libraries", json={"library_ids": ["b"]})
+    assert r.status_code == 200
     assert r.json()["rag_library_ids"] == ["b"]
+
+
+@pytest.mark.asyncio
+async def test_put_plan_rag_libraries_not_found(plan_client):
+    r = await plan_client.put(
+        "live/plans/nonexistent-id/rag-libraries",
+        json={"library_ids": ["dong-yuhui"]},
+    )
+    assert r.status_code == 404
