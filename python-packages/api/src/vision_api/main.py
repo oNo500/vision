@@ -4,9 +4,11 @@ from __future__ import annotations
 import asyncio
 import logging
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from vision_api.api_key import ApiKeyMiddleware
 from vision_api.settings import get_settings
@@ -77,9 +79,17 @@ def create_app() -> FastAPI:
     app.include_router(video_asr_router)
     app.include_router(rag_library_router)
 
+    static_dir = Path(__file__).parent / "static"
+    app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
+
     @app.get("/health")
     def health() -> dict:
         return {"status": "healthy"}
+
+    @app.get("/progress")
+    def progress_redirect():
+        from fastapi.responses import RedirectResponse
+        return RedirectResponse(url="/static/progress.html")
 
     return app
 

@@ -236,6 +236,85 @@ async def rerun(video_id: str, body: RerunBody, request: Request) -> dict:
     return {"video_id": video_id, "status": "restarted"}
 
 
+@router.get("/videos/{video_id}/progress")
+async def video_progress(video_id: str, request: Request) -> EventSourceResponse:
+    st = request.app.state.video_asr_storage
+    settings = request.app.state.video_asr_settings
+
+    _STAGE_ORDER = ["ingest", "preprocess", "transcribe", "merge", "render", "analyze", "load"]
+
+    async def generator():
+        while True:
+            if await request.is_disconnected():
+                break
+            conn = st._conn
+            cur = await conn.execute(
+                "SELECT stage, status, duration_sec, started_at, finished_at "
+                "FROM pipeline_runs WHERE video_id = ? ORDER BY started_at",
+                (video_id,),
+            )
+            rows = await cur.fetchall()
+            stages = [
+                {"stage": r[0], "status": r[1], "duration_sec": r[2]}
+                for r in rows
+            ]
+
+            video_dir = Path(settings.output_root) / video_id
+            chunks_dir = video_dir / "chunks"
+
+            total_chunks = None
+            preprocess_manifest = video_dir / "02-preprocess.json"
+            if preprocess_manifest.exists():
+                try:
+                    pm = json.loads(preprocess_manifest.read_text(encoding="utf-8"))
+                    boundaries = pm.get("extra", {}).get("boundaries") or pm.get("boundaries")
+                    if boundaries is not None:
+                        total_chunks = len(boundaries)
+                except Exception:
+                    pass
+
+            chunk_info = []
+            if chunks_dir.exists():
+                for p in sorted(
+                    p for p in chunks_dir.glob("chunk_???.json")
+                    if p.stem.count('_') == 1
+                ):
+                    try:
+                        data = json.loads(p.read_text(encoding="utf-8"))
+                        chunk_idx = int(p.stem.split('_')[1])
+                        chunk_info.append({"id": chunk_idx, "engine": data.get("asr_engine", "")})
+                    except Exception:
+                        pass
+
+            transcribe_progress = {"done": len(chunk_info), "total": total_chunks, "chunks": chunk_info}
+
+            cur = await conn.execute(
+                "SELECT COALESCE(SUM(estimated_cost_usd), 0) FROM llm_usage WHERE video_id = ?",
+                (video_id,),
+            )
+            cost_row = await cur.fetchone()
+            cost_usd = round(float(cost_row[0]) if cost_row else 0.0, 6)
+
+            payload = json.dumps({
+                "stages": stages,
+                "transcribe_progress": transcribe_progress,
+                "cost_usd": cost_usd,
+            }, ensure_ascii=False)
+            yield {"event": "progress", "data": payload}
+
+            stage_statuses = {r["stage"]: r["status"] for r in stages}
+            all_done = all(
+                stage_statuses.get(s) in ("done", "failed") for s in _STAGE_ORDER
+            ) and len(stages) == len(_STAGE_ORDER)
+            any_failed = any(v == "failed" for v in stage_statuses.values())
+            if all_done or any_failed:
+                break
+
+            await asyncio.sleep(2.0)
+
+    return EventSourceResponse(generator())
+
+
 @router.get("/search")
 async def search(request: Request, q: str, limit: int = 50) -> list[dict]:
     from vision_intelligence.video_asr.cleaning import jieba_tokenize
