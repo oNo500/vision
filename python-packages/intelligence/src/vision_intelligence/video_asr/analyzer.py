@@ -32,7 +32,7 @@ def _load(name: str) -> str:
 
 
 @retry(stop=stop_after_attempt(3),
-       wait=wait_exponential(multiplier=2, min=2, max=20), reraise=True)
+       wait=wait_exponential(multiplier=2, min=10, max=120), reraise=True)
 def _call_summary(*, client, model: str, transcript_text: str) -> tuple[str, dict]:
     resp = client.models.generate_content(
         model=model,
@@ -46,7 +46,7 @@ def _call_summary(*, client, model: str, transcript_text: str) -> tuple[str, dic
 
 
 @retry(stop=stop_after_attempt(3),
-       wait=wait_exponential(multiplier=2, min=2, max=20), reraise=True)
+       wait=wait_exponential(multiplier=2, min=10, max=120), reraise=True)
 def _call_style(*, client, model: str, host_text: str) -> tuple[dict, dict]:
     from google.genai import types as gtypes
     resp = client.models.generate_content(

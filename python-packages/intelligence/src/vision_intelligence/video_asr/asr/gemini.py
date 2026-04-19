@@ -30,8 +30,8 @@ def _load_prompt() -> str:
 
 
 @retry(
-    stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=2, min=2, max=30),
+    stop=stop_after_attempt(6),
+    wait=wait_exponential(multiplier=2, min=10, max=120),
     reraise=True,
 )
 def _call_gemini_audio(
