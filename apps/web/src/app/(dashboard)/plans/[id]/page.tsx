@@ -14,6 +14,7 @@ import { DropIndicator } from '@atlaskit/pragmatic-drag-and-drop-react-drop-indi
 import { reorder } from '@atlaskit/pragmatic-drag-and-drop/reorder'
 
 import { appPaths } from '@/config/app-paths'
+import { ImportStyleSheet } from '@/features/live/components/import-style-sheet'
 import { usePlan, type Segment } from '@/features/live/hooks/use-plan'
 import { usePlans } from '@/features/live/hooks/use-plans'
 
@@ -178,9 +179,10 @@ function SegmentCard({
 export default function PlanEditorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
   const router = useRouter()
-  const { plan, saving, savePlan } = usePlan(id)
+  const { plan, saving, savePlan, importStyleFromVideo, importing } = usePlan(id)
   const { loadPlan } = usePlans()
   const [tab, setTab] = useState<'product' | 'persona' | 'script'>('product')
+  const [importSheetOpen, setImportSheetOpen] = useState(false)
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -349,6 +351,11 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
 
           {tab === 'persona' && (
             <div className="flex flex-col gap-4 max-w-lg">
+              <div className="flex justify-end">
+                <Button variant="outline" size="sm" disabled={importing} onClick={() => setImportSheetOpen(true)}>
+                  从视频导入风格
+                </Button>
+              </div>
               <div className="flex flex-col gap-1.5">
                 <Label>主播名称</Label>
                 <Input value={plan.persona.name} onChange={(e) => updatePersona('name', e.target.value)} />
@@ -376,6 +383,11 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
 
           {tab === 'script' && (
             <div className="flex flex-col gap-3" ref={listRef}>
+              <div className="flex justify-end">
+                <Button variant="outline" size="sm" disabled={importing} onClick={() => setImportSheetOpen(true)}>
+                  从视频导入话术段落
+                </Button>
+              </div>
               {plan.script.segments.map((seg, i) => (
                 <SegmentCard
                   key={seg.id}
@@ -391,6 +403,12 @@ export default function PlanEditorPage({ params }: { params: Promise<{ id: strin
           )}
         </div>
       </div>
+
+      <ImportStyleSheet
+        open={importSheetOpen}
+        onOpenChange={setImportSheetOpen}
+        onImport={importStyleFromVideo}
+      />
 
       {/* bottom bar */}
       <div className="flex gap-2 border-t px-6 py-3">
