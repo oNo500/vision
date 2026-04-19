@@ -119,3 +119,24 @@ async def test_get_normalizes_old_text_field(store: PlanStore):
     assert seg["title"] == "段落1"
     assert "text" not in seg
     assert seg["cue"] == []
+
+
+@pytest.mark.asyncio
+async def test_create_plan_has_empty_rag_library_ids(store: PlanStore):
+    plan = await store.create({"name": "Test Plan"})
+    assert plan["rag_library_ids"] == []
+
+
+@pytest.mark.asyncio
+async def test_update_rag_library_ids(store: PlanStore):
+    plan = await store.create({"name": "Test Plan"})
+    updated = await store.update(plan["id"], {**plan, "rag_library_ids": ["dong-yuhui"]})
+    assert updated["rag_library_ids"] == ["dong-yuhui"]
+
+
+@pytest.mark.asyncio
+async def test_get_plan_preserves_rag_library_ids(store: PlanStore):
+    plan = await store.create({"name": "Test Plan"})
+    await store.update(plan["id"], {**plan, "rag_library_ids": ["lib-a", "lib-b"]})
+    fetched = await store.get(plan["id"])
+    assert fetched["rag_library_ids"] == ["lib-a", "lib-b"]

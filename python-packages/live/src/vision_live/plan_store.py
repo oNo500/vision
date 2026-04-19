@@ -49,6 +49,7 @@ class PlanStore:
             "product": data.get("product", {}),
             "persona": data.get("persona", {}),
             "script": data.get("script", {"segments": []}),
+            "rag_library_ids": data.get("rag_library_ids", []),
         }
         await self._conn.execute(
             "INSERT INTO live_plans (id, name, data, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
@@ -93,6 +94,7 @@ class PlanStore:
             "product": data.get("product", existing["product"]),
             "persona": data.get("persona", existing["persona"]),
             "script": data.get("script", existing["script"]),
+            "rag_library_ids": data.get("rag_library_ids", existing.get("rag_library_ids", [])),
         }
         cursor = await self._conn.execute(
             "UPDATE live_plans SET name = ?, data = ?, updated_at = ? WHERE id = ?",
