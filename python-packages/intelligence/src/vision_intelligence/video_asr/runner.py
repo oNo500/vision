@@ -1,6 +1,7 @@
 """CLI command implementations — thin wrappers over pipeline/storage."""
 from __future__ import annotations
 
+import asyncio
 import json
 import sys
 from pathlib import Path
@@ -126,6 +127,114 @@ async def search_fts(q: str, *, limit: int) -> None:
             print(f"[{h['video_id']}] t={h['start']:.1f}s ({h['speaker']}): {h['text']}")
     finally:
         await conn.close()
+
+
+async def download_sources(
+    *, sources_yaml: Path | None, url: str | None, concurrency: int = 3,
+) -> None:
+    """Download audio for all sources (ingest stage only), concurrently."""
+    if not sources_yaml and not url:
+        sys.stderr.write("Must provide --sources or --url\n")
+        sys.exit(2)
+    settings = VideoAsrSettings()
+    conn, st = await _open_storage(settings)
+    try:
+        if sources_yaml:
+            entries = load_sources(str(sources_yaml))
+        else:
+            from vision_intelligence.video_asr.sources.yaml_loader import SourceEntry
+            src = get_source(url)
+            video_id = src.extract_video_id(url)
+            entries = [SourceEntry(video_id=video_id, url=url, source=src.name)]
+
+        sem = asyncio.Semaphore(concurrency)
+
+        async def _download_one(entry) -> None:
+            async with sem:
+                video_dir = Path(settings.output_root) / entry.video_id
+                video_dir.mkdir(parents=True, exist_ok=True)
+                ctx = PipelineContext(
+                    video_id=entry.video_id, url=entry.url,
+                    video_dir=video_dir, storage=st, settings=settings,
+                )
+                # run_video skips stages with existing DONE manifests;
+                # stop after ingest by raising StopIteration via a wrapper
+                from vision_intelligence.video_asr.manifest import read_manifest
+                if read_manifest(video_dir, "ingest") and \
+                        read_manifest(video_dir, "ingest").status == "done":
+                    print(f"[{entry.video_id}] ingest already done, skipping")
+                    return
+                try:
+                    await _run_ingest(ctx)
+                    print(f"[{entry.video_id}] downloaded")
+                except Exception as exc:
+                    import structlog
+                    structlog.get_logger().error(
+                        "download_error", video_id=entry.video_id, error=str(exc))
+                    print(f"[{entry.video_id}] FAILED: {exc!r}")
+
+        await asyncio.gather(*[_download_one(e) for e in entries])
+    finally:
+        await conn.close()
+
+
+async def _run_ingest(ctx: PipelineContext) -> None:
+    """Run only the ingest stage, writing manifest and storage row."""
+    from datetime import datetime, timezone
+
+    from vision_intelligence.video_asr.manifest import write_manifest
+    from vision_intelligence.video_asr.models import StageManifest
+    from vision_intelligence.video_asr.pipeline import _stage_ingest
+
+    def _now() -> str:
+        return datetime.now(timezone.utc).astimezone().isoformat()
+
+    def _delta_sec(a: str, b: str) -> float:
+        from datetime import datetime
+        fmt = datetime.fromisoformat
+        return (fmt(b) - fmt(a)).total_seconds()
+
+    await ctx.storage.set_pipeline_run(
+        video_id=ctx.video_id, stage="ingest",
+        status="running", started_at=_now(),
+    )
+    started = _now()
+    try:
+        extra = await _stage_ingest(ctx) or {}
+        finished = _now()
+        m = StageManifest(
+            stage="ingest", video_id=ctx.video_id, status="done",
+            started_at=started, finished_at=finished,
+            duration_sec=_delta_sec(started, finished),
+            inputs=extra.pop("inputs", []),
+            outputs=extra.pop("outputs", []),
+            tool_versions=extra.pop("tool_versions", {}),
+            pipeline_version=ctx.pipeline_version,
+            extra=extra,
+        )
+        write_manifest(ctx.video_dir, m)
+        await ctx.storage.set_pipeline_run(
+            video_id=ctx.video_id, stage="ingest", status="done",
+            started_at=started, finished_at=finished,
+            duration_sec=m.duration_sec,
+        )
+    except Exception as e:
+        finished = _now()
+        m = StageManifest(
+            stage="ingest", video_id=ctx.video_id, status="failed",
+            started_at=started, finished_at=finished,
+            duration_sec=_delta_sec(started, finished),
+            inputs=[], outputs=[], tool_versions={},
+            pipeline_version=ctx.pipeline_version,
+            error=repr(e),
+        )
+        write_manifest(ctx.video_dir, m)
+        await ctx.storage.set_pipeline_run(
+            video_id=ctx.video_id, stage="ingest", status="failed",
+            started_at=started, finished_at=finished,
+            duration_sec=m.duration_sec, error=repr(e),
+        )
+        raise
 
 
 async def export_all(format: str) -> None:
