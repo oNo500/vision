@@ -54,6 +54,7 @@ def _call_gemini_audio(
     *, client, model: str, audio_bytes: bytes, prompt: str,
 ) -> tuple[_ResponseModel, dict]:
     """Return (parsed response, usage dict). Wrapped for test mocking + retry."""
+    import json
     from google.genai import types as gtypes
     with gemini_lock():
         resp = client.models.generate_content(
@@ -64,17 +65,18 @@ def _call_gemini_audio(
             ],
             config=gtypes.GenerateContentConfig(
                 response_mime_type="application/json",
-                response_schema=_ResponseModel,
                 temperature=0.2,
             ),
         )
-        parsed: _ResponseModel = resp.parsed
-        if parsed is None:
-            raise ValueError(f"Gemini returned null parsed response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
         usage = {
             "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
             "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
         }
+        text = resp.text or ""
+        if not text.strip():
+            raise ValueError(f"Gemini returned empty response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
+        data = json.loads(text)
+    parsed = _ResponseModel.model_validate(data)
     return parsed, usage
 
 
