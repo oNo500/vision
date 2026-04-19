@@ -41,6 +41,7 @@ def _is_retryable(exc: BaseException) -> bool:
         or "ConnectError" in name
         or "TimeoutError" in name
         or "ServiceUnavailable" in name
+        or "JSONDecodeError" in name  # truncated response — retry may get full output
     )
 
 
@@ -76,6 +77,9 @@ def _call_gemini_audio(
         if not text.strip():
             raise ValueError(f"Gemini returned empty response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
         data = json.loads(text)
+        # Gemini sometimes returns a bare list instead of {"segments": [...]}
+        if isinstance(data, list):
+            data = {"segments": data}
     parsed = _ResponseModel.model_validate(data)
     return parsed, usage
 
