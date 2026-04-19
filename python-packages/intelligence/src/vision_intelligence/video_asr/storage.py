@@ -260,3 +260,19 @@ class VideoAsrStorage:
             "INSERT OR IGNORE INTO asr_job_videos (job_id, video_id) VALUES (?, ?)",
             (job_id, video_id))
         await self._conn.commit()
+
+    async def list_videos(self) -> list[dict]:
+        """Return all video_sources rows ordered by most recently downloaded."""
+        cur = await self._conn.execute(
+            "SELECT video_id, title, source, duration_sec FROM video_sources"
+            " ORDER BY downloaded_at DESC"
+        )
+        rows = []
+        async for row in cur:
+            rows.append({
+                "video_id": row[0],
+                "title": row[1],
+                "source": row[2],
+                "duration_sec": row[3],
+            })
+        return rows

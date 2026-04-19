@@ -132,6 +132,13 @@ def _video_dir(settings, video_id: str) -> Path:
     return Path(settings.output_root) / video_id
 
 
+@router.get("/videos")
+async def list_videos(request: Request) -> list[dict]:
+    """List all processed videos."""
+    st = request.app.state.video_asr_storage
+    return await st.list_videos()
+
+
 @router.get("/videos/{video_id}")
 async def get_video(video_id: str, request: Request) -> dict:
     st = request.app.state.video_asr_storage

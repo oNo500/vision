@@ -32,3 +32,11 @@ def test_get_jobs_no_key_required():
     c = _client()
     r = c.get("/api/intelligence/video-asr/jobs/nope")
     assert r.status_code in (404, 200)
+
+
+def test_list_videos_empty():
+    c = _client()
+    c.app.state.video_asr_storage.list_videos = AsyncMock(return_value=[])
+    r = c.get("/api/intelligence/video-asr/videos")
+    assert r.status_code == 200
+    assert r.json() == []
