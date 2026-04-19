@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from vision_api.api_key import ApiKeyMiddleware
 from vision_api.settings import get_settings
 from vision_api.video_asr_routes import router as video_asr_router
+from vision_api.rag_library_routes import router as rag_library_router
 from vision_live.routes import router as live_router
 from vision_live.plan_routes import router as plan_router
 from vision_live.rag_routes import router as rag_router
@@ -47,6 +48,8 @@ def create_app() -> FastAPI:
         app.state.video_asr_storage = asr_storage
         app.state.video_asr_jm = JobManager()
         app.state.video_asr_settings = VideoAsrSettings()
+        from vision_live.rag_library_store import RagLibraryStore
+        app.state.rag_library_store = RagLibraryStore(app.state.db.conn)
         logger.info("Vision API started")
         yield
         await app.state.db.close()
@@ -72,6 +75,7 @@ def create_app() -> FastAPI:
     app.include_router(plan_router)
     app.include_router(rag_router)
     app.include_router(video_asr_router)
+    app.include_router(rag_library_router)
 
     @app.get("/health")
     def health() -> dict:

@@ -9,7 +9,7 @@ from typing import Any
 
 from vision_live.director_agent import DirectorAgent
 from vision_live.knowledge_base import KnowledgeBase
-from vision_live.rag import load_rag_for_plan
+from vision_live.rag import load_rag_for_libraries
 from vision_live.script_runner import ScriptRunner
 from vision_live.session_memory import SessionMemory
 from vision_live.tts_player import PcmItem, TTSPlayer, TtsItem
@@ -427,7 +427,7 @@ class SessionManager:
         rag = None
         if active_plan and not mock:
             try:
-                rag = load_rag_for_plan(active_plan["id"])
+                rag = load_rag_for_libraries([active_plan["id"]])
                 if rag is None:
                     logger.info(
                         "RAG: no index for plan %s (run `python -m vision_live.rag_cli build %s` to create)",

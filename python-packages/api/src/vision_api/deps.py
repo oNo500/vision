@@ -26,3 +26,7 @@ def get_db(request: Request) -> Database:
 
 def get_plan_store(request: Request):
     return request.app.state.plan_store
+
+
+def get_rag_library_store(request: Request):
+    return request.app.state.rag_library_store
