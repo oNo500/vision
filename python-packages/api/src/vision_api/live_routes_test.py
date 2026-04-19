@@ -196,3 +196,67 @@ async def test_set_invalid_strategy_returns_400(client):
     client.app.state.session_manager.set_strategy = MagicMock(side_effect=ValueError("Unknown strategy"))
     resp = await client.post("/live/strategy", json={"strategy": "unknown"})
     assert resp.status_code == 400
+
+
+@pytest_asyncio.fixture
+async def plan_client(tmp_path):
+    import aiosqlite
+    from vision_api.main import create_app
+    from vision_live.plan_store import PlanStore
+    from vision_shared.db import Database
+
+    db_path = str(tmp_path / "test.db")
+    from vision_api.settings import get_settings
+    get_settings.cache_clear()
+    import os
+    os.environ["VISION_DB_PATH"] = db_path
+    get_settings.cache_clear()
+
+    app = create_app()
+    app.state.session_manager = MagicMock()
+    app.state.danmaku_manager = MagicMock()
+    app.state.event_bus = MagicMock()
+
+    conn = await aiosqlite.connect(db_path)
+    await conn.execute("""
+        CREATE TABLE IF NOT EXISTS live_plans (
+            id TEXT PRIMARY KEY,
+            name TEXT NOT NULL,
+            data TEXT NOT NULL,
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        )
+    """)
+    await conn.commit()
+    app.state.plan_store = PlanStore(conn)
+
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as c:
+        c.app = app
+        yield c
+
+    await conn.close()
+    get_settings.cache_clear()
+
+
+@pytest.mark.asyncio
+async def test_put_plan_rag_libraries(plan_client):
+    r = await plan_client.post("live/plans", json={"name": "Test"})
+    assert r.status_code == 201
+    plan_id = r.json()["id"]
+
+    r = await plan_client.put(
+        f"live/plans/{plan_id}/rag-libraries",
+        json={"library_ids": ["dong-yuhui", "li-jiaqi"]},
+    )
+    assert r.status_code == 200
+    assert r.json()["rag_library_ids"] == ["dong-yuhui", "li-jiaqi"]
+
+
+@pytest.mark.asyncio
+async def test_put_plan_rag_libraries_replaces(plan_client):
+    r = await plan_client.post("live/plans", json={"name": "Test"})
+    plan_id = r.json()["id"]
+    await plan_client.put(f"live/plans/{plan_id}/rag-libraries", json={"library_ids": ["a"]})
+    r = await plan_client.put(f"live/plans/{plan_id}/rag-libraries", json={"library_ids": ["b"]})
+    assert r.json()["rag_library_ids"] == ["b"]

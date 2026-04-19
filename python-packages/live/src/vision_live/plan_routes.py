@@ -108,6 +108,23 @@ async def delete_plan(
     return Response(status_code=204)
 
 
+class RagLibrariesBody(BaseModel):
+    library_ids: list[str]
+
+
+@router.put("/{plan_id}/rag-libraries")
+async def update_plan_rag_libraries(
+    plan_id: str,
+    body: RagLibrariesBody,
+    store: PlanStore = Depends(get_plan_store),
+) -> dict:
+    plan = await store.get(plan_id)
+    if plan is None:
+        raise HTTPException(status_code=404, detail="Plan not found")
+    updated = await store.update(plan_id, {**plan, "rag_library_ids": body.library_ids})
+    return updated
+
+
 @router.post("/{plan_id}/load")
 async def load_plan(
     plan_id: str,
