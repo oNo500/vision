@@ -1,9 +1,12 @@
 """Demucs BGM removal + ffmpeg chunk splitting."""
 from __future__ import annotations
 
+import logging
 import shutil
 import subprocess
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
 def _run_demucs(input_path: Path, output_path: Path) -> None:
@@ -86,8 +89,17 @@ def _run_ffmpeg_slice(input_path: Path, output_path: Path,
 
 
 def remove_bgm(audio_path: Path, vocals_out: Path) -> None:
+    import numpy as np
+    import soundfile as sf
     vocals_out.parent.mkdir(parents=True, exist_ok=True)
     _run_demucs(audio_path, vocals_out)
+    data, _ = sf.read(str(vocals_out), dtype="float32")
+    rms = float(np.sqrt(np.mean(data ** 2)))
+    if rms < 0.001:
+        logger.warning(
+            "demucs vocals energy very low (%.4f), BGM removal may have suppressed speech",
+            rms,
+        )
 
 
 class split_into_chunks:

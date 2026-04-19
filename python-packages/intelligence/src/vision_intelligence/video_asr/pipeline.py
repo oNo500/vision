@@ -130,10 +130,13 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
                 if done_file.exists():
                     from vision_intelligence.video_asr.models import ChunkTranscript
                     return ChunkTranscript.model_validate_json(done_file.read_text()), {}
+                if not audio.exists():
+                    raise FileNotFoundError(f"chunk wav missing: {audio}")
                 try:
                     ct, usage = gemini.transcribe_chunk(
                         audio, chunk_id=i, start_offset=start_offset,
                     )
+                    engine = ct.asr_engine
                 except Exception as exc:
                     logger.warning(
                         "chunk %03d Gemini failed (%s), falling back to FunASR",
@@ -143,6 +146,12 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
                         audio, chunk_id=i, start_offset=start_offset,
                     )
                     usage = {}
+                    engine = ct.asr_engine
+                if not ct.segments:
+                    logger.warning(
+                        "chunk %03d returned 0 segments from %s", i, engine,
+                    )
+                    raise ValueError(f"chunk {i:03d} returned 0 segments from {engine}")
                 done_file.write_text(ct.model_dump_json(indent=2), encoding="utf-8")
                 return ct, usage
             ct, usage = await asyncio.to_thread(_work)
@@ -352,26 +361,21 @@ async def run_video(
         )
         started = _now()
         fn = _get_stage_fn(stage)
-        try:
-            extra = await fn(ctx) or {}
-            finished = _now()
-            m = StageManifest(
-                stage=stage, video_id=ctx.video_id, status="done",
-                started_at=started, finished_at=finished,
-                duration_sec=_delta_sec(started, finished),
-                inputs=extra.pop("inputs", []),
-                outputs=extra.pop("outputs", []),
-                tool_versions=extra.pop("tool_versions", {}),
-                pipeline_version=pipeline_version,
-                extra=extra,
-            )
-            write_manifest(ctx.video_dir, m)
-            await ctx.storage.set_pipeline_run(
-                video_id=ctx.video_id, stage=stage, status="done",
-                started_at=started, finished_at=finished,
-                duration_sec=m.duration_sec,
-            )
-        except Exception as e:
+        last_exc: Exception | None = None
+        for attempt in range(3):
+            if attempt > 0:
+                logger.warning(
+                    "stage %s attempt %d/3 after error: %s",
+                    stage, attempt + 1, last_exc,
+                )
+                await asyncio.sleep(5)
+            try:
+                extra = await fn(ctx) or {}
+                last_exc = None
+                break
+            except Exception as e:
+                last_exc = e
+        if last_exc is not None:
             finished = _now()
             m = StageManifest(
                 stage=stage, video_id=ctx.video_id, status="failed",
@@ -379,15 +383,32 @@ async def run_video(
                 duration_sec=_delta_sec(started, finished),
                 inputs=[], outputs=[], tool_versions={},
                 pipeline_version=pipeline_version,
-                error=repr(e),
+                error=repr(last_exc),
             )
             write_manifest(ctx.video_dir, m)
             await ctx.storage.set_pipeline_run(
                 video_id=ctx.video_id, stage=stage, status="failed",
                 started_at=started, finished_at=finished,
-                duration_sec=m.duration_sec, error=repr(e),
+                duration_sec=m.duration_sec, error=repr(last_exc),
             )
-            raise
+            raise last_exc
+        finished = _now()
+        m = StageManifest(
+            stage=stage, video_id=ctx.video_id, status="done",
+            started_at=started, finished_at=finished,
+            duration_sec=_delta_sec(started, finished),
+            inputs=extra.pop("inputs", []),
+            outputs=extra.pop("outputs", []),
+            tool_versions=extra.pop("tool_versions", {}),
+            pipeline_version=pipeline_version,
+            extra=extra,
+        )
+        write_manifest(ctx.video_dir, m)
+        await ctx.storage.set_pipeline_run(
+            video_id=ctx.video_id, stage=stage, status="done",
+            started_at=started, finished_at=finished,
+            duration_sec=m.duration_sec,
+        )
 
 
 def _delta_sec(a_iso: str, b_iso: str) -> float:
