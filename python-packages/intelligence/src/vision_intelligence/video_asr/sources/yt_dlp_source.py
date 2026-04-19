@@ -33,9 +33,13 @@ def _run_yt_dlp_json(url: str) -> dict:
 
 
 def _run_yt_dlp_download(
-    url: str, output: str, progress_cb: ProgressCallback | None = None
+    url: str, output: Path, progress_cb: ProgressCallback | None = None
 ) -> int:
-    """Download audio via yt-dlp Python API. Returns bytes written."""
+    """Download audio via yt-dlp Python API. Returns bytes written.
+
+    `output` must be the final .m4a path; yt-dlp outtmpl is set to the stem
+    so FFmpegExtractAudio writes exactly <stem>.m4a without double-extension.
+    """
     last_update = 0.0
 
     def _hook(d: dict) -> None:
@@ -54,9 +58,12 @@ def _run_yt_dlp_download(
             total = d.get("total_bytes") or d.get("total_bytes_estimate")
             progress_cb(total or 0, total)
 
+    # Strip extension so yt-dlp uses the stem as outtmpl; FFmpegExtractAudio
+    # then appends .m4a, producing exactly `output` (e.g. audio.m4a).
+    stem = str(output.with_suffix(""))
     opts = {
         "format": "bestaudio/best",
-        "outtmpl": output,
+        "outtmpl": stem,
         "postprocessors": [{
             "key": "FFmpegExtractAudio",
             "preferredcodec": "m4a",
@@ -72,7 +79,7 @@ def _run_yt_dlp_download(
         opts["ffmpeg_location"] = ffmpeg
     with yt_dlp.YoutubeDL(opts) as ydl:
         ydl.download([url])
-    return Path(output).stat().st_size
+    return output.stat().st_size
 
 
 class YtDlpSource:
@@ -112,4 +119,4 @@ class YtDlpSource:
         progress_cb: ProgressCallback | None = None,
     ) -> int:
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        return _run_yt_dlp_download(url, str(out_path), progress_cb)
+        return _run_yt_dlp_download(url, out_path, progress_cb)
