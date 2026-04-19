@@ -53,5 +53,16 @@ def export(
     asyncio.run(export_all(format))
 
 
+@app.command()
+def download(
+    sources: Path = typer.Option(None, "--sources"),
+    url: str = typer.Option(None, "--url"),
+    concurrency: int = typer.Option(3, "--concurrency"),
+) -> None:
+    """Download audio only (ingest stage) — no transcription."""
+    from vision_intelligence.video_asr.runner import download_sources
+    asyncio.run(download_sources(sources_yaml=sources, url=url, concurrency=concurrency))
+
+
 if __name__ == "__main__":
     app()
