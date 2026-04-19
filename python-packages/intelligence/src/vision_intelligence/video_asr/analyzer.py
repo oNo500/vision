@@ -5,11 +5,26 @@ from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
+from vision_intelligence.video_asr.gemini_lock import gemini_lock
 from vision_intelligence.video_asr.models import (
     RawTranscript, SegmentRecord, StyleProfile,
 )
+
+
+def _is_retryable(exc: BaseException) -> bool:
+    name = type(exc).__name__
+    msg = str(exc)
+    return (
+        "RESOURCE_EXHAUSTED" in msg
+        or "429" in msg
+        or "SSL" in msg
+        or "EOF" in msg
+        or "ConnectError" in name
+        or "TimeoutError" in name
+        or "ServiceUnavailable" in name
+    )
 
 
 @dataclass
@@ -31,38 +46,42 @@ def _load(name: str) -> str:
     return (Path(__file__).parent / "prompts" / name).read_text(encoding="utf-8")
 
 
-@retry(stop=stop_after_attempt(3),
-       wait=wait_exponential(multiplier=2, min=10, max=120), reraise=True)
+@retry(stop=stop_after_attempt(8),
+       wait=wait_exponential(multiplier=2, min=15, max=180),
+       retry=retry_if_exception(_is_retryable), reraise=True)
 def _call_summary(*, client, model: str, transcript_text: str) -> tuple[str, dict]:
-    resp = client.models.generate_content(
-        model=model,
-        contents=[_load("summarize.md"), transcript_text],
-    )
-    usage = {
-        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-    }
+    with gemini_lock():
+        resp = client.models.generate_content(
+            model=model,
+            contents=[_load("summarize.md"), transcript_text],
+        )
+        usage = {
+            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+        }
     return resp.text, usage
 
 
-@retry(stop=stop_after_attempt(3),
-       wait=wait_exponential(multiplier=2, min=10, max=120), reraise=True)
+@retry(stop=stop_after_attempt(8),
+       wait=wait_exponential(multiplier=2, min=15, max=180),
+       retry=retry_if_exception(_is_retryable), reraise=True)
 def _call_style(*, client, model: str, host_text: str) -> tuple[dict, dict]:
     from google.genai import types as gtypes
-    resp = client.models.generate_content(
-        model=model,
-        contents=[_load("style.md"), host_text],
-        config=gtypes.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.2,
-        ),
-    )
     import json
-    data = json.loads(resp.text)
-    usage = {
-        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-    }
+    with gemini_lock():
+        resp = client.models.generate_content(
+            model=model,
+            contents=[_load("style.md"), host_text],
+            config=gtypes.GenerateContentConfig(
+                response_mime_type="application/json",
+                temperature=0.2,
+            ),
+        )
+        data = json.loads(resp.text)
+        usage = {
+            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+        }
     return data, usage
 
 

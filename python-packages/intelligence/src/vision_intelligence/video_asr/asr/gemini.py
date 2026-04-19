@@ -5,8 +5,9 @@ from pathlib import Path
 from typing import Literal
 
 from pydantic import BaseModel, Field
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
+from vision_intelligence.video_asr.gemini_lock import gemini_lock
 from vision_intelligence.video_asr.models import (
     ChunkTranscript, SegmentRecord, Speaker,
 )
@@ -29,9 +30,24 @@ def _load_prompt() -> str:
     return here.read_text(encoding="utf-8")
 
 
+def _is_retryable(exc: BaseException) -> bool:
+    name = type(exc).__name__
+    msg = str(exc)
+    return (
+        "RESOURCE_EXHAUSTED" in msg
+        or "429" in msg
+        or "SSL" in msg
+        or "EOF" in msg
+        or "ConnectError" in name
+        or "TimeoutError" in name
+        or "ServiceUnavailable" in name
+    )
+
+
 @retry(
-    stop=stop_after_attempt(6),
-    wait=wait_exponential(multiplier=2, min=10, max=120),
+    stop=stop_after_attempt(8),
+    wait=wait_exponential(multiplier=2, min=15, max=180),
+    retry=retry_if_exception(_is_retryable),
     reraise=True,
 )
 def _call_gemini_audio(
@@ -39,25 +55,26 @@ def _call_gemini_audio(
 ) -> tuple[_ResponseModel, dict]:
     """Return (parsed response, usage dict). Wrapped for test mocking + retry."""
     from google.genai import types as gtypes
-    resp = client.models.generate_content(
-        model=model,
-        contents=[
-            prompt,
-            gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
-        ],
-        config=gtypes.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=_ResponseModel,
-            temperature=0.2,
-        ),
-    )
-    parsed: _ResponseModel = resp.parsed
-    if parsed is None:
-        raise ValueError(f"Gemini returned null parsed response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
-    usage = {
-        "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
-        "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
-    }
+    with gemini_lock():
+        resp = client.models.generate_content(
+            model=model,
+            contents=[
+                prompt,
+                gtypes.Part.from_bytes(data=audio_bytes, mime_type="audio/wav"),
+            ],
+            config=gtypes.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema=_ResponseModel,
+                temperature=0.2,
+            ),
+        )
+        parsed: _ResponseModel = resp.parsed
+        if parsed is None:
+            raise ValueError(f"Gemini returned null parsed response (finish_reason={getattr(resp, 'finish_reason', 'unknown')})")
+        usage = {
+            "input_tokens": getattr(resp.usage_metadata, "prompt_token_count", 0) or 0,
+            "output_tokens": getattr(resp.usage_metadata, "candidates_token_count", 0) or 0,
+        }
     return parsed, usage
 
 

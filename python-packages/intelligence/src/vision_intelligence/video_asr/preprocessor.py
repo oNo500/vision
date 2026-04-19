@@ -22,7 +22,6 @@ def _run_demucs(input_path: Path, output_path: Path) -> None:
     model = get_model("htdemucs")
     model.eval()
 
-    # Load audio via ffmpeg into a float32 tensor at model's sample rate
     wav = _load_audio_ffmpeg(input_path, model.samplerate)
     wav = wav.unsqueeze(0)  # (1, channels, samples)
 
@@ -114,10 +113,13 @@ def preprocess_audio(
 ) -> dict:
     """Run the preprocess stage end-to-end. Return manifest-ready dict."""
     if enable_bgm_removal:
-        remove_bgm(audio_path, vocals_out)
+        # Skip demucs if vocals_out already exists (crash-resume checkpoint).
+        if not vocals_out.exists():
+            remove_bgm(audio_path, vocals_out)
         source_for_chunks = vocals_out
     else:
-        shutil.copy(audio_path, vocals_out)
+        if not vocals_out.exists():
+            shutil.copy(audio_path, vocals_out)
         source_for_chunks = vocals_out
 
     duration = _probe_duration(source_for_chunks)
@@ -128,7 +130,8 @@ def preprocess_audio(
     chunks_dir.mkdir(parents=True, exist_ok=True)
     for i, (start, end) in enumerate(boundaries):
         out = chunks_dir / f"chunk_{i:03d}.wav"
-        _run_ffmpeg_slice(source_for_chunks, out, start, end - start)
+        if not out.exists():
+            _run_ffmpeg_slice(source_for_chunks, out, start, end - start)
 
     return {
         "bgm_removed": enable_bgm_removal,
