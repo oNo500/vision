@@ -8,7 +8,6 @@ from httpx import AsyncClient, ASGITransport
 
 @pytest.fixture
 async def app(tmp_path, monkeypatch):
-    import os
     import aiosqlite
     monkeypatch.setenv("VISION_API_KEY", "test-key")
     from vision_api.settings import get_settings
@@ -105,3 +104,15 @@ async def test_import_transcript_success(client, tmp_path):
     imported = r.json()["imported"]
     assert "competitor_clips/vid123.md" in imported
     assert "scripts/vid123_summary.md" in imported
+
+
+async def test_create_duplicate_returns_409(client):
+    await client.post(
+        "/api/intelligence/rag-libraries/",
+        json={"id": "dup-lib", "name": "First"},
+    )
+    r = await client.post(
+        "/api/intelligence/rag-libraries/",
+        json={"id": "dup-lib", "name": "Second"},
+    )
+    assert r.status_code == 409

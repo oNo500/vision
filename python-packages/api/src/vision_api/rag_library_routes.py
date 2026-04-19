@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 import re
 import shutil
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -36,7 +37,6 @@ def _build_state(app_state) -> dict:
 
 
 def _run_build_sync(request: Request, lib_id: str) -> None:
-    import traceback
     state = _build_state(request.app.state)
     state[lib_id] = {"running": True, "last_build_time": None, "last_error": None}
     try:
