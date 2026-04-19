@@ -119,11 +119,14 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
             audio = chunks_dir / f"chunk_{i:03d}.wav"
 
             def _work():
+                done_file = chunks_dir / f"chunk_{i:03d}.json"
+                if done_file.exists():
+                    from vision_intelligence.video_asr.models import ChunkTranscript
+                    return ChunkTranscript.model_validate_json(done_file.read_text())
                 ct = transcriber.transcribe_chunk(
                     audio, chunk_id=i, start_offset=start_offset,
                 )
-                (chunks_dir / f"chunk_{i:03d}.json").write_text(
-                    ct.model_dump_json(indent=2), encoding="utf-8")
+                done_file.write_text(ct.model_dump_json(indent=2), encoding="utf-8")
                 return ct
             ct = await asyncio.to_thread(_work)
             # Usage is not exposed from transcribe_chunk in simplified impl;
