@@ -9,7 +9,7 @@ import {
   SidebarMenuItem,
   SidebarTrigger,
 } from '@workspace/ui/components/sidebar'
-import { BookOpenIcon, DatabaseIcon, RadioIcon, Settings2Icon } from 'lucide-react'
+import { BookOpenIcon, DatabaseIcon, FileVideoIcon, RadioIcon, Settings2Icon } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
 
@@ -33,6 +33,12 @@ const navItems = [
     title: '素材库',
     url: appPaths.dashboard.libraries.href,
     icon: <DatabaseIcon />,
+    items: [],
+  },
+  {
+    title: '视频转录',
+    url: appPaths.dashboard.videoAsr.href,
+    icon: <FileVideoIcon />,
     items: [],
   },
   {

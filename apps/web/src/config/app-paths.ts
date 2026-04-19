@@ -23,5 +23,11 @@ export const appPaths = {
     library: (id: string) => ({
       href: `/libraries/${id}`,
     }),
+    videoAsr: {
+      href: '/video-asr',
+    },
+    videoAsrDetail: (videoId: string) => ({
+      href: `/video-asr/${videoId}`,
+    }),
   },
 }
