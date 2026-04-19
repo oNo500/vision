@@ -17,9 +17,9 @@ export function PlanRagLibraries({ planId }: { planId: string }) {
     })
   }, [planId])
 
-  const toggle = (id: string) => {
+  const toggle = useCallback((id: string) => {
     setSelected((prev) => prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id])
-  }
+  }, [])
 
   const save = useCallback(async () => {
     setSaving(true)
