@@ -102,15 +102,19 @@ def load_rag_for_libraries(
     for lib_id in library_ids:
         path = rag_root / lib_id
         db_file = path / "chroma.sqlite3"
-        if not db_file.exists():
+        if not db_file.exists() and not (path / "chroma.sqlite").exists():
             logger.info("RAG: no index at %s, skipping", path)
             continue
         try:
             client = chromadb.PersistentClient(path=str(path))
+        except Exception as e:
+            logger.warning("RAG: failed to open DB at %s: %s", path, e)
+            continue
+        try:
             collection = client.get_collection(f"talkpoints_{lib_id}")
             collections.append(collection)
         except Exception as e:
-            logger.warning("RAG: collection for %s not found: %s", lib_id, e)
+            logger.warning("RAG: collection talkpoints_%s not found: %s", lib_id, e)
 
     if not collections:
         return None
