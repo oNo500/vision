@@ -98,17 +98,24 @@ async def _stage_preprocess(ctx: PipelineContext) -> dict:
 async def _stage_transcribe(ctx: PipelineContext) -> dict:
     import hashlib
     from vision_intelligence.video_asr.asr.gemini import GeminiTranscriber
+    from vision_intelligence.video_asr.asr.funasr import FunasrTranscriber
     from vision_intelligence.video_asr.cost import estimate_cost_usd
 
     preprocess = read_manifest(ctx.video_dir, "preprocess")
     boundaries = preprocess.extra["boundaries"]
     chunks_dir = ctx.video_dir / "chunks"
 
-    transcriber = GeminiTranscriber(
+    gemini = GeminiTranscriber(
         model=ctx.settings.gemini_model,
         project=ctx.settings.gcp_project,
         location=ctx.settings.gcp_location,
     )
+    _funasr: list[FunasrTranscriber] = []  # lazy singleton in thread
+
+    def _get_funasr() -> FunasrTranscriber:
+        if not _funasr:
+            _funasr.append(FunasrTranscriber())
+        return _funasr[0]
 
     sem = asyncio.Semaphore(ctx.settings.transcribe_concurrency)
     total_in = total_out = 0
@@ -123,14 +130,21 @@ async def _stage_transcribe(ctx: PipelineContext) -> dict:
                 if done_file.exists():
                     from vision_intelligence.video_asr.models import ChunkTranscript
                     return ChunkTranscript.model_validate_json(done_file.read_text())
-                ct = transcriber.transcribe_chunk(
-                    audio, chunk_id=i, start_offset=start_offset,
-                )
+                try:
+                    ct = gemini.transcribe_chunk(
+                        audio, chunk_id=i, start_offset=start_offset,
+                    )
+                except Exception as exc:
+                    logger.warning(
+                        "chunk %03d Gemini failed (%s), falling back to FunASR",
+                        i, exc,
+                    )
+                    ct = _get_funasr().transcribe_chunk(
+                        audio, chunk_id=i, start_offset=start_offset,
+                    )
                 done_file.write_text(ct.model_dump_json(indent=2), encoding="utf-8")
                 return ct
             ct = await asyncio.to_thread(_work)
-            # Usage is not exposed from transcribe_chunk in simplified impl;
-            # track 0 tokens to not break cost math
             total_in += 0
             total_out += 0
 
