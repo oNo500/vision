@@ -1,0 +1,31 @@
+{
+  "build_time": "2026-04-20T13:06:24.031005+00:00",
+  "chunk_count": 56,
+  "embedder": "text-multilingual-embedding-002",
+  "sources": {
+    "scripts/BV1KwkzYPEfg_summary.md": {
+      "sha256": "8e8921530a2bb33caeeabc1364673888648f1c6b4a1b378dc3fd9303e8b39cc4",
+      "chunks": 5
+    },
+    "scripts/BV1ynm3BsE9Q_summary.md": {
+      "sha256": "9aa270d817815055fba5b3e3eedcab132edd90e5372bd08a5f9dbba17f43549d",
+      "chunks": 5
+    },
+    "scripts/sy45qnchmEg_summary.md": {
+      "sha256": "18c562bf180978b3e16d36393a84ac100bec4c9978ae57eca5015aed5c578904",
+      "chunks": 6
+    },
+    "competitor_clips/BV1KwkzYPEfg.md": {
+      "sha256": "76085b4368ac55bf76b411888d9475080553777e174e0e157adcb6c3d0b3bfc7",
+      "chunks": 1
+    },
+    "competitor_clips/BV1ynm3BsE9Q.md": {
+      "sha256": "07cb59de365b0496835837495777eac670e6b08dca129484209ed3c1932cd250",
+      "chunks": 1
+    },
+    "competitor_clips/sy45qnchmEg.md": {
+      "sha256": "53c9472e8627fba3c4e75e73011efa0bb47c6d211ddb84d2d454977e22ce94c8",
+      "chunks": 38
+    }
+  }
+}
