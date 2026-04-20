@@ -1,0 +1,2126 @@
+{
+  "chunk_id": 1,
+  "start_offset": 1190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 1190.36,
+      "end": 1195.06,
+      "speaker": "host",
+      "text": "700万年前黑猩猩与我们的祖先分开,我们是一路为何走到今天的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 1,
+      "start": 1196.04,
+      "end": 1202.86,
+      "speaker": "host",
+      "text": "我们得知道自己在追捕的猎物,采摘的果实的时候,应该还有着一些崇高的精神追求。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 2,
+      "start": 1206.03,
+      "end": 1214.36,
+      "speaker": "host",
+      "text": "只有我们的子孙能够丰富、强大、智慧到这种程度的时候,才能让他们去解决人类未来会出现的更多的更多的问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 3,
+      "start": 1215.43,
+      "end": 1216.23,
+      "speaker": "host",
+      "text": "粮食问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 4,
+      "start": 1217.03,
+      "end": 1217.73,
+      "speaker": "host",
+      "text": "气候问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 5,
+      "start": 1218.53,
+      "end": 1219.23,
+      "speaker": "host",
+      "text": "疾病问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 6,
+      "start": 1219.93,
+      "end": 1220.83,
+      "speaker": "host",
+      "text": "贫富差异问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 7,
+      "start": 1221.53,
+      "end": 1222.23,
+      "speaker": "host",
+      "text": "战争问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 8,
+      "start": 1223.32,
+      "end": 1224.42,
+      "speaker": "host",
+      "text": "它不能是偏颇的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 9,
+      "start": 1225.52,
+      "end": 1229.42,
+      "speaker": "host",
+      "text": "它不能如现在网上有些人一样,不明就里,群起攻之。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 10,
+      "start": 1230.82,
+      "end": 1236.52,
+      "speaker": "host",
+      "text": "它更不能是懦弱的,荒谬的,脆弱的,它也不能是愚蠢的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 11,
+      "start": 1238.02,
+      "end": 1239.62,
+      "speaker": "host",
+      "text": "它可能被人误导,被人利用。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 12,
+      "start": 1240.22,
+      "end": 1244.82,
+      "speaker": "host",
+      "text": "所以我之前给大家说过,我说没有人文的科学呢,是危险的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 13,
+      "start": 1245.42,
+      "end": 1250.92,
+      "speaker": "host",
+      "text": "就他心里不知道什么是对错,但他拿了一个非常强大的武器,他会可能会做出非常害怕人的事情,对吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 14,
+      "start": 1251.42,
+      "end": 1253.82,
+      "speaker": "host",
+      "text": "然后没有科学的人文是愚昧的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 15,
+      "start": 1255.22,
+      "end": 1260.82,
+      "speaker": "host",
+      "text": "他只知道善恶,他只是能看见别人的痛苦而难过,看到别人的好运而开心。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 16,
+      "start": 1261.72,
+      "end": 1266.72,
+      "speaker": "host",
+      "text": "但他不知道怎么去解决现实中的问题,他就会容易被人诱导和利用。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 17,
+      "start": 1267.22,
+      "end": 1272.82,
+      "speaker": "host",
+      "text": "所以没有科学的人文是愚昧的,没有人文的科学是危险的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 18,
+      "start": 1273.92,
+      "end": 1279.82,
+      "speaker": "host",
+      "text": "这就是一个完整的我自己这么多年读书的一个框架,但是呢,不一定对,也不一定合理,仅仅是我自己的习惯而已。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 19,
+      "start": 1280.72,
+      "end": 1287.02,
+      "speaker": "host",
+      "text": "那你说的说里头,你把所有的矛盾文学系列刷个遍,你把诺贝尔文学系列刷个遍,你刷一遍啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 20,
+      "start": 1288.42,
+      "end": 1289.02,
+      "speaker": "host",
+      "text": "你先看。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 21,
+      "start": 1290.72,
+      "end": 1292.82,
+      "speaker": "host",
+      "text": "你你全买回来,挑你喜欢看的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 22,
+      "start": 1294.02,
+      "end": 1296.62,
+      "speaker": "host",
+      "text": "你觉得太多了,那你去书店你借着看也行。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 23,
+      "start": 1297.42,
+      "end": 1298.62,
+      "speaker": "host",
+      "text": "书店不让借,那你就在书店里看。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 24,
+      "start": 1299.42,
+      "end": 1301.62,
+      "speaker": "host",
+      "text": "总比你整天去逛商场蹦低有意思。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 25,
+      "start": 1302.72,
+      "end": 1309.02,
+      "speaker": "host",
+      "text": "总比你整天去迎来送往,端茶倒水,跟人这个在酒桌上吹牛有意思。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 26,
+      "start": 1311.02,
+      "end": 1311.62,
+      "speaker": "host",
+      "text": "你觉得呢?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 27,
+      "start": 1312.62,
+      "end": 1314.72,
+      "speaker": "host",
+      "text": "读这些比那有意思多了,好吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 28,
+      "start": 1315.42,
+      "end": 1319.92,
+      "speaker": "host",
+      "text": "只只有我们让大家大量去阅读的时候,你的精神逐渐开始丰富。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 29,
+      "start": 1320.52,
+      "end": 1329.62,
+      "speaker": "host",
+      "text": "当精神开始丰富的时候,你就不至于会把所有的精力,和短暂的生命苦苦追寻那些现实中本来可能是靠运气的的东西。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 30,
+      "start": 1330.22,
+      "end": 1344.52,
+      "speaker": "host",
+      "text": "董宇辉如果不是把自己时间大量用来阅读的时候,他就想不通,他就会整天在想,我什么时候能火呀,我为什么学不了别人那种表演,我为什么就不能让直播间里有超过一万人,我们那会直播间里有个一千人,我都有个两千人,三千人我开心跟啥样。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 31,
+      "start": 1346.42,
+      "end": 1351.72,
+      "speaker": "host",
+      "text": "那如果我沿着错误的路线苦苦思索,我只会离正确的结果越来越远。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 32,
+      "start": 1352.32,
+      "end": 1354.72,
+      "speaker": "host",
+      "text": "这过程正确,结果才能正确。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 33,
+      "start": 1356.32,
+      "end": 1358.72,
+      "speaker": "host",
+      "text": "过程正确,结果才能正确。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 34,
+      "start": 1360.02,
+      "end": 1365.42,
+      "speaker": "host",
+      "text": "这句话非常重要,过程正确,结果才能正确,就你追寻的事情是什么,对不对?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 35,
+      "start": 1365.82,
+      "end": 1373.22,
+      "speaker": "host",
+      "text": "还有一个就是让我们的孩子,让我们的子孙大量的阅读之后,才能寻找未来社会人类的精神家园啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 36,
+      "start": 1374.02,
+      "end": 1379.52,
+      "speaker": "host",
+      "text": "他们难道真的要如我们一样,每天就只担心着房子、汽车、贷款?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 37,
+      "start": 1381.02,
+      "end": 1383.52,
+      "speaker": "host",
+      "text": "那生活的快乐和幸福在哪里呢?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 38,
+      "start": 1384.82,
+      "end": 1386.52,
+      "speaker": "host",
+      "text": "难道生命只剩下那些了吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 39,
+      "start": 1388.02,
+      "end": 1394.62,
+      "speaker": "host",
+      "text": "难道在消费主义的捆绑之下,人类只成了去推动经济发展的一个工具了吗?我不认为。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 40,
+      "start": 1395.42,
+      "end": 1402.72,
+      "speaker": "host",
+      "text": "我不觉得我们祖先从南从东非走出来,对吧,是为了让我们去过这种无趣的生活的,我我不觉得。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 41,
+      "start": 1403.32,
+      "end": 1405.92,
+      "speaker": "host",
+      "text": "我觉得人文一定会闪出它的光。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 42,
+      "start": 1406.72,
+      "end": 1408.42,
+      "speaker": "host",
+      "text": "你看我们现在不就成功了吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 43,
+      "start": 1409.22,
+      "end": 1413.72,
+      "speaker": "host",
+      "text": "知道阶段性成功了,你看我们直播间里现在就有几十万人现在在线听董宇辉在这胡扯淡。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 44,
+      "start": 1414.72,
+      "end": 1423.92,
+      "speaker": "host",
+      "text": "有几十万人现在在线愿意去看罗翔法师的精神,有几十万人想要去买毛姆的月亮与六便士,还有前段时间给大家所分享的薛永忠老师的这个唐诗宋词诗经,这个还有吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 45,
+      "start": 1424.32,
+      "end": 1424.62,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 46,
+      "start": 1425.62,
+      "end": 1428.02,
+      "speaker": "host",
+      "text": "这个没有的,请每个朋友都买一单。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 47,
+      "start": 1429.02,
+      "end": 1436.62,
+      "speaker": "host",
+      "text": "注意,这本书我是非常强烈推荐,请每个人都买一单,你看我推荐有的书是很强势的,比如说像平凡的世界这种书,每个人都买一单。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 48,
+      "start": 1437.42,
+      "end": 1439.92,
+      "speaker": "host",
+      "text": "像唐诗宋词诗经,每个人都买一单。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 49,
+      "start": 1440.42,
+      "end": 1443.92,
+      "speaker": "host",
+      "text": "我刚才说的是什么?不要偏激狭隘的用自己的观点去审视别人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 50,
+      "start": 1444.82,
+      "end": 1453.42,
+      "speaker": "host",
+      "text": "你看过了足够多的历史之后,你会发现没有人能够通达,也没有人能够周全,也极少有人能够做到真正的理性与智慧。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 51,
+      "start": 1453.92,
+      "end": 1462.72,
+      "speaker": "host",
+      "text": "我们都是在那个阶段下的一个小小的历史片段里,存在于自己的信息简房里,什么叫信息简房?就是我知道的,我以为就是全部了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 52,
+      "start": 1463.32,
+      "end": 1473.42,
+      "speaker": "host",
+      "text": "别的事情我不知道,我就以为是错的,我没有见过南极的企鹅,我觉得哪有南极,哪有企鹅,我没有见过北极熊,我觉得没有北极熊,我没有去过火星,我觉得没有火星。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 53,
+      "start": 1474.02,
+      "end": 1477.92,
+      "speaker": "host",
+      "text": "我后来觉得只要别人跟我观点不同,别人一定是坏或者是错。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 54,
+      "start": 1478.52,
+      "end": 1482.82,
+      "speaker": "host",
+      "text": "这不就是一个信息简房吗?就是就是井底之蛙。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 55,
+      "start": 1484.02,
+      "end": 1492.72,
+      "speaker": "host",
+      "text": "那我们时常要去理解不同文化中的优点,每个语言都有每个语言的美,所以许老师给你说了,他的乐趣就是把一种语言的美转化成另一种语言的美。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 56,
+      "start": 1494.02,
+      "end": 1496.72,
+      "speaker": "host",
+      "text": "说得多好,我的天,说得多好啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 57,
+      "start": 1500.02,
+      "end": 1502.82,
+      "speaker": "host",
+      "text": "我们必须承认中文有中文的美。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 58,
+      "start": 1503.62,
+      "end": 1513.32,
+      "speaker": "host",
+      "text": "而且坦诚来说,中文的历史流传的比较久,在四大文明里头知道现在中文是没有经过大的这种外敌入侵导致文化断层的,所以语言是一脉发展的,它是一个相对成熟发展的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 59,
+      "start": 1513.72,
+      "end": 1522.92,
+      "speaker": "host",
+      "text": "英语是一个确实发展程度上没有中文那么高的,但我们也不至于就鲁莽的啊,只有中文是美的,当你能这么说的时候,你就跟那个闭关锁国的人差不多了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 60,
+      "start": 1524.02,
+      "end": 1526.52,
+      "speaker": "host",
+      "text": "你跟晚清做18年的人差不多了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 61,
+      "start": 1527.82,
+      "end": 1532.92,
+      "speaker": "host",
+      "text": "时常去提醒自己,不要陷入某种偏激或者是荒谬之中。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 62,
+      "start": 1534.42,
+      "end": 1542.92,
+      "speaker": "host",
+      "text": "当一个人都能够这样去自律且自省去思考的时候,我有理由相信我们会把这片土地变成自己心中的理想国。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 63,
+      "start": 1544.22,
+      "end": 1546.92,
+      "speaker": "host",
+      "text": "很重要啊,朋友们,千万不敢自嗨。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 64,
+      "start": 1547.62,
+      "end": 1548.02,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 65,
+      "start": 1549.02,
+      "end": 1550.82,
+      "speaker": "host",
+      "text": "罗翔老师那本书还有吗?导演?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 66,
+      "start": 1551.02,
+      "end": 1551.22,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 67,
+      "start": 1551.62,
+      "end": 1552.62,
+      "speaker": "host",
+      "text": "还有多少库存?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 68,
+      "start": 1554.02,
+      "end": 1558.52,
+      "speaker": "host",
+      "text": "这本说我也是强烈推荐的,因为我读完之后我发现我特别喜欢法治的细节。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 69,
+      "start": 1559.22,
+      "end": 1563.42,
+      "speaker": "host",
+      "text": "我刚说的一个时代的幸运就在于那个时代拥有人那样清醒的人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 70,
+      "start": 1564.02,
+      "end": 1565.82,
+      "speaker": "guest",
+      "text": "法治细节还有两万本。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 71,
+      "start": 1566.22,
+      "end": 1569.02,
+      "speaker": "host",
+      "text": "还有两万本,真好,这种好书可以多卖一些。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 72,
+      "start": 1571.12,
+      "end": 1577.82,
+      "speaker": "host",
+      "text": "大家每每在回回顾这个古希腊的时候,大家就庆幸的发现那个时代有着拥有那个时代的古希腊三杰。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 73,
+      "start": 1578.42,
+      "end": 1583.32,
+      "speaker": "host",
+      "text": "我们再看到春秋战国的时候,我们就庆幸的发现了当时有诸子百家。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 74,
+      "start": 1584.42,
+      "end": 1595.42,
+      "speaker": "host",
+      "text": "每个时代的人产生之后像一个火把一样,照亮那一篇夜空,让更多迷茫甚至很多时候无知的人们找到一个清晰的方向。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 75,
+      "start": 1600.62,
+      "end": 1605.82,
+      "speaker": "host",
+      "text": "这不是一个人文主义陷落的时代,我不相信,法治也属于人文主义,对吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 76,
+      "start": 1606.52,
+      "end": 1615.62,
+      "speaker": "host",
+      "text": "而且罗翔老师其实火出圈,他并不是因为自己的这个法,他是因为能够通过讲法的时候讲的有趣,而且通过讲法后来反思到人生的很多问题。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 77,
+      "start": 1617.12,
+      "end": 1619.32,
+      "speaker": "host",
+      "text": "他是一个极其灵魂清醒的人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 78,
+      "start": 1620.02,
+      "end": 1625.52,
+      "speaker": "host",
+      "text": "我们喜欢跟清醒的人说话,你发现生活中有些人就咋说他都听不懂,他就是在自己的世界里头装傻。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 79,
+      "start": 1626.32,
+      "end": 1631.82,
+      "speaker": "host",
+      "text": "你永远叫不醒一个装睡的人,你也永远催眠不了一个清醒的人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 80,
+      "start": 1633.02,
+      "end": 1638.22,
+      "speaker": "host",
+      "text": "你可以记下这句话,我知道很多有朋友现在每天晚上来听董宇辉直播就只是为了记金句,可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 81,
+      "start": 1639.22,
+      "end": 1644.92,
+      "speaker": "host",
+      "text": "你永远无法催眠一个清醒的人,你也永远无法叫醒一个装睡的人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 82,
+      "start": 1646.42,
+      "end": 1647.42,
+      "speaker": "host",
+      "text": "说得多好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 83,
+      "start": 1648.02,
+      "end": 1649.62,
+      "speaker": "host",
+      "text": "鸡蛋还有吗?导演?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 84,
+      "start": 1649.92,
+      "end": 1650.22,
+      "speaker": "guest",
+      "text": "没了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 85,
+      "start": 1650.52,
+      "end": 1652.62,
+      "speaker": "host",
+      "text": "没了,那我看看你收,让我再讲一下鸡蛋。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 86,
+      "start": 1654.72,
+      "end": 1659.72,
+      "speaker": "host",
+      "text": "我喝口水啊,不好意思,我喝口水可以吗?我我清个嗓子,嗓子有点痰,我害怕影响你们的这个体验。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 87,
+      "start": 1673.52,
+      "end": 1678.72,
+      "speaker": "host",
+      "text": "好,现在应该好了,我我刚这个把这个话筒临时关了一下,我特别害怕影响到大家的体验。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 88,
+      "start": 1679.12,
+      "end": 1680.02,
+      "speaker": "guest",
+      "text": "什么在二号?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 89,
+      "start": 1680.32,
+      "end": 1681.02,
+      "speaker": "host",
+      "text": "什么在二号?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 90,
+      "start": 1681.32,
+      "end": 1681.82,
+      "speaker": "guest",
+      "text": "白水山。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 91,
+      "start": 1682.12,
+      "end": 1683.02,
+      "speaker": "host",
+      "text": "白水山,这个水。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 92,
+      "start": 1683.72,
+      "end": 1690.02,
+      "speaker": "host",
+      "text": "这个水我前天喝了一瓶,然后我觉得这个瓶子挺厚的,扔了挺可惜,我就拿这个瓶子一直从我们饮水机里灌水喝。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 93,
+      "start": 1690.62,
+      "end": 1694.02,
+      "speaker": "host",
+      "text": "这个里头不是白水山的水,是我从饮水机里灌的水。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 94,
+      "start": 1694.72,
+      "end": 1695.72,
+      "speaker": "host",
+      "text": "但是它能用啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 95,
+      "start": 1697.72,
+      "end": 1699.82,
+      "speaker": "host",
+      "text": "我以前经常就是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 96,
+      "start": 1700.72,
+      "end": 1704.02,
+      "speaker": "host",
+      "text": "我比如用一个塑料瓶子的话,因为我平常喝水那个杯子太重了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 97,
+      "start": 1704.72,
+      "end": 1711.8200000000002,
+      "speaker": "host",
+      "text": "而且我比较笨,经常容易丢到高铁上,我之前高铁飞机上每次都会丢杯子,我后来就出门平常自己有塑料瓶我也不扔,拿它一直用就行。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 98,
+      "start": 1712.92,
+      "end": 1717.72,
+      "speaker": "host",
+      "text": "咱接下来给大家继续带下一个产品啊,我们现在还有这个,还有啥货,快快快,还有啥货?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 99,
+      "start": 1718.62,
+      "end": 1719.02,
+      "speaker": "guest",
+      "text": "牛奶。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 100,
+      "start": 1719.3200000000002,
+      "end": 1720.92,
+      "speaker": "host",
+      "text": "牛奶来了,牛奶牛奶牛奶。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 101,
+      "start": 1721.72,
+      "end": 1722.72,
+      "speaker": "host",
+      "text": "特仑苏特仑苏。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 102,
+      "start": 1723.42,
+      "end": 1724.12,
+      "speaker": "guest",
+      "text": "八米还有吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 103,
+      "start": 1724.8200000000002,
+      "end": 1726.02,
+      "speaker": "host",
+      "text": "八米没有了,卖完了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 104,
+      "start": 1726.3200000000002,
+      "end": 1727.42,
+      "speaker": "host",
+      "text": "没有了,早都没有了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 105,
+      "start": 1728.22,
+      "end": 1729.62,
+      "speaker": "host",
+      "text": "来来来,特仑苏牛奶啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 106,
+      "start": 1730.52,
+      "end": 1736.02,
+      "speaker": "host",
+      "text": "大家来点来点身体这个这个食粮啊,别别一直就精神世界了,快快快,接地接地气一点啊,快。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 107,
+      "start": 1736.92,
+      "end": 1740.02,
+      "speaker": "host",
+      "text": "两箱特仑苏,一箱这个纯真牛奶。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 108,
+      "start": 1744.12,
+      "end": 1750.72,
+      "speaker": "host",
+      "text": "导演你现在可以给放点背景音乐,要不然大家容易枯燥,因为我刚讲那段实在太枯燥了,我害怕把有的朋友说已经成功的睡着了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 109,
+      "start": 1751.42,
+      "end": 1751.62,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 110,
+      "start": 1753.02,
+      "end": 1753.8200000000002,
+      "speaker": "host",
+      "text": "有朋友说节俭。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 111,
+      "start": 1753.8200000000002,
+      "end": 1758.92,
+      "speaker": "host",
+      "text": "其实不是节俭,我是觉得如果自己少用一点塑料的话,我应该是在做一件善事吧。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 112,
+      "start": 1760.02,
+      "end": 1764.62,
+      "speaker": "host",
+      "text": "嗯,我觉得少用点塑料应该是做一件好事,能不用尽量都不用,坦诚来说。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 113,
+      "start": 1766.02,
+      "end": 1771.42,
+      "speaker": "host",
+      "text": "其实我平常出门都是拿个水杯去接水,有的时候水杯真的丢了,我没有办法,我只能买个这样塑料瓶子用用一段时间。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 114,
+      "start": 1775.02,
+      "end": 1780.8200000000002,
+      "speaker": "host",
+      "text": "它跟这个节俭关系不大,坦诚来说,你说节俭节俭那那能省多少钱,省不了多少钱。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 115,
+      "start": 1781.42,
+      "end": 1799.42,
+      "speaker": "host",
+      "text": "但是我特别害怕,我时常给大家提一种现象,我之前说过,我说如果有一天等我老了,我的子孙站在我面前质问我说,爷爷为什么现在到处都是塑料,你你们那一代人为什么用这么多塑料,现在所有的小动物的尸体里都是塑料,海里头都是塑料,山里都是塑料,河里也都是塑料,为什么你们要弄那么多塑料?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 116,
+      "start": 1800.22,
+      "end": 1804.42,
+      "speaker": "host",
+      "text": "我怕我到时候无言以对,我不知道羞愧的不知道怎么回答我的子孙。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 117,
+      "start": 1805.22,
+      "end": 1812.92,
+      "speaker": "host",
+      "text": "或者大家按照知道现在按照的速度,其实北极熊可能赶本世纪末其实就消失了,按照现在英国一些科学家们的一个预测的速度。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 118,
+      "start": 1813.72,
+      "end": 1817.62,
+      "speaker": "host",
+      "text": "我再想如果那时候孩子们只能看到北极熊标本的时候,他们会不会问我呀?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 119,
+      "start": 1818.3200000000002,
+      "end": 1819.62,
+      "speaker": "host",
+      "text": "他们会不会恨我呀?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 120,
+      "start": 1821.12,
+      "end": 1822.92,
+      "speaker": "host",
+      "text": "我我有时候会想这种问题啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 121,
+      "start": 1823.92,
+      "end": 1827.52,
+      "speaker": "host",
+      "text": "接下来给大家带来的是这个莫小奇的黑枸杞。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 122,
+      "start": 1829.42,
+      "end": 1831.52,
+      "speaker": "host",
+      "text": "酸甜口感,非常的舒服。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 123,
+      "start": 1832.42,
+      "end": 1834.42,
+      "speaker": "host",
+      "text": "我给大家展示一下里头的样子啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 124,
+      "start": 1838.52,
+      "end": 1843.02,
+      "speaker": "host",
+      "text": "刚刚讲讲讲那些书,如果大家还想买的话,自己买啊,我我得赶紧开始营业了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 125,
+      "start": 1844.72,
+      "end": 1849.52,
+      "speaker": "host",
+      "text": "一盒里头有有十包,每一包是30毫升,所以一盒是300毫升。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 126,
+      "start": 1851.02,
+      "end": 1854.22,
+      "speaker": "host",
+      "text": "一这一大袋里头有三盒,再送了一小盒。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 127,
+      "start": 1855.3200000000002,
+      "end": 1858.52,
+      "speaker": "host",
+      "text": "具体的这个规格大家可以点开这个链接看一下,行不行?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 128,
+      "start": 1859.22,
+      "end": 1863.02,
+      "speaker": "host",
+      "text": "我我们这中我好像把那盒拆了给大家让大家喝了,我先说不全了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 129,
+      "start": 1863.62,
+      "end": 1867.12,
+      "speaker": "host",
+      "text": "这个品牌叫奇力香,枸杞里的香,奇力香。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 130,
+      "start": 1868.3200000000002,
+      "end": 1870.92,
+      "speaker": "host",
+      "text": "我特别喜欢奇力香周杰伦那首歌,他跟田中千绘拍的MV。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 131,
+      "start": 1872.02,
+      "end": 1880.02,
+      "speaker": "host",
+      "text": "我喜欢那个人们比较青涩的年代里,那个时候的歌手都是认真的写自己的词,写写自己的曲,而不是靠很多的东西去上热搜。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 132,
+      "start": 1881.02,
+      "end": 1888.8200000000002,
+      "speaker": "host",
+      "text": "那个时候人们会害羞的站在稻田里,认真的虽然字都咬不清,但是他认真唱情歌的样子,我觉得很有魅力,很有美感。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 133,
+      "start": 1890.02,
+      "end": 1893.12,
+      "speaker": "host",
+      "text": "而且奇力香也是石木石木隆你个诗集啊,如果你读过的话。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 134,
+      "start": 1897.3200000000002,
+      "end": 1898.92,
+      "speaker": "host",
+      "text": "想的朋友自己去拍了啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 135,
+      "start": 1900.02,
+      "end": 1905.62,
+      "speaker": "host",
+      "text": "黑黑枸杞,这个还是挺好喝的,酸甜的口感,你给我个杯子我给大家展示一下吧,我赶快卖回货,要不然我这个工作保不住了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 136,
+      "start": 1906.02,
+      "end": 1906.42,
+      "speaker": "guest",
+      "text": "对对对。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 137,
+      "start": 1907.42,
+      "end": 1912.92,
+      "speaker": "host",
+      "text": "好,大家可以看到啊,这个哎呀,你给了个颜色深的,大家看不到这个颜色。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 138,
+      "start": 1913.62,
+      "end": 1919.42,
+      "speaker": "host",
+      "text": "你看,这是正常的这个枸杞的汁,它就是这个蓝色的,这个蓝色其实就是花青素的颜色,看到了没有?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 139,
+      "start": 1920.72,
+      "end": 1924.92,
+      "speaker": "host",
+      "text": "然后它是酸甜的口感,它的配料里头只有这个黑枸杞,没有其他的东西。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 140,
+      "start": 1926.02,
+      "end": 1926.8200000000002,
+      "speaker": "host",
+      "text": "很干净啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 141,
+      "start": 1928.02,
+      "end": 1930.92,
+      "speaker": "host",
+      "text": "我我刚说的那些书应该右下角都还有吧,导演?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 142,
+      "start": 1931.12,
+      "end": 1931.3200000000002,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 143,
+      "start": 1931.92,
+      "end": 1935.3200000000002,
+      "speaker": "host",
+      "text": "有,你把那些都谈一下,然后刚才没有买的朋友,答应我,都买些书好吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 144,
+      "start": 1936.22,
+      "end": 1944.62,
+      "speaker": "host",
+      "text": "而且我也给大家说了,就是你可以,比如说你穿的衣服上简单一些,其实这个不重要,董宇辉一下天其实就三件四件白短袖,晚上洗,然后换着穿穿一下天。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 145,
+      "start": 1945.52,
+      "end": 1953.52,
+      "speaker": "host",
+      "text": "然后我这身上四个裤子还是去年在那个啥里买的,就是大家平常买那种特别便宜的时尚的这种快时尚的品牌就买的,我都穿了幾年了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 146,
+      "start": 1955.02,
+      "end": 1963.92,
+      "speaker": "host",
+      "text": "就是职业没有区别,但是快乐确实是有高低之分的,我举个例子,比如你特别爱书,那你读完一本书带来的喜悦,可能就比你请别人请你吃一顿饭带来的喜悦要多,对吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 147,
+      "start": 1964.62,
+      "end": 1971.42,
+      "speaker": "host",
+      "text": "比如说你是一个乐于助人的人,那你帮完了一个人,那个喜悦可能就比你买件衣服的喜悦要多。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 148,
+      "start": 1972.3200000000002,
+      "end": 1981.92,
+      "speaker": "host",
+      "text": "我是觉得你精神上的丰富应该给你带来的快乐会更直接,因为我相信每一个人精神世界是需要那种去需要慰藉的,我们需要寻求自己的精神家园。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 149,
+      "start": 1983.42,
+      "end": 1987.62,
+      "speaker": "host",
+      "text": "就像苏东坡所说的那样,粗增大不果生崖,富有诗书气自华。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 150,
+      "start": 1988.22,
+      "end": 1993.92,
+      "speaker": "host",
+      "text": "你看粗增大不,粗增大不果着不冷就行了,干净体面就行了,对不对?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 151,
+      "start": 1996.22,
+      "end": 2003.92,
+      "speaker": "host",
+      "text": "如果我整天是一个靠穿衣服打扮自己的男生,可能你也不一定喜欢我的,粗增大不果生崖,富有诗书气自华,当然我说的主要原因也是因为没钱买衣服。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 152,
+      "start": 2005.02,
+      "end": 2007.62,
+      "speaker": "host",
+      "text": "而且我穿的衣服呢之后我发现糟蹋那钱干啥?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 153,
+      "start": 2008.42,
+      "end": 2012.42,
+      "speaker": "host",
+      "text": "别人衣服要体现出美感,知道都有一定的腿的长度和线条。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 154,
+      "start": 2013.3200000000002,
+      "end": 2015.02,
+      "speaker": "host",
+      "text": "我整个身高一米四。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 155,
+      "start": 2015.62,
+      "end": 2016.02,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 156,
+      "start": 2016.92,
+      "end": 2019.92,
+      "speaker": "host",
+      "text": "头50厘米,糟蹋东西,我就没有必要花那个钱了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 157,
+      "start": 2021.42,
+      "end": 2023.92,
+      "speaker": "host",
+      "text": "黑枸杞原浆,喜欢的朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 158,
+      "start": 2025.3200000000002,
+      "end": 2031.62,
+      "speaker": "host",
+      "text": "牛奶,这个是两箱鲜奶,还有一箱酸奶,总共加起来一共是34盒,100多块钱,平均下来一盒大概是3块3毛5。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 159,
+      "start": 2032.52,
+      "end": 2041.92,
+      "speaker": "host",
+      "text": "特仑苏的牛奶3块3毛5,其实你就用了一个你买了一个 quality milk, average price,你用了一个普通牛奶的价格买了一罐高品质牛奶,大概是这个意思啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 160,
+      "start": 2047.02,
+      "end": 2049.92,
+      "speaker": "host",
+      "text": "赶快赶快工作,带货带货,不扯淡了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 161,
+      "start": 2050.82,
+      "end": 2052.92,
+      "speaker": "host",
+      "text": "这个高品质牛奶叫 quality milk。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 162,
+      "start": 2053.7200000000003,
+      "end": 2055.02,
+      "speaker": "host",
+      "text": "这个笔写不下来,导演。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 163,
+      "start": 2055.62,
+      "end": 2058.2200000000003,
+      "speaker": "host",
+      "text": "那个黑颜色的笔写不下来,你一会重找一个好吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 164,
+      "start": 2059.02,
+      "end": 2062.62,
+      "speaker": "host",
+      "text": "quality milk,用蓝色写的,大家可能眼睛看着不舒服。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 165,
+      "start": 2064.02,
+      "end": 2066.02,
+      "speaker": "host",
+      "text": "quality milk,写错了, quality milk。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 166,
+      "start": 2067.02,
+      "end": 2074.92,
+      "speaker": "host",
+      "text": "So you can buy this quality milk at a lower price,用一个更低的价格, at a lower price, low叫低, lower叫更低的 price。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 167,
+      "start": 2076.12,
+      "end": 2079.92,
+      "speaker": "host",
+      "text": "那我们一般说普通的牛奶或者普通的商品怎么说呢?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 168,
+      "start": 2080.7200000000003,
+      "end": 2090.52,
+      "speaker": "host",
+      "text": "普通的汽车,普通的房子,大家一说到普通,大家第一反应是 common,对吧,或者叫 usual,其实你可以用这个词叫 average,平均数,就是正常的,普通的,普通的牛奶,你可以说 average milk,就是我们平常所买一种普通的牛奶。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 169,
+      "start": 2091.2200000000003,
+      "end": 2098.42,
+      "speaker": "host",
+      "text": "那 quality milk和这个 average milk之间的区别啥?其实就是他们里头的这个蛋白质的含量的区别,OK?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 170,
+      "start": 2099.2200000000003,
+      "end": 2101.7200000000003,
+      "speaker": "host",
+      "text": "The differ或者 the differences。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 171,
+      "start": 2103.02,
+      "end": 2112.32,
+      "speaker": "host",
+      "text": "The differences in什么呀? in protein content, content叫含量,所以 quality milk和 average milk其实主要的区别就是在蛋白质含量上的区别,OK?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 172,
+      "start": 2113.32,
+      "end": 2116.02,
+      "speaker": "host",
+      "text": "The differences in protein content。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 173,
+      "start": 2117.42,
+      "end": 2122.62,
+      "speaker": "host",
+      "text": "牛奶啊,你你你当然可以,你说那我买普通牛奶,我喝两罐是不是也行?可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 174,
+      "start": 2123.52,
+      "end": 2128.42,
+      "speaker": "host",
+      "text": "但也不是说早餐人一次就能喝两罐牛奶,你要喝能下去能行,那家里的老人或者是孩子他胃口不一定好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 175,
+      "start": 2129.2200000000003,
+      "end": 2130.62,
+      "speaker": "host",
+      "text": "你像董宇辉这种,对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 176,
+      "start": 2131.82,
+      "end": 2134.32,
+      "speaker": "host",
+      "text": "我现在连喝一罐牛奶都费劲了,这两天。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 177,
+      "start": 2135.32,
+      "end": 2136.52,
+      "speaker": "host",
+      "text": "胃口越来越差。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 178,
+      "start": 2137.62,
+      "end": 2140.82,
+      "speaker": "host",
+      "text": "来,想要的朋友自己去拍啊,这个纯真的酸奶,口感也特别好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 179,
+      "start": 2142.12,
+      "end": 2149.32,
+      "speaker": "host",
+      "text": "因为大家都是在超市里买过的,比如一箱你平常买都是六七十,现在在我们直播间里三箱才100多,其实就是好东西,只要价格实惠,家里又每天都常用常喝,对不对?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 180,
+      "start": 2150.62,
+      "end": 2155.7200000000003,
+      "speaker": "host",
+      "text": "爱有时候不只是说要这种温声细语的表达。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 181,
+      "start": 2156.62,
+      "end": 2160.62,
+      "speaker": "host",
+      "text": "爱其实更多在我们的理解里头,反而是在三餐四季的陪伴。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 182,
+      "start": 2161.52,
+      "end": 2169.7200000000003,
+      "speaker": "host",
+      "text": "爱是他晚上睡觉的时候给他盖好的被子,爱是他早上出门的时候,书包侧兜里给他放着的牛奶和玉米。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 183,
+      "start": 2172.02,
+      "end": 2174.42,
+      "speaker": "host",
+      "text": "爱更多时候是生活中的细节。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 184,
+      "start": 2175.2200000000003,
+      "end": 2179.2200000000003,
+      "speaker": "host",
+      "text": "这个枸杞,黑枸杞的汁也很好喝,大家如果没有尝过可以试一下。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 185,
+      "start": 2181.02,
+      "end": 2184.92,
+      "speaker": "host",
+      "text": "酸甜口感,而且它里头含的这个花青素和氨基酸比较多啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 186,
+      "start": 2187.02,
+      "end": 2189.52,
+      "speaker": "host",
+      "text": "接下来还有这个大西洋鳕鱼块。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 187,
+      "start": 2190.62,
+      "end": 2192.02,
+      "speaker": "host",
+      "text": "cod,大西洋鳕鱼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 188,
+      "start": 2193.12,
+      "end": 2199.62,
+      "speaker": "host",
+      "text": "这个就是鳕鱼,它叫大西洋,这个叫对,太平洋真鳕鱼,它不是大家平常所说的那个银鳕鱼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 189,
+      "start": 2200.42,
+      "end": 2204.92,
+      "speaker": "host",
+      "text": "那种鱼的价格已经高到离谱了,我们这里卖的都是一些比较日常的吃的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 190,
+      "start": 2206.42,
+      "end": 2212.42,
+      "speaker": "host",
+      "text": "如果您是想要那个特别那高价格的那个银鳕鱼的话,那您别买这个,因为这个确实它不是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 191,
+      "start": 2214.42,
+      "end": 2222.7200000000003,
+      "speaker": "host",
+      "text": "这个鳕鱼片很大,大家可以在锅里头稍微煎一下,然后撒上一些香料,或者直接上锅蒸一下,蒜拌肉,煮火锅也可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 192,
+      "start": 2223.42,
+      "end": 2233.02,
+      "speaker": "host",
+      "text": "很多人都是给家里的老人或者小孩买辅食,因为鱼的一个白白肉嘛,对吧,它的一个特点是什么?就是蛋白质含量高,脂肪含量低,对于人体来说是一个非常好营养补充的元素。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 193,
+      "start": 2233.62,
+      "end": 2236.2200000000003,
+      "speaker": "host",
+      "text": "OK,想要的朋友自己去拍啊,黑枸杞不是不是纯甜也不是纯酸,它是酸甜感。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 194,
+      "start": 2237.3199999999997,
+      "end": 2239.62,
+      "speaker": "host",
+      "text": "这个是酸甜感啊,黑枸杞。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 195,
+      "start": 2241.42,
+      "end": 2243.3199999999997,
+      "speaker": "host",
+      "text": "酸酸甜甜的还是挺喜欢的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 196,
+      "start": 2244.2200000000003,
+      "end": 2248.42,
+      "speaker": "host",
+      "text": "年少时候我们都特别喜欢甜,长大之后受了很多苦就喜欢吃酸。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 197,
+      "start": 2249.2200000000003,
+      "end": 2256.8199999999997,
+      "speaker": "host",
+      "text": "再后来发现其实你既不喜欢纯甜,你也不喜欢纯酸,太甜了忧伤,太酸了痛苦,你终于找到了一个适合自己的酸甜比。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 198,
+      "start": 2257.62,
+      "end": 2262.02,
+      "speaker": "host",
+      "text": "不管是水果还是说这些喝的东西,你找到一个适合自己的酸甜比就特别好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 199,
+      "start": 2262.62,
+      "end": 2266.02,
+      "speaker": "host",
+      "text": "就比如说为什么莫希托会非常受很多人欢迎呢?因为他酸甜比很好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 200,
+      "start": 2266.92,
+      "end": 2273.02,
+      "speaker": "host",
+      "text": "他不是一味的苦苦到让你难受,他也不是一味的甜甜到你甜的觉得不真实,酸甜比例掌握得很好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 201,
+      "start": 2274.7200000000003,
+      "end": 2275.02,
+      "speaker": "host",
+      "text": "呃。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 202,
+      "start": 2277.02,
+      "end": 2280.42,
+      "speaker": "host",
+      "text": "银鳕鱼,哇,这个票大,这个超大的票,大家看到了吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 203,
+      "start": 2281.62,
+      "end": 2282.42,
+      "speaker": "host",
+      "text": "银鳕鱼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 204,
+      "start": 2284.02,
+      "end": 2285.42,
+      "speaker": "host",
+      "text": "犬牙鱼啊,这是写的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 205,
+      "start": 2287.02,
+      "end": 2287.7200000000003,
+      "speaker": "host",
+      "text": "银鳕鱼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 206,
+      "start": 2289.42,
+      "end": 2295.12,
+      "speaker": "host",
+      "text": "如果是大家平常喜欢吃的可以做拍一些,这个1000克,可以比如说这个蒸啊,煎啊,煮火锅都可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 207,
+      "start": 2295.7200000000003,
+      "end": 2299.3199999999997,
+      "speaker": "host",
+      "text": "我我也不知道怎么做,大家可能比我更专业一些,你看这片多大,这里多大的鱼啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 208,
+      "start": 2300.42,
+      "end": 2304.7200000000003,
+      "speaker": "host",
+      "text": "然后呢,如果你自己在家做的话,你可以去抖音上搜一下有各种各样做的这个方式。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 209,
+      "start": 2305.62,
+      "end": 2307.62,
+      "speaker": "host",
+      "text": "我不是特别专业,对不起啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 210,
+      "start": 2308.8199999999997,
+      "end": 2315.7200000000003,
+      "speaker": "host",
+      "text": "它的这个生产地,产地为什么有个山东青岛呢?当然鱼不是山东青岛的,鱼是在海里捞出来之后在山东青岛加工的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 211,
+      "start": 2316.3199999999997,
+      "end": 2326.92,
+      "speaker": "host",
+      "text": "我们给大家之前推出的很多的像这个虾呀,这个还有特别好的一些鱼,几乎都是在山东青岛,因为青岛是北方最大的这个海产品以及各种各样农产品,甚至一些工业品的进进出口港嘛。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    }
+  ]
+}

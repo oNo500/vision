@@ -1,0 +1,22 @@
+{
+  "stage": "render",
+  "video_id": "4GQe9btEkqg",
+  "status": "done",
+  "started_at": "2026-04-19T15:47:55.474661+08:00",
+  "finished_at": "2026-04-19T15:47:55.486073+08:00",
+  "duration_sec": 0.011412,
+  "inputs": [
+    "raw.json"
+  ],
+  "outputs": [
+    "transcript.md",
+    "transcript.srt"
+  ],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "total_segments": 2490,
+    "total_duration_sec": 10672.0
+  }
+}

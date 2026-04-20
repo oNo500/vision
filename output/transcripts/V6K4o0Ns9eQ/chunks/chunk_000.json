@@ -1,0 +1,4216 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 2.0,
+      "speaker": "host",
+      "text": "注意我们的一个粉丝同学生日快乐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 2.0,
+      "end": 4.0,
+      "speaker": "host",
+      "text": "背面,所以哪哪背面有?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 4.0,
+      "end": 5.0,
+      "speaker": "guest",
+      "text": "刚才那个检测报告。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 5.0,
+      "end": 8.0,
+      "speaker": "host",
+      "text": "啊,检测报告后面有个祝粉丝朋友生日快乐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 8.0,
+      "end": 10.0,
+      "speaker": "guest",
+      "text": "现在直播间里十万多人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 10.0,
+      "end": 11.0,
+      "speaker": "host",
+      "text": "肯定有,今天是生日的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 11.0,
+      "end": 14.0,
+      "speaker": "host",
+      "text": "今天我们直播间里十万多人肯定有过生日的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 14.0,
+      "end": 15.0,
+      "speaker": "guest",
+      "text": "对啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 15.0,
+      "end": 16.0,
+      "speaker": "guest",
+      "text": "一年365天。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 16.0,
+      "end": 17.0,
+      "speaker": "host",
+      "text": "我们能不能给一个人送上一箱?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 18.0,
+      "end": 18.0,
+      "speaker": "host",
+      "text": "不能是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 19.0,
+      "end": 20.0,
+      "speaker": "guest",
+      "text": "其实有这种要求当然也可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 20.0,
+      "end": 22.0,
+      "speaker": "host",
+      "text": "我这种要求也可以,我现在可以给大家送上一箱野山大麦芽对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 22.0,
+      "end": 23.0,
+      "speaker": "guest",
+      "text": "怎么送?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 24.0,
+      "end": 25.0,
+      "speaker": "host",
+      "text": "看怎么送。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 26.0,
+      "end": 30.0,
+      "speaker": "host",
+      "text": "一会我提问的时候,谁第一个回答出来,我就给谁送。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 30.0,
+      "end": 30.0,
+      "speaker": "host",
+      "text": "可以吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 30.0,
+      "end": 31.0,
+      "speaker": "guest",
+      "text": "行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 31.0,
+      "end": 32.0,
+      "speaker": "host",
+      "text": "知识。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 32.0,
+      "end": 34.0,
+      "speaker": "host",
+      "text": "让大家知道知识是有用的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 34.0,
+      "end": 34.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 34.0,
+      "end": 35.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 35.0,
+      "end": 36.0,
+      "speaker": "host",
+      "text": "虽然它只是一个小用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 36.0,
+      "end": 37.0,
+      "speaker": "guest",
+      "text": "可以找客服小姐姐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 37.0,
+      "end": 38.0,
+      "speaker": "host",
+      "text": "可以,随后找客服小姐姐记录啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 38.0,
+      "end": 45.0,
+      "speaker": "host",
+      "text": "刚才加入我们那个会员体系之后呢,像有这种包啊什么的,你平时买东西他是有券是可以给你送的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 45.0,
+      "end": 46.0,
+      "speaker": "host",
+      "text": "肉夹馍,肉夹馍有吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 46.0,
+      "end": 47.0,
+      "speaker": "guest",
+      "text": "肉夹馍今天有。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 47.0,
+      "end": 49.0,
+      "speaker": "host",
+      "text": "有有,给大家上一下,老潼关肉夹馍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 49.0,
+      "end": 50.0,
+      "speaker": "guest",
+      "text": "给大家放二号吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 50.0,
+      "end": 51.0,
+      "speaker": "host",
+      "text": "放二号链接。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 51.0,
+      "end": 52.0,
+      "speaker": "host",
+      "text": "有朋友要肉夹馍给你上啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 52.0,
+      "end": 54.0,
+      "speaker": "guest",
+      "text": "但是我们没有样品了,所以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 54.0,
+      "end": 55.0,
+      "speaker": "host",
+      "text": "没有样品不影响,大家先上吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 55.0,
+      "end": 56.0,
+      "speaker": "guest",
+      "text": "先开吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 56.0,
+      "end": 57.0,
+      "speaker": "host",
+      "text": "我记得他们说寄了样品了,你问一下吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 58.0,
+      "end": 59.0,
+      "speaker": "guest",
+      "text": "寄的不如吃得快。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 100.0,
+      "end": 101.0,
+      "speaker": "host",
+      "text": "就刚寄来就吃完了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 102.0,
+      "end": 104.0,
+      "speaker": "guest",
+      "text": "你自己吃了多少个你没有数吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 104.0,
+      "end": 105.0,
+      "speaker": "host",
+      "text": "我总共吃过两个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 105.0,
+      "end": 106.0,
+      "speaker": "guest",
+      "text": "就吃过两个啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 106.0,
+      "end": 107.0,
+      "speaker": "guest",
+      "text": "那就是石棉吃的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 107.0,
+      "end": 108.0,
+      "speaker": "host",
+      "text": "那就是石棉吃的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 109.0,
+      "end": 112.0,
+      "speaker": "host",
+      "text": "所以大能力的那个就是因为我跟石棉都是陕西人嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 112.0,
+      "end": 115.0,
+      "speaker": "host",
+      "text": "哎呀,一看到那个肉夹馍的饼子真的忍不住。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 115.0,
+      "end": 116.0,
+      "speaker": "host",
+      "text": "DNA都动了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 116.0,
+      "end": 118.0,
+      "speaker": "host",
+      "text": "碳水狂魔的兴奋呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 118.0,
+      "end": 120.0,
+      "speaker": "host",
+      "text": "尤其加上一些这个炒的榨菜,太香了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 121.0,
+      "end": 122.0,
+      "speaker": "host",
+      "text": "香喷喷的拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 123.0,
+      "end": 123.0,
+      "speaker": "host",
+      "text": "橄榄油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 124.0,
+      "end": 126.0,
+      "speaker": "host",
+      "text": "西班牙安达卢西亚的橄榄油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 126.0,
+      "end": 130.0,
+      "speaker": "host",
+      "text": "到了夏天,大家如果家里是拌菜的话,我建议用橄榄油吃啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 130.0,
+      "end": 133.0,
+      "speaker": "host",
+      "text": "还有一个就是家里有孩子和老人的话。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 133.0,
+      "end": 138.0,
+      "speaker": "host",
+      "text": "成年人其实因为你身体的代谢能力和解渴能力很好,所以其实饮食上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 138.0,
+      "end": 140.0,
+      "speaker": "host",
+      "text": "可能还没有太大的要求,坦诚来说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 140.0,
+      "end": 143.0,
+      "speaker": "host",
+      "text": "但是孩子和老人其实可以让他们多吃一些这个橄榄油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 143.0,
+      "end": 146.0,
+      "speaker": "host",
+      "text": "当然如果你家里这个比如条件允许对吧,你觉得买一瓶油这瓶油能拌菜也能吃很久呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 146.0,
+      "end": 148.0,
+      "speaker": "host",
+      "text": "你每次拌菜你能用多少啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 149.0,
+      "end": 149.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 150.0,
+      "end": 151.0,
+      "speaker": "host",
+      "text": "半年,三个月。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 151.0,
+      "end": 152.0,
+      "speaker": "host",
+      "text": "我估计都够了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 152.0,
+      "end": 155.0,
+      "speaker": "host",
+      "text": "拌菜的时候放上橄榄油,尤其到了夏天,大家都喜欢吃那种拌的凉菜,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 155.0,
+      "end": 158.0,
+      "speaker": "host",
+      "text": "橄榄油因为它里头富含各种不饱和脂肪酸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 159.0,
+      "end": 160.0,
+      "speaker": "host",
+      "text": "这人身体比较好啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 202.0,
+      "end": 206.0,
+      "speaker": "host",
+      "text": "这个也是我们自己做的橄榄油,所以它的呃是可以用券的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 206.0,
+      "end": 208.0,
+      "speaker": "host",
+      "text": "刚才给大家点击那个是可以用券的啊,Olive oil。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 213.0,
+      "end": 213.0,
+      "speaker": "host",
+      "text": "怎么了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 214.0,
+      "end": 214.0,
+      "speaker": "guest",
+      "text": "我才看到。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 215.0,
+      "end": 215.0,
+      "speaker": "host",
+      "text": "看到啥了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 216.0,
+      "end": 217.0,
+      "speaker": "guest",
+      "text": "橄榄油的那个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 217.0,
+      "end": 218.0,
+      "speaker": "guest",
+      "text": "我自个都没发现。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 218.0,
+      "end": 219.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 219.0,
+      "end": 220.0,
+      "speaker": "guest",
+      "text": "咱家的油。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 221.0,
+      "end": 227.0,
+      "speaker": "host",
+      "text": "这啊,导演说我们自己的橄榄油在抖音里头的会员体系里头他们有一个关于这个的排名。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 228.0,
+      "end": 229.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 230.0,
+      "end": 232.0,
+      "speaker": "host",
+      "text": "我们的排名在。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 232.0,
+      "end": 235.0,
+      "speaker": "host",
+      "text": "这个可能是因为最近一段时间咱直播间里人多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 236.0,
+      "end": 236.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 236.0,
+      "end": 237.0,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 237.0,
+      "end": 240.0,
+      "speaker": "host",
+      "text": "但是第一个排名不能说明问题。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 240.0,
+      "end": 242.0,
+      "speaker": "host",
+      "text": "我必须得先理性的承认,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 242.0,
+      "end": 244.0,
+      "speaker": "host",
+      "text": "那是因为我们直播间最近一段时间人多呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 245.0,
+      "end": 245.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 245.0,
+      "end": 251.0,
+      "speaker": "host",
+      "text": "但是我有理由相信这个橄榄油大家买完第一次之后,如果是真的懂橄榄油,他会回来,他如果需要他还会再买第二次的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 251.0,
+      "end": 252.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 252.0,
+      "end": 257.0,
+      "speaker": "host",
+      "text": "如果他愿意去买第二次,愿意去买第三次的时候,那说明这个油就品质真的好了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 257.0,
+      "end": 304.0,
+      "speaker": "host",
+      "text": "就有一天如果咱直播间里,比如说大家有一天都不愿意来听我们这胡说八道了,但是他有想要买橄榄油,他还是会来这买,那如果我们还是第一名的话。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 304.0,
+      "end": 307.0,
+      "speaker": "host",
+      "text": "我觉得那说明真正的证明这个产品是好产品了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 307.0,
+      "end": 307.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 308.0,
+      "end": 308.0,
+      "speaker": "guest",
+      "text": "没毛病。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 308.0,
+      "end": 309.0,
+      "speaker": "host",
+      "text": "没毛病啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 310.0,
+      "end": 312.0,
+      "speaker": "host",
+      "text": "有朋友说那个包能不能挂个链接,咱那个包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 312.0,
+      "end": 312.0,
+      "speaker": "host",
+      "text": "你问一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 312.0,
+      "end": 313.0,
+      "speaker": "guest",
+      "text": "挂。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 313.0,
+      "end": 314.0,
+      "speaker": "host",
+      "text": "就是咱挎的这个包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 314.0,
+      "end": 315.0,
+      "speaker": "guest",
+      "text": "会员。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 315.0,
+      "end": 316.0,
+      "speaker": "guest",
+      "text": "会员会送。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 316.0,
+      "end": 318.0,
+      "speaker": "host",
+      "text": "我知道你是送的,那有人说我就想套钱买呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 318.0,
+      "end": 318.0,
+      "speaker": "guest",
+      "text": "买是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 319.0,
+      "end": 319.0,
+      "speaker": "guest",
+      "text": "不可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 320.0,
+      "end": 322.0,
+      "speaker": "host",
+      "text": "这怎么能又不可以这种说法呢,你你你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 322.0,
+      "end": 323.0,
+      "speaker": "host",
+      "text": "你想办法肯定是 可以的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 323.0,
+      "end": 324.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 324.0,
+      "end": 324.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 324.0,
+      "end": 325.0,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 327.0,
+      "end": 328.0,
+      "speaker": "host",
+      "text": "不存在不可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 328.0,
+      "end": 328.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 329.0,
+      "end": 329.0,
+      "speaker": "guest",
+      "text": "没有不可能。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 329.0,
+      "end": 331.0,
+      "speaker": "host",
+      "text": "真的是,主动一些,什么都有可能。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 332.0,
+      "end": 333.0,
+      "speaker": "host",
+      "text": "来,橄榄油大家想要自己拍的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 335.0,
+      "end": 339.0,
+      "speaker": "host",
+      "text": "我嘴里刚吃啥呢,我是刚才吃了这个我杯子里泡的我们自己做的枸杞。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 339.0,
+      "end": 340.0,
+      "speaker": "host",
+      "text": "但是今天的已经完了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 340.0,
+      "end": 341.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 341.0,
+      "end": 342.0,
+      "speaker": "host",
+      "text": "泡了两包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 342.0,
+      "end": 343.0,
+      "speaker": "guest",
+      "text": "反正公司的样品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 343.0,
+      "end": 346.0,
+      "speaker": "host",
+      "text": "我自己都舍不得,我自己一包枸杞平时泡好几天呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 348.0,
+      "end": 350.0,
+      "speaker": "host",
+      "text": "枸杞嚼着中间的籽,挺甜的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 351.0,
+      "end": 352.0,
+      "speaker": "guest",
+      "text": "这个桃也很甜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 352.0,
+      "end": 352.0,
+      "speaker": "host",
+      "text": "桃是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 353.0,
+      "end": 353.0,
+      "speaker": "host",
+      "text": "蟠桃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 354.0,
+      "end": 355.0,
+      "speaker": "guest",
+      "text": "哎,今天价格也很美丽。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 356.0,
+      "end": 358.0,
+      "speaker": "guest",
+      "text": "44块9,到手4.5斤到5斤。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 359.0,
+      "end": 402.0,
+      "speaker": "host",
+      "text": "啊,对于蟠桃来说价格还行,因为蟠桃本身价格出价就高啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 405.0,
+      "end": 406.0,
+      "speaker": "host",
+      "text": "有朋友说让我出题。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 407.0,
+      "end": 407.0,
+      "speaker": "host",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 408.0,
+      "end": 408.0,
+      "speaker": "host",
+      "text": "出题是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 409.0,
+      "end": 412.0,
+      "speaker": "host",
+      "text": "咱那个长江黄河那两本书准备好了没?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 412.0,
+      "end": 414.0,
+      "speaker": "guest",
+      "text": "还在准备,看商家的链接有点问题。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 414.0,
+      "end": 415.0,
+      "speaker": "host",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 415.0,
+      "end": 416.0,
+      "speaker": "guest",
+      "text": "稍等一下,稍等一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 417.0,
+      "end": 421.0,
+      "speaker": "host",
+      "text": "我要出题,我出题一会抽中的是可以给大家第一个回答的,可以给大家送一个那个什么对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 421.0,
+      "end": 422.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 422.0,
+      "end": 426.0,
+      "speaker": "host",
+      "text": "但是我这看到的可能和实际评论区第一个是不一样的,就我就说是我看到的第一个回答正确。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 426.0,
+      "end": 428.0,
+      "speaker": "guest",
+      "text": "你实际的那个名字,你念他名字就行了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 428.0,
+      "end": 429.0,
+      "speaker": "host",
+      "text": "可以,好好,我一会念个名字啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 431.0,
+      "end": 432.0,
+      "speaker": "host",
+      "text": "我还可以给大家送东西,我的天哪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 433.0,
+      "end": 433.0,
+      "speaker": "host",
+      "text": "别逼我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 434.0,
+      "end": 435.0,
+      "speaker": "host",
+      "text": "一开心把什么都送了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 435.0,
+      "end": 436.0,
+      "speaker": "host",
+      "text": "连我自己上架。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 436.0,
+      "end": 436.0,
+      "speaker": "guest",
+      "text": "送了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 437.0,
+      "end": 437.0,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 439.0,
+      "end": 441.0,
+      "speaker": "host",
+      "text": "千金散去还复来啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 442.0,
+      "end": 442.0,
+      "speaker": "host",
+      "text": "鲜花。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 442.0,
+      "end": 443.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 443.0,
+      "end": 444.0,
+      "speaker": "host",
+      "text": "花出去就开心了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 446.0,
+      "end": 448.0,
+      "speaker": "host",
+      "text": "帆布包刚给大家展示了一下,这是我们自己的帆布包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 448.0,
+      "end": 453.0,
+      "speaker": "host",
+      "text": "加入会员体系之后买东西有积分,积分够了我其实就可以送你,但是如果你说你自己想要套钱买一个,我们给大家找。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 453.0,
+      "end": 458.0,
+      "speaker": "host",
+      "text": "其实帆布包有很多的,我相信大家可能买可能会买到比我们更好看的一些,如果说你您不喜欢这个图画的话,您可能也买到自己合适的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 458.0,
+      "end": 501.0,
+      "speaker": "host",
+      "text": "我是比较建议大家就开始背这种简单的帆布包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 502.0,
+      "end": 505.0,
+      "speaker": "host",
+      "text": "我反而觉得背个这,然后呢你去商场。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 505.0,
+      "end": 510.0,
+      "speaker": "host",
+      "text": "你也一样的优雅,而且我觉得你一看就是一个非常重视环境的人,对吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 510.0,
+      "end": 511.0,
+      "speaker": "guest",
+      "text": "重视环保。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 511.0,
+      "end": 512.0,
+      "speaker": "host",
+      "text": "重视环保的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 512.0,
+      "end": 515.0,
+      "speaker": "host",
+      "text": "我不觉得背个这,就比背个几万块那种包钱的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 515.0,
+      "end": 516.0,
+      "speaker": "guest",
+      "text": "挺好看的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 517.0,
+      "end": 517.0,
+      "speaker": "host",
+      "text": "对不对?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 518.0,
+      "end": 524.0,
+      "speaker": "host",
+      "text": "就是我我坦诚来说,如果我自己走在商场里,或者走在路上,我看到有人背这种包,我就会觉得这个人很有教养。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 525.0,
+      "end": 527.0,
+      "speaker": "host",
+      "text": "而且他很有这种环保的意识。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 527.0,
+      "end": 531.0,
+      "speaker": "host",
+      "text": "就可能跟几万块那种鳄鱼皮啊,鸵鸟皮做的就不一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 532.0,
+      "end": 533.0,
+      "speaker": "host",
+      "text": "因为确实有那些嘛,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 534.0,
+      "end": 535.0,
+      "speaker": "guest",
+      "text": "这个桃子你尝过没?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 535.0,
+      "end": 535.0,
+      "speaker": "host",
+      "text": "桃子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 536.0,
+      "end": 536.0,
+      "speaker": "host",
+      "text": "没有尝过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 536.0,
+      "end": 537.0,
+      "speaker": "guest",
+      "text": "你是不是应该吃一斤了?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 538.0,
+      "end": 538.0,
+      "speaker": "host",
+      "text": "我尝过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 539.0,
+      "end": 539.0,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 539.0,
+      "end": 540.0,
+      "speaker": "guest",
+      "text": "我们吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 540.0,
+      "end": 541.0,
+      "speaker": "host",
+      "text": "真的真的很甜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 541.0,
+      "end": 543.0,
+      "speaker": "guest",
+      "text": "吃过留留一点,下次有可能还要用。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 543.0,
+      "end": 544.0,
+      "speaker": "guest",
+      "text": "留着有用。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 546.0,
+      "end": 547.0,
+      "speaker": "host",
+      "text": "很甜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 547.0,
+      "end": 548.0,
+      "speaker": "guest",
+      "text": "真的没吃过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 548.0,
+      "end": 548.0,
+      "speaker": "host",
+      "text": "给。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 549.0,
+      "end": 550.0,
+      "speaker": "host",
+      "text": "把大的给你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 551.0,
+      "end": 551.0,
+      "speaker": "guest",
+      "text": "还是给我好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 552.0,
+      "end": 554.0,
+      "speaker": "host",
+      "text": "样品是,现在就剩一个小的展示的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 555.0,
+      "end": 556.0,
+      "speaker": "host",
+      "text": "大的给楠楠吃了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 558.0,
+      "end": 559.0,
+      "speaker": "host",
+      "text": "包我们给大家找啊,别急。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 601.0,
+      "end": 604.0,
+      "speaker": "host",
+      "text": "买不买都行,直播间里大家带着舒服就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 605.0,
+      "end": 605.0,
+      "speaker": "host",
+      "text": "带着舒服就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 605.0,
+      "end": 609.0,
+      "speaker": "host",
+      "text": "因为我知道可能前两天很多朋友,我也我经常也会看抖音。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 610.0,
+      "end": 612.0,
+      "speaker": "host",
+      "text": "都会看这几天很多抖音的私信。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 612.0,
+      "end": 613.0,
+      "speaker": "host",
+      "text": "然后呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 614.0,
+      "end": 618.0,
+      "speaker": "host",
+      "text": "有時候我我會回答什麼,就比如說哪个朋友告诉我快遞磕碰了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 618.0,
+      "end": 620.0,
+      "speaker": "host",
+      "text": "产品真的有问题,我會第一时间截图发给我们的客服。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 620.0,
+      "end": 622.0,
+      "speaker": "host",
+      "text": "我會让给大家迅速解决,这第一个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 622.0,
+      "end": 626.0,
+      "speaker": "host",
+      "text": "第二我會回答很多学生问的问题,比如说读什么书呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 627.0,
+      "end": 630.0,
+      "speaker": "host",
+      "text": "啊,还有我會我會给大家有的人回复,比如说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 631.0,
+      "end": 636.0,
+      "speaker": "host",
+      "text": "他人生中遇到了很多的难,或者他最近一段时间在直播间里听完之后感觉到找到人生的力量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 636.0,
+      "end": 639.0,
+      "speaker": "host",
+      "text": "其实我觉得是他自己内心的觉醒,其实并不倒不一定真的是我我们说的东西有多用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 639.0,
+      "end": 642.0,
+      "speaker": "host",
+      "text": "我们都年纪尚轻,经验尚浅,胡说八道能有什么用?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 642.0,
+      "end": 644.0,
+      "speaker": "host",
+      "text": "然后也有一些朋友说他开始看书了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 644.0,
+      "end": 645.0,
+      "speaker": "host",
+      "text": "我會非常感动。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 645.0,
+      "end": 648.0,
+      "speaker": "host",
+      "text": "就我觉得看到这些行为的时候,说明我的部分的言行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 648.0,
+      "end": 650.0,
+      "speaker": "host",
+      "text": "实际上在积德行善。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 651.0,
+      "end": 655.0,
+      "speaker": "host",
+      "text": "然后呢,我也看到了很多朋友前段时间替我们的担心,比如说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 655.0,
+      "end": 658.0,
+      "speaker": "host",
+      "text": "董老师你直播间里十几万人,那按照你们这个比例你们一天应该卖成一个亿才行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 658.0,
+      "end": 700.0,
+      "speaker": "host",
+      "text": "但实际上你们并没有卖那么多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 700.0,
+      "end": 702.0,
+      "speaker": "host",
+      "text": "然后大家可能我能理解,因为大家说再商言商嘛,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 702.0,
+      "end": 704.0,
+      "speaker": "host",
+      "text": "你就好好卖你的菜,你好正钱就行了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 704.0,
+      "end": 706.0,
+      "speaker": "host",
+      "text": "你应该好好利用这个机会去挣钱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 708.0,
+      "end": 710.0,
+      "speaker": "host",
+      "text": "如果是那样的话,我可能就不是我了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 710.0,
+      "end": 710.0,
+      "speaker": "host",
+      "text": "你觉得呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 711.0,
+      "end": 713.0,
+      "speaker": "host",
+      "text": "喜欢买就买,不喜欢买就带一带也行,你觉得呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 713.0,
+      "end": 714.0,
+      "speaker": "host",
+      "text": "不强求啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 715.0,
+      "end": 717.0,
+      "speaker": "host",
+      "text": "商场每天你去逛也不见得你要进店啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 718.0,
+      "end": 718.0,
+      "speaker": "host",
+      "text": "是不是?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 724.0,
+      "end": 726.0,
+      "speaker": "host",
+      "text": "我非常呼吁大家开始看书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 727.0,
+      "end": 730.0,
+      "speaker": "host",
+      "text": "因为我我今天早上还收到一个我们的老朋友啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 730.0,
+      "end": 731.0,
+      "speaker": "host",
+      "text": "可儿你记得吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 731.0,
+      "end": 733.0,
+      "speaker": "host",
+      "text": "从去年冬天就一直关注,咱开播就关注到现在,可儿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 733.0,
+      "end": 735.0,
+      "speaker": "host",
+      "text": "可儿今天早上给我发私信,他说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 736.0,
+      "end": 738.0,
+      "speaker": "host",
+      "text": "他说他一个在抖音上给我发私信。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 738.0,
+      "end": 744.0,
+      "speaker": "host",
+      "text": "他说他一个单位的朋友,一个男同事,以前从来都不看书,这几天开始看书了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 744.0,
+      "end": 745.0,
+      "speaker": "guest",
+      "text": "因为看了直播间。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 745.0,
+      "end": 748.0,
+      "speaker": "host",
+      "text": "而且真的看书之后就把手机放下越来越多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 749.0,
+      "end": 751.0,
+      "speaker": "host",
+      "text": "你看抖音就是一个非常有智慧的软件。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 751.0,
+      "end": 756.0,
+      "speaker": "host",
+      "text": "你知道前一段时间咱特别火的时候,抖音让我帮忙拍了很多视频都是什么,呼吁大家善与结善缘。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 756.0,
+      "end": 800.0,
+      "speaker": "host",
+      "text": "而不是每天靠一种就是那种负面信息吸引大家的注意。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 800.0,
+      "end": 805.0,
+      "speaker": "host",
+      "text": "然后上热搜,然后不断,你这越来越多的负面信息,负面消息上热搜,最后吸引的都是什么人?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 805.0,
+      "end": 807.0,
+      "speaker": "host",
+      "text": "或者激发的是大家的什么情绪?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 807.0,
+      "end": 808.0,
+      "speaker": "host",
+      "text": "是恶语情绪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 808.0,
+      "end": 809.0,
+      "speaker": "guest",
+      "text": "环境会改变一个人的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 809.0,
+      "end": 811.0,
+      "speaker": "host",
+      "text": "这真的是环境会改变一个人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 811.0,
+      "end": 813.0,
+      "speaker": "host",
+      "text": "但大家最后都不可能这个善与结善缘了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 813.0,
+      "end": 814.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 814.0,
+      "end": 816.0,
+      "speaker": "host",
+      "text": "都是恶语相向,极端的讽刺和羞辱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 817.0,
+      "end": 819.0,
+      "speaker": "host",
+      "text": "所以不不靠他们不靠那种恶性的事件去吸引人的注意。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 819.0,
+      "end": 824.0,
+      "speaker": "host",
+      "text": "然后第二个就是前段时间鼓励读书,我们让我们读唐诗,然后搞唐诗配音这种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 825.0,
+      "end": 827.0,
+      "speaker": "host",
+      "text": "我觉得这个东西就是真的功德一件。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 827.0,
+      "end": 829.0,
+      "speaker": "host",
+      "text": "你你不能说抖音现在日活好像说七亿人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 231,
+      "start": 830.0,
+      "end": 832.0,
+      "speaker": "host",
+      "text": "不可能说七亿人全部受影响,也不可能七千万人受影响。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 232,
+      "start": 832.0,
+      "end": 833.0,
+      "speaker": "host",
+      "text": "也不可能七百人受影响。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 233,
+      "start": 834.0,
+      "end": 836.0,
+      "speaker": "host",
+      "text": "有个七十万人,或者七万人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 234,
+      "start": 836.0,
+      "end": 839.0,
+      "speaker": "host",
+      "text": "或者再小的七千人读书,这七千人里头万一以后有一个人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 235,
+      "start": 839.0,
+      "end": 841.0,
+      "speaker": "host",
+      "text": "就是昨天我跟苏老师在这聊那个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 236,
+      "start": 841.0,
+      "end": 842.0,
+      "speaker": "guest",
+      "text": "其实我都买了二三本书了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 237,
+      "start": 842.0,
+      "end": 843.0,
+      "speaker": "host",
+      "text": "你都买了二三本书了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 238,
+      "start": 843.0,
+      "end": 844.0,
+      "speaker": "host",
+      "text": "你都不觉得丢人,你才买了二三本书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 239,
+      "start": 844.0,
+      "end": 845.0,
+      "speaker": "host",
+      "text": "你该多买几本书看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 240,
+      "start": 846.0,
+      "end": 847.0,
+      "speaker": "host",
+      "text": "啊,然后导演跟我说其实我都买了二三本书了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 241,
+      "start": 848.0,
+      "end": 849.0,
+      "speaker": "host",
+      "text": "这个对不起啊,我刚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 242,
+      "start": 850.0,
+      "end": 852.0,
+      "speaker": "host",
+      "text": "出于一个第一反应先刺激了他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 243,
+      "start": 852.0,
+      "end": 854.0,
+      "speaker": "host",
+      "text": "导演你有没有感觉到现在受到了刺激?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 244,
+      "start": 854.0,
+      "end": 855.0,
+      "speaker": "guest",
+      "text": "稍微有一点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 245,
+      "start": 855.0,
+      "end": 856.0,
+      "speaker": "host",
+      "text": "有一点,你有没有决定看书?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 246,
+      "start": 856.0,
+      "end": 857.0,
+      "speaker": "guest",
+      "text": "我一定决定了,不然买来干啥?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 247,
+      "start": 857.0,
+      "end": 859.0,
+      "speaker": "host",
+      "text": "对,你其实不用买,咱这那么多书呢,你看就行了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 248,
+      "start": 900.0,
+      "end": 902.0,
+      "speaker": "host",
+      "text": "然后这个以前当老师的时候啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 249,
+      "start": 902.0,
+      "end": 904.0,
+      "speaker": "host",
+      "text": "就就是每一个学生你要关注到他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 250,
+      "start": 905.0,
+      "end": 907.0,
+      "speaker": "host",
+      "text": "你也不知道这个孩子以后长大后能成什么才,坦诚来说,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 251,
+      "start": 907.0,
+      "end": 911.0,
+      "speaker": "host",
+      "text": "因为你现在回忆一下你以前初中小学那班里,是不是学习不好的孩子都混得都不好,是不是?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 252,
+      "start": 912.0,
+      "end": 912.0,
+      "speaker": "host",
+      "text": "不见得。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 253,
+      "start": 913.0,
+      "end": 915.0,
+      "speaker": "host",
+      "text": "也是不是学习好的孩子混得都好?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 254,
+      "start": 915.0,
+      "end": 916.0,
+      "speaker": "host",
+      "text": "也不见得。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 255,
+      "start": 916.0,
+      "end": 920.0,
+      "speaker": "host",
+      "text": "因为我们知道人的赛道,人生拉的时间维度越长。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 256,
+      "start": 920.0,
+      "end": 924.0,
+      "speaker": "host",
+      "text": "就是时间维度拉长,真正重要的东西才会得以体现。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 257,
+      "start": 924.0,
+      "end": 926.0,
+      "speaker": "host",
+      "text": "这句话是我以前经常给孩子们说的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 258,
+      "start": 926.0,
+      "end": 927.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 259,
+      "start": 927.0,
+      "end": 931.0,
+      "speaker": "host",
+      "text": "时间维度拉长,真正的价值感才得以体现。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 260,
+      "start": 935.0,
+      "end": 939.0,
+      "speaker": "host",
+      "text": "时间维度拉长,真正的价值感才得以体现。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 261,
+      "start": 939.0,
+      "end": 941.0,
+      "speaker": "host",
+      "text": "价值感不是学历,不是一个正出。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 262,
+      "start": 941.0,
+      "end": 945.0,
+      "speaker": "host",
+      "text": "价值感是,注意,各位朋友们,学历不等于学习力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 263,
+      "start": 946.0,
+      "end": 947.0,
+      "speaker": "host",
+      "text": "这是两个事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 264,
+      "start": 948.0,
+      "end": 951.0,
+      "speaker": "host",
+      "text": "证书不等于一个人会一直读书,你懂我的意思没?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 265,
+      "start": 951.0,
+      "end": 954.0,
+      "speaker": "host",
+      "text": "就不是不是说名校学毕业的孩子能力一定强,那真不简单。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 266,
+      "start": 955.0,
+      "end": 955.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 267,
+      "start": 956.0,
+      "end": 1001.0,
+      "speaker": "host",
+      "text": "学习力是不仅是读书,在任何事情中都虚心求教,不断地突破自我,砸破再成长,对吧,突破自我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 268,
+      "start": 1001.0,
+      "end": 1002.0,
+      "speaker": "host",
+      "text": "那个叫学习力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 269,
+      "start": 1002.0,
+      "end": 1005.0,
+      "speaker": "host",
+      "text": "学历是一张证书,那你如果真学历有用,那大家就会觉得卖学历就行了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 270,
+      "start": 1006.0,
+      "end": 1006.0,
+      "speaker": "host",
+      "text": "有吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 271,
+      "start": 1007.0,
+      "end": 1010.0,
+      "speaker": "host",
+      "text": "就有歪门邪道的人只想获得学历,但其实这两者没有对等关系的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 272,
+      "start": 1012.0,
+      "end": 1013.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 273,
+      "start": 1013.0,
+      "end": 1015.0,
+      "speaker": "host",
+      "text": "所以这个这个不一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 274,
+      "start": 1015.0,
+      "end": 1016.0,
+      "speaker": "host",
+      "text": "买书不等于读书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 275,
+      "start": 1016.0,
+      "end": 1018.0,
+      "speaker": "host",
+      "text": "现在大家是开始买书,但是我其实更呼吁是最后大家读书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 276,
+      "start": 1018.0,
+      "end": 1023.0,
+      "speaker": "host",
+      "text": "如果我们直播间里最后,比如说每天可能只有五六千人,但是大家都狠爱读书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 277,
+      "start": 1023.0,
+      "end": 1024.0,
+      "speaker": "host",
+      "text": "那我觉得也是功德一件。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 278,
+      "start": 1024.0,
+      "end": 1025.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 279,
+      "start": 1026.0,
+      "end": 1027.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 280,
+      "start": 1027.0,
+      "end": 1029.0,
+      "speaker": "host",
+      "text": "来,黑猪肉,导演你有什么话想表达?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 281,
+      "start": 1029.0,
+      "end": 1034.0,
+      "speaker": "guest",
+      "text": "我觉得我最近虽然是看的时间不是很长,但我偶尔确实也会翻一翻,因为就在桌子旁边,买了三三本书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 282,
+      "start": 1034.0,
+      "end": 1036.0,
+      "speaker": "guest",
+      "text": "但是放在桌子旁边我我也会翻一翻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 283,
+      "start": 1036.0,
+      "end": 1037.0,
+      "speaker": "host",
+      "text": "书偶尔翻一翻,嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 284,
+      "start": 1037.0,
+      "end": 1040.0,
+      "speaker": "host",
+      "text": "因为现在大家的生活很难有,哎,包括这个桃没吃完,你把桃拿哪去了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 285,
+      "start": 1040.0,
+      "end": 1041.0,
+      "speaker": "host",
+      "text": "没吃完你给我,你别浪费了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 286,
+      "start": 1042.0,
+      "end": 1042.0,
+      "speaker": "host",
+      "text": "你不敢扔了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 287,
+      "start": 1043.0,
+      "end": 1043.0,
+      "speaker": "host",
+      "text": "糟蹋粮食啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 288,
+      "start": 1044.0,
+      "end": 1045.0,
+      "speaker": "host",
+      "text": "你给我拿来放这,我一会还吃呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 289,
+      "start": 1045.0,
+      "end": 1046.0,
+      "speaker": "host",
+      "text": "这句我拿这个半给你拿一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 290,
+      "start": 1046.0,
+      "end": 1047.0,
+      "speaker": "host",
+      "text": "好好,谢谢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 291,
+      "start": 1048.0,
+      "end": 1049.0,
+      "speaker": "host",
+      "text": "那个完整的你拿走吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 292,
+      "start": 1050.0,
+      "end": 1050.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 293,
+      "start": 1051.0,
+      "end": 1051.0,
+      "speaker": "host",
+      "text": "没事没事没事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 294,
+      "start": 1052.0,
+      "end": 1053.0,
+      "speaker": "host",
+      "text": "你放这个纸上,你把那个拿走。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 295,
+      "start": 1053.0,
+      "end": 1057.0,
+      "speaker": "host",
+      "text": "就是现在让大家完整的大的时间段去读书,真的很难。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 296,
+      "start": 1057.0,
+      "end": 1058.0,
+      "speaker": "host",
+      "text": "对不对?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 297,
+      "start": 1059.0,
+      "end": 1102.0,
+      "speaker": "host",
+      "text": "工作那么忙,晚上回家我还要做饭,还要照顾孩子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 298,
+      "start": 1102.0,
+      "end": 1105.0,
+      "speaker": "host",
+      "text": "董老师你以为人都跟你一样,每天闲得没事干,站着说话不腰疼,咱俩就说我们读书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 299,
+      "start": 1105.0,
+      "end": 1109.0,
+      "speaker": "host",
+      "text": "你来过一过我的日子试一试,我一大早七点就起来了,要照顾孩子,要做早餐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 300,
+      "start": 1109.0,
+      "end": 1111.0,
+      "speaker": "host",
+      "text": "把孩子送到学校,我去单位里忙一天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 301,
+      "start": 1112.0,
+      "end": 1113.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 302,
+      "start": 1113.0,
+      "end": 1114.0,
+      "speaker": "host",
+      "text": "你以为我跟你一样清闲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 303,
+      "start": 1114.0,
+      "end": 1115.0,
+      "speaker": "host",
+      "text": "当然我能理解大家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 304,
+      "start": 1115.0,
+      "end": 1119.0,
+      "speaker": "host",
+      "text": "所以我给大家说的是不是要求你每天都大时间地去读书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 305,
+      "start": 1119.0,
+      "end": 1121.0,
+      "speaker": "host",
+      "text": "比如说你晚上睡觉前。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 306,
+      "start": 1121.0,
+      "end": 1122.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 307,
+      "start": 1122.0,
+      "end": 1123.0,
+      "speaker": "host",
+      "text": "你在床头放一本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 308,
+      "start": 1124.0,
+      "end": 1125.0,
+      "speaker": "host",
+      "text": "你在沙发上放一本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 309,
+      "start": 1125.0,
+      "end": 1127.0,
+      "speaker": "host",
+      "text": "你最后把书直接摆在电视机前面。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 310,
+      "start": 1128.0,
+      "end": 1130.0,
+      "speaker": "host",
+      "text": "你刚躺下,啊,准备看个综艺。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 311,
+      "start": 1130.0,
+      "end": 1131.0,
+      "speaker": "host",
+      "text": "哎呀,你看前面。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 312,
+      "start": 1131.0,
+      "end": 1132.0,
+      "speaker": "host",
+      "text": "额尔古纳河右岸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 313,
+      "start": 1133.0,
+      "end": 1136.0,
+      "speaker": "host",
+      "text": "额尔古纳河右岸难道没有这个综艺节目吸引你吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 314,
+      "start": 1136.0,
+      "end": 1140.0,
+      "speaker": "host",
+      "text": "大兴安岭森林里的秘密和森林间散落的那些星星。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 315,
+      "start": 1140.0,
+      "end": 1143.0,
+      "speaker": "host",
+      "text": "难道没有那些嘻嘻哈哈的这个节目吸引你吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 316,
+      "start": 1143.0,
+      "end": 1144.0,
+      "speaker": "host",
+      "text": "它太吸引了,我告诉你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 317,
+      "start": 1144.0,
+      "end": 1147.0,
+      "speaker": "host",
+      "text": "一种是这种消耗式的满足,一种是这种补充式的满足。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 318,
+      "start": 1148.0,
+      "end": 1148.0,
+      "speaker": "host",
+      "text": "不好意思。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 319,
+      "start": 1149.0,
+      "end": 1150.0,
+      "speaker": "host",
+      "text": "坐那儿就把书就翻开了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 320,
+      "start": 1150.0,
+      "end": 1151.0,
+      "speaker": "host",
+      "text": "你哪怕看两页呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 321,
+      "start": 1151.0,
+      "end": 1152.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 322,
+      "start": 1152.0,
+      "end": 1154.0,
+      "speaker": "host",
+      "text": "有的朋友反馈说这几天看完书之后睡眠都好了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 323,
+      "start": 1154.0,
+      "end": 1155.0,
+      "speaker": "host",
+      "text": "这这算有用啊,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 324,
+      "start": 1155.0,
+      "end": 1158.0,
+      "speaker": "host",
+      "text": "以前呢到晚上翻来覆去的看视频,看视频看到半夜睡不着。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 325,
+      "start": 1158.0,
+      "end": 1200.0,
+      "speaker": "host",
+      "text": "这几天刚拿出,哎呀,董老师我一会开始进入状态了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 326,
+      "start": 1200.0,
+      "end": 1201.0,
+      "speaker": "host",
+      "text": "只要你拿出就瞌睡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 327,
+      "start": 1202.0,
+      "end": 1203.0,
+      "speaker": "host",
+      "text": "这也算一个功劳啊,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 328,
+      "start": 1203.0,
+      "end": 1208.0,
+      "speaker": "host",
+      "text": "把你以前晚上那些焦虑,发那些伤感的朋友圈,废旧的动态,全部都省略了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 329,
+      "start": 1208.0,
+      "end": 1210.0,
+      "speaker": "host",
+      "text": "通过读书改善你自己的睡眠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 330,
+      "start": 1210.0,
+      "end": 1212.0,
+      "speaker": "host",
+      "text": "不用担心说我为什么一看书就瞌睡呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 331,
+      "start": 1212.0,
+      "end": 1213.0,
+      "speaker": "host",
+      "text": "那是因为你才刚开始看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 332,
+      "start": 1214.0,
+      "end": 1215.0,
+      "speaker": "host",
+      "text": "你看看就好了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 333,
+      "start": 1215.0,
+      "end": 1216.0,
+      "speaker": "host",
+      "text": "说明你还是累。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 334,
+      "start": 1216.0,
+      "end": 1219.0,
+      "speaker": "host",
+      "text": "你好好休息一段时间,你身体彻底不累了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 335,
+      "start": 1219.0,
+      "end": 1220.0,
+      "speaker": "host",
+      "text": "你读书速度就快了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 336,
+      "start": 1220.0,
+      "end": 1223.0,
+      "speaker": "guest",
+      "text": "还有2000单卖完,然后差不多那个那本就好了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 337,
+      "start": 1223.0,
+      "end": 1224.0,
+      "speaker": "host",
+      "text": "只剩2000单了是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 338,
+      "start": 1225.0,
+      "end": 1226.0,
+      "speaker": "host",
+      "text": "那盘这个是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 339,
+      "start": 1227.0,
+      "end": 1231.0,
+      "speaker": "host",
+      "text": "188,然后四斤肉,再加上一斤的五花肉,所以总共五斤对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 340,
+      "start": 1231.0,
+      "end": 1231.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 341,
+      "start": 1232.0,
+      "end": 1233.0,
+      "speaker": "host",
+      "text": "黑猪188五斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 342,
+      "start": 1233.0,
+      "end": 1233.0,
+      "speaker": "host",
+      "text": "那还行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 343,
+      "start": 1233.0,
+      "end": 1234.0,
+      "speaker": "guest",
+      "text": "是我们的产品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 344,
+      "start": 1234.0,
+      "end": 1235.0,
+      "speaker": "guest",
+      "text": "是我们的产品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 345,
+      "start": 1238.0,
+      "end": 1239.0,
+      "speaker": "host",
+      "text": "五公海产品啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 346,
+      "start": 1240.0,
+      "end": 1241.0,
+      "speaker": "host",
+      "text": "黑猪的话就还行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 347,
+      "start": 1241.0,
+      "end": 1245.0,
+      "speaker": "host",
+      "text": "因为正常情况黑猪的价格应该在大部分啊,应该在白猪的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 348,
+      "start": 1246.0,
+      "end": 1248.0,
+      "speaker": "host",
+      "text": "四倍左右,啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 349,
+      "start": 1248.0,
+      "end": 1250.0,
+      "speaker": "host",
+      "text": "四四倍左右,甚至夸张到五倍都是很正常的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 350,
+      "start": 1250.0,
+      "end": 1251.0,
+      "speaker": "host",
+      "text": "因为。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 351,
+      "start": 1252.0,
+      "end": 1256.0,
+      "speaker": "host",
+      "text": "给大家讲过一个这个背后的知识。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 352,
+      "start": 1256.0,
+      "end": 1259.0,
+      "speaker": "host",
+      "text": "我们现在所吃的白猪是我们本土的猪吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 353,
+      "start": 1259.0,
+      "end": 1300.0,
+      "speaker": "host",
+      "text": "不是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 354,
+      "start": 1300.0,
+      "end": 1303.0,
+      "speaker": "host",
+      "text": "白猪更多是英国和美国进口的猪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 355,
+      "start": 1304.0,
+      "end": 1304.0,
+      "speaker": "host",
+      "text": "能理解吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 356,
+      "start": 1305.0,
+      "end": 1308.0,
+      "speaker": "host",
+      "text": "这些猪的一个特点是什么,大概四个月就能出栏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 357,
+      "start": 1308.0,
+      "end": 1310.0,
+      "speaker": "host",
+      "text": "你知道这些猪长得快,吃饲料一天长好几斤呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 358,
+      "start": 1310.0,
+      "end": 1313.0,
+      "speaker": "host",
+      "text": "但是我们本土的猪其实是黑猪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 359,
+      "start": 1314.0,
+      "end": 1316.0,
+      "speaker": "host",
+      "text": "就是脸皱在一起那种猪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 360,
+      "start": 1316.0,
+      "end": 1318.0,
+      "speaker": "host",
+      "text": "它生长时间很慢,一般情况下得需要300天左右。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 361,
+      "start": 1318.0,
+      "end": 1320.0,
+      "speaker": "host",
+      "text": "甚至时间更夸张。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 362,
+      "start": 1320.0,
+      "end": 1324.0,
+      "speaker": "host",
+      "text": "小时候你家里在农村生活的话,你记得过完年就买那个小猪仔回来,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 363,
+      "start": 1324.0,
+      "end": 1326.0,
+      "speaker": "host",
+      "text": "一直养到第二年腊月才杀才宰杀呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 364,
+      "start": 1326.0,
+      "end": 1327.0,
+      "speaker": "host",
+      "text": "腊月中旬才宰杀呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 365,
+      "start": 1327.0,
+      "end": 1330.0,
+      "speaker": "host",
+      "text": "所以生长时间长,那你再想一想,比如说养白猪我一年可以卖四次钱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 366,
+      "start": 1330.0,
+      "end": 1332.0,
+      "speaker": "host",
+      "text": "我就可以薄利多销。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 367,
+      "start": 1333.0,
+      "end": 1334.0,
+      "speaker": "host",
+      "text": "但是白黑猪一年只能出一栏啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 368,
+      "start": 1334.0,
+      "end": 1336.0,
+      "speaker": "host",
+      "text": "所以它确实价格就要高一些了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 369,
+      "start": 1338.0,
+      "end": 1340.0,
+      "speaker": "host",
+      "text": "在营养性上来说,坦诚来说没有太大区别。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 370,
+      "start": 1341.0,
+      "end": 1341.0,
+      "speaker": "host",
+      "text": "没有太大区别。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 371,
+      "start": 1342.0,
+      "end": 1343.0,
+      "speaker": "host",
+      "text": "因为吃的都是蛋白质嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 372,
+      "start": 1344.0,
+      "end": 1344.0,
+      "speaker": "host",
+      "text": "脂肪嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 373,
+      "start": 1345.0,
+      "end": 1346.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 374,
+      "start": 1346.0,
+      "end": 1348.0,
+      "speaker": "host",
+      "text": "但是口感上差异非常大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 375,
+      "start": 1348.0,
+      "end": 1349.0,
+      "speaker": "host",
+      "text": "你是真的能吃出来的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 376,
+      "start": 1349.0,
+      "end": 1351.0,
+      "speaker": "host",
+      "text": "因为黑猪生长时间长,所以它能嚼的一种胶质感。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 377,
+      "start": 1352.0,
+      "end": 1353.0,
+      "speaker": "host",
+      "text": "你看小时候吃肉香啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 378,
+      "start": 1353.0,
+      "end": 1355.0,
+      "speaker": "host",
+      "text": "第二个黑猪相对肥,所以煮出来那个汤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 379,
+      "start": 1355.0,
+      "end": 1356.0,
+      "speaker": "host",
+      "text": "香味浓。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 380,
+      "start": 1356.0,
+      "end": 1357.0,
+      "speaker": "guest",
+      "text": "那它煮的是不是时间也要长一些?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 381,
+      "start": 1357.0,
+      "end": 1358.0,
+      "speaker": "host",
+      "text": "哎,对,煮的时间长,因为它肉老嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 382,
+      "start": 1359.0,
+      "end": 1400.0,
+      "speaker": "host",
+      "text": "然后第三个就是特点是什么?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 383,
+      "start": 1400.0,
+      "end": 1406.0,
+      "speaker": "host",
+      "text": "就是黑猪肉,生长时间长,我给大家讲一下,它古氨酸氨基酸等等这一类含量可能古氨酸含量吧,尤其是相对高一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 384,
+      "start": 1406.0,
+      "end": 1407.0,
+      "speaker": "host",
+      "text": "所以鲜啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 385,
+      "start": 1408.0,
+      "end": 1409.0,
+      "speaker": "host",
+      "text": "就是我们说喝的汤里头的鲜味。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 386,
+      "start": 1410.0,
+      "end": 1412.0,
+      "speaker": "host",
+      "text": "应该把这个给大家煮成一碗排骨汤上上来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 387,
+      "start": 1412.0,
+      "end": 1413.0,
+      "speaker": "host",
+      "text": "瞬间就饿了,我告诉你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 388,
+      "start": 1414.0,
+      "end": 1415.0,
+      "speaker": "host",
+      "text": "这样我还能忍饥吃一点。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 389,
+      "start": 1416.0,
+      "end": 1416.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 390,
+      "start": 1416.0,
+      "end": 1417.0,
+      "speaker": "guest",
+      "text": "晚上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 391,
+      "start": 1417.0,
+      "end": 1418.0,
+      "speaker": "guest",
+      "text": "还有1000单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 392,
+      "start": 1419.0,
+      "end": 1420.0,
+      "speaker": "host",
+      "text": "只剩1000单了是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 393,
+      "start": 1421.0,
+      "end": 1423.0,
+      "speaker": "host",
+      "text": "但这个排骨它修得很精致啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 394,
+      "start": 1423.0,
+      "end": 1425.0,
+      "speaker": "host",
+      "text": "他把上面的肥油应该都去掉了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 395,
+      "start": 1425.0,
+      "end": 1428.0,
+      "speaker": "host",
+      "text": "正常的黑猪那肥油特别厚,我记得小时候我们家养的黑猪那肥油真的是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 396,
+      "start": 1429.0,
+      "end": 1431.0,
+      "speaker": "host",
+      "text": "夸张的一指头厚的肥油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 397,
+      "start": 1431.0,
+      "end": 1432.0,
+      "speaker": "host",
+      "text": "我不知道大家小时候养过那个黑猪没?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 398,
+      "start": 1432.0,
+      "end": 1434.0,
+      "speaker": "host",
+      "text": "一指头厚的那个肥油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 399,
+      "start": 1434.0,
+      "end": 1435.0,
+      "speaker": "host",
+      "text": "然后呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 400,
+      "start": 1435.0,
+      "end": 1438.0,
+      "speaker": "host",
+      "text": "皮下脂肪,还有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 401,
+      "start": 1439.0,
+      "end": 1441.0,
+      "speaker": "host",
+      "text": "这个它肚子内脏旁边的脂肪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 402,
+      "start": 1441.0,
+      "end": 1444.0,
+      "speaker": "host",
+      "text": "我记得小时候家里养那个黑猪,每次宰杀完了之后。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 403,
+      "start": 1444.0,
+      "end": 1446.0,
+      "speaker": "host",
+      "text": "奶奶就会很耐心的把那个肥油往摘下来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 404,
+      "start": 1447.0,
+      "end": 1449.0,
+      "speaker": "host",
+      "text": "然后呢放一个锅里头,先是用水在那煮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 405,
+      "start": 1449.0,
+      "end": 1450.0,
+      "speaker": "host",
+      "text": "你们你们家弄过没?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 406,
+      "start": 1450.0,
+      "end": 1451.0,
+      "speaker": "host",
+      "text": "切成小块煮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 407,
+      "start": 1451.0,
+      "end": 1454.0,
+      "speaker": "host",
+      "text": "煮着煮着最后把那个水就全部蒸发掉了,因为水会蒸发,但油不会蒸发。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 408,
+      "start": 1454.0,
+      "end": 1458.0,
+      "speaker": "host",
+      "text": "蒸发掉了之后,那个颜色就越来越金亮,越来越金亮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 409,
+      "start": 1458.0,
+      "end": 1502.0,
+      "speaker": "host",
+      "text": "然后那个白色的脂肪块就变成了像炸干的那个东西一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 410,
+      "start": 1502.0,
+      "end": 1503.0,
+      "speaker": "host",
+      "text": "一直嚼着嚼着。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 411,
+      "start": 1503.0,
+      "end": 1505.0,
+      "speaker": "host",
+      "text": "最后就炼出了一缸油。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 412,
+      "start": 1505.0,
+      "end": 1508.0,
+      "speaker": "host",
+      "text": "然后家里是有一个小小的那个水缸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 413,
+      "start": 1509.0,
+      "end": 1510.0,
+      "speaker": "host",
+      "text": "小缸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 414,
+      "start": 1510.0,
+      "end": 1511.0,
+      "speaker": "host",
+      "text": "司马光砸缸嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 415,
+      "start": 1511.0,
+      "end": 1512.0,
+      "speaker": "host",
+      "text": "那种小的缸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 416,
+      "start": 1512.0,
+      "end": 1514.0,
+      "speaker": "host",
+      "text": "陕西人把那个叫瓮,瓮中捉鳖的瓮嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 417,
+      "start": 1514.0,
+      "end": 1515.0,
+      "speaker": "host",
+      "text": "其实很多地方也说瓮的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 418,
+      "start": 1515.0,
+      "end": 1517.0,
+      "speaker": "host",
+      "text": "小的缸或者小的瓮里头。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 419,
+      "start": 1517.0,
+      "end": 1522.0,
+      "speaker": "host",
+      "text": "然后呢一直这个煎这个在锅里头炸到最后,它已经水分彻底蒸发完了之后。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 420,
+      "start": 1522.0,
+      "end": 1526.0,
+      "speaker": "host",
+      "text": "我天,那个油的香味飘得到处都是,你在院子里都能闻到那个香味。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    }
+  ]
+}

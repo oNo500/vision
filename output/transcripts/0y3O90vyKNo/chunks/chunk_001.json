@@ -1,0 +1,1386 @@
+{
+  "chunk_id": 1,
+  "start_offset": 1190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 1190.0,
+      "end": 1196.0,
+      "speaker": "host",
+      "text": "我如果只是一個想掙投機的想掙錢的人我會做，但是如果我是一個真正",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 1,
+      "start": 1196.0,
+      "end": 1201.0,
+      "speaker": "host",
+      "text": "知識分子，我不願意那樣做，我寧願自己多花點錢去買書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 2,
+      "start": 1201.0,
+      "end": 1206.0,
+      "speaker": "host",
+      "text": "如果我們都去賣盜版的話，那以後誰還會花心思去研究？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 3,
+      "start": 1206.0,
+      "end": 1208.0,
+      "speaker": "host",
+      "text": "沒有人研究還有誰去著書立作？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 4,
+      "start": 1208.0,
+      "end": 1213.0,
+      "speaker": "host",
+      "text": "抄襲是最容易的方式，但抄襲是從根本上傷害了創新的最直接的方式。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 5,
+      "start": 1215.0,
+      "end": 1220.0,
+      "speaker": "host",
+      "text": "晚清最後18年這套書講的是從袁世凱，袁世凱從朝鮮回來之後發生的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 6,
+      "start": 1220.0,
+      "end": 1229.0,
+      "speaker": "host",
+      "text": "這本書非常打動我的就是在北洋水師甲午海戰的時候，當時強盛的帝國從來沒有想到自己在一個彈丸小國面前輸的如此顏面盡失。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 7,
+      "start": 1229.0,
+      "end": 1231.0,
+      "speaker": "host",
+      "text": "其實並不是因為他不過強大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 8,
+      "start": 1231.0,
+      "end": 1238.0,
+      "speaker": "host",
+      "text": "後人在總結歷史的時候,總事看不清全貌,覺得是我們太弱小了,如果當時用來買更多的艦艇會不會好一些？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 9,
+      "start": 1238.0,
+      "end": 1240.0,
+      "speaker": "host",
+      "text": "我相信這本書能給你一個清晰的答案。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 10,
+      "start": 1240.0,
+      "end": 1244.0,
+      "speaker": "host",
+      "text": "就是已經到了戰場上，各方勢力仍然在角逐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 11,
+      "start": 1244.0,
+      "end": 1250.0,
+      "speaker": "host",
+      "text": "已經到了關鍵的要分勝負的時候，大家心裡仍然沒有堅定決心去作戰。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 12,
+      "start": 1250.0,
+      "end": 1255.0,
+      "speaker": "host",
+      "text": "大家想的是多年經營的李中堂,如此強大的北洋水師,這麼多艦艇都是白花花的銀子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 13,
+      "start": 1255.0,
+      "end": 1256.0,
+      "speaker": "host",
+      "text": "我不能輸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 14,
+      "start": 1256.0,
+      "end": 1258.0,
+      "speaker": "host",
+      "text": "一旦輸了打沉了,錢白花了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 15,
+      "start": 1258.0,
+      "end": 1260.0,
+      "speaker": "host",
+      "text": "第二個我也不會贏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 16,
+      "start": 1260.0,
+      "end": 1264.0,
+      "speaker": "host",
+      "text": "因為贏了之後,沒有了外部威脅之後,北洋水師是否還有存在的必要性？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 17,
+      "start": 1264.0,
+      "end": 1266.0,
+      "speaker": "host",
+      "text": "一群軍人不考慮軍人的問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 18,
+      "start": 1267.0,
+      "end": 1269.0,
+      "speaker": "host",
+      "text": "一群大臣不考慮大臣的問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 19,
+      "start": 1269.0,
+      "end": 1272.0,
+      "speaker": "host",
+      "text": "這就是那個時代的悲哀,所以那個時代注定的悲哀,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 20,
+      "start": 1272.0,
+      "end": 1276.0,
+      "speaker": "host",
+      "text": "就是因為在其崗位卻不考慮他崗位的職責。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 21,
+      "start": 1276.0,
+      "end": 1279.0,
+      "speaker": "host",
+      "text": "所以我當時讀完這本書之後,就告訴了孩子們一段話。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 22,
+      "start": 1279.0,
+      "end": 1285.0,
+      "speaker": "host",
+      "text": "好多年前在西安新東方的課堂上,我給孩子們說,正確的初衷才是最強大的力量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 23,
+      "start": 1285.0,
+      "end": 1291.0,
+      "speaker": "host",
+      "text": "請你記住,它勝過一切高超的智慧和任何細膩的手法。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 24,
+      "start": 1293.0,
+      "end": 1297.0,
+      "speaker": "host",
+      "text": "只有最強大的力量才能支撐你走到最後。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 25,
+      "start": 1298.0,
+      "end": 1302.0,
+      "speaker": "host",
+      "text": "那些心懷不軌的人,那些不忠誠於使命的人,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 26,
+      "start": 1302.0,
+      "end": 1307.0,
+      "speaker": "host",
+      "text": "那些從一開始就沒有正確出心的人,他可能會靠著自己的小聰明蒙騙一時,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 27,
+      "start": 1307.0,
+      "end": 1309.0,
+      "speaker": "host",
+      "text": "但大多數會在黎明前倒下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 28,
+      "start": 1310.0,
+      "end": 1313.0,
+      "speaker": "host",
+      "text": "就算有那麼一兩個幸運的,好像多走了幾步,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 29,
+      "start": 1314.0,
+      "end": 1315.0,
+      "speaker": "host",
+      "text": "那他會更尷尬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 30,
+      "start": 1316.0,
+      "end": 1321.0,
+      "speaker": "host",
+      "text": "因為他會在太陽正頭頂的時候,於眾目睽睽之下倒在你面前。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 31,
+      "start": 1322.0,
+      "end": 1324.0,
+      "speaker": "host",
+      "text": "他不僅輸,他還輸的會更加徹底。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 32,
+      "start": 1324.0,
+      "end": 1331.0,
+      "speaker": "host",
+      "text": "所以這套書在當年我特別年輕的時候,我覺得他也從很大一個程度上糾正了我的價值觀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 33,
+      "start": 1331.0,
+      "end": 1334.0,
+      "speaker": "host",
+      "text": "或者說加強了我的價值觀,最後影響了我的價值觀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 34,
+      "start": 1334.0,
+      "end": 1337.0,
+      "speaker": "host",
+      "text": "正確的初衷才是最強大的力量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 35,
+      "start": 1338.0,
+      "end": 1340.0,
+      "speaker": "host",
+      "text": "永遠不要忘記你為什麼出發。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 36,
+      "start": 1340.0,
+      "end": 1344.0,
+      "speaker": "host",
+      "text": "當一個人開始背棄自己理想的時候,他不會成功的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 37,
+      "start": 1344.0,
+      "end": 1346.0,
+      "speaker": "host",
+      "text": "他再聰明都不會成功的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 38,
+      "start": 1346.0,
+      "end": 1347.0,
+      "speaker": "host",
+      "text": "他擁有",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 39,
+      "start": 1348.0,
+      "end": 1349.0,
+      "speaker": "host",
+      "text": "困難。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 40,
+      "start": 1350.0,
+      "end": 1351.0,
+      "speaker": "host",
+      "text": "但請你三觀不改。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 41,
+      "start": 1352.0,
+      "end": 1356.0,
+      "speaker": "host",
+      "text": "這就是為什麼我向屏幕前的每個朋友推薦晚清最後18年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 42,
+      "start": 1357.0,
+      "end": 1358.0,
+      "speaker": "host",
+      "text": "它應該有兩本書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 43,
+      "start": 1358.0,
+      "end": 1360.0,
+      "speaker": "host",
+      "text": "是吧？這好像是個改編版,我當時讀的一共會有四本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 44,
+      "start": 1360.0,
+      "end": 1361.0,
+      "speaker": "host",
+      "text": "這是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 45,
+      "start": 1361.0,
+      "end": 1362.0,
+      "speaker": "host",
+      "text": "精華版是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 46,
+      "start": 1362.0,
+      "end": 1365.0,
+      "speaker": "host",
+      "text": "那可能就故事更加的集中一些,也挺好,也挺好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 47,
+      "start": 1365.0,
+      "end": 1367.0,
+      "speaker": "host",
+      "text": "讀一些精華版,大家可能時間也更加快一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 48,
+      "start": 1367.0,
+      "end": 1369.0,
+      "speaker": "host",
+      "text": "除了這個還有那本呢,是這個嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 49,
+      "start": 1370.0,
+      "end": 1372.0,
+      "speaker": "host",
+      "text": "對,這是兩本書啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 50,
+      "start": 1373.0,
+      "end": 1376.0,
+      "speaker": "host",
+      "text": "晚清最後18年,推薦給屏幕前的每一個朋友。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 51,
+      "start": 1377.0,
+      "end": 1380.0,
+      "speaker": "host",
+      "text": "我剛所說的這個正確的初衷,其實就是你為什麼而出發。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 52,
+      "start": 1380.0,
+      "end": 1382.0,
+      "speaker": "host",
+      "text": "在商業世界裡頭就是你要解決什麼問題？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 53,
+      "start": 1383.0,
+      "end": 1386.0,
+      "speaker": "host",
+      "text": "在具體崗位上就是你要創造什麼價值？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 54,
+      "start": 1386.0,
+      "end": 1388.0,
+      "speaker": "host",
+      "text": "在家庭裡頭就是你為什麼在奮鬥？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 55,
+      "start": 1390.0,
+      "end": 1394.0,
+      "speaker": "host",
+      "text": "每一個環節裡都可以去問一問自己,什麼才是你真正正確的初衷？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 56,
+      "start": 1395.0,
+      "end": 1396.0,
+      "speaker": "host",
+      "text": "這個很重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 57,
+      "start": 1396.0,
+      "end": 1398.0,
+      "speaker": "host",
+      "text": "就是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 58,
+      "start": 1399.0,
+      "end": 1401.0,
+      "speaker": "host",
+      "text": "what do you fight for,你在捍衛什麼？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 59,
+      "start": 1403.0,
+      "end": 1404.0,
+      "speaker": "host",
+      "text": "你在捍衛什麼？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 60,
+      "start": 1404.0,
+      "end": 1406.0,
+      "speaker": "host",
+      "text": "your mission,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 61,
+      "start": 1406.0,
+      "end": 1408.0,
+      "speaker": "host",
+      "text": "你的使命感是什麼？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 62,
+      "start": 1408.0,
+      "end": 1409.0,
+      "speaker": "host",
+      "text": "your goal,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 63,
+      "start": 1410.0,
+      "end": 1411.0,
+      "speaker": "host",
+      "text": "你的目標是什麼？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 64,
+      "start": 1411.0,
+      "end": 1412.0,
+      "speaker": "host",
+      "text": "這些很重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 65,
+      "start": 1412.0,
+      "end": 1418.0,
+      "speaker": "host",
+      "text": "只有正確的使命,正確的目標才會給你足夠多的內驅力,drive,足夠多的內驅力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 66,
+      "start": 1418.0,
+      "end": 1421.0,
+      "speaker": "host",
+      "text": "足夠多的內驅力才會讓你走得很遠,而且走得很穩妥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 67,
+      "start": 1422.0,
+      "end": 1426.0,
+      "speaker": "host",
+      "text": "大家見過很多聰明人,依靠自己的聰明,一招取勝的故事,很多對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 68,
+      "start": 1426.0,
+      "end": 1430.0,
+      "speaker": "host",
+      "text": "太多這種投機取巧的故事,會讓一個時代變得輕浮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 69,
+      "start": 1433.0,
+      "end": 1436.0,
+      "speaker": "host",
+      "text": "羅翔有句話說這個",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 70,
+      "start": 1437.0,
+      "end": 1439.0,
+      "speaker": "host",
+      "text": "來得晚的正義算不算正義？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 71,
+      "start": 1439.0,
+      "end": 1440.0,
+      "speaker": "host",
+      "text": "有很多人討論過這個問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 72,
+      "start": 1441.0,
+      "end": 1442.0,
+      "speaker": "host",
+      "text": "算正義。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 73,
+      "start": 1442.0,
+      "end": 1443.0,
+      "speaker": "host",
+      "text": "只要來了就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 74,
+      "start": 1444.0,
+      "end": 1446.0,
+      "speaker": "host",
+      "text": "所以我們也見過太多最後因為比如說德不配位發生的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 75,
+      "start": 1446.0,
+      "end": 1452.0,
+      "speaker": "host",
+      "text": "那其實在這個晚清最後18年這套書裡頭,我認為其實給了我們同樣討論的問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 76,
+      "start": 1452.0,
+      "end": 1457.0,
+      "speaker": "host",
+      "text": "就是作為一個我們普通的人,你在自己的崗位上也同樣可以討論這個問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 77,
+      "start": 1457.0,
+      "end": 1459.0,
+      "speaker": "host",
+      "text": "你為什麼而努力,你要解決什麼樣的問題？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 78,
+      "start": 1462.0,
+      "end": 1464.0,
+      "speaker": "host",
+      "text": "我覺得這套書特別值得每個人去看一看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 79,
+      "start": 1464.0,
+      "end": 1471.0,
+      "speaker": "host",
+      "text": "我覺得那些強大的正確的初衷,永遠像正頭頂12點時候發出的太陽光一樣,強烈刺眼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 80,
+      "start": 1472.0,
+      "end": 1473.0,
+      "speaker": "host",
+      "text": "讓你無法躲藏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 81,
+      "start": 1474.0,
+      "end": 1476.0,
+      "speaker": "host",
+      "text": "請你必須記住你為什麼而出發。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 82,
+      "start": 1477.0,
+      "end": 1478.0,
+      "speaker": "host",
+      "text": "永遠不要忘記。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 83,
+      "start": 1479.0,
+      "end": 1480.0,
+      "speaker": "host",
+      "text": "永遠不要忘記。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 84,
+      "start": 1481.0,
+      "end": 1483.0,
+      "speaker": "host",
+      "text": "永遠不要背棄你的信仰。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 85,
+      "start": 1483.0,
+      "end": 1484.0,
+      "speaker": "host",
+      "text": "我們只有3000本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 86,
+      "start": 1484.0,
+      "end": 1485.0,
+      "speaker": "host",
+      "text": "只有3000本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 87,
+      "start": 1489.0,
+      "end": 1490.0,
+      "speaker": "host",
+      "text": "可以給書切個鏡頭嗎?可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 88,
+      "start": 1491.0,
+      "end": 1491.0,
+      "speaker": "host",
+      "text": "看這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 89,
+      "start": 1492.0,
+      "end": 1493.0,
+      "speaker": "host",
+      "text": "它是一个全新的修订版。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 90,
+      "start": 1494.0,
+      "end": 1499.0,
+      "speaker": "host",
+      "text": "我當年買的那個呢是當時一共會有四套,這個修訂版之後應該就是成了兩套了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 91,
+      "start": 1499.0,
+      "end": 1501.0,
+      "speaker": "host",
+      "text": "它可能就內容更加集中一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 92,
+      "start": 1502.0,
+      "end": 1507.0,
+      "speaker": "host",
+      "text": "黃志軍在寫這套書的時候,他的生活其實當時也遇見了很多的困難。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 93,
+      "start": 1509.0,
+      "end": 1510.0,
+      "speaker": "host",
+      "text": "開始寫於2011年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 94,
+      "start": 1511.0,
+      "end": 1516.0,
+      "speaker": "host",
+      "text": "然後他在寫這塊的時候,他的舅舅給他打電話,他哥得了一種病。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 95,
+      "start": 1517.0,
+      "end": 1518.0,
+      "speaker": "host",
+      "text": "然後去治病了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 96,
+      "start": 1519.0,
+      "end": 1521.0,
+      "speaker": "host",
+      "text": "他哥開了一個塑料廠,然後資產做的很高。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 97,
+      "start": 1522.0,
+      "end": 1524.0,
+      "speaker": "host",
+      "text": "但是後來呢,這個生了病。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 98,
+      "start": 1524.0,
+      "end": 1529.0,
+      "speaker": "host",
+      "text": "他也是在那樣生活本身不樂觀的情況下,遇見了很多現實困難的情況下,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 99,
+      "start": 1530.0,
+      "end": 1531.0,
+      "speaker": "host",
+      "text": "寫了這套書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 100,
+      "start": 1533.0,
+      "end": 1536.0,
+      "speaker": "host",
+      "text": "他寫這套書的序言前面有這段話,我印象特別深刻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 101,
+      "start": 1537.0,
+      "end": 1538.0,
+      "speaker": "host",
+      "text": "說",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 102,
+      "start": 1538.0,
+      "end": 1541.0,
+      "speaker": "host",
+      "text": "觀潮過後,他的心情仍然久久不能平靜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 103,
+      "start": 1542.0,
+      "end": 1543.0,
+      "speaker": "host",
+      "text": "他覺得他應該寫點什麼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 104,
+      "start": 1544.0,
+      "end": 1545.0,
+      "speaker": "host",
+      "text": "孫文。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 105,
+      "start": 1545.0,
+      "end": 1546.0,
+      "speaker": "host",
+      "text": "三一煙菜。",
+      "text_normalized": "",
+      "confidence": 0.85,
+      "chunk_id": 1
+    },
+    {
+      "idx": 106,
+      "start": 1547.0,
+      "end": 1549.0,
+      "speaker": "host",
+      "text": "就是大家熟悉的另一個名字,那是一個日本朋友幫他起的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 107,
+      "start": 1549.0,
+      "end": 1550.0,
+      "speaker": "host",
+      "text": "翻譯孫中山。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 108,
+      "start": 1550.0,
+      "end": 1552.0,
+      "speaker": "host",
+      "text": "似乎看到了一種人間最本質的東西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 109,
+      "start": 1552.0,
+      "end": 1554.0,
+      "speaker": "host",
+      "text": "這也是我們最終要講述的歷史規律。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 110,
+      "start": 1554.0,
+      "end": 1555.0,
+      "speaker": "host",
+      "text": "世界潮流。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 111,
+      "start": 1556.0,
+      "end": 1557.0,
+      "speaker": "host",
+      "text": "浩浩蕩蕩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 112,
+      "start": 1557.0,
+      "end": 1558.0,
+      "speaker": "host",
+      "text": "順之者昌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 113,
+      "start": 1559.0,
+      "end": 1560.0,
+      "speaker": "host",
+      "text": "逆之者亡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 114,
+      "start": 1566.0,
+      "end": 1572.0,
+      "speaker": "host",
+      "text": "你看完這套書,你可能在下次再學到歷史的時候,再聽到那些歷史人物的時候,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 115,
+      "start": 1573.0,
+      "end": 1574.0,
+      "speaker": "host",
+      "text": "你可能會帶著一個新的視角。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 116,
+      "start": 1575.0,
+      "end": 1577.0,
+      "speaker": "host",
+      "text": "你可能就能理解為什麼我們那段時間會有那麼多的屈辱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 117,
+      "start": 1578.0,
+      "end": 1581.0,
+      "speaker": "host",
+      "text": "我四萬萬同胞,為何和精神那些屈辱？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 118,
+      "start": 1582.0,
+      "end": 1585.0,
+      "speaker": "host",
+      "text": "正確的初衷才是最強大的力量,勝過任何高超的智慧和細膩的手法。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 119,
+      "start": 1585.0,
+      "end": 1588.0,
+      "speaker": "host",
+      "text": "唯有正確的初衷能夠讓你走到最後。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 120,
+      "start": 1588.0,
+      "end": 1590.0,
+      "speaker": "host",
+      "text": "心懷不軌者,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 121,
+      "start": 1592.0,
+      "end": 1593.0,
+      "speaker": "host",
+      "text": "注定失敗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 122,
+      "start": 1593.0,
+      "end": 1594.0,
+      "speaker": "host",
+      "text": "晚清最後18年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 123,
+      "start": 1594.0,
+      "end": 1595.0,
+      "speaker": "host",
+      "text": "沒有了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 124,
+      "start": 1596.0,
+      "end": 1596.0,
+      "speaker": "host",
+      "text": "自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 125,
+      "start": 1599.0,
+      "end": 1600.0,
+      "speaker": "host",
+      "text": "四萬萬,對,四萬萬同胞啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 126,
+      "start": 1602.0,
+      "end": 1603.0,
+      "speaker": "host",
+      "text": "這個書特別好,我當年看他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 127,
+      "start": 1604.0,
+      "end": 1605.0,
+      "speaker": "host",
+      "text": "不忘初心啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 128,
+      "start": 1605.0,
+      "end": 1607.0,
+      "speaker": "host",
+      "text": "所以現在我們經常去聽不忘初心。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 129,
+      "start": 1607.0,
+      "end": 1609.0,
+      "speaker": "host",
+      "text": "就是一直在提醒你,四萬萬同胞啊,不好意思,我剛說錯了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 130,
+      "start": 1610.0,
+      "end": 1611.0,
+      "speaker": "host",
+      "text": "來,下一個給大家下一個東西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 131,
+      "start": 1611.0,
+      "end": 1614.0,
+      "speaker": "host",
+      "text": "三胖的瓜子,我第一次吃這瓜子的時候覺得配不上,這瓜子很貴。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 132,
+      "start": 1617.0,
+      "end": 1618.0,
+      "speaker": "host",
+      "text": "來,想買的自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 133,
+      "start": 1618.0,
+      "end": 1620.0,
+      "speaker": "host",
+      "text": "這個瓜子確實價格比較高,我就不強烈推薦了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 134,
+      "start": 1620.0,
+      "end": 1621.0,
+      "speaker": "host",
+      "text": "但是它確實好吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 135,
+      "start": 1622.0,
+      "end": 1623.0,
+      "speaker": "host",
+      "text": "然後呢,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 136,
+      "start": 1625.0,
+      "end": 1627.0,
+      "speaker": "host",
+      "text": "如果你自己想吃,你就拍。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 137,
+      "start": 1628.0,
+      "end": 1630.0,
+      "speaker": "host",
+      "text": "如果你覺得價格太高,你不買了也行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    }
+  ]
+}

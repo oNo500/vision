@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "V6K4o0Ns9eQ",
+  "status": "done",
+  "started_at": "2026-04-19T10:33:20.266872+08:00",
+  "finished_at": "2026-04-19T10:36:18.130694+08:00",
+  "duration_sec": 177.863822,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.youtube.com/watch?v=V6K4o0Ns9eQ",
+    "downloaded_bytes": 188576682,
+    "source_metadata": {
+      "video_id": "V6K4o0Ns9eQ",
+      "source": "youtube",
+      "url": "https://www.youtube.com/watch?v=V6K4o0Ns9eQ",
+      "title": "考古：2022年7月15日中午董宇辉直播回放/ 22万人在线/解读《长江》《黄河》（07152022）",
+      "uploader": "中国顶级电商主持人董宇辉完整直播回放",
+      "duration_sec": 4857.0
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "load",
+  "video_id": "4GQe9btEkqg",
+  "status": "done",
+  "started_at": "2026-04-19T15:55:01.735528+08:00",
+  "finished_at": "2026-04-19T15:55:02.235340+08:00",
+  "duration_sec": 0.499812,
+  "inputs": [
+    "raw.json",
+    "style.json"
+  ],
+  "outputs": [],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "rows_inserted": {
+      "video_sources": 1,
+      "transcript_segments": 2490,
+      "transcript_fts": 2490,
+      "style_profiles": 1
+    }
+  }
+}

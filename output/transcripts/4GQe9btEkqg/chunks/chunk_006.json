@@ -1,0 +1,1306 @@
+{
+  "chunk_id": 6,
+  "start_offset": 7190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 7190.35,
+      "end": 7191.05,
+      "speaker": "host",
+      "text": "没事没事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 1,
+      "start": 7191.45,
+      "end": 7192.35,
+      "speaker": "host",
+      "text": "挣这些干嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 2,
+      "start": 7195.05,
+      "end": 7196.75,
+      "speaker": "host",
+      "text": "大家有需求就买。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 3,
+      "start": 7197.05,
+      "end": 7197.35,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 4,
+      "start": 7206.05,
+      "end": 7209.45,
+      "speaker": "host",
+      "text": "牛奶酸奶一瓶三块多，应该是挺便宜的，坦诚来说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 5,
+      "start": 7210.05,
+      "end": 7214.05,
+      "speaker": "host",
+      "text": "因为正常如果在楼下便利店买这一盒是六块五。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 6,
+      "start": 7214.15,
+      "end": 7214.65,
+      "speaker": "guest",
+      "text": "六块五。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 7,
+      "start": 7214.95,
+      "end": 7215.65,
+      "speaker": "host",
+      "text": "是六块五。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 8,
+      "start": 7216.05,
+      "end": 7219.65,
+      "speaker": "host",
+      "text": "这个比另外一个品牌的那个呃旗间的牛奶贵个五毛钱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 9,
+      "start": 7220.05,
+      "end": 7220.85,
+      "speaker": "host",
+      "text": "你们有没有注意吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 10,
+      "start": 7221.25,
+      "end": 7222.45,
+      "speaker": "host",
+      "text": "楼下便利店的买的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 11,
+      "start": 7222.55,
+      "end": 7225.05,
+      "speaker": "guest",
+      "text": "对，因为我从门这买，所以我们没有关注过它。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 12,
+      "start": 7225.35,
+      "end": 7225.95,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 13,
+      "start": 7231.05,
+      "end": 7233.45,
+      "speaker": "host",
+      "text": "朋友东西会你你会卖那个吗？对不起，我真的不会卖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 14,
+      "start": 7234.25,
+      "end": 7235.15,
+      "speaker": "host",
+      "text": "我不知道咋卖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 15,
+      "start": 7237.15,
+      "end": 7238.25,
+      "speaker": "host",
+      "text": "所以这就体现了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 16,
+      "start": 7240.05,
+      "end": 7242.25,
+      "speaker": "host",
+      "text": "其实顿顿比我懂的更多呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 17,
+      "start": 7245.05,
+      "end": 7246.05,
+      "speaker": "host",
+      "text": "知识盲区。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 18,
+      "start": 7247.05,
+      "end": 7293.05,
+      "speaker": "host",
+      "text": "我们之前有一段时间，我跟他说过，之前有一段时间我们直播间真的，那段时间太惨了，太难了。挣扎一天卖不了多少钱。直播间动动人数从，有一段时间上上千，现在上三千了，感觉哎呀，是不是苦日子要到头了，结果又掉掉破一千了。剩七八百人了。就窘迫到自己不知道咋办了，还在复盘，复盘的时候生怕自己不够坦诚批评，找不到原因，互相辱骂羞辱那种。对彼此非常狠。你们没有是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 19,
+      "start": 7293.05,
+      "end": 7293.55,
+      "speaker": "guest",
+      "text": "奇怪。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 6
+    },
+    {
+      "idx": 20,
+      "start": 7293.55,
+      "end": 7293.95,
+      "speaker": "host",
+      "text": "就。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 6
+    },
+    {
+      "idx": 21,
+      "start": 7316.05,
+      "end": 7316.65,
+      "speaker": "guest",
+      "text": "我们没有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 22,
+      "start": 7317.05,
+      "end": 7318.05,
+      "speaker": "guest",
+      "text": "怎么可能没有？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 23,
+      "start": 7318.35,
+      "end": 7319.05,
+      "speaker": "host",
+      "text": "怎么可能没有？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 24,
+      "start": 7319.35,
+      "end": 7319.65,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 25,
+      "start": 7320.25,
+      "end": 7321.05,
+      "speaker": "host",
+      "text": "听懂了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 26,
+      "start": 7322.05,
+      "end": 7324.05,
+      "speaker": "host",
+      "text": "但是还是没用，反正人数就是少。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 27,
+      "start": 7325.05,
+      "end": 7327.05,
+      "speaker": "host",
+      "text": "然后呢，实在没有办法了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 28,
+      "start": 7328.05,
+      "end": 7330.35,
+      "speaker": "host",
+      "text": "他们说交易额多了，你直播间的这个人数就会高。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 29,
+      "start": 7330.65,
+      "end": 7333.35,
+      "speaker": "host",
+      "text": "我们还卖过一个星期左右的化妆品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 30,
+      "start": 7334.05,
+      "end": 7334.35,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 31,
+      "start": 7335.05,
+      "end": 7338.65,
+      "speaker": "host",
+      "text": "但是现在如果菜能卖动，我还是会把主力放在卖菜上，卖吃的上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 32,
+      "start": 7339.25,
+      "end": 7342.45,
+      "speaker": "host",
+      "text": "因为卖那个更懂的人，有更多更懂的人，那个可能不需要我们。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 33,
+      "start": 7342.75,
+      "end": 7343.05,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 34,
+      "start": 7343.45,
+      "end": 7344.65,
+      "speaker": "host",
+      "text": "我也不懂，我给大家讲不好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 35,
+      "start": 7345.35,
+      "end": 7348.75,
+      "speaker": "host",
+      "text": "只要是让你开心的，能够好好生活的东西，我认为都是有意义的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 36,
+      "start": 7349.25,
+      "end": 7349.95,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 37,
+      "start": 7350.25,
+      "end": 7350.95,
+      "speaker": "host",
+      "text": "然后呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 38,
+      "start": 7351.45,
+      "end": 7352.45,
+      "speaker": "host",
+      "text": "当时就特别尬。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 39,
+      "start": 7352.75,
+      "end": 7354.05,
+      "speaker": "host",
+      "text": "我每次把那个叫海蓝之家，海蓝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 40,
+      "start": 7354.25,
+      "end": 7355.05,
+      "speaker": "guest",
+      "text": "海蓝之家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 41,
+      "start": 7355.25,
+      "end": 7356.45,
+      "speaker": "host",
+      "text": "海蓝，海洋之谜吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 42,
+      "start": 7356.65,
+      "end": 7357.05,
+      "speaker": "host",
+      "text": "海蓝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 43,
+      "start": 7357.55,
+      "end": 7358.35,
+      "speaker": "guest",
+      "text": "不说海蓝之家。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 44,
+      "start": 7358.55,
+      "end": 7359.55,
+      "speaker": "host",
+      "text": "不，他告诉是海洋之谜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 45,
+      "start": 7360.55,
+      "end": 7362.35,
+      "speaker": "host",
+      "text": "卖的是真尴尬呀，我也不知道咋讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 46,
+      "start": 7363.35,
+      "end": 7363.85,
+      "speaker": "host",
+      "text": "这是。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 47,
+      "start": 7364.35,
+      "end": 7365.35,
+      "speaker": "host",
+      "text": "牛奶是六月份的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 48,
+      "start": 7365.55,
+      "end": 7366.55,
+      "speaker": "guest",
+      "text": "保持期也是六个月。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 49,
+      "start": 7366.65,
+      "end": 7367.65,
+      "speaker": "host",
+      "text": "保持期都是六个月。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 50,
+      "start": 7367.85,
+      "end": 7368.95,
+      "speaker": "host",
+      "text": "这俩都是六月份的，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 51,
+      "start": 7369.65,
+      "end": 7370.05,
+      "speaker": "host",
+      "text": "OK，导演。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 52,
+      "start": 7370.25,
+      "end": 7370.75,
+      "speaker": "host",
+      "text": "确定吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 53,
+      "start": 7370.95,
+      "end": 7371.25,
+      "speaker": "guest",
+      "text": "确定。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 54,
+      "start": 7371.25,
+      "end": 7372.55,
+      "speaker": "host",
+      "text": "酸奶和纯奶都是六月份的奶啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 55,
+      "start": 7372.65,
+      "end": 7372.95,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 56,
+      "start": 7373.35,
+      "end": 7373.65,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 57,
+      "start": 7373.95,
+      "end": 7375.15,
+      "speaker": "host",
+      "text": "那就不是临期，请你放心啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 58,
+      "start": 7375.25,
+      "end": 7376.65,
+      "speaker": "guest",
+      "text": "因为我们缺货很久了，所以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 59,
+      "start": 7376.75,
+      "end": 7377.05,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 60,
+      "start": 7377.35,
+      "end": 7379.75,
+      "speaker": "host",
+      "text": "对，因为前段时间卖断货的，你想都断货了，说明没有库存了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 61,
+      "start": 7380.45,
+      "end": 7380.75,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 62,
+      "start": 7381.55,
+      "end": 7382.55,
+      "speaker": "host",
+      "text": "许渊冲老师的书有吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 63,
+      "start": 7382.75,
+      "end": 7383.55,
+      "speaker": "host",
+      "text": "导演，来上一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 64,
+      "start": 7383.65,
+      "end": 7383.95,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 65,
+      "start": 7383.95,
+      "end": 7384.25,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 66,
+      "start": 7384.55,
+      "end": 7385.55,
+      "speaker": "host",
+      "text": "让我说会废话吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 67,
+      "start": 7387.65,
+      "end": 7390.05,
+      "speaker": "host",
+      "text": "我前几天是不是已经讲过李白了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 68,
+      "start": 7390.95,
+      "end": 7392.05,
+      "speaker": "host",
+      "text": "我好像也说过杜甫的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 69,
+      "start": 7392.25,
+      "end": 7392.55,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 70,
+      "start": 7393.05,
+      "end": 7393.95,
+      "speaker": "host",
+      "text": "王维我说过的没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 71,
+      "start": 7394.25,
+      "end": 7395.75,
+      "speaker": "host",
+      "text": "我好像也说过王维的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 72,
+      "start": 7396.05,
+      "end": 7396.75,
+      "speaker": "host",
+      "text": "摩羯是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 73,
+      "start": 7398.05,
+      "end": 7398.85,
+      "speaker": "host",
+      "text": "摩羯居士。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 74,
+      "start": 7399.15,
+      "end": 7399.45,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 75,
+      "start": 7399.95,
+      "end": 7400.95,
+      "speaker": "host",
+      "text": "王维是信佛的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 76,
+      "start": 7402.05,
+      "end": 7404.15,
+      "speaker": "host",
+      "text": "后人对王维的评价，诗中有画，画中有诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 77,
+      "start": 7404.95,
+      "end": 7407.25,
+      "speaker": "host",
+      "text": "王维跟李白一样，都是701年出生的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 78,
+      "start": 7407.55,
+      "end": 7409.05,
+      "speaker": "host",
+      "text": "王维是山西。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 79,
+      "start": 7410.25,
+      "end": 7410.95,
+      "speaker": "host",
+      "text": "永济人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 80,
+      "start": 7411.55,
+      "end": 7413.15,
+      "speaker": "host",
+      "text": "杨贵妃也是山西永济人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 81,
+      "start": 7414.85,
+      "end": 7415.45,
+      "speaker": "host",
+      "text": "然后呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 82,
+      "start": 7416.75,
+      "end": 7417.75,
+      "speaker": "host",
+      "text": "那就今天讲白居易吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 83,
+      "start": 7422.05,
+      "end": 7424.05,
+      "speaker": "host",
+      "text": "导演我问你，白居易早还是杜甫早？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 84,
+      "start": 7426.05,
+      "end": 7426.65,
+      "speaker": "guest",
+      "text": "白居易。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 85,
+      "start": 7427.05,
+      "end": 7428.05,
+      "speaker": "host",
+      "text": "白居易早是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 86,
+      "start": 7428.95,
+      "end": 7429.25,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 87,
+      "start": 7430.25,
+      "end": 7432.95,
+      "speaker": "host",
+      "text": "白居易非常经典的一个作品叫。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 88,
+      "start": 7435.05,
+      "end": 7439.25,
+      "speaker": "host",
+      "text": "我给你提句啊，就杨家有女初长成，养在深闺人不知。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 89,
+      "start": 7439.45,
+      "end": 7440.05,
+      "speaker": "host",
+      "text": "什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 90,
+      "start": 7440.25,
+      "end": 7440.85,
+      "speaker": "guest",
+      "text": "长恨歌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 91,
+      "start": 7441.05,
+      "end": 7441.55,
+      "speaker": "host",
+      "text": "长恨歌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 92,
+      "start": 7441.85,
+      "end": 7442.85,
+      "speaker": "host",
+      "text": "长恨歌说的是谁？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 93,
+      "start": 7444.05,
+      "end": 7445.75,
+      "speaker": "host",
+      "text": "唐玄宗杨贵妃对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 94,
+      "start": 7445.95,
+      "end": 7446.45,
+      "speaker": "guest",
+      "text": "杨贵妃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 95,
+      "start": 7446.95,
+      "end": 7450.65,
+      "speaker": "host",
+      "text": "唐玄宗杨贵妃的时候发生了一个非常重要的这个事件叫做安史之乱对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 96,
+      "start": 7450.95,
+      "end": 7454.05,
+      "speaker": "host",
+      "text": "安史之乱逃难的过程中，杜甫是不是被叛军抓住了，带回了长安？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 97,
+      "start": 7454.35,
+      "end": 7455.95,
+      "speaker": "host",
+      "text": "所以杜甫是不是那个时代的人？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 98,
+      "start": 7456.25,
+      "end": 7460.25,
+      "speaker": "host",
+      "text": "那你想白居易都后来写诗记住了这个事情了，白居易能是那个时代的人吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 99,
+      "start": 7462.45,
+      "end": 7463.45,
+      "speaker": "host",
+      "text": "再问你一遍，谁早？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 100,
+      "start": 7464.05,
+      "end": 7464.45,
+      "speaker": "guest",
+      "text": "杜甫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 101,
+      "start": 7464.55,
+      "end": 7464.95,
+      "speaker": "guest",
+      "text": "杜甫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 102,
+      "start": 7466.05,
+      "end": 7466.75,
+      "speaker": "host",
+      "text": "杜甫早。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 103,
+      "start": 7467.25,
+      "end": 7467.55,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 104,
+      "start": 7468.35,
+      "end": 7471.35,
+      "speaker": "host",
+      "text": "我们刚提这几个人里头，李白跟王维都是701年生人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 105,
+      "start": 7473.05,
+      "end": 7475.05,
+      "speaker": "host",
+      "text": "然后比他们稍微小一点点的是杜甫。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 106,
+      "start": 7475.95,
+      "end": 7478.05,
+      "speaker": "host",
+      "text": "杜甫之后的才是白居易。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 107,
+      "start": 7478.35,
+      "end": 7478.65,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 108,
+      "start": 7480.35,
+      "end": 7481.95,
+      "speaker": "host",
+      "text": "杜甫跟白居易有没有什么关系啊？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 109,
+      "start": 7485.05,
+      "end": 7485.65,
+      "speaker": "host",
+      "text": "有没有？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 110,
+      "start": 7489.05,
+      "end": 7492.05,
+      "speaker": "host",
+      "text": "这里头都是徐老师的照片，徐老师的真帅年轻时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 111,
+      "start": 7493.35,
+      "end": 7494.05,
+      "speaker": "host",
+      "text": "不知道是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 112,
+      "start": 7494.55,
+      "end": 7495.85,
+      "speaker": "host",
+      "text": "有关系，你听我跟你讲啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 113,
+      "start": 7495.95,
+      "end": 7496.25,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 114,
+      "start": 7497.45,
+      "end": 7498.55,
+      "speaker": "host",
+      "text": "白居易的祖籍在哪？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 115,
+      "start": 7498.75,
+      "end": 7499.35,
+      "speaker": "host",
+      "text": "在山西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 116,
+      "start": 7499.55,
+      "end": 7500.05,
+      "speaker": "guest",
+      "text": "山西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 117,
+      "start": 7500.45,
+      "end": 7501.35,
+      "speaker": "host",
+      "text": "这个你知道是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 118,
+      "start": 7501.55,
+      "end": 7502.55,
+      "speaker": "guest",
+      "text": "对，山西太原的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 119,
+      "start": 7502.75,
+      "end": 7503.65,
+      "speaker": "host",
+      "text": "山西太原人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 120,
+      "start": 7505.35,
+      "end": 7510.15,
+      "speaker": "host",
+      "text": "在白居易的爷爷的父亲那一代，那个叫什么？应该叫曾祖父是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 121,
+      "start": 7510.35,
+      "end": 7510.65,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 6
+    },
+    {
+      "idx": 122,
+      "start": 7511.75,
+      "end": 7514.95,
+      "speaker": "host",
+      "text": "从那一代人，他们住在了哪里呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 123,
+      "start": 7518.75,
+      "end": 7519.55,
+      "speaker": "host",
+      "text": "不知道咋念。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 124,
+      "start": 7520.55,
+      "end": 7522.25,
+      "speaker": "host",
+      "text": "这个就是现在渭南临渭区。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 125,
+      "start": 7523.25,
+      "end": 7523.95,
+      "speaker": "guest",
+      "text": "河南吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 6
+    },
+    {
+      "idx": 126,
+      "start": 7524.45,
+      "end": 7525.45,
+      "speaker": "host",
+      "text": "渭南临渭区。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 127,
+      "start": 7525.95,
+      "end": 7526.45,
+      "speaker": "host",
+      "text": "渭南。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 128,
+      "start": 7527.45,
+      "end": 7528.05,
+      "speaker": "host",
+      "text": "渭南在哪？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    },
+    {
+      "idx": 129,
+      "start": 7528.25,
+      "end": 7528.75,
+      "speaker": "host",
+      "text": "你在河南。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 6
+    }
+  ]
+}

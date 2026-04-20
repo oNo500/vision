@@ -1,0 +1,227 @@
+{
+  "chunk_id": 1,
+  "start_offset": 490.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 490.0,
+      "end": 500.0,
+      "speaker": "host",
+      "text": "大型無人機方案,大型無人機可攜帶反艦導彈進行攻擊,而六代機則可以攜帶遠程防空導彈,如霹靂16或17這種超過400公里的空空導彈。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 1,
+      "start": 500.0,
+      "end": 514.0,
+      "speaker": "host",
+      "text": "利用無人預警機或大型無人機,在前方利用雙向數據鏈結合A射B導,對敵空中預警機或加油機進行擊殺。第二種是艦隊防空和反擊任務,可使用六代機加智空無人機加無人預警機的組合,對敵隱身戰機。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 2,
+      "start": 514.0,
+      "end": 527.0,
+      "speaker": "host",
+      "text": "無人機或亞因素反艦導彈進行攔截,智空無人機和預警機相互配合,而六代機作為重要空中指揮節點,達到真正的未來空戰ODA3.0版本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 3,
+      "start": 527.0,
+      "end": 534.0,
+      "speaker": "host",
+      "text": "第三種組合就是對路以及相關島嶼的作戰,可採用無人預警機電子彈版本加殲35加攻擊21的組合形式。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 4,
+      "start": 534.0,
+      "end": 544.0,
+      "speaker": "host",
+      "text": "無人的攻擊21可攜帶精確指導炸彈巡飛彈,對敵方地面目標,尤其是針對敵方防空系統,作為誘餌吸引火力,為有人艦載機開闢攻擊通道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 5,
+      "start": 544.0,
+      "end": 550.0,
+      "speaker": "host",
+      "text": "無人預警機則負責電子干擾與壓制對方的雷達,而殲35可以攜帶新型反輻射導彈對敵重要雷達目標進行打擊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 6,
+      "start": 550.0,
+      "end": 558.0,
+      "speaker": "host",
+      "text": "深入內陸後,攻擊21可攜帶空中加油吊艙,為艦載機進行空中加油,提升艦載機的航程與作戰半徑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 7,
+      "start": 558.0,
+      "end": 570.0,
+      "speaker": "host",
+      "text": "最後在反潛作戰上,因自身攜帶反潛直升機直20數量有限,個人覺得可以根據任務重點,臨時搭配一組固定翼反潛機加無人反潛機的組合,或者臨時搭配一條大型反潛艦進行反潛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 8,
+      "start": 570.0,
+      "end": 574.0,
+      "speaker": "host",
+      "text": "這樣可以做到更加靈活的艦載機組合,綜上,005航母要實現對美國福特級的超越。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 9,
+      "start": 574.0,
+      "end": 582.0,
+      "speaker": "host",
+      "text": "核心邏輯並非盲目追求技術堆砌,而是立足我國航母發展的技術基電,規避福特級的創新陷阱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 10,
+      "start": 582.0,
+      "end": 590.0,
+      "speaker": "host",
+      "text": "實現核動力可靠化,彈射高效化,防禦立體化,同時構建有人家無人協同艦載機體系,以可靠性優先,實戰性為王為原則。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 11,
+      "start": 590.0,
+      "end": 594.0,
+      "speaker": "host",
+      "text": "打造更貼合我國國防需求的超級核動力航母。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 12,
+      "start": 594.0,
+      "end": 603.0,
+      "speaker": "host",
+      "text": "從技術層面看,目前正在大連造船廠建造的核動力航母,大概率成為我國首艘核動力航母的過渡性試驗平台。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 13,
+      "start": 603.0,
+      "end": 610.0,
+      "speaker": "host",
+      "text": "並以此為基礎,通過驗證六代艦載機,無人艦載機已取得突破性進展,才可以建造真正的12萬噸級航母。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 14,
+      "start": 610.0,
+      "end": 614.0,
+      "speaker": "host",
+      "text": "小步快跑才是攀登科技高峰最穩妥的道路。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 15,
+      "start": 614.0,
+      "end": 616.0,
+      "speaker": "host",
+      "text": "所以004可能在甲板設計。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 16,
+      "start": 616.0,
+      "end": 620.0,
+      "speaker": "host",
+      "text": "動力方面和美國福特級相當,而005航母才是後福特時代的超級。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 17,
+      "start": 620.0,
+      "end": 626.0,
+      "speaker": "host",
+      "text": "它的建成服役,其綜合戰力將全面碾壓藍星任何航母,成為全球最先進的航空母艦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 18,
+      "start": 626.0,
+      "end": 630.0,
+      "speaker": "host",
+      "text": "而配套艦載機的發展也將推動我國海空作戰體系實現質的飛躍。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    },
+    {
+      "idx": 19,
+      "start": 630.0,
+      "end": 633.0,
+      "speaker": "host",
+      "text": "最後005的命名花落誰家呢?請大家評論區留言。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1,
+      "asr_engine": "gemini-2.5-flash"
+    }
+  ],
+  "asr_engine": "gemini-2.5-flash"
+}

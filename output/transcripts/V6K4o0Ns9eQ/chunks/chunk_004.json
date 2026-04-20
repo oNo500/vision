@@ -1,0 +1,186 @@
+{
+  "chunk_id": 4,
+  "start_offset": 4790.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 4790.2,
+      "end": 4791.4,
+      "speaker": "host",
+      "text": "其實不貴,其實不貴。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 1,
+      "start": 4791.4,
+      "end": 4806.0,
+      "speaker": "host",
+      "text": "咱們有些朋友覺得貴是你比較的對象沒有選準,你比如你選的是那種澱粉腸,澱粉很多的那種火腿腸,然後稍微烤一下,那種有沒有也有,那個賣的比較便宜。",
+      "text_normalized": "",
+      "confidence": 0.94,
+      "chunk_id": 4
+    },
+    {
+      "idx": 2,
+      "start": 4806.0,
+      "end": 4809.0,
+      "speaker": "host",
+      "text": "但是現在估計也得個兩塊兩塊五大概這樣一個價格。但是如果你買的是這種純純的肉腸的話,它的價格通常是比较高的,在外边的便利店呀,旅游景点啊,街道拐角一般得要六块吧,六块六块钱大概啊。",
+      "text_normalized": "",
+      "confidence": 0.93,
+      "chunk_id": 4
+    },
+    {
+      "idx": 3,
+      "start": 4809.0,
+      "end": 4810.5,
+      "speaker": "guest",
+      "text": "你怎麼會買六塊的腸呢?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 4
+    },
+    {
+      "idx": 4,
+      "start": 4810.5,
+      "end": 4811.0,
+      "speaker": "host",
+      "text": "的偶爾。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 5,
+      "start": 4811.0,
+      "end": 4813.0,
+      "speaker": "guest",
+      "text": "你樸素一些,咱們在創業階段呢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 4
+    },
+    {
+      "idx": 6,
+      "start": 4813.0,
+      "end": 4815.0,
+      "speaker": "host",
+      "text": "對,咱就在這吃就行了。真的是。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 7,
+      "start": 4815.0,
+      "end": 4816.0,
+      "speaker": "host",
+      "text": "99塊錢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 4
+    },
+    {
+      "idx": 8,
+      "start": 4816.5,
+      "end": 4817.0,
+      "speaker": "host",
+      "text": "三盒。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 9,
+      "start": 4817.0,
+      "end": 4817.5,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 10,
+      "start": 4817.5,
+      "end": 4821.0,
+      "speaker": "host",
+      "text": "三盒是24根,下來三块多吧,還可以了。",
+      "text_normalized": "",
+      "confidence": 0.94,
+      "chunk_id": 4
+    },
+    {
+      "idx": 11,
+      "start": 4821.0,
+      "end": 4822.0,
+      "speaker": "host",
+      "text": "導演還是沒放,是吧?",
+      "text_normalized": "",
+      "confidence": 0.93,
+      "chunk_id": 4
+    },
+    {
+      "idx": 12,
+      "start": 4822.0,
+      "end": 4823.0,
+      "speaker": "guest",
+      "text": "你這還是沒放,是吧?",
+      "text_normalized": "",
+      "confidence": 0.94,
+      "chunk_id": 4
+    },
+    {
+      "idx": 13,
+      "start": 4823.0,
+      "end": 4828.0,
+      "speaker": "host",
+      "text": "對。然後呢,給給放一下,不行就引擎翅膀,你那個實在放不出來,把引擎翅膀給放放一下。",
+      "text_normalized": "",
+      "confidence": 0.93,
+      "chunk_id": 4
+    },
+    {
+      "idx": 14,
+      "start": 4828.0,
+      "end": 4829.5,
+      "speaker": "guest",
+      "text": "你說此時此刻演唱會。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 15,
+      "start": 4829.5,
+      "end": 4834.0,
+      "speaker": "host",
+      "text": "不是沒有庫存啊,可能有些朋友所在的地方,咱們現在的原則是這樣啊,就像我們",
+      "text_normalized": "",
+      "confidence": 0.92,
+      "chunk_id": 4
+    },
+    {
+      "idx": 16,
+      "start": 4834.0,
+      "end": 4836.0,
+      "speaker": "guest",
+      "text": "你這有先講,我看一下音樂去。",
+      "text_normalized": "",
+      "confidence": 0.94,
+      "chunk_id": 4
+    },
+    {
+      "idx": 17,
+      "start": 4836.0,
+      "end": 4837.0,
+      "speaker": "host",
+      "text": "好好,你先看音樂。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1at4y1h7X4",
+  "status": "done",
+  "started_at": "2026-04-19T10:38:11.651176+08:00",
+  "finished_at": "2026-04-19T10:38:21.961028+08:00",
+  "duration_sec": 10.309852,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1at4y1h7X4/",
+    "downloaded_bytes": 11577547,
+    "source_metadata": {
+      "video_id": "BV1at4y1h7X4",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1at4y1h7X4/",
+      "title": "听了一篇优秀作文，让我想拍下玉米！（新东方董宇辉直播带货送课）",
+      "uploader": "小学物理随便问",
+      "duration_sec": 298.858
+    }
+  }
+}

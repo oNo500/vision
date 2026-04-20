@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1ynm3BsE9Q",
+  "status": "done",
+  "started_at": "2026-04-19T21:17:59.574152+08:00",
+  "finished_at": "2026-04-19T21:18:02.031942+08:00",
+  "duration_sec": 2.45779,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1ynm3BsE9Q/?spm_id_from=333.1387.homepage.video_card.click&vd_source=ffcd5c3951bb146169d7cce1550a15dd",
+    "downloaded_bytes": 2954562,
+    "source_metadata": {
+      "video_id": "BV1ynm3BsE9Q",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1ynm3BsE9Q/?spm_id_from=333.1387.homepage.video_card.click&vd_source=ffcd5c3951bb146169d7cce1550a15dd",
+      "title": "这一年，我们在B站看了些啥？",
+      "uploader": "热门情报局",
+      "duration_sec": 238.733
+    }
+  }
+}

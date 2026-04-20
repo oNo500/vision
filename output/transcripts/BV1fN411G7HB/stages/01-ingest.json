@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1fN411G7HB",
+  "status": "done",
+  "started_at": "2026-04-19T10:38:22.124797+08:00",
+  "finished_at": "2026-04-19T10:38:26.763984+08:00",
+  "duration_sec": 4.639187,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1fN411G7HB/",
+    "downloaded_bytes": 2520892,
+    "source_metadata": {
+      "video_id": "BV1fN411G7HB",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1fN411G7HB/",
+      "title": "董宇辉直播出圈名场面之浪漫的大米，据说是临场发挥的，怪不得那么多人喜欢看他直播",
+      "uploader": "轰轰honghong",
+      "duration_sec": 211.44
+    }
+  }
+}

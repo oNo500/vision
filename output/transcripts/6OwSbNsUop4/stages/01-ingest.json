@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "6OwSbNsUop4",
+  "status": "done",
+  "started_at": "2026-04-19T10:27:55.645503+08:00",
+  "finished_at": "2026-04-19T10:31:04.345738+08:00",
+  "duration_sec": 188.700235,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.youtube.com/watch?v=6OwSbNsUop4",
+    "downloaded_bytes": 418317350,
+    "source_metadata": {
+      "video_id": "6OwSbNsUop4",
+      "source": "youtube",
+      "url": "https://www.youtube.com/watch?v=6OwSbNsUop4",
+      "title": "考古：2022年6月25日董宇辉完整直播回放（06252022）",
+      "uploader": "中国顶级电商主持人董宇辉完整直播回放",
+      "duration_sec": 10719.0
+    }
+  }
+}

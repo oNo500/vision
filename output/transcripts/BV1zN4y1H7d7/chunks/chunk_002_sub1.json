@@ -1,0 +1,596 @@
+{
+  "chunk_id": 2,
+  "start_offset": 2590.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 2590.04,
+      "end": 2590.99,
+      "speaker": "host",
+      "text": "下位一果。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 1,
+      "start": 2591.4,
+      "end": 2592.37,
+      "speaker": "host",
+      "text": "建議連皮吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 2,
+      "start": 2592.53,
+      "end": 2593.49,
+      "speaker": "host",
+      "text": "營養都在皮裡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 3,
+      "start": 2593.53,
+      "end": 2594.45,
+      "speaker": "host",
+      "text": "吃西瓜連皮吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 4,
+      "start": 2594.45,
+      "end": 2595.43,
+      "speaker": "host",
+      "text": "然後就不開心了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 5,
+      "start": 2595.43,
+      "end": 2596.33,
+      "speaker": "host",
+      "text": "哎呀,媽媽開心了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 6,
+      "start": 2596.33,
+      "end": 2596.97,
+      "speaker": "host",
+      "text": "真的是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 7,
+      "start": 2597.37,
+      "end": 2598.37,
+      "speaker": "host",
+      "text": "那只能拿水送服了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 8,
+      "start": 2598.77,
+      "end": 2599.57,
+      "speaker": "host",
+      "text": "溫開水送服吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 9,
+      "start": 2599.67,
+      "end": 2600.17,
+      "speaker": "host",
+      "text": "對對對。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 10,
+      "start": 2600.67,
+      "end": 2601.37,
+      "speaker": "host",
+      "text": "這都咽不下去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 11,
+      "start": 2601.47,
+      "end": 2602.07,
+      "speaker": "host",
+      "text": "嗯,哎,真的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 12,
+      "start": 2602.07,
+      "end": 2604.07,
+      "speaker": "host",
+      "text": "你剛才那個動作,我爸吃藥就這樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 13,
+      "start": 2604.07,
+      "end": 2607.07,
+      "speaker": "host",
+      "text": "就我就是喝大膠囊就是水一沖直接這樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 14,
+      "start": 2607.07,
+      "end": 2608.57,
+      "speaker": "host",
+      "text": "我也是,就一吃藥,你別管咽不咽下去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 15,
+      "start": 2608.97,
+      "end": 2610.07,
+      "speaker": "host",
+      "text": "就老撞那個牆上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 16,
+      "start": 2610.07,
+      "end": 2612.17,
+      "speaker": "host",
+      "text": "好像扎送那一下就這樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 17,
+      "start": 2612.17,
+      "end": 2614.07,
+      "speaker": "host",
+      "text": "要就以慣性衝下去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 18,
+      "start": 2614.07,
+      "end": 2615.07,
+      "speaker": "host",
+      "text": "這是個儀式感。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 19,
+      "start": 2615.07,
+      "end": 2618.37,
+      "speaker": "host",
+      "text": "對童年兒時可能吃到那麼一口苦的追憶。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 20,
+      "start": 2618.37,
+      "end": 2620.07,
+      "speaker": "host",
+      "text": "哎呀,這藥說你準備好了,開始了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 21,
+      "start": 2620.07,
+      "end": 2621.07,
+      "speaker": "host",
+      "text": "甩下去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 22,
+      "start": 2621.07,
+      "end": 2622.27,
+      "speaker": "host",
+      "text": "就會跟我媽腦袋磕了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 23,
+      "start": 2622.27,
+      "end": 2623.07,
+      "speaker": "host",
+      "text": "咚一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 24,
+      "start": 2623.07,
+      "end": 2624.27,
+      "speaker": "host",
+      "text": "跟我媽磕大包。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 25,
+      "start": 2624.27,
+      "end": 2625.07,
+      "speaker": "host",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 26,
+      "start": 2626.27,
+      "end": 2627.57,
+      "speaker": "host",
+      "text": "腰果啊,薛鵬自己拍。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 27,
+      "start": 2628.37,
+      "end": 2629.37,
+      "speaker": "host",
+      "text": "他們說螃蟹哥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 28,
+      "start": 2629.37,
+      "end": 2630.27,
+      "speaker": "host",
+      "text": "來啊,我騎那門口。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 29,
+      "start": 2630.27,
+      "end": 2632.27,
+      "speaker": "host",
+      "text": "說吃榴蓮皮,營養都在皮裡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 30,
+      "start": 2632.27,
+      "end": 2632.67,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 31,
+      "start": 2633.37,
+      "end": 2634.37,
+      "speaker": "host",
+      "text": "那個有點牽強。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 32,
+      "start": 2634.37,
+      "end": 2635.37,
+      "speaker": "host",
+      "text": "這主要有點扎嘴。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 33,
+      "start": 2636.47,
+      "end": 2639.07,
+      "speaker": "host",
+      "text": "眾所周知,榴蓮是一個非常好的什麼?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 34,
+      "start": 2639.07,
+      "end": 2639.77,
+      "speaker": "host",
+      "text": "啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 35,
+      "start": 2640.37,
+      "end": 2641.07,
+      "speaker": "host",
+      "text": "水果。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 36,
+      "start": 2641.57,
+      "end": 2642.07,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 37,
+      "start": 2643.27,
+      "end": 2643.97,
+      "speaker": "host",
+      "text": "對不起啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 38,
+      "start": 2644.27,
+      "end": 2644.87,
+      "speaker": "host",
+      "text": "謝謝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 39,
+      "start": 2645.07,
+      "end": 2646.17,
+      "speaker": "host",
+      "text": "我就是下播跟你道歉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 40,
+      "start": 2646.17,
+      "end": 2648.07,
+      "speaker": "host",
+      "text": "是我跟這個世界已經脫軌了嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 41,
+      "start": 2648.07,
+      "end": 2690.27,
+      "speaker": "host",
+      "text": "為什麼我感到格格不入呢?哥哥。哎喲。二哥。最近肯定是阿姨來了,你瘋狂看甄嬛傳,是吧?嗯。想當格格的心已經溢出了屏幕。我先來吧。我當大哥哥。你非要把直播間弄得沒人說話了嗎?錯了。你非要弄得大家都沉默了嗎?漢森基本都害羞的。我先喝一口。剛才我們在這個整個訪談過程中,大家聽到琴聲,就是漢森一直在。Thank you。太辛苦了。而且幾乎是提到哪個,他就開始談哪個。楊老師提到了Great Gatsby。嗯。Young and beautiful。這個電影還好。還提到了啥?人世間。還提到了人世間。不用提。白蛇。白蛇傳。哦。哦。青芝山下白素貞。啊?有青芝山下白素貞。對吧?滴滴滴滴。滴滴滴滴。滴滴滴滴滴滴滴,對吧,唱完這首歌來了三兩滴滴。哎呀。你說都得亮吧。我求你。我求你。回家睡睡覺。睡睡覺。我無法理解。我無法理解。我就是個瓜。我就是個瓜。聊那個包。說兩話。真煩人啊。自己拍一下。說兩話。氣了已經,真煩人啊。別不講啊。而且你看我,於老師說他這個在辦公室沒有意識到。這風感冒的。嗯。我們之前在15樓。我不是那個在做那個地方在辦公室那邊角落裡。風口。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 42,
+      "start": 2690.27,
+      "end": 2693.07,
+      "speaker": "host",
+      "text": "我都沒有,我一直以為這樓裡是沒有空調呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 43,
+      "start": 2693.07,
+      "end": 2694.57,
+      "speaker": "host",
+      "text": "我每天都穿的棉襖你知道嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 44,
+      "start": 2694.57,
+      "end": 2695.67,
+      "speaker": "host",
+      "text": "而且整天感冒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 45,
+      "start": 2695.67,
+      "end": 2698.37,
+      "speaker": "host",
+      "text": "我當時我說我今年為啥今年冬天這個身體狀態這麼差?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 46,
+      "start": 2698.37,
+      "end": 2699.67,
+      "speaker": "host",
+      "text": "然後搬上來之後好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 47,
+      "start": 2699.67,
+      "end": 2700.67,
+      "speaker": "host",
+      "text": "你那個你那個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 48,
+      "start": 2700.67,
+      "end": 2702.77,
+      "speaker": "host",
+      "text": "我才一直到原來是因為辦公室太冷了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 49,
+      "start": 2702.77,
+      "end": 2704.07,
+      "speaker": "host",
+      "text": "每天都感冒你知道嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 50,
+      "start": 2704.07,
+      "end": 2705.07,
+      "speaker": "host",
+      "text": "你那是我那個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 51,
+      "start": 2705.07,
+      "end": 2706.37,
+      "speaker": "host",
+      "text": "樓下我整天感冒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 52,
+      "start": 2706.37,
+      "end": 2707.47,
+      "speaker": "host",
+      "text": "整天感冒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 53,
+      "start": 2707.47,
+      "end": 2708.27,
+      "speaker": "host",
+      "text": "我說我咋了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 54,
+      "start": 2708.27,
+      "end": 2710.07,
+      "speaker": "host",
+      "text": "我我我一直都擔心你說我我這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 55,
+      "start": 2710.07,
+      "end": 2711.27,
+      "speaker": "host",
+      "text": "我的體質咋回事啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 56,
+      "start": 2711.27,
+      "end": 2712.07,
+      "speaker": "host",
+      "text": "真的是我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 57,
+      "start": 2712.07,
+      "end": 2714.47,
+      "speaker": "host",
+      "text": "我這該吃吃該喝喝,我都成這樣了,我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 58,
+      "start": 2714.47,
+      "end": 2715.47,
+      "speaker": "host",
+      "text": "你那不是一個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    }
+  ]
+}

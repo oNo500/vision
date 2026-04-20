@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "SSUKY6MwyN8",
+  "status": "done",
+  "started_at": "2026-04-19T10:54:21.670040+08:00",
+  "finished_at": "2026-04-19T10:56:07.426864+08:00",
+  "duration_sec": 105.756824,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.youtube.com/watch?v=SSUKY6MwyN8",
+    "downloaded_bytes": 214991904,
+    "source_metadata": {
+      "video_id": "SSUKY6MwyN8",
+      "source": "youtube",
+      "url": "https://www.youtube.com/watch?v=SSUKY6MwyN8",
+      "title": "考古：2022年7月22日中午董宇辉完整直播回放（07062022）",
+      "uploader": "中国顶级电商主持人董宇辉完整直播回放",
+      "duration_sec": 5371.0
+    }
+  }
+}

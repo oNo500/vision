@@ -1,0 +1,36 @@
+{
+  "stage": "preprocess",
+  "video_id": "BV1fN411G7HB",
+  "status": "done",
+  "started_at": "2026-04-19T11:13:26.152931+08:00",
+  "finished_at": "2026-04-19T11:14:45.964751+08:00",
+  "duration_sec": 79.81182,
+  "inputs": [
+    "audio.m4a"
+  ],
+  "outputs": [
+    "vocals.wav",
+    "chunks/ (1 files)"
+  ],
+  "tool_versions": {
+    "demucs": "unknown",
+    "ffmpeg": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "bgm_removed": true,
+    "chunk_count": 1,
+    "chunk_duration_sec": 1200,
+    "chunk_overlap_sec": 10,
+    "sample_rate": 16000,
+    "channels": 1,
+    "demucs_model": "htdemucs",
+    "boundaries": [
+      [
+        0.0,
+        211.348
+      ]
+    ]
+  }
+}

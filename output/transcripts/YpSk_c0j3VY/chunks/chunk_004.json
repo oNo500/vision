@@ -1,0 +1,2776 @@
+{
+  "chunk_id": 4,
+  "start_offset": 4790.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 4790.0,
+      "end": 4790.009,
+      "speaker": "host",
+      "text": "欧洲最喜欢到高面的",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 1,
+      "start": 4790.009,
+      "end": 4790.027,
+      "speaker": "host",
+      "text": "是哪个国家？动不动就游行罢工的是的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 2,
+      "start": 4790.027,
+      "end": 4790.033,
+      "speaker": "host",
+      "text": "法国。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 3,
+      "start": 4790.033,
+      "end": 4790.036,
+      "speaker": "host",
+      "text": "法国。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 4,
+      "start": 4790.036,
+      "end": 4790.057,
+      "speaker": "host",
+      "text": "法国人有一个段子,我不知道你们听过没啊,有一个,当然这个可能有点略微有点羞辱性。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 5,
+      "start": 4790.057,
+      "end": 4790.08,
+      "speaker": "host",
+      "text": "说没有人能够在法国人投降之前占领巴黎。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 6,
+      "start": 4790.08,
+      "end": 4790.086,
+      "speaker": "host",
+      "text": "听过这句话没？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 7,
+      "start": 4790.086,
+      "end": 4790.093,
+      "speaker": "host",
+      "text": "你知道为什么？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 8,
+      "start": 4790.093,
+      "end": 4790.099,
+      "speaker": "host",
+      "text": "你还没有打到巴黎他们就投降了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 9,
+      "start": 4790.099,
+      "end": 4790.106,
+      "speaker": "host",
+      "text": "二战他们有多少人投降的吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 10,
+      "start": 4790.106,
+      "end": 4790.113,
+      "speaker": "host",
+      "text": "39天还是49天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 11,
+      "start": 4790.113,
+      "end": 4790.12,
+      "speaker": "host",
+      "text": "说没有人能够再占领巴黎之前。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 12,
+      "start": 4790.12,
+      "end": 4790.126,
+      "speaker": "host",
+      "text": "在法国人投降之前占领巴黎。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 13,
+      "start": 4790.126,
+      "end": 4790.129,
+      "speaker": "host",
+      "text": "你还没到,我就投降了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 14,
+      "start": 4790.129,
+      "end": 4790.132,
+      "speaker": "host",
+      "text": "这本书大家自己看。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 15,
+      "start": 4790.132,
+      "end": 4790.139,
+      "speaker": "host",
+      "text": "明明已经来了,明明在旁边等我的,明明给我一会胡说八道的时间。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 16,
+      "start": 4790.139,
+      "end": 4790.142,
+      "speaker": "host",
+      "text": "然后呢,所以",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 17,
+      "start": 4790.142,
+      "end": 4790.15,
+      "speaker": "host",
+      "text": "大家现在就经常,对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 18,
+      "start": 4790.15,
+      "end": 4790.158,
+      "speaker": "host",
+      "text": "日常的拿法国人开玩笑,但是这也是对他们的爱啊,对他们的爱主要是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 19,
+      "start": 4790.158,
+      "end": 4790.165,
+      "speaker": "host",
+      "text": "法国历史上曾经非常强盛过。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 20,
+      "start": 4790.165,
+      "end": 4790.17,
+      "speaker": "host",
+      "text": "所以这本书再往后讲到的是谁?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 21,
+      "start": 4790.17,
+      "end": 4790.172,
+      "speaker": "host",
+      "text": "讲到了",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 22,
+      "start": 4790.172,
+      "end": 4790.176,
+      "speaker": "host",
+      "text": "拿破仑。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 23,
+      "start": 4790.176,
+      "end": 4790.189,
+      "speaker": "host",
+      "text": "讲到了当时当时看似这个民主,但是给社会带来了混乱和人们生活痛苦的时候,拿破仑出现了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 24,
+      "start": 4790.189,
+      "end": 4790.193,
+      "speaker": "host",
+      "text": "拿破仑是多大称的帝?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 25,
+      "start": 4790.193,
+      "end": 4790.199,
+      "speaker": "host",
+      "text": "拿破仑是多大,多大年龄的时候称的帝?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 26,
+      "start": 4790.199,
+      "end": 4790.202,
+      "speaker": "host",
+      "text": "大家记得不?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 27,
+      "start": 4790.202,
+      "end": 4790.205,
+      "speaker": "host",
+      "text": "拿破仑多大年龄称的帝?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 28,
+      "start": 4790.205,
+      "end": 4790.22,
+      "speaker": "guest",
+      "text": "那个10,10几,10几。",
+      "text_normalized": "",
+      "confidence": 0.85,
+      "chunk_id": 4
+    },
+    {
+      "idx": 29,
+      "start": 4790.22,
+      "end": 4790.224,
+      "speaker": "host",
+      "text": "拿破仑是多大首称的帝?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 30,
+      "start": 4790.224,
+      "end": 4790.229,
+      "speaker": "host",
+      "text": "拿破仑是35岁称的帝。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 31,
+      "start": 4790.229,
+      "end": 4790.232,
+      "speaker": "host",
+      "text": "那是哪一年呢?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 32,
+      "start": 4790.232,
+      "end": 4790.236,
+      "speaker": "host",
+      "text": "拿破仑称帝的那一年是哪一年?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 33,
+      "start": 4790.236,
+      "end": 4790.239,
+      "speaker": "host",
+      "text": "我看这本书里头有没有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 34,
+      "start": 4790.245,
+      "end": 4790.252,
+      "speaker": "host",
+      "text": "是不是没有?这本书讲的是滑铁卢战争的时候,他战败的时候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 35,
+      "start": 4790.259,
+      "end": 4790.264,
+      "speaker": "host",
+      "text": "拿破仑35岁称的帝。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 36,
+      "start": 4790.264,
+      "end": 4790.273,
+      "speaker": "host",
+      "text": "那一年是不是不是1804年啊,1804年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 37,
+      "start": 4790.273,
+      "end": 4790.276,
+      "speaker": "host",
+      "text": "不知道的朋友再回复第三个数字。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 38,
+      "start": 4790.276,
+      "end": 4790.279,
+      "speaker": "host",
+      "text": "1804年。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 39,
+      "start": 4790.279,
+      "end": 4790.286,
+      "speaker": "host",
+      "text": "拿破仑35岁,他开始称帝了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 40,
+      "start": 4790.286,
+      "end": 4790.297,
+      "speaker": "host",
+      "text": "虽然拿破仑称帝,大家现在感觉到一般称帝我们反而是不是历史的倒退啊,但其实法国人当时很赞同的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 41,
+      "start": 4790.297,
+      "end": 4790.306,
+      "speaker": "host",
+      "text": "因为在拿破仑之前那个看似民主,但是极其混乱,给人们带来痛苦的政府,法国人对当时那个并不欢迎。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 42,
+      "start": 4790.306,
+      "end": 4790.311,
+      "speaker": "host",
+      "text": "所以拿破仑当时其实挺得民心的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 43,
+      "start": 4790.311,
+      "end": 4790.317,
+      "speaker": "host",
+      "text": "就是你只要真正让普通百姓过得好,对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 44,
+      "start": 4790.317,
+      "end": 4790.322,
+      "speaker": "host",
+      "text": "大家在意的是每一天的幸福呀。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 45,
+      "start": 4790.322,
+      "end": 4790.324,
+      "speaker": "host",
+      "text": "拿破仑称帝了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 46,
+      "start": 4790.324,
+      "end": 4790.334,
+      "speaker": "host",
+      "text": "但是从1804年称帝到1814年,他第一次被流放到厄尔巴岛上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 47,
+      "start": 4790.334,
+      "end": 4790.341,
+      "speaker": "host",
+      "text": "这十年里头,拿破仑没有一年是平静的过生活的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 48,
+      "start": 4790.341,
+      "end": 4790.347,
+      "speaker": "host",
+      "text": "每一年都在打仗,每一年都在打仗。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 49,
+      "start": 4790.347,
+      "end": 4790.353,
+      "speaker": "host",
+      "text": "这头,这第三次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 50,
+      "start": 4790.353,
+      "end": 4790.356,
+      "speaker": "host",
+      "text": "第四次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 51,
+      "start": 4790.356,
+      "end": 4790.359,
+      "speaker": "host",
+      "text": "第五次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 52,
+      "start": 4790.359,
+      "end": 4790.362,
+      "speaker": "host",
+      "text": "直到第六次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 53,
+      "start": 4790.362,
+      "end": 4790.37,
+      "speaker": "host",
+      "text": "第六次反法同盟失败的一个原因是因为从1812年之后。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 54,
+      "start": 4790.37,
+      "end": 4790.375,
+      "speaker": "host",
+      "text": "拿破仑从原来的保护自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 55,
+      "start": 4790.375,
+      "end": 4790.378,
+      "speaker": "host",
+      "text": "为什么他要保护自己?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 56,
+      "start": 4790.378,
+      "end": 4790.38,
+      "speaker": "host",
+      "text": "因为你想。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 57,
+      "start": 4790.38,
+      "end": 4790.39,
+      "speaker": "host",
+      "text": "拿破仑推翻了原来法国的皇帝路易10,路易10几?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 58,
+      "start": 4790.39,
+      "end": 4790.392,
+      "speaker": "host",
+      "text": "14,16。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 59,
+      "start": 4790.392,
+      "end": 4790.393,
+      "speaker": "host",
+      "text": "路易14。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 60,
+      "start": 4790.393,
+      "end": 4790.394,
+      "speaker": "guest",
+      "text": "14。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 61,
+      "start": 4790.394,
+      "end": 4790.395,
+      "speaker": "host",
+      "text": "14应该是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 62,
+      "start": 4790.395,
+      "end": 4790.396,
+      "speaker": "guest",
+      "text": "16。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 63,
+      "start": 4790.396,
+      "end": 4790.402,
+      "speaker": "host",
+      "text": "拿破仑推翻了原来的法国皇帝之后,其他欧洲的皇帝很担心呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 64,
+      "start": 4790.402,
+      "end": 4790.41,
+      "speaker": "host",
+      "text": "就是如果我看到大家整个欧洲人看到了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 65,
+      "start": 4790.41,
+      "end": 4790.413,
+      "speaker": "host",
+      "text": "有人说是14,有人是16。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 66,
+      "start": 4790.413,
+      "end": 4790.415,
+      "speaker": "host",
+      "text": "应该是16,我记得啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 67,
+      "start": 4790.415,
+      "end": 4790.421,
+      "speaker": "host",
+      "text": "如果其他的欧洲国家人们看到了说,法国的皇帝竟然可以被砍头,那其他人也可以被砍头。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 68,
+      "start": 4790.421,
+      "end": 4790.429,
+      "speaker": "host",
+      "text": "所以其他欧洲正常的那些原来的皇帝们就很紧张。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 69,
+      "start": 4790.429,
+      "end": 4790.432,
+      "speaker": "host",
+      "text": "所以就组成了反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 70,
+      "start": 4790.432,
+      "end": 4790.436,
+      "speaker": "host",
+      "text": "这头只要是来欺负法国的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 71,
+      "start": 4790.436,
+      "end": 4790.438,
+      "speaker": "host",
+      "text": "你一定有谁?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 72,
+      "start": 4790.438,
+      "end": 4790.44,
+      "speaker": "host",
+      "text": "你一定有英国。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 73,
+      "start": 4790.44,
+      "end": 4790.443,
+      "speaker": "host",
+      "text": "因为大家知道英国跟法国是仇嘛,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 74,
+      "start": 4790.443,
+      "end": 4790.446,
+      "speaker": "host",
+      "text": "英法战争曾经打了百年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 75,
+      "start": 4790.446,
+      "end": 4790.459,
+      "speaker": "host",
+      "text": "英国,然后呢,再包括后来大家所知道的这个其他的国家,当然其中一个主力就是当时的沙俄,他们每次就组成各种各样的这个反法联盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 76,
+      "start": 4790.459,
+      "end": 4790.462,
+      "speaker": "host",
+      "text": "一次又一次,一次又一次。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 77,
+      "start": 4790.462,
+      "end": 4790.469,
+      "speaker": "host",
+      "text": "然后在这之前的拿破仑的战争其实主要还是正义性的,因为他要保护自己的这个成果,保护自己的国民。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 78,
+      "start": 4790.469,
+      "end": 4790.474,
+      "speaker": "host",
+      "text": "但到1812年的开始,他是进攻了一次俄罗斯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 79,
+      "start": 4790.474,
+      "end": 4790.478,
+      "speaker": "host",
+      "text": "他带过去的据说有50万之众的部队。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 80,
+      "start": 4790.478,
+      "end": 4790.484,
+      "speaker": "host",
+      "text": "但是一经攻到莫斯科的时候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 81,
+      "start": 4790.484,
+      "end": 4790.489,
+      "speaker": "host",
+      "text": "他没有想到俄罗斯人会那样的,就是把城一烧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 82,
+      "start": 4790.489,
+      "end": 4790.491,
+      "speaker": "host",
+      "text": "人就往后退。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 83,
+      "start": 4790.491,
+      "end": 4790.497,
+      "speaker": "host",
+      "text": "他一路打过来之后需要补给的时候,发现这是一座烧的空空荡荡的城,什么都没有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 84,
+      "start": 4790.497,
+      "end": 4790.5,
+      "speaker": "host",
+      "text": "然后又正好逢到了冬天,零下几十度啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 85,
+      "start": 4790.5,
+      "end": 4790.502,
+      "speaker": "host",
+      "text": "你想俄罗斯的冬天多冷。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 86,
+      "start": 4790.502,
+      "end": 4790.506,
+      "speaker": "host",
+      "text": "所以回来之后士气还有元气都大伤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 87,
+      "start": 4790.506,
+      "end": 4790.513,
+      "speaker": "host",
+      "text": "所以在这个之后,他逐渐就开始很难恢复到原备有的样子了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 88,
+      "start": 4790.513,
+      "end": 4790.514,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 89,
+      "start": 4790.514,
+      "end": 4790.52,
+      "speaker": "host",
+      "text": "在1814年第六次反法同盟的时候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 90,
+      "start": 4790.52,
+      "end": 4790.522,
+      "speaker": "host",
+      "text": "拿破仑就失败了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 91,
+      "start": 4790.522,
+      "end": 4790.527,
+      "speaker": "host",
+      "text": "失败之后他被流放到一个岛上,但是离法国很近的岛叫什么?叫厄尔巴岛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 92,
+      "start": 4790.527,
+      "end": 4790.533,
+      "speaker": "host",
+      "text": "这个时候于是就产生了非常经典的一句,哎,我是不是已经到明明的时间了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 93,
+      "start": 4790.533,
+      "end": 4790.536,
+      "speaker": "host",
+      "text": "我是不是已经占他时间了?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 94,
+      "start": 4790.536,
+      "end": 4790.537,
+      "speaker": "guest",
+      "text": "没事,你讲。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 95,
+      "start": 4790.537,
+      "end": 4790.54,
+      "speaker": "guest",
+      "text": "再讲讲。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 96,
+      "start": 4790.54,
+      "end": 4790.542,
+      "speaker": "host",
+      "text": "我把这句话说完。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 97,
+      "start": 4790.542,
+      "end": 4790.544,
+      "speaker": "guest",
+      "text": "没事,再讲半个小时。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 98,
+      "start": 4790.544,
+      "end": 4790.547,
+      "speaker": "host",
+      "text": "你别,你别,你别快,赶快来。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 99,
+      "start": 4790.547,
+      "end": 4790.551,
+      "speaker": "host",
+      "text": "你先来你站着,或者省得一会大家想你,大家都这在呼吁你呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 100,
+      "start": 4790.551,
+      "end": 4790.555,
+      "speaker": "host",
+      "text": "有一句话是这样子的,叫做Able",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 101,
+      "start": 4790.555,
+      "end": 4790.556,
+      "speaker": "guest",
+      "text": "这个吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 102,
+      "start": 4790.556,
+      "end": 4790.56,
+      "speaker": "host",
+      "text": "was I",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 103,
+      "start": 4790.56,
+      "end": 4790.566,
+      "speaker": "host",
+      "text": "I saw Elba。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 104,
+      "start": 4790.566,
+      "end": 4790.572,
+      "speaker": "host",
+      "text": "这是非常经典的一句名言,大家看说Able was I",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 105,
+      "start": 4790.572,
+      "end": 4790.575,
+      "speaker": "host",
+      "text": "I saw Elba。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 106,
+      "start": 4790.575,
+      "end": 4790.585,
+      "speaker": "host",
+      "text": "什么意思?就是在我看见厄尔巴岛,这个是古中世纪的英语,它叫表示什么什么之前,它相当于大家所学过的before一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 107,
+      "start": 4790.585,
+      "end": 4790.587,
+      "speaker": "host",
+      "text": "这句话极其经典。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 108,
+      "start": 4790.587,
+      "end": 4790.592,
+      "speaker": "host",
+      "text": "学英语的人应该都听过这句话,说在我看见厄尔巴岛之前,我无所不能。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 109,
+      "start": 4790.592,
+      "end": 4790.599,
+      "speaker": "host",
+      "text": "但是这句话后来我特别喜欢一个翻译家叫谁?许渊冲老师。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 110,
+      "start": 4790.599,
+      "end": 4791.005,
+      "speaker": "host",
+      "text": "许渊冲老师当年在北大的课堂上给孩子们翻译过这个版本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 111,
+      "start": 4791.005,
+      "end": 4791.01,
+      "speaker": "host",
+      "text": "这句话平常翻译叫做在我看见厄尔巴岛之前,我无所不能。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 112,
+      "start": 4791.01,
+      "end": 4791.014,
+      "speaker": "host",
+      "text": "许渊冲老师翻译的版本叫做。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 113,
+      "start": 4791.014,
+      "end": 4791.016,
+      "speaker": "host",
+      "text": "不到",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 114,
+      "start": 4791.016,
+      "end": 4791.019,
+      "speaker": "host",
+      "text": "我们翻译为厄尔巴岛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 115,
+      "start": 4791.019,
+      "end": 4791.025,
+      "speaker": "host",
+      "text": "或者叫做俄尔巴岛也行,啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 116,
+      "start": 4791.025,
+      "end": 4791.028,
+      "speaker": "host",
+      "text": "许老师翻译叫做不到俄岛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 117,
+      "start": 4791.028,
+      "end": 4791.031,
+      "speaker": "host",
+      "text": "不到俄岛我不倒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 118,
+      "start": 4791.031,
+      "end": 4791.033,
+      "speaker": "host",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 119,
+      "start": 4791.033,
+      "end": 4791.037,
+      "speaker": "host",
+      "text": "许老师翻译就是,所以你看他不止是英语好,法语好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 120,
+      "start": 4791.037,
+      "end": 4791.039,
+      "speaker": "host",
+      "text": "他中文更好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 121,
+      "start": 4791.039,
+      "end": 4791.041,
+      "speaker": "host",
+      "text": "不到俄岛我不倒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 122,
+      "start": 4791.041,
+      "end": 4791.043,
+      "speaker": "host",
+      "text": "你发现没?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 123,
+      "start": 4791.043,
+      "end": 4791.047,
+      "speaker": "host",
+      "text": "在我没有到这个岛上之前,我是从未倒下过的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 124,
+      "start": 4791.047,
+      "end": 4791.05,
+      "speaker": "host",
+      "text": "对吧?我是令整个欧洲闻风丧胆的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 125,
+      "start": 4791.05,
+      "end": 4791.053,
+      "speaker": "host",
+      "text": "我挫败了他们六次的联合攻击。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 126,
+      "start": 4791.053,
+      "end": 4791.057,
+      "speaker": "host",
+      "text": "我甚至昨天打着西班牙又现在打着反法同盟呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 127,
+      "start": 4791.057,
+      "end": 4791.06,
+      "speaker": "host",
+      "text": "但是他被流放到厄尔巴岛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 128,
+      "start": 4791.06,
+      "end": 4791.066,
+      "speaker": "host",
+      "text": "厄尔巴岛上之后,他中间大概停了几个月就逃回了法国。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 129,
+      "start": 4791.066,
+      "end": 4791.068,
+      "speaker": "host",
+      "text": "这段就特别经典了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 130,
+      "start": 4791.068,
+      "end": 4791.07,
+      "speaker": "host",
+      "text": "逃回法国的路上。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 131,
+      "start": 4791.07,
+      "end": 4791.082,
+      "speaker": "host",
+      "text": "然后呢,一路遇见了被路易18皇帝,就是原来那个皇帝,这个原来的王朝派来的皇帝去阻碍他的部队的时候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 132,
+      "start": 4791.082,
+      "end": 4791.086,
+      "speaker": "host",
+      "text": "每次在路上只要见到了,拿破仑就问说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 133,
+      "start": 4791.086,
+      "end": 4791.089,
+      "speaker": "host",
+      "text": "你确定要与我为战吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 134,
+      "start": 4791.089,
+      "end": 4791.094,
+      "speaker": "host",
+      "text": "你确定要与你们曾经这个尊重的拿破仑皇帝为战吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 135,
+      "start": 4791.094,
+      "end": 4791.097,
+      "speaker": "host",
+      "text": "那些人就反听完之后,这不是我的男神啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 136,
+      "start": 4791.097,
+      "end": 4791.1,
+      "speaker": "host",
+      "text": "这是偶像,这我战神啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 137,
+      "start": 4791.1,
+      "end": 4791.102,
+      "speaker": "host",
+      "text": "对吧,这是我们在欧洲立起来的人啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 138,
+      "start": 4791.102,
+      "end": 4791.105,
+      "speaker": "host",
+      "text": "大家纷纷倒戈。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 139,
+      "start": 4791.105,
+      "end": 4791.112,
+      "speaker": "host",
+      "text": "所以拿破仑就一路走一路把那些本要注定阻碍他的人收编到他的部队里,重新又夺回来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 140,
+      "start": 4791.112,
+      "end": 4791.117,
+      "speaker": "host",
+      "text": "然后接下来他就面临了最后一次第17次,第不是第,第七次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 141,
+      "start": 4791.117,
+      "end": 4791.119,
+      "speaker": "host",
+      "text": "怎么能说17?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 142,
+      "start": 4791.119,
+      "end": 4791.121,
+      "speaker": "host",
+      "text": "第七次反法同盟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 143,
+      "start": 4791.121,
+      "end": 4791.124,
+      "speaker": "host",
+      "text": "但这次实力悬殊特别大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 144,
+      "start": 4791.124,
+      "end": 4791.126,
+      "speaker": "host",
+      "text": "实力悬殊特别大。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 145,
+      "start": 4791.126,
+      "end": 4791.13,
+      "speaker": "host",
+      "text": "拿破仑的部队根本没有反法同盟的部队人是多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 146,
+      "start": 4791.13,
+      "end": 4791.134,
+      "speaker": "host",
+      "text": "但是有時候也看歷史怎麼選擇你呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 147,
+      "start": 4791.134,
+      "end": 4791.137,
+      "speaker": "host",
+      "text": "拿破仑以少胜多的战役也不是没有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 148,
+      "start": 4791.137,
+      "end": 4791.139,
+      "speaker": "host",
+      "text": "大家知道他在20多岁的时候曾经就。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 149,
+      "start": 4791.139,
+      "end": 4791.141,
+      "speaker": "host",
+      "text": "打过埃及。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 150,
+      "start": 4791.141,
+      "end": 4791.145,
+      "speaker": "host",
+      "text": "那个时候2.5万的法军打败了10万的埃及部队。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 151,
+      "start": 4791.145,
+      "end": 4791.15,
+      "speaker": "host",
+      "text": "所以拿破仑是非常有能力,而且有经验能够以少胜多的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 152,
+      "start": 4791.15,
+      "end": 4791.153,
+      "speaker": "host",
+      "text": "但是在第七次的时候,究竟发生了什么?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 153,
+      "start": 4791.153,
+      "end": 4791.157,
+      "speaker": "host",
+      "text": "我不耽搁大家时间,已经到10点了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 154,
+      "start": 4791.157,
+      "end": 4791.162,
+      "speaker": "host",
+      "text": "晚上我继续给大家讲这本改变人类历史的十个瞬间,人类群星闪耀时。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 155,
+      "start": 4791.162,
+      "end": 4791.165,
+      "speaker": "host",
+      "text": "当然这本书你准备上一个两万库存左右。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 156,
+      "start": 4791.165,
+      "end": 4791.167,
+      "speaker": "host",
+      "text": "晚上我再讲,好吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 157,
+      "start": 4791.167,
+      "end": 4791.169,
+      "speaker": "host",
+      "text": "我们欢迎明明啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 158,
+      "start": 4791.169,
+      "end": 4791.171,
+      "speaker": "host",
+      "text": "别跑啊,跑这。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 159,
+      "start": 4791.171,
+      "end": 4791.174,
+      "speaker": "guest",
+      "text": "拿破仑还没讲完是吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 160,
+      "start": 4791.174,
+      "end": 4791.175,
+      "speaker": "host",
+      "text": "没讲完没讲完。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 161,
+      "start": 4791.175,
+      "end": 4791.179,
+      "speaker": "host",
+      "text": "这个再拖下去就拖时间太长了,不好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 162,
+      "start": 4791.179,
+      "end": 4791.182,
+      "speaker": "host",
+      "text": "这个书导演说书已经没人卖不动了都。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 163,
+      "start": 4791.182,
+      "end": 4791.183,
+      "speaker": "guest",
+      "text": "卖不动了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 164,
+      "start": 4791.183,
+      "end": 4791.185,
+      "speaker": "host",
+      "text": "对,那晚上再讲一部。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 165,
+      "start": 4791.185,
+      "end": 4791.186,
+      "speaker": "guest",
+      "text": "晚上再讲。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 166,
+      "start": 4791.186,
+      "end": 4791.187,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 167,
+      "start": 4791.187,
+      "end": 4791.188,
+      "speaker": "guest",
+      "text": "讲一个你可以撤。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 168,
+      "start": 4791.188,
+      "end": 4791.19,
+      "speaker": "host",
+      "text": "生蚝,有生蚝没拿上来,没吃点。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 169,
+      "start": 4791.19,
+      "end": 4791.192,
+      "speaker": "host",
+      "text": "生蚝特别好吃,生蚝。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 170,
+      "start": 4791.192,
+      "end": 4791.193,
+      "speaker": "guest",
+      "text": "赶紧给明明补一补。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 171,
+      "start": 4791.193,
+      "end": 4791.194,
+      "speaker": "host",
+      "text": "赶紧给什么补一补?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 172,
+      "start": 4791.194,
+      "end": 4791.195,
+      "speaker": "guest",
+      "text": "给他补一补。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 173,
+      "start": 4791.195,
+      "end": 4791.196,
+      "speaker": "host",
+      "text": "什么这两天熬夜班呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 174,
+      "start": 4791.196,
+      "end": 4791.197,
+      "speaker": "guest",
+      "text": "这个吃了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 175,
+      "start": 4791.197,
+      "end": 4791.2,
+      "speaker": "guest",
+      "text": "昨天一天框吃框吃吃了四个海参。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 176,
+      "start": 4791.2,
+      "end": 4791.201,
+      "speaker": "host",
+      "text": "你吃了四个海参。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 177,
+      "start": 4791.201,
+      "end": 4791.209,
+      "speaker": "guest",
+      "text": "我我我不知道这个一底线只能吃一个,然后我吃的过程中朋友在提醒我,玩这一天只能吃一个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 178,
+      "start": 4791.209,
+      "end": 4791.212,
+      "speaker": "host",
+      "text": "看你来晚了,我把三个大的都吃了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 179,
+      "start": 4791.212,
+      "end": 4791.214,
+      "speaker": "guest",
+      "text": "然后就吃了四个。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 180,
+      "start": 4791.214,
+      "end": 4791.22,
+      "speaker": "guest",
+      "text": "紧跟上他们就说四个海参,一个反正两个夜班,你自己算。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 181,
+      "start": 4791.22,
+      "end": 4791.223,
+      "speaker": "guest",
+      "text": "然后就给自己又争取了八个夜班。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 182,
+      "start": 4791.223,
+      "end": 4791.227,
+      "speaker": "host",
+      "text": "所以说师傅的福气都在后头呢,而且都是靠自己努力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 183,
+      "start": 4791.227,
+      "end": 4791.229,
+      "speaker": "host",
+      "text": "一点一点就。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 184,
+      "start": 4791.229,
+      "end": 4791.23,
+      "speaker": "guest",
+      "text": "靠自己努力挣来的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 185,
+      "start": 4791.23,
+      "end": 4791.232,
+      "speaker": "host",
+      "text": "一点一点努力挣来的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 186,
+      "start": 4791.232,
+      "end": 4791.234,
+      "speaker": "other",
+      "text": "明天你俩谁去直播啊?",
+      "text_normalized": "",
+      "confidence": 0.75,
+      "chunk_id": 4
+    },
+    {
+      "idx": 187,
+      "start": 4791.234,
+      "end": 4791.235,
+      "speaker": "host",
+      "text": "我去。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 188,
+      "start": 4791.235,
+      "end": 4791.237,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 189,
+      "start": 4791.237,
+      "end": 4791.238,
+      "speaker": "host",
+      "text": "明天吗?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 190,
+      "start": 4791.238,
+      "end": 4791.24,
+      "speaker": "host",
+      "text": "明天苹果。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 191,
+      "start": 4791.24,
+      "end": 4791.243,
+      "speaker": "host",
+      "text": "明天苹果的桃,如果大家想桃的话,明天期待啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 192,
+      "start": 4791.243,
+      "end": 4791.245,
+      "speaker": "host",
+      "text": "给他换了一个筷子是吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 193,
+      "start": 4791.245,
+      "end": 4791.246,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 194,
+      "start": 4791.246,
+      "end": 4791.248,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 195,
+      "start": 4791.248,
+      "end": 4791.25,
+      "speaker": "guest",
+      "text": "在咱们这个号播还是再别的?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 196,
+      "start": 4791.25,
+      "end": 4791.253,
+      "speaker": "host",
+      "text": "在这个号中间应该会连麦过来的这事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 197,
+      "start": 4791.253,
+      "end": 4791.255,
+      "speaker": "guest",
+      "text": "味道好吃啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 198,
+      "start": 4791.255,
+      "end": 4791.257,
+      "speaker": "host",
+      "text": "乳山生蚝啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 199,
+      "start": 4791.257,
+      "end": 4791.258,
+      "speaker": "host",
+      "text": "想的朋友自己拍。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 200,
+      "start": 4791.258,
+      "end": 4791.26,
+      "speaker": "host",
+      "text": "这个88块钱,对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 201,
+      "start": 4791.26,
+      "end": 4791.262,
+      "speaker": "host",
+      "text": "这生蚝到乳山。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 202,
+      "start": 4791.262,
+      "end": 4791.264,
+      "speaker": "guest",
+      "text": "到手约12个左右啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 203,
+      "start": 4791.264,
+      "end": 4791.265,
+      "speaker": "guest",
+      "text": "都大的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 204,
+      "start": 4791.265,
+      "end": 4791.267,
+      "speaker": "host",
+      "text": "我给大家看它确实大。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 205,
+      "start": 4791.267,
+      "end": 4791.269,
+      "speaker": "host",
+      "text": "这是取开了一半的生蚝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 206,
+      "start": 4791.269,
+      "end": 4791.272,
+      "speaker": "guest",
+      "text": "明明你不给你兄弟一会,你是刚来不知道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 207,
+      "start": 4791.272,
+      "end": 4791.275,
+      "speaker": "guest",
+      "text": "我兄弟刚才把三个大的都炫了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 208,
+      "start": 4791.275,
+      "end": 4791.277,
+      "speaker": "host",
+      "text": "他兄弟炫了三个大的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 209,
+      "start": 4791.277,
+      "end": 4791.278,
+      "speaker": "host",
+      "text": "给他留了俩小的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 210,
+      "start": 4791.278,
+      "end": 4791.281,
+      "speaker": "host",
+      "text": "不你还有一会给大家可以再蒸一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 211,
+      "start": 4791.281,
+      "end": 4791.283,
+      "speaker": "guest",
+      "text": "开四包牌,开四包牌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 212,
+      "start": 4791.283,
+      "end": 4791.284,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 213,
+      "start": 4791.284,
+      "end": 4791.285,
+      "speaker": "host",
+      "text": "快四包牌。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 214,
+      "start": 4791.285,
+      "end": 4791.286,
+      "speaker": "guest",
+      "text": "再四包牌。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 215,
+      "start": 4791.286,
+      "end": 4791.29,
+      "speaker": "guest",
+      "text": "这个回去很好做啊,上面拿那个刷子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 216,
+      "start": 4791.29,
+      "end": 4791.292,
+      "speaker": "guest",
+      "text": "其实这还算干净啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 217,
+      "start": 4791.292,
+      "end": 4791.294,
+      "speaker": "guest",
+      "text": "把这稍微刷一下。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 218,
+      "start": 4791.294,
+      "end": 4791.296,
+      "speaker": "host",
+      "text": "还是得刷,要不然蒸完之后锅里全是沙子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 219,
+      "start": 4791.296,
+      "end": 4791.298,
+      "speaker": "guest",
+      "text": "对对对,但这个不是很多。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 220,
+      "start": 4791.298,
+      "end": 4791.304,
+      "speaker": "guest",
+      "text": "拿刷子把这个外边一刷,刷完之后往锅里边一放一蒸就完事了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 221,
+      "start": 4791.304,
+      "end": 4791.305,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 222,
+      "start": 4791.305,
+      "end": 4791.309,
+      "speaker": "guest",
+      "text": "然后是不是还送个刀啊什么之类的?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 223,
+      "start": 4791.309,
+      "end": 4791.311,
+      "speaker": "guest",
+      "text": "好刀什么有没有?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 224,
+      "start": 4791.311,
+      "end": 4791.313,
+      "speaker": "host",
+      "text": "应该是有好刀的吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 225,
+      "start": 4791.313,
+      "end": 4791.314,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 226,
+      "start": 4791.314,
+      "end": 4791.317,
+      "speaker": "guest",
+      "text": "算了,这个我也吃了吧,别浪费了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 227,
+      "start": 4791.317,
+      "end": 4791.318,
+      "speaker": "host",
+      "text": "你吃你吃。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 228,
+      "start": 4791.318,
+      "end": 4791.32,
+      "speaker": "host",
+      "text": "还有应该还有这个对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 229,
+      "start": 4791.32,
+      "end": 4791.322,
+      "speaker": "host",
+      "text": "晚上如果再播到的,还可以再蒸一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 230,
+      "start": 4791.322,
+      "end": 4791.326,
+      "speaker": "host",
+      "text": "因为生蚝它送到之后,你就赶快吃,也别放。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 231,
+      "start": 4791.326,
+      "end": 4791.329,
+      "speaker": "host",
+      "text": "因为你送到肯定它很快就死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 232,
+      "start": 4791.329,
+      "end": 4791.331,
+      "speaker": "host",
+      "text": "你这时候吃它口感还好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 233,
+      "start": 4791.331,
+      "end": 4791.335,
+      "speaker": "guest",
+      "text": "它的保质期冷藏的话,大概几天,大家尽快吃到啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 234,
+      "start": 4791.335,
+      "end": 4791.341,
+      "speaker": "host",
+      "text": "你放的时间久了,它口感会越来越差,而且那个腥味就出来了,其实新鲜的生蚝是不腥的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 235,
+      "start": 4791.341,
+      "end": 4791.343,
+      "speaker": "host",
+      "text": "海边的人都知道这个事。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 236,
+      "start": 4791.343,
+      "end": 4791.349,
+      "speaker": "guest",
+      "text": "说到赶紧吃,这个不能放,放时间长,它这个口就张开了,口张开就就代表已经死了,就不行了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 237,
+      "start": 4791.349,
+      "end": 4791.356,
+      "speaker": "guest",
+      "text": "再一个呢,是不要寄希望于自己在家里倒点水能把这个养几天是不行的,它需要那种海水的环境。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 238,
+      "start": 4791.356,
+      "end": 4791.36,
+      "speaker": "guest",
+      "text": "所以有时候你到一些线下门店去买的时候,他为了让你养,他会给你带点海水。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 239,
+      "start": 4791.36,
+      "end": 4791.363,
+      "speaker": "host",
+      "text": "其实那那个水他们是按着海水的比例调的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 240,
+      "start": 4791.363,
+      "end": 4791.366,
+      "speaker": "guest",
+      "text": "对,按着海水的盐度比去调的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 241,
+      "start": 4791.366,
+      "end": 4791.367,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 242,
+      "start": 4791.367,
+      "end": 4791.37,
+      "speaker": "guest",
+      "text": "但即使是那种拿回去其实也养不了多久。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 243,
+      "start": 4791.37,
+      "end": 4791.371,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 244,
+      "start": 4791.371,
+      "end": 4791.372,
+      "speaker": "guest",
+      "text": "两三天。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 245,
+      "start": 4791.372,
+      "end": 4791.373,
+      "speaker": "guest",
+      "text": "就不行了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 246,
+      "start": 4791.373,
+      "end": 4791.378,
+      "speaker": "host",
+      "text": "如果你比如说今天你中午收到了,你就把它做了,但是晚上大家才能回来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 247,
+      "start": 4791.378,
+      "end": 4791.38,
+      "speaker": "host",
+      "text": "你可以是这样,比如你蒸好之后放到碗里。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 248,
+      "start": 4791.38,
+      "end": 4791.381,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 249,
+      "start": 4791.381,
+      "end": 4791.382,
+      "speaker": "guest",
+      "text": "好的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 250,
+      "start": 4791.382,
+      "end": 4791.386,
+      "speaker": "host",
+      "text": "蒸好之后放在碗里,把酱汁调好,晚上回来大家一会去吃也行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 251,
+      "start": 4791.386,
+      "end": 4791.387,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 252,
+      "start": 4791.387,
+      "end": 4791.39,
+      "speaker": "host",
+      "text": "我就不在这捣乱了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 253,
+      "start": 4791.39,
+      "end": 4791.392,
+      "speaker": "host",
+      "text": "他说我一直这咽口水,真的忍不住了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 254,
+      "start": 4791.392,
+      "end": 4791.393,
+      "speaker": "host",
+      "text": "定个饭去。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 255,
+      "start": 4791.393,
+      "end": 4791.395,
+      "speaker": "guest",
+      "text": "好,赶紧去吃饭。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 256,
+      "start": 4791.395,
+      "end": 4791.396,
+      "speaker": "guest",
+      "text": "一会几点?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 257,
+      "start": 4791.396,
+      "end": 4791.398,
+      "speaker": "host",
+      "text": "呃,我今天晚上是几点?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 258,
+      "start": 4791.398,
+      "end": 4791.4,
+      "speaker": "guest",
+      "text": "今天晚上",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 259,
+      "start": 4791.4,
+      "end": 4791.402,
+      "speaker": "guest",
+      "text": "在我前边应该是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 260,
+      "start": 4791.402,
+      "end": 4791.404,
+      "speaker": "guest",
+      "text": "7点45。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 261,
+      "start": 4791.404,
+      "end": 4791.406,
+      "speaker": "host",
+      "text": "还是7点45到10点多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 262,
+      "start": 4791.406,
+      "end": 4791.408,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 263,
+      "start": 4791.408,
+      "end": 4791.409,
+      "speaker": "host",
+      "text": "守夜人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 264,
+      "start": 4791.409,
+      "end": 4791.41,
+      "speaker": "guest",
+      "text": "嗯,守夜人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 265,
+      "start": 4791.41,
+      "end": 4791.414,
+      "speaker": "host",
+      "text": "这个这个那电视就啥?Game of Thrones,冰与火之歌里头的那个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 266,
+      "start": 4791.414,
+      "end": 4791.415,
+      "speaker": "guest",
+      "text": "哦。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 267,
+      "start": 4791.415,
+      "end": 4791.417,
+      "speaker": "host",
+      "text": "城墙上的守夜人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 268,
+      "start": 4791.417,
+      "end": 4791.418,
+      "speaker": "host",
+      "text": "北境守夜人。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 269,
+      "start": 4791.418,
+      "end": 4791.419,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 270,
+      "start": 4791.419,
+      "end": 4791.422,
+      "speaker": "host",
+      "text": "给明明多吃点生蚝。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 271,
+      "start": 4791.422,
+      "end": 4791.424,
+      "speaker": "host",
+      "text": "吃一个生蚝,手一信息。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 272,
+      "start": 4791.424,
+      "end": 4791.427,
+      "speaker": "host",
+      "text": "晚上把剩下生蚝全部给明明一蒸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 273,
+      "start": 4791.427,
+      "end": 4791.428,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 274,
+      "start": 4791.428,
+      "end": 4791.429,
+      "speaker": "host",
+      "text": "拜拜。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    },
+    {
+      "idx": 275,
+      "start": 4791.429,
+      "end": 4791.431,
+      "speaker": "guest",
+      "text": "我这7月包了,8月都包了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 276,
+      "start": 4791.431,
+      "end": 4791.432,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 4
+    }
+  ]
+}

@@ -1,0 +1,2316 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.003,
+      "end": 1.003,
+      "speaker": "host",
+      "text": "给你找一下。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 4.073,
+      "end": 6.003,
+      "speaker": "host",
+      "text": "哎呀，真的现在太严格了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 6.003,
+      "end": 6.453,
+      "speaker": "guest",
+      "text": "咋的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 7.083,
+      "end": 10.023,
+      "speaker": "host",
+      "text": "大家这个扣工资扣得非常准时啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 10.023,
+      "end": 10.303,
+      "speaker": "guest",
+      "text": "是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 11.023,
+      "end": 13.003,
+      "speaker": "host",
+      "text": "11分钟你开始扣。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 14.133,
+      "end": 17.983,
+      "speaker": "host",
+      "text": "这个从东方小孙，从明明扣到东方小孙。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 18.233,
+      "end": 20.083,
+      "speaker": "host",
+      "text": "从东方小孙现在马上都要扣到鱼老师了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 20.083,
+      "end": 20.573,
+      "speaker": "guest",
+      "text": "我天哪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 20.673,
+      "end": 21.493,
+      "speaker": "guest",
+      "text": "耳朵根都红了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 21.653,
+      "end": 22.373,
+      "speaker": "host",
+      "text": "真的是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 23.083,
+      "end": 24.493,
+      "speaker": "guest",
+      "text": "咱昨天是从这开始唱的是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 24.693,
+      "end": 25.073,
+      "speaker": "guest",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 25.683,
+      "end": 26.233,
+      "speaker": "host",
+      "text": "谁唱啊？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 26.543,
+      "end": 27.023,
+      "speaker": "guest",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 27.423,
+      "end": 27.703,
+      "speaker": "host",
+      "text": "从。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 28.213,
+      "end": 28.603,
+      "speaker": "guest",
+      "text": "等我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 29.003,
+      "end": 30.003,
+      "speaker": "guest",
+      "text": "Wait for me.",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 31.003,
+      "end": 31.603,
+      "speaker": "guest",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 32.003,
+      "end": 32.503,
+      "speaker": "host",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 32.903,
+      "end": 33.403,
+      "speaker": "guest",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 33.803,
+      "end": 34.303,
+      "speaker": "host",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 34.703,
+      "end": 35.203,
+      "speaker": "guest",
+      "text": "从前。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 35.703,
+      "end": 40.003,
+      "speaker": "guest",
+      "text": "从前在，可会留在巴来。",
+      "text_normalized": "",
+      "confidence": 0.75,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 40.003,
+      "end": 41.003,
+      "speaker": "host",
+      "text": "我们再来一下。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 41.003,
+      "end": 41.303,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 42.003,
+      "end": 44.003,
+      "speaker": "host",
+      "text": "来，一二三走。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 44.003,
+      "end": 49.003,
+      "speaker": "guest",
+      "text": "从前在，可会留在巴来。",
+      "text_normalized": "",
+      "confidence": 0.75,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 51.003,
+      "end": 56.003,
+      "speaker": "guest",
+      "text": "红红朗月，春晚在，怎到你。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 56.003,
+      "end": 100.003,
+      "speaker": "guest",
+      "text": "爱心重新中心，蒙平开。天边你飘泊，不回来。不嗨，翻天爱嗨。再是该。能头病你外。不三三，你嘛我，是该。问我应该，三三，心你怀。情愿冰后，为你再巴来。我愿留在，放任思怀。心跳是为谁，但会再嗨。你呀生生来养你，再来。不嗨，翻天爱嗨。再是该。能头病你外。不三三，你嘛我，是该。问我应该，三三，心你怀。不嗨，翻天爱嗨。再是该。能头病你外。不三三，你嘛我，是该。问我应该，三三，心你怀。我应该。三三，心你怀。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 212.003,
+      "end": 213.003,
+      "speaker": "host",
+      "text": "结尾翻车。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 213.003,
+      "end": 216.003,
+      "speaker": "guest",
+      "text": "结尾，结尾啥也没看见，啥也没看见，挺好的，是不是挺好的？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 216.003,
+      "end": 218.003,
+      "speaker": "guest",
+      "text": "大家把挺好的打在评论区。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 218.003,
+      "end": 219.003,
+      "speaker": "host",
+      "text": "啊，打在评论区。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 219.003,
+      "end": 220.003,
+      "speaker": "host",
+      "text": "再来一首，来，欢迎七七再来一首。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 220.003,
+      "end": 220.503,
+      "speaker": "guest",
+      "text": "走了啊，走了走了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 220.503,
+      "end": 221.503,
+      "speaker": "host",
+      "text": "你要不给大家再来一首，再来一首。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 221.503,
+      "end": 222.003,
+      "speaker": "guest",
+      "text": "再来一首嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 222.003,
+      "end": 223.003,
+      "speaker": "host",
+      "text": "对对对，你再来一首，没事。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 223.003,
+      "end": 224.003,
+      "speaker": "guest",
+      "text": "那再来啥？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 224.003,
+      "end": 225.003,
+      "speaker": "guest",
+      "text": "那咱俩，咱俩再来个萤火虫吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 225.003,
+      "end": 225.503,
+      "speaker": "host",
+      "text": "好好好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 226.003,
+      "end": 226.503,
+      "speaker": "guest",
+      "text": "是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 226.503,
+      "end": 227.003,
+      "speaker": "host",
+      "text": "没事。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 227.003,
+      "end": 228.503,
+      "speaker": "guest",
+      "text": "董老师唱歌也很好，也很好听。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 228.503,
+      "end": 229.003,
+      "speaker": "guest",
+      "text": "我得，对不对？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 229.503,
+      "end": 230.003,
+      "speaker": "guest",
+      "text": "咱们就一会唱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 230.003,
+      "end": 232.003,
+      "speaker": "host",
+      "text": "大家右下角小黄车自己有自己买啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 233.003,
+      "end": 233.503,
+      "speaker": "guest",
+      "text": "来。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 235.003,
+      "end": 238.003,
+      "speaker": "guest",
+      "text": "风花声，都入空门这沙了世人。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 238.003,
+      "end": 239.003,
+      "speaker": "guest",
+      "text": "高吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 239.003,
+      "end": 240.003,
+      "speaker": "host",
+      "text": "嗯，还行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 240.003,
+      "end": 243.003,
+      "speaker": "guest",
+      "text": "愿来生，一寸青砖有几本。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 244.003,
+      "end": 247.003,
+      "speaker": "guest",
+      "text": "如你默然，生死孤灯。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 247.003,
+      "end": 252.003,
+      "speaker": "guest",
+      "text": "孤灯一圈，又一圈的年轮。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 252.003,
+      "end": 254.003,
+      "speaker": "host",
+      "text": "断了几层，断了谁。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 254.003,
+      "end": 255.003,
+      "speaker": "host",
+      "text": "他跟我不一样啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 255.003,
+      "end": 258.003,
+      "speaker": "guest",
+      "text": "断了几层，断了谁的魂。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 258.003,
+      "end": 303.003,
+      "speaker": "guest",
+      "text": "任之半生，转山转山，清他的山门。如果再等，你是真身。那就上春，他你他一句古城。月分飞，就过里早木生。我听闻，你是忠一人。半步的，神，盘踞着老树根。石板上回荡的是，再等。月分飞。我听闻，你仍守着古城。曾叫木，你身，落在那座野村。人分我你身，跟是，我爱。人分我你身，跟是，我爱。",
+      "text_normalized": "",
+      "confidence": 0.7,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 350.003,
+      "end": 352.003,
+      "speaker": "host",
+      "text": "袁哥的调可能不太一样啊，对不起。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 353.003,
+      "end": 353.503,
+      "speaker": "guest",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 353.503,
+      "end": 354.003,
+      "speaker": "guest",
+      "text": "挺好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 354.003,
+      "end": 355.003,
+      "speaker": "host",
+      "text": "技上得特别棒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 355.003,
+      "end": 356.003,
+      "speaker": "guest",
+      "text": "哎呀，别夸我了，很开心。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 356.003,
+      "end": 358.003,
+      "speaker": "host",
+      "text": "过两天这个去黑龙江呢，继续也会唱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 358.003,
+      "end": 402.003,
+      "speaker": "host",
+      "text": "大家可以提前想一想，想让在哈尔滨的街头啊。在哈尔滨的街头想让七七唱什么歌？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 403.003,
+      "end": 404.003,
+      "speaker": "guest",
+      "text": "咋了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 408.003,
+      "end": 409.003,
+      "speaker": "guest",
+      "text": "下雪的哈尔滨。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 409.003,
+      "end": 410.003,
+      "speaker": "guest",
+      "text": "对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 410.003,
+      "end": 412.003,
+      "speaker": "host",
+      "text": "然后呢，让七七提前准备准备啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 412.003,
+      "end": 413.003,
+      "speaker": "guest",
+      "text": "走了啊，伙计们。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 413.003,
+      "end": 414.003,
+      "speaker": "guest",
+      "text": "加油。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 417.003,
+      "end": 418.003,
+      "speaker": "host",
+      "text": "啥几只？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 418.003,
+      "end": 419.003,
+      "speaker": "host",
+      "text": "还有多少单？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 421.003,
+      "end": 422.003,
+      "speaker": "guest",
+      "text": "没有了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 422.003,
+      "end": 423.003,
+      "speaker": "host",
+      "text": "没有了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 423.003,
+      "end": 424.003,
+      "speaker": "host",
+      "text": "那你放上来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 424.003,
+      "end": 425.003,
+      "speaker": "guest",
+      "text": "刚刚唱一首歌就没了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 426.003,
+      "end": 427.003,
+      "speaker": "host",
+      "text": "我以为我还能讲一会呢，行吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 428.003,
+      "end": 429.003,
+      "speaker": "host",
+      "text": "唱完就没了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 429.003,
+      "end": 431.003,
+      "speaker": "host",
+      "text": "挺好的，如果唱歌也能卖货的话。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 431.003,
+      "end": 432.003,
+      "speaker": "guest",
+      "text": "那太开心了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 432.003,
+      "end": 433.003,
+      "speaker": "host",
+      "text": "每天给大家带来全日开心。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 433.003,
+      "end": 437.003,
+      "speaker": "guest",
+      "text": "那一天就播24小时，一天有48小时就可以播96小时。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 439.003,
+      "end": 440.003,
+      "speaker": "host",
+      "text": "芝麻饼啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 440.003,
+      "end": 441.003,
+      "speaker": "guest",
+      "text": "这个还有最后1500单。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 441.003,
+      "end": 442.003,
+      "speaker": "host",
+      "text": "最后1500单是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 443.003,
+      "end": 444.003,
+      "speaker": "host",
+      "text": "回阳湖的黑芝麻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 445.003,
+      "end": 446.003,
+      "speaker": "host",
+      "text": "蜂蜜，鸡蛋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 447.003,
+      "end": 448.003,
+      "speaker": "host",
+      "text": "再加一些黑松露粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 449.003,
+      "end": 450.003,
+      "speaker": "host",
+      "text": "Nothing else.",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 451.003,
+      "end": 452.003,
+      "speaker": "host",
+      "text": "很干净啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 456.003,
+      "end": 500.003,
+      "speaker": "host",
+      "text": "你看我们盒子后面写的这句话叫做从扎根到破土。攀登的是节节向上的高峰啊，芝麻开花节节高嘛。从教育到助农，传承的是新方不变的初心。新方有一句话说得特别多，也说得特别久，也说得特别广。叫做通过解决他人的问题，来解决自己的问题。通过利他来利己，通过贡献来索取。稻盛和夫之前也说过一句话，叫做暴力他之心，行利他之事，结果自会好转。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 528.003,
+      "end": 528.503,
+      "speaker": "guest",
+      "text": "没了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 529.003,
+      "end": 529.503,
+      "speaker": "host",
+      "text": "行吧。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 538.003,
+      "end": 544.003,
+      "speaker": "host",
+      "text": "东方甄选的蓝莓原浆啊，野生蓝莓原浆产自大兴安岭深处。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 544.003,
+      "end": 549.003,
+      "speaker": "host",
+      "text": "然后呢，因为是野生的，没有添加，所以说它的口感确实比较酸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 549.003,
+      "end": 551.003,
+      "speaker": "host",
+      "text": "看您自己是不是喜欢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 552.003,
+      "end": 553.003,
+      "speaker": "host",
+      "text": "纯正，自然，清爽。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 553.003,
+      "end": 556.003,
+      "speaker": "host",
+      "text": "不添加，所以保留了原本食材的味道。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 556.003,
+      "end": 608.003,
+      "speaker": "host",
+      "text": "然后那口酸爽呢，可以让人从原本的这个生活啊，从闷热的午后啊，从比较强的节奏中突然抽离出来，感受一下山间的清风明月，感受一下清泉与溪流，感受一下清晨的露珠，感受一下驯鹿脖子上的铃铛清脆作响。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 608.003,
+      "end": 612.003,
+      "speaker": "host",
+      "text": "喝的时候如果嫌这个太稠啊，因为我们没有加水，所以它确实比较粘稠一些，看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 613.003,
+      "end": 615.003,
+      "speaker": "host",
+      "text": "是可以挂杯的，糊状的感觉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 615.003,
+      "end": 618.003,
+      "speaker": "host",
+      "text": "如果你嫌粘稠，你可以给里头加些水，加些蜂蜜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 619.003,
+      "end": 620.003,
+      "speaker": "host",
+      "text": "把它化开就好了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 623.003,
+      "end": 626.003,
+      "speaker": "host",
+      "text": "然后这个蓝莓原浆你喝一段时间你就会越来越爱上它的口感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 626.003,
+      "end": 628.003,
+      "speaker": "host",
+      "text": "确实第一次喝的时候比较酸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 628.003,
+      "end": 633.003,
+      "speaker": "host",
+      "text": "那种酸的让人感觉到有一些难以适应。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 633.003,
+      "end": 639.003,
+      "speaker": "host",
+      "text": "初次喝时候的酸，就像15、16岁时候初次遇见你时候的青涩一般。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 641.003,
+      "end": 646.003,
+      "speaker": "host",
+      "text": "当时呢，觉得有一些无所适从，但是事后怀念那才是当时的单纯啊。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 648.003,
+      "end": 649.003,
+      "speaker": "host",
+      "text": "大概就是那种感觉吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 650.003,
+      "end": 652.003,
+      "speaker": "host",
+      "text": "后来呢，你左右逢源。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 653.003,
+      "end": 700.003,
+      "speaker": "host",
+      "text": "啊，然后能说会道，但是你好怀念那个时候人们认真而单纯的样子。就像这个杯子里头，不添加任何东西，也不加一滴水的野生蓝莓原浆一样。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 705.003,
+      "end": 706.003,
+      "speaker": "host",
+      "text": "纯粹啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 707.003,
+      "end": 708.003,
+      "speaker": "host",
+      "text": "嗯，纯粹所以不完美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 708.003,
+      "end": 709.003,
+      "speaker": "host",
+      "text": "纯粹才不完美呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 710.003,
+      "end": 712.003,
+      "speaker": "host",
+      "text": "完美意味着很多时候要过度的修饰。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 713.003,
+      "end": 714.003,
+      "speaker": "host",
+      "text": "意味着不真实。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 714.003,
+      "end": 717.003,
+      "speaker": "host",
+      "text": "哪有完美的东西是真实的呢？真实地往往都不完美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 721.003,
+      "end": 722.003,
+      "speaker": "host",
+      "text": "口感特别棒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 723.003,
+      "end": 723.503,
+      "speaker": "host",
+      "text": "你喝过没导演？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 724.003,
+      "end": 724.503,
+      "speaker": "guest",
+      "text": "喝过。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 724.503,
+      "end": 725.503,
+      "speaker": "host",
+      "text": "喝过，来再给你一个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 726.003,
+      "end": 726.503,
+      "speaker": "host",
+      "text": "咋了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 727.003,
+      "end": 727.503,
+      "speaker": "guest",
+      "text": "不要。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 727.503,
+      "end": 728.503,
+      "speaker": "host",
+      "text": "你确定不要？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 728.503,
+      "end": 729.003,
+      "speaker": "host",
+      "text": "为什么呀？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 729.003,
+      "end": 730.003,
+      "speaker": "guest",
+      "text": "太酸了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 730.003,
+      "end": 730.503,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 730.503,
+      "end": 731.503,
+      "speaker": "guest",
+      "text": "昨天喝确实有点酸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 731.503,
+      "end": 732.003,
+      "speaker": "host",
+      "text": "你嫌酸？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 732.003,
+      "end": 733.003,
+      "speaker": "host",
+      "text": "你多喝几次就习惯了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 735.003,
+      "end": 737.003,
+      "speaker": "host",
+      "text": "呃，蓝莓富含花青素。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 737.003,
+      "end": 738.003,
+      "speaker": "host",
+      "text": "花青素有什么作用大家都知道，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 739.003,
+      "end": 740.003,
+      "speaker": "host",
+      "text": "这个我就不方便多讲了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 740.003,
+      "end": 742.003,
+      "speaker": "host",
+      "text": "呃，第一个是花青素，第二个是维生素C。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 742.003,
+      "end": 745.003,
+      "speaker": "host",
+      "text": "第三个呢是SOD，这些都处于蓝莓中含量比较多的。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 746.003,
+      "end": 749.003,
+      "speaker": "host",
+      "text": "蓝莓的生长环境一般就是森林里，林场。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 749.003,
+      "end": 752.003,
+      "speaker": "host",
+      "text": "所以这个全部产自大兴安岭的林场啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 752.003,
+      "end": 754.003,
+      "speaker": "host",
+      "text": "之前给大家展示过，它是那些正出，找一张。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 755.003,
+      "end": 756.003,
+      "speaker": "host",
+      "text": "哎，这个对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 756.003,
+      "end": 800.003,
+      "speaker": "host",
+      "text": "给大家看这个特别重要，因为屏幕前有一些比如说特殊的人群。Especially for the pregnant，孕妈妈们。For the children，家里的小孩子们。For the elderly，家里的老人。它是野生采集的有机产品认证，所以没有农残，没有药残。Totally safe and healthy, okay?萨瓦，这个口感比较酸，叫萨瓦。Sawa and refreshing。尤其是在闷热的午后，你喝一口野生的蓝莓原浆。那口酸呢，能让你神清气爽。因为呢，大家知道董宇辉现在的生活基本上就是直播、睡觉、看书。直播、睡觉、看书。有時候看到下午有一些头脑发胀，感觉精神不是特别好的时候，喝一口这种酸，哎呀，瞬间抽离出来。仿佛我坐的都不是中关村的这个高楼大厦，我好像坐在这个大兴安岭的山林之间一样。清风徐来，那种阳光拂面的样子。Sawa就是酸。Because it's sawa, so it's refreshing.Refreshing。就是令人感觉到神清气爽的啊。或者是清晨大家吃完了早餐，煎的鸡蛋啊，然后呢，面包啊，沙拉呀，吃完之后，喝完牛奶之后，你再喝上一罐这个。因为野生蓝莓原浆的一个特点就是它富含花青素，富含维C。所以它对你身体比较好。家里有孩子可以多买一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 907.003,
+      "end": 908.003,
+      "speaker": "host",
+      "text": "这个还有多少单导演？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 908.003,
+      "end": 909.003,
+      "speaker": "guest",
+      "text": "还有最后3000单。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 909.003,
+      "end": 910.003,
+      "speaker": "host",
+      "text": "最后只剩3000单了是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 910.003,
+      "end": 912.003,
+      "speaker": "guest",
+      "text": "你刚才一共卖了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 913.003,
+      "end": 913.503,
+      "speaker": "guest",
+      "text": "500单。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 914.003,
+      "end": 914.503,
+      "speaker": "host",
+      "text": "我只卖了500单。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 915.003,
+      "end": 916.003,
+      "speaker": "host",
+      "text": "行行行行，好好好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 918.003,
+      "end": 918.503,
+      "speaker": "host",
+      "text": "你不懂。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 920.003,
+      "end": 922.003,
+      "speaker": "host",
+      "text": "来我们继续讲一讲啊，这个野生蓝莓原浆。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 922.003,
+      "end": 925.003,
+      "speaker": "host",
+      "text": "刚刚给大家讲到的，因为它是个有机产品，所以 organic。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 926.003,
+      "end": 928.003,
+      "speaker": "host",
+      "text": "Organic farm product。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 928.003,
+      "end": 930.003,
+      "speaker": "host",
+      "text": "叫做有机的农产品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 930.003,
+      "end": 932.003,
+      "speaker": "host",
+      "text": "有机所以它是 safe and healthy。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 935.003,
+      "end": 936.003,
+      "speaker": "host",
+      "text": "安全，然后呢，健康。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 936.003,
+      "end": 940.003,
+      "speaker": "host",
+      "text": "还有一个大家平常担心很多，比如说农产品里头有农药，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 940.003,
+      "end": 941.003,
+      "speaker": "host",
+      "text": "Chemicals free。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 942.003,
+      "end": 943.003,
+      "speaker": "host",
+      "text": "Chemicals free。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 943.003,
+      "end": 945.003,
+      "speaker": "host",
+      "text": "就是无农残的，因为它是有机野生采摘的嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 946.003,
+      "end": 947.003,
+      "speaker": "host",
+      "text": "都是在山林之间。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 947.003,
+      "end": 953.003,
+      "speaker": "host",
+      "text": "昨天给大家看到了我们这个产品经理在山，在那个大兴安岭林场里给我发了那个视频。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 953.003,
+      "end": 955.003,
+      "speaker": "host",
+      "text": "真的是清晨带着露珠外面裹着白霜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 956.003,
+      "end": 1002.003,
+      "speaker": "host",
+      "text": "董宇辉发挥了自己想象力，站在中关村的这个街道，站在中关村的街道想象了大兴安岭山林处的这个景色。尤其是大家自己到下午，比如说看书的时候，时常品尝一口这个特别酸的野生蓝莓原浆。能够让你从那个环境中抽离，感受自然，感受清风。很多时候我们没有办法每天都浪迹天涯，对吧？大家一听那些喜欢的音乐，就想要去大山深处，就想要去新疆，就想要去西藏，就想要去大兴安岭，小兴安岭这些地方。但是日子也得正常过嘛，对吧？谁每天不用上班呀？谁每天可以浪迹天涯呀？所以更多时候从原本平淡的生活中给自己找到一点抽离的时间和清喜，放松放松。啊。少无是俗韵，性本爱秋善，勿落尘网中一去30年。这种诗呢，我们可以背，但不能真的说之后离开了。先要入世，我们还没有到出世的这个阶段呢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 1041.003,
+      "end": 1042.003,
+      "speaker": "host",
+      "text": "鸡蛋也有是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 1042.003,
+      "end": 1043.003,
+      "speaker": "guest",
+      "text": "鸡蛋还有200单了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 1043.003,
+      "end": 1047.003,
+      "speaker": "host",
+      "text": "只剩200单高DHA的鸡蛋，这个主要是家里的孩子们可能大家买的多一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 1047.003,
+      "end": 1052.003,
+      "speaker": "host",
+      "text": "因为高DHA，DHA的这个高DHA是有个标准的，每100克鸡蛋中它的含量不少于160克。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 1052.003,
+      "end": 1055.003,
+      "speaker": "host",
+      "text": "我们的这个好几次的检测标准都是远远高于它的啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 1057.003,
+      "end": 1058.003,
+      "speaker": "host",
+      "text": "高DHA的鸡蛋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 1058.003,
+      "end": 1103.003,
+      "speaker": "host",
+      "text": "然后DHA是人的大脑和眼睛的一些 essential component，叫做重要的组成部分。第三个讲鸡蛋啊。Essential component。重要组成部分。OK。当然呢，这个鸡蛋里头也包括一些其他的营养，比如说卵磷脂呀，那这些。也对人体比较好啊。然后建议比如说你像学习的或者从事办公室工作，大量的脑力劳动者，对吧？脑力劳动者。早上起来煮俩鸡蛋一吃。嗯，基本上能补充很多这个很足够多蛋白的啊。成年人吃两个鸡蛋没有什么问题，放心吃啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 1135.003,
+      "end": 1136.003,
+      "speaker": "host",
+      "text": "鸡蛋还有吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 1136.003,
+      "end": 1137.003,
+      "speaker": "guest",
+      "text": "没了，就十来单了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 1137.003,
+      "end": 1138.003,
+      "speaker": "host",
+      "text": "就十来单了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 1141.003,
+      "end": 1143.003,
+      "speaker": "host",
+      "text": "这个瓶子很好看，你发现没？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 1143.003,
+      "end": 1144.003,
+      "speaker": "host",
+      "text": "这个玻璃瓶子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 1145.003,
+      "end": 1145.503,
+      "speaker": "host",
+      "text": "很精致。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 1146.003,
+      "end": 1147.003,
+      "speaker": "host",
+      "text": "上面这个花纹。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 1147.003,
+      "end": 1148.003,
+      "speaker": "host",
+      "text": "驯鹿的头像。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 1150.003,
+      "end": 1153.003,
+      "speaker": "host",
+      "text": "之前给大家讲过，为什么要用设计驯鹿，没有放蓝莓呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 1154.003,
+      "end": 1155.003,
+      "speaker": "host",
+      "text": "因为它是蓝莓，你肯定知道它是蓝莓。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 1155.003,
+      "end": 1156.003,
+      "speaker": "host",
+      "text": "蓝莓是没见过呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 1157.003,
+      "end": 1200.003,
+      "speaker": "host",
+      "text": "但是你想象一下大兴安岭深处有驯鹿，就是养驯鹿的地方产蓝莓。多美好的联想呀。来，鸡蛋也完了是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 1204.003,
+      "end": 1204.503,
+      "speaker": "guest",
+      "text": "没了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 1204.503,
+      "end": 1205.003,
+      "speaker": "host",
+      "text": "鸡蛋完了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 1205.003,
+      "end": 1206.003,
+      "speaker": "host",
+      "text": "接下来枸杞还有吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 1206.003,
+      "end": 1207.003,
+      "speaker": "guest",
+      "text": "枸杞有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 1207.003,
+      "end": 1208.003,
+      "speaker": "guest",
+      "text": "还有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 1208.003,
+      "end": 1209.003,
+      "speaker": "host",
+      "text": "宁夏中宁的枸杞。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 1210.003,
+      "end": 1210.503,
+      "speaker": "host",
+      "text": "刚泡的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 1211.003,
+      "end": 1213.003,
+      "speaker": "host",
+      "text": "给大家之前讲过宁夏的枸杞好在哪？它上浮率高。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 1213.003,
+      "end": 1215.003,
+      "speaker": "host",
+      "text": "上浮率高说明它含糖量低。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 1215.003,
+      "end": 1217.003,
+      "speaker": "host",
+      "text": "李时珍的这个本草纲目里也记载过宁夏枸杞尤其好。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 1217.003,
+      "end": 1220.003,
+      "speaker": "host",
+      "text": "因为它上浮率高，含糖量低，因此它才有药用价值。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 1224.003,
+      "end": 1227.003,
+      "speaker": "host",
+      "text": "我们平常所说的草药其实应该用哪个单词？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 1227.003,
+      "end": 1228.003,
+      "speaker": "host",
+      "text": "我给大家讲一讲这个单词啊，没有讲它的功效啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 1228.003,
+      "end": 1231.003,
+      "speaker": "host",
+      "text": "我们平常在英语中所说的药叫 medicine, okay?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 1232.003,
+      "end": 1233.003,
+      "speaker": "host",
+      "text": "And also you can say drugs.",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 1233.003,
+      "end": 1234.003,
+      "speaker": "host",
+      "text": "Drug。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 1234.003,
+      "end": 1238.003,
+      "speaker": "host",
+      "text": "当然 drug也可以分为，当然也可以分为毒品是吧？它更多也分药。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 1238.003,
+      "end": 1240.003,
+      "speaker": "host",
+      "text": "其实很多的那种东西就看量了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 1240.003,
+      "end": 1241.003,
+      "speaker": "host",
+      "text": "它有时候对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 1241.003,
+      "end": 1242.003,
+      "speaker": "host",
+      "text": "有的药里头它确实含有呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 1242.003,
+      "end": 1244.003,
+      "speaker": "host",
+      "text": "Drugs，所以你在国外见到那个 drug store，上一次。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 1245.003,
+      "end": 1247.003,
+      "speaker": "host",
+      "text": "它其实叫药店啊，你不能理解错。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 1247.003,
+      "end": 1250.003,
+      "speaker": "host",
+      "text": "但是这些是那个西药，中药呢，中药其实可以叫做 herb。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 1251.003,
+      "end": 1253.003,
+      "speaker": "host",
+      "text": "因为它是一种草药，本质上来说，herb就是这种草药啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 1253.003,
+      "end": 1254.003,
+      "speaker": "host",
+      "text": "Herb。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 1254.003,
+      "end": 1255.003,
+      "speaker": "host",
+      "text": "叫草药。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 1255.003,
+      "end": 1302.003,
+      "speaker": "host",
+      "text": "昨天给大家讲到了宁夏，讲到了中宁，讲到了中宁的曾经被联合国定义为几乎是最不适合人类生存的地方。因为风速大，蒸发量大，降水量少，而且呢沙漠化严重。所以这个地方最后人们因地制宜，种的都是什么呀？第一个西瓜。第二个呢就是宁夏的中宁的枸杞。就是因为产地好，阳光照射比较充足。而且因为地势平坦，黄河水灌溉。所以这里长出来的枸杞和西瓜都特别好。想象一下千年吹过的这个季风。然后尤其到了冬天温度特别低，那样深厚的黄沙层里头。枸杞的根深深地扎根于地下，吸取每一次养分。到了第二年四五月份，它又生根发芽，对不对？然后开出了小的话朵，最后结出了这样的枸杞。我们又选出了那个头一茬。就是在那样我们看起来可能相对艰苦的条件下，有人们在坚守。这个坚守非常重要。现在宁夏中宁的环境已经确实比以前好太多了。我之前给大家讲过几个地方，比如说那天讲到第一个宁夏的中宁，曾经被联合国定义为几乎最不适合人类生存的地方。第二个我之前给大家讲过甘肃的民勤。这可是美国国家地理曾经他们当然他们不了解我们这片民族人们的韧性、勤劳和这种坚定。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 1405.003,
+      "end": 1406.003,
+      "speaker": "guest",
+      "text": "今天有个民勤的瓜是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 1406.003,
+      "end": 1407.003,
+      "speaker": "host",
+      "text": "民勤的瓜是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 1407.003,
+      "end": 1408.003,
+      "speaker": "host",
+      "text": "那你直接谈吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 1408.003,
+      "end": 1409.003,
+      "speaker": "guest",
+      "text": "大家放二号。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 1409.003,
+      "end": 1414.003,
+      "speaker": "host",
+      "text": "他们曾经说过，说因为民勤的沙漠化当时高达95%。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 1414.003,
+      "end": 1417.003,
+      "speaker": "host",
+      "text": "左边是沙漠，右边也是沙漠，毛乌素沙漠和巴丹吉林沙漠。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 1417.003,
+      "end": 1420.003,
+      "speaker": "host",
+      "text": "他们曾经说过一个地方呢，以后会这个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 1420.003,
+      "end": 1422.003,
+      "speaker": "host",
+      "text": "就是这个人类生存的会面临绝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 1422.003,
+      "end": 1426.003,
+      "speaker": "host",
+      "text": "但是我们经过很长时间的这个改造，然后经过绿化。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 1426.003,
+      "end": 1430.003,
+      "speaker": "host",
+      "text": "就是把那个弄成沙网格，直到现在那些地方其实已经有了成片成片的绿洲了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 1431.003,
+      "end": 1436.003,
+      "speaker": "host",
+      "text": "大家要知道在过去这20年里头，地球上增加的绿化面积主要在两个国家。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 1436.003,
+      "end": 1438.003,
+      "speaker": "host",
+      "text": "大家猜一下地球上增加主要绿化面积的两个国家。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 1439.003,
+      "end": 1440.003,
+      "speaker": "host",
+      "text": "你猜一下是哪个国家导演？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 1441.003,
+      "end": 1442.003,
+      "speaker": "host",
+      "text": "那两个国家猜一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 1443.003,
+      "end": 1443.503,
+      "speaker": "guest",
+      "text": "澳大利亚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 1443.503,
+      "end": 1444.003,
+      "speaker": "host",
+      "text": "不是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 1446.003,
+      "end": 1450.003,
+      "speaker": "host",
+      "text": "实际上呢，澳洲和这个巴西是绿化面积减少比较多的地方。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 1450.003,
+      "end": 1451.003,
+      "speaker": "host",
+      "text": "你知道为什么吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 1451.003,
+      "end": 1456.003,
+      "speaker": "host",
+      "text": "你像巴西它不是热带雨林吗？它大量的砍伐雨林，空出了地，然后来干嘛呢？",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 1456.003,
+      "end": 1457.003,
+      "speaker": "host",
+      "text": "种大豆，种玉米。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 1457.003,
+      "end": 1458.003,
+      "speaker": "host",
+      "text": "它要出口。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    }
+  ]
+}

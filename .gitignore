@@ -32,15 +32,18 @@ pnpm-debug.log*
 output/*
 !output/.gitkeep
 !output/transcripts/
-output/transcripts/*
-!output/transcripts/.gitkeep
+*.m4a
+*.wav
+*.mp3
+*.flac
+*.aac
+*.ogg
 data/*
 !data/.gitkeep
 
 # Editor
 .vscode/settings.json
 .idea/
-vision.db
 
 # Claude Code local settings (machine-specific permissions, paths, PIDs)
 .claude/settings.json

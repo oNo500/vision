@@ -1,0 +1,2706 @@
+{
+  "chunk_id": 1,
+  "start_offset": 1190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 1190.0,
+      "end": 1190.9,
+      "speaker": "host",
+      "text": "你会遇到不快乐嘛,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 1,
+      "start": 1190.9,
+      "end": 1192.0,
+      "speaker": "host",
+      "text": "我希望你快乐。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 2,
+      "start": 1192.0,
+      "end": 1197.7,
+      "speaker": "host",
+      "text": "然后呢,这个因为最近我火了,很多人把董宇辉当成一个关系很好的朋友,向他倾诉内心的这个愁苦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 3,
+      "start": 1197.7,
+      "end": 1201.0,
+      "speaker": "host",
+      "text": "我其实收到很多的消息,但我真的第一个我看不完,第二个我也回不完。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 4,
+      "start": 1201.0,
+      "end": 1204.8,
+      "speaker": "host",
+      "text": "我前两天拿了手机,大家知道,因为我那个抖音睡一觉起来涨几十万粉丝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 5,
+      "start": 1204.8,
+      "end": 1206.3,
+      "speaker": "host",
+      "text": "睡一觉涨四五十万粉丝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 6,
+      "start": 1206.3,
+      "end": 1207.3,
+      "speaker": "host",
+      "text": "都在给我发消息。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 7,
+      "start": 1207.3,
+      "end": 1211.2,
+      "speaker": "host",
+      "text": "我手机折叠打开抖音屏幕就变白了,就发烫,就关机了,就自动关机了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 8,
+      "start": 1211.2,
+      "end": 1215.0,
+      "speaker": "host",
+      "text": "我姐姐应该是听到了,很心疼我,给我寄了一个新的手机过来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 9,
+      "start": 1215.0,
+      "end": 1216.0,
+      "speaker": "host",
+      "text": "还挺感动的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 10,
+      "start": 1216.0,
+      "end": 1218.5,
+      "speaker": "host",
+      "text": "我这两天收到了好几个莫名的快递,挺感动的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 11,
+      "start": 1218.5,
+      "end": 1221.0,
+      "speaker": "host",
+      "text": "然后我以为是,谁会买这么贵的东西,我姐说他买的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 12,
+      "start": 1221.0,
+      "end": 1222.0,
+      "speaker": "host",
+      "text": "我现在能打开了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 13,
+      "start": 1222.0,
+      "end": 1224.0,
+      "speaker": "host",
+      "text": "我看了很多朋友跟我讲的故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 14,
+      "start": 1224.0,
+      "end": 1228.0,
+      "speaker": "host",
+      "text": "有的讲自己生意失败了,感觉人生一无是处的故事。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 15,
+      "start": 1228.0,
+      "end": 1234.0,
+      "speaker": "host",
+      "text": "有的讲,比如说自己的父亲因为生了重病,几天前离开了他的故事,他的人生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 16,
+      "start": 1234.0,
+      "end": 1237.0,
+      "speaker": "host",
+      "text": "好像一个飘在大海上的船。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 17,
+      "start": 1237.0,
+      "end": 1238.0,
+      "speaker": "host",
+      "text": "他没有锚了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 18,
+      "start": 1238.0,
+      "end": 1243.0,
+      "speaker": "host",
+      "text": "有的人跟我讲了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 19,
+      "start": 1243.0,
+      "end": 1246.0,
+      "speaker": "host",
+      "text": "他自己就在医院里身患癌症,然后在化疗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 20,
+      "start": 1246.0,
+      "end": 1249.0,
+      "speaker": "host",
+      "text": "其实很多夸我的那种啊,董老师你真帅那种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 21,
+      "start": 1249.0,
+      "end": 1252.0,
+      "speaker": "host",
+      "text": "那种话反而我不会过多去看,因为我知道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 22,
+      "start": 1252.0,
+      "end": 1254.0,
+      "speaker": "host",
+      "text": "我知道我想给大家传递的是一种力量感。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 23,
+      "start": 1254.0,
+      "end": 1260.0,
+      "speaker": "host",
+      "text": "也许有一天生活很明媚的时候,当你目及之处皆是春光与美好的时候,那会儿你可能就不需要我了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 24,
+      "start": 1260.0,
+      "end": 1262.0,
+      "speaker": "host",
+      "text": "我总是一个苦大仇深的人,我总是一个心思细腻的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 25,
+      "start": 1262.0,
+      "end": 1265.0,
+      "speaker": "host",
+      "text": "但是在你人生难的时候,我觉得难得有人陪你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 26,
+      "start": 1265.0,
+      "end": 1268.0,
+      "speaker": "host",
+      "text": "所以我特别希望刚才那句话能够今天温暖到你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 27,
+      "start": 1268.0,
+      "end": 1270.0,
+      "speaker": "host",
+      "text": "今天我不爱世人,今天我只爱你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 28,
+      "start": 1270.0,
+      "end": 1276.0,
+      "speaker": "host",
+      "text": "活着这本书,我在有一刻突然就特别体会到这个文章里头所讲的那种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 29,
+      "start": 1276.0,
+      "end": 1278.0,
+      "speaker": "host",
+      "text": "那种活下去的勇气是什么?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 30,
+      "start": 1278.0,
+      "end": 1282.0,
+      "speaker": "host",
+      "text": "就是我之前给大家讲过,我我是在陕西生长的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 31,
+      "start": 1282.0,
+      "end": 1286.0,
+      "speaker": "host",
+      "text": "我在那儿长大,虽然是很穷苦的农村生活。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 32,
+      "start": 1286.0,
+      "end": 1294.0,
+      "speaker": "host",
+      "text": "但至少家人给了我很好的教育和这个价值观的引导,他们从小鼓励我去感受自然,感受人的喜怒哀乐去读书,所以到现在虽然我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 33,
+      "start": 1294.0,
+      "end": 1300.0,
+      "speaker": "host",
+      "text": "人生也受了很多苦,但是我至少能够清楚的表达自己的想法,我觉得很多人可能就是觉得我能把事情说清楚而已。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 34,
+      "start": 1300.0,
+      "end": 1302.0,
+      "speaker": "host",
+      "text": "除此之外我也没有什么优点。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 35,
+      "start": 1302.0,
+      "end": 1305.0,
+      "speaker": "host",
+      "text": "我小时候其实也抱怨过我家里,坦诚来说,我也抱怨过我家里。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 36,
+      "start": 1305.0,
+      "end": 1311.0,
+      "speaker": "host",
+      "text": "然后直到这个去年,就我跟你说去年五一,我开着车不是带着我爸妈回了一趟湖北老家吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 37,
+      "start": 1311.0,
+      "end": 1313.0,
+      "speaker": "host",
+      "text": "那个老家就是我爷爷小时候他从那儿过来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 38,
+      "start": 1313.0,
+      "end": 1314.0,
+      "speaker": "host",
+      "text": "他也没有在那儿生活过。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 39,
+      "start": 1314.0,
+      "end": 1316.0,
+      "speaker": "host",
+      "text": "在去的路上可能才聊得很细致。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 40,
+      "start": 1316.0,
+      "end": 1320.0,
+      "speaker": "host",
+      "text": "因为一路要穿过很多的大山,很高的悬崖。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 41,
+      "start": 1320.0,
+      "end": 1322.0,
+      "speaker": "host",
+      "text": "因为高速都是在那个悬崖之间绕来绕去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 42,
+      "start": 1322.0,
+      "end": 1325.0,
+      "speaker": "host",
+      "text": "我爸说以前走就是走下面那个河滩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 43,
+      "start": 1325.0,
+      "end": 1327.0,
+      "speaker": "host",
+      "text": "经常下了大雨的时候,然后那个水突然就涨起来了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 44,
+      "start": 1327.0,
+      "end": 1333.0,
+      "speaker": "host",
+      "text": "说我这个我爷爷的这个爸爸和妈妈当年就是挑个担保爷爷从湖北一直挑挑着担子走到了陕西老家。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 45,
+      "start": 1333.0,
+      "end": 1338.0,
+      "speaker": "host",
+      "text": "然后说走着走着突然上游的大水冲下来了,把担子冲走了,两个老人就冲到河里头去把孩子抱出来,然后担子就被水冲走了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 46,
+      "start": 1338.0,
+      "end": 1343.0,
+      "speaker": "host",
+      "text": "他们一共走了几个月,你想在大山深处连吃的都没有,那会儿孩子还在吃奶啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 47,
+      "start": 1343.0,
+      "end": 1346.0,
+      "speaker": "host",
+      "text": "你想他们晚上睡在哪儿?我们甚至看到悬崖上有人把那个就当地那些人把那个棺材吊上去,塞到悬崖里那种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 48,
+      "start": 1346.0,
+      "end": 1347.0,
+      "speaker": "host",
+      "text": "你见过那种吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 49,
+      "start": 1347.0,
+      "end": 1352.0,
+      "speaker": "host",
+      "text": "然后呢,你想以前那个自然环境比较好的时候,大家可能在大山深处甚至会见到野兽。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 50,
+      "start": 1352.0,
+      "end": 1353.0,
+      "speaker": "host",
+      "text": "对吧?会见到狼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 51,
+      "start": 1353.0,
+      "end": 1358.0,
+      "speaker": "host",
+      "text": "我就一路慢慢的开着,我就听着我爸在后,坐在后排,然后就有一句没一句的跟我讲着。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 52,
+      "start": 1358.0,
+      "end": 1363.0,
+      "speaker": "host",
+      "text": "我那一路感觉是一个寻根之旅,我更觉得那是我一个精神得到洗涤的一个过程。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 53,
+      "start": 1363.0,
+      "end": 1365.0,
+      "speaker": "host",
+      "text": "我我很开心他能跟我讲那些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 54,
+      "start": 1365.0,
+      "end": 1368.0,
+      "speaker": "host",
+      "text": "我我爷爷那代人老家在运西,在处于实验室。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 55,
+      "start": 1368.0,
+      "end": 1374.0,
+      "speaker": "host",
+      "text": "我我那一路的思绪就久久无法平静,我始终在想,我在想当时面对那样的苦难,他们是怎么坚持下来的呀?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 56,
+      "start": 1374.0,
+      "end": 1376.0,
+      "speaker": "host",
+      "text": "我在想。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 57,
+      "start": 1376.0,
+      "end": 1377.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 58,
+      "start": 1377.0,
+      "end": 1378.0,
+      "speaker": "host",
+      "text": "我人生说多少难啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 59,
+      "start": 1378.0,
+      "end": 1382.0,
+      "speaker": "host",
+      "text": "不就是小时候家里穷点吗?上学整天被人看不起,挨几顿打,被欺负吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 60,
+      "start": 1382.0,
+      "end": 1384.0,
+      "speaker": "host",
+      "text": "喜欢的女孩子把我拒绝了好几次吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 61,
+      "start": 1384.0,
+      "end": 1385.0,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 62,
+      "start": 1385.0,
+      "end": 1386.0,
+      "speaker": "host",
+      "text": "董宇辉你听好,所以咱俩做兄妹。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 63,
+      "start": 1386.0,
+      "end": 1389.0,
+      "speaker": "host",
+      "text": "不就是自己在工作的时候好多年,对吧?很累吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 64,
+      "start": 1389.0,
+      "end": 1391.0,
+      "speaker": "host",
+      "text": "不就是身体有点差,睡眠有点差吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 65,
+      "start": 1391.0,
+      "end": 1396.0,
+      "speaker": "host",
+      "text": "不就是自己去年想不通,绕着北四环一圈一圈的转,回去写很多非主流的作文吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 66,
+      "start": 1396.0,
+      "end": 1397.0,
+      "speaker": "host",
+      "text": "我可以表达。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 67,
+      "start": 1397.0,
+      "end": 1398.0,
+      "speaker": "host",
+      "text": "我也可以诉苦。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 68,
+      "start": 1398.0,
+      "end": 1401.0,
+      "speaker": "host",
+      "text": "那是我的权利,因为我诉苦完之后内心舒服一点。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 69,
+      "start": 1401.0,
+      "end": 1403.0,
+      "speaker": "host",
+      "text": "但是最终还是要找到继续生活的勇气。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 70,
+      "start": 1403.0,
+      "end": 1405.0,
+      "speaker": "host",
+      "text": "你知道去年五一那趟的旅行真的太有意义了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 71,
+      "start": 1405.0,
+      "end": 1412.0,
+      "speaker": "host",
+      "text": "其实我当时是有个幻想的破灭,因为我爸描述的老家其实是一个好像是一个名门望族,但其实你做盘都是特别普通的小乡村。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 72,
+      "start": 1412.0,
+      "end": 1420.0,
+      "speaker": "host",
+      "text": "然后他所描述的那个传了好代人那个牛皮纸的族谱在几十年前那场特殊的历史事件中被焚毁了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 73,
+      "start": 1420.0,
+      "end": 1422.0,
+      "speaker": "host",
+      "text": "其实没有那么多的感觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 74,
+      "start": 1422.0,
+      "end": 1428.0,
+      "speaker": "host",
+      "text": "但是我那一路走回去却听他讲着,因为我真的看过了那一路过来的自然的,那种天险。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 75,
+      "start": 1428.0,
+      "end": 1431.0,
+      "speaker": "host",
+      "text": "我才感受到了那一代人活下去的勇气。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 76,
+      "start": 1431.0,
+      "end": 1434.0,
+      "speaker": "host",
+      "text": "于是我就理解了很多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 77,
+      "start": 1434.0,
+      "end": 1439.0,
+      "speaker": "host",
+      "text": "所以我们时常要去感受这些,感受这些的目的并不是让你痛苦,而是让你重新。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 78,
+      "start": 1439.0,
+      "end": 1441.0,
+      "speaker": "host",
+      "text": "有勇气,有乐观,有智慧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 79,
+      "start": 1441.0,
+      "end": 1442.0,
+      "speaker": "host",
+      "text": "抱怨谁不会啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 80,
+      "start": 1442.0,
+      "end": 1444.0,
+      "speaker": "host",
+      "text": "能憋住不抱怨才牛呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 81,
+      "start": 1444.0,
+      "end": 1445.0,
+      "speaker": "host",
+      "text": "放弃多容易啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 82,
+      "start": 1445.0,
+      "end": 1447.0,
+      "speaker": "host",
+      "text": "能坚持熬下去才牛呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 83,
+      "start": 1447.0,
+      "end": 1450.0,
+      "speaker": "host",
+      "text": "我们很多时候小时候在瞻仰英雄。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 84,
+      "start": 1450.0,
+      "end": 1453.0,
+      "speaker": "host",
+      "text": "长大之后呢。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 85,
+      "start": 1453.0,
+      "end": 1455.0,
+      "speaker": "host",
+      "text": "你其实也可以理解成为,你自己也可以成为英雄的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 86,
+      "start": 1455.0,
+      "end": 1462.0,
+      "speaker": "host",
+      "text": "我没有记错的话,孩子应该还有一首诗,叫做你要什么什么什么,然后默不作声穿越整座城市。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 87,
+      "start": 1462.0,
+      "end": 1463.0,
+      "speaker": "host",
+      "text": "对不起,我忘了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 88,
+      "start": 1463.0,
+      "end": 1466.0,
+      "speaker": "host",
+      "text": "就是默不作声穿越整座城市那个,你可以搜一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 89,
+      "start": 1466.0,
+      "end": 1470.0,
+      "speaker": "host",
+      "text": "我当时读完那那一段之后,就突然就有了很多的勇气。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 90,
+      "start": 1470.0,
+      "end": 1473.0,
+      "speaker": "host",
+      "text": "我觉得那一段的勇气就瞬间让人豁然开朗了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 91,
+      "start": 1473.0,
+      "end": 1474.0,
+      "speaker": "host",
+      "text": "丹尼帮我搜一下那段。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 92,
+      "start": 1474.0,
+      "end": 1475.0,
+      "speaker": "host",
+      "text": "对不起啊,我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 93,
+      "start": 1475.0,
+      "end": 1477.0,
+      "speaker": "host",
+      "text": "我忘了那一段了,我忘了那一段可能给大家体验不好啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 94,
+      "start": 1477.0,
+      "end": 1480.0,
+      "speaker": "host",
+      "text": "那段应该就是说你要默不作声穿越整座城市,大概是那么说的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 95,
+      "start": 1480.0,
+      "end": 1482.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 96,
+      "start": 1482.0,
+      "end": 1484.0,
+      "speaker": "host",
+      "text": "因为我知道这一两年大家可能受苦受的多了嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 97,
+      "start": 1484.0,
+      "end": 1485.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 98,
+      "start": 1485.0,
+      "end": 1490.0,
+      "speaker": "host",
+      "text": "所以在人生难的时候,试着从世间万物中寻找勇气。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 99,
+      "start": 1490.0,
+      "end": 1492.0,
+      "speaker": "host",
+      "text": "可以是一本书,可以是与好朋友的一次聊天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 100,
+      "start": 1492.0,
+      "end": 1496.0,
+      "speaker": "host",
+      "text": "可以是去大江大河里头去感受自然,感受生命的力量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 101,
+      "start": 1496.0,
+      "end": 1500.0,
+      "speaker": "host",
+      "text": "也可以是回到老家里,虫鸣鸟叫里好好的睡一觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 102,
+      "start": 1500.0,
+      "end": 1501.0,
+      "speaker": "host",
+      "text": "是吧?可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 103,
+      "start": 1501.0,
+      "end": 1502.0,
+      "speaker": "host",
+      "text": "可以是任何东西。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 104,
+      "start": 1502.0,
+      "end": 1505.0,
+      "speaker": "host",
+      "text": "如果是这本书的话,你可以去看,如果不是这本书,你去其他地方寻找你的精神动力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 105,
+      "start": 1505.0,
+      "end": 1506.0,
+      "speaker": "host",
+      "text": "抱怨多容易啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 106,
+      "start": 1506.0,
+      "end": 1508.0,
+      "speaker": "host",
+      "text": "诉苦是弱者的权利。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 107,
+      "start": 1508.0,
+      "end": 1512.0,
+      "speaker": "host",
+      "text": "我记得好多年前我在抱怨工作难做的时候,当时宋老师跟我说。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 108,
+      "start": 1512.0,
+      "end": 1514.0,
+      "speaker": "host",
+      "text": "这个骏马面前无沟壑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 109,
+      "start": 1514.0,
+      "end": 1516.0,
+      "speaker": "host",
+      "text": "怂人面前全是坎儿。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 110,
+      "start": 1516.0,
+      "end": 1517.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 111,
+      "start": 1517.0,
+      "end": 1518.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 112,
+      "start": 1518.0,
+      "end": 1520.0,
+      "speaker": "host",
+      "text": "当然这句话把我清醒了好几天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 113,
+      "start": 1520.0,
+      "end": 1521.0,
+      "speaker": "host",
+      "text": "丹尼刚搜到那句话了吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 114,
+      "start": 1521.0,
+      "end": 1522.0,
+      "speaker": "guest",
+      "text": "知道了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 115,
+      "start": 1522.0,
+      "end": 1523.0,
+      "speaker": "host",
+      "text": "他怎么说的?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 116,
+      "start": 1523.0,
+      "end": 1524.0,
+      "speaker": "guest",
+      "text": "答应我忍住你的痛苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 117,
+      "start": 1524.0,
+      "end": 1525.0,
+      "speaker": "host",
+      "text": "答应我忍住你的痛苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 118,
+      "start": 1525.0,
+      "end": 1526.0,
+      "speaker": "guest",
+      "text": "不发一言。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 119,
+      "start": 1526.0,
+      "end": 1527.0,
+      "speaker": "host",
+      "text": "不发一言。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 120,
+      "start": 1527.0,
+      "end": 1530.0,
+      "speaker": "host",
+      "text": "是呃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 121,
+      "start": 1530.0,
+      "end": 1531.0,
+      "speaker": "guest",
+      "text": "是孩子。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 122,
+      "start": 1531.0,
+      "end": 1532.0,
+      "speaker": "host",
+      "text": "是孩子是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 123,
+      "start": 1532.0,
+      "end": 1536.0,
+      "speaker": "host",
+      "text": "答应我忍住你的痛苦,不发一言,穿过这整座城市。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 124,
+      "start": 1536.0,
+      "end": 1537.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 125,
+      "start": 1537.0,
+      "end": 1543.0,
+      "speaker": "host",
+      "text": "就很给人力量感,你知道很多文字的优点在哪里?就是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 126,
+      "start": 1543.0,
+      "end": 1547.0,
+      "speaker": "host",
+      "text": "它不喧哗,不造作,但是它很给人力量感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 127,
+      "start": 1547.0,
+      "end": 1548.0,
+      "speaker": "host",
+      "text": "答应我。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 128,
+      "start": 1548.0,
+      "end": 1549.0,
+      "speaker": "host",
+      "text": "什么?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 129,
+      "start": 1549.0,
+      "end": 1550.0,
+      "speaker": "guest",
+      "text": "不发一言。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 130,
+      "start": 1550.0,
+      "end": 1551.0,
+      "speaker": "host",
+      "text": "忍住痛苦。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 131,
+      "start": 1551.0,
+      "end": 1552.0,
+      "speaker": "guest",
+      "text": "忍住痛苦。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 132,
+      "start": 1552.0,
+      "end": 1553.0,
+      "speaker": "guest",
+      "text": "不发一言。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 133,
+      "start": 1553.0,
+      "end": 1555.0,
+      "speaker": "guest",
+      "text": "穿过这整座城市。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 134,
+      "start": 1555.0,
+      "end": 1557.0,
+      "speaker": "host",
+      "text": "穿过这整座城市,对,我我记错了,不好意思啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 135,
+      "start": 1557.0,
+      "end": 1558.0,
+      "speaker": "host",
+      "text": "记忆力下降。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 136,
+      "start": 1558.0,
+      "end": 1561.0,
+      "speaker": "host",
+      "text": "对,当时宋老师跟我这样说,叫骏马面前无沟壑。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 137,
+      "start": 1561.0,
+      "end": 1562.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 138,
+      "start": 1569.0,
+      "end": 1571.0,
+      "speaker": "host",
+      "text": "沟壑怎么写?是这样写,对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 139,
+      "start": 1571.0,
+      "end": 1572.0,
+      "speaker": "host",
+      "text": "沟壑,不好意思啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 140,
+      "start": 1572.0,
+      "end": 1573.0,
+      "speaker": "host",
+      "text": "骏马面前无沟壑,是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 141,
+      "start": 1573.0,
+      "end": 1574.0,
+      "speaker": "guest",
+      "text": "是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 142,
+      "start": 1574.0,
+      "end": 1575.0,
+      "speaker": "host",
+      "text": "是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 143,
+      "start": 1575.0,
+      "end": 1577.0,
+      "speaker": "host",
+      "text": "怂什么叫怂呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 144,
+      "start": 1577.0,
+      "end": 1579.0,
+      "speaker": "host",
+      "text": "怂就是follow,跟随你的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 145,
+      "start": 1579.0,
+      "end": 1580.0,
+      "speaker": "host",
+      "text": "内心。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 146,
+      "start": 1580.0,
+      "end": 1581.0,
+      "speaker": "host",
+      "text": "什么叫follow your heart?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 147,
+      "start": 1581.0,
+      "end": 1582.0,
+      "speaker": "host",
+      "text": "放弃是人性。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 148,
+      "start": 1582.0,
+      "end": 1583.0,
+      "speaker": "host",
+      "text": "认怂是人性。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 149,
+      "start": 1583.0,
+      "end": 1584.0,
+      "speaker": "host",
+      "text": "哭是人性。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 150,
+      "start": 1584.0,
+      "end": 1585.0,
+      "speaker": "host",
+      "text": "绝望是人性。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 151,
+      "start": 1585.0,
+      "end": 1586.0,
+      "speaker": "host",
+      "text": "但人为什么在修炼?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 152,
+      "start": 1586.0,
+      "end": 1590.0,
+      "speaker": "host",
+      "text": "人的修炼就是在自己的身上克服人性的缺点,在自己的身上克服这个时代。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 153,
+      "start": 1590.0,
+      "end": 1593.0,
+      "speaker": "host",
+      "text": "如果你总是第一时间顺从自己的内心。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 154,
+      "start": 1593.0,
+      "end": 1594.0,
+      "speaker": "host",
+      "text": "那就是认怂。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 155,
+      "start": 1594.0,
+      "end": 1596.0,
+      "speaker": "host",
+      "text": "怂就是遵从自己的心啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 156,
+      "start": 1596.0,
+      "end": 1597.0,
+      "speaker": "host",
+      "text": "与自己抗争。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 157,
+      "start": 1597.0,
+      "end": 1598.0,
+      "speaker": "host",
+      "text": "跟自己修炼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 158,
+      "start": 1598.0,
+      "end": 1599.0,
+      "speaker": "host",
+      "text": "说怂人面前全是坎儿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 159,
+      "start": 1599.0,
+      "end": 1601.0,
+      "speaker": "host",
+      "text": "他可能现在自己都不记得了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 160,
+      "start": 1601.0,
+      "end": 1603.0,
+      "speaker": "host",
+      "text": "好多年前我听他说这句话。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 161,
+      "start": 1608.0,
+      "end": 1610.0,
+      "speaker": "host",
+      "text": "这是新东方甄选的直播间。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 162,
+      "start": 1610.0,
+      "end": 1611.0,
+      "speaker": "host",
+      "text": "东方甄选。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 163,
+      "start": 1611.0,
+      "end": 1613.0,
+      "speaker": "host",
+      "text": "我叫董宇辉,我是一个教了八年的高中英语老师。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 164,
+      "start": 1613.0,
+      "end": 1614.0,
+      "speaker": "host",
+      "text": "我今天心情很好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 165,
+      "start": 1614.0,
+      "end": 1618.0,
+      "speaker": "host",
+      "text": "今天心情好的主要原因是因为我今天收到了很多我的学生给我的反馈。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 166,
+      "start": 1618.0,
+      "end": 1619.0,
+      "speaker": "host",
+      "text": "他们很开心。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 167,
+      "start": 1619.0,
+      "end": 1621.0,
+      "speaker": "host",
+      "text": "他说老师我英语考得很好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 168,
+      "start": 1621.0,
+      "end": 1624.0,
+      "speaker": "host",
+      "text": "或者有孩子说老师我考得不怎么好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 169,
+      "start": 1624.0,
+      "end": 1625.0,
+      "speaker": "host",
+      "text": "但我不纠结了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 170,
+      "start": 1625.0,
+      "end": 1626.0,
+      "speaker": "host",
+      "text": "我人生无憾了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 171,
+      "start": 1626.0,
+      "end": 1627.0,
+      "speaker": "host",
+      "text": "我高中努力过。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 172,
+      "start": 1627.0,
+      "end": 1632.0,
+      "speaker": "host",
+      "text": "我特别害怕他们把胜负看得特别重,我特别害怕他们把结果看得特别重,以至于患得患失啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 173,
+      "start": 1632.0,
+      "end": 1635.0,
+      "speaker": "host",
+      "text": "所以我其实认识他们几年,我一直给他们说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 174,
+      "start": 1635.0,
+      "end": 1636.0,
+      "speaker": "host",
+      "text": "结果不重要。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 175,
+      "start": 1636.0,
+      "end": 1637.0,
+      "speaker": "host",
+      "text": "内心无愧才重要。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 176,
+      "start": 1637.0,
+      "end": 1642.0,
+      "speaker": "host",
+      "text": "就像你终将离开这个城市,离开这个世界,你重要的只是你怎么样过好这一生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 177,
+      "start": 1642.0,
+      "end": 1645.0,
+      "speaker": "host",
+      "text": "有孩子跟我说老师可能我没有期待中那么好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 178,
+      "start": 1645.0,
+      "end": 1647.0,
+      "speaker": "host",
+      "text": "但是我内心无憾了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 179,
+      "start": 1647.0,
+      "end": 1651.0,
+      "speaker": "host",
+      "text": "就像老师经常所说的,得到的是得到的叫青春,错过的叫人生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 180,
+      "start": 1651.0,
+      "end": 1654.0,
+      "speaker": "host",
+      "text": "不一定总非得得偿所愿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 181,
+      "start": 1654.0,
+      "end": 1657.0,
+      "speaker": "host",
+      "text": "人生有时候的美好就在于阴差阳错。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 182,
+      "start": 1657.0,
+      "end": 1660.0,
+      "speaker": "host",
+      "text": "阴差阳错的才能去那些城市,才能见那些人啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 183,
+      "start": 1660.0,
+      "end": 1662.0,
+      "speaker": "host",
+      "text": "阴差阳错的才能展开一段奇旅。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 184,
+      "start": 1662.0,
+      "end": 1667.0,
+      "speaker": "host",
+      "text": "阴差阳错的后来你才能去新东方当一个老师,阴差阳错的当了一个老师之后你才教了50万的学生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 185,
+      "start": 1667.0,
+      "end": 1671.0,
+      "speaker": "host",
+      "text": "阴差阳错的你后来才能站在屏幕前卖菜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 186,
+      "start": 1671.0,
+      "end": 1673.0,
+      "speaker": "host",
+      "text": "给别人落落大方的讲你的故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 187,
+      "start": 1673.0,
+      "end": 1676.0,
+      "speaker": "host",
+      "text": "对不起,我这次讲活着吧,活着讲成了这样子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 188,
+      "start": 1676.0,
+      "end": 1679.0,
+      "speaker": "host",
+      "text": "但是我相信每个人也从我这里,文字里能够感受到我想传递的力量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 189,
+      "start": 1679.0,
+      "end": 1680.0,
+      "speaker": "host",
+      "text": "当然这样讲有卖出去吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 190,
+      "start": 1680.0,
+      "end": 1681.0,
+      "speaker": "guest",
+      "text": "卖了四千多本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 191,
+      "start": 1681.0,
+      "end": 1682.0,
+      "speaker": "host",
+      "text": "啊,卖的不好是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 192,
+      "start": 1682.0,
+      "end": 1683.0,
+      "speaker": "guest",
+      "text": "还行,挺好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 193,
+      "start": 1683.0,
+      "end": 1684.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 194,
+      "start": 1684.0,
+      "end": 1685.0,
+      "speaker": "host",
+      "text": "行,还是得写小作文。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 195,
+      "start": 1685.0,
+      "end": 1686.0,
+      "speaker": "host",
+      "text": "咱今天晚上卖橄榄油是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 196,
+      "start": 1686.0,
+      "end": 1687.0,
+      "speaker": "host",
+      "text": "西班牙的橄榄油是吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 197,
+      "start": 1687.0,
+      "end": 1688.0,
+      "speaker": "guest",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 198,
+      "start": 1688.0,
+      "end": 1689.0,
+      "speaker": "host",
+      "text": "安达卢西亚那个地方是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 199,
+      "start": 1689.0,
+      "end": 1690.0,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 200,
+      "start": 1692.0,
+      "end": 1693.0,
+      "speaker": "host",
+      "text": "来,把油给我。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 201,
+      "start": 1696.0,
+      "end": 1699.0,
+      "speaker": "host",
+      "text": "Extra virgin olive oil。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 202,
+      "start": 1699.0,
+      "end": 1702.0,
+      "speaker": "host",
+      "text": "特级初榨橄榄油的意思就是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 203,
+      "start": 1702.0,
+      "end": 1704.0,
+      "speaker": "host",
+      "text": "橄榄果摘下来24小时之内就榨了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 204,
+      "start": 1704.0,
+      "end": 1706.0,
+      "speaker": "host",
+      "text": "鲜。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 205,
+      "start": 1706.0,
+      "end": 1707.0,
+      "speaker": "host",
+      "text": "所以口感好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 206,
+      "start": 1707.0,
+      "end": 1708.0,
+      "speaker": "host",
+      "text": "国外进的油,回来罐装。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 207,
+      "start": 1708.0,
+      "end": 1710.0,
+      "speaker": "host",
+      "text": "酸度很重要。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 208,
+      "start": 1710.0,
+      "end": 1711.0,
+      "speaker": "host",
+      "text": "好的油酸度就比较低。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 209,
+      "start": 1711.0,
+      "end": 1716.0,
+      "speaker": "host",
+      "text": "当然自然榨出来的酸度低,有的人他是通过后期的这个化学手段故意把酸度降低,那不算。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 210,
+      "start": 1716.0,
+      "end": 1719.0,
+      "speaker": "host",
+      "text": "国标是小于等于0.8%。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 211,
+      "start": 1719.0,
+      "end": 1721.0,
+      "speaker": "host",
+      "text": "我们的酸度是小于等于0.6%。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 212,
+      "start": 1721.0,
+      "end": 1723.0,
+      "speaker": "host",
+      "text": "口感风味营养得到很大的保存。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 213,
+      "start": 1726.0,
+      "end": 1728.0,
+      "speaker": "host",
+      "text": "原产国是西班牙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 214,
+      "start": 1728.0,
+      "end": 1730.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 215,
+      "start": 1730.0,
+      "end": 1731.0,
+      "speaker": "host",
+      "text": "我好多年前去过西班牙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 216,
+      "start": 1731.0,
+      "end": 1734.0,
+      "speaker": "host",
+      "text": "想到了我准备写小作文了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 217,
+      "start": 1734.0,
+      "end": 1735.0,
+      "speaker": "host",
+      "text": "大家想录的朋友可以准备好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 218,
+      "start": 1735.0,
+      "end": 1736.0,
+      "speaker": "host",
+      "text": "看现在几点。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 219,
+      "start": 1736.0,
+      "end": 1737.0,
+      "speaker": "host",
+      "text": "8点55。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 220,
+      "start": 1737.0,
+      "end": 1738.0,
+      "speaker": "host",
+      "text": "我要不要整到9点?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 221,
+      "start": 1742.0,
+      "end": 1745.0,
+      "speaker": "host",
+      "text": "想到西班牙,我首先想到的是马德里的艺术馆。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 222,
+      "start": 1745.0,
+      "end": 1747.0,
+      "speaker": "host",
+      "text": "我在里头看到过达利的作品。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 223,
+      "start": 1747.0,
+      "end": 1752.0,
+      "speaker": "host",
+      "text": "我想到的是那些穿越了历史,仍然停留的宫殿。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 224,
+      "start": 1752.0,
+      "end": 1755.0,
+      "speaker": "host",
+      "text": "呃。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 225,
+      "start": 1755.0,
+      "end": 1759.0,
+      "speaker": "host",
+      "text": "我想到巴塞罗那,我想到地中海的海岸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 226,
+      "start": 1759.0,
+      "end": 1763.0,
+      "speaker": "host",
+      "text": "想到了灌在杯子里的桑格利亚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 227,
+      "start": 1767.0,
+      "end": 1769.0,
+      "speaker": "host",
+      "text": "和端到你面前的海鲜饭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 228,
+      "start": 1773.0,
+      "end": 1777.0,
+      "speaker": "host",
+      "text": "我想到了安达卢西亚,它是西班牙最南部,也是欧洲最南部的一个城市。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 229,
+      "start": 1777.0,
+      "end": 1780.0,
+      "speaker": "host",
+      "text": "它与直布罗陀海峡呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 230,
+      "start": 1780.0,
+      "end": 1783.0,
+      "speaker": "host",
+      "text": "紧邻着。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 231,
+      "start": 1783.0,
+      "end": 1786.0,
+      "speaker": "host",
+      "text": "所以直布罗陀海峡将欧洲与非洲切断。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 232,
+      "start": 1789.0,
+      "end": 1791.0,
+      "speaker": "host",
+      "text": "直布罗陀海峡很宽啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 233,
+      "start": 1791.0,
+      "end": 1794.0,
+      "speaker": "host",
+      "text": "虽然我们无法跨越天险。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 234,
+      "start": 1794.0,
+      "end": 1798.0,
+      "speaker": "host",
+      "text": "虽然我们无法跨越天险,但我还是想牵你的手。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 235,
+      "start": 1800.0,
+      "end": 1801.0,
+      "speaker": "host",
+      "text": "把景色尽览。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 236,
+      "start": 1801.0,
+      "end": 1802.0,
+      "speaker": "host",
+      "text": "哎,压上来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 237,
+      "start": 1802.0,
+      "end": 1803.0,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 238,
+      "start": 1803.0,
+      "end": 1804.0,
+      "speaker": "guest",
+      "text": "但呀。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 239,
+      "start": 1804.0,
+      "end": 1806.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 240,
+      "start": 1806.0,
+      "end": 1807.0,
+      "speaker": "host",
+      "text": "差不多。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 241,
+      "start": 1807.0,
+      "end": 1808.0,
+      "speaker": "host",
+      "text": "我刚刚再重来一遍,我刚刚说了啥?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 242,
+      "start": 1808.0,
+      "end": 1810.0,
+      "speaker": "host",
+      "text": "当我想到西班牙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 243,
+      "start": 1810.0,
+      "end": 1812.0,
+      "speaker": "host",
+      "text": "我想到的是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 244,
+      "start": 1812.0,
+      "end": 1814.0,
+      "speaker": "host",
+      "text": "不好意思,变,重说第二遍,变不住了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 245,
+      "start": 1814.0,
+      "end": 1817.0,
+      "speaker": "host",
+      "text": "当我想到西班牙,我想到的是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 246,
+      "start": 1817.0,
+      "end": 1820.0,
+      "speaker": "host",
+      "text": "马德里的艺术馆。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 247,
+      "start": 1820.0,
+      "end": 1823.0,
+      "speaker": "host",
+      "text": "我想到了达利的话作。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 248,
+      "start": 1823.0,
+      "end": 1826.0,
+      "speaker": "host",
+      "text": "和穿越时光的宫殿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 249,
+      "start": 1826.0,
+      "end": 1828.0,
+      "speaker": "host",
+      "text": "我想到了巴塞罗那。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 250,
+      "start": 1831.0,
+      "end": 1832.0,
+      "speaker": "guest",
+      "text": "海鲜饭。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 251,
+      "start": 1832.0,
+      "end": 1835.0,
+      "speaker": "host",
+      "text": "阳光撒落的地中海岸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 252,
+      "start": 1835.0,
+      "end": 1838.0,
+      "speaker": "host",
+      "text": "我想到了成满杯子的桑格利亚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 253,
+      "start": 1838.0,
+      "end": 1840.0,
+      "speaker": "host",
+      "text": "以及端到你面前的海鲜饭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 254,
+      "start": 1840.0,
+      "end": 1842.0,
+      "speaker": "host",
+      "text": "我想到了安达卢西亚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 255,
+      "start": 1842.0,
+      "end": 1844.0,
+      "speaker": "host",
+      "text": "那是欧洲的最南端。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 256,
+      "start": 1844.0,
+      "end": 1847.0,
+      "speaker": "host",
+      "text": "直布罗陀海峡将欧洲与非洲隔断。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 257,
+      "start": 1850.0,
+      "end": 1854.0,
+      "speaker": "host",
+      "text": "我身为凡人,虽无法带你跨越天险,但我仍愿牵你的手。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 258,
+      "start": 1854.0,
+      "end": 1857.0,
+      "speaker": "host",
+      "text": "将景色变蓝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 259,
+      "start": 1857.0,
+      "end": 1858.0,
+      "speaker": "host",
+      "text": "大概是这个样子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 260,
+      "start": 1858.0,
+      "end": 1859.0,
+      "speaker": "guest",
+      "text": "加会员会有优惠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 261,
+      "start": 1859.0,
+      "end": 1863.0,
+      "speaker": "host",
+      "text": "点击屏幕中间,加入东方甄选的抖音会员店。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 262,
+      "start": 1863.0,
+      "end": 1866.0,
+      "speaker": "host",
+      "text": "里头有券,可以用券去买啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 263,
+      "start": 1869.0,
+      "end": 1870.0,
+      "speaker": "host",
+      "text": "我们的自营品是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 264,
+      "start": 1870.0,
+      "end": 1871.0,
+      "speaker": "guest",
+      "text": "给大家用券去购买。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 265,
+      "start": 1871.0,
+      "end": 1876.0,
+      "speaker": "host",
+      "text": "安达卢西亚为什么这个地方很牛呢?因为它是就是西班牙的南嘛,它隔着海,隔着海岸对面就已经是非洲了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 266,
+      "start": 1876.0,
+      "end": 1879.0,
+      "speaker": "host",
+      "text": "所以它跟那个海岸,那个海峡就是直布罗陀海峡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 267,
+      "start": 1879.0,
+      "end": 1882.0,
+      "speaker": "host",
+      "text": "因为是直布罗陀海峡,所以仍然它其实是一种地中海气候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 268,
+      "start": 1882.0,
+      "end": 1886.0,
+      "speaker": "host",
+      "text": "地中海气候的特点是啊,就是冬天呢,温度偏暖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 269,
+      "start": 1886.0,
+      "end": 1888.0,
+      "speaker": "host",
+      "text": "夏天其实会有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    }
+  ]
+}

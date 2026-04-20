@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "YpSk_c0j3VY",
+  "status": "done",
+  "started_at": "2026-04-19T10:34:43.206207+08:00",
+  "finished_at": "2026-04-19T10:36:18.288922+08:00",
+  "duration_sec": 95.082715,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.youtube.com/watch?v=YpSk_c0j3VY",
+    "downloaded_bytes": 211196127,
+    "source_metadata": {
+      "video_id": "YpSk_c0j3VY",
+      "source": "youtube",
+      "url": "https://www.youtube.com/watch?v=YpSk_c0j3VY",
+      "title": "考古：2022年7月16日中午11:45-13:15董宇辉完整直播回放/解读《右岸》（07162022）",
+      "uploader": "中国顶级电商主持人董宇辉完整直播回放",
+      "duration_sec": 5519.0
+    }
+  }
+}

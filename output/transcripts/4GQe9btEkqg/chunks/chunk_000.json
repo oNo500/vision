@@ -1,0 +1,5066 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "speaker": "host",
+      "text": "当你能够自觉穿秋裤的时候,就说明你就长大了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 4.0,
+      "end": 7.0,
+      "speaker": "host",
+      "text": "你就该搭配上这个黑芝养核桃芝麻黑豆粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 7.0,
+      "end": 7.7,
+      "speaker": "host",
+      "text": "你就",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 8.0,
+      "end": 9.0,
+      "speaker": "host",
+      "text": "喝上就买了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 9.0,
+      "end": 11.0,
+      "speaker": "host",
+      "text": "今天咱们99块8。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 11.0,
+      "end": 14.0,
+      "speaker": "host",
+      "text": "买到的是两盒,平常我跟你说这一盒是",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 15.0,
+      "end": 16.0,
+      "speaker": "host",
+      "text": "79。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 16.0,
+      "end": 22.0,
+      "speaker": "host",
+      "text": "今天两盒,还送大家一个冲的杯子,然后再加上一些核桃粉的这个体验装,反正好几样嘛,还送好几样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 22.0,
+      "end": 24.0,
+      "speaker": "host",
+      "text": "总共下来是99块8。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 26.0,
+      "end": 27.0,
+      "speaker": "host",
+      "text": "他们今天",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 28.0,
+      "end": 30.0,
+      "speaker": "host",
+      "text": "要给你点赞,要把你送上十亿。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 31.0,
+      "end": 32.0,
+      "speaker": "host",
+      "text": "刚才",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 32.0,
+      "end": 34.0,
+      "speaker": "guest",
+      "text": "所以说这个没有必要,没有必要。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 34.0,
+      "end": 37.0,
+      "speaker": "host",
+      "text": "刚才你没来,现在不知道已经几亿了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 37.0,
+      "end": 39.0,
+      "speaker": "host",
+      "text": "刚才已经在刷了,已经在这叙事了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 39.0,
+      "end": 41.0,
+      "speaker": "host",
+      "text": "现在17,17万人了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 42.0,
+      "end": 44.0,
+      "speaker": "host",
+      "text": "17万人还是比较累的,大家放松一下啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 44.0,
+      "end": 46.0,
+      "speaker": "host",
+      "text": "身边刚给大家胡说八道什么。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 47.0,
+      "end": 49.0,
+      "speaker": "host",
+      "text": "没有胡说八道,我再给大家介绍这个黑芝养核桃粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 49.0,
+      "end": 51.0,
+      "speaker": "host",
+      "text": "介绍的很激动啊。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 51.0,
+      "end": 53.0,
+      "speaker": "guest",
+      "text": "我刚听你想要播到晚上三点是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 53.0,
+      "end": 54.0,
+      "speaker": "guest",
+      "text": "导演。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 54.0,
+      "end": 56.0,
+      "speaker": "guest",
+      "text": "这个诉求反馈一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 56.0,
+      "end": 59.0,
+      "speaker": "guest",
+      "text": "就石明老师现在要求工作。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 59.0,
+      "end": 60.0,
+      "speaker": "guest",
+      "text": "你能让他失望吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 60.0,
+      "end": 61.0,
+      "speaker": "host",
+      "text": "不是,你",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 61.0,
+      "end": 62.0,
+      "speaker": "guest",
+      "text": "往三点播呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 62.0,
+      "end": 64.0,
+      "speaker": "host",
+      "text": "你们听话一个个都听不到重点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 64.0,
+      "end": 67.0,
+      "speaker": "host",
+      "text": "我说那会年轻不懂事的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 67.0,
+      "end": 68.0,
+      "speaker": "guest",
+      "text": "你看石明老师现在年轻吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 68.0,
+      "end": 70.0,
+      "speaker": "host",
+      "text": "往三点去干,往三点去冲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 70.0,
+      "end": 71.0,
+      "speaker": "host",
+      "text": "我现在懂事了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 71.0,
+      "end": 72.0,
+      "speaker": "host",
+      "text": "现在年轻吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 72.0,
+      "end": 73.0,
+      "speaker": "host",
+      "text": "依然年轻啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 73.0,
+      "end": 74.0,
+      "speaker": "host",
+      "text": "归来仍是少年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 74.0,
+      "end": 75.0,
+      "speaker": "guest",
+      "text": "少什么年?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 75.0,
+      "end": 76.0,
+      "speaker": "host",
+      "text": "现在",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 76.0,
+      "end": 76.0,
+      "speaker": "guest",
+      "text": "很帅,很帅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 77.0,
+      "end": 78.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 78.0,
+      "end": 81.0,
+      "speaker": "host",
+      "text": "不敢再加时了,晚上播到12点半就可以了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 81.0,
+      "end": 82.0,
+      "speaker": "host",
+      "text": "已经很晚,已经很累了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 83.0,
+      "end": 85.0,
+      "speaker": "host",
+      "text": "这个直播间年龄最大的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 85.0,
+      "end": 86.0,
+      "speaker": "host",
+      "text": "32了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 87.0,
+      "end": 90.0,
+      "speaker": "guest",
+      "text": "你知道我们直播间里头,大家",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 90.0,
+      "end": 92.0,
+      "speaker": "host",
+      "text": "尽管看上去,董宇辉可能年龄稍微比较大一点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 92.0,
+      "end": 93.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 93.0,
+      "end": 94.0,
+      "speaker": "host",
+      "text": "但实际上他比我小。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 94.0,
+      "end": 98.0,
+      "speaker": "host",
+      "text": "你知道网上很多最早传咱俩亲戚关系的时候,你那几天不是还非要让我火。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 98.0,
+      "end": 100.0,
+      "speaker": "host",
+      "text": "在这给我拉流量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 100.0,
+      "end": 102.0,
+      "speaker": "host",
+      "text": "然后很多朋友就在底下评论说。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 103.0,
+      "end": 106.0,
+      "speaker": "host",
+      "text": "你们不要说了,宇辉老师那不是故意糟蹋明明。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 106.0,
+      "end": 108.0,
+      "speaker": "host",
+      "text": "宇辉是明明的表哥啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 108.0,
+      "end": 110.0,
+      "speaker": "host",
+      "text": "他是带他表弟呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 110.0,
+      "end": 112.0,
+      "speaker": "host",
+      "text": "大家为什么会产生这种错觉?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 113.0,
+      "end": 115.0,
+      "speaker": "host",
+      "text": "前边的都说都是对的,但为什么觉得你是表哥?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 115.0,
+      "end": 117.0,
+      "speaker": "guest",
+      "text": "可能我更像一个兄长一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 117.0,
+      "end": 119.0,
+      "speaker": "guest",
+      "text": "嗯,我在自己活起来之后我没有忘记你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 119.0,
+      "end": 120.0,
+      "speaker": "host",
+      "text": "对,这是这是其中的一点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 120.0,
+      "end": 121.0,
+      "speaker": "guest",
+      "text": "掌心如父啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 122.0,
+      "end": 123.0,
+      "speaker": "guest",
+      "text": "我担心你啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 126.0,
+      "end": 127.0,
+      "speaker": "host",
+      "text": "董宇辉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 127.0,
+      "end": 128.0,
+      "speaker": "guest",
+      "text": "啊?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 128.0,
+      "end": 129.0,
+      "speaker": "host",
+      "text": "你咋这么不要脸?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 129.0,
+      "end": 131.0,
+      "speaker": "guest",
+      "text": "我我是不是表达了这种意思?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 131.0,
+      "end": 132.0,
+      "speaker": "host",
+      "text": "你这个伦理梗啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 132.0,
+      "end": 134.0,
+      "speaker": "guest",
+      "text": "你刚说这个,你刚说我像你哥,这是你说的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 134.0,
+      "end": 135.0,
+      "speaker": "host",
+      "text": "对,是我说的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 135.0,
+      "end": 136.0,
+      "speaker": "guest",
+      "text": "掌心如父是不是古人说的?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 136.0,
+      "end": 138.0,
+      "speaker": "host",
+      "text": "你这个道德底线,关键时候担心你是不是事实?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 138.0,
+      "end": 142.0,
+      "speaker": "host",
+      "text": "道德底线低可以,但你不能在屏幕前,你这种伦理梗,这伦理到直接",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 144.0,
+      "end": 145.0,
+      "speaker": "host",
+      "text": "这便宜占的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 145.0,
+      "end": 146.0,
+      "speaker": "guest",
+      "text": "咱俩哥论哥的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 147.0,
+      "end": 149.0,
+      "speaker": "guest",
+      "text": "镜头我管你叫哥,镜头前你管我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 151.0,
+      "end": 152.0,
+      "speaker": "guest",
+      "text": "咱俩哥论哥的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 152.0,
+      "end": 153.0,
+      "speaker": "host",
+      "text": "不要脸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 154.0,
+      "end": 157.0,
+      "speaker": "host",
+      "text": "哎呀,我这掉了坑可能也掉了有个七八十来回了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 157.0,
+      "end": 160.0,
+      "speaker": "host",
+      "text": "但今天这个坑是万万没有想到啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 160.0,
+      "end": 161.0,
+      "speaker": "guest",
+      "text": "这关键是你引过来的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 161.0,
+      "end": 162.0,
+      "speaker": "guest",
+      "text": "我本来没有这个意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 162.0,
+      "end": 163.0,
+      "speaker": "host",
+      "text": "我没有引,但你",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 163.0,
+      "end": 164.0,
+      "speaker": "host",
+      "text": "大家是这么说的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 164.0,
+      "end": 166.0,
+      "speaker": "host",
+      "text": "再一个从脸上你让大家去评论一下吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 166.0,
+      "end": 168.0,
+      "speaker": "host",
+      "text": "你老说咱俩长得反正像。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 168.0,
+      "end": 169.0,
+      "speaker": "host",
+      "text": "不是像,就是",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 169.0,
+      "end": 170.0,
+      "speaker": "guest",
+      "text": "很像。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 170.0,
+      "end": 171.0,
+      "speaker": "host",
+      "text": "都都很沧老。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 171.0,
+      "end": 172.0,
+      "speaker": "guest",
+      "text": "长得确实像我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 172.0,
+      "end": 173.0,
+      "speaker": "host",
+      "text": "对,长得都很沧老。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 173.0,
+      "end": 174.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 174.0,
+      "end": 176.0,
+      "speaker": "guest",
+      "text": "这个当老师长得老是一个优点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 176.0,
+      "end": 179.0,
+      "speaker": "guest",
+      "text": "你看做别的这个职业呢,长得老可能是个缺点,但是在当老师。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 179.0,
+      "end": 180.0,
+      "speaker": "guest",
+      "text": "一看就资深,资深。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 180.0,
+      "end": 181.0,
+      "speaker": "guest",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 182.0,
+      "end": 183.0,
+      "speaker": "host",
+      "text": "啊,对。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 183.0,
+      "end": 185.0,
+      "speaker": "host",
+      "text": "教龄三,教龄30年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 185.0,
+      "end": 187.0,
+      "speaker": "host",
+      "text": "大家应该没问题能相信吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 187.0,
+      "end": 189.0,
+      "speaker": "host",
+      "text": "这是退休返聘回来的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 189.0,
+      "end": 190.0,
+      "speaker": "guest",
+      "text": "教龄30年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 191.0,
+      "end": 193.0,
+      "speaker": "host",
+      "text": "大家现在开始冲十亿,冲什么十亿?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 193.0,
+      "end": 194.0,
+      "speaker": "host",
+      "text": "你能劝一劝他们吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 196.0,
+      "end": 200.0,
+      "speaker": "host",
+      "text": "我刚跟他们说了,让别点了,但是我又害怕大家直接说,你管。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 200.0,
+      "end": 202.0,
+      "speaker": "host",
+      "text": "我们又不是给你点了,我们是给宇辉点的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 202.0,
+      "end": 203.0,
+      "speaker": "host",
+      "text": "管的到宽。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 203.0,
+      "end": 204.0,
+      "speaker": "host",
+      "text": "你是不是又酸了?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 205.0,
+      "end": 206.0,
+      "speaker": "host",
+      "text": "又在这干扰。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 206.0,
+      "end": 208.0,
+      "speaker": "host",
+      "text": "所以我就没敢没没敢特别阻拦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 208.0,
+      "end": 210.0,
+      "speaker": "host",
+      "text": "我就说如果是给我点力了就别点了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 210.0,
+      "end": 211.0,
+      "speaker": "guest",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 212.0,
+      "end": 213.0,
+      "speaker": "host",
+      "text": "咱俩在介绍什么,请问?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 214.0,
+      "end": 215.0,
+      "speaker": "guest",
+      "text": "你上来五分钟了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 215.0,
+      "end": 216.0,
+      "speaker": "host",
+      "text": "咱俩在介绍什么?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 216.0,
+      "end": 217.0,
+      "speaker": "guest",
+      "text": "不应该想。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 217.0,
+      "end": 220.0,
+      "speaker": "guest",
+      "text": "右下角小黄车需要自己买,咱这个直播间呢,图的就是个开心。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 221.0,
+      "end": 224.0,
+      "speaker": "guest",
+      "text": "不要忘记,不要忘记你的初心啊,你当时是为了卖货的吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 224.0,
+      "end": 227.0,
+      "speaker": "host",
+      "text": "我这心里极度不平衡,今天这此仇不报非君子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 228.0,
+      "end": 230.0,
+      "speaker": "guest",
+      "text": "不急,你可以等一会反应的时间。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 230.0,
+      "end": 231.0,
+      "speaker": "host",
+      "text": "今天这个便宜的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 231.0,
+      "end": 233.0,
+      "speaker": "guest",
+      "text": "你再逐渐进入状态,我已经感觉到了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 233.0,
+      "end": 236.0,
+      "speaker": "host",
+      "text": "进入什么状态,我这会憋的都是脏话,你知道吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 236.0,
+      "end": 238.0,
+      "speaker": "host",
+      "text": "我这句都要都要说出来了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 238.0,
+      "end": 240.0,
+      "speaker": "guest",
+      "text": "但是你角度得找得巧妙,你要直接破口大骂的话,那你就是输了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 241.0,
+      "end": 243.0,
+      "speaker": "guest",
+      "text": "愤怒就是无能的表现。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 244.0,
+      "end": 245.0,
+      "speaker": "guest",
+      "text": "不能愤怒。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 246.0,
+      "end": 248.0,
+      "speaker": "host",
+      "text": "愤怒了还咋占便宜?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 249.0,
+      "end": 252.0,
+      "speaker": "host",
+      "text": "这完了,在这播了五分钟。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 253.0,
+      "end": 254.0,
+      "speaker": "guest",
+      "text": "啊?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 254.0,
+      "end": 255.0,
+      "speaker": "host",
+      "text": "差点就说出来了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 255.0,
+      "end": 257.0,
+      "speaker": "host",
+      "text": "播了五分钟直接降了一半。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 258.0,
+      "end": 259.0,
+      "speaker": "host",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 262.0,
+      "end": 264.0,
+      "speaker": "host",
+      "text": "导演说要不一起卖一个锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 264.0,
+      "end": 265.0,
+      "speaker": "guest",
+      "text": "要不一起卖锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 265.0,
+      "end": 266.0,
+      "speaker": "guest",
+      "text": "可以,咱卖个锅吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 266.0,
+      "end": 267.0,
+      "speaker": "guest",
+      "text": "哪个锅?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 267.0,
+      "end": 268.0,
+      "speaker": "host",
+      "text": "这个锅是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 268.0,
+      "end": 269.0,
+      "speaker": "guest",
+      "text": "来,这个锅是得背啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 273.0,
+      "end": 274.0,
+      "speaker": "guest",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 274.0,
+      "end": 275.0,
+      "speaker": "guest",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 275.0,
+      "end": 276.0,
+      "speaker": "guest",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 276.0,
+      "end": 277.0,
+      "speaker": "guest",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 277.0,
+      "end": 278.0,
+      "speaker": "guest",
+      "text": "哎。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 278.0,
+      "end": 280.0,
+      "speaker": "host",
+      "text": "你现在给大家说这锅叫啥名字?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 280.0,
+      "end": 281.0,
+      "speaker": "guest",
+      "text": "从业经历啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 281.0,
+      "end": 283.0,
+      "speaker": "guest",
+      "text": "这个导演这个锅叫啥名字?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 283.0,
+      "end": 284.0,
+      "speaker": "guest",
+      "text": "导演你倒是翻一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 284.0,
+      "end": 286.0,
+      "speaker": "guest",
+      "text": "我都不知道这个锅叫啥名字,多少钱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 287.0,
+      "end": 292.0,
+      "speaker": "guest",
+      "text": "我们其实面前是有一个提示这个产品信息的屏幕的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 292.0,
+      "end": 293.0,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 293.0,
+      "end": 298.0,
+      "speaker": "guest",
+      "text": "但是呢,自从我们6月9号火了以后呢,导演也开始不按照这个顺序来给我们排了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 298.0,
+      "end": 303.0,
+      "speaker": "guest",
+      "text": "他即使排了呢,我也不按着他讲,我在这里自己讲小故事,编小作文。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 303.0,
+      "end": 307.0,
+      "speaker": "guest",
+      "text": "时间久了呢,因为互相伤害,导演也彻底不翻了,甚至现在连PPT展示都不展示。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 307.0,
+      "end": 309.0,
+      "speaker": "guest",
+      "text": "所以大家也原谅我,不是都用不解的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 309.0,
+      "end": 311.0,
+      "speaker": "host",
+      "text": "卖着卖着也不知道这个锅叫啥。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 311.0,
+      "end": 312.0,
+      "speaker": "host",
+      "text": "卖着卖着也不知道这个锅几块钱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 312.0,
+      "end": 313.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 313.0,
+      "end": 315.0,
+      "speaker": "guest",
+      "text": "就像很多人走着走着就算了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 315.0,
+      "end": 317.0,
+      "speaker": "host",
+      "text": "苏喂火山盐小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 317.0,
+      "end": 318.0,
+      "speaker": "guest",
+      "text": "苏喂火山盐小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 318.0,
+      "end": 319.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 319.0,
+      "end": 321.0,
+      "speaker": "host",
+      "text": "苏喂火山盐小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 321.0,
+      "end": 322.0,
+      "speaker": "host",
+      "text": "火山盐小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 322.0,
+      "end": 323.0,
+      "speaker": "host",
+      "text": "不是喂火,哎呀。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 323.0,
+      "end": 324.0,
+      "speaker": "host",
+      "text": "就是小白锅,小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 324.0,
+      "end": 325.0,
+      "speaker": "guest",
+      "text": "已经火了,小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 325.0,
+      "end": 326.0,
+      "speaker": "host",
+      "text": "小白锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 326.0,
+      "end": 328.0,
+      "speaker": "host",
+      "text": "哎,那为什么是两个?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 328.0,
+      "end": 329.0,
+      "speaker": "host",
+      "text": "是",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 329.0,
+      "end": 330.0,
+      "speaker": "host",
+      "text": "一套。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 330.0,
+      "end": 333.0,
+      "speaker": "guest",
+      "text": "一个24厘米的,一个是28厘米的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 333.0,
+      "end": 336.0,
+      "speaker": "host",
+      "text": "这个你先介绍,你先编个作文,我看一下功能好不好?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 336.0,
+      "end": 337.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 337.0,
+      "end": 338.0,
+      "speaker": "host",
+      "text": "快,你先开始。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 338.0,
+      "end": 341.0,
+      "speaker": "guest",
+      "text": "明明手里拿的这个是28厘米的,年纪比较大,锅也比较大。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 342.0,
+      "end": 344.0,
+      "speaker": "guest",
+      "text": "年纪比较大,锅也比较大。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 345.0,
+      "end": 346.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 346.0,
+      "end": 348.0,
+      "speaker": "guest",
+      "text": "主要是油家有口的,需要个大锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 348.0,
+      "end": 349.0,
+      "speaker": "guest",
+      "text": "你单身需要个小锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 349.0,
+      "end": 351.0,
+      "speaker": "guest",
+      "text": "你看这分配的都很。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 351.0,
+      "end": 352.0,
+      "speaker": "host",
+      "text": "我但是就不需要锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 352.0,
+      "end": 353.0,
+      "speaker": "host",
+      "text": "要锅干啥?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 353.0,
+      "end": 355.0,
+      "speaker": "host",
+      "text": "一人吃饱全家不饿,要锅干啥?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 355.0,
+      "end": 356.0,
+      "speaker": "host",
+      "text": "方便面多买。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 357.0,
+      "end": 359.0,
+      "speaker": "host",
+      "text": "咱那几块钱的方便面能吃好长时间的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 359.0,
+      "end": 361.0,
+      "speaker": "guest",
+      "text": "这锅也可以煮面,它的锅身比较高。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 361.0,
+      "end": 362.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 363.0,
+      "end": 365.0,
+      "speaker": "host",
+      "text": "我买一次桶的泡面,那桶的可以用好几天的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 366.0,
+      "end": 367.0,
+      "speaker": "host",
+      "text": "你不懂。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 367.0,
+      "end": 368.0,
+      "speaker": "guest",
+      "text": "我输了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 370.0,
+      "end": 371.0,
+      "speaker": "host",
+      "text": "好,你说完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 371.0,
+      "end": 372.0,
+      "speaker": "host",
+      "text": "让你编一编小作文。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 372.0,
+      "end": 373.0,
+      "speaker": "guest",
+      "text": "等一会。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 374.0,
+      "end": 376.0,
+      "speaker": "guest",
+      "text": "小作文咱俩在这编小作文有点膈应。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 377.0,
+      "end": 379.0,
+      "speaker": "guest",
+      "text": "你得看咱俩编小作文不舒服。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 379.0,
+      "end": 381.0,
+      "speaker": "host",
+      "text": "你编不出来就编不出来,你别是拖延时间。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 381.0,
+      "end": 383.0,
+      "speaker": "guest",
+      "text": "那也行,你不是反击我,再给你机会吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 383.0,
+      "end": 384.0,
+      "speaker": "host",
+      "text": "好好,给我机会了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 384.0,
+      "end": 385.0,
+      "speaker": "host",
+      "text": "好,那我先介绍好吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 385.0,
+      "end": 386.0,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 386.0,
+      "end": 389.0,
+      "speaker": "host",
+      "text": "这个锅呢,咱们今天两个颜色,一个是白色的,一个是陶土色的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 389.0,
+      "end": 392.0,
+      "speaker": "host",
+      "text": "这个陶土色的,我手上拿的这个大一点是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 392.0,
+      "end": 393.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 393.0,
+      "end": 396.0,
+      "speaker": "host",
+      "text": "大一点的这个是口径是28厘米的,小一点这个是24厘米的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 397.0,
+      "end": 398.0,
+      "speaker": "host",
+      "text": "也算是不沾锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 399.0,
+      "end": 404.0,
+      "speaker": "host",
+      "text": "可以当炒锅,可以当炖锅去用,可以翻炒炒菜都没有问题,你看宇辉现在展示的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 405.0,
+      "end": 409.0,
+      "speaker": "host",
+      "text": "可以见我们过去的这个同事的视野,都是新东方,都是一家的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 409.0,
+      "end": 411.0,
+      "speaker": "guest",
+      "text": "大家能理解为什么当年在",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 411.0,
+      "end": 412.0,
+      "speaker": "host",
+      "text": "翻炒非常的好,你让我先把这个功能说完啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 412.0,
+      "end": 414.0,
+      "speaker": "guest",
+      "text": "你这个把这甩出来了都,这个姿势就不对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 414.0,
+      "end": 415.0,
+      "speaker": "host",
+      "text": "是我没有站着。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 415.0,
+      "end": 416.0,
+      "speaker": "guest",
+      "text": "哎,不是这样甩。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 417.0,
+      "end": 418.0,
+      "speaker": "guest",
+      "text": "你这属于颠簸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 418.0,
+      "end": 421.0,
+      "speaker": "guest",
+      "text": "我跟你教啊,你看,你要往前送,然后再往回收,看到没?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 422.0,
+      "end": 424.0,
+      "speaker": "guest",
+      "text": "收的那一下使劲,收的那一下使劲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 424.0,
+      "end": 425.0,
+      "speaker": "guest",
+      "text": "它就这样能够",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 425.0,
+      "end": 426.0,
+      "speaker": "host",
+      "text": "对,论论炒饭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 426.0,
+      "end": 427.0,
+      "speaker": "host",
+      "text": "你们是懂的啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 427.0,
+      "end": 430.0,
+      "speaker": "host",
+      "text": "宇辉在做饭这方面比我能稍稍专业一点点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 430.0,
+      "end": 432.0,
+      "speaker": "host",
+      "text": "稍稍专业一点点,毕竟是用凉水泡过方便面的比较懂啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 432.0,
+      "end": 435.0,
+      "speaker": "host",
+      "text": "我主要在家里面能煮锅,然后煎炒不太行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 435.0,
+      "end": 436.0,
+      "speaker": "guest",
+      "text": "往前一送是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 436.0,
+      "end": 438.0,
+      "speaker": "guest",
+      "text": "对,你往回收那一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 440.0,
+      "end": 441.0,
+      "speaker": "guest",
+      "text": "哎。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 441.0,
+      "end": 442.0,
+      "speaker": "host",
+      "text": "对,就是这样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 442.0,
+      "end": 443.0,
+      "speaker": "host",
+      "text": "很好学。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 444.0,
+      "end": 445.0,
+      "speaker": "guest",
+      "text": "废了啊,已经学废了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 445.0,
+      "end": 446.0,
+      "speaker": "host",
+      "text": "嗯,对,就是这样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 447.0,
+      "end": 449.0,
+      "speaker": "host",
+      "text": "你看一个手这样甩着还不累。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 449.0,
+      "end": 454.0,
+      "speaker": "host",
+      "text": "重量不重啊,1.3千克的一个锅体,两斤六两的,就是让你拿上既不会觉得它特别轻浮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 455.0,
+      "end": 457.0,
+      "speaker": "host",
+      "text": "不会像宇辉这样让人感觉特别轻浮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 457.0,
+      "end": 462.0,
+      "speaker": "host",
+      "text": "再一个呢,你在甩的过程中也不回特别笨重,然后特别厚重那种感觉,然后都不会。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 463.0,
+      "end": 464.0,
+      "speaker": "host",
+      "text": "刚刚好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 465.0,
+      "end": 466.0,
+      "speaker": "host",
+      "text": "简约大气。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 231,
+      "start": 467.0,
+      "end": 470.0,
+      "speaker": "host",
+      "text": "然后白色锅身,我觉得其实女孩子的话选择这个可能会更好一点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 232,
+      "start": 470.0,
+      "end": 476.0,
+      "speaker": "host",
+      "text": "当然如果一家人口比较多的,建议大家去买这个尺寸大一点的这个28厘米口径的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 233,
+      "start": 478.0,
+      "end": 479.0,
+      "speaker": "host",
+      "text": "应该我介绍完了吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 234,
+      "start": 479.0,
+      "end": 483.0,
+      "speaker": "host",
+      "text": "尽量不要用铁铲和钢丝球,这个锅尽量不要用铁铲和钢丝球。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 235,
+      "start": 483.0,
+      "end": 484.0,
+      "speaker": "guest",
+      "text": "送个木铲啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 236,
+      "start": 484.0,
+      "end": 485.0,
+      "speaker": "host",
+      "text": "送个竹铲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 237,
+      "start": 485.0,
+      "end": 488.0,
+      "speaker": "host",
+      "text": "或者家里用那个橡胶的那个都可以啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 238,
+      "start": 488.0,
+      "end": 490.0,
+      "speaker": "guest",
+      "text": "大家能看到我在颠勺的时候,为什么如此熟悉呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 239,
+      "start": 490.0,
+      "end": 492.0,
+      "speaker": "guest",
+      "text": "这就是大学时候的兼职经历。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 240,
+      "start": 492.0,
+      "end": 493.0,
+      "speaker": "guest",
+      "text": "专业对口。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 241,
+      "start": 493.0,
+      "end": 497.0,
+      "speaker": "guest",
+      "text": "大学的时候努力的这个实习挣钱,然后积攒本领。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 242,
+      "start": 497.0,
+      "end": 500.0,
+      "speaker": "guest",
+      "text": "等到这个大四找工作的时候,一鸣惊人啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 243,
+      "start": 500.0,
+      "end": 501.0,
+      "speaker": "guest",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 244,
+      "start": 501.0,
+      "end": 502.0,
+      "speaker": "host",
+      "text": "你往这来了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 245,
+      "start": 502.0,
+      "end": 505.0,
+      "speaker": "host",
+      "text": "这不是老实,这根本都不可能展示的这么顺畅,你看,你看,你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 246,
+      "start": 505.0,
+      "end": 506.0,
+      "speaker": "host",
+      "text": "哎哟妈,哎哟。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 247,
+      "start": 506.0,
+      "end": 507.0,
+      "speaker": "host",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 248,
+      "start": 507.0,
+      "end": 509.0,
+      "speaker": "host",
+      "text": "不是你大学的时候去哪了?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 249,
+      "start": 509.0,
+      "end": 512.0,
+      "speaker": "host",
+      "text": "你不是在兵马俑那给人当解说嘛,怎么又去?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 250,
+      "start": 513.0,
+      "end": 514.0,
+      "speaker": "host",
+      "text": "还去后厨干过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 251,
+      "start": 515.0,
+      "end": 516.0,
+      "speaker": "guest",
+      "text": "哎,我还真的在饭店里干过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 252,
+      "start": 516.0,
+      "end": 522.0,
+      "speaker": "guest",
+      "text": "我有个亲戚,他当时开了一个饭店,大一我回去的寒假没事干,我还在饭店里真的给人干过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 253,
+      "start": 522.0,
+      "end": 526.0,
+      "speaker": "guest",
+      "text": "啊,擦桌,但是我干的是擦桌子啊,然后呢,这个端茶,倒水啊这些活。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 254,
+      "start": 526.0,
+      "end": 527.0,
+      "speaker": "guest",
+      "text": "真的干过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 255,
+      "start": 527.0,
+      "end": 528.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 256,
+      "start": 529.0,
+      "end": 531.0,
+      "speaker": "guest",
+      "text": "这个颠勺这个可能是属于天赋异禀吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 257,
+      "start": 531.0,
+      "end": 535.0,
+      "speaker": "guest",
+      "text": "我在第一次走进厨房那那次,那年我两岁,看见锅,第一眼就动了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 258,
+      "start": 535.0,
+      "end": 537.0,
+      "speaker": "guest",
+      "text": "拿起来锅,就颠了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 259,
+      "start": 537.0,
+      "end": 538.0,
+      "speaker": "host",
+      "text": "这块胡说,这块胡说。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 260,
+      "start": 538.0,
+      "end": 540.0,
+      "speaker": "host",
+      "text": "我确实跟锅有不解之缘。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 261,
+      "start": 540.0,
+      "end": 544.0,
+      "speaker": "host",
+      "text": "因为在小的时候,你小的时候你们那村有没有换过那种麦芽糖,我们把它叫老糖,你见过没?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 262,
+      "start": 544.0,
+      "end": 545.0,
+      "speaker": "guest",
+      "text": "梨果糖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 263,
+      "start": 545.0,
+      "end": 546.0,
+      "speaker": "host",
+      "text": "梨果糖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 264,
+      "start": 546.0,
+      "end": 547.0,
+      "speaker": "host",
+      "text": "你们把它叫梨果糖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 265,
+      "start": 547.0,
+      "end": 552.0,
+      "speaker": "host",
+      "text": "我们那换糖的时候,我妈不在家,我跟我弟拿俩家里俩铝锅,换了几块糖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 266,
+      "start": 552.0,
+      "end": 553.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 267,
+      "start": 553.0,
+      "end": 555.0,
+      "speaker": "guest",
+      "text": "从小就与锅结下不解之缘。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 268,
+      "start": 555.0,
+      "end": 557.0,
+      "speaker": "host",
+      "text": "我都没有站的权利了吗?现在要求这么高。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 269,
+      "start": 557.0,
+      "end": 558.0,
+      "speaker": "guest",
+      "text": "对,你几乎没有了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 270,
+      "start": 558.0,
+      "end": 559.0,
+      "speaker": "guest",
+      "text": "因为你刚说了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 271,
+      "start": 559.0,
+      "end": 560.0,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 272,
+      "start": 560.0,
+      "end": 561.0,
+      "speaker": "host",
+      "text": "一锅糖,然后呢嘛?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 273,
+      "start": 562.0,
+      "end": 563.0,
+      "speaker": "host",
+      "text": "就拿锅去换了糖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 274,
+      "start": 564.0,
+      "end": 565.0,
+      "speaker": "host",
+      "text": "不做饭了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 275,
+      "start": 565.0,
+      "end": 567.0,
+      "speaker": "guest",
+      "text": "你没有过那种经历吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 276,
+      "start": 567.0,
+      "end": 568.0,
+      "speaker": "host",
+      "text": "但是没有拿锅换过糖啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 277,
+      "start": 568.0,
+      "end": 570.0,
+      "speaker": "guest",
+      "text": "石明小时候是有的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 278,
+      "start": 570.0,
+      "end": 575.0,
+      "speaker": "guest",
+      "text": "我是不要脸,爱吃糖,拿家里锅换成了糖,被我妈追着在夕阳下奔跑的少年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 279,
+      "start": 575.0,
+      "end": 578.0,
+      "speaker": "guest",
+      "text": "石明老师呢是想吃鸡蛋,拿棍去敲自己家的鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 280,
+      "start": 579.0,
+      "end": 582.0,
+      "speaker": "host",
+      "text": "我那会真的以朴素的想法,以为鸡催一下就能下蛋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 281,
+      "start": 582.0,
+      "end": 583.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 282,
+      "start": 583.0,
+      "end": 584.0,
+      "speaker": "host",
+      "text": "我们家那鸡也是六大鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 283,
+      "start": 584.0,
+      "end": 585.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 284,
+      "start": 585.0,
+      "end": 590.0,
+      "speaker": "host",
+      "text": "然后给他关到鸡笼里,我跟我一家的孩子,我就拿一个竹棍根敲,然后催他下蛋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 285,
+      "start": 590.0,
+      "end": 591.0,
+      "speaker": "host",
+      "text": "给",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 286,
+      "start": 591.0,
+      "end": 592.0,
+      "speaker": "host",
+      "text": "敲死。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 287,
+      "start": 593.0,
+      "end": 595.0,
+      "speaker": "host",
+      "text": "董宇辉真的跟锅有不解之缘。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 288,
+      "start": 595.0,
+      "end": 597.0,
+      "speaker": "host",
+      "text": "刚才讲了拿这个换过糖吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 289,
+      "start": 597.0,
+      "end": 598.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 290,
+      "start": 598.0,
+      "end": 600.0,
+      "speaker": "host",
+      "text": "长大这个工作又在饭店实习过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 291,
+      "start": 600.0,
+      "end": 601.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 292,
+      "start": 601.0,
+      "end": 603.0,
+      "speaker": "host",
+      "text": "这是跟锅有缘了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 293,
+      "start": 603.0,
+      "end": 605.0,
+      "speaker": "host",
+      "text": "他这锅这么这么多年的努力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 294,
+      "start": 605.0,
+      "end": 607.0,
+      "speaker": "guest",
+      "text": "主要技能就是背锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 295,
+      "start": 607.0,
+      "end": 608.0,
+      "speaker": "host",
+      "text": "也背了一些锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 296,
+      "start": 608.0,
+      "end": 611.0,
+      "speaker": "host",
+      "text": "但是最后还是靠锅火了,那天早上起来拿一个牌子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 297,
+      "start": 611.0,
+      "end": 614.0,
+      "speaker": "host",
+      "text": "Steak, steak, steak,然后卖那个牛排一个方锅,然后就火了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 298,
+      "start": 614.0,
+      "end": 615.0,
+      "speaker": "host",
+      "text": "火的那天就是这样的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 299,
+      "start": 615.0,
+      "end": 616.0,
+      "speaker": "guest",
+      "text": "你为什么突然说泰语?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 300,
+      "start": 616.0,
+      "end": 617.0,
+      "speaker": "host",
+      "text": "你不管什么语吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 301,
+      "start": 617.0,
+      "end": 618.0,
+      "speaker": "host",
+      "text": "大家都能记得这一段。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 302,
+      "start": 618.0,
+      "end": 619.0,
+      "speaker": "guest",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 303,
+      "start": 619.0,
+      "end": 623.0,
+      "speaker": "host",
+      "text": "Steak, steak, steak,牛排牛排12片牛排,然后拿了一个大方锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 304,
+      "start": 623.0,
+      "end": 625.0,
+      "speaker": "host",
+      "text": "每个人都需要锅。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 305,
+      "start": 625.0,
+      "end": 627.0,
+      "speaker": "host",
+      "text": "宇辉终于找到了自己的那一刻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 306,
+      "start": 627.0,
+      "end": 628.0,
+      "speaker": "host",
+      "text": "合适的啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 307,
+      "start": 628.0,
+      "end": 631.0,
+      "speaker": "host",
+      "text": "如果你还没有找到,今天咱们这个是98块钱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 308,
+      "start": 631.0,
+      "end": 632.0,
+      "speaker": "host",
+      "text": "大尺寸的118。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 309,
+      "start": 633.0,
+      "end": 634.0,
+      "speaker": "host",
+      "text": "买一口吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 310,
+      "start": 634.0,
+      "end": 635.0,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 311,
+      "start": 635.0,
+      "end": 641.0,
+      "speaker": "guest",
+      "text": "买完了之后呢,大家可以自己家里回去炒啊,蒸啊,炖啊,煮啊都行,但是不建议拿这个锅去敲鸡,因为敲鸡的话鸡会敲死。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 312,
+      "start": 641.0,
+      "end": 643.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 313,
+      "start": 644.0,
+      "end": 648.0,
+      "speaker": "host",
+      "text": "我以为你说是不要拿铲在这个上面咚咚咚这样敲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 314,
+      "start": 648.0,
+      "end": 649.0,
+      "speaker": "host",
+      "text": "对吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 315,
+      "start": 650.0,
+      "end": 651.0,
+      "speaker": "guest",
+      "text": "不好,敲鸡不好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 316,
+      "start": 652.0,
+      "end": 653.0,
+      "speaker": "host",
+      "text": "敲鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 317,
+      "start": 654.0,
+      "end": 655.0,
+      "speaker": "host",
+      "text": "还是拿棍敲鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 318,
+      "start": 655.0,
+      "end": 656.0,
+      "speaker": "host",
+      "text": "都所谓,反正都死了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 319,
+      "start": 656.0,
+      "end": 657.0,
+      "speaker": "guest",
+      "text": "还有300单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 320,
+      "start": 657.0,
+      "end": 658.0,
+      "speaker": "host",
+      "text": "还有300单,OK。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 321,
+      "start": 659.0,
+      "end": 660.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 322,
+      "start": 661.0,
+      "end": 662.0,
+      "speaker": "guest",
+      "text": "那你敲死之后没有艾玛吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 323,
+      "start": 663.0,
+      "end": 664.0,
+      "speaker": "host",
+      "text": "忘了,反正就敲死了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 324,
+      "start": 665.0,
+      "end": 666.0,
+      "speaker": "host",
+      "text": "死了以后呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 325,
+      "start": 667.0,
+      "end": 668.0,
+      "speaker": "guest",
+      "text": "我还是很好奇的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 326,
+      "start": 668.0,
+      "end": 669.0,
+      "speaker": "guest",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 327,
+      "start": 669.0,
+      "end": 671.0,
+      "speaker": "guest",
+      "text": "来,石明在这,我们先给大家讲一讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 328,
+      "start": 671.0,
+      "end": 672.0,
+      "speaker": "host",
+      "text": "少打听了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 329,
+      "start": 672.0,
+      "end": 673.0,
+      "speaker": "host",
+      "text": "社会上的事少打听。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 330,
+      "start": 673.0,
+      "end": 674.0,
+      "speaker": "host",
+      "text": "行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 331,
+      "start": 674.0,
+      "end": 675.0,
+      "speaker": "guest",
+      "text": "DK搜索百科。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 332,
+      "start": 675.0,
+      "end": 677.0,
+      "speaker": "guest",
+      "text": "听一下石明老师咱卖出呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 333,
+      "start": 677.0,
+      "end": 679.0,
+      "speaker": "host",
+      "text": "这本书我这两天卖老好了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 334,
+      "start": 679.0,
+      "end": 680.0,
+      "speaker": "guest",
+      "text": "真的吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 335,
+      "start": 680.0,
+      "end": 680.0,
+      "speaker": "host",
+      "text": "真的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 336,
+      "start": 680.0,
+      "end": 681.0,
+      "speaker": "guest",
+      "text": "学学。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 337,
+      "start": 681.0,
+      "end": 683.0,
+      "speaker": "guest",
+      "text": "那你讲一讲,我听听你是咋讲的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 338,
+      "start": 683.0,
+      "end": 685.0,
+      "speaker": "host",
+      "text": "你是文科生,我就是必须得给你上一课。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 339,
+      "start": 685.0,
+      "end": 686.0,
+      "speaker": "host",
+      "text": "讲一讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 340,
+      "start": 686.0,
+      "end": 687.0,
+      "speaker": "guest",
+      "text": "让我长一长见识。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 341,
+      "start": 687.0,
+      "end": 688.0,
+      "speaker": "guest",
+      "text": "听一下鸡子咋敲死的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 342,
+      "start": 689.0,
+      "end": 692.0,
+      "speaker": "host",
+      "text": "呃,我先问你一个问题吧,我就是必须给你难住一回。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 343,
+      "start": 692.0,
+      "end": 694.0,
+      "speaker": "guest",
+      "text": "你难住我胜之不武啊,你是理科生,你是李和老师。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 344,
+      "start": 694.0,
+      "end": 697.0,
+      "speaker": "host",
+      "text": "我作为一个理科,我问你一个文科的问题。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 345,
+      "start": 697.0,
+      "end": 698.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 346,
+      "start": 698.0,
+      "end": 700.0,
+      "speaker": "host",
+      "text": "就是豁出去了,董宇辉,你今天可能就要栽到这了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 347,
+      "start": 700.0,
+      "end": 701.0,
+      "speaker": "host",
+      "text": "你准备好啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 348,
+      "start": 701.0,
+      "end": 702.0,
+      "speaker": "guest",
+      "text": "我又不是没栽过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 349,
+      "start": 702.0,
+      "end": 705.0,
+      "speaker": "host",
+      "text": "别服软,你这么刚上来就不停的示弱,这还能还敢问我?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 350,
+      "start": 705.0,
+      "end": 706.0,
+      "speaker": "guest",
+      "text": "你先问嘛,不应想。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 351,
+      "start": 706.0,
+      "end": 707.0,
+      "speaker": "host",
+      "text": "你把这个先撤了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 352,
+      "start": 708.0,
+      "end": 712.0,
+      "speaker": "host",
+      "text": "好,大家一块回答一下啊,因为我可能前两天讲的时候很多朋友都已经听过了,你们已经知道答案了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 353,
+      "start": 712.0,
+      "end": 713.0,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 354,
+      "start": 713.0,
+      "end": 719.0,
+      "speaker": "host",
+      "text": "这个知识点呢,应该是属于高中的文科知识,因为我作为理科生其实不太了解,这两天才现学的,然后给大家讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 355,
+      "start": 719.0,
+      "end": 722.0,
+      "speaker": "host",
+      "text": "然后今天,先给大家说一下DK的这一套书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 356,
+      "start": 722.0,
+      "end": 724.0,
+      "speaker": "host",
+      "text": "咱们今天是100,188,198。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 357,
+      "start": 724.0,
+      "end": 727.0,
+      "speaker": "host",
+      "text": "188拿到的是八本,里边呢讲着各种各样的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 358,
+      "start": 727.0,
+      "end": 728.0,
+      "speaker": "guest",
+      "text": "198。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 359,
+      "start": 728.0,
+      "end": 732.0,
+      "speaker": "host",
+      "text": "198啊,植物王国呀,比如包括我手上拿的这个气象密码等等。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 360,
+      "start": 732.0,
+      "end": 733.0,
+      "speaker": "host",
+      "text": "那比非常的好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 361,
+      "start": 733.0,
+      "end": 736.0,
+      "speaker": "host",
+      "text": "DK是1974年成立的一个出版社。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 362,
+      "start": 736.0,
+      "end": 744.0,
+      "speaker": "host",
+      "text": "他们家的各种书特点就是有非常非常具有视觉冲击力的这种画面,然后配合上言简意赅的解释的非常清楚的文字。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 363,
+      "start": 744.0,
+      "end": 748.0,
+      "speaker": "host",
+      "text": "能够让孩子从里边轻松的,简单的,愉快的学到很多知识啊,大概这么一套书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 364,
+      "start": 748.0,
+      "end": 759.0,
+      "speaker": "host",
+      "text": "特别适合能够有独立阅读能力的小学三年级往上的,一直可以读到高中,甚至都可以读到大人这个阶段,读到老师都没有问题,很多知识可以一直学下去。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 365,
+      "start": 759.0,
+      "end": 760.0,
+      "speaker": "guest",
+      "text": "经典书籍反复看啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 366,
+      "start": 760.0,
+      "end": 761.0,
+      "speaker": "host",
+      "text": "对,反复看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 367,
+      "start": 761.0,
+      "end": 765.0,
+      "speaker": "host",
+      "text": "下面呢,我刚刚开始翻的是这个气象密码的这一本,我就把里边的一些给大家介绍一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 368,
+      "start": 765.0,
+      "end": 767.0,
+      "speaker": "host",
+      "text": "我介绍的工程你要觉得好了,就可以直接去拍起来啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 369,
+      "start": 767.0,
+      "end": 770.0,
+      "speaker": "host",
+      "text": "这本呢,里边讲了天气跟气候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 370,
+      "start": 770.0,
+      "end": 773.0,
+      "speaker": "host",
+      "text": "然后呢,它先有一个概数,给你讲什么是天气,什么气候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 371,
+      "start": 773.0,
+      "end": 775.0,
+      "speaker": "host",
+      "text": "四季是怎么来的,然后讲了大气层。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 372,
+      "start": 775.0,
+      "end": 779.0,
+      "speaker": "host",
+      "text": "讲了风,尤其是这个盛行风,还有信风等等这些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 373,
+      "start": 779.0,
+      "end": 783.0,
+      "speaker": "host",
+      "text": "再往下呢,有这个水循环,大气中的水循环。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 374,
+      "start": 783.0,
+      "end": 785.0,
+      "speaker": "host",
+      "text": "水是怎么来的,怎么循环起来的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 375,
+      "start": 785.0,
+      "end": 790.0,
+      "speaker": "host",
+      "text": "包括你比如说咱们国家的这个黄河长江的这个源头,它为什么这水能够一直流下去?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 376,
+      "start": 791.0,
+      "end": 792.0,
+      "speaker": "host",
+      "text": "源源不断的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 377,
+      "start": 792.0,
+      "end": 793.0,
+      "speaker": "host",
+      "text": "它是怎么来的啊?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 378,
+      "start": 793.0,
+      "end": 794.0,
+      "speaker": "guest",
+      "text": "因为",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 379,
+      "start": 794.0,
+      "end": 795.0,
+      "speaker": "host",
+      "text": "没有源头活水来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 380,
+      "start": 795.0,
+      "end": 796.0,
+      "speaker": "host",
+      "text": "这些活水是从哪来的?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 381,
+      "start": 796.0,
+      "end": 797.0,
+      "speaker": "guest",
+      "text": "太平洋的水气嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 382,
+      "start": 797.0,
+      "end": 798.0,
+      "speaker": "host",
+      "text": "太平洋的水气。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 383,
+      "start": 798.0,
+      "end": 801.0,
+      "speaker": "host",
+      "text": "然后呢,再继续往这边去翻啊,前面讲了这些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 384,
+      "start": 801.0,
+      "end": 803.0,
+      "speaker": "host",
+      "text": "我觉得哪是比较震撼的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 385,
+      "start": 803.0,
+      "end": 807.0,
+      "speaker": "host",
+      "text": "前面比如说介绍大气层,我给大家介绍这里边比较我看了之后就是有恍然大悟的这些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 386,
+      "start": 807.0,
+      "end": 810.0,
+      "speaker": "host",
+      "text": "比如说这一个非常简单的,作为初中生刚刚开始学地理的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 387,
+      "start": 810.0,
+      "end": 812.0,
+      "speaker": "host",
+      "text": "还不太好理解的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 388,
+      "start": 812.0,
+      "end": 814.0,
+      "speaker": "host",
+      "text": "但它这这个图像,你看这个相对位置画的特别好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 389,
+      "start": 814.0,
+      "end": 822.0,
+      "speaker": "host",
+      "text": "太阳画到这,然后到了每年冬天的时候,北半球它刚好位置好像高一点,地球呢照到南半球的这一片,然后这就形成了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 390,
+      "start": 822.0,
+      "end": 824.0,
+      "speaker": "host",
+      "text": "这个大家能看见吗?哎,能看见啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 391,
+      "start": 824.0,
+      "end": 828.0,
+      "speaker": "host",
+      "text": "形成了极夜,然后夏天到这的时候,你看它在地球在自西向东怎么去自转。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 392,
+      "start": 828.0,
+      "end": 831.0,
+      "speaker": "host",
+      "text": "刚好光直线传播都能到达这一片,这是极昼。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 393,
+      "start": 831.0,
+      "end": 832.0,
+      "speaker": "host",
+      "text": "这介绍了四季。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 394,
+      "start": 832.0,
+      "end": 836.0,
+      "speaker": "host",
+      "text": "四季完了呢,就开始介绍冷空气跟这个暖空气。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 395,
+      "start": 836.0,
+      "end": 837.0,
+      "speaker": "host",
+      "text": "怎么形成风?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 396,
+      "start": 837.0,
+      "end": 838.0,
+      "speaker": "host",
+      "text": "这都很简单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 397,
+      "start": 838.0,
+      "end": 841.0,
+      "speaker": "host",
+      "text": "热空,地表热的这一部分。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 398,
+      "start": 841.0,
+      "end": 843.0,
+      "speaker": "host",
+      "text": "就是举这么一个例子吧,这放一盆水。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 399,
+      "start": 844.0,
+      "end": 845.0,
+      "speaker": "host",
+      "text": "旁边呢是地板。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 400,
+      "start": 845.0,
+      "end": 848.0,
+      "speaker": "host",
+      "text": "太阳一照,温度升的比较快的是地板。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 401,
+      "start": 848.0,
+      "end": 849.0,
+      "speaker": "guest",
+      "text": "地板。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 402,
+      "start": 849.0,
+      "end": 851.0,
+      "speaker": "guest",
+      "text": "水的比热容比较大嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 403,
+      "start": 851.0,
+      "end": 853.0,
+      "speaker": "host",
+      "text": "水的比热容比较大,温度上升的比较慢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 404,
+      "start": 853.0,
+      "end": 856.0,
+      "speaker": "host",
+      "text": "所以咱陕西人往这种夏天往水泥地上一坐,往铁板上一坐,啥反应?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 405,
+      "start": 856.0,
+      "end": 857.0,
+      "speaker": "guest",
+      "text": "哎呀,狗子烧的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 406,
+      "start": 857.0,
+      "end": 858.0,
+      "speaker": "host",
+      "text": "普通话怎么说?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 407,
+      "start": 859.0,
+      "end": 860.0,
+      "speaker": "host",
+      "text": "臀部具有灼热感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 408,
+      "start": 860.0,
+      "end": 862.0,
+      "speaker": "host",
+      "text": "陕西话叫狗子烫的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 409,
+      "start": 862.0,
+      "end": 863.0,
+      "speaker": "guest",
+      "text": "烧很烫。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 410,
+      "start": 863.0,
+      "end": 864.0,
+      "speaker": "host",
+      "text": "好狗子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 411,
+      "start": 864.0,
+      "end": 866.0,
+      "speaker": "host",
+      "text": "就是是不是这个意思?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 412,
+      "start": 866.0,
+      "end": 868.0,
+      "speaker": "host",
+      "text": "你稍微合适一点,你不能下就土的土到哪去了?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 413,
+      "start": 868.0,
+      "end": 869.0,
+      "speaker": "guest",
+      "text": "那不雅了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 414,
+      "start": 869.0,
+      "end": 870.0,
+      "speaker": "host",
+      "text": "然后继续。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 415,
+      "start": 870.0,
+      "end": 875.0,
+      "speaker": "host",
+      "text": "然后水泥地,铁板烧的比较高,上面的空气就会膨胀受热,密度小就会往上走。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 416,
+      "start": 875.0,
+      "end": 877.0,
+      "speaker": "host",
+      "text": "旁边就过来就形成风,风就是这样来的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 417,
+      "start": 877.0,
+      "end": 878.0,
+      "speaker": "guest",
+      "text": "大概就是一个这样的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 418,
+      "start": 878.0,
+      "end": 879.0,
+      "speaker": "guest",
+      "text": "形状。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 419,
+      "start": 879.0,
+      "end": 881.0,
+      "speaker": "host",
+      "text": "然后在基础上呢,因为形成的这种风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 420,
+      "start": 881.0,
+      "end": 884.0,
+      "speaker": "host",
+      "text": "那么刚才就是温度偏差造成的,大家看这图,人家这个文字讲的要细致多了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 421,
+      "start": 884.0,
+      "end": 886.0,
+      "speaker": "host",
+      "text": "这个镜头是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 422,
+      "start": 886.0,
+      "end": 887.0,
+      "speaker": "host",
+      "text": "对是这。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 423,
+      "start": 887.0,
+      "end": 888.0,
+      "speaker": "host",
+      "text": "看这上面有箭头啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 424,
+      "start": 888.0,
+      "end": 889.0,
+      "speaker": "host",
+      "text": "对对对对,就是这意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 425,
+      "start": 889.0,
+      "end": 891.0,
+      "speaker": "host",
+      "text": "上面有箭头,这怎么来的呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 426,
+      "start": 891.0,
+      "end": 899.0,
+      "speaker": "host",
+      "text": "刚才讲那地球上比如说吃到的温度比较高,它两边这温度就低点,那这个风按道理从低温的这个地方往高温这去往这去刮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 427,
+      "start": 899.0,
+      "end": 902.0,
+      "speaker": "host",
+      "text": "但刮的过程中按道理它不是正南正北,但你这看这个有点偏。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 428,
+      "start": 902.0,
+      "end": 903.0,
+      "speaker": "host",
+      "text": "这个偏是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 429,
+      "start": 903.0,
+      "end": 904.0,
+      "speaker": "guest",
+      "text": "地球带着自转啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 430,
+      "start": 904.0,
+      "end": 905.0,
+      "speaker": "host",
+      "text": "地球带着自转。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 431,
+      "start": 905.0,
+      "end": 906.0,
+      "speaker": "host",
+      "text": "然后形成了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 432,
+      "start": 906.0,
+      "end": 907.0,
+      "speaker": "guest",
+      "text": "把空气给甩出去了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 433,
+      "start": 907.0,
+      "end": 911.0,
+      "speaker": "host",
+      "text": "对,这是一个观点,这就是中间的这一个,因为他很想信风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 434,
+      "start": 911.0,
+      "end": 913.0,
+      "speaker": "host",
+      "text": "每年这个时候一直朝着这个方向刮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 435,
+      "start": 913.0,
+      "end": 914.0,
+      "speaker": "host",
+      "text": "所以中间的这俩叫信风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 436,
+      "start": 914.0,
+      "end": 916.0,
+      "speaker": "host",
+      "text": "然后再往这俩带子呢,刚好又不一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 437,
+      "start": 917.0,
+      "end": 918.0,
+      "speaker": "host",
+      "text": "是这样理解的吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 438,
+      "start": 918.0,
+      "end": 919.0,
+      "speaker": "guest",
+      "text": "不是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 439,
+      "start": 919.0,
+      "end": 920.0,
+      "speaker": "host",
+      "text": "差不多吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 440,
+      "start": 920.0,
+      "end": 923.0,
+      "speaker": "host",
+      "text": "然后这俩呢是盛行的,一年四季都朝这个方向刮,就叫盛行西风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 441,
+      "start": 923.0,
+      "end": 925.0,
+      "speaker": "host",
+      "text": "比如说北半球主要盛行西风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 442,
+      "start": 925.0,
+      "end": 928.0,
+      "speaker": "host",
+      "text": "那我现在想问你的问题就是从中国坐飞机去欧洲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 443,
+      "start": 928.0,
+      "end": 929.0,
+      "speaker": "host",
+      "text": "你不是经常去吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 444,
+      "start": 929.0,
+      "end": 930.0,
+      "speaker": "host",
+      "text": "下班不是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 445,
+      "start": 930.0,
+      "end": 931.0,
+      "speaker": "guest",
+      "text": "就也就去过一次。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 446,
+      "start": 931.0,
+      "end": 933.0,
+      "speaker": "host",
+      "text": "哎,你不是去过很多次下班还去那喝啥啥的?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 447,
+      "start": 933.0,
+      "end": 934.0,
+      "speaker": "guest",
+      "text": "梦里,那一般是梦里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 448,
+      "start": 934.0,
+      "end": 936.0,
+      "speaker": "host",
+      "text": "好,从中国比如飞你去西班牙。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 449,
+      "start": 936.0,
+      "end": 937.0,
+      "speaker": "host",
+      "text": "飞多久?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 450,
+      "start": 937.0,
+      "end": 938.0,
+      "speaker": "host",
+      "text": "九个小时,11个小时。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 451,
+      "start": 938.0,
+      "end": 939.0,
+      "speaker": "guest",
+      "text": "九个左右吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 452,
+      "start": 939.0,
+      "end": 941.0,
+      "speaker": "host",
+      "text": "我记反正去伦敦飞11个小时啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 453,
+      "start": 941.0,
+      "end": 943.0,
+      "speaker": "host",
+      "text": "假如去伦敦飞11个小时,从北京飞伦敦飞11个小时。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 454,
+      "start": 943.0,
+      "end": 944.0,
+      "speaker": "host",
+      "text": "回来九个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 455,
+      "start": 944.0,
+      "end": 945.0,
+      "speaker": "guest",
+      "text": "温哥华飞了十个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 456,
+      "start": 945.0,
+      "end": 946.0,
+      "speaker": "host",
+      "text": "呃,咱先不说温哥华。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 457,
+      "start": 946.0,
+      "end": 948.0,
+      "speaker": "host",
+      "text": "温哥华去飞的话,应该是飞那半边。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 458,
+      "start": 948.0,
+      "end": 949.0,
+      "speaker": "guest",
+      "text": "飞的是做。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 459,
+      "start": 949.0,
+      "end": 950.0,
+      "speaker": "host",
+      "text": "往西走。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 460,
+      "start": 950.0,
+      "end": 951.0,
+      "speaker": "guest",
+      "text": "白令海峡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 461,
+      "start": 951.0,
+      "end": 952.0,
+      "speaker": "host",
+      "text": "对,白令海峡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 462,
+      "start": 952.0,
+      "end": 953.0,
+      "speaker": "host",
+      "text": "你这嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 463,
+      "start": 953.0,
+      "end": 954.0,
+      "speaker": "guest",
+      "text": "朝鲜,俄罗斯,白令海峡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 464,
+      "start": 954.0,
+      "end": 955.0,
+      "speaker": "host",
+      "text": "咱现在先往这边转,就往欧洲这边。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 465,
+      "start": 955.0,
+      "end": 957.0,
+      "speaker": "host",
+      "text": "然后飞过去11个小时,飞回来九个小时。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 466,
+      "start": 957.0,
+      "end": 958.0,
+      "speaker": "host",
+      "text": "啥原因?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 467,
+      "start": 959.0,
+      "end": 961.0,
+      "speaker": "guest",
+      "text": "因为这个它走的路线不一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 468,
+      "start": 961.0,
+      "end": 962.0,
+      "speaker": "host",
+      "text": "路线是一样的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 469,
+      "start": 962.0,
+      "end": 965.0,
+      "speaker": "host",
+      "text": "或者说路线的偏差带来的可能是时差上的几分钟而已。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 470,
+      "start": 965.0,
+      "end": 966.0,
+      "speaker": "host",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 471,
+      "start": 966.0,
+      "end": 967.0,
+      "speaker": "guest",
+      "text": "那还有一个是地球的自转造成的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 472,
+      "start": 967.0,
+      "end": 969.0,
+      "speaker": "host",
+      "text": "不是自转造成的,跟自转没关系。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 473,
+      "start": 969.0,
+      "end": 972.0,
+      "speaker": "host",
+      "text": "你跳起来,你落下来,地球自转了,但你还是要落在原来那个位置。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 474,
+      "start": 972.0,
+      "end": 973.0,
+      "speaker": "host",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 475,
+      "start": 973.0,
+      "end": 975.0,
+      "speaker": "host",
+      "text": "哎,算了,我不想往下继续了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 476,
+      "start": 975.0,
+      "end": 976.0,
+      "speaker": "host",
+      "text": "我这样好像也胜之不武。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 477,
+      "start": 976.0,
+      "end": 978.0,
+      "speaker": "host",
+      "text": "这个可能多少还牵扯一点点物理内容。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 478,
+      "start": 978.0,
+      "end": 979.0,
+      "speaker": "host",
+      "text": "那我再问一个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 479,
+      "start": 979.0,
+      "end": 980.0,
+      "speaker": "guest",
+      "text": "那就是风的问题了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 480,
+      "start": 980.0,
+      "end": 981.0,
+      "speaker": "guest",
+      "text": "因为飞行速度可能不一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 481,
+      "start": 981.0,
+      "end": 982.0,
+      "speaker": "guest",
+      "text": "因为你刚没有说他。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 482,
+      "start": 982.0,
+      "end": 984.0,
+      "speaker": "host",
+      "text": "你学习的,你学习的过程中主要就是用排除法是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 483,
+      "start": 985.0,
+      "end": 986.0,
+      "speaker": "guest",
+      "text": "差不多。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 484,
+      "start": 986.0,
+      "end": 988.0,
+      "speaker": "guest",
+      "text": "因为两三个选项。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 485,
+      "start": 988.0,
+      "end": 990.0,
+      "speaker": "guest",
+      "text": "来回的路线,不,来回的路线肯定是不一样的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 486,
+      "start": 990.0,
+      "end": 991.0,
+      "speaker": "host",
+      "text": "对,主要是风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 487,
+      "start": 991.0,
+      "end": 994.0,
+      "speaker": "host",
+      "text": "就是刚才讲的北半球这一节的这个风向。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 488,
+      "start": 994.0,
+      "end": 995.0,
+      "speaker": "host",
+      "text": "你看这风是自西向东吹的嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 489,
+      "start": 995.0,
+      "end": 996.0,
+      "speaker": "host",
+      "text": "这盛行西风嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 490,
+      "start": 996.0,
+      "end": 997.0,
+      "speaker": "host",
+      "text": "你看这箭头。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 491,
+      "start": 997.0,
+      "end": 1001.0,
+      "speaker": "host",
+      "text": "所以你过去的时候它是逆风这样的,然后回来它更多是顺风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 492,
+      "start": 1001.0,
+      "end": 1002.0,
+      "speaker": "guest",
+      "text": "所以你这个不一定严谨。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 493,
+      "start": 1002.0,
+      "end": 1005.0,
+      "speaker": "guest",
+      "text": "因为飞机如果飞欧洲这种一定都是在万米高空,万米高空应该是没有风的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 494,
+      "start": 1005.0,
+      "end": 1006.0,
+      "speaker": "host",
+      "text": "不,有。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 495,
+      "start": 1006.0,
+      "end": 1008.0,
+      "speaker": "host",
+      "text": "你不要以为平流层就没有风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 496,
+      "start": 1008.0,
+      "end": 1013.0,
+      "speaker": "host",
+      "text": "平流层的风指的是它更像是这样的,呃,不是说平流层就没有风。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 497,
+      "start": 1013.0,
+      "end": 1015.0,
+      "speaker": "host",
+      "text": "这个是很容易形成的一个误解。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 498,
+      "start": 1015.0,
+      "end": 1017.0,
+      "speaker": "host",
+      "text": "我们很多时候以为平流层非常的安全。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 499,
+      "start": 1017.0,
+      "end": 1019.0,
+      "speaker": "host",
+      "text": "飞机飞行的高度是8000到1万。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 500,
+      "start": 1019.0,
+      "end": 1020.0,
+      "speaker": "host",
+      "text": "8000到1万。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 501,
+      "start": 1020.0,
+      "end": 1022.0,
+      "speaker": "host",
+      "text": "平流层的这个区域也是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 502,
+      "start": 1022.0,
+      "end": 1023.0,
+      "speaker": "guest",
+      "text": "有点出话了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 503,
+      "start": 1023.0,
+      "end": 1024.0,
+      "speaker": "guest",
+      "text": "OK。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 504,
+      "start": 1024.0,
+      "end": 1026.0,
+      "speaker": "guest",
+      "text": "来,右下角一号链接,大家可以自己去拍。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 505,
+      "start": 1026.0,
+      "end": 1029.0,
+      "speaker": "host",
+      "text": "对,还有很多很多有意思的这个知识,这个上面都有。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    }
+  ]
+}

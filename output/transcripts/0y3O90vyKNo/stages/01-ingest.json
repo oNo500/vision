@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "0y3O90vyKNo",
+  "status": "done",
+  "started_at": "2026-04-19T10:25:42.684756+08:00",
+  "finished_at": "2026-04-19T10:25:54.727671+08:00",
+  "duration_sec": 12.042915,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.youtube.com/watch?v=0y3O90vyKNo",
+    "downloaded_bytes": 51057370,
+    "source_metadata": {
+      "video_id": "0y3O90vyKNo",
+      "source": "youtube",
+      "url": "https://www.youtube.com/watch?v=0y3O90vyKNo",
+      "title": "考古：2022年6月17日晚19:53-21:00董宇辉完整直播回放 /40万人在线/DHA鸡蛋秒光/解读《晚清最后18年》《明朝那些事》《右岸》书售罄无书可卖/讲地球仪（06172022）",
+      "uploader": "中国顶级电商主持人董宇辉完整直播回放",
+      "duration_sec": 3948.0
+    }
+  }
+}

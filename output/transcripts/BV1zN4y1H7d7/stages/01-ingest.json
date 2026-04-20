@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1zN4y1H7d7",
+  "status": "done",
+  "started_at": "2026-04-19T10:38:14.166898+08:00",
+  "finished_at": "2026-04-19T10:38:22.123023+08:00",
+  "duration_sec": 7.956125,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1zN4y1H7d7/",
+    "downloaded_bytes": 59598839,
+    "source_metadata": {
+      "video_id": "BV1zN4y1H7d7",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1zN4y1H7d7/",
+      "title": "2024.1.23董宇辉与辉同行直播间直播完整版（卖货部分）",
+      "uploader": "宇辉同行1314",
+      "duration_sec": 3434.309
+    }
+  }
+}

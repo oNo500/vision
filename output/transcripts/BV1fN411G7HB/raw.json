@@ -1,0 +1,244 @@
+{
+  "video_id": "BV1fN411G7HB",
+  "source": "bilibili",
+  "url": "https://www.bilibili.com/video/BV1fN411G7HB/",
+  "title": "董宇辉直播出圈名场面之浪漫的大米，据说是临场发挥的，怪不得那么多人喜欢看他直播",
+  "uploader": "轰轰honghong",
+  "duration_sec": 211.44,
+  "asr_model": "gemini-2.5-flash",
+  "asr_version": "2026-04-18",
+  "processed_at": "2026-04-19T11:18:33.407150+08:00",
+  "bgm_removed": true,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 6.88,
+      "speaker": "host",
+      "text": "大概在1万年前，新月石地，就是现在的两河流域和埃及，幼发拉底底格里斯这里，人类驯化了小麦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 7.18,
+      "end": 16.5,
+      "speaker": "host",
+      "text": "所以赫拉利觉得是小麦驯化的人类，而不是人类驯化小麦。因为以前我们学会的直立行走，为了种小麦你弯下腰去。以前你学会的奔跑，你浑身健康，为了种小麦你浑身疾病。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 16.5,
+      "end": 21.9,
+      "speaker": "host",
+      "text": "大陆的亚洲的另一端，1万年前中国人驯化了水道，所以水道是我们驯化的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 23.4,
+      "end": 32.0,
+      "speaker": "host",
+      "text": "人类一共700万年的历史，真正重要的只有这1万年。1万年的历史很久，但我只爱你，你在一起的每一分每一秒，每一招每一息。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 32.0,
+      "end": 42.9,
+      "speaker": "host",
+      "text": "I love three things in the world. 我爱这世间的三个东西。The sun, the moon and you. 太阳、月亮和你。The sun is for the day. The moon is for the night. And you, forever. 太阳是白天，月亮是晚上，你是永远。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 44.5,
+      "end": 46.5,
+      "speaker": "host",
+      "text": "1万年前人类驯化的水道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 47.7,
+      "end": 49.3,
+      "speaker": "host",
+      "text": "我们于是发现了好的东西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 50.4,
+      "end": 56.4,
+      "speaker": "host",
+      "text": "但是大家知道真正现在的革命，其实工业革命，我们上天入地，航空母舰，宇宙飞船都是200年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 57.2,
+      "end": 68.6,
+      "speaker": "host",
+      "text": "如果说微观到原子的层面，其实我们也是由氢、氧、碳、铁这些组成的。组成你身体的元素可能比你脚下这颗蔚蓝色的星球其实要更为古老。你身体70%是水，氢二氧。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 69.5,
+      "end": 75.8,
+      "speaker": "host",
+      "text": "氢来自于大爆炸，碳来自于恒星内部的核聚变，铁来自于超新星的爆炸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 76.7,
+      "end": 89.9,
+      "speaker": "host",
+      "text": "所以从这个角度去说，我们都是宇宙形成的孩子。刚知道这一点就很浪漫了。每当你觉得自己是一个无名之辈，无足轻重，每当你觉得未来暗淡无光，没有希望的时候，请你记得有7000亿亿亿颗原子只为你一个人而活。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 90.7,
+      "end": 97.6,
+      "speaker": "host",
+      "text": "如果你身体的DNA连成一条线，你可以从地球一直到冥王星。所以你自己就能完成星际穿越。你很美好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 98.7,
+      "end": 104.9,
+      "speaker": "host",
+      "text": "就像顾城的这首诗，我们生如蚁而美如神。请你记住这一点。你不要太灰心丧气。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 106.3,
+      "end": 113.9,
+      "speaker": "host",
+      "text": "运气不一定一直好，但你的状态要一直好，心态要一直好。我刚讲了人类美若神明，但你要知道微生物更加是地球霸主。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 114.9,
+      "end": 129.8,
+      "speaker": "host",
+      "text": "如果按照现在科学家们的预计，再10亿年后，地球的温度将会上升10度。上升10度意味着你我都不存在了。但直到那个时候，在北极、南极或者地球第三极的冰层里仍然有超强的细菌。在火山口接近沸腾充满硫磺的水里头仍然有微生物的存在。他们确实很强大。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 130.8,
+      "end": 137.9,
+      "speaker": "host",
+      "text": "我再跟你讲一讲未来。预计10亿年后，太阳会升温，地球的温度提升10度，到时候人类都会不复存在。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 138.8,
+      "end": 146.4,
+      "speaker": "host",
+      "text": "就算我们躲过了那一劫，50亿年后，太阳的寿命用尽了，它会坍缩形成黑洞，把太阳系整个吸进去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 147.1,
+      "end": 162.7,
+      "speaker": "host",
+      "text": "就算我们逃离了，等到数万亿年之后，不再形成任何一颗新的恒星，整个宇宙中的所有的星系都坍缩成黑洞，就连黑洞也消失之后，最终会形成一个叫Heat Death，叫热寂。没有光，也没有声，黑暗的，冰冷的，什么都没有。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 163.4,
+      "end": 166.8,
+      "speaker": "host",
+      "text": "你听到这里有一点难过对吧？我第一次看到这里我也有点难过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 167.8,
+      "end": 172.9,
+      "speaker": "host",
+      "text": "我在想我们一路从东非走出来这么多年，难道最终是要面临灭绝的吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 173.9,
+      "end": 181.9,
+      "speaker": "host",
+      "text": "很难过。很不幸的是这一切都是事实。很幸运的是这一切离你还足够远。我说的数万亿年之久。去年中国人的平均寿命是78.1岁。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 182.9,
+      "end": 195.9,
+      "speaker": "host",
+      "text": "你还有足够多的时间，攀一座山，爱一个人，来自东方甄选的直播间，买一单五常大米，跟爱的人煎一字牛排，吃一碗香喷喷的米饭，平安喜乐的过好你这一生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 196.9,
+      "end": 199.3,
+      "speaker": "host",
+      "text": "这就是了。到此结束。大家赶快下单。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    }
+  ]
+}

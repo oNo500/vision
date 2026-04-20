@@ -1,0 +1,3356 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 0.02,
+      "speaker": "host",
+      "text": "唐老师,董老师,冰老师,都可以啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 0.02,
+      "end": 0.04,
+      "speaker": "host",
+      "text": "欢迎欢迎,欢迎董老师。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 0.04,
+      "end": 0.06,
+      "speaker": "host",
+      "text": "各位朋友们,大家晚上好啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 0.06,
+      "end": 0.07,
+      "speaker": "host",
+      "text": "现在我声音正常吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 0.07,
+      "end": 0.08,
+      "speaker": "host",
+      "text": "OK,谢谢,谢谢。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 0.08,
+      "end": 0.09,
+      "speaker": "host",
+      "text": "好,谢谢。晚上好啊。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 0.12,
+      "end": 0.14,
+      "speaker": "host",
+      "text": "有朋友说让东东老师回来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 0.15,
+      "end": 0.16,
+      "speaker": "host",
+      "text": "让东东老师休息一会。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 0.16,
+      "end": 0.17,
+      "speaker": "host",
+      "text": "真的让东东回来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 0.18,
+      "end": 0.2,
+      "speaker": "host",
+      "text": "让东东这种帅哥多出现在我们面前几次。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 0.2,
+      "end": 0.23,
+      "speaker": "host",
+      "text": "大家现在对我的要求已经越来越苛刻了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 0.23,
+      "end": 0.25,
+      "speaker": "host",
+      "text": "现在说董宇辉来吃了,请扣工资。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 0.26,
+      "end": 0.27,
+      "speaker": "host",
+      "text": "我们还记下了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 0.27,
+      "end": 0.28,
+      "speaker": "host",
+      "text": "还帮我记下了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 0.29,
+      "end": 0.3,
+      "speaker": "host",
+      "text": "现在要把我法办了是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 0.31,
+      "end": 0.32,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 0.32,
+      "end": 0.36,
+      "speaker": "host",
+      "text": "当年一起看星星的时候叫人家小甜甜啊,现在新人胜旧人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 0.37,
+      "end": 0.38,
+      "speaker": "host",
+      "text": "要把人家法办了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 0.39,
+      "end": 0.4,
+      "speaker": "host",
+      "text": "行吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 0.4,
+      "end": 0.41,
+      "speaker": "host",
+      "text": "行吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 0.41,
+      "end": 0.42,
+      "speaker": "host",
+      "text": "错付了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 0.42,
+      "end": 0.44,
+      "speaker": "host",
+      "text": "我们今天晚上的书很多。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 0.44,
+      "end": 0.46,
+      "speaker": "host",
+      "text": "今天晚上的这个也有一些好的产品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 0.46,
+      "end": 0.49,
+      "speaker": "host",
+      "text": "美的窒息的唐诗宋词诗经一共有十万单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 0.5,
+      "end": 0.5,
+      "speaker": "host",
+      "text": "这个吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 0.5,
+      "end": 0.51,
+      "speaker": "host",
+      "text": "真好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 0.51,
+      "end": 0.54,
+      "speaker": "host",
+      "text": "来,这本书直播间里的朋友之前没有拍过的,大家可以继续拍了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 0.54,
+      "end": 0.56,
+      "speaker": "host",
+      "text": "顿顿这两天给大家读了很多的诗经。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 0.56,
+      "end": 1.0,
+      "speaker": "host",
+      "text": "喜欢的朋友可以拿着这个,买着这个书呢,等顿顿跟大家一起去读诗经。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 1.0,
+      "end": 1.03,
+      "speaker": "host",
+      "text": "我特别喜欢喜欢这个唐诗宋词啊,因为我这个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 1.03,
+      "end": 1.05,
+      "speaker": "host",
+      "text": "确实是文化水平有限,文化有限公司嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 1.05,
+      "end": 1.06,
+      "speaker": "host",
+      "text": "文化水平有限。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 1.06,
+      "end": 1.09,
+      "speaker": "host",
+      "text": "所以呢,这个诗经呢我确实读的少一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 1.09,
+      "end": 1.11,
+      "speaker": "host",
+      "text": "但是我对于唐诗宋词还是比较喜欢的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 1.13,
+      "end": 1.14,
+      "speaker": "host",
+      "text": "许渊冲老师的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 1.14,
+      "end": 1.16,
+      "speaker": "host",
+      "text": "之前也给大家讲过他很多的这种翻译。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 1.17,
+      "end": 1.2,
+      "speaker": "host",
+      "text": "其中像这里头非常经典的春江花月夜,张若虚。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 1.2,
+      "end": 1.23,
+      "speaker": "host",
+      "text": "大家读到春江花月夜的时候,觉得真的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 1.23,
+      "end": 1.25,
+      "speaker": "host",
+      "text": "是怎么写出这样的绝篇。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 1.25,
+      "end": 1.33,
+      "speaker": "host",
+      "text": "你在后来很难再能找到一个篇幅如此长,但是每一句都有惊艳到意向描述的准确到让人拍案叫绝的一首诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 1.34,
+      "end": 1.36,
+      "speaker": "host",
+      "text": "春江潮水连海平,海上明月共潮生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 1.37,
+      "end": 1.39,
+      "speaker": "host",
+      "text": "燕燕随波千万里,何处春江。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 1.4,
+      "end": 1.41,
+      "speaker": "host",
+      "text": "无月明。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 1.42,
+      "end": 1.43,
+      "speaker": "host",
+      "text": "你注意你注意他的这个措辞。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 1.45,
+      "end": 1.46,
+      "speaker": "host",
+      "text": "写得真好呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 1.47,
+      "end": 1.49,
+      "speaker": "host",
+      "text": "The Moon over the River on a Spring Night。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 1.49,
+      "end": 1.51,
+      "speaker": "host",
+      "text": "当然这个很长啊,后面我就不给大家全部读完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 1.51,
+      "end": 1.53,
+      "speaker": "host",
+      "text": "因为后面这个大家都知道,我就经典的说。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 1.53,
+      "end": 1.55,
+      "speaker": "host",
+      "text": "江畔何人初见月,江月何年初照人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 1.56,
+      "end": 1.57,
+      "speaker": "host",
+      "text": "人生代代无穷已。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 1.58,
+      "end": 1.59,
+      "speaker": "host",
+      "text": "江月年年只相似。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 2.01,
+      "end": 2.03,
+      "speaker": "host",
+      "text": "后面给你翻译的: In spring, the river rises as high as the sea。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 2.03,
+      "end": 2.07,
+      "speaker": "host",
+      "text": "And with the river's tide uprises the moon bright。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 2.07,
+      "end": 2.1,
+      "speaker": "host",
+      "text": "She follows the rolling waves for ten thousand li。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 2.1,
+      "end": 2.12,
+      "speaker": "host",
+      "text": "里嘛,千里嘛,十万里啊,十千里就一万里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 2.12,
+      "end": 2.15,
+      "speaker": "host",
+      "text": "Where the river flows, there overflows her light。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 2.16,
+      "end": 2.18,
+      "speaker": "host",
+      "text": "许老师的翻译有的时侯。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 2.18,
+      "end": 2.19,
+      "speaker": "host",
+      "text": "你等我一个纸,我把桌子擦一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 2.19,
+      "end": 2.2,
+      "speaker": "host",
+      "text": "我把书弄脏了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 2.2,
+      "end": 2.23,
+      "speaker": "host",
+      "text": "许老师的翻译呢,很多时候就是让人感觉到拍案叫绝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 2.23,
+      "end": 2.26,
+      "speaker": "host",
+      "text": "就是你也不知道他到底有怎么样灵巧的那个思路。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 2.26,
+      "end": 2.28,
+      "speaker": "host",
+      "text": "他正好就在那块能想到那个词。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 2.29,
+      "end": 2.3,
+      "speaker": "host",
+      "text": "晚辈愚钝啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 2.3,
+      "end": 2.32,
+      "speaker": "host",
+      "text": "晚辈曾经在大学的时候也常,先给我一个湿巾。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 2.32,
+      "end": 2.34,
+      "speaker": "host",
+      "text": "我先擦湿再擦,这样才能干净。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 2.34,
+      "end": 2.35,
+      "speaker": "host",
+      "text": "你这个就放在这里,给。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 2.37,
+      "end": 2.4,
+      "speaker": "host",
+      "text": "我曾经在大学的时候把许老的翻译看过无数遍。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 2.4,
+      "end": 2.41,
+      "speaker": "host",
+      "text": "越看觉得越绝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 2.41,
+      "end": 2.43,
+      "speaker": "host",
+      "text": "越看越觉得,不行,真的不行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 2.44,
+      "end": 2.45,
+      "speaker": "host",
+      "text": "相思,王维。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 2.45,
+      "end": 2.48,
+      "speaker": "host",
+      "text": "红豆生南国,春来发几枝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 2.48,
+      "end": 2.5,
+      "speaker": "host",
+      "text": "愿君多采撷,此物最相思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 2.51,
+      "end": 2.52,
+      "speaker": "host",
+      "text": "当然这首诗大家都听过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 2.52,
+      "end": 2.53,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 2.53,
+      "end": 2.54,
+      "speaker": "host",
+      "text": "你听过王维的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 2.54,
+      "end": 2.55,
+      "speaker": "host",
+      "text": "什么?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 2.55,
+      "end": 2.56,
+      "speaker": "host",
+      "text": "红豆嘛,是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 2.56,
+      "end": 2.57,
+      "speaker": "host",
+      "text": "前一段相思嘛,是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 2.57,
+      "end": 2.58,
+      "speaker": "guest",
+      "text": "听过王维的相思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 2.58,
+      "end": 2.59,
+      "speaker": "host",
+      "text": "你听过王维的相思吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 2.59,
+      "end": 3.0,
+      "speaker": "host",
+      "text": "前一段好像这是一个梗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 3.0,
+      "end": 3.01,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 3.02,
+      "end": 3.03,
+      "speaker": "host",
+      "text": "然后呢,这首诗也翻译的是真的好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 3.03,
+      "end": 3.05,
+      "speaker": "host",
+      "text": "说 The red beans grow in Southern land。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 3.05,
+      "end": 3.07,
+      "speaker": "host",
+      "text": "How many load in spring the trees。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 3.07,
+      "end": 3.1,
+      "speaker": "host",
+      "text": "Gather them to full is your hand。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 3.1,
+      "end": 3.12,
+      "speaker": "host",
+      "text": "They will revive found memories。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 3.13,
+      "end": 3.14,
+      "speaker": "host",
+      "text": "你看 Spring the trees。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 3.15,
+      "end": 3.16,
+      "speaker": "host",
+      "text": "Revive found memories。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 3.17,
+      "end": 3.18,
+      "speaker": "host",
+      "text": "In Southern land is your hand。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 3.18,
+      "end": 3.2,
+      "speaker": "host",
+      "text": "他把音压的就非常好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 3.2,
+      "end": 3.23,
+      "speaker": "host",
+      "text": "许老的这个唐诗宋词诗经一共现在有十万册。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 3.23,
+      "end": 3.26,
+      "speaker": "host",
+      "text": "如果说之前没有拍到的朋友,请自己去拍一单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 3.26,
+      "end": 3.3,
+      "speaker": "host",
+      "text": "这三本书我是强烈建议每一个人家里都应该有一套的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 3.3,
+      "end": 3.32,
+      "speaker": "host",
+      "text": "它的好处在于什么?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 3.32,
+      "end": 3.33,
+      "speaker": "host",
+      "text": "第一个,首先上面是这个古诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 3.33,
+      "end": 3.36,
+      "speaker": "host",
+      "text": "大家可以看到孩子在家里面的时候就可以先背诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 3.36,
+      "end": 3.38,
+      "speaker": "host",
+      "text": "小的时候熟读唐诗三百首。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 3.38,
+      "end": 3.39,
+      "speaker": "host",
+      "text": "不会作诗也能吟。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 3.39,
+      "end": 3.41,
+      "speaker": "host",
+      "text": "先大量的去背。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 3.41,
+      "end": 3.43,
+      "speaker": "host",
+      "text": "背的多了,他长大的时候就自然有了人文气息。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 3.43,
+      "end": 3.45,
+      "speaker": "host",
+      "text": "大家这两天喜欢顿顿,张嘴就来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 3.45,
+      "end": 3.47,
+      "speaker": "host",
+      "text": "因为他有大量的记忆库,他有大量的输入呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 3.47,
+      "end": 3.5,
+      "speaker": "host",
+      "text": "然后呢,下面你看,还有这个对应的英文的翻译。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 3.5,
+      "end": 3.51,
+      "speaker": "host",
+      "text": "这是许老的翻译。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 3.51,
+      "end": 3.53,
+      "speaker": "host",
+      "text": "许老的翻译真的狠经典啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 3.53,
+      "end": 3.54,
+      "speaker": "host",
+      "text": "他经典到不可多得。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 3.54,
+      "end": 3.57,
+      "speaker": "host",
+      "text": "很多时候我们去听许老的翻译,真的就是拍案叫绝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 3.57,
+      "end": 3.58,
+      "speaker": "host",
+      "text": "我我之前给大家应该分享过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 3.59,
+      "end": 4.06,
+      "speaker": "host",
+      "text": "我当年在大学就一开始什么时候对许老的翻译开始感觉到就是晚辈真的愚鲁一生可能难以忘怀,望其项背的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 4.06,
+      "end": 4.1,
+      "speaker": "host",
+      "text": "第一个拿听过那个叫道可道非常。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 4.11,
+      "end": 4.11,
+      "speaker": "host",
+      "text": "非常。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 4.12,
+      "end": 4.13,
+      "speaker": "host",
+      "text": "它不应该那样停顿啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 4.13,
+      "end": 4.15,
+      "speaker": "host",
+      "text": "它不是道可道非常道。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 4.15,
+      "end": 4.17,
+      "speaker": "host",
+      "text": "它应该说道可道非长道。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 4.17,
+      "end": 4.18,
+      "speaker": "host",
+      "text": "不是普通的道理。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 4.18,
+      "end": 4.2,
+      "speaker": "host",
+      "text": "然后许老师怎么翻译的呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 4.2,
+      "end": 4.21,
+      "speaker": "host",
+      "text": "叫做 Truth。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 4.23,
+      "end": 4.24,
+      "speaker": "host",
+      "text": "Can be known。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 4.25,
+      "end": 4.27,
+      "speaker": "host",
+      "text": "说真理是可以被人知道的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 4.27,
+      "end": 4.28,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 4.28,
+      "end": 4.29,
+      "speaker": "host",
+      "text": "后来格物致知。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 4.3,
+      "end": 4.31,
+      "speaker": "host",
+      "text": "真理是可以被知道的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 4.31,
+      "end": 4.35,
+      "speaker": "host",
+      "text": "真理不知道是在你内心还是在这个外面嘈杂的时间动,但是总之啊,真理是可以被知道的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 4.35,
+      "end": 4.36,
+      "speaker": "host",
+      "text": "Truth can be known。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 4.37,
+      "end": 4.38,
+      "speaker": "host",
+      "text": "But。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 4.4,
+      "end": 4.43,
+      "speaker": "host",
+      "text": "It may not be the well-known truth。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 4.45,
+      "end": 4.46,
+      "speaker": "host",
+      "text": "你注意这就是翻译的灵巧啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 4.46,
+      "end": 4.49,
+      "speaker": "host",
+      "text": "如果是故弄玄虚的人,他一定会让自己显得复杂高深一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 4.49,
+      "end": 4.52,
+      "speaker": "host",
+      "text": "他一定遣词造句是咬文嚼字,哎呀,一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 4.53,
+      "end": 4.56,
+      "speaker": "host",
+      "text": "有的那种复杂已经到了闭帚自珍的状况了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 4.56,
+      "end": 4.58,
+      "speaker": "host",
+      "text": "就有人觉得你看我这用词多么高级。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 4.58,
+      "end": 5.0,
+      "speaker": "host",
+      "text": "我的句式多么的复杂。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 5.0,
+      "end": 5.04,
+      "speaker": "host",
+      "text": "But no, that's not the point of any composition。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 5.04,
+      "end": 5.07,
+      "speaker": "host",
+      "text": "That's not the point of any translation or interpretation, okay?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 5.08,
+      "end": 5.1,
+      "speaker": "host",
+      "text": "To make words simple。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 5.11,
+      "end": 5.12,
+      "speaker": "host",
+      "text": "And you will make the language beautiful。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 5.12,
+      "end": 5.14,
+      "speaker": "host",
+      "text": "就一定不是复杂让人感到美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 5.14,
+      "end": 5.15,
+      "speaker": "host",
+      "text": "我们说大道至简。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 5.15,
+      "end": 5.16,
+      "speaker": "host",
+      "text": "谁跟你说过大道至杂呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 5.17,
+      "end": 5.19,
+      "speaker": "host",
+      "text": "复杂的东西是很难被人所理解的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 5.21,
+      "end": 5.23,
+      "speaker": "host",
+      "text": "就它精致的像一朵花,但它没有香那种感觉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 5.24,
+      "end": 5.27,
+      "speaker": "host",
+      "text": "所以你看道可道非常道说真理是可以被大家所知道的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 5.27,
+      "end": 5.3,
+      "speaker": "host",
+      "text": "但可能不是为人所熟知的这个真理。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 5.31,
+      "end": 5.33,
+      "speaker": "host",
+      "text": "我好多年前就看过许老翻译这块。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 5.33,
+      "end": 5.34,
+      "speaker": "host",
+      "text": "我看完之后我觉得。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 5.36,
+      "end": 5.38,
+      "speaker": "host",
+      "text": "就是你看他没有用复杂的词,对吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 5.39,
+      "end": 5.42,
+      "speaker": "host",
+      "text": "他也没有给你用非常夸张的翻译,对吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 5.42,
+      "end": 5.45,
+      "speaker": "host",
+      "text": "他没有故意用一些让人感觉到听不懂的东西,对吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 5.45,
+      "end": 5.48,
+      "speaker": "host",
+      "text": "但是他却把这个意思传达的很清晰很准确。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 5.48,
+      "end": 5.49,
+      "speaker": "host",
+      "text": "这就是比例。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 5.49,
+      "end": 5.5,
+      "speaker": "host",
+      "text": "叫四两拨千斤。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 5.51,
+      "end": 5.54,
+      "speaker": "host",
+      "text": "如果说中文是古文,我也把英语翻译的非常复杂,那反而可能就走错了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 5.54,
+      "end": 5.59,
+      "speaker": "host",
+      "text": "所以我后来在读英语或者看很多翻译的这个思路就真的是早些年受到了许老的影响。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 5.59,
+      "end": 6.0,
+      "speaker": "host",
+      "text": "所以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 6.01,
+      "end": 6.03,
+      "speaker": "host",
+      "text": "小时候受到好的美的影响。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 6.03,
+      "end": 6.04,
+      "speaker": "host",
+      "text": "你长大就能真正的去审视美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 6.05,
+      "end": 6.05,
+      "speaker": "host",
+      "text": "语言就是一种美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 6.05,
+      "end": 6.07,
+      "speaker": "host",
+      "text": "这个世界的美有千万种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 6.07,
+      "end": 6.09,
+      "speaker": "host",
+      "text": "这个世界的美包括天体行星宇宙万物的美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 6.09,
+      "end": 6.11,
+      "speaker": "host",
+      "text": "我们皆是宇宙星辰的孩子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 6.11,
+      "end": 6.14,
+      "speaker": "host",
+      "text": "我们既然生如蝼蚁而美若星辰,美若神明。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 6.14,
+      "end": 6.15,
+      "speaker": "host",
+      "text": "那星辰也美若神明。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 6.15,
+      "end": 6.17,
+      "speaker": "host",
+      "text": "这个世界还有很多美,比如说大江大河。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 6.17,
+      "end": 6.19,
+      "speaker": "host",
+      "text": "比如说山川湖泊的美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 6.19,
+      "end": 6.22,
+      "speaker": "host",
+      "text": "自然界的美,它往往是难以复制的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 6.23,
+      "end": 6.24,
+      "speaker": "host",
+      "text": "所以人为什么会亲自然性?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 6.24,
+      "end": 6.26,
+      "speaker": "host",
+      "text": "因为微观到原子层面,我们跟他们都一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 6.26,
+      "end": 6.29,
+      "speaker": "host",
+      "text": "这个世界还有很多的美,比如说花红柳绿,比如说草长莺飞。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 6.3,
+      "end": 6.33,
+      "speaker": "host",
+      "text": "人间三月天,牵你爱人的手去看春天的河边。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 6.33,
+      "end": 6.37,
+      "speaker": "host",
+      "text": "我不知道你有没有真的去过春天的河边,万物焕发生机的样子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 6.39,
+      "end": 6.43,
+      "speaker": "host",
+      "text": "那种美可以是去年今日此门中,人面桃花相映红。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 6.43,
+      "end": 6.44,
+      "speaker": "host",
+      "text": "是那种美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 6.45,
+      "end": 6.47,
+      "speaker": "host",
+      "text": "我们还有其他更多的美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 6.47,
+      "end": 6.49,
+      "speaker": "host",
+      "text": "比如说三餐四季,只短情长的美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 6.5,
+      "end": 6.56,
+      "speaker": "host",
+      "text": "比如说那种细腻,细碎,细小,但是常常让你暖心,安心,自或放心的那些美,也有可能。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 6.57,
+      "end": 6.59,
+      "speaker": "host",
+      "text": "美还有一种就是刚才给大家所展示的这种语言的美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 7.01,
+      "end": 7.07,
+      "speaker": "host",
+      "text": "对吧?而且我我我第一次给大家提到许老师,我提到的他那个翻译,就是好多年前在西安西安外国语大学的图书馆里头。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 7.07,
+      "end": 7.1,
+      "speaker": "host",
+      "text": "我坐在了一楼的地上,头顶的空调吹下来,我一开始我觉得很燥热。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 7.1,
+      "end": 7.12,
+      "speaker": "host",
+      "text": "但读到那句翻译的时候,我突然觉得自己汗毛都起来了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 7.12,
+      "end": 7.14,
+      "speaker": "host",
+      "text": "因为我觉得这个翻译太牛了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 7.14,
+      "end": 7.16,
+      "speaker": "host",
+      "text": "就是大家听过的,不爱红装爱武装。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 7.16,
+      "end": 7.18,
+      "speaker": "host",
+      "text": "因为那会儿我确实英语水平差的很远。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 7.18,
+      "end": 7.2,
+      "speaker": "host",
+      "text": "叫 not to powder the face。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 7.24,
+      "end": 7.27,
+      "speaker": "host",
+      "text": "But to face the powder。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 7.29,
+      "end": 7.31,
+      "speaker": "host",
+      "text": "他就把两个词动名词性互换就行了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 7.31,
+      "end": 7.32,
+      "speaker": "host",
+      "text": "Powder大家都学过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 7.32,
+      "end": 7.33,
+      "speaker": "host",
+      "text": "名词叫什么呀?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 7.34,
+      "end": 7.35,
+      "speaker": "host",
+      "text": "粉末。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 7.36,
+      "end": 7.36,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 7.36,
+      "end": 7.39,
+      "speaker": "host",
+      "text": "那你是不是引申为,比如说脸上涂的这种脂粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 7.39,
+      "end": 7.41,
+      "speaker": "host",
+      "text": "脸上涂的这种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 7.41,
+      "end": 7.43,
+      "speaker": "host",
+      "text": "脂粉是这个写吗?是这样,脂粉是这样写吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 7.43,
+      "end": 7.44,
+      "speaker": "host",
+      "text": "脂肪的脂是这样写吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 7.44,
+      "end": 7.45,
+      "speaker": "guest",
+      "text": "是脂粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 7.45,
+      "end": 7.46,
+      "speaker": "host",
+      "text": "OK,不好意思,我中文。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 7.46,
+      "end": 7.48,
+      "speaker": "host",
+      "text": "脂粉或者是我们所说的火药其实也可以吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 7.49,
+      "end": 7.5,
+      "speaker": "host",
+      "text": "那动词就是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 7.52,
+      "end": 7.54,
+      "speaker": "host",
+      "text": "给什么什么施粉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 7.55,
+      "end": 7.56,
+      "speaker": "host",
+      "text": "然后呢, Face大家也学过。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 7.56,
+      "end": 7.57,
+      "speaker": "host",
+      "text": "Face什么意思啊?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 7.57,
+      "end": 7.58,
+      "speaker": "host",
+      "text": "名词叫做脸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 7.59,
+      "end": 7.59,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 8.0,
+      "end": 8.01,
+      "speaker": "host",
+      "text": "或者什么的表面。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 8.02,
+      "end": 8.04,
+      "speaker": "host",
+      "text": "比如说 the face of the Earth,地球的表面。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 8.05,
+      "end": 8.06,
+      "speaker": "host",
+      "text": "那动词呢就叫做面对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 8.07,
+      "end": 8.1,
+      "speaker": "host",
+      "text": "Okay, you're gonna face difficulties in your life eventually。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 8.11,
+      "end": 8.12,
+      "speaker": "host",
+      "text": "你肯定会在生活中面对很多的困难的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 8.13,
+      "end": 8.14,
+      "speaker": "host",
+      "text": "所以注意它的翻译。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 8.14,
+      "end": 8.17,
+      "speaker": "host",
+      "text": "叫不要去给脸上涂脂粉,叫不爱红装。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 8.18,
+      "end": 8.21,
+      "speaker": "host",
+      "text": "而是去面对这个火药,叫爱武装。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 8.24,
+      "end": 8.25,
+      "speaker": "host",
+      "text": "就狠神。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 8.26,
+      "end": 8.27,
+      "speaker": "host",
+      "text": "这就狠神。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 8.27,
+      "end": 8.3,
+      "speaker": "host",
+      "text": "所以这就是为什么这三本书需要值得你去买。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 8.33,
+      "end": 8.34,
+      "speaker": "host",
+      "text": "好书值得买。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 8.34,
+      "end": 8.35,
+      "speaker": "host",
+      "text": "好书甚至值得收藏。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 8.35,
+      "end": 8.38,
+      "speaker": "host",
+      "text": "我觉得这几套书不仅你自己可以看,你自己甚至可以把它留给自己的子孙去看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 8.38,
+      "end": 8.4,
+      "speaker": "host",
+      "text": "这套书我们刚上第一天我就拍了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 8.4,
+      "end": 8.41,
+      "speaker": "host",
+      "text": "我拍了三套。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 8.41,
+      "end": 8.42,
+      "speaker": "host",
+      "text": "我自己留了一套。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 8.42,
+      "end": 8.43,
+      "speaker": "host",
+      "text": "我给别人也送了两套。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 8.44,
+      "end": 8.45,
+      "speaker": "host",
+      "text": "比如翻到这里,蜀相杜甫。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 8.47,
+      "end": 8.48,
+      "speaker": "host",
+      "text": "李白的偶像是什么?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 8.48,
+      "end": 8.49,
+      "speaker": "host",
+      "text": "李白的偶像是武将。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 8.49,
+      "end": 8.5,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 8.5,
+      "end": 8.52,
+      "speaker": "host",
+      "text": "十步杀一人,千里不留行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 8.53,
+      "end": 8.54,
+      "speaker": "host",
+      "text": "杜甫的偶像是谁?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 8.56,
+      "end": 8.57,
+      "speaker": "host",
+      "text": "杜甫的偶像是诸葛亮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 8.57,
+      "end": 8.58,
+      "speaker": "host",
+      "text": "所以他写的蜀相大家都知道吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 9.0,
+      "end": 9.02,
+      "speaker": "host",
+      "text": "丞相祠前何处寻,锦官城外柏森森。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 9.03,
+      "end": 9.05,
+      "speaker": "host",
+      "text": "映阶碧草自春色,隔叶黄鹂空好音。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 231,
+      "start": 9.06,
+      "end": 9.08,
+      "speaker": "host",
+      "text": "三顾频繁天下计。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 232,
+      "start": 9.08,
+      "end": 9.1,
+      "speaker": "host",
+      "text": "两朝开济老臣心。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 233,
+      "start": 9.1,
+      "end": 9.11,
+      "speaker": "host",
+      "text": "最后两句话大家都听过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 234,
+      "start": 9.11,
+      "end": 9.13,
+      "speaker": "host",
+      "text": "叫做出身未捷身先死。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 235,
+      "start": 9.14,
+      "end": 9.15,
+      "speaker": "host",
+      "text": "常使英雄泪满襟。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 236,
+      "start": 9.15,
+      "end": 9.17,
+      "speaker": "host",
+      "text": "Temple of the Premier of the Shu。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 237,
+      "start": 9.17,
+      "end": 9.18,
+      "speaker": "host",
+      "text": "蜀就是蜀国啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 238,
+      "start": 9.18,
+      "end": 9.19,
+      "speaker": "host",
+      "text": "Premier。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 239,
+      "start": 9.19,
+      "end": 9.22,
+      "speaker": "host",
+      "text": "It's like the Prime Minister, like the highest position in the government。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 240,
+      "start": 9.22,
+      "end": 9.23,
+      "speaker": "host",
+      "text": "It's kind of, yeah。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 241,
+      "start": 9.24,
+      "end": 9.27,
+      "speaker": "host",
+      "text": "The Premier's temple is in the shade。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 242,
+      "start": 9.27,
+      "end": 9.29,
+      "speaker": "host",
+      "text": "Surprise woven with brocade。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 243,
+      "start": 9.3,
+      "end": 9.33,
+      "speaker": "host",
+      "text": "The steps are green with grass in spring。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 244,
+      "start": 9.33,
+      "end": 9.35,
+      "speaker": "host",
+      "text": "In vain, a may leaves all real saying。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 245,
+      "start": 9.35,
+      "end": 9.36,
+      "speaker": "host",
+      "text": "Cloud, proud。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 246,
+      "start": 9.36,
+      "end": 9.38,
+      "speaker": "host",
+      "text": "Why should the Mongol flute complain a willow grow。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 247,
+      "start": 9.38,
+      "end": 9.41,
+      "speaker": "host",
+      "text": "Beyond the gate of Jade, the wind will blow。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 248,
+      "start": 9.41,
+      "end": 9.42,
+      "speaker": "host",
+      "text": "你看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 249,
+      "start": 9.43,
+      "end": 9.44,
+      "speaker": "host",
+      "text": "怨杨柳。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 250,
+      "start": 9.44,
+      "end": 9.46,
+      "speaker": "host",
+      "text": "为什么抱怨没有柳树在生长呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 251,
+      "start": 9.46,
+      "end": 9.48,
+      "speaker": "host",
+      "text": "后面说因为没有春风能够吹过来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 252,
+      "start": 9.48,
+      "end": 9.49,
+      "speaker": "host",
+      "text": "对吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 253,
+      "start": 9.49,
+      "end": 9.53,
+      "speaker": "host",
+      "text": "好像我们小时候学这个杨柳的叶子细小都是吹风给从树枝里抽出来的一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 254,
+      "start": 9.53,
+      "end": 9.54,
+      "speaker": "host",
+      "text": "剪出来的一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 255,
+      "start": 9.55,
+      "end": 9.56,
+      "speaker": "host",
+      "text": "这就是翻译的这个灵巧之处啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 256,
+      "start": 9.57,
+      "end": 9.58,
+      "speaker": "host",
+      "text": "春风不度玉门关。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 257,
+      "start": 9.58,
+      "end": 9.59,
+      "speaker": "host",
+      "text": "就吹不到这里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 258,
+      "start": 9.59,
+      "end": 10.01,
+      "speaker": "host",
+      "text": "太平洋的水气好像吹不到这里一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 259,
+      "start": 10.03,
+      "end": 10.04,
+      "speaker": "host",
+      "text": "今天晚上我们是不是有橄榄油啊?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 260,
+      "start": 10.04,
+      "end": 10.04,
+      "speaker": "guest",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 261,
+      "start": 10.04,
+      "end": 10.06,
+      "speaker": "host",
+      "text": "我昨天晚上睡着了,我觉得我今天晚上应该能写几个小作文。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 262,
+      "start": 10.06,
+      "end": 10.07,
+      "speaker": "host",
+      "text": "我今天晚上状态很好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 263,
+      "start": 10.07,
+      "end": 10.08,
+      "speaker": "host",
+      "text": "能看出来吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 264,
+      "start": 10.08,
+      "end": 10.09,
+      "speaker": "guest",
+      "text": "可以,看得出来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 265,
+      "start": 10.09,
+      "end": 10.1,
+      "speaker": "host",
+      "text": "能看出来是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 266,
+      "start": 10.1,
+      "end": 10.1,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 267,
+      "start": 10.11,
+      "end": 10.11,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 268,
+      "start": 10.12,
+      "end": 10.13,
+      "speaker": "host",
+      "text": "我再讲一会儿书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 269,
+      "start": 10.13,
+      "end": 10.14,
+      "speaker": "host",
+      "text": "等我们人数到多的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 270,
+      "start": 10.14,
+      "end": 10.15,
+      "speaker": "guest",
+      "text": "可以,对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 271,
+      "start": 10.15,
+      "end": 10.16,
+      "speaker": "guest",
+      "text": "看看这几本你哪个敢讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 272,
+      "start": 10.19,
+      "end": 10.2,
+      "speaker": "host",
+      "text": "活着。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 273,
+      "start": 10.21,
+      "end": 10.22,
+      "speaker": "host",
+      "text": "经典数目反复讲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 274,
+      "start": 10.23,
+      "end": 10.25,
+      "speaker": "host",
+      "text": "如果说连这种经典的我都推荐不出去,那说明我确实不够好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 275,
+      "start": 10.25,
+      "end": 10.26,
+      "speaker": "host",
+      "text": "不是书不好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 276,
+      "start": 10.27,
+      "end": 10.28,
+      "speaker": "host",
+      "text": "是学生的比例不到。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 277,
+      "start": 10.28,
+      "end": 10.29,
+      "speaker": "host",
+      "text": "是晚辈的能力不够。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 278,
+      "start": 10.32,
+      "end": 10.34,
+      "speaker": "host",
+      "text": "我们为什么要审视苦难?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 279,
+      "start": 10.34,
+      "end": 10.35,
+      "speaker": "host",
+      "text": "因为我们要寻求美好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 280,
+      "start": 10.36,
+      "end": 10.38,
+      "speaker": "host",
+      "text": "只有见过黑暗的人才会渴望光明。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 281,
+      "start": 10.38,
+      "end": 10.41,
+      "speaker": "host",
+      "text": "只有身患重症的人才尤其的渴望健康。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 282,
+      "start": 10.42,
+      "end": 10.44,
+      "speaker": "host",
+      "text": "只有经历挫折的人才懂得平淡是真。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 283,
+      "start": 10.45,
+      "end": 10.48,
+      "speaker": "host",
+      "text": "这就是为什么在现在生活感觉已经很好的时候,人们要去审视苦难。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 284,
+      "start": 10.48,
+      "end": 10.52,
+      "speaker": "host",
+      "text": "审视苦难的本质是让你知道如何过好自己这短暂的一生啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 285,
+      "start": 10.56,
+      "end": 11.0,
+      "speaker": "host",
+      "text": "当你的生命有一天感觉没有什么能够值得去寄托的时候,我们要如何继续前行?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 286,
+      "start": 11.01,
+      "end": 11.05,
+      "speaker": "host",
+      "text": "这一句话,我认为可以比较从一个概括的角度去总结这本书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 287,
+      "start": 11.08,
+      "end": 11.09,
+      "speaker": "host",
+      "text": "家人一个一个离开。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 288,
+      "start": 11.1,
+      "end": 11.11,
+      "speaker": "host",
+      "text": "家产也散尽。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 289,
+      "start": 11.12,
+      "end": 11.18,
+      "speaker": "host",
+      "text": "自己就只剩下了一个残缺的,疾病的,年迈的身体的时候,福贵要怎么过完他这一生?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 290,
+      "start": 11.21,
+      "end": 11.23,
+      "speaker": "host",
+      "text": "苦难的人会看到苦难。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 291,
+      "start": 11.23,
+      "end": 11.25,
+      "speaker": "host",
+      "text": "但透过苦难,人类会看到生命的底色。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 292,
+      "start": 11.26,
+      "end": 11.3,
+      "speaker": "host",
+      "text": "我们自从远古时代时期,人一直就在与苦难做斗争。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 293,
+      "start": 11.3,
+      "end": 11.33,
+      "speaker": "host",
+      "text": "但是,我始终相信人是一种充满了力量感的生物。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 294,
+      "start": 11.34,
+      "end": 11.36,
+      "speaker": "host",
+      "text": "要不然我们也不可能坚持到今天。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 295,
+      "start": 11.37,
+      "end": 11.4,
+      "speaker": "host",
+      "text": "大家能理解在环境极度困难的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 296,
+      "start": 11.41,
+      "end": 11.43,
+      "speaker": "host",
+      "text": "在生活极度艰难的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 297,
+      "start": 11.44,
+      "end": 11.46,
+      "speaker": "host",
+      "text": "在命运极其坎坷的时候。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 298,
+      "start": 11.47,
+      "end": 11.49,
+      "speaker": "host",
+      "text": "我们总是能够想办法熬下来,对吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 299,
+      "start": 11.5,
+      "end": 11.5,
+      "speaker": "host",
+      "text": "你说是吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 300,
+      "start": 11.5,
+      "end": 11.51,
+      "speaker": "host",
+      "text": "总是可以的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 301,
+      "start": 11.52,
+      "end": 11.53,
+      "speaker": "host",
+      "text": "余华老师大家不知道吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 302,
+      "start": 11.53,
+      "end": 11.54,
+      "speaker": "host",
+      "text": "许三观卖血记。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 303,
+      "start": 11.55,
+      "end": 11.55,
+      "speaker": "host",
+      "text": "没看过?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 304,
+      "start": 11.55,
+      "end": 11.56,
+      "speaker": "host",
+      "text": "活着没看过?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 305,
+      "start": 11.56,
+      "end": 11.59,
+      "speaker": "host",
+      "text": "如果没有看过的话,请大家,这个后来就,对,他曾经被改编成电影和电视剧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 306,
+      "start": 11.59,
+      "end": 12.0,
+      "speaker": "host",
+      "text": "福贵们大家听过吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 307,
+      "start": 12.02,
+      "end": 12.03,
+      "speaker": "host",
+      "text": "我我之前给大家讲过一个啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 308,
+      "start": 12.04,
+      "end": 12.1,
+      "speaker": "host",
+      "text": "就是当你生命失无可失的时候,请你永远要坦坦荡荡的,充满勇气的去过好自己的这一生,不为别的,因为你的生命属于你自己。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 309,
+      "start": 12.12,
+      "end": 12.14,
+      "speaker": "host",
+      "text": "今夜我不爱世人,今夜我独爱你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 310,
+      "start": 12.15,
+      "end": 12.16,
+      "speaker": "host",
+      "text": "这应该是孩子写的一句诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 311,
+      "start": 12.16,
+      "end": 12.16,
+      "speaker": "host",
+      "text": "是吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 312,
+      "start": 12.16,
+      "end": 12.17,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 313,
+      "start": 12.17,
+      "end": 12.19,
+      "speaker": "host",
+      "text": "我没有记错的话,今夜我不爱世人,今夜我独爱你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 314,
+      "start": 12.2,
+      "end": 12.21,
+      "speaker": "host",
+      "text": "如果没有记错的话,应该是孩子写的诗。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 315,
+      "start": 12.23,
+      "end": 12.25,
+      "speaker": "host",
+      "text": "今夜我不爱世人,今夜我独爱你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 316,
+      "start": 12.26,
+      "end": 12.29,
+      "speaker": "host",
+      "text": "大家可以把这句话发到评论区,今夜我不爱世人,今夜我独爱你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 317,
+      "start": 12.33,
+      "end": 12.38,
+      "speaker": "host",
+      "text": "为什么我突然想给大家说这句话,今夜我不爱世人,今夜我独爱你,因为我们有太多的原因去脆弱了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 318,
+      "start": 12.38,
+      "end": 12.39,
+      "speaker": "host",
+      "text": "对吗?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 319,
+      "start": 12.39,
+      "end": 12.4,
+      "speaker": "host",
+      "text": "去投降了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 320,
+      "start": 12.4,
+      "end": 12.41,
+      "speaker": "host",
+      "text": "Never surrender to the fate。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 321,
+      "start": 12.41,
+      "end": 12.43,
+      "speaker": "host",
+      "text": "今夜我不关心人类,我只想着你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 322,
+      "start": 12.43,
+      "end": 12.44,
+      "speaker": "host",
+      "text": "OK, OK,原话这么说的。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 323,
+      "start": 12.44,
+      "end": 12.45,
+      "speaker": "host",
+      "text": "不好意思啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 324,
+      "start": 12.45,
+      "end": 12.46,
+      "speaker": "host",
+      "text": "今夜我不关心人类,我只想着你,是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 325,
+      "start": 12.47,
+      "end": 12.47,
+      "speaker": "host",
+      "text": "嗯嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 326,
+      "start": 12.47,
+      "end": 12.48,
+      "speaker": "host",
+      "text": "我说错了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 327,
+      "start": 12.48,
+      "end": 12.49,
+      "speaker": "host",
+      "text": "孩子的原诗不是这样子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 328,
+      "start": 12.5,
+      "end": 12.51,
+      "speaker": "host",
+      "text": "今夜我不关心人类,我只想着你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 329,
+      "start": 12.53,
+      "end": 12.55,
+      "speaker": "host",
+      "text": "我觉得我刚是那个我不爱世人,我只爱你,也行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 330,
+      "start": 12.56,
+      "end": 12.57,
+      "speaker": "host",
+      "text": "我觉得也挺好的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 331,
+      "start": 12.57,
+      "end": 12.57,
+      "speaker": "guest",
+      "text": "是一种延伸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 332,
+      "start": 12.58,
+      "end": 13.0,
+      "speaker": "host",
+      "text": "对不起,虽然我做错了,但是我这个将错就错。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 333,
+      "start": 13.0,
+      "end": 13.02,
+      "speaker": "host",
+      "text": "人生难得躺平,像我这种将错就错的想得很开。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    },
+    {
+      "idx": 334,
+      "start": 13.04,
+      "end": 13.07,
+      "speaker": "host",
+      "text": "我为什么会这么说呢?因为大家生活。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 0
+    }
+  ]
+}

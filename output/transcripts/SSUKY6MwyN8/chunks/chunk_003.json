@@ -1,0 +1,2796 @@
+{
+  "chunk_id": 3,
+  "start_offset": 3590.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 3590.0,
+      "end": 3590.02,
+      "speaker": "host",
+      "text": "年轻。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 1,
+      "start": 3590.02,
+      "end": 3590.05,
+      "speaker": "host",
+      "text": "从觉得明天肯定会很美。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 2,
+      "start": 3590.05,
+      "end": 3590.06,
+      "speaker": "host",
+      "text": "没听过吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 3,
+      "start": 3590.06,
+      "end": 3590.07,
+      "speaker": "host",
+      "text": "没听过啥？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 4,
+      "start": 3590.08,
+      "end": 3590.09,
+      "speaker": "host",
+      "text": "啥那英？",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 5,
+      "start": 3590.1,
+      "end": 3590.11,
+      "speaker": "host",
+      "text": "那英也是啥？",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 6,
+      "start": 3590.11,
+      "end": 3590.12,
+      "speaker": "guest",
+      "text": "也是一首歌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 7,
+      "start": 3590.12,
+      "end": 3590.13,
+      "speaker": "host",
+      "text": "也是一首歌。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 8,
+      "start": 3590.13,
+      "end": 3590.15,
+      "speaker": "guest",
+      "text": "就刚刚跟你唱的那个调调很像。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 9,
+      "start": 3590.15,
+      "end": 3590.16,
+      "speaker": "host",
+      "text": "可能你跑调了吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 10,
+      "start": 3590.17,
+      "end": 3590.18,
+      "speaker": "host",
+      "text": "那英。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 11,
+      "start": 3590.19,
+      "end": 3590.21,
+      "speaker": "host",
+      "text": "有朋友说那英你没有伤害我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 12,
+      "start": 3590.21,
+      "end": 3590.22,
+      "speaker": "host",
+      "text": "啥意思？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 13,
+      "start": 3590.22,
+      "end": 3590.24,
+      "speaker": "host",
+      "text": "啥我伤害了你，你没有伤害我。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 14,
+      "start": 3590.25,
+      "end": 3590.27,
+      "speaker": "host",
+      "text": "啥你没有拒绝我，我没有伤害你。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 15,
+      "start": 3590.27,
+      "end": 3590.29,
+      "speaker": "host",
+      "text": "咱是正经直播间啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 16,
+      "start": 3590.29,
+      "end": 3590.31,
+      "speaker": "host",
+      "text": "屏幕前有小孩子呢，你们都注意自己言行啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 17,
+      "start": 3590.31,
+      "end": 3590.32,
+      "speaker": "host",
+      "text": "网络可是有记忆的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 18,
+      "start": 3590.32,
+      "end": 3590.33,
+      "speaker": "host",
+      "text": "这胡说八道些什么东西。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 3
+    },
+    {
+      "idx": 19,
+      "start": 3590.34,
+      "end": 3590.35,
+      "speaker": "host",
+      "text": "接下来给大家来一首。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 20,
+      "start": 3590.35,
+      "end": 3590.36,
+      "speaker": "host",
+      "text": "来一首。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 21,
+      "start": 3590.37,
+      "end": 3590.38,
+      "speaker": "host",
+      "text": "吓坏了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 22,
+      "start": 3590.38,
+      "end": 3590.39,
+      "speaker": "host",
+      "text": "别开箱，这是正常人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 23,
+      "start": 3590.39,
+      "end": 3590.4,
+      "speaker": "host",
+      "text": "自己人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 24,
+      "start": 3590.4,
+      "end": 3590.42,
+      "speaker": "host",
+      "text": "你当像鸟飞往你的山，这套书呢之前推荐给大家。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 25,
+      "start": 3590.43,
+      "end": 3590.45,
+      "speaker": "host",
+      "text": "比尔盖茨也对这本书特别喜欢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 26,
+      "start": 3590.45,
+      "end": 3590.48,
+      "speaker": "host",
+      "text": "这本书是一个美国的作家讲了自己的童年经历。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 27,
+      "start": 3590.48,
+      "end": 3590.51,
+      "speaker": "host",
+      "text": "幸运的童年呢，获得能量去陪伴自己走过一生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 28,
+      "start": 3590.51,
+      "end": 3590.54,
+      "speaker": "host",
+      "text": "当然也有一些人可能童年不是很快乐的话，可能用一生来偿还。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 29,
+      "start": 3590.54,
+      "end": 3591.0,
+      "speaker": "host",
+      "text": "我们以前给大家讲过很多说这个在家庭教育里头，第一个当人爸妈要成为非常合格的父母，你得学会怎么样去家庭教育。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 30,
+      "start": 3591.0,
+      "end": 3591.01,
+      "speaker": "host",
+      "text": "你当会计是要考证的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 31,
+      "start": 3591.01,
+      "end": 3591.02,
+      "speaker": "host",
+      "text": "你当护士是要考证的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 32,
+      "start": 3591.02,
+      "end": 3591.03,
+      "speaker": "host",
+      "text": "你当律师是要考证的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 33,
+      "start": 3591.03,
+      "end": 3591.05,
+      "speaker": "host",
+      "text": "你就连当司机都是要考证的，你当爸妈只需要一次决定。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 34,
+      "start": 3591.06,
+      "end": 3591.06,
+      "speaker": "host",
+      "text": "对吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 35,
+      "start": 3591.07,
+      "end": 3591.09,
+      "speaker": "host",
+      "text": "甚至很多时候是一次意外。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 36,
+      "start": 3591.09,
+      "end": 3591.11,
+      "speaker": "host",
+      "text": "所以这个说明了什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 37,
+      "start": 3591.11,
+      "end": 3591.14,
+      "speaker": "host",
+      "text": "说明了其实很多人对于当父母是没有准备。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 38,
+      "start": 3591.14,
+      "end": 3591.18,
+      "speaker": "host",
+      "text": "那这个故事里头就有一个，这个人就讲了他出生在一个有宗教的家庭里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 39,
+      "start": 3591.18,
+      "end": 3591.24,
+      "speaker": "host",
+      "text": "他的父亲是一个极其传统强势，而又很多时候不知道如何开导自己孩子的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 40,
+      "start": 3591.24,
+      "end": 3591.28,
+      "speaker": "host",
+      "text": "他的母亲呢是一个比较顺从，然后呢又比较沉默的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 41,
+      "start": 3591.28,
+      "end": 3591.32,
+      "speaker": "host",
+      "text": "所以呢给这个作者小时候造成了很大的伤害，然后呢他是没有办法去受正常的教育的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 42,
+      "start": 3591.32,
+      "end": 3591.38,
+      "speaker": "host",
+      "text": "直到后来他通过了教育，见了更多的人，听了更多的故事，他才逐渐知道了自己要去怎么成长。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 43,
+      "start": 3591.38,
+      "end": 3591.42,
+      "speaker": "host",
+      "text": "我印象特别深刻的就是这本书的最后这块。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 44,
+      "start": 3591.43,
+      "end": 3591.45,
+      "speaker": "host",
+      "text": "最后这块这段话说，在那一刻之后，",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 45,
+      "start": 3591.46,
+      "end": 3591.52,
+      "speaker": "host",
+      "text": "戏剧上演时，不知为何，我无法再穿过镜子将16岁的自己释放出来替代我了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 46,
+      "start": 3591.52,
+      "end": 3591.54,
+      "speaker": "host",
+      "text": "在那刻之前他一直在那里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 47,
+      "start": 3591.54,
+      "end": 3591.59,
+      "speaker": "host",
+      "text": "无论我看上去发生了多么大的变化，我的教育如何辉煌，我的外表如何改变，我仍然是他。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 48,
+      "start": 3591.59,
+      "end": 3592.01,
+      "speaker": "host",
+      "text": "我充其量不过是内心分裂的两个人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 49,
+      "start": 3592.01,
+      "end": 3592.04,
+      "speaker": "host",
+      "text": "他在里面，每当我跨进父亲家的门槛，他就出现。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 50,
+      "start": 3592.04,
+      "end": 3592.06,
+      "speaker": "host",
+      "text": "那天晚上我召唤他，他没有回应。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 51,
+      "start": 3592.06,
+      "end": 3592.09,
+      "speaker": "host",
+      "text": "他离我而去，封存在了镜子里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 52,
+      "start": 3592.09,
+      "end": 3592.13,
+      "speaker": "host",
+      "text": "那一刻之后我所做的决定都不再是他会做的决定。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 53,
+      "start": 3592.13,
+      "end": 3592.17,
+      "speaker": "host",
+      "text": "他们是一个改头，他们是由一个改头换面的人，一个全新的自我所做出的选择。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 54,
+      "start": 3592.17,
+      "end": 3592.21,
+      "speaker": "host",
+      "text": "你可以用很多说法来称这个自我，叫转变更变虚伪或者背叛，而我称之为教育。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 55,
+      "start": 3592.22,
+      "end": 3592.24,
+      "speaker": "host",
+      "text": "有的人的教育是他教，有的人的教育是自教。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 56,
+      "start": 3592.24,
+      "end": 3592.25,
+      "speaker": "host",
+      "text": "就是自己培养自己成长。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 57,
+      "start": 3592.25,
+      "end": 3592.28,
+      "speaker": "host",
+      "text": "那这本书也可以送给屏幕前的一些，比如说爸妈其实可以看。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 58,
+      "start": 3592.28,
+      "end": 3592.37,
+      "speaker": "host",
+      "text": "你可以看一下在一个不是人们很认同的家庭教育里头，原生家庭可能给孩子带来的一些影响，然后这个孩子是如何通过自己的教育去克服这些影响，最后成长为一个言语光内心有爱的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 59,
+      "start": 3592.37,
+      "end": 3592.42,
+      "speaker": "host",
+      "text": "如果说你也有一些，比如说童年感觉自己很难释怀的事情，你也可以通过这本书去读懂一些故事。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 60,
+      "start": 3592.42,
+      "end": 3592.45,
+      "speaker": "host",
+      "text": "我曾经给大家讲过，我说尼采的那个哲学就是悲剧的诞生为什么很重要。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 61,
+      "start": 3592.45,
+      "end": 3592.52,
+      "speaker": "host",
+      "text": "悲剧的诞生重要在，重要在好像让希腊人同自己命运中所注定的苦恶与挫折和解了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 62,
+      "start": 3592.52,
+      "end": 3592.53,
+      "speaker": "host",
+      "text": "和解非常重要。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 63,
+      "start": 3592.54,
+      "end": 3592.58,
+      "speaker": "host",
+      "text": "就是你看着那件事情在你面前真真实实的发生了，你就解脱了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 64,
+      "start": 3592.58,
+      "end": 3593.04,
+      "speaker": "host",
+      "text": "我曾经给大家讲过我在初中的时候，因为我当时上了一个考了一个比较好的私立初中，为了让我上学，我姐姐就主动辍学不上了嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 65,
+      "start": 3593.04,
+      "end": 3593.08,
+      "speaker": "host",
+      "text": "我当时心里就背负感特别重，我一直觉得背负感很重，重到我无法提到那件事情。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 66,
+      "start": 3593.08,
+      "end": 3593.09,
+      "speaker": "host",
+      "text": "我一提到就很难受嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 67,
+      "start": 3593.09,
+      "end": 3593.15,
+      "speaker": "host",
+      "text": "所以你看后来人们什么时候叫释怀了，释怀了就是你能够落落大方的把这件事情说出来了，把你苦难能讲给别人听的时候，说明你释怀了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 68,
+      "start": 3593.15,
+      "end": 3593.21,
+      "speaker": "host",
+      "text": "我第一次感到释怀其实就是我给大家说过，看平凡的世界那套书，初三的教室里，老师在前面上数学课，我听不懂，我趴着偷偷的在后面看平凡的世界。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 69,
+      "start": 3593.21,
+      "end": 3593.26,
+      "speaker": "host",
+      "text": "然后就看到了那个家里的少平少安，对吧，然后为了让自己的妹妹上学，鼓励妹妹那段说不管想尽什么办法都会让你上学。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 70,
+      "start": 3593.26,
+      "end": 3593.31,
+      "speaker": "host",
+      "text": "看到那一段我突然好像看到了另一个平行时空里头自己生活中的映射。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 71,
+      "start": 3593.31,
+      "end": 3593.37,
+      "speaker": "host",
+      "text": "于是感觉到了这种事情不是我一个人独自在承受的，它其实很普遍的在那样可能经济困难的时候，大家对于家人那种爱和成全。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 72,
+      "start": 3593.37,
+      "end": 3593.44,
+      "speaker": "host",
+      "text": "我我仿佛看到了这种事情原原本本发生的样子，我作为一个冷眼旁观的人，仿佛也理解了生命中那些人所经受的苦难和他们的不容易。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 73,
+      "start": 3593.45,
+      "end": 3593.46,
+      "speaker": "host",
+      "text": "我瞬间就理解了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 74,
+      "start": 3593.47,
+      "end": 3593.49,
+      "speaker": "host",
+      "text": "天地不仁以万物为刍狗，刍狗是什么意思？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 75,
+      "start": 3593.5,
+      "end": 3593.51,
+      "speaker": "guest",
+      "text": "刍狗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 76,
+      "start": 3593.52,
+      "end": 3593.55,
+      "speaker": "host",
+      "text": "刍狗就是古代祭祀的时候，扎的那个小草人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 77,
+      "start": 3593.55,
+      "end": 3593.58,
+      "speaker": "host",
+      "text": "这句话的意思，天地不仁不是说天地把所有人都当成这个草人去对待。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 78,
+      "start": 3593.58,
+      "end": 3594.02,
+      "speaker": "host",
+      "text": "而是说他并不区分你是贵贱，你是贵族还是普通的人，能理解吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 79,
+      "start": 3594.02,
+      "end": 3594.03,
+      "speaker": "host",
+      "text": "就是他没有区别对待你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 80,
+      "start": 3594.03,
+      "end": 3594.05,
+      "speaker": "host",
+      "text": "你只是注定要经历一些事情。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 81,
+      "start": 3594.05,
+      "end": 3594.08,
+      "speaker": "host",
+      "text": "所以我看到那个故事的，就这句话很多人理解错了，天地不仁以万物为刍狗，很多人理解错了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 82,
+      "start": 3594.08,
+      "end": 3594.12,
+      "speaker": "host",
+      "text": "很多人以为天地没有人性，人慈之心呢，不是，只是说天地没有这个区别对待你而已。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 83,
+      "start": 3594.12,
+      "end": 3594.13,
+      "speaker": "host",
+      "text": "我看到那块之后我突然就释怀了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 84,
+      "start": 3594.13,
+      "end": 3594.18,
+      "speaker": "host",
+      "text": "所以如果说我刚提到了，你如果成长中有些感觉难以释怀的经历时，你也可以读一读这套书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 85,
+      "start": 3594.18,
+      "end": 3594.2,
+      "speaker": "host",
+      "text": "你当像鸟飞往你的山。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 86,
+      "start": 3594.2,
+      "end": 3594.26,
+      "speaker": "host",
+      "text": "教育最本真的样子应该就是激发一个孩子好奇心、求知欲、想象力，让他成长为一个坚定善良、宽容博爱之人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 87,
+      "start": 3594.26,
+      "end": 3594.3,
+      "speaker": "host",
+      "text": "以树人，树己之心树人，以责人之心责己。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 88,
+      "start": 3594.3,
+      "end": 3594.32,
+      "speaker": "host",
+      "text": "老吾老以及人之老，幼吾幼以及人之幼。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 89,
+      "start": 3594.33,
+      "end": 3594.37,
+      "speaker": "host",
+      "text": "如果呢，我在第一次看完这本说之后，我当时就有一个感受，就如果以后我当父亲。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 90,
+      "start": 3594.37,
+      "end": 3594.41,
+      "speaker": "host",
+      "text": "我首先让我的孩子应该成为一个快乐的，自然放松的，落落大方的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 91,
+      "start": 3594.41,
+      "end": 3594.47,
+      "speaker": "host",
+      "text": "他可以不是一个在物质上取得巨大成就的人，他可能终其一生极其努力，像他的父亲很笨，没有天赋，努力了几十年都把自己活不明白。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 92,
+      "start": 3594.47,
+      "end": 3594.54,
+      "speaker": "host",
+      "text": "但他只要是一个快乐的，是一个健康的，是一个内心放松落落大方的人，他应该就是生活中能够与自己和解，与生活一切怡然自乐的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 93,
+      "start": 3594.54,
+      "end": 3595.02,
+      "speaker": "host",
+      "text": "但如果还是一个宽容的博爱的，然后能够克己复礼，能够以责人，责人之心责己，数己之心数人这样的人的话，那他应该就是一个受人尊重的，一个得体的体面的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 94,
+      "start": 3595.03,
+      "end": 3595.04,
+      "speaker": "host",
+      "text": "他是一个好人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 95,
+      "start": 3595.05,
+      "end": 3595.14,
+      "speaker": "host",
+      "text": "如果在此基础上，他还是一个，如果说他生下来很有智慧，他学习很聪明，他在某方面有特殊的天赋，不管是音乐、绘画、艺术、体育，还是说科，就是这个做科研方面，如果他能为这个社会做出一点点额外的贡献。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 96,
+      "start": 3595.15,
+      "end": 3595.17,
+      "speaker": "host",
+      "text": "那是他的福气，那是老天爷选了他。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 97,
+      "start": 3595.17,
+      "end": 3595.18,
+      "speaker": "host",
+      "text": "天将降大任于斯人也。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 98,
+      "start": 3595.19,
+      "end": 3595.22,
+      "speaker": "host",
+      "text": "苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 99,
+      "start": 3595.23,
+      "end": 3595.24,
+      "speaker": "host",
+      "text": "大家都背过，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 100,
+      "start": 3595.25,
+      "end": 3595.26,
+      "speaker": "host",
+      "text": "我不知道以后我的孩子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 101,
+      "start": 3595.26,
+      "end": 3595.27,
+      "speaker": "host",
+      "text": "因为这个我这。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 102,
+      "start": 3595.27,
+      "end": 3595.29,
+      "speaker": "host",
+      "text": "我这个孩子，还八字没一撇呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 103,
+      "start": 3595.29,
+      "end": 3595.31,
+      "speaker": "host",
+      "text": "但是我在看完这套书之后，我真的会想这些事情。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 104,
+      "start": 3595.31,
+      "end": 3595.33,
+      "speaker": "host",
+      "text": "我在想就是我的孩子应该是一个什么样的孩子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 105,
+      "start": 3595.34,
+      "end": 3595.36,
+      "speaker": "host",
+      "text": "他首先应该是一个善良的正直的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 106,
+      "start": 3595.36,
+      "end": 3595.38,
+      "speaker": "host",
+      "text": "他应该是有个价值观始终指导着自己的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 107,
+      "start": 3595.38,
+      "end": 3595.42,
+      "speaker": "host",
+      "text": "这样他才不至于在物欲横流的世界里被风打来与浮去的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 108,
+      "start": 3595.42,
+      "end": 3595.47,
+      "speaker": "host",
+      "text": "他才不会在很多时候被各种东西，价值观或者各种错误事情裹挟着失去自己标准的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 109,
+      "start": 3595.47,
+      "end": 3595.5,
+      "speaker": "host",
+      "text": "他始终是一个有着自己判断的坚定的人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 110,
+      "start": 3595.5,
+      "end": 3595.54,
+      "speaker": "host",
+      "text": "这种人可能在自己混的不好地时候，你会看不起他，但是也会在一两个瞬间你会觉得他很值得尊敬，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 111,
+      "start": 3595.55,
+      "end": 3596.01,
+      "speaker": "host",
+      "text": "这这套书可能里头没有讲那么多故事啊，没讲那么多，他只是讲了一个原生家庭生活不快乐的人，然后给自己带来的一些影响。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 112,
+      "start": 3596.01,
+      "end": 3596.03,
+      "speaker": "host",
+      "text": "通过教育克服这个影响的故事。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 113,
+      "start": 3596.03,
+      "end": 3596.05,
+      "speaker": "host",
+      "text": "在自己的身上克服那个时代，对吧，这是尼采的话。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 114,
+      "start": 3596.05,
+      "end": 3596.07,
+      "speaker": "host",
+      "text": "这本书呢讲的是那一个故事。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 115,
+      "start": 3596.07,
+      "end": 3596.12,
+      "speaker": "host",
+      "text": "但我其实是想借着这本书我们去讨论一下家庭教育，或者说如何给子女更好的这个教育观。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 116,
+      "start": 3596.12,
+      "end": 3596.14,
+      "speaker": "host",
+      "text": "就是你怎么去定义你的孩子？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 117,
+      "start": 3596.14,
+      "end": 3596.2,
+      "speaker": "host",
+      "text": "就是我印象特别小的时候，我我爸妈还有我的爷爷奶奶，因为都是农民嘛，他们一生呢可能也没有见过特别大的财富。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 118,
+      "start": 3596.2,
+      "end": 3596.23,
+      "speaker": "host",
+      "text": "所以他们很少在给孩子评价或者定人生目标的时候以财富去衡量成功。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 119,
+      "start": 3596.24,
+      "end": 3596.29,
+      "speaker": "host",
+      "text": "可能真的传统的，那种家庭都是有那种特点的，就是他们特别害怕你做了一件不得体的事情，然后被别人批评，被别人诟病。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 120,
+      "start": 3596.3,
+      "end": 3596.31,
+      "speaker": "host",
+      "text": "害怕你背负骂名。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 121,
+      "start": 3596.31,
+      "end": 3596.32,
+      "speaker": "host",
+      "text": "你现在开始骂我了是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 122,
+      "start": 3596.32,
+      "end": 3596.33,
+      "speaker": "host",
+      "text": "你为什么笑那么开心呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 123,
+      "start": 3596.34,
+      "end": 3596.35,
+      "speaker": "host",
+      "text": "好好，行行行，行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 124,
+      "start": 3596.35,
+      "end": 3596.36,
+      "speaker": "host",
+      "text": "这本说过了是吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 125,
+      "start": 3596.36,
+      "end": 3596.37,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 126,
+      "start": 3596.37,
+      "end": 3596.38,
+      "speaker": "host",
+      "text": "孙晨今天很开心啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 127,
+      "start": 3596.39,
+      "end": 3596.39,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 128,
+      "start": 3596.4,
+      "end": 3596.42,
+      "speaker": "host",
+      "text": "就是你从小教育其实会影响你孩子一生的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 129,
+      "start": 3596.42,
+      "end": 3596.44,
+      "speaker": "host",
+      "text": "比学校教育更重要的是家庭教育。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 130,
+      "start": 3596.44,
+      "end": 3596.46,
+      "speaker": "host",
+      "text": "家庭教育其实直接决定了孩子的价值观。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 131,
+      "start": 3596.47,
+      "end": 3596.5,
+      "speaker": "host",
+      "text": "这个就会决定他在人生不管是逆境还是顺境中如何看待自己的生命。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 132,
+      "start": 3596.5,
+      "end": 3596.52,
+      "speaker": "host",
+      "text": "如何看待自己存在的价值。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 133,
+      "start": 3596.52,
+      "end": 3596.55,
+      "speaker": "host",
+      "text": "你会发现现在很多的孩子生活遇到一点点难的时候就会觉得没有意义。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 134,
+      "start": 3596.55,
+      "end": 3596.59,
+      "speaker": "host",
+      "text": "觉得只要拿不来他想要的财富的时候，他就觉得自己奋斗是无意，他就想躺平。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 135,
+      "start": 3596.59,
+      "end": 3597.03,
+      "speaker": "host",
+      "text": "比如说他遭受到这个误会，遭受到否定的时候，他就觉得周围全部是恶人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 136,
+      "start": 3597.03,
+      "end": 3597.09,
+      "speaker": "host",
+      "text": "如果说他才华没有被发现，或者自己的理念没有被认同的时候，他就会觉得周围全部是蠢货，是笨蛋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 137,
+      "start": 3597.09,
+      "end": 3597.1,
+      "speaker": "host",
+      "text": "其实这些可能都不对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 138,
+      "start": 3597.1,
+      "end": 3597.15,
+      "speaker": "host",
+      "text": "我觉得这些除了学校老师，因为学校老师上课都急着要讲课程，讲大纲呢，对吧，要按照课程教学大纲去讲的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 139,
+      "start": 3597.15,
+      "end": 3597.17,
+      "speaker": "host",
+      "text": "我觉得这些更重要的其实应该家庭讲给孩子的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 140,
+      "start": 3597.17,
+      "end": 3597.19,
+      "speaker": "host",
+      "text": "我们说家教门风啊，对吧，古代人强调这店门风啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 141,
+      "start": 3597.19,
+      "end": 3597.21,
+      "speaker": "host",
+      "text": "你看子女在外如果说做不好的事情，那说明你父亲没教好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 142,
+      "start": 3597.21,
+      "end": 3597.22,
+      "speaker": "host",
+      "text": "子不教父之过呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 143,
+      "start": 3597.23,
+      "end": 3597.27,
+      "speaker": "host",
+      "text": "所以根据刚那本书，我是给大家胡扯了一些话，我是希望能唤醒大家对于家庭教育一些理解和重视。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 144,
+      "start": 3597.27,
+      "end": 3597.29,
+      "speaker": "host",
+      "text": "其实家庭教育并不是说巨大的财富。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 145,
+      "start": 3597.29,
+      "end": 3597.3,
+      "speaker": "host",
+      "text": "很多时候因为这个大富得靠命。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 146,
+      "start": 3597.31,
+      "end": 3597.32,
+      "speaker": "host",
+      "text": "小富靠勤快，大富靠命。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 147,
+      "start": 3597.33,
+      "end": 3597.35,
+      "speaker": "host",
+      "text": "但是我们能做的其实是让孩子有个正确的价值观。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 148,
+      "start": 3597.36,
+      "end": 3597.37,
+      "speaker": "host",
+      "text": "他在人生逆境的时候不至于痛苦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 149,
+      "start": 3597.37,
+      "end": 3597.39,
+      "speaker": "host",
+      "text": "他在人生顺境的时候不至于浮躁。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 150,
+      "start": 3597.4,
+      "end": 3597.42,
+      "speaker": "host",
+      "text": "所谓的这个善，顺境中善待别人，逆境中善待自己就是这个意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 151,
+      "start": 3597.43,
+      "end": 3597.44,
+      "speaker": "host",
+      "text": "有朋友说董宇辉，你说一下你在讲啥？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 152,
+      "start": 3597.44,
+      "end": 3597.45,
+      "speaker": "host",
+      "text": "我在卖带鱼呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 153,
+      "start": 3597.46,
+      "end": 3597.47,
+      "speaker": "guest",
+      "text": "只有三公斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 154,
+      "start": 3597.47,
+      "end": 3597.48,
+      "speaker": "host",
+      "text": "六斤啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 155,
+      "start": 3597.48,
+      "end": 3597.49,
+      "speaker": "host",
+      "text": "舟山带鱼。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 156,
+      "start": 3597.5,
+      "end": 3597.52,
+      "speaker": "host",
+      "text": "这个盒子里的这个是隔热的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 157,
+      "start": 3597.52,
+      "end": 3597.53,
+      "speaker": "guest",
+      "text": "现做的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 158,
+      "start": 3597.55,
+      "end": 3597.57,
+      "speaker": "host",
+      "text": "舟山为什么产带鱼？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 159,
+      "start": 3597.57,
+      "end": 3597.58,
+      "speaker": "host",
+      "text": "因为舟山有个渔场。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 160,
+      "start": 3597.59,
+      "end": 3598.03,
+      "speaker": "host",
+      "text": "我记得我上次在卖带鱼的时候说了一段什么话，然后后来有朋友说第一次听直播把我听哭了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 161,
+      "start": 3598.03,
+      "end": 3598.07,
+      "speaker": "host",
+      "text": "我当时说我，我说带鱼呢只是和生活在50米到100米的深水里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 162,
+      "start": 3598.07,
+      "end": 3598.09,
+      "speaker": "host",
+      "text": "因为压力会让他，他。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 163,
+      "start": 3598.09,
+      "end": 3598.11,
+      "speaker": "host",
+      "text": "因为只有压力他才能正常的生长。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 164,
+      "start": 3598.11,
+      "end": 3598.15,
+      "speaker": "host",
+      "text": "一旦浮出水面之后，因为气压差，它就会迅速的肚子爆炸，把自己就活活挤死了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 165,
+      "start": 3598.15,
+      "end": 3598.18,
+      "speaker": "host",
+      "text": "所以我当时给大家讲到了带鱼，我说有的人注定下来就要背负压力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 166,
+      "start": 3598.18,
+      "end": 3598.21,
+      "speaker": "host",
+      "text": "压力在更多时候是一个令人感到厌烦的东西。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 167,
+      "start": 3598.21,
+      "end": 3598.26,
+      "speaker": "host",
+      "text": "它会让你沮丧，让你痛苦，让你不够坚定，让你谨小慎微，让你犹豫徘徊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 168,
+      "start": 3598.26,
+      "end": 3598.31,
+      "speaker": "host",
+      "text": "但是有些人是被老天爷选中的，他背负了压力之后会走得更加坚定，不犹豫不徘徊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 169,
+      "start": 3598.31,
+      "end": 3598.33,
+      "speaker": "host",
+      "text": "这是三袋，就是三公斤，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 170,
+      "start": 3598.33,
+      "end": 3598.34,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 171,
+      "start": 3598.34,
+      "end": 3598.35,
+      "speaker": "host",
+      "text": "三袋三公斤，六斤啊一共。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 172,
+      "start": 3598.36,
+      "end": 3598.38,
+      "speaker": "host",
+      "text": "就是刚才所说的天将降大任于斯人也。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 173,
+      "start": 3598.38,
+      "end": 3598.4,
+      "speaker": "host",
+      "text": "必先苦其心志，劳其筋骨，饿其体肤呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 174,
+      "start": 3598.42,
+      "end": 3598.46,
+      "speaker": "host",
+      "text": "所以如果你时常感觉到，我为什么我的生活从来都是这么难呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 175,
+      "start": 3598.46,
+      "end": 3598.47,
+      "speaker": "host",
+      "text": "好像从一开始选择的困难模式啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 176,
+      "start": 3598.47,
+      "end": 3598.49,
+      "speaker": "host",
+      "text": "董宇辉以前就这么骗自己的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 177,
+      "start": 3598.49,
+      "end": 3598.51,
+      "speaker": "host",
+      "text": "我就骗自己，我说这个肯定是老天爷选中的我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 178,
+      "start": 3598.51,
+      "end": 3598.52,
+      "speaker": "host",
+      "text": "我以后得干大事儿。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 179,
+      "start": 3598.53,
+      "end": 3598.57,
+      "speaker": "host",
+      "text": "我上次说这个话的时候还是去年冬天，特别难，我们不是说播完之后受到了大家很多的关注。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 180,
+      "start": 3598.57,
+      "end": 3598.59,
+      "speaker": "host",
+      "text": "但是主要以批评意见居多。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 181,
+      "start": 3598.59,
+      "end": 3599.02,
+      "speaker": "host",
+      "text": "我曾经是一个很骄傲的老师，然后那段时间很难受，回了一趟西安。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 182,
+      "start": 3599.02,
+      "end": 3599.04,
+      "speaker": "host",
+      "text": "跟我那个好朋友，我们俩在他家里这个聊天呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 183,
+      "start": 3599.06,
+      "end": 3599.09,
+      "speaker": "host",
+      "text": "你是不是在经历逆境的时候仍然那么不着调的相信自己？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 184,
+      "start": 3599.1,
+      "end": 3599.1,
+      "speaker": "host",
+      "text": "我说肯定的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 185,
+      "start": 3599.11,
+      "end": 3599.12,
+      "speaker": "host",
+      "text": "我做的是对的事情。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 186,
+      "start": 3599.12,
+      "end": 3599.13,
+      "speaker": "host",
+      "text": "机会还没有到。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 187,
+      "start": 3599.13,
+      "end": 3599.17,
+      "speaker": "host",
+      "text": "我现在正处于这个苦其心志，劳其筋骨，饿其体肤，空乏其身的阶段。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 188,
+      "start": 3599.17,
+      "end": 3599.18,
+      "speaker": "host",
+      "text": "等一段时间就好了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 189,
+      "start": 3599.18,
+      "end": 3599.2,
+      "speaker": "host",
+      "text": "当时其实是自己给自己自我欺骗的啊，给自己一点动力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 190,
+      "start": 3599.2,
+      "end": 3599.22,
+      "speaker": "host",
+      "text": "带鱼的，想要自己去拍吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 191,
+      "start": 3599.22,
+      "end": 3599.23,
+      "speaker": "host",
+      "text": "来，接下来给大家带来的是小米啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 192,
+      "start": 3599.27,
+      "end": 3599.28,
+      "speaker": "guest",
+      "text": "三九块九。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 193,
+      "start": 3599.28,
+      "end": 3599.29,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 194,
+      "start": 3599.29,
+      "end": 3599.3,
+      "speaker": "guest",
+      "text": "三九块九十袋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 195,
+      "start": 3599.3,
+      "end": 3599.31,
+      "speaker": "host",
+      "text": "今天小是蒙山的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 196,
+      "start": 3599.32,
+      "end": 3599.33,
+      "speaker": "guest",
+      "text": "内蒙古的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 197,
+      "start": 3599.34,
+      "end": 3599.37,
+      "speaker": "host",
+      "text": "小米一般生长地方，相对第一个高海拔，第二个光照强。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 198,
+      "start": 3599.37,
+      "end": 3599.4,
+      "speaker": "host",
+      "text": "所以你看大家能知道很多地方，像陕北啊，山西啊，内蒙啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 199,
+      "start": 3599.42,
+      "end": 3599.43,
+      "speaker": "host",
+      "text": "当然甘肃一带也有小米啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 200,
+      "start": 3599.43,
+      "end": 3599.45,
+      "speaker": "host",
+      "text": "都有很好的小米，你发现它的地理位置和气候条件是相同的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 201,
+      "start": 3599.46,
+      "end": 3599.46,
+      "speaker": "host",
+      "text": "带鱼好香啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 202,
+      "start": 3599.47,
+      "end": 3599.48,
+      "speaker": "guest",
+      "text": "我感觉我们家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 203,
+      "start": 3599.48,
+      "end": 3599.49,
+      "speaker": "guest",
+      "text": "我感觉我们家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 204,
+      "start": 3599.49,
+      "end": 3599.5,
+      "speaker": "guest",
+      "text": "我吃了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 205,
+      "start": 3599.51,
+      "end": 3599.52,
+      "speaker": "host",
+      "text": "咱还有个杂粮粉啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 206,
+      "start": 3599.52,
+      "end": 3599.53,
+      "speaker": "host",
+      "text": "放二号了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 207,
+      "start": 3599.53,
+      "end": 3599.54,
+      "speaker": "guest",
+      "text": "今天把自己的卖光了那个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 208,
+      "start": 3599.54,
+      "end": 3599.55,
+      "speaker": "host",
+      "text": "大桶是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 209,
+      "start": 3599.55,
+      "end": 3599.55,
+      "speaker": "guest",
+      "text": "大桶。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 210,
+      "start": 3599.56,
+      "end": 3599.56,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 211,
+      "start": 3600.0,
+      "end": 3600.01,
+      "speaker": "host",
+      "text": "可以给你们拿一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 212,
+      "start": 3600.01,
+      "end": 3600.01,
+      "speaker": "host",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 213,
+      "start": 3600.02,
+      "end": 3600.02,
+      "speaker": "host",
+      "text": "挺香的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 214,
+      "start": 3600.1,
+      "end": 3600.12,
+      "speaker": "host",
+      "text": "小时候可喜欢过年炸带鱼了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 215,
+      "start": 3600.12,
+      "end": 3600.13,
+      "speaker": "host",
+      "text": "因为炸的时候会飘香。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 216,
+      "start": 3600.14,
+      "end": 3600.15,
+      "speaker": "host",
+      "text": "我跟我弟在院子里玩。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 217,
+      "start": 3600.16,
+      "end": 3600.2,
+      "speaker": "host",
+      "text": "妈妈炸好之后捞出来放到背后的那个盘子里头，让它凉一下，降个温。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 218,
+      "start": 3600.2,
+      "end": 3600.22,
+      "speaker": "host",
+      "text": "她放一个我们俩去拿一个，放一个拿一个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 219,
+      "start": 3600.22,
+      "end": 3600.24,
+      "speaker": "host",
+      "text": "妈妈忙了一早上，走转头一看盘子里还是空的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 220,
+      "start": 3600.3,
+      "end": 3600.31,
+      "speaker": "host",
+      "text": "不吃了不吃了，别骂了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 221,
+      "start": 3600.31,
+      "end": 3600.32,
+      "speaker": "host",
+      "text": "小米还有三千单。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 222,
+      "start": 3600.39,
+      "end": 3600.4,
+      "speaker": "host",
+      "text": "带鱼在三号链接啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 223,
+      "start": 3600.4,
+      "end": 3600.41,
+      "speaker": "host",
+      "text": "然后这个小米的话，大家需要自己去拍。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 224,
+      "start": 3600.42,
+      "end": 3600.43,
+      "speaker": "host",
+      "text": "哎，五谷杂粮，五谷是什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 225,
+      "start": 3600.43,
+      "end": 3600.44,
+      "speaker": "host",
+      "text": "刘鹏。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 226,
+      "start": 3600.45,
+      "end": 3600.46,
+      "speaker": "host",
+      "text": "刘鹏。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 227,
+      "start": 3600.46,
+      "end": 3600.47,
+      "speaker": "host",
+      "text": "五谷是什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 228,
+      "start": 3600.47,
+      "end": 3600.48,
+      "speaker": "host",
+      "text": "小米在古代叫什么呀？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 229,
+      "start": 3600.51,
+      "end": 3600.52,
+      "speaker": "guest",
+      "text": "五谷杂粮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 230,
+      "start": 3600.52,
+      "end": 3600.53,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 231,
+      "start": 3600.53,
+      "end": 3600.54,
+      "speaker": "guest",
+      "text": "问观众。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 232,
+      "start": 3600.54,
+      "end": 3600.55,
+      "speaker": "host",
+      "text": "问观众，观众没有办法跟我回答啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 233,
+      "start": 3600.56,
+      "end": 3600.58,
+      "speaker": "host",
+      "text": "当然说现在刘鹏上上这个上东会的直播太难了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 234,
+      "start": 3600.58,
+      "end": 3601.0,
+      "speaker": "host",
+      "text": "这个首先啊，我们古代人吃，什么时候开始吃的小麦呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 235,
+      "start": 3601.01,
+      "end": 3601.02,
+      "speaker": "host",
+      "text": "我们古代什么时候吃的小麦？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 236,
+      "start": 3601.03,
+      "end": 3601.05,
+      "speaker": "host",
+      "text": "小麦其实都在汉以后了，丝绸之路以后。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 237,
+      "start": 3601.05,
+      "end": 3601.08,
+      "speaker": "host",
+      "text": "然后我们所驯化的其实当时所吃的其实就是小米啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 238,
+      "start": 3601.08,
+      "end": 3601.1,
+      "speaker": "host",
+      "text": "第一个叫稻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 239,
+      "start": 3601.11,
+      "end": 3601.12,
+      "speaker": "host",
+      "text": "麦，但这个麦不是我们所说的小麦啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 240,
+      "start": 3601.12,
+      "end": 3601.13,
+      "speaker": "host",
+      "text": "这个麦不是小麦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 241,
+      "start": 3601.13,
+      "end": 3601.14,
+      "speaker": "host",
+      "text": "稻麦鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 242,
+      "start": 3601.15,
+      "end": 3601.16,
+      "speaker": "host",
+      "text": "设计嘛，大家听过吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 243,
+      "start": 3601.16,
+      "end": 3601.17,
+      "speaker": "host",
+      "text": "小时候说这个吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 244,
+      "start": 3601.18,
+      "end": 3601.19,
+      "speaker": "host",
+      "text": "刘鹏你努力一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 245,
+      "start": 3601.2,
+      "end": 3601.21,
+      "speaker": "host",
+      "text": "都有什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 246,
+      "start": 3601.21,
+      "end": 3601.22,
+      "speaker": "host",
+      "text": "五谷啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 247,
+      "start": 3601.23,
+      "end": 3601.24,
+      "speaker": "host",
+      "text": "稻就是水稻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 248,
+      "start": 3601.25,
+      "end": 3601.27,
+      "speaker": "host",
+      "text": "然后呢，这个玉米也不是啊，玉米不是，玉米不是我们传统的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 249,
+      "start": 3601.27,
+      "end": 3601.3,
+      "speaker": "host",
+      "text": "我给大家讲过这个玉米是在什么时候，玉米是在明代才进入了国内。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 250,
+      "start": 3601.3,
+      "end": 3601.32,
+      "speaker": "host",
+      "text": "玉米是明代才进入的国内。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 251,
+      "start": 3601.32,
+      "end": 3601.35,
+      "speaker": "host",
+      "text": "然后呢，这个小麦其实也不是我们所驯化的，之前给大家讲过，因为小麦是在新月沃地。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 252,
+      "start": 3601.35,
+      "end": 3601.37,
+      "speaker": "host",
+      "text": "就是大家所说的两河流域。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 253,
+      "start": 3601.37,
+      "end": 3601.38,
+      "speaker": "host",
+      "text": "这个整理出来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 254,
+      "start": 3601.38,
+      "end": 3601.41,
+      "speaker": "host",
+      "text": "有朋友在评论区已经发出来了，有朋友看到了这个，大家可以复制然后回复一下那个啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 255,
+      "start": 3601.41,
+      "end": 3601.44,
+      "speaker": "host",
+      "text": "对，玉米和红薯其实是郑和下西洋才带回来的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 256,
+      "start": 3601.45,
+      "end": 3601.48,
+      "speaker": "host",
+      "text": "大家可以在评论区这个评论区发一下那些，就是那五个啊，那五个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 257,
+      "start": 3601.48,
+      "end": 3601.51,
+      "speaker": "host",
+      "text": "我们以前所写的故人具鸡黍，邀我至田家。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 258,
+      "start": 3601.51,
+      "end": 3601.52,
+      "speaker": "host",
+      "text": "听过吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 259,
+      "start": 3601.52,
+      "end": 3601.54,
+      "speaker": "host",
+      "text": "其实古代人们主要吃的是小小小米啊，小米。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 260,
+      "start": 3601.55,
+      "end": 3601.59,
+      "speaker": "host",
+      "text": "刚才有朋友在评论区已经发了五谷了，大家可以在一块复制粘贴一下，因为正好屏幕前如果有孩子的话。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 261,
+      "start": 3601.59,
+      "end": 3602.01,
+      "speaker": "host",
+      "text": "让孩子把这几个字全部记一下啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 262,
+      "start": 3602.01,
+      "end": 3602.02,
+      "speaker": "host",
+      "text": "刚才给大家说了，第一个叫稻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 263,
+      "start": 3602.02,
+      "end": 3602.04,
+      "speaker": "host",
+      "text": "稻就是水稻，水稻其实就是我们所驯化的这个粮食。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 264,
+      "start": 3602.04,
+      "end": 3602.08,
+      "speaker": "host",
+      "text": "我先给大家讲了中国人驯化了水稻，然后呢在两河流域他们驯化了小麦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 265,
+      "start": 3602.08,
+      "end": 3602.11,
+      "speaker": "host",
+      "text": "在两河流域他们驯化了羊和骆驼，然后我们驯化了猪。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 266,
+      "start": 3602.11,
+      "end": 3602.12,
+      "speaker": "host",
+      "text": "稻。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 267,
+      "start": 3602.13,
+      "end": 3602.14,
+      "speaker": "host",
+      "text": "然后呢，稻麦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 268,
+      "start": 3602.16,
+      "end": 3602.17,
+      "speaker": "host",
+      "text": "还有呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 269,
+      "start": 3602.18,
+      "end": 3602.2,
+      "speaker": "host",
+      "text": "这个我们之前讲过很多次了，稻麦还有呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 270,
+      "start": 3602.2,
+      "end": 3602.22,
+      "speaker": "host",
+      "text": "还有鸡啊，就是大家所说的设计的意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 271,
+      "start": 3602.22,
+      "end": 3602.23,
+      "speaker": "host",
+      "text": "稻麦鸡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 272,
+      "start": 3602.23,
+      "end": 3602.24,
+      "speaker": "host",
+      "text": "然后接下来还有什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 273,
+      "start": 3602.25,
+      "end": 3602.26,
+      "speaker": "host",
+      "text": "黍，再还有呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 274,
+      "start": 3602.26,
+      "end": 3602.27,
+      "speaker": "host",
+      "text": "再还有什么，刘鹏？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 275,
+      "start": 3602.28,
+      "end": 3602.29,
+      "speaker": "host",
+      "text": "稻麦基础，还有什么？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 276,
+      "start": 3602.31,
+      "end": 3602.32,
+      "speaker": "host",
+      "text": "看一下评论区。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 277,
+      "start": 3602.32,
+      "end": 3602.37,
+      "speaker": "host",
+      "text": "这个，这个才是我们所说的这个五谷杂粮，五谷呢其实是我们所驯化的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    },
+    {
+      "idx": 278,
+      "start": 3602.37,
+      "end": 3602.39,
+      "speaker": "host",
+      "text": "它跟国外的那些玉米和红薯不一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 3
+    }
+  ]
+}

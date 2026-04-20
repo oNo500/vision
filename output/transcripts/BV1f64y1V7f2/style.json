@@ -1,0 +1,142 @@
+{
+  "video_id": "BV1f64y1V7f2",
+  "host_speaking_ratio": 0.9312869614193185,
+  "speaker_count": {
+    "host": 181,
+    "guest": 34,
+    "other": 0,
+    "unknown": 0
+  },
+  "top_phrases": [
+    {
+      "phrase": "赶紧去拍",
+      "count": 6
+    },
+    {
+      "phrase": "右下角一号链接",
+      "count": 5
+    },
+    {
+      "phrase": "对吧",
+      "count": 4
+    },
+    {
+      "phrase": "知识",
+      "count": 4
+    },
+    {
+      "phrase": "juicy and sweet",
+      "count": 3
+    },
+    {
+      "phrase": "拍一单",
+      "count": 3
+    },
+    {
+      "phrase": "能不能让我进次前十名",
+      "count": 3
+    },
+    {
+      "phrase": "赶紧拍",
+      "count": 3
+    },
+    {
+      "phrase": "快买点",
+      "count": 2
+    },
+    {
+      "phrase": "唯一的配料",
+      "count": 2
+    },
+    {
+      "phrase": "豁然大明白",
+      "count": 2
+    },
+    {
+      "phrase": "挑战自己的生理极限",
+      "count": 2
+    },
+    {
+      "phrase": "这个锅你得背",
+      "count": 2
+    },
+    {
+      "phrase": "自由恋爱",
+      "count": 2
+    },
+    {
+      "phrase": "知识的渴望",
+      "count": 2
+    },
+    {
+      "phrase": "爱情的追求",
+      "count": 2
+    },
+    {
+      "phrase": "很难相信",
+      "count": 2
+    },
+    {
+      "phrase": "只有X单了",
+      "count": 2
+    },
+    {
+      "phrase": "就是开心",
+      "count": 2
+    },
+    {
+      "phrase": "免费送给你",
+      "count": 2
+    }
+  ],
+  "catchphrases": [
+    "对吧/对吗？",
+    "好吗？",
+    "可以吗？",
+    "OK",
+    "朋友们",
+    "是吧？"
+  ],
+  "opening_hooks": [
+    "什么叫知识？我给你讲知识，桃子叫做 peach。",
+    "什么叫做对爱情的追求？",
+    "再讲讲牛排，好的。",
+    "来，299,299这个价格很低了。",
+    "刚进入直播间的朋友，请大家点击左上方关注我们。"
+  ],
+  "cta_patterns": [
+    "赶紧去拍",
+    "右下角X号链接",
+    "拍一单",
+    "自己去买，赶紧",
+    "帮我进一个前十名",
+    "买点再走",
+    "点击左上方关注我们",
+    "只有X单了，上",
+    "你不买是吧？",
+    "快再买一些"
+  ],
+  "transition_patterns": [
+    "你听，X",
+    "OK,这叫做X",
+    "再讲讲X，好的。",
+    "X是吧？",
+    "来，X",
+    "X了，你看。",
+    "'I am now introducing the X', okay?"
+  ],
+  "sentence_length": {
+    "p50": 12.0,
+    "p90": 29.0,
+    "unit": "chars"
+  },
+  "tone_tags": [
+    "热情",
+    "煽动",
+    "亲和",
+    "幽默",
+    "知识型",
+    "紧迫"
+  ],
+  "english_ratio": 0.2624612785130949
+}

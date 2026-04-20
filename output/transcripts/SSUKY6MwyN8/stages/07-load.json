@@ -1,0 +1,24 @@
+{
+  "stage": "load",
+  "video_id": "SSUKY6MwyN8",
+  "status": "done",
+  "started_at": "2026-04-19T15:37:10.554023+08:00",
+  "finished_at": "2026-04-19T15:37:11.057871+08:00",
+  "duration_sec": 0.503848,
+  "inputs": [
+    "raw.json",
+    "style.json"
+  ],
+  "outputs": [],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "rows_inserted": {
+      "video_sources": 1,
+      "transcript_segments": 1408,
+      "transcript_fts": 1408,
+      "style_profiles": 1
+    }
+  }
+}

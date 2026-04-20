@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1oQ9PBrEFT",
+  "status": "done",
+  "started_at": "2026-04-20T21:07:27.175302+08:00",
+  "finished_at": "2026-04-20T21:07:30.002887+08:00",
+  "duration_sec": 2.827585,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1oQ9PBrEFT/?spm_id_from=333.1007.tianma.7-2-24.click&vd_source=ffcd5c3951bb146169d7cce1550a15dd",
+    "downloaded_bytes": 8957721,
+    "source_metadata": {
+      "video_id": "BV1oQ9PBrEFT",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1oQ9PBrEFT/?spm_id_from=333.1007.tianma.7-2-24.click&vd_source=ffcd5c3951bb146169d7cce1550a15dd",
+      "title": "004航母不是目标舰，005才是定义后福特时代的超级航母平台！",
+      "uploader": "西葛西",
+      "duration_sec": 648.917
+    }
+  }
+}

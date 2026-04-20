@@ -1,0 +1,2496 @@
+{
+  "chunk_id": 4,
+  "start_offset": 4790.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 4790.0,
+      "end": 4790.35,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 1,
+      "start": 4791.58,
+      "end": 4792.33,
+      "speaker": "host",
+      "text": "他说你很美。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 2,
+      "start": 4793.42,
+      "end": 4795.12,
+      "speaker": "host",
+      "text": "每一个天使都热爱美丽。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 3,
+      "start": 4796.72,
+      "end": 4798.02,
+      "speaker": "host",
+      "text": "所以他才懂得你珍贵。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 4,
+      "start": 4799.94,
+      "end": 4800.74,
+      "speaker": "host",
+      "text": "按时吃饭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 5,
+      "start": 4802.74,
+      "end": 4803.54,
+      "speaker": "host",
+      "text": "按时睡觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 6,
+      "start": 4805.64,
+      "end": 4808.24,
+      "speaker": "host",
+      "text": "有朋友懂你，会这个脸是暴力丑学。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 4
+    },
+    {
+      "idx": 7,
+      "start": 4812.04,
+      "end": 4813.94,
+      "speaker": "host",
+      "text": "钱难挣啊，为了挣这点钱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 8,
+      "start": 4815.44,
+      "end": 4817.04,
+      "speaker": "host",
+      "text": "被人凌辱，消费。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 9,
+      "start": 4820.74,
+      "end": 4824.04,
+      "speaker": "host",
+      "text": "别这样说，我妈会难过，我妈会难过的。你们这样一直叫我方老师。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 10,
+      "start": 4825.54,
+      "end": 4829.44,
+      "speaker": "host",
+      "text": "我妈很生很生气，很难过，在群里说，我儿子哪方了？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 11,
+      "start": 4830.84,
+      "end": 4834.54,
+      "speaker": "host",
+      "text": "他出完之后，他觉得有点不真实，除了脸有点方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 12,
+      "start": 4836.34,
+      "end": 4838.04,
+      "speaker": "host",
+      "text": "除了头有点方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 13,
+      "start": 4839.74,
+      "end": 4841.34,
+      "speaker": "host",
+      "text": "除了下巴有点方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 14,
+      "start": 4842.84,
+      "end": 4844.84,
+      "speaker": "host",
+      "text": "除了鼻子和门牙有点方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 15,
+      "start": 4846.14,
+      "end": 4851.24,
+      "speaker": "host",
+      "text": "他还有哪方？算了，你要不撤回吧，你方言之后这更尴尬了，你是真是在安慰我吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 16,
+      "start": 4852.54,
+      "end": 4853.44,
+      "speaker": "host",
+      "text": "没看出来啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 17,
+      "start": 4854.64,
+      "end": 4855.64,
+      "speaker": "host",
+      "text": "反向操作。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 18,
+      "start": 4859.44,
+      "end": 4860.54,
+      "speaker": "host",
+      "text": "我叫董宇辉啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 19,
+      "start": 4862.14,
+      "end": 4863.24,
+      "speaker": "host",
+      "text": "再逃兵马俑。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 20,
+      "start": 4866.04,
+      "end": 4867.14,
+      "speaker": "host",
+      "text": "中关村周杰伦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 21,
+      "start": 4868.84,
+      "end": 4870.34,
+      "speaker": "host",
+      "text": "曾用名中关村吴彦祖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 22,
+      "start": 4871.44,
+      "end": 4872.54,
+      "speaker": "host",
+      "text": "一名叫董宇辉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 23,
+      "start": 4874.84,
+      "end": 4876.04,
+      "speaker": "host",
+      "text": "今天还讲书吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 24,
+      "start": 4877.34,
+      "end": 4878.24,
+      "speaker": "host",
+      "text": "想听什么书？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 25,
+      "start": 4880.04,
+      "end": 4882.74,
+      "speaker": "host",
+      "text": "朋友说有洁癖还用擦，这是不同的纸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 26,
+      "start": 4887.44,
+      "end": 4888.84,
+      "speaker": "host",
+      "text": "需要朋友自己去看啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 27,
+      "start": 4888.84,
+      "end": 4890.34,
+      "speaker": "other",
+      "text": "牛奶还有300单啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 28,
+      "start": 4890.44,
+      "end": 4891.84,
+      "speaker": "host",
+      "text": "牛奶还有300单是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 29,
+      "start": 4892.54,
+      "end": 4894.34,
+      "speaker": "host",
+      "text": "看大家都喜欢我讲书呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 30,
+      "start": 4896.04,
+      "end": 4900.64,
+      "speaker": "host",
+      "text": "这两天尴尬的是，我想卖的书现在全国都找不到库存。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 31,
+      "start": 4902.04,
+      "end": 4902.74,
+      "speaker": "host",
+      "text": "你敢信？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 32,
+      "start": 4904.24,
+      "end": 4907.84,
+      "speaker": "host",
+      "text": "机会来了，没抓住呀，没书。直播间里现在45万人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 33,
+      "start": 4908.84,
+      "end": 4909.54,
+      "speaker": "host",
+      "text": "没书卖。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 34,
+      "start": 4910.94,
+      "end": 4913.04,
+      "speaker": "host",
+      "text": "咱今天晚上有咱书，给我卖一点点呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 35,
+      "start": 4913.44,
+      "end": 4913.74,
+      "speaker": "other",
+      "text": "有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 36,
+      "start": 4914.44,
+      "end": 4917.34,
+      "speaker": "host",
+      "text": "《额古纳河右岸》，来来来来，这样的好书多卖一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 37,
+      "start": 4918.54,
+      "end": 4919.14,
+      "speaker": "host",
+      "text": "还便宜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 38,
+      "start": 4920.84,
+      "end": 4922.04,
+      "speaker": "host",
+      "text": "生命的丰富在于",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 39,
+      "start": 4923.34,
+      "end": 4924.44,
+      "speaker": "host",
+      "text": "你把那个也拿来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 40,
+      "start": 4925.44,
+      "end": 4929.14,
+      "speaker": "host",
+      "text": "生命的丰富在于同样的时间里头比别人经历得多。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 41,
+      "start": 4930.44,
+      "end": 4932.04,
+      "speaker": "host",
+      "text": "人生没有白走的路。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 42,
+      "start": 4933.44,
+      "end": 4934.64,
+      "speaker": "host",
+      "text": "每一步都算数。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 43,
+      "start": 4939.04,
+      "end": 4942.64,
+      "speaker": "host",
+      "text": "比如说你熬得更多的夜，受得更多的委屈。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 44,
+      "start": 4943.64,
+      "end": 4944.04,
+      "speaker": "host",
+      "text": "算。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 45,
+      "start": 4945.44,
+      "end": 4949.04,
+      "speaker": "host",
+      "text": "你吃得更多的苦，得到更多的掌声，也算。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 46,
+      "start": 4950.14,
+      "end": 4954.54,
+      "speaker": "host",
+      "text": "还有一种体验就是去更多的地方，看更丰富的风景。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 47,
+      "start": 4955.74,
+      "end": 4957.54,
+      "speaker": "host",
+      "text": "体会不同的人的人生。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 48,
+      "start": 4958.74,
+      "end": 4960.04,
+      "speaker": "host",
+      "text": "这个当然更算。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 49,
+      "start": 4961.74,
+      "end": 4964.44,
+      "speaker": "host",
+      "text": "《额古纳河右岸》，迟子建老师的作品。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 50,
+      "start": 4965.74,
+      "end": 4968.24,
+      "speaker": "host",
+      "text": "相当经典，而且这本书便宜呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 51,
+      "start": 4969.24,
+      "end": 4970.94,
+      "speaker": "host",
+      "text": "这个今天有多少万册导演？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 52,
+      "start": 4971.24,
+      "end": 4971.74,
+      "speaker": "other",
+      "text": "10万。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 53,
+      "start": 4972.04,
+      "end": 4973.34,
+      "speaker": "host",
+      "text": "10万册，全部上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 54,
+      "start": 4974.64,
+      "end": 4977.34,
+      "speaker": "host",
+      "text": "不要给大家弄那种那种没意思的东西啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 55,
+      "start": 4980.14,
+      "end": 4982.64,
+      "speaker": "host",
+      "text": "鄂温克族和鄂伦春族",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 56,
+      "start": 4985.04,
+      "end": 4986.44,
+      "speaker": "host",
+      "text": "的生活为原型。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 57,
+      "start": 4987.84,
+      "end": 4989.14,
+      "speaker": "host",
+      "text": "大兴安岭深处。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 58,
+      "start": 4991.04,
+      "end": 4991.94,
+      "speaker": "host",
+      "text": "游牧民族。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 59,
+      "start": 4994.04,
+      "end": 4998.54,
+      "speaker": "host",
+      "text": "你看完之后才发现竟然有坠落人间的仙境。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 60,
+      "start": 5001.34,
+      "end": 5004.84,
+      "speaker": "host",
+      "text": "我看完之后我非常羡慕，眼红啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 61,
+      "start": 5006.24,
+      "end": 5008.64,
+      "speaker": "host",
+      "text": "我甚至想以后能够经历这样的生活。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 62,
+      "start": 5010.04,
+      "end": 5017.04,
+      "speaker": "host",
+      "text": "当然我因为我在农村生活过，我知道文学作品所表达出来的美跟现实体验之间还是有很大的实际差异的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 63,
+      "start": 5017.94,
+      "end": 5020.34,
+      "speaker": "host",
+      "text": "但我仍然对此充满了向往。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 64,
+      "start": 5021.94,
+      "end": 5024.04,
+      "speaker": "host",
+      "text": "大兴安岭的原始森林里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 65,
+      "start": 5025.64,
+      "end": 5026.84,
+      "speaker": "host",
+      "text": "逐苔藓而居。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 66,
+      "start": 5028.24,
+      "end": 5033.64,
+      "speaker": "host",
+      "text": "充满灵性的驯鹿，当然在我们的语言里叫四不像，四不像白人就说得没有美感了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 67,
+      "start": 5034.74,
+      "end": 5035.44,
+      "speaker": "host",
+      "text": "驯鹿。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 68,
+      "start": 5038.44,
+      "end": 5042.04,
+      "speaker": "host",
+      "text": "身上细腻的这个它的皮毛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 69,
+      "start": 5044.04,
+      "end": 5045.64,
+      "speaker": "host",
+      "text": "和温柔的颜色。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 70,
+      "start": 5047.64,
+      "end": 5050.44,
+      "speaker": "host",
+      "text": "鄂温克人的习惯里头。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 71,
+      "start": 5053.24,
+      "end": 5055.84,
+      "speaker": "host",
+      "text": "出门会带着火种，在这本书里啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 72,
+      "start": 5059.14,
+      "end": 5061.34,
+      "speaker": "host",
+      "text": "不断地在山林里迁徙。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 73,
+      "start": 5062.44,
+      "end": 5065.04,
+      "speaker": "host",
+      "text": "他们对于自然的理解显得克制",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 74,
+      "start": 5066.54,
+      "end": 5067.44,
+      "speaker": "host",
+      "text": "而尊重。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 75,
+      "start": 5069.74,
+      "end": 5073.44,
+      "speaker": "host",
+      "text": "当苔藓吃光的时候，会前往下一片地方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 76,
+      "start": 5074.94,
+      "end": 5076.64,
+      "speaker": "host",
+      "text": "有经验的酋长",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 77,
+      "start": 5077.94,
+      "end": 5082.04,
+      "speaker": "host",
+      "text": "会带领族人寻找下片适合栖息的地方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 78,
+      "start": 5083.04,
+      "end": 5086.94,
+      "speaker": "host",
+      "text": "像是候鸟，偶尔驻足，但最终还是要飞向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 79,
+      "start": 5088.24,
+      "end": 5089.84,
+      "speaker": "host",
+      "text": "还是要飞向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 80,
+      "start": 5091.64,
+      "end": 5093.44,
+      "speaker": "host",
+      "text": "还是要飞向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 81,
+      "start": 5095.14,
+      "end": 5096.54,
+      "speaker": "host",
+      "text": "你们想听什么音乐？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 82,
+      "start": 5097.54,
+      "end": 5098.94,
+      "speaker": "host",
+      "text": "导演说上换个音乐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 83,
+      "start": 5099.84,
+      "end": 5101.24,
+      "speaker": "host",
+      "text": "大家说上换个音乐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 84,
+      "start": 5102.14,
+      "end": 5102.44,
+      "speaker": "host",
+      "text": "快。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 85,
+      "start": 5102.84,
+      "end": 5103.34,
+      "speaker": "other",
+      "text": "换什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 86,
+      "start": 5103.94,
+      "end": 5105.24,
+      "speaker": "host",
+      "text": "满足大家的愿望。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 87,
+      "start": 5106.94,
+      "end": 5107.54,
+      "speaker": "other",
+      "text": "一生所爱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 88,
+      "start": 5108.04,
+      "end": 5109.14,
+      "speaker": "host",
+      "text": "一生所爱，是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 89,
+      "start": 5109.74,
+      "end": 5110.04,
+      "speaker": "host",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 90,
+      "start": 5110.94,
+      "end": 5112.04,
+      "speaker": "host",
+      "text": "或者你换朴树呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 91,
+      "start": 5112.84,
+      "end": 5113.24,
+      "speaker": "other",
+      "text": "朴树。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 92,
+      "start": 5114.64,
+      "end": 5115.34,
+      "speaker": "host",
+      "text": "朴树那个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 93,
+      "start": 5116.64,
+      "end": 5117.34,
+      "speaker": "other",
+      "text": "平凡之路。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 94,
+      "start": 5117.54,
+      "end": 5118.14,
+      "speaker": "host",
+      "text": "平凡之路。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 95,
+      "start": 5119.24,
+      "end": 5120.24,
+      "speaker": "host",
+      "text": "也可以，也可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 96,
+      "start": 5122.44,
+      "end": 5124.34,
+      "speaker": "host",
+      "text": "可以吗？放个朴树可以吗，朋友们？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 97,
+      "start": 5125.34,
+      "end": 5125.84,
+      "speaker": "host",
+      "text": "可以不？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 98,
+      "start": 5127.04,
+      "end": 5129.24,
+      "speaker": "host",
+      "text": "放完了这个再给大家放《一生所爱》。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 99,
+      "start": 5130.04,
+      "end": 5130.44,
+      "speaker": "host",
+      "text": "可以吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 100,
+      "start": 5131.04,
+      "end": 5131.34,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 101,
+      "start": 5133.84,
+      "end": 5135.84,
+      "speaker": "host",
+      "text": "哎呀，我一听这首歌我就想出发了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 102,
+      "start": 5137.04,
+      "end": 5137.84,
+      "speaker": "host",
+      "text": "上什么班？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 103,
+      "start": 5138.94,
+      "end": 5140.04,
+      "speaker": "host",
+      "text": "不行，我老于还在呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 104,
+      "start": 5145.14,
+      "end": 5146.74,
+      "speaker": "host",
+      "text": "我后来读过很多书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 105,
+      "start": 5148.54,
+      "end": 5150.54,
+      "speaker": "host",
+      "text": "我觉得我们注定要走向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 106,
+      "start": 5151.64,
+      "end": 5153.84,
+      "speaker": "host",
+      "text": "我觉得我们基因里注定着要流浪。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 107,
+      "start": 5155.14,
+      "end": 5156.94,
+      "speaker": "host",
+      "text": "我身处异乡的朋友们啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 108,
+      "start": 5158.14,
+      "end": 5159.84,
+      "speaker": "host",
+      "text": "我素未谋面的亲人啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 109,
+      "start": 5161.24,
+      "end": 5162.84,
+      "speaker": "host",
+      "text": "我尚在未来的爱人啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 110,
+      "start": 5164.04,
+      "end": 5166.54,
+      "speaker": "host",
+      "text": "我们要一起携手走向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 111,
+      "start": 5168.04,
+      "end": 5168.94,
+      "speaker": "host",
+      "text": "走向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 112,
+      "start": 5172.44,
+      "end": 5174.14,
+      "speaker": "host",
+      "text": "我曾看过大张大河。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 113,
+      "start": 5175.54,
+      "end": 5177.24,
+      "speaker": "host",
+      "text": "感受过星辰湖泊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 114,
+      "start": 5180.04,
+      "end": 5182.64,
+      "speaker": "host",
+      "text": "我曾看过大兴安岭的原始森林。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 115,
+      "start": 5183.94,
+      "end": 5184.94,
+      "speaker": "host",
+      "text": "和皑皑白雪。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 116,
+      "start": 5186.24,
+      "end": 5189.84,
+      "speaker": "host",
+      "text": "我知道在每年的春天冰雪融化。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 117,
+      "start": 5191.74,
+      "end": 5192.64,
+      "speaker": "host",
+      "text": "汇聚成河。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 118,
+      "start": 5195.04,
+      "end": 5196.64,
+      "speaker": "host",
+      "text": "我们要逐驯鹿而居。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 119,
+      "start": 5198.04,
+      "end": 5199.84,
+      "speaker": "host",
+      "text": "带上族人与火种。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 120,
+      "start": 5201.34,
+      "end": 5202.14,
+      "speaker": "host",
+      "text": "奔向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 121,
+      "start": 5203.54,
+      "end": 5204.34,
+      "speaker": "host",
+      "text": "奔向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 122,
+      "start": 5206.04,
+      "end": 5206.84,
+      "speaker": "host",
+      "text": "奔向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 123,
+      "start": 5213.44,
+      "end": 5215.44,
+      "speaker": "host",
+      "text": "感谢大家啊，想看自己去拍。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 124,
+      "start": 5225.54,
+      "end": 5228.54,
+      "speaker": "host",
+      "text": "我读到这本书里头哪些场景开始感动了我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 125,
+      "start": 5230.44,
+      "end": 5232.24,
+      "speaker": "host",
+      "text": "就是因为我没有经历过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 126,
+      "start": 5233.84,
+      "end": 5235.04,
+      "speaker": "host",
+      "text": "所以我特别喜欢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 127,
+      "start": 5238.04,
+      "end": 5241.24,
+      "speaker": "host",
+      "text": "当然你要换一个角度，那就是就是落后与愚昧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 128,
+      "start": 5242.24,
+      "end": 5250.04,
+      "speaker": "host",
+      "text": "但你要以一种尊重和欣赏的角度去看，他们在族人遇到生命危险的时候，穿着彩色的衣服，闪着亮光的萨满。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 129,
+      "start": 5251.34,
+      "end": 5252.94,
+      "speaker": "host",
+      "text": "充满力量的祈舞。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 130,
+      "start": 5254.04,
+      "end": 5256.14,
+      "speaker": "host",
+      "text": "月光下人们架起篝火。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 131,
+      "start": 5257.24,
+      "end": 5257.74,
+      "speaker": "host",
+      "text": "饮酒。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 132,
+      "start": 5259.04,
+      "end": 5259.44,
+      "speaker": "host",
+      "text": "吃肉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 133,
+      "start": 5261.24,
+      "end": 5262.64,
+      "speaker": "host",
+      "text": "畅谈到天亮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 134,
+      "start": 5264.34,
+      "end": 5266.04,
+      "speaker": "host",
+      "text": "平静流淌的河流。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 135,
+      "start": 5267.14,
+      "end": 5269.24,
+      "speaker": "host",
+      "text": "偶尔飞起的各种鸟类。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 136,
+      "start": 5272.34,
+      "end": 5274.74,
+      "speaker": "host",
+      "text": "出没在河边的，大型动物。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 137,
+      "start": 5276.34,
+      "end": 5280.04,
+      "speaker": "host",
+      "text": "都是这本书给我带来独特的精神旅行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 138,
+      "start": 5281.44,
+      "end": 5288.04,
+      "speaker": "host",
+      "text": "我看完之后就是一个强烈的，难以抑制的，无法磨灭的愿望。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 139,
+      "start": 5289.34,
+      "end": 5290.84,
+      "speaker": "host",
+      "text": "我要去大兴安岭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 140,
+      "start": 5292.04,
+      "end": 5293.44,
+      "speaker": "host",
+      "text": "我要去更高的地方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 141,
+      "start": 5295.44,
+      "end": 5300.34,
+      "speaker": "host",
+      "text": "人生时常会，在恍惚之间感觉，好像这个地方很熟悉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 142,
+      "start": 5301.64,
+      "end": 5303.54,
+      "speaker": "host",
+      "text": "好像这个场景很熟悉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 143,
+      "start": 5304.84,
+      "end": 5306.74,
+      "speaker": "host",
+      "text": "仿佛这个画面很熟悉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 144,
+      "start": 5308.24,
+      "end": 5308.74,
+      "speaker": "host",
+      "text": "对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 145,
+      "start": 5310.04,
+      "end": 5311.54,
+      "speaker": "host",
+      "text": "大概就是那种感觉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 146,
+      "start": 5313.24,
+      "end": 5319.4400000000005,
+      "speaker": "host",
+      "text": "你有没有经常看到一个场景感，哎呀，我绝对见过这个东西，我绝对感受过这个地方，我绝对看过这个人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 147,
+      "start": 5320.74,
+      "end": 5322.4400000000005,
+      "speaker": "host",
+      "text": "就有一种莫名的熟悉感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 148,
+      "start": 5323.74,
+      "end": 5329.04,
+      "speaker": "host",
+      "text": "我也有理由相信在恍惚瞬间里头那种熟悉的感觉。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 149,
+      "start": 5330.64,
+      "end": 5333.4400000000005,
+      "speaker": "host",
+      "text": "是我们的先辈们曾经踏过的地方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 150,
+      "start": 5334.64,
+      "end": 5340.4400000000005,
+      "speaker": "host",
+      "text": "它变成了一一点点微弱的记忆片段，藏在了你的记忆里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 151,
+      "start": 5341.84,
+      "end": 5344.9400000000005,
+      "speaker": "host",
+      "text": "于无人的夜里，从睡梦中惊醒。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 152,
+      "start": 5347.84,
+      "end": 5349.9400000000005,
+      "speaker": "host",
+      "text": "回忆起你终将走向远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 153,
+      "start": 5351.4400000000005,
+      "end": 5355.14,
+      "speaker": "host",
+      "text": "想看的朋友自己去看啊，我觉得这本书特别好，充满美感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 154,
+      "start": 5356.24,
+      "end": 5359.4400000000005,
+      "speaker": "host",
+      "text": "这本书是前段时间我在家里面没事，一下午看完。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 155,
+      "start": 5360.54,
+      "end": 5363.54,
+      "speaker": "host",
+      "text": "一下午一直看到晚上其实，看书速度比较慢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 156,
+      "start": 5364.64,
+      "end": 5368.4400000000005,
+      "speaker": "host",
+      "text": "然后完了没事，我那两天就给集中在一块，24小时联播那几天。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 157,
+      "start": 5369.54,
+      "end": 5372.74,
+      "speaker": "host",
+      "text": "就给大家说大概十天前吧，联播了一晚上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 158,
+      "start": 5373.84,
+      "end": 5375.64,
+      "speaker": "host",
+      "text": "第二天睡醒，头晕乎乎的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 159,
+      "start": 5376.84,
+      "end": 5379.9400000000005,
+      "speaker": "host",
+      "text": "没事干，坐在那个院子里，那个鸽子飞起。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 160,
+      "start": 5381.04,
+      "end": 5382.9400000000005,
+      "speaker": "host",
+      "text": "再看了一遍，真美，越看越美。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 161,
+      "start": 5384.64,
+      "end": 5388.9400000000005,
+      "speaker": "host",
+      "text": "好像这里头爱情都简单，生活也快乐，人们知足常乐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 162,
+      "start": 5390.24,
+      "end": 5391.74,
+      "speaker": "host",
+      "text": "与大自然和睦相处。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 163,
+      "start": 5393.24,
+      "end": 5395.64,
+      "speaker": "host",
+      "text": "就是我们理想中完美的样子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 164,
+      "start": 5396.84,
+      "end": 5398.64,
+      "speaker": "host",
+      "text": "好，我们是货榜第一名。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 165,
+      "start": 5399.04,
+      "end": 5400.14,
+      "speaker": "other",
+      "text": "哎，哎，不能说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 166,
+      "start": 5400.74,
+      "end": 5401.54,
+      "speaker": "host",
+      "text": "不能说是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 167,
+      "start": 5402.34,
+      "end": 5405.9400000000005,
+      "speaker": "host",
+      "text": "啊，这不能说啊，我突然反应过来，因为咱好像前面没没卖啥东西了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 168,
+      "start": 5406.4400000000005,
+      "end": 5407.9400000000005,
+      "speaker": "other",
+      "text": "没有，我们点点关注吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 169,
+      "start": 5408.34,
+      "end": 5412.04,
+      "speaker": "host",
+      "text": "点点关注，来来来，各位直播间的朋友们，请大家点点关注啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 170,
+      "start": 5413.4400000000005,
+      "end": 5414.04,
+      "speaker": "host",
+      "text": "孩子啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 171,
+      "start": 5418.74,
+      "end": 5421.54,
+      "speaker": "host",
+      "text": "有朋友说想要其他的音乐，你换一个其他的音乐啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 172,
+      "start": 5423.4400000000005,
+      "end": 5429.04,
+      "speaker": "host",
+      "text": "对，刚才那首是因为我我想听，所以我让导演换了一下，如果你你不喜欢的话，我先让导演换一下吧，不好意思啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 173,
+      "start": 5430.24,
+      "end": 5431.4400000000005,
+      "speaker": "host",
+      "text": "一生所爱，是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 174,
+      "start": 5431.9400000000005,
+      "end": 5432.34,
+      "speaker": "host",
+      "text": "可以啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 175,
+      "start": 5433.54,
+      "end": 5439.04,
+      "speaker": "host",
+      "text": "《一生所爱》放完了，你可以给大家放那个，有朋友想听那个李健老师的《抚琴的散文诗》。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 176,
+      "start": 5440.14,
+      "end": 5440.4400000000005,
+      "speaker": "host",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 177,
+      "start": 5443.64,
+      "end": 5444.84,
+      "speaker": "host",
+      "text": "可以听，可以听。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 178,
+      "start": 5446.24,
+      "end": 5448.84,
+      "speaker": "host",
+      "text": "你要啥都行，只要你快点，别生气，气啥气？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 179,
+      "start": 5449.84,
+      "end": 5451.24,
+      "speaker": "host",
+      "text": "气出病来谁如意？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 180,
+      "start": 5452.64,
+      "end": 5453.04,
+      "speaker": "host",
+      "text": "别气。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 181,
+      "start": 5454.4400000000005,
+      "end": 5456.04,
+      "speaker": "host",
+      "text": "人生有那么多事情要烦心。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 182,
+      "start": 5458.04,
+      "end": 5459.54,
+      "speaker": "host",
+      "text": "守住快乐多难呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 183,
+      "start": 5460.84,
+      "end": 5462.14,
+      "speaker": "host",
+      "text": "所以更应该快乐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 184,
+      "start": 5465.04,
+      "end": 5467.24,
+      "speaker": "host",
+      "text": "不卖大米，大米没了现在。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 185,
+      "start": 5468.34,
+      "end": 5469.14,
+      "speaker": "host",
+      "text": "现在没米了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 186,
+      "start": 5470.64,
+      "end": 5473.9400000000005,
+      "speaker": "host",
+      "text": "朋友说如果方老师不划水，GMV会更高一些。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 187,
+      "start": 5476.04,
+      "end": 5478.4400000000005,
+      "speaker": "host",
+      "text": "我狠努力在卖货，真的，你出来吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 188,
+      "start": 5479.4400000000005,
+      "end": 5480.64,
+      "speaker": "host",
+      "text": "我狠努力的其实。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 189,
+      "start": 5482.4400000000005,
+      "end": 5485.4400000000005,
+      "speaker": "host",
+      "text": "我不想语速很快，然后一直用吵闹的音乐刺激你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 190,
+      "start": 5486.4400000000005,
+      "end": 5495.54,
+      "speaker": "host",
+      "text": "因为那种时候你你就会有快速要做决定，你知道人在漫长的进化过程中其实有种习惯，当周围给你不安全感的时候，你要么就立刻做决定，要么是冲突，还是逃离。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 191,
+      "start": 5496.64,
+      "end": 5497.34,
+      "speaker": "host",
+      "text": "能理解吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 192,
+      "start": 5498.4400000000005,
+      "end": 5501.64,
+      "speaker": "host",
+      "text": "这是你漫长进化过程中的一个人的基本反应。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 193,
+      "start": 5502.74,
+      "end": 5510.84,
+      "speaker": "host",
+      "text": "然后让你有不安全感的有几个方式呢？第一个，吵闹的音乐，因为人在草丛里周围很吵闹的音乐的时候，往往就意味着可能有危险临近。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 194,
+      "start": 5511.9400000000005,
+      "end": 5515.14,
+      "speaker": "host",
+      "text": "第二个，我特别快的语速，让你大脑来不及反应。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 195,
+      "start": 5517.4400000000005,
+      "end": 5519.9400000000005,
+      "speaker": "host",
+      "text": "我也看过一些不好的书，书里头会给我这样讲过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 196,
+      "start": 5521.34,
+      "end": 5523.9400000000005,
+      "speaker": "host",
+      "text": "那个时候你可能就快速决策，你就很快就买了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 197,
+      "start": 5526.04,
+      "end": 5527.84,
+      "speaker": "host",
+      "text": "但我又不想让你那样，你觉得呢？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 198,
+      "start": 5529.54,
+      "end": 5530.64,
+      "speaker": "host",
+      "text": "我不想让你那样啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 199,
+      "start": 5532.34,
+      "end": 5535.4400000000005,
+      "speaker": "host",
+      "text": "你想自己买就买，不想买别买也行，好吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 200,
+      "start": 5536.54,
+      "end": 5537.64,
+      "speaker": "host",
+      "text": "我不想让你那样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 201,
+      "start": 5538.9400000000005,
+      "end": 5540.74,
+      "speaker": "host",
+      "text": "我不喜欢那样，所以我也想那样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 202,
+      "start": 5542.4400000000005,
+      "end": 5544.74,
+      "speaker": "host",
+      "text": "有朋友说好多人在老头直播间告状。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 203,
+      "start": 5546.04,
+      "end": 5546.74,
+      "speaker": "host",
+      "text": "说我咋了？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 204,
+      "start": 5547.84,
+      "end": 5549.04,
+      "speaker": "host",
+      "text": "我狠努力的好吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 205,
+      "start": 5550.04,
+      "end": 5551.54,
+      "speaker": "other",
+      "text": "狠努力在卖什么呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 206,
+      "start": 5552.34,
+      "end": 5553.4400000000005,
+      "speaker": "host",
+      "text": "狠努力在卖书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 207,
+      "start": 5556.74,
+      "end": 5561.54,
+      "speaker": "host",
+      "text": "我不知道大家有没有跟我同样的感觉啊，我真的时常看到很多景色的时候觉得",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 208,
+      "start": 5566.84,
+      "end": 5568.34,
+      "speaker": "host",
+      "text": "一定在梦里见过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 209,
+      "start": 5570.04,
+      "end": 5576.74,
+      "speaker": "host",
+      "text": "虽然我躺在自家那个破旧的，出租屋上，出租屋的床上，但是我的思想绝对飘向过远方，绝对飘向过远方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 210,
+      "start": 5577.9400000000005,
+      "end": 5582.84,
+      "speaker": "host",
+      "text": "我觉得那些记忆里唤醒的应该是祖先们深藏在我脑海里的回忆。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 211,
+      "start": 5584.04,
+      "end": 5588.24,
+      "speaker": "host",
+      "text": "在一两个睡着的夜里，那些遥远的回忆突然会攻击我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 212,
+      "start": 5589.4400000000005,
+      "end": 5590.34,
+      "speaker": "host",
+      "text": "它叫醒我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 213,
+      "start": 5592.9400000000005,
+      "end": 5594.04,
+      "speaker": "host",
+      "text": "行万里路呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 214,
+      "start": 5596.04,
+      "end": 5600.04,
+      "speaker": "host",
+      "text": "地方去得多了，你发现一个人就变得很有深度。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 215,
+      "start": 5601.4400000000005,
+      "end": 5605.4400000000005,
+      "speaker": "host",
+      "text": "书读多了，一个人会变得周全且理性，而且充满感性。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 216,
+      "start": 5606.64,
+      "end": 5608.14,
+      "speaker": "host",
+      "text": "这两个要同时存在。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 217,
+      "start": 5614.74,
+      "end": 5615.24,
+      "speaker": "host",
+      "text": "想要啥？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 218,
+      "start": 5616.84,
+      "end": 5619.4400000000005,
+      "speaker": "host",
+      "text": "除了这首诗，除了这本书，咱现在还有啥书？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 219,
+      "start": 5620.04,
+      "end": 5620.9400000000005,
+      "speaker": "other",
+      "text": "余老师的书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 220,
+      "start": 5621.4400000000005,
+      "end": 5622.34,
+      "speaker": "host",
+      "text": "余老师的书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 221,
+      "start": 5622.9400000000005,
+      "end": 5624.9400000000005,
+      "speaker": "other",
+      "text": "哎呀，现在卖一稿书就好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 222,
+      "start": 5625.64,
+      "end": 5626.04,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 223,
+      "start": 5627.24,
+      "end": 5630.9400000000005,
+      "speaker": "host",
+      "text": "哎对，我桌上有一本，今天晚上好像可以抽余老余老师亲笔签名的书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 224,
+      "start": 5632.04,
+      "end": 5633.04,
+      "speaker": "host",
+      "text": "可以抽十本。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 225,
+      "start": 5634.34,
+      "end": 5638.74,
+      "speaker": "host",
+      "text": "有老余亲笔签名的，东东在我桌上，你取一下，然后过来给大家看一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 226,
+      "start": 5639.74,
+      "end": 5640.84,
+      "speaker": "host",
+      "text": "就老余那本书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 227,
+      "start": 5643.04,
+      "end": 5644.9400000000005,
+      "speaker": "host",
+      "text": "导演帮我拿一下老余那本书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 228,
+      "start": 5645.54,
+      "end": 5646.04,
+      "speaker": "other",
+      "text": "黄色的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 229,
+      "start": 5647.04,
+      "end": 5647.34,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 230,
+      "start": 5648.74,
+      "end": 5650.34,
+      "speaker": "host",
+      "text": "有十本亲笔签名的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 231,
+      "start": 5651.9400000000005,
+      "end": 5653.34,
+      "speaker": "host",
+      "text": "《在岁月中远行》。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 232,
+      "start": 5657.74,
+      "end": 5665.24,
+      "speaker": "host",
+      "text": "《乌合之众》有吗？《乌合之众》有，但是没，那个书没库存了，我们这两天直播间里头经常都是，只要有的书一上，然后瞬间卖光，卖光之后，然后就没库存了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 233,
+      "start": 5666.54,
+      "end": 5669.9400000000005,
+      "speaker": "other",
+      "text": "我们把有库存的书都挂在前面十号链接。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 234,
+      "start": 5670.64,
+      "end": 5674.04,
+      "speaker": "host",
+      "text": "有库存的书全部在前十号链接，需要朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 235,
+      "start": 5675.54,
+      "end": 5678.84,
+      "speaker": "host",
+      "text": "有人在老余直播间说你不想干了，你想去大兴安岭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 236,
+      "start": 5680.34,
+      "end": 5684.04,
+      "speaker": "host",
+      "text": "你看你这个说话就是一门艺术，你这非要说这我这你这年轻人没有工作。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 237,
+      "start": 5685.14,
+      "end": 5688.04,
+      "speaker": "host",
+      "text": "你应该跟余老师说，董宇辉想要去大兴安岭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 238,
+      "start": 5688.64,
+      "end": 5690.04,
+      "speaker": "other",
+      "text": "卖余老师的书。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 239,
+      "start": 5690.4400000000005,
+      "end": 5691.74,
+      "speaker": "host",
+      "text": "卖余老师的书。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 240,
+      "start": 5692.84,
+      "end": 5694.4400000000005,
+      "speaker": "host",
+      "text": "他想换个环境工作。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 241,
+      "start": 5695.74,
+      "end": 5703.64,
+      "speaker": "host",
+      "text": "想在不同的风景里，触景生情，用不同的文字和别样的美感来介绍余老师这本《在岁月中远行》。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 242,
+      "start": 5704.74,
+      "end": 5705.64,
+      "speaker": "host",
+      "text": "是得远行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 243,
+      "start": 5705.9400000000005,
+      "end": 5706.34,
+      "speaker": "other",
+      "text": "是得。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 244,
+      "start": 5707.34,
+      "end": 5711.64,
+      "speaker": "host",
+      "text": "我整天站在中关村这样的钢筋水泥的楼里头，我能有什么远行？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 245,
+      "start": 5712.74,
+      "end": 5713.74,
+      "speaker": "host",
+      "text": "我都不曾见过。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 246,
+      "start": 5714.9400000000005,
+      "end": 5716.04,
+      "speaker": "host",
+      "text": "我怎么能想到？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 247,
+      "start": 5717.24,
+      "end": 5719.24,
+      "speaker": "host",
+      "text": "我都没有想到怎么脱口而出。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 248,
+      "start": 5720.34,
+      "end": 5722.34,
+      "speaker": "host",
+      "text": "当我没有感受，没有灵感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    }
+  ]
+}

@@ -1,0 +1,4066 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "speaker": "host",
+      "text": "我原本其實想叫鐵蛋的，我試了幾個名字，鐵蛋，二狗，但我發現叫二狗的時候他突然回頭看我了，我覺得這個名字看有緣分啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 5.4,
+      "end": 8.7,
+      "speaker": "host",
+      "text": "名字叫的普通一點，他應該福大命大一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 9.2,
+      "end": 13.0,
+      "speaker": "host",
+      "text": "我在我們家，其實我媽把我叫老二。我又姐，我排第二，我還有個弟，我弟叫老三。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 13.3,
+      "end": 15.7,
+      "speaker": "host",
+      "text": "叫的普通一些，這孩子應該福大命大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 16.2,
+      "end": 17.4,
+      "speaker": "host",
+      "text": "應該能過好這一生。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 19.1,
+      "end": 20.3,
+      "speaker": "host",
+      "text": "想要的朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 20.4,
+      "end": 22.0,
+      "speaker": "guest",
+      "text": "有朋友說你不是在介紹新生命嗎？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 22.2,
+      "end": 24.0,
+      "speaker": "host",
+      "text": "啊對對對，對不起，我在介紹新生命一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 24.3,
+      "end": 26.0,
+      "speaker": "host",
+      "text": "對，我剛介紹的其實就是一種對生活的熱愛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 26.4,
+      "end": 28.3,
+      "speaker": "host",
+      "text": "對吧，你說一天吃一片人生能有啥用？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 28.9,
+      "end": 30.0,
+      "speaker": "host",
+      "text": "一天肯定沒用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 30.2,
+      "end": 33.0,
+      "speaker": "host",
+      "text": "你要說今天吃就有用，那真的是胡說，那是心理作用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 33.4,
+      "end": 33.8,
+      "speaker": "host",
+      "text": "對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 34.3,
+      "end": 35.4,
+      "speaker": "host",
+      "text": "吃一天是心理作用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 35.6,
+      "end": 37.0,
+      "speaker": "host",
+      "text": "我相信吃的久的應該是有用的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 37.3,
+      "end": 40.0,
+      "speaker": "host",
+      "text": "反正它又不貴，一片算下來八毛錢，你抽根煙都多少錢了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 40.3,
+      "end": 41.0,
+      "speaker": "host",
+      "text": "你說呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 42.1,
+      "end": 44.0,
+      "speaker": "host",
+      "text": "吃的時間久的應該是有用的吧，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 44.3,
+      "end": 45.7,
+      "speaker": "host",
+      "text": "四到五年的人身。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 46.1,
+      "end": 48.0,
+      "speaker": "host",
+      "text": "而且全部取的是人身的中段。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 48.3,
+      "end": 49.3,
+      "speaker": "host",
+      "text": "給你看一下它的樣子，你看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 49.6,
+      "end": 53.3,
+      "speaker": "host",
+      "text": "全部人身的中段，然後用蜂蜜浸透的，吃到嘴裡柔軟的膠的感覺。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 53.5,
+      "end": 56.4,
+      "speaker": "host",
+      "text": "像極了泡出來的陳皮，入口先是人身，這個蜂蜜的甜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 56.7,
+      "end": 58.0,
+      "speaker": "host",
+      "text": "像生活一樣，先給你一點甜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 58.5,
+      "end": 62.0,
+      "speaker": "host",
+      "text": "迅速的就回味過來，人身濃郁的苦味。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 62.4,
+      "end": 63.1,
+      "speaker": "host",
+      "text": "當然有味。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 63.5,
+      "end": 65.4,
+      "speaker": "host",
+      "text": "因為它生長了四到五年，它要沒味說明還沒用呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 67.2,
+      "end": 68.2,
+      "speaker": "host",
+      "text": "先甜後苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 70.2,
+      "end": 72.0,
+      "speaker": "host",
+      "text": "我們其實更喜歡先苦後甜，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 74.0,
+      "end": 76.9,
+      "speaker": "host",
+      "text": "從難的事情開始做，後來做容易的事情你也能接受。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 77.2,
+      "end": 82.3,
+      "speaker": "host",
+      "text": "但你要一開始就從容易的事情去切入，後來你應該就不會去強求自己去做難的事情了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 82.6,
+      "end": 85.6,
+      "speaker": "host",
+      "text": "所以這是今天這個一個媒體採訪我們說為什麼",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 85.9,
+      "end": 87.5,
+      "speaker": "host",
+      "text": "俞老師要做農業，我說這俞老師個人願望。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 87.7,
+      "end": 90.2,
+      "speaker": "host",
+      "text": "然後他問我說那從你個人角度去想，為什麼要做農業？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 90.6,
+      "end": 92.2,
+      "speaker": "host",
+      "text": "夏季產魚，味道不一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 93.3,
+      "end": 94.2,
+      "speaker": "host",
+      "text": "可能就有問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 94.5,
+      "end": 96.5,
+      "speaker": "host",
+      "text": "快遞稍微碰一下，爛了，可能就有問題。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 98.2,
+      "end": 100.0,
+      "speaker": "host",
+      "text": "你不像工業製品一天可以發無數單。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 100.3,
+      "end": 102.4,
+      "speaker": "host",
+      "text": "農農產品今天只有三百單，只有三千單。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 102.7,
+      "end": 103.4,
+      "speaker": "host",
+      "text": "多了沒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 104.4,
+      "end": 106.0,
+      "speaker": "host",
+      "text": "我說那總得有人做難的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 106.4,
+      "end": 108.3,
+      "speaker": "host",
+      "text": "你要從難的事情開始做啊，你會越做越容易。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 108.7,
+      "end": 111.7,
+      "speaker": "host",
+      "text": "就像你小時候苦，長大了，啥苦你都能接受得了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 112.3,
+      "end": 114.1,
+      "speaker": "host",
+      "text": "小時候你生活甜如蜜啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 114.5,
+      "end": 115.9,
+      "speaker": "host",
+      "text": "後來你就吃不了苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 117.1,
+      "end": 118.0,
+      "speaker": "host",
+      "text": "由奢入儉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 118.6,
+      "end": 119.2,
+      "speaker": "host",
+      "text": "非常難。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 120.0,
+      "end": 120.7,
+      "speaker": "host",
+      "text": "非常難。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 122.8,
+      "end": 123.6,
+      "speaker": "host",
+      "text": "感謝大家啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 126.0,
+      "end": 128.5,
+      "speaker": "guest",
+      "text": "有朋友說替我們嚐嚐先甜後苦啥味。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 128.9,
+      "end": 130.2,
+      "speaker": "host",
+      "text": "說的對呀，我得替大家嚐一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 130.6,
+      "end": 131.0,
+      "speaker": "guest",
+      "text": "沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 131.8,
+      "end": 132.3,
+      "speaker": "guest",
+      "text": "賣沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 132.6,
+      "end": 133.0,
+      "speaker": "host",
+      "text": "黑吃黑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 133.5,
+      "end": 134.5,
+      "speaker": "host",
+      "text": "我以為我不用嚐了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 135.5,
+      "end": 138.0,
+      "speaker": "host",
+      "text": "我要行使我作為一個農產品主播的權利。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 138.4,
+      "end": 140.3,
+      "speaker": "host",
+      "text": "給大家展示一下這個人生米片，你不能加庫存嘛，這個？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 140.7,
+      "end": 141.2,
+      "speaker": "guest",
+      "text": "沒有了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 142.0,
+      "end": 144.0,
+      "speaker": "host",
+      "text": "大家可以看到它的像年輪一樣的樣子，看到沒？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 144.4,
+      "end": 146.2,
+      "speaker": "host",
+      "text": "哎，燈在哪？燈在這，看到像年輪一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 147.0,
+      "end": 149.2,
+      "speaker": "host",
+      "text": "就說明它真的是生長到四到五年的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 150.0,
+      "end": 150.9,
+      "speaker": "host",
+      "text": "沒有了，算了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 151.3,
+      "end": 152.0,
+      "speaker": "guest",
+      "text": "現在可以吃。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 152.4,
+      "end": 153.4,
+      "speaker": "host",
+      "text": "錯過了就是錯過了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 155.0,
+      "end": 156.6,
+      "speaker": "host",
+      "text": "十五歲那年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 158.0,
+      "end": 159.0,
+      "speaker": "host",
+      "text": "你因為不夠勇敢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 161.0,
+      "end": 162.0,
+      "speaker": "host",
+      "text": "你錯過了一份愛情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 163.0,
+      "end": 164.6,
+      "speaker": "host",
+      "text": "二十五歲那年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 166.0,
+      "end": 167.0,
+      "speaker": "host",
+      "text": "你因為不夠堅定。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 169.0,
+      "end": 170.0,
+      "speaker": "host",
+      "text": "你錯過了一份工作。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 172.0,
+      "end": 173.8,
+      "speaker": "host",
+      "text": "三十五歲那年啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 175.0,
+      "end": 175.9,
+      "speaker": "host",
+      "text": "你因為猶豫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 177.0,
+      "end": 179.0,
+      "speaker": "host",
+      "text": "你可能還要錯過一箱好吃的雞蛋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 179.3,
+      "end": 180.0,
+      "speaker": "host",
+      "text": "只有多少箱？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 180.5,
+      "end": 181.6,
+      "speaker": "guest",
+      "text": "我看一下只有兩千。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 181.9,
+      "end": 182.6,
+      "speaker": "host",
+      "text": "只有兩千箱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 182.7,
+      "end": 183.2,
+      "speaker": "guest",
+      "text": "兩千八。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 183.6,
+      "end": 185.0,
+      "speaker": "host",
+      "text": "現在直播間裡有三十八萬人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 186.2,
+      "end": 188.4,
+      "speaker": "host",
+      "text": "你要不等我講完再放開，要不然我還沒講它就完了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 188.6,
+      "end": 189.6,
+      "speaker": "guest",
+      "text": "可以，沒問題。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 189.9,
+      "end": 192.0,
+      "speaker": "host",
+      "text": "這個雞蛋的一個特點大家看一下，就是高DHA。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 192.4,
+      "end": 194.5,
+      "speaker": "host",
+      "text": "高DHA一般適合給誰吃？適合給孩子吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 194.8,
+      "end": 197.6,
+      "speaker": "host",
+      "text": "DHA、EPA等等這種屬於Omega-3的家族。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 199.3,
+      "end": 201.7,
+      "speaker": "host",
+      "text": "是人體一些關鍵部分的重要組成。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 202.0,
+      "end": 204.3,
+      "speaker": "host",
+      "text": "它的優點我給大家看一下，比如說你看這是第一個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 205.3,
+      "end": 206.2,
+      "speaker": "host",
+      "text": "檢測報告。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 207.2,
+      "end": 208.2,
+      "speaker": "host",
+      "text": "大家看這是檢測報告。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 208.6,
+      "end": 212.5,
+      "speaker": "host",
+      "text": "檢測報告這個是DHA，我們檢測出來的二百五十一毫克。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 212.8,
+      "end": 213.7,
+      "speaker": "host",
+      "text": "但但正常這裡頭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 213.9,
+      "end": 215.0,
+      "speaker": "host",
+      "text": "你看我們這給大家展示一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 215.4,
+      "end": 220.0,
+      "speaker": "host",
+      "text": "一般情況下，我們這裡的DHA含量不少於一百六十毫克，在每百克中不少於一百六十毫克。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 220.3,
+      "end": 223.0,
+      "speaker": "host",
+      "text": "但這次我們所檢出來其實已經到了二百五十一毫克。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 223.2,
+      "end": 223.6,
+      "speaker": "host",
+      "text": "這個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 223.9,
+      "end": 225.5,
+      "speaker": "guest",
+      "text": "這還沒談，這還沒，還沒，還沒，還沒，還沒。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 225.7,
+      "end": 226.7,
+      "speaker": "guest",
+      "text": "這是我們新品首發。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 226.9,
+      "end": 227.8,
+      "speaker": "host",
+      "text": "新品首發是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 228.1,
+      "end": 232.5,
+      "speaker": "host",
+      "text": "所以我剛一展示那個就是它的DHA含量不少於那個，經常會比那個多，但我確保不少於那個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 233.5,
+      "end": 238.4,
+      "speaker": "host",
+      "text": "一天兩個雞蛋，就夠孩子一天的，一個青青少年一天的DHA含量了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 238.7,
+      "end": 240.3,
+      "speaker": "host",
+      "text": "在雞蛋裡頭相對是更好吸收一些的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 240.7,
+      "end": 241.4,
+      "speaker": "host",
+      "text": "現在能上不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 241.8,
+      "end": 243.0,
+      "speaker": "guest",
+      "text": "我們馬上給大家談。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 243.3,
+      "end": 244.3,
+      "speaker": "host",
+      "text": "好，好，好，好，好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 244.4,
+      "end": 245.4,
+      "speaker": "guest",
+      "text": "多少箱？有人問。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 245.7,
+      "end": 246.0,
+      "speaker": "host",
+      "text": "行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 247.5,
+      "end": 248.5,
+      "speaker": "host",
+      "text": "DHA還怕超標。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 248.8,
+      "end": 250.7,
+      "speaker": "host",
+      "text": "好東西還怕多，對你的愛你還怕多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 251.6,
+      "end": 252.6,
+      "speaker": "host",
+      "text": "DHA是好東西啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 252.8,
+      "end": 254.4,
+      "speaker": "guest",
+      "text": "然後買雞蛋的朋友說加一加會員啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 254.7,
+      "end": 256.4,
+      "speaker": "host",
+      "text": "哎，這個加咱會員能用來買雞蛋不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 256.6,
+      "end": 257.3,
+      "speaker": "guest",
+      "text": "可以啊，可以。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 257.5,
+      "end": 260.6,
+      "speaker": "host",
+      "text": "可以，來來來，直播間朋友們，請大家全部點擊這裡，趕快現在就申請加入會員。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 260.9,
+      "end": 262.0,
+      "speaker": "host",
+      "text": "這個是不是有兩張券的，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 262.3,
+      "end": 262.6,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 262.9,
+      "end": 265.0,
+      "speaker": "host",
+      "text": "然後你一會立馬就可以用它去買剛才那個雞蛋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 265.2,
+      "end": 266.3,
+      "speaker": "guest",
+      "text": "對，對，對，對，對，對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 266.6,
+      "end": 267.8,
+      "speaker": "host",
+      "text": "然後買雞蛋立馬就能減，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 268.0,
+      "end": 269.2,
+      "speaker": "host",
+      "text": "五塊錢那個券就能用，對不對？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 269.3,
+      "end": 269.6,
+      "speaker": "guest",
+      "text": "沒錯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 270.0,
+      "end": 270.8,
+      "speaker": "host",
+      "text": "感謝大家啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 271.6,
+      "end": 273.6,
+      "speaker": "guest",
+      "text": "我們自營品上新，會員都會第一時間看到。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 273.8,
+      "end": 275.6,
+      "speaker": "host",
+      "text": "對，我們自營品上新之後會員會第一時間看到。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 275.8,
+      "end": 277.0,
+      "speaker": "host",
+      "text": "這兩天的會員應該加了有百萬人了吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 277.2,
+      "end": 277.8,
+      "speaker": "guest",
+      "text": "兩百萬了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 278.0,
+      "end": 278.6,
+      "speaker": "host",
+      "text": "兩百萬人了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 278.9,
+      "end": 282.0,
+      "speaker": "host",
+      "text": "那咱呢，每次就三四百單，真的大家都得靠運氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 282.2,
+      "end": 283.3,
+      "speaker": "host",
+      "text": "就如果真的想吃的話啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 284.2,
+      "end": 286.4,
+      "speaker": "host",
+      "text": "來，我這個是化了嗎？袋子盒子已經爛了，不好意思啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 286.6,
+      "end": 288.0,
+      "speaker": "host",
+      "text": "早上展示的時候還是好好的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 288.4,
+      "end": 289.0,
+      "speaker": "host",
+      "text": "填一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 290.0,
+      "end": 291.0,
+      "speaker": "host",
+      "text": "It's already cooked.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 291.5,
+      "end": 294.0,
+      "speaker": "host",
+      "text": "有朋友問DHA含量高，DHA其實人體是沒有辦法合成DHA的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 294.4,
+      "end": 296.0,
+      "speaker": "host",
+      "text": "嗯，Omega-3家族人體沒有辦法合成。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 296.4,
+      "end": 299.0,
+      "speaker": "host",
+      "text": "然後呢，大自然中什麼DHA含量比較多，其實就是海藻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 299.4,
+      "end": 301.7,
+      "speaker": "host",
+      "text": "但這海藻其實在這個星球上生長的時間比我們長多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 302.0,
+      "end": 306.7,
+      "speaker": "host",
+      "text": "所以現在很多比如說雞蛋裡頭要有DHA就必須去去調整它很好的飼料，飼料裡頭具體一些這個海藻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 307.0,
+      "end": 309.8,
+      "speaker": "host",
+      "text": "但是這個海藻能不能直接吃還得撈？不行，因為有污染。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 310.1,
+      "end": 311.8,
+      "speaker": "host",
+      "text": "因為海水中有很多的重金屬的污染。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 312.7,
+      "end": 319.9,
+      "speaker": "host",
+      "text": "所以那些海藻都是需要專門的養殖的這個罐，它在裡頭養殖，養殖出來的這個海藻可能就是第一個乾淨可以吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 320.1,
+      "end": 322.0,
+      "speaker": "host",
+      "text": "第二個確實它的DHA含量就高了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 322.3,
+      "end": 324.0,
+      "speaker": "host",
+      "text": "DHA對於小孩來說還是非常重要的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 324.9,
+      "end": 325.8,
+      "speaker": "host",
+      "text": "那個能上了嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 326.0,
+      "end": 326.5,
+      "speaker": "host",
+      "text": "哎，不是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 326.8,
+      "end": 327.0,
+      "speaker": "guest",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 327.3,
+      "end": 328.0,
+      "speaker": "host",
+      "text": "可以的，那現在上吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 328.5,
+      "end": 330.0,
+      "speaker": "host",
+      "text": "來，準備好，董萬真選的雞蛋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 331.0,
+      "end": 332.6,
+      "speaker": "host",
+      "text": "十五天內吃完，這箱一共是三十個，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 332.8,
+      "end": 333.1,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 333.5,
+      "end": 334.7,
+      "speaker": "host",
+      "text": "一箱，這箱內是三十個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 335.4,
+      "end": 337.5,
+      "speaker": "host",
+      "text": "你家早上煮，每天一到兩個，你家幾口人？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 338.4,
+      "end": 340.5,
+      "speaker": "host",
+      "text": "其實冷凍的，就是放冰箱裡一個月內都行，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 340.8,
+      "end": 343.9,
+      "speaker": "host",
+      "text": "但是建議大家在兩週之內吃完，因為時間久它口感可能會有影響。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 344.1,
+      "end": 345.4,
+      "speaker": "host",
+      "text": "來，準備，來，三二一，上大爺。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 345.7,
+      "end": 346.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 347.0,
+      "end": 349.0,
+      "speaker": "host",
+      "text": "你看，我終於都有次在我們直播間喊三二一的機會了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 349.2,
+      "end": 350.3,
+      "speaker": "guest",
+      "text": "我們只有兩千八百單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 350.5,
+      "end": 351.8,
+      "speaker": "host",
+      "text": "只有兩千八百單，來現在還有沒？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 352.0,
+      "end": 352.8,
+      "speaker": "guest",
+      "text": "現在還沒開呢。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 353.0,
+      "end": 353.6,
+      "speaker": "host",
+      "text": "那現在開。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 353.9,
+      "end": 354.9,
+      "speaker": "guest",
+      "text": "來，倒數三個數吧。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 355.2,
+      "end": 355.9,
+      "speaker": "host",
+      "text": "我已經數完了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 356.3,
+      "end": 356.8,
+      "speaker": "guest",
+      "text": "太快了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 357.2,
+      "end": 357.6,
+      "speaker": "guest",
+      "text": "開了啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 357.9,
+      "end": 358.8,
+      "speaker": "host",
+      "text": "Go, please, please.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 359.3,
+      "end": 359.6,
+      "speaker": "guest",
+      "text": "沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 359.9,
+      "end": 360.3,
+      "speaker": "host",
+      "text": "沒了嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 360.6,
+      "end": 361.5,
+      "speaker": "guest",
+      "text": "沒沒沒沒沒，都沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 361.9,
+      "end": 362.7,
+      "speaker": "host",
+      "text": "不至於吧，這麼快。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 363.0,
+      "end": 364.4,
+      "speaker": "guest",
+      "text": "咱們可以在上方加一加會員啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 364.7,
+      "end": 367.5,
+      "speaker": "host",
+      "text": "我工作這麼久都終於能喊一次三二一了，我天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 367.8,
+      "end": 368.3,
+      "speaker": "guest",
+      "text": "都沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 368.6,
+      "end": 368.9,
+      "speaker": "guest",
+      "text": "沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 369.2,
+      "end": 369.5,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 369.9,
+      "end": 370.4,
+      "speaker": "host",
+      "text": "沒了嘛？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 370.8,
+      "end": 371.7,
+      "speaker": "host",
+      "text": "我還沒展示呢，不是你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 371.9,
+      "end": 374.0,
+      "speaker": "guest",
+      "text": "但是不耽誤展示，因為我們以後每天八點。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 374.3,
+      "end": 375.4,
+      "speaker": "guest",
+      "text": "都可以搶八百單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 375.6,
+      "end": 376.6,
+      "speaker": "host",
+      "text": "每天早上八點。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 376.9,
+      "end": 377.4,
+      "speaker": "guest",
+      "text": "八百單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 377.7,
+      "end": 378.3,
+      "speaker": "host",
+      "text": "晚上八點。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 378.6,
+      "end": 379.7,
+      "speaker": "guest",
+      "text": "都可以搶八百單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 380.0,
+      "end": 381.5,
+      "speaker": "guest",
+      "text": "然後第二天剛剩下的單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 381.8,
+      "end": 384.0,
+      "speaker": "host",
+      "text": "比如說我今天晚上八點拍，你跟我發成明天早上剩的單。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 384.2,
+      "end": 384.6,
+      "speaker": "guest",
+      "text": "八點。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 384.9,
+      "end": 385.3,
+      "speaker": "host",
+      "text": "懂了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 385.9,
+      "end": 387.2,
+      "speaker": "guest",
+      "text": "母雞很有壓力啊，這媽的。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 389.5,
+      "end": 390.0,
+      "speaker": "host",
+      "text": "沒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 390.2,
+      "end": 390.5,
+      "speaker": "guest",
+      "text": "沒了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 390.8,
+      "end": 393.5,
+      "speaker": "host",
+      "text": "這個雞蛋是我們有個樣品，大家在收到時候這上面還打印著生產日期呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 393.7,
+      "end": 394.0,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 394.5,
+      "end": 395.5,
+      "speaker": "host",
+      "text": "上面會有個生產日期。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 396.6,
+      "end": 401.5,
+      "speaker": "host",
+      "text": "然後剛才給大家說的，其實影響雞蛋的主要的口感，包括飼料，包括雞的品種，包括雞的生長環境。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 401.8,
+      "end": 403.2,
+      "speaker": "host",
+      "text": "我們想讓孩子們吃的好一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 403.5,
+      "end": 406.0,
+      "speaker": "host",
+      "text": "然後您在收到這個雞蛋的時候，可以去盒子上看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 406.3,
+      "end": 408.0,
+      "speaker": "host",
+      "text": "它第一個是這個安全。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 408.4,
+      "end": 412.5,
+      "speaker": "host",
+      "text": "它的剛才給大家展示完整的報告，像上面是菌，所有這些菌都檢查過了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 412.8,
+      "end": 414.4,
+      "speaker": "host",
+      "text": "第二就是它的高DHA。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 414.7,
+      "end": 419.0,
+      "speaker": "host",
+      "text": "這個是有行業標準的，不是說你隨便說的高啊，就超過一百六十毫克的就是屬於高。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 419.3,
+      "end": 422.0,
+      "speaker": "host",
+      "text": "第三個就是確實好看，它是可以適合做那個糖心雞蛋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 422.3,
+      "end": 424.5,
+      "speaker": "host",
+      "text": "因為我們就喜歡那種糖心雞蛋嘛，對不對？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 427.0,
+      "end": 427.9,
+      "speaker": "host",
+      "text": "OK, OK.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 428.4,
+      "end": 432.0,
+      "speaker": "host",
+      "text": "那既然都賣完了，你說這盒雞蛋我是不是一會帶走替大家嚐一嚐？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 434.3,
+      "end": 435.5,
+      "speaker": "host",
+      "text": "來，繼續下一個東西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 435.7,
+      "end": 436.2,
+      "speaker": "guest",
+      "text": "那下賣。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 436.6,
+      "end": 437.4,
+      "speaker": "host",
+      "text": "繼續賣蝦是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 437.8,
+      "end": 440.5,
+      "speaker": "host",
+      "text": "對不起，這兩天真的我們直播間裡上一個東西立馬賣光，上一個東西立馬賣光。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 440.8,
+      "end": 441.8,
+      "speaker": "guest",
+      "text": "小龍蝦只有一萬單了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 442.0,
+      "end": 444.0,
+      "speaker": "host",
+      "text": "小龍蝦，你注意我們導演導演用詞叫只有一萬單。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 444.3,
+      "end": 445.2,
+      "speaker": "guest",
+      "text": "大蝦只有四萬單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 445.5,
+      "end": 447.0,
+      "speaker": "host",
+      "text": "大蝦只有四萬單，直播間四十萬人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 447.2,
+      "end": 448.0,
+      "speaker": "guest",
+      "text": "直播間四十萬人。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 448.4,
+      "end": 450.0,
+      "speaker": "guest",
+      "text": "你是讓西亞文從藏膽的男人。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 450.3,
+      "end": 450.7,
+      "speaker": "host",
+      "text": "是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 452.0,
+      "end": 453.0,
+      "speaker": "host",
+      "text": "來給大家叫幾個單詞吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 454.0,
+      "end": 454.8,
+      "speaker": "host",
+      "text": "不能乾嘮嗑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 455.2,
+      "end": 455.5,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 455.9,
+      "end": 457.2,
+      "speaker": "host",
+      "text": "希望大家在這裡放鬆。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 457.6,
+      "end": 459.4,
+      "speaker": "host",
+      "text": "希望大家有一種跟朋友聊天的感覺。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 461.2,
+      "end": 462.2,
+      "speaker": "host",
+      "text": "蝦是從哪撈的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 462.5,
+      "end": 463.6,
+      "speaker": "host",
+      "text": "厄瓜多爾海域。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 464.4,
+      "end": 465.0,
+      "speaker": "host",
+      "text": "秘魯漁場。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 465.6,
+      "end": 468.0,
+      "speaker": "host",
+      "text": "對吧，四大漁場之間大家高中上課應該學過。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 468.4,
+      "end": 471.0,
+      "speaker": "host",
+      "text": "北海漁場，北海到漁場，紐芬蘭漁場和秘魯漁場。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 471.4,
+      "end": 472.9,
+      "speaker": "host",
+      "text": "秘魯漁場因為靠近赤道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 474.0,
+      "end": 476.0,
+      "speaker": "host",
+      "text": "所以呢它這個海資源比較豐富。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 477.0,
+      "end": 478.8,
+      "speaker": "host",
+      "text": "大部分的漁場都是從哪來的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 479.1,
+      "end": 483.8,
+      "speaker": "host",
+      "text": "大部分的漁場其實是寒暖流交會，把海底原本沉積的一些小的東西飄起來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 484.1,
+      "end": 500.0,
+      "speaker": "host",
+      "text": "那些可能在你看來就是一些沙子、石子，甚至一些小的這個珊瑚礁，對吧，一些小的這個蟲子，但其實對於海裡的動物來說它就是食物呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 501.0,
+      "end": 502.6,
+      "speaker": "host",
+      "text": "我們來看一下找找到厄瓜多爾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 504.0,
+      "end": 504.9,
+      "speaker": "host",
+      "text": "來，大家看一下啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 505.4,
+      "end": 506.7,
+      "speaker": "host",
+      "text": "So this is us, right?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 507.0,
+      "end": 508.0,
+      "speaker": "host",
+      "text": "Here, this is us.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 231,
+      "start": 508.4,
+      "end": 508.9,
+      "speaker": "host",
+      "text": "Beijing.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 232,
+      "start": 510.0,
+      "end": 511.0,
+      "speaker": "host",
+      "text": "Across the planet.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 233,
+      "start": 511.6,
+      "end": 512.6,
+      "speaker": "host",
+      "text": "To the other side.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 234,
+      "start": 513.5,
+      "end": 515.0,
+      "speaker": "host",
+      "text": "We can see the South America.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 235,
+      "start": 515.5,
+      "end": 516.2,
+      "speaker": "host",
+      "text": "厄瓜多爾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 236,
+      "start": 516.6,
+      "end": 517.5,
+      "speaker": "host",
+      "text": "這條一條山脈。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 237,
+      "start": 518.3,
+      "end": 521.4,
+      "speaker": "host",
+      "text": "有一條巨大的山脈，所以河流一般內陸河不會從這流到太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 238,
+      "start": 521.8,
+      "end": 525.9,
+      "speaker": "host",
+      "text": "這個巨大的山脈也擋住了來自太平洋的水氣，所以其實雖然它靠近太平洋，但這裡其實有很多的沙漠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 239,
+      "start": 526.6,
+      "end": 528.0,
+      "speaker": "host",
+      "text": "水不會從這流到太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 240,
+      "start": 528.4,
+      "end": 534.4,
+      "speaker": "host",
+      "text": "所以大部分，而且又因為，因為因為，因為這個南美洲其實都是一些農業國家，所以這裡的海域其實相對乾淨。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 241,
+      "start": 535.2,
+      "end": 536.8,
+      "speaker": "host",
+      "text": "乾淨，又靠近赤道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 242,
+      "start": 537.4,
+      "end": 540.8,
+      "speaker": "host",
+      "text": "產量又大，所以這些年為什麼厄瓜多爾的蝦在國內會賣的這麼好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 243,
+      "start": 541.7,
+      "end": 542.8,
+      "speaker": "host",
+      "text": "想吃的朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 244,
+      "start": 543.1,
+      "end": 544.6,
+      "speaker": "host",
+      "text": "對孩子來說也比較方便。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 245,
+      "start": 546.4,
+      "end": 548.4,
+      "speaker": "host",
+      "text": "有朋友說黃阿姨給你介紹，我也不知道這黃阿姨是誰。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 246,
+      "start": 549.3,
+      "end": 550.6,
+      "speaker": "host",
+      "text": "這兩天所有人都再找我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 247,
+      "start": 552.5,
+      "end": 552.9,
+      "speaker": "host",
+      "text": "我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 248,
+      "start": 555.0,
+      "end": 559.3,
+      "speaker": "host",
+      "text": "黃阿姨說董老師好，我是黃阿姨，小伙伴讓我轉達他對您的喜愛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 249,
+      "start": 560.0,
+      "end": 560.9,
+      "speaker": "host",
+      "text": "你注意這個用詞啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 250,
+      "start": 561.4,
+      "end": 564.0,
+      "speaker": "host",
+      "text": "他對你的喜愛和他對您的喜愛是不一樣的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 251,
+      "start": 564.4,
+      "end": 566.0,
+      "speaker": "host",
+      "text": "你你你聽懂這其中的差距不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 252,
+      "start": 566.4,
+      "end": 567.4,
+      "speaker": "host",
+      "text": "我不知道你們能聽懂不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 253,
+      "start": 567.8,
+      "end": 570.8,
+      "speaker": "host",
+      "text": "就比如說對對對頓頓和東東傑西這樣帥哥來說，是他對你的喜愛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 254,
+      "start": 571.1,
+      "end": 573.4,
+      "speaker": "host",
+      "text": "一提到有東東就是對您的喜愛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 255,
+      "start": 573.8,
+      "end": 574.5,
+      "speaker": "host",
+      "text": "你仔細聽啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 256,
+      "start": 574.9,
+      "end": 577.0,
+      "speaker": "host",
+      "text": "我都把你尊尊為您了，你能懂我的意思嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 257,
+      "start": 577.3,
+      "end": 578.7,
+      "speaker": "host",
+      "text": "要不然咱倆就做個兄妹吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 258,
+      "start": 579.0,
+      "end": 579.8,
+      "speaker": "host",
+      "text": "就那種感覺。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 259,
+      "start": 580.9,
+      "end": 581.2,
+      "speaker": "guest",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 260,
+      "start": 581.7,
+      "end": 582.2,
+      "speaker": "guest",
+      "text": "心懷你。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 261,
+      "start": 583.0,
+      "end": 583.6,
+      "speaker": "guest",
+      "text": "好油啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 262,
+      "start": 584.5,
+      "end": 585.2,
+      "speaker": "guest",
+      "text": "單結遊戲。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 263,
+      "start": 585.7,
+      "end": 586.6,
+      "speaker": "host",
+      "text": "我有過這種經驗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 264,
+      "start": 587.6,
+      "end": 591.9,
+      "speaker": "host",
+      "text": "他當時很感動說董宇輝你這麼聰明，這麼努力，這麼幽默，還這麼勤奮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 265,
+      "start": 592.6,
+      "end": 593.0,
+      "speaker": "host",
+      "text": "你真好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 266,
+      "start": 593.3,
+      "end": 593.9,
+      "speaker": "host",
+      "text": "我當時很開心。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 267,
+      "start": 594.2,
+      "end": 594.9,
+      "speaker": "host",
+      "text": "我說說下去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 268,
+      "start": 595.9,
+      "end": 596.9,
+      "speaker": "host",
+      "text": "他說所以咱倆做兄妹吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 269,
+      "start": 598.7,
+      "end": 599.3,
+      "speaker": "host",
+      "text": "我懂你們。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 270,
+      "start": 600.0,
+      "end": 600.4,
+      "speaker": "host",
+      "text": "懂你們。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 271,
+      "start": 600.7,
+      "end": 602.0,
+      "speaker": "host",
+      "text": "你們只是想靠近我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 272,
+      "start": 602.4,
+      "end": 604.4,
+      "speaker": "host",
+      "text": "但你們又不想陪伴我，我懂你們。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 273,
+      "start": 604.6,
+      "end": 605.9,
+      "speaker": "host",
+      "text": "你言人總分分合合。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 274,
+      "start": 606.3,
+      "end": 608.6,
+      "speaker": "host",
+      "text": "兄妹才相伴一生啊，你不就是更長久的圖我嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 275,
+      "start": 608.9,
+      "end": 609.5,
+      "speaker": "host",
+      "text": "我懂。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 276,
+      "start": 610.4,
+      "end": 610.8,
+      "speaker": "host",
+      "text": "我懂。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 277,
+      "start": 611.7,
+      "end": 612.8,
+      "speaker": "host",
+      "text": "來，下一個產品啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 278,
+      "start": 613.1,
+      "end": 615.0,
+      "speaker": "host",
+      "text": "黑豆粉，真的我們這兩天實在沒東西賣了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 279,
+      "start": 615.3,
+      "end": 616.4,
+      "speaker": "host",
+      "text": "瘋狂賣黑豆粉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 280,
+      "start": 618.0,
+      "end": 619.4,
+      "speaker": "host",
+      "text": "希望你早餐吃的健康啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 281,
+      "start": 619.7,
+      "end": 620.6,
+      "speaker": "host",
+      "text": "朋友說好人卡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 282,
+      "start": 621.0,
+      "end": 625.9,
+      "speaker": "host",
+      "text": "你能想像為什麼，為什麼現在董宇輝就是面對大家對於我樣貌的攻擊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 283,
+      "start": 627.0,
+      "end": 628.3,
+      "speaker": "host",
+      "text": "對於我口音的羞辱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 284,
+      "start": 629.4,
+      "end": 632.0,
+      "speaker": "host",
+      "text": "對於我很多批評的，我已經可以風輕雲淡的跟你聊天了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 285,
+      "start": 632.3,
+      "end": 633.4,
+      "speaker": "host",
+      "text": "I'm I've had enough of it.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 286,
+      "start": 633.8,
+      "end": 636.0,
+      "speaker": "host",
+      "text": "有的人的青春的回憶起來全是故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 287,
+      "start": 637.2,
+      "end": 638.2,
+      "speaker": "host",
+      "text": "他們時常會感傷。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 288,
+      "start": 638.6,
+      "end": 641.4,
+      "speaker": "host",
+      "text": "因為他們懷念舊的時代，在舊的時代裡頭他們過得更開心一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 289,
+      "start": 641.7,
+      "end": 642.8,
+      "speaker": "host",
+      "text": "Like the glory days.",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 290,
+      "start": 643.1,
+      "end": 645.0,
+      "speaker": "host",
+      "text": "你一去先，整天都是夢回大唐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 291,
+      "start": 646.0,
+      "end": 646.9,
+      "speaker": "host",
+      "text": "懷念那個時代。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 292,
+      "start": 647.3,
+      "end": 649.0,
+      "speaker": "host",
+      "text": "有的人的青春呢是是故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 293,
+      "start": 649.5,
+      "end": 651.0,
+      "speaker": "host",
+      "text": "我的青春呢看起來更像事故。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 294,
+      "start": 652.4,
+      "end": 654.4,
+      "speaker": "host",
+      "text": "同樣收到一封信，有的人翻開了之後是驚喜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 295,
+      "start": 654.8,
+      "end": 657.6,
+      "speaker": "host",
+      "text": "我那個信啊，一般不用翻開，因為我知道肯定是驚嚇。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 296,
+      "start": 658.6,
+      "end": 660.4,
+      "speaker": "host",
+      "text": "就是年少時期多受一點苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 297,
+      "start": 660.8,
+      "end": 662.6,
+      "speaker": "host",
+      "text": "所以長大了之後就多了一份理性。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 298,
+      "start": 663.0,
+      "end": 664.4,
+      "speaker": "host",
+      "text": "一般不苛求別人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 299,
+      "start": 665.4,
+      "end": 666.3,
+      "speaker": "host",
+      "text": "只責自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 300,
+      "start": 666.7,
+      "end": 670.6,
+      "speaker": "host",
+      "text": "以數己之心數人，以責己之心責己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 301,
+      "start": 672.0,
+      "end": 672.9,
+      "speaker": "host",
+      "text": "就豁然開朗了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 302,
+      "start": 674.0,
+      "end": 675.0,
+      "speaker": "host",
+      "text": "倒不是因為總是我錯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 303,
+      "start": 675.4,
+      "end": 677.0,
+      "speaker": "host",
+      "text": "主要原因是因為我想放過自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 304,
+      "start": 677.4,
+      "end": 678.5,
+      "speaker": "host",
+      "text": "想拍的朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 305,
+      "start": 678.8,
+      "end": 680.0,
+      "speaker": "host",
+      "text": "這個對，我在賣的是核桃粉啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 306,
+      "start": 680.3,
+      "end": 682.0,
+      "speaker": "host",
+      "text": "這個裡頭有核桃，黑大豆。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 307,
+      "start": 683.4,
+      "end": 684.6,
+      "speaker": "host",
+      "text": "黑芝麻，黑藜麥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 308,
+      "start": 685.0,
+      "end": 686.0,
+      "speaker": "host",
+      "text": "奇亞子以及黑米。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 309,
+      "start": 687.2,
+      "end": 689.0,
+      "speaker": "host",
+      "text": "咱今天玩那些書能不能讓我講會書呀？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 310,
+      "start": 689.3,
+      "end": 690.6,
+      "speaker": "host",
+      "text": "我今天早上拿那麼多書呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 311,
+      "start": 690.8,
+      "end": 692.9,
+      "speaker": "guest",
+      "text": "我們在談庫存，如果有庫存了馬上就可以。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 312,
+      "start": 693.1,
+      "end": 694.0,
+      "speaker": "host",
+      "text": "晚清之後十八年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 313,
+      "start": 694.3,
+      "end": 694.7,
+      "speaker": "guest",
+      "text": "沒問題。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 314,
+      "start": 694.9,
+      "end": 695.7,
+      "speaker": "host",
+      "text": "可以賣嗎現在？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 315,
+      "start": 696.3,
+      "end": 697.7,
+      "speaker": "guest",
+      "text": "我們談庫存，談到了馬上講。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 316,
+      "start": 698.0,
+      "end": 700.0,
+      "speaker": "host",
+      "text": "就現在我先講，你再談，談到了我再賣，行不行？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 317,
+      "start": 700.3,
+      "end": 701.0,
+      "speaker": "guest",
+      "text": "我們看沒有。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 318,
+      "start": 701.4,
+      "end": 702.0,
+      "speaker": "guest",
+      "text": "一萬單庫存。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 319,
+      "start": 702.6,
+      "end": 704.5,
+      "speaker": "host",
+      "text": "賣書也是貨呀，精神食糧也是食糧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 320,
+      "start": 704.8,
+      "end": 705.4,
+      "speaker": "host",
+      "text": "再忍一會。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 321,
+      "start": 705.7,
+      "end": 707.0,
+      "speaker": "host",
+      "text": "大家再給我一會時間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 322,
+      "start": 707.9,
+      "end": 708.3,
+      "speaker": "host",
+      "text": "好吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 323,
+      "start": 709.2,
+      "end": 710.0,
+      "speaker": "host",
+      "text": "再給我一會時間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 324,
+      "start": 710.4,
+      "end": 712.4,
+      "speaker": "host",
+      "text": "我已經按耐不住我內心的激動了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 325,
+      "start": 717.9,
+      "end": 721.5,
+      "speaker": "host",
+      "text": "有朋友說這個董老師，我要跟你在一起，你別這樣傷害自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 326,
+      "start": 721.8,
+      "end": 723.7,
+      "speaker": "host",
+      "text": "答應我，找個帥的，男人都靠不住。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 327,
+      "start": 724.0,
+      "end": 725.0,
+      "speaker": "host",
+      "text": "還不如找個帥的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 328,
+      "start": 726.0,
+      "end": 727.9,
+      "speaker": "guest",
+      "text": "你問你，你講完之後就可以講那本書了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 329,
+      "start": 728.0,
+      "end": 729.0,
+      "speaker": "guest",
+      "text": "我們談了一萬單庫存。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 330,
+      "start": 729.2,
+      "end": 730.3,
+      "speaker": "host",
+      "text": "一萬單庫存，什麼書？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 331,
+      "start": 730.6,
+      "end": 731.8,
+      "speaker": "guest",
+      "text": "就是晚清之後十八年。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 332,
+      "start": 732.0,
+      "end": 732.4,
+      "speaker": "host",
+      "text": "是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 333,
+      "start": 732.9,
+      "end": 733.3,
+      "speaker": "host",
+      "text": "拿來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 334,
+      "start": 733.7,
+      "end": 734.3,
+      "speaker": "guest",
+      "text": "你進來沒講。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 335,
+      "start": 734.5,
+      "end": 735.0,
+      "speaker": "host",
+      "text": "我講完了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 336,
+      "start": 735.4,
+      "end": 736.6,
+      "speaker": "host",
+      "text": "大家自己去買，聽話。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 337,
+      "start": 737.0,
+      "end": 739.0,
+      "speaker": "host",
+      "text": "不要讓大人操心，你都多大了，你還讓我操心，多大人了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 338,
+      "start": 740.0,
+      "end": 741.4,
+      "speaker": "host",
+      "text": "老讓我操心，你讓我操心到啥時候？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 339,
+      "start": 741.7,
+      "end": 742.9,
+      "speaker": "host",
+      "text": "終於能讓我講會書了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 340,
+      "start": 744.7,
+      "end": 745.0,
+      "speaker": "host",
+      "text": "來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 341,
+      "start": 745.6,
+      "end": 748.0,
+      "speaker": "host",
+      "text": "這個你給我一些紙，我把桌子擦乾淨，不能把書弄髒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 342,
+      "start": 750.7,
+      "end": 752.7,
+      "speaker": "host",
+      "text": "菜能髒了可以洗，書弄髒了你咋洗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 343,
+      "start": 752.9,
+      "end": 753.6,
+      "speaker": "guest",
+      "text": "只有一萬單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 344,
+      "start": 753.8,
+      "end": 754.1,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 345,
+      "start": 754.4,
+      "end": 754.7,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 346,
+      "start": 755.9,
+      "end": 756.5,
+      "speaker": "host",
+      "text": "謝謝大家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 347,
+      "start": 757.0,
+      "end": 758.5,
+      "speaker": "host",
+      "text": "謝謝大家，終於可以讓我賣會書了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 348,
+      "start": 760.4,
+      "end": 762.6,
+      "speaker": "host",
+      "text": "所以你看我也其實一直是在自己的舒適區裡啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 349,
+      "start": 763.6,
+      "end": 764.9,
+      "speaker": "host",
+      "text": "一個老師不就是愛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 350,
+      "start": 767.0,
+      "end": 767.8,
+      "speaker": "host",
+      "text": "後輩人師嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 351,
+      "start": 768.1,
+      "end": 770.6,
+      "speaker": "host",
+      "text": "尤其像我這種，對吧，腦袋空空的，胡說八道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 352,
+      "start": 771.0,
+      "end": 771.9,
+      "speaker": "host",
+      "text": "啊，張嘴就來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 353,
+      "start": 772.7,
+      "end": 774.0,
+      "speaker": "host",
+      "text": "那你讓我講書我是不是很舒服？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 354,
+      "start": 774.4,
+      "end": 774.7,
+      "speaker": "host",
+      "text": "對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 355,
+      "start": 775.0,
+      "end": 777.0,
+      "speaker": "host",
+      "text": "所以很多朋友說董宇輝你為什麼在鏡頭前很放鬆？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 356,
+      "start": 777.3,
+      "end": 778.8,
+      "speaker": "host",
+      "text": "因為我在做自己擅長的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 357,
+      "start": 779.8,
+      "end": 780.9,
+      "speaker": "host",
+      "text": "晚清之後十八年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 358,
+      "start": 782.0,
+      "end": 783.8,
+      "speaker": "host",
+      "text": "你給我找個世界，我把桌子再擦一下，一會把書弄髒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 359,
+      "start": 784.8,
+      "end": 786.0,
+      "speaker": "host",
+      "text": "手可以髒，書不能髒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 360,
+      "start": 787.0,
+      "end": 788.0,
+      "speaker": "host",
+      "text": "這本書是黃志軍寫的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 361,
+      "start": 788.4,
+      "end": 793.0,
+      "speaker": "host",
+      "text": "其實在明清的這個歷史研究啊，近些年是很受歡迎的，以前人們研究明清研究的少一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 362,
+      "start": 794.0,
+      "end": 796.0,
+      "speaker": "host",
+      "text": "晚清之後十八年，其實寫的是從袁世凱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 363,
+      "start": 796.3,
+      "end": 797.0,
+      "speaker": "host",
+      "text": "來，沒事沒事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 364,
+      "start": 797.4,
+      "end": 800.0,
+      "speaker": "host",
+      "text": "你看，帥哥出鏡了，大家看一下我們公司長得帥的都被雪藏了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 365,
+      "start": 800.4,
+      "end": 800.9,
+      "speaker": "host",
+      "text": "東東。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 366,
+      "start": 801.2,
+      "end": 802.2,
+      "speaker": "guest",
+      "text": "沒過兩天我就回來了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 367,
+      "start": 802.4,
+      "end": 803.2,
+      "speaker": "host",
+      "text": "東方東東。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 368,
+      "start": 803.6,
+      "end": 806.0,
+      "speaker": "host",
+      "text": "就是因為他過分帥氣，所以總是被公司雪藏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 369,
+      "start": 806.4,
+      "end": 809.0,
+      "speaker": "host",
+      "text": "然後出現在屏幕前的全是我這樣的歪瓜裂棗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 370,
+      "start": 810.0,
+      "end": 810.5,
+      "speaker": "host",
+      "text": "為啥？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 371,
+      "start": 811.3,
+      "end": 814.5,
+      "speaker": "host",
+      "text": "改天等你們見到我們公司CEO的長相之後，你就恍然大明白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 372,
+      "start": 814.8,
+      "end": 817.0,
+      "speaker": "host",
+      "text": "長得帥的必須雪藏，不能威脅到他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 373,
+      "start": 819.0,
+      "end": 819.3,
+      "speaker": "host",
+      "text": "來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 374,
+      "start": 819.7,
+      "end": 820.8,
+      "speaker": "host",
+      "text": "給大家講講這個啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 375,
+      "start": 821.2,
+      "end": 824.0,
+      "speaker": "host",
+      "text": "你看你看你看評論區這些人，你看評論區這些人，這些人說讓他回來，讓他回來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 376,
+      "start": 825.0,
+      "end": 826.0,
+      "speaker": "guest",
+      "text": "他倆都是好好的。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 377,
+      "start": 826.4,
+      "end": 827.3,
+      "speaker": "host",
+      "text": "你要不回來坐這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 378,
+      "start": 827.7,
+      "end": 828.3,
+      "speaker": "host",
+      "text": "他們想你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 379,
+      "start": 828.7,
+      "end": 829.8,
+      "speaker": "guest",
+      "text": "如果不想過就下播了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 380,
+      "start": 830.0,
+      "end": 831.6,
+      "speaker": "host",
+      "text": "來，大家，晚清之後十八年，我講講書，講講書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 381,
+      "start": 832.0,
+      "end": 836.0,
+      "speaker": "host",
+      "text": "這本書講的是袁世凱從這個朝鮮回來之後，開始發生的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 382,
+      "start": 836.4,
+      "end": 842.0,
+      "speaker": "host",
+      "text": "我們現在再去經常回憶袁世凱的時候，其實有經常我們是沒有辦法在那個角度去看他的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 383,
+      "start": 842.3,
+      "end": 844.0,
+      "speaker": "host",
+      "text": "當然這本書它還算是比較寫實。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 384,
+      "start": 844.4,
+      "end": 848.0,
+      "speaker": "host",
+      "text": "這本書我整個讀完之後，因為故事性比較強，我現在不能完整給大家講完。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 385,
+      "start": 848.3,
+      "end": 852.0,
+      "speaker": "host",
+      "text": "我只能說我當時在西安學校很早的時候，孫老師讓我們讀這本書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 386,
+      "start": 852.4,
+      "end": 856.0,
+      "speaker": "host",
+      "text": "我讀完這本書就就我印象特別深刻的其實就是甲午海戰那一刻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 387,
+      "start": 856.4,
+      "end": 863.0,
+      "speaker": "host",
+      "text": "當時呢其實以這個海軍的艦艇的排水的能力那個量來說，其實它可以在全球排到第五或第六。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 388,
+      "start": 863.9,
+      "end": 864.9,
+      "speaker": "host",
+      "text": "它其實很強大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 389,
+      "start": 865.2,
+      "end": 866.0,
+      "speaker": "host",
+      "text": "但是一戰擊敗。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 390,
+      "start": 867.0,
+      "end": 870.7,
+      "speaker": "host",
+      "text": "一戰擊敗的原因就是描述已經到了戰場上了，那些人還在思前想後。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 391,
+      "start": 871.6,
+      "end": 873.8,
+      "speaker": "host",
+      "text": "八國聯軍已經清華了，朝中各派內鬥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 392,
+      "start": 874.7,
+      "end": 876.7,
+      "speaker": "host",
+      "text": "大家沒有堅定地去同仇敵愾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 393,
+      "start": 877.0,
+      "end": 879.4,
+      "speaker": "host",
+      "text": "大家在那一刻心裡想的也不是如何打贏一場戰爭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 394,
+      "start": 879.8,
+      "end": 885.0,
+      "speaker": "host",
+      "text": "大家想的一方面我的船不能打沉，因為多年經營不能一朝全部毀廢湮滅。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 395,
+      "start": 885.3,
+      "end": 887.0,
+      "speaker": "host",
+      "text": "船，我不能輸，我不能被別人拿沉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 396,
+      "start": 887.3,
+      "end": 893.0,
+      "speaker": "host",
+      "text": "第二個我也不可能一戰全勝，因為一旦勝了以後沒有了外部威脅，那師傅也就不需要李中堂。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 397,
+      "start": 894.0,
+      "end": 900.0,
+      "speaker": "host",
+      "text": "所以這本書我當時讀到之後讀的先是糾結，後來是憤怒，讀完憤怒之後呢，其實是一種豁然開朗的清醒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 398,
+      "start": 900.3,
+      "end": 903.0,
+      "speaker": "host",
+      "text": "所以我前幾天提到這本書的時候，我說了一段話，我說。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 399,
+      "start": 905.0,
+      "end": 908.0,
+      "speaker": "host",
+      "text": "我說正確的初衷才是最強大的力量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 400,
+      "start": 908.3,
+      "end": 910.0,
+      "speaker": "host",
+      "text": "很多人想聽這段，大家可以開始錄屏了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 401,
+      "start": 910.4,
+      "end": 915.0,
+      "speaker": "host",
+      "text": "你準備好錄屏的回覆一，我開始給你講我關於這本書提煉的核心觀點啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 402,
+      "start": 915.4,
+      "end": 917.4,
+      "speaker": "host",
+      "text": "你準備好錄屏的回覆一，好吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 403,
+      "start": 922.0,
+      "end": 924.0,
+      "speaker": "guest",
+      "text": "有朋友說賣點盜版書吧，太貴了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 404,
+      "start": 925.0,
+      "end": 925.9,
+      "speaker": "host",
+      "text": "我不能這樣子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 405,
+      "start": 927.0,
+      "end": 930.9,
+      "speaker": "host",
+      "text": "我如果只是一個想掙投機的想掙錢的人我會做，但是如果我是一個真正知識分子，我不願意那樣做。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    }
+  ]
+}

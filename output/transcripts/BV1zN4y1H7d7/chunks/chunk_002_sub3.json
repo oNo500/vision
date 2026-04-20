@@ -1,0 +1,606 @@
+{
+  "chunk_id": 2,
+  "start_offset": 3010.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 3010.0,
+      "end": 3012.0,
+      "speaker": "guest",
+      "text": "听见 动天 的离开。",
+      "text_normalized": "",
+      "confidence": 0.92,
+      "chunk_id": 2
+    },
+    {
+      "idx": 1,
+      "start": 3012.0,
+      "end": 3015.0,
+      "speaker": "guest",
+      "text": "我在某年某月醒过来。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 2,
+      "start": 3015.0,
+      "end": 3018.0,
+      "speaker": "guest",
+      "text": "我想我等我期待。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 3,
+      "start": 3018.0,
+      "end": 3021.0,
+      "speaker": "guest",
+      "text": "未来却不能因此安排。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 4,
+      "start": 3021.0,
+      "end": 3023.0,
+      "speaker": "guest",
+      "text": "阴天 傍晚 的窗外。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 5,
+      "start": 3023.0,
+      "end": 3027.0,
+      "speaker": "guest",
+      "text": "未来有一个人在等待，在等待。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 6,
+      "start": 3027.0,
+      "end": 3030.0,
+      "speaker": "guest",
+      "text": "向左向右向前看。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 7,
+      "start": 3030.0,
+      "end": 3033.0,
+      "speaker": "guest",
+      "text": "爱要拐几个弯才来。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 8,
+      "start": 3033.0,
+      "end": 3037.0,
+      "speaker": "guest",
+      "text": "我遇见谁会有怎样的对白。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 9,
+      "start": 3037.0,
+      "end": 3041.0,
+      "speaker": "guest",
+      "text": "我等的人他在多远的未来。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 10,
+      "start": 3041.0,
+      "end": 3045.0,
+      "speaker": "guest",
+      "text": "我听见风来自地天和人海。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 11,
+      "start": 3045.0,
+      "end": 3049.0,
+      "speaker": "guest",
+      "text": "我排着队拿着爱的号码牌。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 12,
+      "start": 3049.0,
+      "end": 3053.0,
+      "speaker": "guest",
+      "text": "我看见我往前飞飞过一片时间海。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 13,
+      "start": 3053.0,
+      "end": 3057.0,
+      "speaker": "guest",
+      "text": "我们也曾在爱情里受伤害。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 14,
+      "start": 3057.0,
+      "end": 3061.0,
+      "speaker": "guest",
+      "text": "我看着路梦的入口有点窄。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 15,
+      "start": 3061.0,
+      "end": 3065.0,
+      "speaker": "guest",
+      "text": "我遇见你是最美丽的意外。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 16,
+      "start": 3065.0,
+      "end": 3068.0,
+      "speaker": "guest",
+      "text": "终有一天我的谜底会解开。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 17,
+      "start": 3068.0,
+      "end": 3068.7,
+      "speaker": "host",
+      "text": "行啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 18,
+      "start": 3068.7,
+      "end": 3072.0,
+      "speaker": "host",
+      "text": "现在整个各语种已经全部拿捏，是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 19,
+      "start": 3072.0,
+      "end": 3072.5,
+      "speaker": "guest",
+      "text": "是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 20,
+      "start": 3072.5,
+      "end": 3073.5,
+      "speaker": "host",
+      "text": "避雨的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 21,
+      "start": 3073.5,
+      "end": 3074.0,
+      "speaker": "guest",
+      "text": "哎哟。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 22,
+      "start": 3074.0,
+      "end": 3075.0,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 23,
+      "start": 3075.0,
+      "end": 3076.0,
+      "speaker": "host",
+      "text": "喜欢这个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 24,
+      "start": 3076.0,
+      "end": 3079.0,
+      "speaker": "host",
+      "text": "我说再来一遍陕西话，你你是对陕西话有啥执念呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 25,
+      "start": 3079.0,
+      "end": 3080.0,
+      "speaker": "guest",
+      "text": "大家说好好听啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 26,
+      "start": 3080.0,
+      "end": 3081.0,
+      "speaker": "guest",
+      "text": "好好听啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 27,
+      "start": 3081.0,
+      "end": 3082.0,
+      "speaker": "host",
+      "text": "要不，要不你再唱一段？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 28,
+      "start": 3082.0,
+      "end": 3083.0,
+      "speaker": "host",
+      "text": "他们真的是很享受。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 29,
+      "start": 3083.0,
+      "end": 3085.0,
+      "speaker": "guest",
+      "text": "陕西话我试试啊，但是陕西话唱的必定好听。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 30,
+      "start": 3085.0,
+      "end": 3086.0,
+      "speaker": "host",
+      "text": "嗯哼。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 31,
+      "start": 3086.0,
+      "end": 3087.0,
+      "speaker": "guest",
+      "text": "从阴天从这。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 32,
+      "start": 3087.0,
+      "end": 3088.0,
+      "speaker": "host",
+      "text": "从这。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 33,
+      "start": 3088.0,
+      "end": 3089.0,
+      "speaker": "guest",
+      "text": "阴天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 34,
+      "start": 3089.0,
+      "end": 3090.0,
+      "speaker": "guest",
+      "text": "阴天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 35,
+      "start": 3090.0,
+      "end": 3092.0,
+      "speaker": "guest",
+      "text": "傍晚车窗外。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 36,
+      "start": 3092.0,
+      "end": 3093.0,
+      "speaker": "host",
+      "text": "在在哪。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 37,
+      "start": 3093.0,
+      "end": 3094.0,
+      "speaker": "host",
+      "text": "好听好听好听。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 38,
+      "start": 3094.0,
+      "end": 3097.0,
+      "speaker": "guest",
+      "text": "未来有一个人在等待。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 39,
+      "start": 3097.0,
+      "end": 3100.0,
+      "speaker": "guest",
+      "text": "向左向右向前看。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 40,
+      "start": 3100.0,
+      "end": 3103.0,
+      "speaker": "guest",
+      "text": "爱要拐几个弯儿才来。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 41,
+      "start": 3103.0,
+      "end": 3106.0,
+      "speaker": "guest",
+      "text": "我遇见谁会有怎样的对白。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 42,
+      "start": 3106.0,
+      "end": 3109.0,
+      "speaker": "guest",
+      "text": "我等的人他在多远的未来。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 43,
+      "start": 3109.0,
+      "end": 3113.0,
+      "speaker": "guest",
+      "text": "我听见风来自地天和人海。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 44,
+      "start": 3113.0,
+      "end": 3116.0,
+      "speaker": "guest",
+      "text": "我排着队拿着爱的号码牌。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 45,
+      "start": 3116.0,
+      "end": 3120.0,
+      "speaker": "guest",
+      "text": "我往前飞飞过一片时间海。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 46,
+      "start": 3120.0,
+      "end": 3123.0,
+      "speaker": "guest",
+      "text": "我们也曾在爱情里受伤害。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 47,
+      "start": 3123.0,
+      "end": 3127.0,
+      "speaker": "guest",
+      "text": "我看着路梦的入口有点窄。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 48,
+      "start": 3127.0,
+      "end": 3130.0,
+      "speaker": "guest",
+      "text": "我遇见你是最美丽的意外。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 49,
+      "start": 3130.0,
+      "end": 3133.0,
+      "speaker": "guest",
+      "text": "终有一天我的谜底会解开。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 50,
+      "start": 3133.0,
+      "end": 3135.0,
+      "speaker": "host",
+      "text": "好像调不一样了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 51,
+      "start": 3135.0,
+      "end": 3136.0,
+      "speaker": "host",
+      "text": "好听。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 52,
+      "start": 3136.0,
+      "end": 3137.0,
+      "speaker": "host",
+      "text": "太好听啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 53,
+      "start": 3137.0,
+      "end": 3138.0,
+      "speaker": "host",
+      "text": "是吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 54,
+      "start": 3138.0,
+      "end": 3139.0,
+      "speaker": "host",
+      "text": "就很那种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 55,
+      "start": 3139.0,
+      "end": 3140.0,
+      "speaker": "host",
+      "text": "灵活那种感觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 56,
+      "start": 3140.0,
+      "end": 3141.0,
+      "speaker": "host",
+      "text": "大家说好听的出人意料。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 57,
+      "start": 3141.0,
+      "end": 3142.0,
+      "speaker": "guest",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 2
+    },
+    {
+      "idx": 58,
+      "start": 3142.0,
+      "end": 3143.0,
+      "speaker": "host",
+      "text": "意料之外。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 59,
+      "start": 3143.0,
+      "end": 3144.0,
+      "speaker": "host",
+      "text": "大家期待的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    }
+  ]
+}

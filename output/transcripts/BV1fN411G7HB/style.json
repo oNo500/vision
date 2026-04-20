@@ -1,0 +1,132 @@
+{
+  "video_id": "BV1fN411G7HB",
+  "host_speaking_ratio": 1.0,
+  "speaker_count": {
+    "host": 23,
+    "guest": 0,
+    "other": 0,
+    "unknown": 0
+  },
+  "top_phrases": [
+    {
+      "phrase": "1万年",
+      "count": 3
+    },
+    {
+      "phrase": "驯化了",
+      "count": 3
+    },
+    {
+      "phrase": "人类驯化",
+      "count": 3
+    },
+    {
+      "phrase": "小麦",
+      "count": 2
+    },
+    {
+      "phrase": "水道",
+      "count": 2
+    },
+    {
+      "phrase": "宇宙",
+      "count": 2
+    },
+    {
+      "phrase": "黑洞",
+      "count": 2
+    },
+    {
+      "phrase": "难过",
+      "count": 2
+    },
+    {
+      "phrase": "身体",
+      "count": 2
+    },
+    {
+      "phrase": "地球",
+      "count": 2
+    },
+    {
+      "phrase": "温度",
+      "count": 2
+    },
+    {
+      "phrase": "存在",
+      "count": 2
+    },
+    {
+      "phrase": "恒星",
+      "count": 2
+    },
+    {
+      "phrase": "爆炸",
+      "count": 2
+    },
+    {
+      "phrase": "希望",
+      "count": 1
+    },
+    {
+      "phrase": "浪漫",
+      "count": 1
+    },
+    {
+      "phrase": "组成",
+      "count": 1
+    },
+    {
+      "phrase": "元素",
+      "count": 1
+    },
+    {
+      "phrase": "蔚蓝色",
+      "count": 1
+    },
+    {
+      "phrase": "星球",
+      "count": 1
+    }
+  ],
+  "catchphrases": [
+    "你很美好。",
+    "请你记住这一点。",
+    "你不要太灰心丧气。",
+    "心态要一直好。",
+    "这就是了。"
+  ],
+  "opening_hooks": [
+    "大概在1万年前，新月石地，就是现在的两河流域和埃及，幼发拉底底格里斯这里，人类驯化了小麦。",
+    "人类一共700万年的历史，真正重要的只有这1万年。",
+    "I love three things in the world. 我爱这世间的三个东西。The sun, the moon and you. 太阳、月亮和你。The sun is for the day. The moon is for the night. And you, forever. 太阳是白天，月亮是晚上，你是永远。"
+  ],
+  "cta_patterns": [
+    "大家赶快下单。",
+    "来自东方甄选的直播间，买一单五常大米，跟爱的人煎一字牛排，吃一碗香喷喷的米饭，平安喜乐的过好你这一生。"
+  ],
+  "transition_patterns": [
+    "所以赫拉利觉得是...",
+    "大陆的亚洲的另一端，",
+    "我们于是发现了好的东西。",
+    "但是大家知道...",
+    "如果说微观到原子的层面，",
+    "所以从这个角度去说，",
+    "就像顾城的这首诗，",
+    "我再跟你讲一讲未来。"
+  ],
+  "sentence_length": {
+    "p50": 47.0,
+    "p90": 104.0,
+    "unit": "chars"
+  },
+  "tone_tags": [
+    "专业",
+    "亲和",
+    "幽默",
+    "朴实",
+    "热情",
+    "煽动"
+  ],
+  "english_ratio": 0.0816793893129771
+}

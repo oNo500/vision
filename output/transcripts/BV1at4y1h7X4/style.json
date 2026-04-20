@@ -1,0 +1,123 @@
+{
+  "video_id": "BV1at4y1h7X4",
+  "host_speaking_ratio": 0.6410998552821997,
+  "speaker_count": {
+    "host": 28,
+    "guest": 9,
+    "other": 0,
+    "unknown": 0
+  },
+  "top_phrases": [
+    {
+      "phrase": "无忧无虑",
+      "count": 3
+    },
+    {
+      "phrase": "年轻",
+      "count": 3
+    },
+    {
+      "phrase": "香气扑鼻",
+      "count": 2
+    },
+    {
+      "phrase": "仲夏夜",
+      "count": 2
+    },
+    {
+      "phrase": "细节",
+      "count": 2
+    },
+    {
+      "phrase": "树叶沙沙作响",
+      "count": 2
+    },
+    {
+      "phrase": "回忆起童年",
+      "count": 1
+    },
+    {
+      "phrase": "人间烟火",
+      "count": 1
+    },
+    {
+      "phrase": "情感的连接",
+      "count": 1
+    },
+    {
+      "phrase": "暖心",
+      "count": 1
+    },
+    {
+      "phrase": "你不是想玉米，你是想当年的自己啊",
+      "count": 1
+    },
+    {
+      "phrase": "念旧的人",
+      "count": 1
+    },
+    {
+      "phrase": "容易敏感的人",
+      "count": 1
+    },
+    {
+      "phrase": "身体还很健康",
+      "count": 1
+    },
+    {
+      "phrase": "平安喜乐",
+      "count": 1
+    },
+    {
+      "phrase": "头也不疼，颈椎也不疼",
+      "count": 1
+    },
+    {
+      "phrase": "头昏脑胀",
+      "count": 1
+    },
+    {
+      "phrase": "繁星点缀",
+      "count": 1
+    },
+    {
+      "phrase": "微风吹过",
+      "count": 1
+    },
+    {
+      "phrase": "淡淡的回甘味",
+      "count": 1
+    }
+  ],
+  "catchphrases": [
+    "Young and carefree.",
+    "无忧无虑",
+    "人间烟火呀。",
+    "我相信你会如我一样呢"
+  ],
+  "opening_hooks": [
+    "吃到东方甄选所选的这一款玉米，我相信你会如我一样呢，回忆起童年。",
+    "所以如果我们说要找到美食的话，美食的背后一定是情感的连接。",
+    "我感觉到这个玉米还是挺让我回忆过去的。"
+  ],
+  "cta_patterns": [],
+  "transition_patterns": [
+    "所以如果我们说要找到美食的话...",
+    "好多年后你到现在都记得...",
+    "我感觉到这个玉米还是挺让我回忆过去的。",
+    "又下着啊，这句牌。"
+  ],
+  "sentence_length": {
+    "p50": 29.0,
+    "p90": 51.0,
+    "unit": "chars"
+  },
+  "tone_tags": [
+    "热情",
+    "亲和",
+    "朴实",
+    "感性",
+    "知识型"
+  ],
+  "english_ratio": 0.10274963820549927
+}

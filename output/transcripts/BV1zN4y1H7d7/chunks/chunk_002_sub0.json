@@ -1,0 +1,1386 @@
+{
+  "chunk_id": 2,
+  "start_offset": 2390.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 2390.0,
+      "end": 2390.03,
+      "speaker": "host",
+      "text": "的时候，就是就是站着讲课。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 2
+    },
+    {
+      "idx": 1,
+      "start": 2390.03,
+      "end": 2390.09,
+      "speaker": "host",
+      "text": "所以时间久了,我要坐下的话,你你发现我这个坐着时候,不是采访,你发现我坐那坐的沙发深的我我就是就容易困。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 2,
+      "start": 2390.09,
+      "end": 2390.1,
+      "speaker": "host",
+      "text": "对,反应就容易慢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 3,
+      "start": 2390.1,
+      "end": 2390.11,
+      "speaker": "guest",
+      "text": "对,你坐就容易反应慢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 4,
+      "start": 2390.11,
+      "end": 2390.12,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 2
+    },
+    {
+      "idx": 5,
+      "start": 2390.12,
+      "end": 2390.12,
+      "speaker": "guest",
+      "text": "是这样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 6,
+      "start": 2390.12,
+      "end": 2390.13,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 7,
+      "start": 2390.14,
+      "end": 2390.15,
+      "speaker": "host",
+      "text": "小鹏自己拍吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 8,
+      "start": 2390.15,
+      "end": 2390.22,
+      "speaker": "host",
+      "text": "就是牛奶啊,一箱有24罐,然后呢,这个蛋白质比较高,4.0克的蛋白质。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 9,
+      "start": 2390.22,
+      "end": 2390.23,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 10,
+      "start": 2390.23,
+      "end": 2390.24,
+      "speaker": "host",
+      "text": "然后盖是122毫克,所以它就是",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 11,
+      "start": 2390.24,
+      "end": 2390.25,
+      "speaker": "guest",
+      "text": "没错。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 12,
+      "start": 2390.25,
+      "end": 2390.31,
+      "speaker": "host",
+      "text": "这个营养更丰富些,对于一些朋友,比如说他他自己喝不了那么多,但是他又希望营养多一些,你就你就买这个就行了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 13,
+      "start": 2390.31,
+      "end": 2390.32,
+      "speaker": "guest",
+      "text": "对的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 14,
+      "start": 2390.32,
+      "end": 2390.33,
+      "speaker": "host",
+      "text": "这个算下一罐多少钱?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 15,
+      "start": 2390.34,
+      "end": 2390.35,
+      "speaker": "guest",
+      "text": "嗯哼。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 16,
+      "start": 2390.35,
+      "end": 2390.37,
+      "speaker": "host",
+      "text": "三块多钱,不到四块。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 17,
+      "start": 2390.37,
+      "end": 2390.38,
+      "speaker": "guest",
+      "text": "三。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 18,
+      "start": 2390.38,
+      "end": 2390.39,
+      "speaker": "guest",
+      "text": "但是4.0的已经很。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 19,
+      "start": 2390.39,
+      "end": 2390.42,
+      "speaker": "host",
+      "text": "对,在在这个蛋白质含量里面它的价钱还算很公道了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 20,
+      "start": 2390.42,
+      "end": 2390.43,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 21,
+      "start": 2390.43,
+      "end": 2390.44,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 22,
+      "start": 2390.45,
+      "end": 2390.47,
+      "speaker": "host",
+      "text": "有朋友说,啊,所以别人坐下跟你一样高是吧?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 23,
+      "start": 2390.47,
+      "end": 2390.48,
+      "speaker": "guest",
+      "text": "参考。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 24,
+      "start": 2390.48,
+      "end": 2390.5,
+      "speaker": "guest",
+      "text": "太棒了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 25,
+      "start": 2390.5,
+      "end": 2390.51,
+      "speaker": "host",
+      "text": "把他给我翻出来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 26,
+      "start": 2390.51,
+      "end": 2390.52,
+      "speaker": "guest",
+      "text": "太痛了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 27,
+      "start": 2390.52,
+      "end": 2390.53,
+      "speaker": "host",
+      "text": "把他给我翻出来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 28,
+      "start": 2390.53,
+      "end": 2390.54,
+      "speaker": "guest",
+      "text": "好好奖励。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 29,
+      "start": 2390.54,
+      "end": 2390.55,
+      "speaker": "host",
+      "text": "太痛了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 30,
+      "start": 2390.55,
+      "end": 2390.56,
+      "speaker": "guest",
+      "text": "太痛了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 31,
+      "start": 2390.56,
+      "end": 2390.57,
+      "speaker": "host",
+      "text": "我给,我给,我给,我给拖一个。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 32,
+      "start": 2390.57,
+      "end": 2390.58,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 33,
+      "start": 2390.59,
+      "end": 2391.0,
+      "speaker": "host",
+      "text": "别上进,别上进。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 34,
+      "start": 2391.0,
+      "end": 2391.01,
+      "speaker": "guest",
+      "text": "啊,好好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 35,
+      "start": 2391.01,
+      "end": 2391.02,
+      "speaker": "host",
+      "text": "化悲愤为力量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 36,
+      "start": 2391.02,
+      "end": 2391.03,
+      "speaker": "guest",
+      "text": "真正的勇士。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 37,
+      "start": 2391.03,
+      "end": 2391.04,
+      "speaker": "host",
+      "text": "你你的鲜血。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 38,
+      "start": 2391.04,
+      "end": 2391.05,
+      "speaker": "guest",
+      "text": "收回来,收回来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 39,
+      "start": 2391.05,
+      "end": 2391.06,
+      "speaker": "host",
+      "text": "把虾全部都收回来。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 40,
+      "start": 2391.06,
+      "end": 2391.07,
+      "speaker": "guest",
+      "text": "看着呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 41,
+      "start": 2391.07,
+      "end": 2391.08,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 42,
+      "start": 2391.08,
+      "end": 2391.09,
+      "speaker": "guest",
+      "text": "注意点,注意点。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 43,
+      "start": 2391.09,
+      "end": 2391.1,
+      "speaker": "host",
+      "text": "真正的勇士啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 44,
+      "start": 2391.1,
+      "end": 2391.11,
+      "speaker": "guest",
+      "text": "此腰果啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 45,
+      "start": 2391.11,
+      "end": 2391.12,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 46,
+      "start": 2391.12,
+      "end": 2391.14,
+      "speaker": "guest",
+      "text": "配料就是腰果和盐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 47,
+      "start": 2391.14,
+      "end": 2391.15,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 48,
+      "start": 2391.15,
+      "end": 2391.17,
+      "speaker": "guest",
+      "text": "79块8,两罐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 49,
+      "start": 2391.18,
+      "end": 2391.2,
+      "speaker": "guest",
+      "text": "然后保质期240天。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 50,
+      "start": 2391.2,
+      "end": 2391.21,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 51,
+      "start": 2391.21,
+      "end": 2391.22,
+      "speaker": "guest",
+      "text": "哎,刚才说哪个腰果啊?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 52,
+      "start": 2391.23,
+      "end": 2391.24,
+      "speaker": "host",
+      "text": "刚才那是三个在一块。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 53,
+      "start": 2391.24,
+      "end": 2391.25,
+      "speaker": "guest",
+      "text": "三个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 54,
+      "start": 2391.25,
+      "end": 2391.27,
+      "speaker": "guest",
+      "text": "哦,这你要单吃腰果,你可以吃这个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 55,
+      "start": 2391.27,
+      "end": 2391.28,
+      "speaker": "host",
+      "text": "这个就是两罐腰果啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 56,
+      "start": 2391.28,
+      "end": 2391.29,
+      "speaker": "guest",
+      "text": "没错。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 57,
+      "start": 2391.29,
+      "end": 2391.32,
+      "speaker": "host",
+      "text": "这个才是真正的正八的营养在皮上呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 58,
+      "start": 2391.32,
+      "end": 2391.33,
+      "speaker": "guest",
+      "text": "花青素啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 59,
+      "start": 2391.33,
+      "end": 2391.34,
+      "speaker": "host",
+      "text": "花青素。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 60,
+      "start": 2391.35,
+      "end": 2391.37,
+      "speaker": "guest",
+      "text": "然后他还是个那个低。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 2
+    },
+    {
+      "idx": 61,
+      "start": 2391.37,
+      "end": 2391.38,
+      "speaker": "host",
+      "text": "你你嚼一下这皮有多硬。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 62,
+      "start": 2391.38,
+      "end": 2391.39,
+      "speaker": "guest",
+      "text": "它真的挺好吃的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 63,
+      "start": 2391.39,
+      "end": 2391.4,
+      "speaker": "guest",
+      "text": "我平时吃都是带皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 64,
+      "start": 2391.4,
+      "end": 2391.41,
+      "speaker": "host",
+      "text": "我也带皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 65,
+      "start": 2391.41,
+      "end": 2391.42,
+      "speaker": "guest",
+      "text": "我有时候带核吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 66,
+      "start": 2391.42,
+      "end": 2391.43,
+      "speaker": "host",
+      "text": "看一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 67,
+      "start": 2391.44,
+      "end": 2391.45,
+      "speaker": "guest",
+      "text": "你都要把这个剥了吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 68,
+      "start": 2391.45,
+      "end": 2391.46,
+      "speaker": "host",
+      "text": "那不剥。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 69,
+      "start": 2391.46,
+      "end": 2391.47,
+      "speaker": "guest",
+      "text": "真的假的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 70,
+      "start": 2391.47,
+      "end": 2391.48,
+      "speaker": "host",
+      "text": "好吃啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 71,
+      "start": 2391.48,
+      "end": 2391.49,
+      "speaker": "guest",
+      "text": "你甚至。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 72,
+      "start": 2391.49,
+      "end": 2391.5,
+      "speaker": "host",
+      "text": "有那个焦糊味。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 73,
+      "start": 2391.5,
+      "end": 2391.51,
+      "speaker": "guest",
+      "text": "咱们。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 74,
+      "start": 2391.51,
+      "end": 2391.52,
+      "speaker": "host",
+      "text": "这皮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 75,
+      "start": 2391.52,
+      "end": 2391.53,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 76,
+      "start": 2391.53,
+      "end": 2391.55,
+      "speaker": "guest",
+      "text": "都没给你在旁边摆个盘。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 77,
+      "start": 2391.55,
+      "end": 2391.56,
+      "speaker": "host",
+      "text": "不好吃吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 78,
+      "start": 2391.56,
+      "end": 2391.57,
+      "speaker": "guest",
+      "text": "这皮有点苦啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 79,
+      "start": 2391.57,
+      "end": 2391.58,
+      "speaker": "host",
+      "text": "嗯?",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 80,
+      "start": 2391.58,
+      "end": 2391.59,
+      "speaker": "guest",
+      "text": "苦吗?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 81,
+      "start": 2391.59,
+      "end": 2391.59,
+      "speaker": "host",
+      "text": "不苦啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 82,
+      "start": 2391.59,
+      "end": 2391.59,
+      "speaker": "guest",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 83,
+      "start": 2391.59,
+      "end": 2391.59,
+      "speaker": "host",
+      "text": "买。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 84,
+      "start": 2391.59,
+      "end": 2392.0,
+      "speaker": "guest",
+      "text": "那生活苦。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 85,
+      "start": 2392.0,
+      "end": 2392.01,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 86,
+      "start": 2392.01,
+      "end": 2392.02,
+      "speaker": "guest",
+      "text": "咋突然就emo了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 87,
+      "start": 2392.02,
+      "end": 2392.03,
+      "speaker": "host",
+      "text": "这还是长大了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 88,
+      "start": 2392.03,
+      "end": 2392.04,
+      "speaker": "guest",
+      "text": "那实际讲的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 89,
+      "start": 2392.04,
+      "end": 2392.05,
+      "speaker": "host",
+      "text": "现在现在开始。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 90,
+      "start": 2392.05,
+      "end": 2392.06,
+      "speaker": "guest",
+      "text": "到时间就。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 91,
+      "start": 2392.06,
+      "end": 2392.07,
+      "speaker": "host",
+      "text": "白emo了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 92,
+      "start": 2392.07,
+      "end": 2392.08,
+      "speaker": "guest",
+      "text": "两天没打睡觉了呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 93,
+      "start": 2392.08,
+      "end": 2392.09,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 94,
+      "start": 2392.09,
+      "end": 2392.1,
+      "speaker": "guest",
+      "text": "这不现在变了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 95,
+      "start": 2392.1,
+      "end": 2392.11,
+      "speaker": "host",
+      "text": "长大了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 96,
+      "start": 2392.11,
+      "end": 2392.12,
+      "speaker": "guest",
+      "text": "失眠会让人变笨了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 97,
+      "start": 2392.12,
+      "end": 2392.15,
+      "speaker": "guest",
+      "text": "两天没睡觉了,对于你现在美食美刻都是深夜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 98,
+      "start": 2392.16,
+      "end": 2392.17,
+      "speaker": "host",
+      "text": "讲好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 99,
+      "start": 2392.17,
+      "end": 2392.19,
+      "speaker": "guest",
+      "text": "不能吃多了,保脆一点,吃多了容易困。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 100,
+      "start": 2392.19,
+      "end": 2392.2,
+      "speaker": "guest",
+      "text": "只能吃坚果。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 101,
+      "start": 2392.21,
+      "end": 2392.22,
+      "speaker": "host",
+      "text": "小鹏自己拍吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 102,
+      "start": 2392.22,
+      "end": 2392.23,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 103,
+      "start": 2392.23,
+      "end": 2392.24,
+      "speaker": "host",
+      "text": "我觉得,我觉得还行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 104,
+      "start": 2392.24,
+      "end": 2392.25,
+      "speaker": "host",
+      "text": "我觉得还行。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 105,
+      "start": 2392.25,
+      "end": 2392.27,
+      "speaker": "host",
+      "text": "你看,你看大家说皮就是苦的,还还非得是埋汰我。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 106,
+      "start": 2392.27,
+      "end": 2392.28,
+      "speaker": "host",
+      "text": "这说明我只。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 107,
+      "start": 2392.28,
+      "end": 2392.32,
+      "speaker": "host",
+      "text": "在直播间三个人里头只有我的味觉是正常的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 108,
+      "start": 2392.32,
+      "end": 2392.34,
+      "speaker": "host",
+      "text": "我就是说皮是苦的吧,你们俩非说是甜的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 109,
+      "start": 2392.34,
+      "end": 2392.35,
+      "speaker": "guest",
+      "text": "你们俩包皮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 110,
+      "start": 2392.35,
+      "end": 2392.36,
+      "speaker": "host",
+      "text": "没说是甜的,也没说他是苦啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 111,
+      "start": 2392.36,
+      "end": 2392.37,
+      "speaker": "guest",
+      "text": "我接受不了带皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 112,
+      "start": 2392.37,
+      "end": 2392.38,
+      "speaker": "host",
+      "text": "我也接受不了带皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 113,
+      "start": 2392.38,
+      "end": 2392.39,
+      "speaker": "guest",
+      "text": "我也是去皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 114,
+      "start": 2392.39,
+      "end": 2392.4,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 115,
+      "start": 2392.4,
+      "end": 2392.41,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 116,
+      "start": 2392.41,
+      "end": 2392.42,
+      "speaker": "host",
+      "text": "我也去皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 117,
+      "start": 2392.42,
+      "end": 2392.43,
+      "speaker": "guest",
+      "text": "去皮。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 118,
+      "start": 2392.43,
+      "end": 2392.45,
+      "speaker": "guest",
+      "text": "他吃这么小的虾子把头去了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 119,
+      "start": 2392.46,
+      "end": 2392.47,
+      "speaker": "host",
+      "text": "真可怕。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 120,
+      "start": 2392.47,
+      "end": 2392.48,
+      "speaker": "guest",
+      "text": "建议你们以后核桃连皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 121,
+      "start": 2392.48,
+      "end": 2392.49,
+      "speaker": "guest",
+      "text": "营养都在皮里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 122,
+      "start": 2392.49,
+      "end": 2392.51,
+      "speaker": "host",
+      "text": "我们是能吃苦,我们不是250。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 123,
+      "start": 2392.51,
+      "end": 2392.52,
+      "speaker": "guest",
+      "text": "好啊,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 124,
+      "start": 2392.52,
+      "end": 2392.53,
+      "speaker": "host",
+      "text": "牙受不了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 125,
+      "start": 2392.53,
+      "end": 2392.54,
+      "speaker": "guest",
+      "text": "门受不了主要是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 126,
+      "start": 2392.54,
+      "end": 2392.55,
+      "speaker": "host",
+      "text": "把我活干了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 127,
+      "start": 2392.55,
+      "end": 2392.56,
+      "speaker": "guest",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 128,
+      "start": 2392.56,
+      "end": 2392.57,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 129,
+      "start": 2392.57,
+      "end": 2392.58,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 2
+    },
+    {
+      "idx": 130,
+      "start": 2392.58,
+      "end": 2392.59,
+      "speaker": "host",
+      "text": "松子建议连皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 131,
+      "start": 2392.59,
+      "end": 2393.0,
+      "speaker": "host",
+      "text": "虾味一罐。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 132,
+      "start": 2393.0,
+      "end": 2393.01,
+      "speaker": "host",
+      "text": "建议连皮吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 133,
+      "start": 2393.01,
+      "end": 2393.02,
+      "speaker": "host",
+      "text": "营养都在皮里。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 134,
+      "start": 2393.02,
+      "end": 2393.03,
+      "speaker": "guest",
+      "text": "开心果连皮吃,然后就不开心了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 135,
+      "start": 2393.03,
+      "end": 2393.04,
+      "speaker": "host",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 136,
+      "start": 2393.04,
+      "end": 2393.05,
+      "speaker": "guest",
+      "text": "妈妈开心了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    },
+    {
+      "idx": 137,
+      "start": 2393.05,
+      "end": 2393.06,
+      "speaker": "host",
+      "text": "真的是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 2
+    }
+  ]
+}

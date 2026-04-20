@@ -1,0 +1,22 @@
+{
+  "stage": "merge",
+  "video_id": "BV1f64y1V7f2",
+  "status": "done",
+  "started_at": "2026-04-19T12:07:57.131060+08:00",
+  "finished_at": "2026-04-19T12:07:57.230021+08:00",
+  "duration_sec": 0.098961,
+  "inputs": [
+    "chunks/*.json"
+  ],
+  "outputs": [
+    "raw.json"
+  ],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "segments_in": 220,
+    "segments_out": 215,
+    "dedup_count": 5
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "speaker": "host",
+      "text": "吃到东方甄选所选的这一款玉米,我相信你会如我一样呢,回忆起童年。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "speaker": "host",
+      "text": "回忆起那些无忧无虑背着书包回到家里头,招急忙慌的,书包扔在凳子上,一溜烟跑到巷子里,跑了一整个下午。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 14.0,
+      "end": 22.0,
+      "speaker": "host",
+      "text": "没有那么多的作业要写,也没有那么多的人情需要照顾,没有那么多的烦心事要处理,也没有那么多的痛苦要焦虑。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 22.0,
+      "end": 30.0,
+      "speaker": "host",
+      "text": "你玩了一整晚回来,有时候妈妈看你玩得太累了,把你喊回来,锅里煮出了自己家地里摘出来的玉米。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 30.0,
+      "end": 35.0,
+      "speaker": "host",
+      "text": "香气扑鼻,你用筷子戳着,拿在手上,边啃边跑。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 35.0,
+      "end": 40.0,
+      "speaker": "host",
+      "text": "你跑的时候,背后的阳光温暖,洋洋洒洒落在地上。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 40.0,
+      "end": 45.0,
+      "speaker": "host",
+      "text": "它在你面前投下了跟你一样大小的影子,你边跑边追。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 45.0,
+      "end": 50.0,
+      "speaker": "host",
+      "text": "嘴里头那一口玉米,淡淡的回甘味,扑鼻的香。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 50.0,
+      "end": 60.0,
+      "speaker": "host",
+      "text": "好多年后你到现在都记得,你甚至还记得在仲夏夜的风里,你们坐在院子里乘凉,夜风袭来,树叶沙沙作响。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 60.0,
+      "end": 64.0,
+      "speaker": "host",
+      "text": "天空偶尔飞过一两只不知名的鸟,发出清脆的叫声。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 64.0,
+      "end": 74.0,
+      "speaker": "host",
+      "text": "你一个手里拿着筷子戳着的玉米棒子在啃,一个手里还贪心的抱着水井里刚取出来冰镇的西瓜。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 74.0,
+      "end": 80.0,
+      "speaker": "host",
+      "text": "大人们在忙着说他们的事情,有时候低声细语,有时候开怀大笑。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 80.0,
+      "end": 87.0,
+      "speaker": "host",
+      "text": "你不管心,那个时候人间的事情你还没有经历,你无忧无虑的像个孩子。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 87.0,
+      "end": 91.0,
+      "speaker": "host",
+      "text": "Young and carefree. 无忧无虑,以正年轻。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 91.0,
+      "end": 102.0,
+      "speaker": "host",
+      "text": "所以如果我们说要找到美食的话,美食的背后一定是情感的连接。Young and carefree. Free就是没有,care就是担心,没有担心,所以无忧无虑,年轻且无忧无虑。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 102.0,
+      "end": 108.0,
+      "speaker": "host",
+      "text": "好多年后你回忆起来,其实那个玉米的味道记不太清楚了,尝着好像很像。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 108.0,
+      "end": 115.0,
+      "speaker": "host",
+      "text": "但你清楚记得是那些仲夏的夜里头,繁星点缀,树叶沙沙作响,微风吹过。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 115.0,
+      "end": 125.0,
+      "speaker": "host",
+      "text": "你年轻,那时候你头也不疼,颈椎也不疼,也不会在睡醒失眠的夜里头辗转反侧,也不会在睡醒的早晨感觉头昏脑胀。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 125.0,
+      "end": 132.0,
+      "speaker": "host",
+      "text": "那时候你爸妈身体还很健康,他们年轻,平安喜乐,爷爷奶奶也陪在你身边。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 132.0,
+      "end": 136.0,
+      "speaker": "host",
+      "text": "你其实不是想玉米,你是想当年的自己啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 136.0,
+      "end": 145.0,
+      "speaker": "host",
+      "text": "我感觉到这个玉米还是挺让我回忆过去的。我是一个念旧的人,我是一个这个容易容易敏感的人。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 145.0,
+      "end": 151.0,
+      "speaker": "host",
+      "text": "所以也正因为敏感,才能够从生活中捕捉到很多原本你们所忽略的细节。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 151.0,
+      "end": 159.0,
+      "speaker": "host",
+      "text": "那些细节其实更让人贴心,更让人安心,更让人暖心,也最让人放心。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 159.0,
+      "end": 160.0,
+      "speaker": "host",
+      "text": "那就是人间烟火呀。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 161.0,
+      "end": 162.0,
+      "speaker": "host",
+      "text": "又下着啊,这句牌。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 162.0,
+      "end": 162.5,
+      "speaker": "guest",
+      "text": "没事。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 162.5,
+      "end": 177.0,
+      "speaker": "guest",
+      "text": "当你老了,走不动了,炉火旁打盹,回忆青春。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 177.0,
+      "end": 202.0,
+      "speaker": "guest",
+      "text": "多少人曾爱你青春的诗歌,爱慕你的美丽,加一或真心。不止有一个人,还爱你青春的灵魂,爱你苍老的脸上的皱纹。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 202.0,
+      "end": 217.0,
+      "speaker": "guest",
+      "text": "当你老了,走不动了,炉火旁打盹,回忆青春。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 217.0,
+      "end": 228.0,
+      "speaker": "guest",
+      "text": "当你老了,我只希望这首歌是唱给你的。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 228.0,
+      "end": 228.8,
+      "speaker": "guest",
+      "text": "谢谢大家。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 228.8,
+      "end": 230.5,
+      "speaker": "host",
+      "text": "谢谢大家。欢迎七七。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 230.5,
+      "end": 231.0,
+      "speaker": "guest",
+      "text": "哎呀。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 231.0,
+      "end": 233.0,
+      "speaker": "host",
+      "text": "中关村兵马俑要去吃饭了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 233.0,
+      "end": 234.0,
+      "speaker": "guest",
+      "text": "你今天还上吗?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 234.0,
+      "end": 235.0,
+      "speaker": "host",
+      "text": "我应该晚上还有一场。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 235.0,
+      "end": 278.0,
+      "speaker": "guest",
+      "text": "晚上还有一场,所以说喜欢董宇辉啊,董宇辉。中关村周杰伦,喜欢中关村周杰伦的朋友们,咱们今天的话他还有一场是在晚上应该是。对,所以说可以持续关注咱们直播间啊,我们是由俞敏洪俞老师领队,新东方老师给大家去甄选好物平台,我们叫做东方甄选。So if you're new to this live stream, please don't go away and please click this follow button over here and join this big family. 如果您今天是第一天来到咱们直播间,不要走开,喜欢我们的话,左上角给咱们来一波关注啊,我们说换主播的时候再提醒大家,今天咱们董老师啊,也叫方老师,或者叫咱们的这个铁盘王子是不是?这个中关村周杰伦,他今天晚上还有一场哟,大家可以持续关注一下。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    }
+  ]
+}

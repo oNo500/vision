@@ -1,0 +1,3316 @@
+{
+  "chunk_id": 1,
+  "start_offset": 1190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 1190.0,
+      "end": 1200.32,
+      "speaker": "host",
+      "text": "的地方，你知道为什么吗？你像巴西它不是在热带雨林吗？它大量的砍伐雨林，空出了地，然后来干嘛呢？种大豆，种玉米。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 1,
+      "start": 1200.32,
+      "end": 1201.08,
+      "speaker": "host",
+      "text": "他要出口。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 2,
+      "start": 1203.06,
+      "end": 1209.06,
+      "speaker": "host",
+      "text": "世界上只有两个国家的这个绿化面积在增加，第一个是中国，第二个是印度。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 3,
+      "start": 1211.0,
+      "end": 1213.0,
+      "speaker": "host",
+      "text": "印度的绿化面积想增加容易不容易？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 4,
+      "start": 1213.3,
+      "end": 1213.8,
+      "speaker": "guest",
+      "text": "太难了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 5,
+      "start": 1214.0,
+      "end": 1215.16,
+      "speaker": "host",
+      "text": "其实还挺容易的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 6,
+      "start": 1215.54,
+      "end": 1220.68,
+      "speaker": "host",
+      "text": "你知道为什么吗？当然你说的也对啊，他人口多，但是第二个印度很少有沙漠或者荒漠，你能理解吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 7,
+      "start": 1220.68,
+      "end": 1224.68,
+      "speaker": "host",
+      "text": "所以它降水量足，只要它不破坏，其实绿化面积自动会增加的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 8,
+      "start": 1224.68,
+      "end": 1230.58,
+      "speaker": "host",
+      "text": "然后他们主要还这个绿化面积增加的其实是把耕田换成了绿化面积，我看到一篇文章里头提到这个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 9,
+      "start": 1230.58,
+      "end": 1234.48,
+      "speaker": "host",
+      "text": "然后中国的绿化面积也在增加，中国的绿化面积主要增加的是什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 10,
+      "start": 1234.48,
+      "end": 1236.38,
+      "speaker": "host",
+      "text": "第一个是荒漠。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 11,
+      "start": 1238.0,
+      "end": 1243.76,
+      "speaker": "host",
+      "text": "所以我们是把原来那些没有生命力的地方赋予了它生命，把那些飞沙走石的地方变成了绿洲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 12,
+      "start": 1243.76,
+      "end": 1245.46,
+      "speaker": "host",
+      "text": "第二个是山林。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 13,
+      "start": 1246.66,
+      "end": 1249.56,
+      "speaker": "host",
+      "text": "我们为什么不把耕地还成绿化呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 14,
+      "start": 1251.0,
+      "end": 1254.2,
+      "speaker": "host",
+      "text": "因为我们可用的耕地太少了，连吃都吃不饱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 15,
+      "start": 1254.5,
+      "end": 1255.4,
+      "speaker": "host",
+      "text": "能理解吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 16,
+      "start": 1255.4,
+      "end": 1258.4,
+      "speaker": "host",
+      "text": "就是我们的耕地就刚好够用，没有办法那样弄。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 17,
+      "start": 1258.4,
+      "end": 1261.8,
+      "speaker": "host",
+      "text": "但是我们是把原本大家都放弃掉的一些地方改造了呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 18,
+      "start": 1262.1,
+      "end": 1263.6,
+      "speaker": "host",
+      "text": "这个过程非常的的重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 19,
+      "start": 1263.6,
+      "end": 1272.0,
+      "speaker": "host",
+      "text": "你知道以前你要是从这个陕西出了西安，过了延安再往北走，基本上全部都是沙漠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 20,
+      "start": 1272.0,
+      "end": 1278.0,
+      "speaker": "host",
+      "text": "现在呢，大家应该听过我之前竟然给大家说那个，你像那片巴丹吉林沙漠，毛乌素沙漠对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 21,
+      "start": 1278.0,
+      "end": 1279.6,
+      "speaker": "host",
+      "text": "听过这个地方吗？叫毛乌素沙漠，听过没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 22,
+      "start": 1279.6,
+      "end": 1280.1,
+      "speaker": "guest",
+      "text": "毛乌素。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 23,
+      "start": 1280.6,
+      "end": 1282.0,
+      "speaker": "host",
+      "text": "毛乌素沙漠应该叫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 24,
+      "start": 1282.0,
+      "end": 1282.3,
+      "speaker": "guest",
+      "text": "听过。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 25,
+      "start": 1282.3,
+      "end": 1284.2,
+      "speaker": "host",
+      "text": "你到了榆林那带就是这个，毛乌素沙漠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 26,
+      "start": 1284.2,
+      "end": 1288.0,
+      "speaker": "host",
+      "text": "然后毛乌素沙漠现在80%已经被绿化了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 27,
+      "start": 1289.4,
+      "end": 1293.9,
+      "speaker": "host",
+      "text": "你要知道这80%的绿化可是人们几十年努力的结果。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 28,
+      "start": 1293.9,
+      "end": 1297.5,
+      "speaker": "host",
+      "text": "但是当然呢，这个在陕西的北部宁夏那一代是毛乌素沙漠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 29,
+      "start": 1297.5,
+      "end": 1300.0,
+      "speaker": "host",
+      "text": "在北京再往北有什么呀？我之前给大家说过那个叫做",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 30,
+      "start": 1304.0,
+      "end": 1305.5,
+      "speaker": "host",
+      "text": "咱之前还在那找过黑猪吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 31,
+      "start": 1305.5,
+      "end": 1311.0,
+      "speaker": "host",
+      "text": "我跟你说北大在那还有一个科考站，就是专门研究树木落叶对于气候变化的影响，叫哪？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 32,
+      "start": 1311.0,
+      "end": 1312.9,
+      "speaker": "host",
+      "text": "叫塞罕坝，非常好，听过没？河北塞罕坝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 33,
+      "start": 1313.6,
+      "end": 1320.0,
+      "speaker": "host",
+      "text": "塞罕坝以前也是全部都是森林，他是什么时候变成荒漠的？就是在清的时候，因为你想故宫里头那么多居住的人，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 34,
+      "start": 1320.0,
+      "end": 1322.0,
+      "speaker": "host",
+      "text": "北京城里住那么多王公贵族们。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 35,
+      "start": 1322.0,
+      "end": 1324.0,
+      "speaker": "host",
+      "text": "他们冬天要取暖要干嘛？要烧木炭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 36,
+      "start": 1324.0,
+      "end": 1330.0,
+      "speaker": "host",
+      "text": "木炭就是把好的木头放到窑里头，烧完之后又迅速的封住，相当于它之后没有把树烧成灰，烧成了留下黑色木炭，你们见过没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 37,
+      "start": 1330.0,
+      "end": 1331.0,
+      "speaker": "host",
+      "text": "烤肉有那种木炭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 38,
+      "start": 1331.0,
+      "end": 1335.0,
+      "speaker": "host",
+      "text": "所以当时塞罕坝的树全被砍来做木炭的，冬天取热，取暖用。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 39,
+      "start": 1335.0,
+      "end": 1338.0,
+      "speaker": "host",
+      "text": "当然呢，其实北京也有一些当时设计那种东北那种地龙，你见过没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 40,
+      "start": 1338.0,
+      "end": 1343.0,
+      "speaker": "host",
+      "text": "就房屋底下是空的，跟地下室一样，把木屑、树叶、树枝填到里头，见过那种没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 41,
+      "start": 1343.0,
+      "end": 1347.0,
+      "speaker": "host",
+      "text": "然后把那点着，但是留出一点点透气孔，所以它能够缓慢的燃烧，这个时候到家里你就很热。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 42,
+      "start": 1347.0,
+      "end": 1349.0,
+      "speaker": "host",
+      "text": "但是呢，你想一冬天得烧多少木炭？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 43,
+      "start": 1350.0,
+      "end": 1350.8,
+      "speaker": "host",
+      "text": "能理解我意思吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 44,
+      "start": 1351.7,
+      "end": 1357.0,
+      "speaker": "host",
+      "text": "所以塞罕坝就是经过过度砍伐之后变成了荒漠，所以早些年北京春天沙子，有一部分沙子就是从这来的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 45,
+      "start": 1357.0,
+      "end": 1360.0,
+      "speaker": "host",
+      "text": "那后来建国以后，我们就开始疯狂的绿化。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 46,
+      "start": 1360.0,
+      "end": 1362.0,
+      "speaker": "host",
+      "text": "大家要知道这个事情是真的",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 47,
+      "start": 1364.0,
+      "end": 1368.0,
+      "speaker": "host",
+      "text": "福泽后代，功在千秋的一件事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 48,
+      "start": 1369.0,
+      "end": 1371.0,
+      "speaker": "host",
+      "text": "因为你要知道我们的面积就是这么多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 49,
+      "start": 1371.0,
+      "end": 1374.0,
+      "speaker": "host",
+      "text": "而且大家知道青藏高原占了大概有三分之一。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 50,
+      "start": 1374.0,
+      "end": 1376.0,
+      "speaker": "host",
+      "text": "西北干旱区占了有三分之一。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 51,
+      "start": 1376.0,
+      "end": 1383.0,
+      "speaker": "host",
+      "text": "我们实际上用来大面积能够耕种，然后能够生活的城市，只有相对湿润的平坦的那三分之一地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 52,
+      "start": 1383.0,
+      "end": 1390.0,
+      "speaker": "host",
+      "text": "但是那三分之一地方大家又知道，有非常多的丘陵与山脉，没有办法用来实行平原的大耕种，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 53,
+      "start": 1390.0,
+      "end": 1394.0,
+      "speaker": "host",
+      "text": "我们比如说你到美国看那种平原大耕种，很羡慕，因为我们没有确实没有那么多那种平的耕地。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 54,
+      "start": 1394.0,
+      "end": 1395.0,
+      "speaker": "host",
+      "text": "你看它中间平原都很平。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 55,
+      "start": 1396.0,
+      "end": 1400.0,
+      "speaker": "host",
+      "text": "所以我们就是在这样小的地方运用自己的智慧，你比如说你到贵州看到梯田，见过没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 56,
+      "start": 1400.0,
+      "end": 1401.0,
+      "speaker": "host",
+      "text": "哇，那梯田特别好看。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 57,
+      "start": 1402.0,
+      "end": 1405.0,
+      "speaker": "host",
+      "text": "但是你想一想，但凡有平地谁愿意在山上弄呀？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 58,
+      "start": 1406.0,
+      "end": 1411.0,
+      "speaker": "host",
+      "text": "所以这些就体现了我们与自然相处的一个智慧，也体现了我们的耐心和勤劳。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 59,
+      "start": 1413.0,
+      "end": 1419.0,
+      "speaker": "host",
+      "text": "西北内陆，如果说能够通过种植业，让他们收益，那就有个更好的点，就是他们会种越来越多的枸杞树，对不对？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 60,
+      "start": 1419.0,
+      "end": 1420.0,
+      "speaker": "host",
+      "text": "种越来越多的西瓜，对不对？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 61,
+      "start": 1420.0,
+      "end": 1422.0,
+      "speaker": "host",
+      "text": "而不是通过过度的放牧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 62,
+      "start": 1422.0,
+      "end": 1432.0,
+      "speaker": "host",
+      "text": "但是现在其实已经没有放养了，大家知道现在即使牧场也是在这个圈养里头，然后他们买的这个农民的饲料，比如说养过的玉米，种过的玉米梗啊，这种东西来养的，能理解吧？牧草这种养的，牧草养的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 63,
+      "start": 1432.0,
+      "end": 1436.0,
+      "speaker": "host",
+      "text": "就如果能够通过大面积绿化让他们挣钱，那这是个好事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 64,
+      "start": 1436.0,
+      "end": 1440.0,
+      "speaker": "host",
+      "text": "然后枸杞是一个，还有咱卖的那个民心的瓜是吧？今天有，你可以给大家谈一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 65,
+      "start": 1440.0,
+      "end": 1441.0,
+      "speaker": "guest",
+      "text": "二号。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 66,
+      "start": 1441.0,
+      "end": 1442.0,
+      "speaker": "host",
+      "text": "二号链接。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 67,
+      "start": 1444.0,
+      "end": 1446.0,
+      "speaker": "host",
+      "text": "当然呢，这是讲了这块的地理，我们再来讲一讲历史。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 68,
+      "start": 1446.0,
+      "end": 1447.0,
+      "speaker": "host",
+      "text": "讲历史就是讲宁夏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 69,
+      "start": 1447.0,
+      "end": 1453.0,
+      "speaker": "host",
+      "text": "宁夏给大家讲过以前叫那个谁，杜甫找的时候，找看子登记，那时候叫灵武，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 70,
+      "start": 1453.0,
+      "end": 1459.0,
+      "speaker": "host",
+      "text": "再再往后大家知道这个成吉思汗当年西征回来之后，经过这里要攻打西夏，也是在这成吉思汗死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 71,
+      "start": 1460.0,
+      "end": 1465.0,
+      "speaker": "host",
+      "text": "成吉思汗是天之骄子呀，对吧？整个欧亚大陆都闻风丧胆的人，他死在了西夏一个很小的地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 72,
+      "start": 1465.0,
+      "end": 1469.0,
+      "speaker": "host",
+      "text": "你去研究元，那几个人都是在很小的地方出了意外。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 73,
+      "start": 1469.0,
+      "end": 1471.0,
+      "speaker": "host",
+      "text": "大家还知道成吉思汗的儿子叫什么，知道吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 74,
+      "start": 1472.0,
+      "end": 1473.0,
+      "speaker": "host",
+      "text": "成吉思汗的儿子叫什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 75,
+      "start": 1474.0,
+      "end": 1476.0,
+      "speaker": "host",
+      "text": "其中一个儿子，你看过射雕英雄传没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 76,
+      "start": 1477.0,
+      "end": 1479.0,
+      "speaker": "host",
+      "text": "跟郭靖小时候在草原上玩得很好那个玩叫啥？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 77,
+      "start": 1480.0,
+      "end": 1481.0,
+      "speaker": "host",
+      "text": "郭靖说我的什么安达？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 78,
+      "start": 1482.0,
+      "end": 1484.0,
+      "speaker": "host",
+      "text": "拖雷安达没听过吗？拖雷。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 79,
+      "start": 1485.0,
+      "end": 1486.0,
+      "speaker": "host",
+      "text": "拖雷安达。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 80,
+      "start": 1486.0,
+      "end": 1491.0,
+      "speaker": "host",
+      "text": "拖雷有一个孩子，后来继承了大汗位叫谁？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 81,
+      "start": 1491.0,
+      "end": 1493.0,
+      "speaker": "host",
+      "text": "后来还参加过长子西征，我跟你们说过参加过长子西征叫什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 82,
+      "start": 1494.0,
+      "end": 1495.0,
+      "speaker": "host",
+      "text": "叫蒙哥。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 83,
+      "start": 1498.0,
+      "end": 1505.0,
+      "speaker": "host",
+      "text": "蒙哥可是当年参加过长子西征的，蒙古二次西征，整个东欧和现在的俄罗斯这一带都闻风丧胆的男人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 84,
+      "start": 1505.0,
+      "end": 1510.0,
+      "speaker": "host",
+      "text": "当时差点就要去攻打埃及和更远的国家了，然后蒙哥去世了，所以那些兵就撤回来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 85,
+      "start": 1510.0,
+      "end": 1512.0,
+      "speaker": "host",
+      "text": "然后因为他们要回到草原上去争过大汗之位嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 86,
+      "start": 1512.0,
+      "end": 1514.0,
+      "speaker": "host",
+      "text": "那蒙哥是在哪去世的，你们知道不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 87,
+      "start": 1517.0,
+      "end": 1519.0,
+      "speaker": "host",
+      "text": "怎么能宁夏呢？成吉思汗是在西夏，是在宁夏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 88,
+      "start": 1520.0,
+      "end": 1525.0,
+      "speaker": "host",
+      "text": "蒙哥是在当时攻打，就是以前应该叫属于四川，现在是叫重庆的钓鱼城，听过这个地方没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 89,
+      "start": 1528.0,
+      "end": 1533.0,
+      "speaker": "host",
+      "text": "一个非常小的一个地方，硬是把南宋的寿命往后拖延了几十年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 90,
+      "start": 1533.0,
+      "end": 1534.0,
+      "speaker": "host",
+      "text": "就是这个地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 91,
+      "start": 1534.0,
+      "end": 1535.0,
+      "speaker": "guest",
+      "text": "重庆。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 92,
+      "start": 1535.0,
+      "end": 1537.0,
+      "speaker": "host",
+      "text": "现在属于重庆了，对，以前属于四川。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 93,
+      "start": 1537.0,
+      "end": 1538.0,
+      "speaker": "guest",
+      "text": "合川。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 94,
+      "start": 1538.0,
+      "end": 1539.0,
+      "speaker": "host",
+      "text": "合川钓鱼城，现在知道的哈。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 95,
+      "start": 1539.0,
+      "end": 1546.0,
+      "speaker": "host",
+      "text": "以前呢，这个是没有三点水那个河，那个不是那个，对，有三点水那个河川是陕西的，陕西河阳那个河川，就关关雎鸠在河之洲，窈窕淑女君子好逑，说的是那的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 96,
+      "start": 1546.0,
+      "end": 1551.0,
+      "speaker": "host",
+      "text": "然后呢，在钓鱼城这里久攻不下，最后呢，因为城里头修的它的防御的设施很好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 97,
+      "start": 1551.0,
+      "end": 1555.0,
+      "speaker": "host",
+      "text": "就像那个城像军事弹琴堡垒，外面全是城，墙很高的墙，外面是一条河，攻不下来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 98,
+      "start": 1555.0,
+      "end": 1559.0,
+      "speaker": "host",
+      "text": "然后最后呢，他没有想到那些人甚至晚上跑出去偷袭他去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 99,
+      "start": 1559.0,
+      "end": 1564.0,
+      "speaker": "host",
+      "text": "然后他们也没有准备，大晚上据说很乱，有几种说法，一种说是病死，一种说是这种大乱中他被刺死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 100,
+      "start": 1565.0,
+      "end": 1574.0,
+      "speaker": "host",
+      "text": "蒙哥去世之后呢，当时正在打武汉当时的这个蒙古兵就往北撤，然后呢在西征这个欧洲的蒙古兵也往回撤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 101,
+      "start": 1574.0,
+      "end": 1577.0,
+      "speaker": "host",
+      "text": "那在蒙哥之后是谁？哪个大汗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 102,
+      "start": 1577.0,
+      "end": 1581.0,
+      "speaker": "host",
+      "text": "在蒙哥之后就是大家后来知道的，建立了元，谁建立的元啊，导演？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 103,
+      "start": 1582.0,
+      "end": 1583.0,
+      "speaker": "host",
+      "text": "谁建立的元？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 104,
+      "start": 1584.0,
+      "end": 1587.0,
+      "speaker": "host",
+      "text": "是蒙哥的兄弟叫做忽必烈。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 105,
+      "start": 1589.0,
+      "end": 1590.0,
+      "speaker": "host",
+      "text": "忽必烈。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 106,
+      "start": 1590.0,
+      "end": 1592.0,
+      "speaker": "host",
+      "text": "这是兄弟关系，不是父子关系。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 107,
+      "start": 1593.0,
+      "end": 1597.0,
+      "speaker": "host",
+      "text": "草原上的民族一般是哥哥去世了，弟弟继位，或者弟弟去世了，哥哥继位，你知道为什么吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 108,
+      "start": 1598.0,
+      "end": 1602.0,
+      "speaker": "host",
+      "text": "你看过成吉思汗小时候的故事，就是成吉思汗的父亲去世之后，因为他还小。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 109,
+      "start": 1605.0,
+      "end": 1608.0,
+      "speaker": "host",
+      "text": "大家都听过一个成语叫做少主国疑，听过没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 110,
+      "start": 1609.0,
+      "end": 1611.0,
+      "speaker": "host",
+      "text": "或者叫主少国疑，听过这个说法没？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 111,
+      "start": 1611.0,
+      "end": 1615.0,
+      "speaker": "host",
+      "text": "就是如果这个人特别小的话，皇上特别小的话，然后呢",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 112,
+      "start": 1617.0,
+      "end": 1620.0,
+      "speaker": "host",
+      "text": "其他的这些诸侯啊，或者是大臣啊，就根本就不害怕你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 113,
+      "start": 1621.0,
+      "end": 1623.0,
+      "speaker": "host",
+      "text": "他就容易主少国疑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 114,
+      "start": 1623.0,
+      "end": 1625.0,
+      "speaker": "host",
+      "text": "你看大家说到了，主少国疑，或者也有个我也听过人说少主国疑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 115,
+      "start": 1625.0,
+      "end": 1630.0,
+      "speaker": "host",
+      "text": "主少国疑就是这个皇帝如果年龄特别小的话，他就镇不住场子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 116,
+      "start": 1630.0,
+      "end": 1632.0,
+      "speaker": "host",
+      "text": "所以就会容易引起叛乱，能理解吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 117,
+      "start": 1632.0,
+      "end": 1637.0,
+      "speaker": "host",
+      "text": "大家看到我们历史上是不是有很多孩子还小的时候，就被人把持朝政，最后以至于他没有办法的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 118,
+      "start": 1638.0,
+      "end": 1639.0,
+      "speaker": "host",
+      "text": "对吧？这种故事太多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 119,
+      "start": 1639.0,
+      "end": 1644.0,
+      "speaker": "host",
+      "text": "所以他们是总结这种教训的，所以草原上一般是这个兄弟之间，兄弟之间。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 120,
+      "start": 1644.0,
+      "end": 1646.0,
+      "speaker": "host",
+      "text": "除非说儿子年龄特别大了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 121,
+      "start": 1647.0,
+      "end": 1648.0,
+      "speaker": "host",
+      "text": "要不然就是兄弟之间。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 122,
+      "start": 1650.0,
+      "end": 1653.0,
+      "speaker": "host",
+      "text": "来，接下来给大家推荐一下农产品，农产品，农产品啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 123,
+      "start": 1653.0,
+      "end": 1656.0,
+      "speaker": "host",
+      "text": "来，河北的红薯，西瓜红蜜薯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 124,
+      "start": 1658.0,
+      "end": 1660.0,
+      "speaker": "host",
+      "text": "这个是掰断的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 125,
+      "start": 1660.0,
+      "end": 1660.3,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 126,
+      "start": 1660.3,
+      "end": 1663.0,
+      "speaker": "host",
+      "text": "这个朋友们在收到的时候不可能是在断的吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 127,
+      "start": 1663.0,
+      "end": 1663.3,
+      "speaker": "guest",
+      "text": "不会。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 128,
+      "start": 1663.3,
+      "end": 1664.0,
+      "speaker": "host",
+      "text": "不会啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 129,
+      "start": 1664.0,
+      "end": 1664.3,
+      "speaker": "guest",
+      "text": "因为我们有售后。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 130,
+      "start": 1664.3,
+      "end": 1666.0,
+      "speaker": "host",
+      "text": "有我们有售后，OK，坏果包赔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 131,
+      "start": 1679.0,
+      "end": 1682.0,
+      "speaker": "host",
+      "text": "然后这个我要纠正昨天一个口误啊，我昨天说的时候应该是说错了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 132,
+      "start": 1682.0,
+      "end": 1684.0,
+      "speaker": "host",
+      "text": "我昨天说到了范雎。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 133,
+      "start": 1685.0,
+      "end": 1686.0,
+      "speaker": "host",
+      "text": "范雎是哪人？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 134,
+      "start": 1686.0,
+      "end": 1687.0,
+      "speaker": "host",
+      "text": "说是山西芮城人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 135,
+      "start": 1687.0,
+      "end": 1691.0,
+      "speaker": "host",
+      "text": "范雎害死的是白起，我昨天应该是说成了蒙恬了，我没有注意。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 136,
+      "start": 1691.0,
+      "end": 1692.0,
+      "speaker": "host",
+      "text": "我应该结束之后有朋友跟我提醒了这个点。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 137,
+      "start": 1694.0,
+      "end": 1695.0,
+      "speaker": "host",
+      "text": "白起大家知道吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 138,
+      "start": 1696.0,
+      "end": 1696.3,
+      "speaker": "guest",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 139,
+      "start": 1696.3,
+      "end": 1697.0,
+      "speaker": "guest",
+      "text": "白起。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 140,
+      "start": 1697.0,
+      "end": 1697.3,
+      "speaker": "host",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 141,
+      "start": 1697.3,
+      "end": 1699.0,
+      "speaker": "host",
+      "text": "白起，秦能统一六国，白起至少能出一般功劳。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 142,
+      "start": 1700.0,
+      "end": 1700.3,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 143,
+      "start": 1700.3,
+      "end": 1707.0,
+      "speaker": "host",
+      "text": "后来梁启超先生他不是研究过这些事吗？他说至少当年秦灭六国，所有的打败的军队的数量里头，白起所发动的战争他能占一半。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 144,
+      "start": 1707.0,
+      "end": 1708.0,
+      "speaker": "host",
+      "text": "我们叫战神嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 145,
+      "start": 1708.0,
+      "end": 1709.0,
+      "speaker": "host",
+      "text": "几乎没有败绩，白起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 146,
+      "start": 1709.0,
+      "end": 1715.0,
+      "speaker": "host",
+      "text": "白起后来就是因为他的功劳很高，然后在打赵国的时候，他跟范雎意见不合。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 147,
+      "start": 1717.0,
+      "end": 1719.0,
+      "speaker": "host",
+      "text": "范雎一通下出主意，赐死。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 148,
+      "start": 1720.0,
+      "end": 1726.0,
+      "speaker": "host",
+      "text": "你你看完白起，再看完这个蒙恬，再看完后来给大家所说过的这个但是龙城飞将，龙城飞将说是谁还记得不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 149,
+      "start": 1726.0,
+      "end": 1727.0,
+      "speaker": "guest",
+      "text": "李广。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 150,
+      "start": 1727.0,
+      "end": 1728.0,
+      "speaker": "host",
+      "text": "哎，非常好，李广。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 151,
+      "start": 1728.0,
+      "end": 1730.0,
+      "speaker": "host",
+      "text": "他们几个的都很像啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 152,
+      "start": 1731.0,
+      "end": 1734.0,
+      "speaker": "host",
+      "text": "白起在被刺死的时候，君叫臣死，臣不得不死，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 153,
+      "start": 1734.0,
+      "end": 1736.0,
+      "speaker": "host",
+      "text": "古代父叫子亡，子不得不亡那种感觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 154,
+      "start": 1736.0,
+      "end": 1741.0,
+      "speaker": "host",
+      "text": "白起在被范雎刺死，范雎说皇上要赐你死啊，白起说我为大秦帝我鞠躬尽瘁啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 155,
+      "start": 1741.0,
+      "end": 1743.0,
+      "speaker": "host",
+      "text": "让王死，真让我死，让王死那王死吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 156,
+      "start": 1743.0,
+      "end": 1747.0,
+      "speaker": "host",
+      "text": "然后死之前说为什么我为大秦帝国鞠躬尽瘁还要被刺死呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 157,
+      "start": 1748.0,
+      "end": 1751.0,
+      "speaker": "host",
+      "text": "人在我们说人之将死其言也善嘛，对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 158,
+      "start": 1751.0,
+      "end": 1753.0,
+      "speaker": "host",
+      "text": "人在临走之前都是会反思自己一生的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 159,
+      "start": 1755.0,
+      "end": 1756.0,
+      "speaker": "host",
+      "text": "希望那个时候我们人生不要有太多的遗憾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 160,
+      "start": 1756.0,
+      "end": 1761.0,
+      "speaker": "host",
+      "text": "白起会说我当年就是因为诈降赵国，那么多人已经投降了，我还是坑杀了他们。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 161,
+      "start": 1761.0,
+      "end": 1762.0,
+      "speaker": "host",
+      "text": "这应该是我造的孽。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 162,
+      "start": 1763.0,
+      "end": 1764.0,
+      "speaker": "host",
+      "text": "所以他就说自己被刺死。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 163,
+      "start": 1764.0,
+      "end": 1768.0,
+      "speaker": "host",
+      "text": "你看不得善终啊，古代人非常注意，注意我得善终，我不得善终，主要是因为我当年诈降。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 164,
+      "start": 1771.0,
+      "end": 1775.0,
+      "speaker": "host",
+      "text": "诈降赵国之后坑杀，所以我做了孽了，我活该。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 165,
+      "start": 1775.0,
+      "end": 1777.0,
+      "speaker": "host",
+      "text": "这是白起被范雎坑死。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 166,
+      "start": 1778.0,
+      "end": 1781.0,
+      "speaker": "host",
+      "text": "然后再接下来呢，大家后来昨天我给大家提到了狼牙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 167,
+      "start": 1782.0,
+      "end": 1786.0,
+      "speaker": "host",
+      "text": "狼牙人，就是山西，山东临沂人，叫蒙恬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 168,
+      "start": 1786.0,
+      "end": 1790.0,
+      "speaker": "host",
+      "text": "蒙恬的弟弟叫做蒙挚，大家看过那个成龙和金喜善应该是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 169,
+      "start": 1790.0,
+      "end": 1791.0,
+      "speaker": "host",
+      "text": "拍的那个叫神话，那个就说蒙挚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 170,
+      "start": 1792.0,
+      "end": 1795.0,
+      "speaker": "host",
+      "text": "蒙恬蒙挚，这真的是大秦重臣啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 171,
+      "start": 1796.0,
+      "end": 1797.0,
+      "speaker": "host",
+      "text": "蒙恬也被刺死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 172,
+      "start": 1797.0,
+      "end": 1799.0,
+      "speaker": "host",
+      "text": "蒙恬自死，谁刺死呢？是是赵高。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 173,
+      "start": 1799.0,
+      "end": 1800.0,
+      "speaker": "host",
+      "text": "赵高使的坏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 174,
+      "start": 1800.0,
+      "end": 1803.0,
+      "speaker": "host",
+      "text": "然后呢，因为始皇帝出游途中呢，意外离世。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 175,
+      "start": 1803.0,
+      "end": 1811.0,
+      "speaker": "host",
+      "text": "其实这个秦始皇能坐稳皇位，能够远击匈奴，能够修长城，能够修大秦知道，全部都是这三件事情，主要这三件事情都是蒙恬在帮他做的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 176,
+      "start": 1811.0,
+      "end": 1812.0,
+      "speaker": "host",
+      "text": "领30万军队。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 177,
+      "start": 1812.0,
+      "end": 1814.0,
+      "speaker": "host",
+      "text": "那蒙恬当时如果想反那也很容易。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 178,
+      "start": 1814.0,
+      "end": 1817.0,
+      "speaker": "host",
+      "text": "但是蒙恬三代都是为秦帝国去服务的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 179,
+      "start": 1817.0,
+      "end": 1818.0,
+      "speaker": "host",
+      "text": "所以蒙恬的死的时候也说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 180,
+      "start": 1819.0,
+      "end": 1821.0,
+      "speaker": "host",
+      "text": "就为什么呢？为什么呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 181,
+      "start": 1821.0,
+      "end": 1822.0,
+      "speaker": "host",
+      "text": "为什么要赐我死呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 182,
+      "start": 1822.0,
+      "end": 1824.0,
+      "speaker": "host",
+      "text": "所以他做思考说。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 183,
+      "start": 1824.0,
+      "end": 1826.0,
+      "speaker": "host",
+      "text": "一定是以为我修长城。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 184,
+      "start": 1826.0,
+      "end": 1827.0,
+      "speaker": "host",
+      "text": "但是知道秦的长城是从哪起的吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 185,
+      "start": 1832.0,
+      "end": 1834.0,
+      "speaker": "host",
+      "text": "秦的长城西起哪里？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 186,
+      "start": 1836.0,
+      "end": 1837.0,
+      "speaker": "host",
+      "text": "秦长城。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 187,
+      "start": 1838.0,
+      "end": 1840.0,
+      "speaker": "host",
+      "text": "西起哪里？东至哪里？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 188,
+      "start": 1841.0,
+      "end": 1842.0,
+      "speaker": "host",
+      "text": "东至辽东，这个大家都知道吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 189,
+      "start": 1842.0,
+      "end": 1843.0,
+      "speaker": "host",
+      "text": "西起哪里呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 190,
+      "start": 1845.0,
+      "end": 1846.0,
+      "speaker": "host",
+      "text": "哎，不是雁门关，怎么能是雁门关呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 191,
+      "start": 1846.0,
+      "end": 1847.0,
+      "speaker": "guest",
+      "text": "我以为是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 192,
+      "start": 1847.0,
+      "end": 1849.0,
+      "speaker": "host",
+      "text": "西起，我看一下有人能说对不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 193,
+      "start": 1849.0,
+      "end": 1850.0,
+      "speaker": "host",
+      "text": "是甘肃，是甘肃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 194,
+      "start": 1850.0,
+      "end": 1854.0,
+      "speaker": "host",
+      "text": "现在我们教材上写的是临洮，各位朋友们，我得给大家纠正一个问题啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 195,
+      "start": 1854.0,
+      "end": 1855.0,
+      "speaker": "host",
+      "text": "注意，古代的临洮跟现在临洮不是一个地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 196,
+      "start": 1855.0,
+      "end": 1860.0,
+      "speaker": "host",
+      "text": "古代的临洮实际上是现在的，实际上是现在的岷县。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 197,
+      "start": 1860.0,
+      "end": 1861.0,
+      "speaker": "guest",
+      "text": "岷县，甘肃。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 198,
+      "start": 1861.0,
+      "end": 1863.0,
+      "speaker": "host",
+      "text": "实际上是甘肃现在的岷县。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 199,
+      "start": 1864.0,
+      "end": 1867.0,
+      "speaker": "host",
+      "text": "就是岷县在古代叫临洮，大家知道不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 200,
+      "start": 1867.0,
+      "end": 1868.0,
+      "speaker": "host",
+      "text": "在秦的时候它叫临洮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 201,
+      "start": 1870.0,
+      "end": 1871.0,
+      "speaker": "host",
+      "text": "不一样，这个不一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 202,
+      "start": 1871.0,
+      "end": 1873.0,
+      "speaker": "host",
+      "text": "这个我是专门查过史料的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 203,
+      "start": 1873.0,
+      "end": 1876.0,
+      "speaker": "host",
+      "text": "在古代的这个岷县叫临洮，大家知道不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 204,
+      "start": 1876.0,
+      "end": 1878.0,
+      "speaker": "host",
+      "text": "然后西起岷县，东至辽东。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 205,
+      "start": 1878.0,
+      "end": 1883.0,
+      "speaker": "host",
+      "text": "然后呢，蒙恬在这回忆呢，说哎呀，我这当年修那么多长城，肯定是有挖了不该挖的地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 206,
+      "start": 1883.0,
+      "end": 1885.0,
+      "speaker": "host",
+      "text": "肯定是有动了不该动的根基。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 207,
+      "start": 1885.0,
+      "end": 1887.0,
+      "speaker": "host",
+      "text": "肯定是有伤了不该伤的龙脉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 208,
+      "start": 1887.0,
+      "end": 1889.0,
+      "speaker": "host",
+      "text": "但是古代人嘛，对吧？他可能认知范围和我们认知不一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 209,
+      "start": 1891.0,
+      "end": 1894.0,
+      "speaker": "host",
+      "text": "请代表我个人观点，如果有风水学的朋友，按您自己的理解去说就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 210,
+      "start": 1894.0,
+      "end": 1897.0,
+      "speaker": "host",
+      "text": "所以蒙恬，蒙恬在死之前也说，哎呀，我肯定是以为做了这个错事了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 211,
+      "start": 1898.0,
+      "end": 1899.0,
+      "speaker": "host",
+      "text": "范雎没有，没有写错，是这样子的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 212,
+      "start": 1899.0,
+      "end": 1900.0,
+      "speaker": "host",
+      "text": "我写错了吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 213,
+      "start": 1901.0,
+      "end": 1903.0,
+      "speaker": "host",
+      "text": "这个字没有错，它不是木，它是这样子的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 214,
+      "start": 1903.0,
+      "end": 1903.6,
+      "speaker": "guest",
+      "text": "对，没错。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 215,
+      "start": 1903.6,
+      "end": 1904.0,
+      "speaker": "host",
+      "text": "没错吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 216,
+      "start": 1904.0,
+      "end": 1905.0,
+      "speaker": "host",
+      "text": "他们说我写错了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 217,
+      "start": 1905.0,
+      "end": 1906.0,
+      "speaker": "host",
+      "text": "没有错呀，是这样子，写着呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 218,
+      "start": 1907.0,
+      "end": 1908.0,
+      "speaker": "host",
+      "text": "蒙恬啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 219,
+      "start": 1910.0,
+      "end": 1914.0,
+      "speaker": "host",
+      "text": "西起临洮，东至辽东，但是在古代的临洮其实是现在的岷县。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 220,
+      "start": 1917.0,
+      "end": 1918.0,
+      "speaker": "host",
+      "text": "对，这是秦的长城。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 221,
+      "start": 1918.0,
+      "end": 1920.0,
+      "speaker": "host",
+      "text": "秦长城更靠北还是明长城更靠北？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 222,
+      "start": 1920.0,
+      "end": 1921.0,
+      "speaker": "guest",
+      "text": "明。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 223,
+      "start": 1921.0,
+      "end": 1922.0,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 224,
+      "start": 1922.0,
+      "end": 1923.0,
+      "speaker": "guest",
+      "text": "明长城更靠北是吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 225,
+      "start": 1923.0,
+      "end": 1924.0,
+      "speaker": "host",
+      "text": "错了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 226,
+      "start": 1924.0,
+      "end": 1925.0,
+      "speaker": "host",
+      "text": "秦长城更靠北。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 227,
+      "start": 1926.0,
+      "end": 1927.0,
+      "speaker": "host",
+      "text": "秦长城更靠北。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 228,
+      "start": 1928.0,
+      "end": 1930.0,
+      "speaker": "host",
+      "text": "然后明长城已经特别往里了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 229,
+      "start": 1931.0,
+      "end": 1932.0,
+      "speaker": "host",
+      "text": "为什么明长城往里呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 230,
+      "start": 1932.0,
+      "end": 1933.0,
+      "speaker": "host",
+      "text": "因为明之前是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 231,
+      "start": 1934.0,
+      "end": 1934.3,
+      "speaker": "guest",
+      "text": "元。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 232,
+      "start": 1934.3,
+      "end": 1936.0,
+      "speaker": "host",
+      "text": "元呢，长城修来是不是为了防止草原民族入侵的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 233,
+      "start": 1936.0,
+      "end": 1938.0,
+      "speaker": "host",
+      "text": "元都统一天下你咋防？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 234,
+      "start": 1938.0,
+      "end": 1939.0,
+      "speaker": "host",
+      "text": "所以你的长城不可能修那么远了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 235,
+      "start": 1939.0,
+      "end": 1940.0,
+      "speaker": "host",
+      "text": "你当然打不过别人，就打不过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 236,
+      "start": 1941.0,
+      "end": 1942.0,
+      "speaker": "host",
+      "text": "对吧？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 237,
+      "start": 1943.0,
+      "end": 1944.0,
+      "speaker": "host",
+      "text": "那未来那明之后才长城咋修的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 238,
+      "start": 1946.0,
+      "end": 1948.0,
+      "speaker": "guest",
+      "text": "对，睚眦必报说的就是范雎，大家很棒很棒。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 239,
+      "start": 1949.0,
+      "end": 1951.0,
+      "speaker": "host",
+      "text": "这个明之后就没有人修长城了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 240,
+      "start": 1951.0,
+      "end": 1952.0,
+      "speaker": "host",
+      "text": "因为清。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 241,
+      "start": 1953.0,
+      "end": 1954.0,
+      "speaker": "host",
+      "text": "满清啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 242,
+      "start": 1955.0,
+      "end": 1957.0,
+      "speaker": "host",
+      "text": "他就是少数民族，他修长城干嘛？防自己吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 243,
+      "start": 1958.0,
+      "end": 1958.3,
+      "speaker": "host",
+      "text": "疯了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 244,
+      "start": 1958.3,
+      "end": 1960.0,
+      "speaker": "host",
+      "text": "他们是骑射，他不可能修长城。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 245,
+      "start": 1960.0,
+      "end": 1961.0,
+      "speaker": "host",
+      "text": "我修长城干啥？防我自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 246,
+      "start": 1961.0,
+      "end": 1962.0,
+      "speaker": "host",
+      "text": "连我自己都打，疯了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 247,
+      "start": 1962.0,
+      "end": 1963.0,
+      "speaker": "host",
+      "text": "卖红薯，卖红薯啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 248,
+      "start": 1964.0,
+      "end": 1966.0,
+      "speaker": "host",
+      "text": "河北西瓜红蜜薯啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 249,
+      "start": 1967.0,
+      "end": 1968.0,
+      "speaker": "host",
+      "text": "只有1000单了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 250,
+      "start": 1968.0,
+      "end": 1970.0,
+      "speaker": "host",
+      "text": "24块8到手5斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 251,
+      "start": 1970.0,
+      "end": 1973.0,
+      "speaker": "host",
+      "text": "这个红薯我们去年冬天是吃过的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 252,
+      "start": 1973.0,
+      "end": 1975.0,
+      "speaker": "host",
+      "text": "虽然这个可能产地不同，但是品种是相同的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 253,
+      "start": 1976.0,
+      "end": 1977.0,
+      "speaker": "host",
+      "text": "有做好的，我天啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 254,
+      "start": 1977.0,
+      "end": 1978.0,
+      "speaker": "host",
+      "text": "我擦一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 255,
+      "start": 1978.0,
+      "end": 1979.0,
+      "speaker": "host",
+      "text": "好，谢谢谢谢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 256,
+      "start": 1980.0,
+      "end": 1983.0,
+      "speaker": "host",
+      "text": "这个蜜薯的特点就真的不知道会不会。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 257,
+      "start": 1983.0,
+      "end": 1984.0,
+      "speaker": "host",
+      "text": "也有红薯甜如蜜啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 258,
+      "start": 1991.0,
+      "end": 1992.0,
+      "speaker": "host",
+      "text": "给大家展示一下这个蜜薯啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 259,
+      "start": 1993.0,
+      "end": 1995.0,
+      "speaker": "host",
+      "text": "这应该是咱在空气炸锅里烤的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 260,
+      "start": 1995.0,
+      "end": 1995.3,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 261,
+      "start": 1995.3,
+      "end": 1996.0,
+      "speaker": "host",
+      "text": "所以皮有点黏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 262,
+      "start": 1996.0,
+      "end": 1997.0,
+      "speaker": "host",
+      "text": "但这种黏的其实更甜，你知道不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 263,
+      "start": 1998.0,
+      "end": 1998.3,
+      "speaker": "host",
+      "text": "看一下。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 264,
+      "start": 2002.0,
+      "end": 2003.0,
+      "speaker": "host",
+      "text": "蜜薯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 265,
+      "start": 2004.0,
+      "end": 2005.0,
+      "speaker": "host",
+      "text": "丝比较少。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 266,
+      "start": 2006.0,
+      "end": 2006.3,
+      "speaker": "host",
+      "text": "给你们分一个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 267,
+      "start": 2007.0,
+      "end": 2007.3,
+      "speaker": "host",
+      "text": "啊，很香啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 268,
+      "start": 2008.0,
+      "end": 2010.0,
+      "speaker": "host",
+      "text": "现在的红薯应该是棚里的红薯吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 269,
+      "start": 2010.0,
+      "end": 2011.0,
+      "speaker": "host",
+      "text": "去年红薯放不到现在吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 270,
+      "start": 2012.0,
+      "end": 2013.0,
+      "speaker": "host",
+      "text": "这很新鲜，这应该不是去年的红薯吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 271,
+      "start": 2013.0,
+      "end": 2014.0,
+      "speaker": "guest",
+      "text": "放冷库的。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 272,
+      "start": 2014.0,
+      "end": 2015.0,
+      "speaker": "host",
+      "text": "放冷库的，所以就是去年的对吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 273,
+      "start": 2015.0,
+      "end": 2015.3,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 274,
+      "start": 2017.0,
+      "end": 2018.0,
+      "speaker": "host",
+      "text": "我怀疑不是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 275,
+      "start": 2019.0,
+      "end": 2020.0,
+      "speaker": "host",
+      "text": "我觉得有可能棚里大棚里的红薯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 276,
+      "start": 2020.0,
+      "end": 2021.0,
+      "speaker": "host",
+      "text": "去年红薯咋能放这块呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 277,
+      "start": 2024.0,
+      "end": 2025.0,
+      "speaker": "host",
+      "text": "喜欢的朋友自己拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 278,
+      "start": 2029.0,
+      "end": 2030.0,
+      "speaker": "host",
+      "text": "红薯的品种也在不断的改良。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 279,
+      "start": 2031.0,
+      "end": 2032.0,
+      "speaker": "host",
+      "text": "咱之前卖过一个烟薯你听过没有？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 280,
+      "start": 2032.0,
+      "end": 2033.0,
+      "speaker": "guest",
+      "text": "烟薯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 281,
+      "start": 2033.0,
+      "end": 2034.0,
+      "speaker": "host",
+      "text": "烟薯是不是冒烟的红薯啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 282,
+      "start": 2034.0,
+      "end": 2034.3,
+      "speaker": "guest",
+      "text": "不是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 283,
+      "start": 2034.3,
+      "end": 2035.0,
+      "speaker": "host",
+      "text": "那是啥意思？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 284,
+      "start": 2035.0,
+      "end": 2036.0,
+      "speaker": "host",
+      "text": "烟薯的烟啥意思？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 285,
+      "start": 2037.0,
+      "end": 2037.3,
+      "speaker": "guest",
+      "text": "烟台。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 286,
+      "start": 2037.3,
+      "end": 2038.0,
+      "speaker": "host",
+      "text": "烟薯的烟啥意思？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 287,
+      "start": 2039.0,
+      "end": 2040.0,
+      "speaker": "host",
+      "text": "烟台，怎么能是烟台呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 288,
+      "start": 2040.0,
+      "end": 2041.0,
+      "speaker": "guest",
+      "text": "我以为是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 289,
+      "start": 2041.0,
+      "end": 2041.3,
+      "speaker": "host",
+      "text": "到底是谁？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 290,
+      "start": 2043.0,
+      "end": 2044.0,
+      "speaker": "host",
+      "text": "烟薯这个烟到底啥意思？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 291,
+      "start": 2045.0,
+      "end": 2046.0,
+      "speaker": "host",
+      "text": "导演不敢说，其实就是烟台。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 292,
+      "start": 2046.0,
+      "end": 2048.0,
+      "speaker": "host",
+      "text": "是烟台农科所培育的品种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 293,
+      "start": 2049.0,
+      "end": 2049.3,
+      "speaker": "host",
+      "text": "啊哈。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 294,
+      "start": 2049.3,
+      "end": 2050.0,
+      "speaker": "host",
+      "text": "所以叫烟薯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 295,
+      "start": 2050.0,
+      "end": 2051.0,
+      "speaker": "host",
+      "text": "但是你不确定嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 296,
+      "start": 2052.0,
+      "end": 2054.0,
+      "speaker": "host",
+      "text": "人生有时候就是这样，机会来了你不敢主动。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 297,
+      "start": 2054.0,
+      "end": 2056.0,
+      "speaker": "host",
+      "text": "或者你拿到了，你真是我的吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 298,
+      "start": 2056.0,
+      "end": 2057.0,
+      "speaker": "host",
+      "text": "真的是我的吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 299,
+      "start": 2057.0,
+      "end": 2058.0,
+      "speaker": "host",
+      "text": "犹豫啊。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 300,
+      "start": 2058.0,
+      "end": 2059.0,
+      "speaker": "host",
+      "text": "犹豫就会错过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 301,
+      "start": 2059.0,
+      "end": 2059.3,
+      "speaker": "guest",
+      "text": "就是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 302,
+      "start": 2059.3,
+      "end": 2061.0,
+      "speaker": "host",
+      "text": "就是烟台农科所培育的品种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 303,
+      "start": 2063.0,
+      "end": 2066.0,
+      "speaker": "host",
+      "text": "烟台农科所，郑州农科所培育了很多的品种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 304,
+      "start": 2066.0,
+      "end": 2067.0,
+      "speaker": "host",
+      "text": "你你不信吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 305,
+      "start": 2067.0,
+      "end": 2069.0,
+      "speaker": "host",
+      "text": "那你你要犹豫，那我有什么办法？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 306,
+      "start": 2069.0,
+      "end": 2070.0,
+      "speaker": "host",
+      "text": "机会还是错过了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 307,
+      "start": 2070.0,
+      "end": 2070.3,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 308,
+      "start": 2070.3,
+      "end": 2071.0,
+      "speaker": "guest",
+      "text": "卖光了。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 309,
+      "start": 2071.0,
+      "end": 2072.0,
+      "speaker": "host",
+      "text": "红薯卖光了啊，好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 310,
+      "start": 2075.0,
+      "end": 2077.0,
+      "speaker": "host",
+      "text": "红薯，董宇辉咋又来这一套？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 311,
+      "start": 2077.0,
+      "end": 2078.0,
+      "speaker": "host",
+      "text": "屡试不爽呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 312,
+      "start": 2079.0,
+      "end": 2080.0,
+      "speaker": "host",
+      "text": "兵不厌诈呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 313,
+      "start": 2081.0,
+      "end": 2081.3,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 314,
+      "start": 2081.3,
+      "end": 2081.6,
+      "speaker": "guest",
+      "text": "啥？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 315,
+      "start": 2081.6,
+      "end": 2082.0,
+      "speaker": "host",
+      "text": "啥挣钱难？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 316,
+      "start": 2082.0,
+      "end": 2083.0,
+      "speaker": "guest",
+      "text": "导演挣钱真难。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 317,
+      "start": 2083.0,
+      "end": 2084.0,
+      "speaker": "host",
+      "text": "导演挣钱真难。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 318,
+      "start": 2084.0,
+      "end": 2086.0,
+      "speaker": "host",
+      "text": "有朋友都呼吁了，说给董宇辉直播间的导演们加工资。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 319,
+      "start": 2086.0,
+      "end": 2086.3,
+      "speaker": "host",
+      "text": "为啥？",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 320,
+      "start": 2086.3,
+      "end": 2089.0,
+      "speaker": "host",
+      "text": "因为董宇辉每天提问，导演回答不上来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 321,
+      "start": 2089.0,
+      "end": 2090.0,
+      "speaker": "host",
+      "text": "工作体验太差了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 322,
+      "start": 2093.0,
+      "end": 2093.3,
+      "speaker": "guest",
+      "text": "红薯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 323,
+      "start": 2095.0,
+      "end": 2097.0,
+      "speaker": "host",
+      "text": "今年新鲜的红薯肯定是，因为去年的放不到这块。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 324,
+      "start": 2097.0,
+      "end": 2100.0,
+      "speaker": "host",
+      "text": "然后呢，这块种出来肯定是棚里的，所以它成本相对要高一些啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 325,
+      "start": 2100.0,
+      "end": 2101.0,
+      "speaker": "host",
+      "text": "因为棚你得有成本呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 326,
+      "start": 2102.0,
+      "end": 2104.0,
+      "speaker": "host",
+      "text": "给一些湿的纸，把桌子擦一下，要不然一会这个拿出来手又脏了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 327,
+      "start": 2105.0,
+      "end": 2106.0,
+      "speaker": "host",
+      "text": "红薯香，没了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 328,
+      "start": 2106.0,
+      "end": 2107.0,
+      "speaker": "host",
+      "text": "没了，那也拍不了了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 329,
+      "start": 2111.0,
+      "end": 2113.0,
+      "speaker": "host",
+      "text": "对，我们刚说到蒙恬，说到了这个白起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 330,
+      "start": 2113.0,
+      "end": 2118.0,
+      "speaker": "host",
+      "text": "蒙恬就是说服了后来我们所说的河南之地嘛，河就是黄河，黄河以南之地，就是现在的宁夏呀，巴彦淖尔啊，那一代。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    }
+  ]
+}

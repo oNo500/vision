@@ -1,0 +1,2946 @@
+{
+  "chunk_id": 0,
+  "start_offset": 0.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 0.0,
+      "end": 6.0,
+      "speaker": "host",
+      "text": "需要培養的一種能力啊。大家後來發現董宇輝把任何食物都賦予了過多的意義。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 1,
+      "start": 6.47,
+      "end": 16.47,
+      "speaker": "host",
+      "text": "這是一種本能,就是我嘗試從平淡生活裡頭去拔掉原有的刺,然後呢嘗試給平淡的生活賦予它更加豐富的意義。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 2,
+      "start": 16.88,
+      "end": 22.28,
+      "speaker": "host",
+      "text": "日子都是一天一天過的,你不可能每天都浪跡天涯,也不可能每天都",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 3,
+      "start": 22.88,
+      "end": 29.38,
+      "speaker": "host",
+      "text": "呃,仗劍四方,對吧?所以呢,雖然日子平淡,但是只要你內心有美,你看到的全是風景。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 4,
+      "start": 29.78,
+      "end": 30.18,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 5,
+      "start": 31.48,
+      "end": 32.38,
+      "speaker": "host",
+      "text": "感謝大家啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 6,
+      "start": 34.18,
+      "end": 37.98,
+      "speaker": "host",
+      "text": "大家現在不要跟我說了,那個詞是用來誇石明老師的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 7,
+      "start": 38.38,
+      "end": 41.08,
+      "speaker": "host",
+      "text": "你們再這樣,再這樣我就傷害自己,讓你心疼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 8,
+      "start": 41.48,
+      "end": 43.38,
+      "speaker": "host",
+      "text": "呃,除了這個南瓜以外還有什麼,導演?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 9,
+      "start": 43.68,
+      "end": 44.48,
+      "speaker": "host",
+      "text": "這個南瓜今天有多少單?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 10,
+      "start": 44.58,
+      "end": 45.38,
+      "speaker": "guest",
+      "text": "還有香菇。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 11,
+      "start": 45.58,
+      "end": 47.18,
+      "speaker": "guest",
+      "text": "今天還有8000單。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 12,
+      "start": 47.38,
+      "end": 48.08,
+      "speaker": "host",
+      "text": "還有8000單。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 13,
+      "start": 48.08,
+      "end": 51.08,
+      "speaker": "host",
+      "text": "終於有個可以頂著扛賣的農產品了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 14,
+      "start": 51.38,
+      "end": 51.68,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 0
+    },
+    {
+      "idx": 15,
+      "start": 53.08,
+      "end": 104.28,
+      "speaker": "host",
+      "text": "我記得去年冬天我們一開始賣這個小南瓜的時候,那會我還跟石明老師合租啊,然後我當時每天早上起來,就是人生中最難的那一段時間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 16,
+      "start": 104.28,
+      "end": 112.28,
+      "speaker": "host",
+      "text": "坦誠來說,從工作這麼多年來最難的一段時間,就是2000塊錢生活費,然後要過一個月的時候,還要繳這個話費、電費、水費的時候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 17,
+      "start": 112.68,
+      "end": 116.08,
+      "speaker": "host",
+      "text": "我當時就買了這個Baby Pumpkin,因為我們直播間裡在賣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 18,
+      "start": 116.38,
+      "end": 121.08,
+      "speaker": "host",
+      "text": "然後就是你生活有難的時候,其實你也要學會去珍惜自己,照顧自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 19,
+      "start": 121.58,
+      "end": 128.38,
+      "speaker": "host",
+      "text": "你你一定會一個人獨行過一段特別黑的時間,就猶如一個長長的隧道一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 20,
+      "start": 128.68,
+      "end": 133.08,
+      "speaker": "host",
+      "text": "你你可能很長時間看不到光,你有的時候覺得要不我就放棄吧,我就躺這吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 21,
+      "start": 133.48,
+      "end": 136.08,
+      "speaker": "host",
+      "text": "我要回家,我要找爸媽,我要哭,我要訴苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 22,
+      "start": 136.38,
+      "end": 138.28,
+      "speaker": "host",
+      "text": "我應該有訴苦的權利,對嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 23,
+      "start": 139.28,
+      "end": 142.18,
+      "speaker": "host",
+      "text": "其實你再走一走,前面就有了微微的光亮了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 24,
+      "start": 142.58,
+      "end": 149.08,
+      "speaker": "host",
+      "text": "我我當時就,因為我那段時間就心情不太好,坦誠來說生活狀態也不太好,所以我當時就嘗試給自己一些這種正向的鼓勵。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 25,
+      "start": 149.28,
+      "end": 152.48,
+      "speaker": "host",
+      "text": "我平常是一個生活能力非常低的人,生活能力非常低的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 26,
+      "start": 152.68,
+      "end": 155.18,
+      "speaker": "host",
+      "text": "所以我那段嘗試給自己一些正向的暗示。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 27,
+      "start": 155.68,
+      "end": 160.08,
+      "speaker": "host",
+      "text": "所以呢,當時就買了一個這個,買了一份我們直播間的這個Baby南瓜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 28,
+      "start": 160.38,
+      "end": 168.38,
+      "speaker": "host",
+      "text": "然後呢,把它洗乾淨,早上等我去沖澡的時候,放在那個煮蛋的那個小鍋裡頭,上面有個小的那個人梯,可能就八分鐘左右。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 29,
+      "start": 168.38,
+      "end": 171.98,
+      "speaker": "host",
+      "text": "等我沖澡出來了,然後收拾好了,他也蒸好了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 30,
+      "start": 172.18,
+      "end": 174.18,
+      "speaker": "host",
+      "text": "我就拿個小盒子,還記得去年冬天一段時間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 31,
+      "start": 174.48,
+      "end": 177.18,
+      "speaker": "host",
+      "text": "每天拿個小盒子,一個小盒子裡頭是煮的兩個雞蛋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 32,
+      "start": 177.48,
+      "end": 178.48,
+      "speaker": "host",
+      "text": "一個小盒子是南瓜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 33,
+      "start": 178.68,
+      "end": 179.48,
+      "speaker": "guest",
+      "text": "再喝點牛奶。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 34,
+      "start": 179.68,
+      "end": 180.48,
+      "speaker": "host",
+      "text": "啊對,對。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 35,
+      "start": 180.78,
+      "end": 182.98,
+      "speaker": "host",
+      "text": "牛奶一般要從公司偷,要從公司借。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 36,
+      "start": 183.18,
+      "end": 184.68,
+      "speaker": "host",
+      "text": "一般要從公司借,牛奶太貴了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 37,
+      "start": 184.78,
+      "end": 185.28,
+      "speaker": "guest",
+      "text": "理解。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 38,
+      "start": 185.48,
+      "end": 189.28,
+      "speaker": "host",
+      "text": "牛奶一般太貴了,我當時是,當時是這個喝不起牛奶的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 39,
+      "start": 189.58,
+      "end": 195.08,
+      "speaker": "host",
+      "text": "一般就趁著大家不注意,來到我們直播間,看一下那個架子上的牛奶沒有展示完的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 40,
+      "start": 195.68,
+      "end": 195.98,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 41,
+      "start": 196.28,
+      "end": 198.08,
+      "speaker": "host",
+      "text": "借喝一下,以後會還的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 42,
+      "start": 198.38,
+      "end": 199.68,
+      "speaker": "host",
+      "text": "會還的,欠你都會還的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 43,
+      "start": 199.78,
+      "end": 200.98,
+      "speaker": "guest",
+      "text": "因為喝了好喝才給你借嘛。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 44,
+      "start": 201.08,
+      "end": 201.48,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 0
+    },
+    {
+      "idx": 45,
+      "start": 202.38,
+      "end": 206.08,
+      "speaker": "host",
+      "text": "所以,所以,我我我現在一想到南瓜就想到了去年冬天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 46,
+      "start": 206.38,
+      "end": 209.98,
+      "speaker": "host",
+      "text": "想到了我們首秀之後鋪天蓋地對我們來批評的聲音。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 47,
+      "start": 210.18,
+      "end": 213.08,
+      "speaker": "host",
+      "text": "想到那段時間好像就我們幾個抱團取暖。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 48,
+      "start": 213.38,
+      "end": 219.58,
+      "speaker": "host",
+      "text": "想到了我們雖然內心很柔軟,但外面堅硬的像這個南瓜一樣,其實內心全是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 49,
+      "start": 219.88,
+      "end": 223.38,
+      "speaker": "host",
+      "text": "有時候是空洞的,對吧?是空洞的,你看不懂方,你那個男男也感覺到很真實。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 50,
+      "start": 223.68,
+      "end": 226.08,
+      "speaker": "host",
+      "text": "我記得那段時間就自己鼓勵,下班騎個自行車。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 51,
+      "start": 226.38,
+      "end": 227.88,
+      "speaker": "host",
+      "text": "從這騎到人大西門。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 52,
+      "start": 228.08,
+      "end": 229.98,
+      "speaker": "host",
+      "text": "就是從中關村騎到人大西門。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 53,
+      "start": 230.28,
+      "end": 233.28,
+      "speaker": "host",
+      "text": "一路車上就晃蕩晃蕩晃蕩,然後聽許威給自己力量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 54,
+      "start": 233.58,
+      "end": 235.18,
+      "speaker": "host",
+      "text": "早上起來呢,蒸個背南瓜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 55,
+      "start": 235.48,
+      "end": 239.08,
+      "speaker": "host",
+      "text": "所以背南瓜可以成為一個非常好吃,方便,而且暖心的早餐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 56,
+      "start": 239.38,
+      "end": 242.08,
+      "speaker": "host",
+      "text": "賦予食物意義,給生活找到美感。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 57,
+      "start": 242.98,
+      "end": 244.78,
+      "speaker": "host",
+      "text": "熱愛生活,健康早餐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 58,
+      "start": 245.08,
+      "end": 246.88,
+      "speaker": "host",
+      "text": "各位朋友們,大家想要自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 59,
+      "start": 248.08,
+      "end": 248.88,
+      "speaker": "host",
+      "text": "謝謝大家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 60,
+      "start": 250.08,
+      "end": 250.38,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 61,
+      "start": 252.28,
+      "end": 254.08,
+      "speaker": "host",
+      "text": "這個是有靈魂的南瓜,也不一定。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 62,
+      "start": 254.38,
+      "end": 256.48,
+      "speaker": "host",
+      "text": "南瓜其實沒有靈魂,食物其實很普通。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 63,
+      "start": 256.78,
+      "end": 259.28,
+      "speaker": "host",
+      "text": "這個南瓜跟世界上千萬個南瓜是一樣的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 64,
+      "start": 259.58,
+      "end": 261.28,
+      "speaker": "host",
+      "text": "不小王子的原句嘛,對吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 65,
+      "start": 261.48,
+      "end": 265.38,
+      "speaker": "host",
+      "text": "It is the rose you wasted, it is the time you wasted for the rose that makes the rose so important.",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 66,
+      "start": 265.68,
+      "end": 270.48,
+      "speaker": "host",
+      "text": "其實很多時候你會回想,你交過很多朋友,對吧?雖然有一天你這個好像全世界人都在找你的時候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 67,
+      "start": 270.78,
+      "end": 280.48,
+      "speaker": "host",
+      "text": "但是你還是願意晚上回去跟你以前那些特別艱難時期,然後呢,那些難熬的夜裡,你們倆願意促膝長談,推心換展,互相鼓勵的那些好朋友,打電話聊一個小時。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 68,
+      "start": 280.78,
+      "end": 281.98,
+      "speaker": "host",
+      "text": "就是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 69,
+      "start": 282.78,
+      "end": 285.68,
+      "speaker": "host",
+      "text": "你得記住難的時候是什麼支撐著你向前。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 70,
+      "start": 285.98,
+      "end": 287.08,
+      "speaker": "host",
+      "text": "那個很重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 71,
+      "start": 287.38,
+      "end": 289.18,
+      "speaker": "host",
+      "text": "那個經常是你的精神動力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 72,
+      "start": 289.48,
+      "end": 294.38,
+      "speaker": "host",
+      "text": "大家很難相信董宇輝的人生是有多麼枯燥,就連一份南瓜都可以成為他的人生動力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 73,
+      "start": 294.58,
+      "end": 295.68,
+      "speaker": "host",
+      "text": "差不多吧,差不多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 74,
+      "start": 295.88,
+      "end": 296.18,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 75,
+      "start": 297.28,
+      "end": 299.48,
+      "speaker": "host",
+      "text": "南瓜這個賣的差不多了,今天這個李白傳有多少本?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 76,
+      "start": 300.28,
+      "end": 300.78,
+      "speaker": "guest",
+      "text": "李白傳。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 77,
+      "start": 301.28,
+      "end": 304.08,
+      "speaker": "host",
+      "text": "我得給大家說一下,關於李白傳其實有很多種不同的版本。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 78,
+      "start": 304.98,
+      "end": 308.28,
+      "speaker": "host",
+      "text": "然後大家可能平常讀的多的事是李長之先生寫的那個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 79,
+      "start": 308.58,
+      "end": 309.08,
+      "speaker": "guest",
+      "text": "5萬本。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 80,
+      "start": 309.38,
+      "end": 310.48,
+      "speaker": "host",
+      "text": "這個是安琪寫的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 81,
+      "start": 310.78,
+      "end": 312.18,
+      "speaker": "host",
+      "text": "安琪寫的這個呢,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 82,
+      "start": 313.38,
+      "end": 314.78,
+      "speaker": "host",
+      "text": "它故事性更好一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 83,
+      "start": 315.08,
+      "end": 317.78,
+      "speaker": "host",
+      "text": "它可能往往以一個真正人的視角。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 84,
+      "start": 318.58,
+      "end": 321.78,
+      "speaker": "host",
+      "text": "好像你陪伴一個朋友去看著他的一生一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 85,
+      "start": 322.78,
+      "end": 327.98,
+      "speaker": "host",
+      "text": "我覺得這個其實對於大本讀者讀起來來說,其實也很適合,也很適合。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 86,
+      "start": 328.08,
+      "end": 330.08,
+      "speaker": "host",
+      "text": "我自己認真把這本書看了一遍。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 87,
+      "start": 330.38,
+      "end": 331.98,
+      "speaker": "host",
+      "text": "我覺得很寫的也很好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 88,
+      "start": 332.28,
+      "end": 336.08,
+      "speaker": "host",
+      "text": "它的文筆很簡單,然後呢,卻很有這種生活化的氣息。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 89,
+      "start": 337.68,
+      "end": 340.58,
+      "speaker": "host",
+      "text": "這裡頭寫到了很多關於李白的什麼,這個如果你有你直接上好嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 90,
+      "start": 340.78,
+      "end": 341.38,
+      "speaker": "guest",
+      "text": "已經上了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 91,
+      "start": 341.68,
+      "end": 342.38,
+      "speaker": "host",
+      "text": "然後人接。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 92,
+      "start": 342.68,
+      "end": 350.98,
+      "speaker": "host",
+      "text": "我們在每次想到蘇東坡的時候,想到了一個天生樂觀,然後雖然生活屢次遇到逆境,但總是能夠調整心態,發現生命中美好的一個好朋友。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 93,
+      "start": 351.28,
+      "end": 354.08,
+      "speaker": "host",
+      "text": "我們隱隱約約中的蘇東坡是充滿著智慧的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 94,
+      "start": 354.38,
+      "end": 360.78,
+      "speaker": "host",
+      "text": "智慧就是面對人生的困境的時候不沮喪,面對人生挫折的時候不消沉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 95,
+      "start": 361.08,
+      "end": 368.98,
+      "speaker": "host",
+      "text": "智慧就是在生命大的課題,跟人生小的驚喜之間學會做選擇。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 96,
+      "start": 369.28,
+      "end": 376.08,
+      "speaker": "host",
+      "text": "你無法決定你被貶黃州、惠州還是丹州,但是你可以選擇吃東坡肉,吃荔枝還是吃生蠔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 97,
+      "start": 376.38,
+      "end": 380.08,
+      "speaker": "host",
+      "text": "所以我們提到了蘇東坡,其實提到了一個智慧的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 98,
+      "start": 380.38,
+      "end": 383.58,
+      "speaker": "host",
+      "text": "他像一個我們身邊都喜歡的一個朋友一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 99,
+      "start": 383.88,
+      "end": 388.48,
+      "speaker": "host",
+      "text": "我們提到了杜甫的時候,提到了一個憂鬱的詩人,他落魄,他不得志。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 100,
+      "start": 388.98,
+      "end": 393.98,
+      "speaker": "host",
+      "text": "雖然自己日子過得很苦,但是他總想著別人,就像用現在流行話說。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 101,
+      "start": 394.18,
+      "end": 397.98,
+      "speaker": "host",
+      "text": "因為自己淋過雨,所以總想著為別人撐傘。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 102,
+      "start": 398.28,
+      "end": 408.28,
+      "speaker": "host",
+      "text": "我們每次在讀到杜甫的詩的時候,都感覺到這個人年輕時候經歷的一點點的好日子,就年輕時候經歷的一點點燦爛,真的是用後半生的寂寞來全部償還。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 103,
+      "start": 408.98,
+      "end": 410.38,
+      "speaker": "host",
+      "text": "這句話好像是江謬的,是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 104,
+      "start": 410.98,
+      "end": 413.48,
+      "speaker": "host",
+      "text": "年輕時候經歷的燦爛,用一生來償還。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 105,
+      "start": 413.78,
+      "end": 414.38,
+      "speaker": "host",
+      "text": "不是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 106,
+      "start": 415.28,
+      "end": 416.78,
+      "speaker": "host",
+      "text": "不是傻,對不起,我忘了,忘了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 107,
+      "start": 417.28,
+      "end": 417.98,
+      "speaker": "host",
+      "text": "忘了,對不起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 108,
+      "start": 418.48,
+      "end": 420.38,
+      "speaker": "host",
+      "text": "應該不是江謬,不是江謬,我說錯了,不是江謬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 109,
+      "start": 421.28,
+      "end": 425.48,
+      "speaker": "host",
+      "text": "呃,杜甫年輕的時候,因為他父親在當縣令,他在河南鞏義出生。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 110,
+      "start": 425.78,
+      "end": 429.08,
+      "speaker": "host",
+      "text": "父親當縣令,對吧?然後呢,小時候養在姑姑家。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 111,
+      "start": 429.38,
+      "end": 434.78,
+      "speaker": "host",
+      "text": "姑姑為了照顧他呢,姑姑的兒子生病之後,姑姑把所有的精力照顧他,姑姑家的兒子都病死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 112,
+      "start": 435.38,
+      "end": 438.38,
+      "speaker": "host",
+      "text": "所以杜甫從小就是在人的偏愛下長大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 113,
+      "start": 438.68,
+      "end": 440.68,
+      "speaker": "host",
+      "text": "然後很小就遇見公孫大娘舞劍。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 114,
+      "start": 440.98,
+      "end": 443.08,
+      "speaker": "host",
+      "text": "公孫大娘可是當時名揚天下的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 115,
+      "start": 443.38,
+      "end": 446.48,
+      "speaker": "host",
+      "text": "杜甫考了三次高考也沒考上,對吧?去山東玩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 116,
+      "start": 446.78,
+      "end": 447.58,
+      "speaker": "host",
+      "text": "然後呢,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 117,
+      "start": 448.58,
+      "end": 450.48,
+      "speaker": "host",
+      "text": "會當臨絕頂,一覽眾山小。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 118,
+      "start": 450.78,
+      "end": 456.08,
+      "speaker": "host",
+      "text": "但晚年我們也知道他在顛沛流離中,對吧?在成都因為有嚴武的保護。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 119,
+      "start": 456.38,
+      "end": 458.18,
+      "speaker": "host",
+      "text": "在成都待了四到五年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 120,
+      "start": 458.48,
+      "end": 460.38,
+      "speaker": "host",
+      "text": "後來去夔州,別人給了一些果園。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 121,
+      "start": 460.68,
+      "end": 461.98,
+      "speaker": "host",
+      "text": "在夔州寫了登高。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 122,
+      "start": 462.58,
+      "end": 466.18,
+      "speaker": "host",
+      "text": "我們後來再看杜甫的時候,他一路在逃難逃難,逃到湖南。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 123,
+      "start": 466.48,
+      "end": 471.28,
+      "speaker": "host",
+      "text": "對吧?然後因為水漲船高,沒地方,沒東西吃,說餓了四五天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 124,
+      "start": 471.58,
+      "end": 473.78,
+      "speaker": "host",
+      "text": "還好後來縣令送來東西,要不然得餓死。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 125,
+      "start": 474.08,
+      "end": 480.98,
+      "speaker": "host",
+      "text": "我們後來在聽杜甫的時候,就像家裡那個過得不怎麼順心的孩子一樣,對他充滿憂慮,也對他的人生充滿了憐憫和同情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 126,
+      "start": 481.28,
+      "end": 484.78,
+      "speaker": "host",
+      "text": "他是一個如此有家國情懷的人,他在生活中的情感也是非常的細膩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 127,
+      "start": 485.08,
+      "end": 492.78,
+      "speaker": "host",
+      "text": "他連自己都過得那麼慘的時候,他也能想到說安得廣廈千萬間,大庇天下寒士俱歡顏。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 128,
+      "start": 493.68,
+      "end": 494.68,
+      "speaker": "host",
+      "text": "我們愛杜甫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 129,
+      "start": 495.48,
+      "end": 503.48,
+      "speaker": "host",
+      "text": "我們愛杜甫就像愛自己家裡混得不怎麼好,但是心地善良,雖然落魄,但是不改自己氣節的孩子一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 130,
+      "start": 504.48,
+      "end": 507.48,
+      "speaker": "host",
+      "text": "對不起,請抱歉,我用了孩子這兩個詞來形容他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 131,
+      "start": 508.38,
+      "end": 512.98,
+      "speaker": "host",
+      "text": "因為讀到杜甫的時候,對他的偏愛,我感覺真的像父母對於子女的偏愛一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 132,
+      "start": 513.78,
+      "end": 514.88,
+      "speaker": "host",
+      "text": "只是希望他好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 133,
+      "start": 515.18,
+      "end": 519.48,
+      "speaker": "host",
+      "text": "哪怕希望他少受點苦,少寫一點那種好的詩,但是希望他當時能過得順遂一些都行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 134,
+      "start": 519.78,
+      "end": 523.28,
+      "speaker": "host",
+      "text": "但是如果我們說到了李白,大家第一個反應其實是浪漫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 135,
+      "start": 526.08,
+      "end": 530.48,
+      "speaker": "host",
+      "text": "我小時候聽老師講課,我們總在紙上寫下了李白是浪漫主義詩人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 136,
+      "start": 530.88,
+      "end": 531.88,
+      "speaker": "host",
+      "text": "李白是詩仙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 137,
+      "start": 532.18,
+      "end": 534.68,
+      "speaker": "host",
+      "text": "李白秀口一吐,就是半個盛唐。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 138,
+      "start": 535.58,
+      "end": 546.08,
+      "speaker": "host",
+      "text": "我們小時候對於李白總覺得這是一個家境優渥,一生呢也朋友眾多,受到很多人的階級,喝酒,吃肉,尋仙訪藥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 139,
+      "start": 546.78,
+      "end": 548.78,
+      "speaker": "host",
+      "text": "十步殺一人,千里不留名。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 140,
+      "start": 549.08,
+      "end": 553.68,
+      "speaker": "host",
+      "text": "我們年輕時候聽李白就是他是一個浪漫主義詩人,他浪漫的就像掉落人間的仙子一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 141,
+      "start": 553.98,
+      "end": 557.88,
+      "speaker": "host",
+      "text": "他像繁星點點的夜空中閃亮的那一顆一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 142,
+      "start": 560.48,
+      "end": 564.78,
+      "speaker": "host",
+      "text": "以至於人們就羨慕他的創作的能力,說如果能重來,我要當李白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 143,
+      "start": 566.28,
+      "end": 575.98,
+      "speaker": "host",
+      "text": "我們喜歡那個讓高力士給他脫靴子,讓楊貴妃給他研墨,然後就看著人群中婷婷玉立的楊楊貴妃,然後脫口而出這個",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 144,
+      "start": 578.08,
+      "end": 579.58,
+      "speaker": "host",
+      "text": "就能寫出清平調的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 145,
+      "start": 580.48,
+      "end": 583.98,
+      "speaker": "host",
+      "text": "呃,雲想衣裳花想容,春風拂檻露華濃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 146,
+      "start": 584.58,
+      "end": 585.88,
+      "speaker": "host",
+      "text": "這是我們初讀李白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 147,
+      "start": 586.58,
+      "end": 589.28,
+      "speaker": "host",
+      "text": "長大了之後我再讀李白,我覺得李白其實是給了我勇氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 148,
+      "start": 589.58,
+      "end": 591.28,
+      "speaker": "host",
+      "text": "我剛說了蘇東坡是智慧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 149,
+      "start": 591.58,
+      "end": 592.98,
+      "speaker": "host",
+      "text": "我剛說了杜甫是悲憫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 150,
+      "start": 593.88,
+      "end": 595.48,
+      "speaker": "host",
+      "text": "我覺得李白能給我智慧,給我勇氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 151,
+      "start": 596.58,
+      "end": 599.18,
+      "speaker": "host",
+      "text": "智慧,悲憫和勇氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 152,
+      "start": 599.48,
+      "end": 604.08,
+      "speaker": "host",
+      "text": "我覺得如果一個人同時具備了這三個東西,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 153,
+      "start": 605.28,
+      "end": 609.48,
+      "speaker": "host",
+      "text": "他應該是一個很受人喜歡,很很受人尊敬的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 154,
+      "start": 610.08,
+      "end": 612.68,
+      "speaker": "host",
+      "text": "我我我後來讀李白讀的越多,我越能感受到這些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 155,
+      "start": 613.28,
+      "end": 616.48,
+      "speaker": "host",
+      "text": "有多少人能夠接受自己一生壯志未酬啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 156,
+      "start": 617.28,
+      "end": 622.48,
+      "speaker": "host",
+      "text": "有多少人能夠接受自己一生雖拼盡全力,但碌碌無為啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 157,
+      "start": 623.28,
+      "end": 628.48,
+      "speaker": "host",
+      "text": "有多少人能接受自己滿腹才華,但不被賞識啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 158,
+      "start": 630.18,
+      "end": 636.38,
+      "speaker": "host",
+      "text": "有多少人能接受自己好友變天下,但無人知我心啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 159,
+      "start": 639.08,
+      "end": 641.58,
+      "speaker": "host",
+      "text": "崇拜你的人有很多,有人追了三千里去找你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 160,
+      "start": 642.18,
+      "end": 644.98,
+      "speaker": "host",
+      "text": "你從皇宮出來之後,在洛陽見到了杜甫。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 161,
+      "start": 645.38,
+      "end": 648.48,
+      "speaker": "host",
+      "text": "短短相處,他用了十幾年來回憶你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 162,
+      "start": 650.18,
+      "end": 651.38,
+      "speaker": "host",
+      "text": "但他們不懂你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 163,
+      "start": 652.08,
+      "end": 654.18,
+      "speaker": "host",
+      "text": "他們也擔心你,對吧?你跟永王去造反了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 164,
+      "start": 654.48,
+      "end": 661.48,
+      "speaker": "host",
+      "text": "你本來以為永王是真的賞識你,你覺得自己終於在人生的那個時間等來了一個賞識你的人,可以施展你內心的抱負的時候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 165,
+      "start": 661.78,
+      "end": 664.68,
+      "speaker": "host",
+      "text": "結果永王後來判亂被平反了,永王被殺頭了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 166,
+      "start": 664.98,
+      "end": 666.28,
+      "speaker": "host",
+      "text": "你被關到了監獄裡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 167,
+      "start": 666.98,
+      "end": 672.78,
+      "speaker": "host",
+      "text": "而且當時關在監獄裡痛苦的時候,負責關你的人其實是你當年好朋友叫岑參,大家都知道吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 168,
+      "start": 673.08,
+      "end": 674.88,
+      "speaker": "host",
+      "text": "邊塞詩人岑參。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 169,
+      "start": 675.18,
+      "end": 676.88,
+      "speaker": "host",
+      "text": "你的妻子反覆去求情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 170,
+      "start": 677.98,
+      "end": 679.08,
+      "speaker": "host",
+      "text": "但他也沒有救你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 171,
+      "start": 679.78,
+      "end": 683.08,
+      "speaker": "host",
+      "text": "要不是後來大赦天下,在途中重獲自由。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 172,
+      "start": 683.98,
+      "end": 685.98,
+      "speaker": "host",
+      "text": "你可能就慘死在流放路上了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 173,
+      "start": 687.68,
+      "end": 689.98,
+      "speaker": "host",
+      "text": "釋放之後,李白好像突然想通了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 174,
+      "start": 690.78,
+      "end": 692.68,
+      "speaker": "host",
+      "text": "朝辭白帝彩雲間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 175,
+      "start": 693.48,
+      "end": 694.98,
+      "speaker": "host",
+      "text": "千里江陵一日還。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 176,
+      "start": 695.78,
+      "end": 698.08,
+      "speaker": "host",
+      "text": "兩岸猿聲啼不住,輕舟已過萬重山。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 177,
+      "start": 699.78,
+      "end": 700.58,
+      "speaker": "host",
+      "text": "他一生",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 178,
+      "start": 701.58,
+      "end": 704.28,
+      "speaker": "host",
+      "text": "娶過好幾個女子,我們現在開玩笑說李白是最強贅婿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 179,
+      "start": 705.58,
+      "end": 706.98,
+      "speaker": "host",
+      "text": "說羨慕他的運氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 180,
+      "start": 707.58,
+      "end": 708.58,
+      "speaker": "host",
+      "text": "啊,說這個",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 181,
+      "start": 711.08,
+      "end": 713.98,
+      "speaker": "host",
+      "text": "有多少人能夠有他那樣的機遇,能夠遇到那樣好的機會啊?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 182,
+      "start": 714.68,
+      "end": 715.98,
+      "speaker": "host",
+      "text": "但是那些人不懂李白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 183,
+      "start": 716.28,
+      "end": 724.88,
+      "speaker": "host",
+      "text": "那些人但凡懂李白,李白也不會在30多歲,快40歲,會跟妻子吵架的時候說,仰天大笑出門去,我輩豈是蓬蒿人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 184,
+      "start": 726.08,
+      "end": 729.08,
+      "speaker": "host",
+      "text": "難的不是別人不懂你,難的是你不懂自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 185,
+      "start": 729.38,
+      "end": 732.28,
+      "speaker": "host",
+      "text": "李白當時其實應該也挺難,因為他愛的人都不懂他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 186,
+      "start": 732.98,
+      "end": 734.48,
+      "speaker": "host",
+      "text": "他愛的人都不欣賞他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 187,
+      "start": 734.78,
+      "end": 736.28,
+      "speaker": "host",
+      "text": "我在想他心裡應該很難吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 188,
+      "start": 736.68,
+      "end": 738.28,
+      "speaker": "host",
+      "text": "那種情況其實有很多的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 189,
+      "start": 738.58,
+      "end": 742.48,
+      "speaker": "host",
+      "text": "我相信身邊可能也有其他的人,可能也會有同樣的生命經歷,就是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 190,
+      "start": 744.08,
+      "end": 746.08,
+      "speaker": "host",
+      "text": "我剛說他妻子說你可能沒有共鳴啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 191,
+      "start": 746.88,
+      "end": 749.38,
+      "speaker": "host",
+      "text": "但如果你所堅持的事情,你爸媽不理解呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 192,
+      "start": 750.28,
+      "end": 752.98,
+      "speaker": "host",
+      "text": "如果你所信奉的原則,周圍的人在嘲諷呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 193,
+      "start": 753.88,
+      "end": 757.08,
+      "speaker": "host",
+      "text": "如果你所堅守的事業在別人看來不可能成功呢?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 194,
+      "start": 758.68,
+      "end": 762.48,
+      "speaker": "host",
+      "text": "你還有勇氣去說仰天大笑出門去,我輩豈是蓬蒿人嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 195,
+      "start": 763.08,
+      "end": 763.58,
+      "speaker": "host",
+      "text": "有嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 196,
+      "start": 764.28,
+      "end": 764.98,
+      "speaker": "host",
+      "text": "很難了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 197,
+      "start": 765.98,
+      "end": 768.48,
+      "speaker": "host",
+      "text": "你一生都在追尋,追尋一個賞識你的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 198,
+      "start": 768.98,
+      "end": 771.08,
+      "speaker": "host",
+      "text": "他能給你機會,施展你的才華。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 199,
+      "start": 771.38,
+      "end": 775.28,
+      "speaker": "host",
+      "text": "你彷彿一生也在追尋,追尋一個真正懂你的人,他能愛你,陪伴你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 200,
+      "start": 776.68,
+      "end": 777.48,
+      "speaker": "host",
+      "text": "尋而不的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 201,
+      "start": 777.88,
+      "end": 781.98,
+      "speaker": "host",
+      "text": "人生很多的時候遺憾就是這,人生的遺憾就是求之不得啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 202,
+      "start": 783.28,
+      "end": 787.28,
+      "speaker": "host",
+      "text": "所以晚年他彷彿對俗事已經沒太有,沒有太大的運氣了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 203,
+      "start": 787.58,
+      "end": 790.08,
+      "speaker": "host",
+      "text": "沒有太大的期待了,小的時候想要,沒有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 204,
+      "start": 790.38,
+      "end": 791.88,
+      "speaker": "host",
+      "text": "後來有了,我也不想要了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 205,
+      "start": 792.68,
+      "end": 794.68,
+      "speaker": "host",
+      "text": "所以才會寫出獨坐敬亭山。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 206,
+      "start": 797.48,
+      "end": 801.88,
+      "speaker": "host",
+      "text": "我在讀到最後讀作敬亭山的時候,我突然感覺到李白一生的這個心情的變化。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 207,
+      "start": 802.18,
+      "end": 806.98,
+      "speaker": "host",
+      "text": "當然呢,後人在談李白的時候,總是充滿了一種豐富的聯想。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 208,
+      "start": 808.48,
+      "end": 812.98,
+      "speaker": "host",
+      "text": "大家總是在想著李白一生是如何的這個幸運,因為他生活在盛唐時期。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 209,
+      "start": 813.28,
+      "end": 814.78,
+      "speaker": "host",
+      "text": "李白是701年出生。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 210,
+      "start": 815.48,
+      "end": 819.38,
+      "speaker": "host",
+      "text": "701年跟王,王維同一年,他應該是76,762年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 211,
+      "start": 819.68,
+      "end": 822.08,
+      "speaker": "host",
+      "text": "沒記錯的話,應該是762年去世的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 212,
+      "start": 822.38,
+      "end": 824.08,
+      "speaker": "host",
+      "text": "活了62,活了61歲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 213,
+      "start": 824.98,
+      "end": 826.48,
+      "speaker": "host",
+      "text": "在現在來看不算高齡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 214,
+      "start": 826.78,
+      "end": 828.48,
+      "speaker": "host",
+      "text": "就連李白的去世也有好幾種。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 215,
+      "start": 829.28,
+      "end": 830.98,
+      "speaker": "host",
+      "text": "第一種人們說他是醉死的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 216,
+      "start": 831.28,
+      "end": 832.28,
+      "speaker": "host",
+      "text": "喝酒喝多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 217,
+      "start": 833.18,
+      "end": 835.68,
+      "speaker": "host",
+      "text": "你看他一喝酒,對吧?會需飲300杯啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 218,
+      "start": 835.98,
+      "end": 837.58,
+      "speaker": "host",
+      "text": "曾夫子單秋生,杯莫停。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 219,
+      "start": 837.88,
+      "end": 839.28,
+      "speaker": "host",
+      "text": "酒杯放下了,壓魚呢,喝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 220,
+      "start": 839.58,
+      "end": 840.38,
+      "speaker": "host",
+      "text": "喝起來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 221,
+      "start": 841.48,
+      "end": 842.48,
+      "speaker": "host",
+      "text": "人生苦短。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 222,
+      "start": 843.38,
+      "end": 844.08,
+      "speaker": "host",
+      "text": "趕快喝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 223,
+      "start": 844.88,
+      "end": 845.68,
+      "speaker": "host",
+      "text": "往開了喝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 224,
+      "start": 846.38,
+      "end": 849.38,
+      "speaker": "host",
+      "text": "李白好像總是逮著朋友喝酒,往翻了喝的那個人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 225,
+      "start": 849.68,
+      "end": 852.18,
+      "speaker": "host",
+      "text": "大家也不知道為什麼你酒量這麼大,酒癮這麼大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 226,
+      "start": 852.48,
+      "end": 854.38,
+      "speaker": "host",
+      "text": "也不知道你是真的快樂,還是借酒澆愁。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 227,
+      "start": 854.68,
+      "end": 856.68,
+      "speaker": "host",
+      "text": "他說了,借酒澆愁愁更愁,對吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 228,
+      "start": 856.98,
+      "end": 858.28,
+      "speaker": "host",
+      "text": "抽刀斷水水更流啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 229,
+      "start": 858.98,
+      "end": 859.88,
+      "speaker": "host",
+      "text": "然後呢,",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 230,
+      "start": 861.48,
+      "end": 863.58,
+      "speaker": "host",
+      "text": "第二種說法是很浪漫啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 231,
+      "start": 865.08,
+      "end": 867.28,
+      "speaker": "host",
+      "text": "說李白是這個上陣殺敵去的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 232,
+      "start": 867.58,
+      "end": 868.98,
+      "speaker": "host",
+      "text": "他最後要替國出征。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 233,
+      "start": 869.28,
+      "end": 871.28,
+      "speaker": "host",
+      "text": "就像我們看到琅琊榜那個結局一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 234,
+      "start": 871.98,
+      "end": 873.58,
+      "speaker": "host",
+      "text": "他給了一個英雄體面。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 235,
+      "start": 873.88,
+      "end": 877.28,
+      "speaker": "host",
+      "text": "他讓一個英雄以英雄主義的方式結束了他的一生。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 236,
+      "start": 877.58,
+      "end": 879.08,
+      "speaker": "host",
+      "text": "這是第二種傳聞啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 237,
+      "start": 879.78,
+      "end": 881.08,
+      "speaker": "host",
+      "text": "第三種是逆死的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 238,
+      "start": 881.38,
+      "end": 882.18,
+      "speaker": "host",
+      "text": "喝醉了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 239,
+      "start": 882.58,
+      "end": 884.38,
+      "speaker": "host",
+      "text": "去水里撈月亮,淹死了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 240,
+      "start": 884.98,
+      "end": 885.98,
+      "speaker": "host",
+      "text": "無從考證。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 241,
+      "start": 886.38,
+      "end": 890.38,
+      "speaker": "host",
+      "text": "但我們總喜歡給一個浪漫的人諸多的結局。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 242,
+      "start": 890.68,
+      "end": 893.98,
+      "speaker": "host",
+      "text": "我們希望他能從在那些結局中找到自己喜歡的一個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 243,
+      "start": 894.88,
+      "end": 896.48,
+      "speaker": "host",
+      "text": "年少時不懂李白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 244,
+      "start": 898.08,
+      "end": 899.78,
+      "speaker": "host",
+      "text": "長大時當不了李白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 245,
+      "start": 900.78,
+      "end": 905.78,
+      "speaker": "host",
+      "text": "願你我出走半生,歸來仍是少年,少年之心,磅礴之氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 246,
+      "start": 906.08,
+      "end": 911.38,
+      "speaker": "host",
+      "text": "雖經歷苦難,但三觀不改,雖變長黑暗,但初心堅定。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 247,
+      "start": 913.08,
+      "end": 917.98,
+      "speaker": "host",
+      "text": "大家可以把這句話打在屏幕去叫長變黑暗,三觀不改。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 248,
+      "start": 919.48,
+      "end": 922.78,
+      "speaker": "host",
+      "text": "我覺得這就是我後來讀李白的一個內心的變化。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 249,
+      "start": 923.08,
+      "end": 925.38,
+      "speaker": "host",
+      "text": "可能跟年少時期我讀李白確實不一樣的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 250,
+      "start": 925.68,
+      "end": 930.58,
+      "speaker": "host",
+      "text": "年少時期只感覺到他的浪漫,黃河之水天上來,奔流到海不復回。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 251,
+      "start": 931.38,
+      "end": 932.88,
+      "speaker": "host",
+      "text": "什麼樣的人會寫出這樣東西?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 252,
+      "start": 933.78,
+      "end": 936.38,
+      "speaker": "host",
+      "text": "大鵬一日同風起,扶搖直上九萬里。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 253,
+      "start": 936.98,
+      "end": 939.38,
+      "speaker": "host",
+      "text": "一張嘴都是天上來,都是九萬里。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 254,
+      "start": 941.08,
+      "end": 942.68,
+      "speaker": "host",
+      "text": "只有李白敢說出這麼大的話。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 255,
+      "start": 944.08,
+      "end": 946.88,
+      "speaker": "host",
+      "text": "小時候覺得他就是浪漫,覺得他不接地氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 256,
+      "start": 947.58,
+      "end": 950.28,
+      "speaker": "host",
+      "text": "覺得他像一個泡的朋友,整天喝酒玩,喝酒玩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 257,
+      "start": 950.98,
+      "end": 953.98,
+      "speaker": "host",
+      "text": "追求自由的星辰大海,長大之後才發現他其實是一個有勇氣的人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 258,
+      "start": 954.68,
+      "end": 956.68,
+      "speaker": "host",
+      "text": "長變黑暗,但三觀不改。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 259,
+      "start": 957.58,
+      "end": 958.98,
+      "speaker": "host",
+      "text": "嗯,我可能說的不一定對啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 260,
+      "start": 959.58,
+      "end": 960.78,
+      "speaker": "host",
+      "text": "我可能說的不一定好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 261,
+      "start": 961.08,
+      "end": 965.28,
+      "speaker": "host",
+      "text": "也歡迎大家這個能夠在這個書裡頭找到自己",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 262,
+      "start": 966.48,
+      "end": 967.68,
+      "speaker": "host",
+      "text": "認同的東西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 263,
+      "start": 968.08,
+      "end": 975.78,
+      "speaker": "host",
+      "text": "也希望大家能夠通過李白這個人找到自己對於勇氣,對於豪邁,對於浪漫,對於詩自己的理解。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 264,
+      "start": 976.08,
+      "end": 977.88,
+      "speaker": "host",
+      "text": "因為我畢竟是個語文老師。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 265,
+      "start": 978.18,
+      "end": 980.88,
+      "speaker": "host",
+      "text": "可能屏幕前有很多語文老師,我相信大家會比我講的更好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 266,
+      "start": 982.08,
+      "end": 983.38,
+      "speaker": "host",
+      "text": "我相信,我相信。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 267,
+      "start": 984.48,
+      "end": 992.88,
+      "speaker": "host",
+      "text": "我相信,我在看一個詩人的時候,我我喜歡聽很多的語文老師去講他的生平,因為他們會說的更準確,甚至會說出哪一年在什麼地方寫了什麼樣的詩,當時是受了什麼樣的委屈。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 268,
+      "start": 993.18,
+      "end": 995.68,
+      "speaker": "host",
+      "text": "表達了什麼樣的情感,我相信你們會說的更專業。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 269,
+      "start": 995.88,
+      "end": 1001.68,
+      "speaker": "host",
+      "text": "我只是一個比較不太專業的一個讀者的角度,給大家稍微解讀了一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 270,
+      "start": 1002.48,
+      "end": 1006.48,
+      "speaker": "host",
+      "text": "然後呢,也強烈的呼籲大家在拿到書之後自己趕快自己去讀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 271,
+      "start": 1007.18,
+      "end": 1009.68,
+      "speaker": "host",
+      "text": "最好再看一些關於他的紀錄片,背下他的詩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 272,
+      "start": 1011.08,
+      "end": 1018.08,
+      "speaker": "host",
+      "text": "我們去感受那個秀口一吐便是半個盛唐的人,他一生所經歷的蒙昧、動盪、黑暗之後,仍然心智堅定。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 273,
+      "start": 1018.78,
+      "end": 1020.28,
+      "speaker": "host",
+      "text": "三觀不改的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 274,
+      "start": 1021.38,
+      "end": 1023.98,
+      "speaker": "host",
+      "text": "我年少時讀浪漫,我長大之後讀到勇氣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 275,
+      "start": 1024.28,
+      "end": 1026.28,
+      "speaker": "host",
+      "text": "可能是缺什麼,人就讀到了什麼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 276,
+      "start": 1026.58,
+      "end": 1031.58,
+      "speaker": "host",
+      "text": "所以讀書的一個意義是什麼?讀書的一個意義就是在書裡頭找到你自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 277,
+      "start": 1031.88,
+      "end": 1033.48,
+      "speaker": "host",
+      "text": "你缺什麼,你就讀到了什麼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 278,
+      "start": 1035.08,
+      "end": 1035.98,
+      "speaker": "host",
+      "text": "嗯,這個還有嗎?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 279,
+      "start": 1036.28,
+      "end": 1037.48,
+      "speaker": "guest",
+      "text": "已經賣了7000多本了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 280,
+      "start": 1037.78,
+      "end": 1038.88,
+      "speaker": "host",
+      "text": "賣了7000多本是吧?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 281,
+      "start": 1039.18,
+      "end": 1039.48,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 282,
+      "start": 1039.98,
+      "end": 1041.08,
+      "speaker": "host",
+      "text": "我覺得這個挺好的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 283,
+      "start": 1043.08,
+      "end": 1044.08,
+      "speaker": "guest",
+      "text": "好不容易加的庫存。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 284,
+      "start": 1044.38,
+      "end": 1046.08,
+      "speaker": "host",
+      "text": "好不容易加的庫存,咱一共多少庫存?",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 285,
+      "start": 1046.38,
+      "end": 1046.88,
+      "speaker": "guest",
+      "text": "2萬。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 0
+    },
+    {
+      "idx": 286,
+      "start": 1047.18,
+      "end": 1049.78,
+      "speaker": "host",
+      "text": "2萬,那很快就完了,今天直播間裡20多萬人呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 287,
+      "start": 1051.08,
+      "end": 1053.78,
+      "speaker": "host",
+      "text": "然後有朋友說這個東西會你再別胡說八道了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 288,
+      "start": 1054.08,
+      "end": 1055.48,
+      "speaker": "host",
+      "text": "有可能說的確實不對。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 289,
+      "start": 1055.78,
+      "end": 1057.28,
+      "speaker": "host",
+      "text": "歡迎批評啊,歡迎批評。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 290,
+      "start": 1058.18,
+      "end": 1060.08,
+      "speaker": "host",
+      "text": "有可能我確實沒有您說的專業。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 291,
+      "start": 1062.08,
+      "end": 1063.48,
+      "speaker": "host",
+      "text": "鼓勵閱讀總是對的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 292,
+      "start": 1063.78,
+      "end": 1064.78,
+      "speaker": "host",
+      "text": "晚輩不才啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    },
+    {
+      "idx": 293,
+      "start": 1065.48,
+      "end": 1066.58,
+      "speaker": "host",
+      "text": "若批評不自由。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 0
+    }
+  ]
+}

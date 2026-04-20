@@ -1,0 +1,3516 @@
+{
+  "chunk_id": 1,
+  "start_offset": 1190.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 1190.0,
+      "end": 1190.009,
+      "speaker": "host",
+      "text": "平流層的這個區域也是",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 1,
+      "start": 1190.009,
+      "end": 1190.015,
+      "speaker": "guest",
+      "text": "那個有點出話。",
+      "text_normalized": "",
+      "confidence": 0.92,
+      "chunk_id": 1
+    },
+    {
+      "idx": 2,
+      "start": 1190.015,
+      "end": 1190.038,
+      "speaker": "host",
+      "text": "來右下角一號鏈接啊,講書呢,大家可以自己去拍啊,對,還有很多很多有意思的這個知識,這個上面都有很詳細的一個講解啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 1
+    },
+    {
+      "idx": 3,
+      "start": 1190.038,
+      "end": 1190.042,
+      "speaker": "guest",
+      "text": "不影響,可以可以多扯一會。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 4,
+      "start": 1190.042,
+      "end": 1190.053,
+      "speaker": "host",
+      "text": "有沒有問說你們倆都在這賣了書算誰的?不影響,我們公司也不從來不對主播有要求。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 5,
+      "start": 1190.053,
+      "end": 1190.055,
+      "speaker": "guest",
+      "text": "對對對對對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 6,
+      "start": 1190.055,
+      "end": 1190.056,
+      "speaker": "host",
+      "text": "賣不賣都行啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 7,
+      "start": 1190.056,
+      "end": 1190.057,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 8,
+      "start": 1190.057,
+      "end": 1190.059,
+      "speaker": "guest",
+      "text": "還是賣,還是得賣,得賣。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 9,
+      "start": 1190.059,
+      "end": 1190.075,
+      "speaker": "host",
+      "text": "但是給大家要把這個說清楚,他們總以為咱們主播之間互相有這種就是大家賣的錢多好像就多一點少一點,其實沒有,我們公司不按",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 10,
+      "start": 1190.075,
+      "end": 1190.079,
+      "speaker": "guest",
+      "text": "其實大家看懂以後躺平的樣子就理解了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 11,
+      "start": 1190.079,
+      "end": 1190.081,
+      "speaker": "host",
+      "text": "對對對對對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 12,
+      "start": 1190.081,
+      "end": 1190.084,
+      "speaker": "host",
+      "text": "真的不按這個算啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 13,
+      "start": 1190.084,
+      "end": 1190.089,
+      "speaker": "host",
+      "text": "要這樣算天天捲起來,我們這同事關係也不好做。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 14,
+      "start": 1190.089,
+      "end": 1190.091,
+      "speaker": "guest",
+      "text": "對,賣多賣少其實",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 15,
+      "start": 1190.091,
+      "end": 1190.092,
+      "speaker": "host",
+      "text": "都不影響你。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 16,
+      "start": 1190.092,
+      "end": 1190.093,
+      "speaker": "guest",
+      "text": "對對對對對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 17,
+      "start": 1190.093,
+      "end": 1190.094,
+      "speaker": "guest",
+      "text": "也就是固定工資。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 18,
+      "start": 1190.094,
+      "end": 1190.095,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 19,
+      "start": 1190.096,
+      "end": 1190.099,
+      "speaker": "guest",
+      "text": "固定工資你非要說一下嗎?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 20,
+      "start": 1190.1,
+      "end": 1190.101,
+      "speaker": "host",
+      "text": "這是好事啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 21,
+      "start": 1190.102,
+      "end": 1190.104,
+      "speaker": "guest",
+      "text": "對吧,我就不焦慮了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 22,
+      "start": 1190.104,
+      "end": 1190.105,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 23,
+      "start": 1190.105,
+      "end": 1190.106,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 24,
+      "start": 1190.107,
+      "end": 1190.117,
+      "speaker": "host",
+      "text": "然後呢,你看這是盛行風,他畫的這個圈,其實這個風帶,它是它是一個圈嘛,你看解釋的特別清楚。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 25,
+      "start": 1190.117,
+      "end": 1190.144,
+      "speaker": "host",
+      "text": "然後再到這看全球的這個就講清楚,你把這塊的這一片全球的這個風向,當然這塊還包括了一些季風,你把這塊這半片學完了了解了,你就會看到一個特別神奇的有意思的事情是什麼呢?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 26,
+      "start": 1190.144,
+      "end": 1190.148,
+      "speaker": "host",
+      "text": "哎呀,我現在有這個高級的了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 27,
+      "start": 1190.149,
+      "end": 1190.15,
+      "speaker": "host",
+      "text": "看。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 28,
+      "start": 1190.15,
+      "end": 1190.151,
+      "speaker": "guest",
+      "text": "哎,這個在哪買的?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 29,
+      "start": 1190.152,
+      "end": 1190.154,
+      "speaker": "host",
+      "text": "這個先不告訴你。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 30,
+      "start": 1190.155,
+      "end": 1190.157,
+      "speaker": "guest",
+      "text": "咱自己咱咱賣這個嗎,導演?",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 31,
+      "start": 1190.157,
+      "end": 1190.169,
+      "speaker": "host",
+      "text": "這現在不賣,這是因為我天天拿地圖講,我就跟直播間天天呼喚,哪家廠商有供這個,人家拿來先借我用一下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 32,
+      "start": 1190.169,
+      "end": 1190.17,
+      "speaker": "guest",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 33,
+      "start": 1190.17,
+      "end": 1190.171,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 34,
+      "start": 1190.171,
+      "end": 1190.172,
+      "speaker": "guest",
+      "text": "這個挺好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 35,
+      "start": 1190.172,
+      "end": 1190.208,
+      "speaker": "host",
+      "text": "然後呢,大家可以看到,就是剛才不是給你把風向學了嘛,把風向講了,那從尤其是赤道邊上,你看0到30的這一段,尤其是15到30的這個區間啊,在這個區間地球在北半球對應的有哪些國家呢?整個滑過來這裡邊啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 36,
+      "start": 1190.208,
+      "end": 1190.229,
+      "speaker": "host",
+      "text": "有從這邊可以看到有非洲的尼日利亞,然後有這個幾內亞,然後包括了到這邊的看差了,這這,度數在這,阿爾及利亞、利比亞、埃及、阿拉伯半島,你看這些是不是大量的都是沙漠?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 37,
+      "start": 1190.229,
+      "end": 1190.23,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 38,
+      "start": 1190.23,
+      "end": 1190.237,
+      "speaker": "host",
+      "text": "你看,在這個袋子上的都是沙漠,然後包括到這邊印度中間其實這一片也是有一些沙漠的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 39,
+      "start": 1190.237,
+      "end": 1190.246,
+      "speaker": "host",
+      "text": "然後唯獨咱們中間中國的長江以南的流域的這部分不是沙漠,這個大家比較清楚。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 40,
+      "start": 1190.246,
+      "end": 1190.255,
+      "speaker": "host",
+      "text": "你再到這邊,看還在這個袋子帶狀結構上這,包括墨西哥的北邊的這,它也是這個沙漠,這邊也是沙漠。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 41,
+      "start": 1190.255,
+      "end": 1190.264,
+      "speaker": "host",
+      "text": "很奇怪,就是在這個帶狀結構,為什麼都是沙漠,但唯獨中國的長江中下游這一片不是沙漠。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 42,
+      "start": 1190.264,
+      "end": 1190.265,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 43,
+      "start": 1190.265,
+      "end": 1190.266,
+      "speaker": "guest",
+      "text": "三級。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 44,
+      "start": 1190.266,
+      "end": 1190.267,
+      "speaker": "host",
+      "text": "首先這個。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 45,
+      "start": 1190.267,
+      "end": 1190.268,
+      "speaker": "guest",
+      "text": "對,世界屋脊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 46,
+      "start": 1190.268,
+      "end": 1190.298,
+      "speaker": "host",
+      "text": "首先這個沙漠形成的原因就主要它是因為在這個上剛才給大家看了,它是從兩邊的風往赤道上刮嘛,往赤道上刮的這個風是什麼特點呢?它往赤道走溫度越來越高,它就會很乾,它不會凝結成水,所以它刮的風是乾熱。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 47,
+      "start": 1190.298,
+      "end": 1190.306,
+      "speaker": "host",
+      "text": "乾熱就因為一年四季一直吹著這樣風,所以在這個袋子上都是沙漠國家,而中國不是,不是就在哪,大家看這個地圖這突出來這一大塊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 48,
+      "start": 1190.306,
+      "end": 1190.307,
+      "speaker": "guest",
+      "text": "是三級。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 49,
+      "start": 1190.307,
+      "end": 1190.324,
+      "speaker": "host",
+      "text": "對,世界屋脊,從太平洋這邊過來的風被它攔住了,攔住以後形成水氣凝結成水,所以這有豐富的水源,就有了黃河、長江的這個起源,源源不斷的一年四季往下輸送。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 50,
+      "start": 1190.324,
+      "end": 1190.332,
+      "speaker": "host",
+      "text": "如果這塊突出來的這塊沒有的話,風從上面掠過去了,很可能咱們的長江中下游今天也就是",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 51,
+      "start": 1190.332,
+      "end": 1190.334,
+      "speaker": "guest",
+      "text": "也就是沙漠。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 52,
+      "start": 1190.334,
+      "end": 1190.335,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 53,
+      "start": 1190.335,
+      "end": 1190.336,
+      "speaker": "guest",
+      "text": "大家就了解了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 54,
+      "start": 1190.336,
+      "end": 1190.342,
+      "speaker": "host",
+      "text": "所以這就是從哪懂的,就是這個這塊這片突出來的,啊。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 55,
+      "start": 1190.342,
+      "end": 1190.345,
+      "speaker": "host",
+      "text": "這個書非常非常的好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 56,
+      "start": 1190.345,
+      "end": 1190.35,
+      "speaker": "host",
+      "text": "它講了後面還講了海洋與大陸,講了氣團。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 57,
+      "start": 1190.351,
+      "end": 1190.356,
+      "speaker": "host",
+      "text": "你看都是這種圖,而且畫的很好,我我給大家不誇張的講,這裡邊很多的圖對應的這些講解其實是比",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 58,
+      "start": 1190.356,
+      "end": 1190.357,
+      "speaker": "guest",
+      "text": "是吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 59,
+      "start": 1190.357,
+      "end": 1190.36,
+      "speaker": "host",
+      "text": "教材上有些畫的更加清楚。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 60,
+      "start": 1190.36,
+      "end": 1190.361,
+      "speaker": "guest",
+      "text": "這個圖畫的確實好。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 61,
+      "start": 1190.361,
+      "end": 1190.362,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 62,
+      "start": 1190.362,
+      "end": 1190.363,
+      "speaker": "guest",
+      "text": "坦然承認。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 63,
+      "start": 1190.363,
+      "end": 1190.368,
+      "speaker": "host",
+      "text": "講了氣料,我覺得這是很多高中初中地理上學的豐富的知識,孩子從四年級就可以開始讀了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 64,
+      "start": 1190.368,
+      "end": 1190.369,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 65,
+      "start": 1190.369,
+      "end": 1190.372,
+      "speaker": "host",
+      "text": "這是包括後面的這個水循環啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 66,
+      "start": 1190.372,
+      "end": 1190.379,
+      "speaker": "host",
+      "text": "然後呢,我不能一直給大家講這本,所以我那天晚上回去大概翻了一下,我不知道你喜歡給大家講哪一本啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 67,
+      "start": 1190.38,
+      "end": 1190.382,
+      "speaker": "host",
+      "text": "你可能對人體比較感興趣,你是不是喜歡這個?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 68,
+      "start": 1190.383,
+      "end": 1190.386,
+      "speaker": "guest",
+      "text": "我對這種石頭植物。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 69,
+      "start": 1190.386,
+      "end": 1190.387,
+      "speaker": "host",
+      "text": "石頭。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 70,
+      "start": 1190.387,
+      "end": 1190.388,
+      "speaker": "host",
+      "text": "你喜歡講礦石是吧?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 71,
+      "start": 1190.388,
+      "end": 1190.395,
+      "speaker": "host",
+      "text": "然後呢,我那天還給大家展示了這個植物,也特別特別有意思,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 72,
+      "start": 1190.395,
+      "end": 1190.397,
+      "speaker": "host",
+      "text": "我再給你普及點物理知識吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 73,
+      "start": 1190.397,
+      "end": 1190.398,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 74,
+      "start": 1190.398,
+      "end": 1190.404,
+      "speaker": "host",
+      "text": "然後大家把這個書拍一拍,188塊錢八本,平均下來一本20塊錢,啊,這麼一個價格。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 75,
+      "start": 1190.404,
+      "end": 1190.419,
+      "speaker": "host",
+      "text": "我覺得植物這本也特別有意思,因為我小時候不是在農村長大,天天能接觸到各種,但是很多兒時農村叫的那個名字跟它學名不一樣,有時候呢造成一些我現在很想念的這些東西找不見名字,再找不到回來的樣子。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 76,
+      "start": 1190.419,
+      "end": 1190.422,
+      "speaker": "host",
+      "text": "你看它從根莖葉各種區分。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 77,
+      "start": 1190.422,
+      "end": 1190.423,
+      "speaker": "guest",
+      "text": "出198。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 1
+    },
+    {
+      "idx": 78,
+      "start": 1190.423,
+      "end": 1190.425,
+      "speaker": "host",
+      "text": "198,198,198。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 79,
+      "start": 1190.425,
+      "end": 1190.426,
+      "speaker": "guest",
+      "text": "八本。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 80,
+      "start": 1190.426,
+      "end": 1190.427,
+      "speaker": "host",
+      "text": "198八本。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 81,
+      "start": 1190.427,
+      "end": 1190.435,
+      "speaker": "host",
+      "text": "比如說我問你一個問題,你看這花,人家這寫了一個問題,說色彩鮮豔的花朵吸引著傳粉的動物。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 82,
+      "start": 1190.435,
+      "end": 1190.441,
+      "speaker": "host",
+      "text": "你覺得你看大自然五彩繽紛各種各樣的花朵,特別多,你見過黑色的花朵嗎?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 83,
+      "start": 1190.442,
+      "end": 1190.443,
+      "speaker": "guest",
+      "text": "沒有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 84,
+      "start": 1190.443,
+      "end": 1190.444,
+      "speaker": "host",
+      "text": "你聽過嗎?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 85,
+      "start": 1190.445,
+      "end": 1190.448,
+      "speaker": "guest",
+      "text": "黑色的有有黑色的花,就那種深色的,但不是純黑。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 86,
+      "start": 1190.448,
+      "end": 1190.449,
+      "speaker": "host",
+      "text": "你你聽過沒?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 87,
+      "start": 1190.45,
+      "end": 1190.451,
+      "speaker": "host",
+      "text": "比如說。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 88,
+      "start": 1190.453,
+      "end": 1190.456,
+      "speaker": "guest",
+      "text": "黑色的沒聽過,但確實是有深色的花。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 89,
+      "start": 1190.456,
+      "end": 1190.464,
+      "speaker": "host",
+      "text": "你咋的沒見過就算了,還能沒聽過,肯定有,但很少,而且它可能就像你說的,它也不是完全純黑的,那為什麼呢?這麼多各種顏色的咱沒有黑的呢?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 90,
+      "start": 1190.465,
+      "end": 1190.466,
+      "speaker": "guest",
+      "text": "因為黑的不顯眼。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 91,
+      "start": 1190.467,
+      "end": 1190.468,
+      "speaker": "guest",
+      "text": "它要吸引它來授粉。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 92,
+      "start": 1190.468,
+      "end": 1190.469,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 93,
+      "start": 1190.469,
+      "end": 1190.47,
+      "speaker": "guest",
+      "text": "還有它太吸熱了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 94,
+      "start": 1190.47,
+      "end": 1190.472,
+      "speaker": "host",
+      "text": "這是這是,對對對,你你還可以啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 95,
+      "start": 1190.473,
+      "end": 1190.474,
+      "speaker": "host",
+      "text": "說的很清楚。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 96,
+      "start": 1190.475,
+      "end": 1190.477,
+      "speaker": "host",
+      "text": "一個是因為它不顯眼。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 97,
+      "start": 1190.479,
+      "end": 1190.484,
+      "speaker": "host",
+      "text": "沒有人來給它傳粉的話,它的生命就很難就繼續下去了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 98,
+      "start": 1190.484,
+      "end": 1190.496,
+      "speaker": "host",
+      "text": "再一個是黑顏色的吸熱,像夏天我倆這樣出去,他穿一個黑顏色的短袖,黑顏色就能把各種光都吸進去,而白顏色的呢,就把所有的光都反射出去了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 99,
+      "start": 1190.496,
+      "end": 1190.501,
+      "speaker": "host",
+      "text": "所以你夏天穿一個白的會比較涼,穿一個黑的就會很熱,那麼你如果是一個黑色的花朵,你這就屬於自殺了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 100,
+      "start": 1190.502,
+      "end": 1190.503,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 101,
+      "start": 1190.503,
+      "end": 1190.506,
+      "speaker": "host",
+      "text": "你把所有太陽能量就是就自己把自己燒死了,自焚了嘛。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 102,
+      "start": 1190.506,
+      "end": 1190.507,
+      "speaker": "guest",
+      "text": "差不多是。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 103,
+      "start": 1190.507,
+      "end": 1190.508,
+      "speaker": "host",
+      "text": "就延續不下去了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 104,
+      "start": 1190.508,
+      "end": 1190.518,
+      "speaker": "host",
+      "text": "所以這個世界上有的11二種黑顏色的花朵,其實都是在北歐的這些地方,黑色鬱金香什麼的。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 105,
+      "start": 1190.518,
+      "end": 1190.523,
+      "speaker": "host",
+      "text": "但其實它也不是完全黑的,它只是比較靠近黑色,啊。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 106,
+      "start": 1190.523,
+      "end": 1190.529,
+      "speaker": "host",
+      "text": "它要在陽光照射沒有那麼充分的,你像吃到附近當然不能有完全這種純純的黑的,那指定是存活不了的。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 107,
+      "start": 1190.529,
+      "end": 1190.536,
+      "speaker": "host",
+      "text": "再比如說你看這個講了根系,跟著毛啊什麼都介紹的特別特別清楚,我跟你說我看到這個突然看餓了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 108,
+      "start": 1190.536,
+      "end": 1190.538,
+      "speaker": "host",
+      "text": "看到一個泥土的這個根特別看餓了,看泥土的味道。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 109,
+      "start": 1190.538,
+      "end": 1190.544,
+      "speaker": "host",
+      "text": "你小時候有沒有吃過一個就是在沙裡邊挖的那個叫雞大腿?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 110,
+      "start": 1190.545,
+      "end": 1190.546,
+      "speaker": "guest",
+      "text": "沒有。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 111,
+      "start": 1190.546,
+      "end": 1190.547,
+      "speaker": "host",
+      "text": "你沒見過?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 112,
+      "start": 1190.547,
+      "end": 1190.551,
+      "speaker": "host",
+      "text": "就是一個根,它那個莖咬起來甜甜的,很好吃。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 113,
+      "start": 1190.551,
+      "end": 1190.554,
+      "speaker": "guest",
+      "text": "小時候特別在山里挖的那個。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 114,
+      "start": 1190.554,
+      "end": 1190.559,
+      "speaker": "guest",
+      "text": "我們去春天去地頭拔過一種像毛毛草一樣,長出來是毛毛草那個,春天拔出來它咬著有一點點甜味。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 115,
+      "start": 1190.559,
+      "end": 1190.56,
+      "speaker": "host",
+      "text": "不是不是。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 116,
+      "start": 1190.56,
+      "end": 1190.565,
+      "speaker": "host",
+      "text": "就是還沒長出來那個毛毛草,我拔過來。那個根長得像一個雞腿一樣,突然變粗一咬起來那個根很甜,叫雞大腿。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 117,
+      "start": 1190.565,
+      "end": 1190.57,
+      "speaker": "host",
+      "text": "但是我實在不知道它的學名叫什麼,所以就搞不清楚了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 118,
+      "start": 1190.57,
+      "end": 1190.572,
+      "speaker": "host",
+      "text": "你再翻兩頁啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 119,
+      "start": 1190.572,
+      "end": 1190.573,
+      "speaker": "host",
+      "text": "你看蒸騰作用。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 120,
+      "start": 1190.573,
+      "end": 1190.58,
+      "speaker": "host",
+      "text": "就是大自然界,包括剛才講的風的流動,它要依賴大自然給的能量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 121,
+      "start": 1190.58,
+      "end": 1190.584,
+      "speaker": "host",
+      "text": "植物的蒸騰作用,它也依,不是大自然給的能量,是太陽給的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 122,
+      "start": 1190.584,
+      "end": 1190.592,
+      "speaker": "host",
+      "text": "所以地球上所有的這種動力學運動的所需要的能量全都是來自太陽,太陽能給的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 123,
+      "start": 1190.592,
+      "end": 1190.594,
+      "speaker": "host",
+      "text": "包括植物的蒸騰作用。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 124,
+      "start": 1190.594,
+      "end": 1190.595,
+      "speaker": "host",
+      "text": "你想。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 125,
+      "start": 1190.595,
+      "end": 1190.596,
+      "speaker": "guest",
+      "text": "熱帶雨林。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 126,
+      "start": 1190.596,
+      "end": 1191.006,
+      "speaker": "host",
+      "text": "它要把根系的水分一直吸到那種大的喬木30米50米高,整到那個樹頂上,它得需要多大能量,這些能量全都是來自於太陽,整的這個往上吸的蒸騰的的力量啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 127,
+      "start": 1191.006,
+      "end": 1191.013,
+      "speaker": "host",
+      "text": "好,大家可能聽不了這種科學的,想聽你用換一個角度講講。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 128,
+      "start": 1191.014,
+      "end": 1191.015,
+      "speaker": "guest",
+      "text": "講講。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 129,
+      "start": 1191.015,
+      "end": 1191.017,
+      "speaker": "host",
+      "text": "講講那個什麼給整一下。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 130,
+      "start": 1191.018,
+      "end": 1191.02,
+      "speaker": "host",
+      "text": "我剛才有人說要聽你講人生。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 131,
+      "start": 1191.02,
+      "end": 1191.021,
+      "speaker": "guest",
+      "text": "沒事,你先講,你先講。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 132,
+      "start": 1191.021,
+      "end": 1191.023,
+      "speaker": "host",
+      "text": "好,這是這這是葉子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 133,
+      "start": 1191.023,
+      "end": 1191.025,
+      "speaker": "host",
+      "text": "然後你看到這塊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 134,
+      "start": 1191.025,
+      "end": 1191.027,
+      "speaker": "guest",
+      "text": "你現在都挺喜歡這種知識類的。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 135,
+      "start": 1191.027,
+      "end": 1191.03,
+      "speaker": "host",
+      "text": "光合作用,光是怎麼形成的,看太陽光七種顏色。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 136,
+      "start": 1191.03,
+      "end": 1191.032,
+      "speaker": "guest",
+      "text": "赤橙黃綠藍靛紫。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 137,
+      "start": 1191.032,
+      "end": 1191.033,
+      "speaker": "host",
+      "text": "對,青藍子藍靛子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 138,
+      "start": 1191.033,
+      "end": 1191.041,
+      "speaker": "host",
+      "text": "然後呢,植物吸收的時候,它會把跟它顏色一樣的光反射出去。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 139,
+      "start": 1191.041,
+      "end": 1191.045,
+      "speaker": "host",
+      "text": "把跟它顏色不一樣的光吸收進去。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 140,
+      "start": 1191.045,
+      "end": 1191.047,
+      "speaker": "host",
+      "text": "那你說植物喜不喜歡綠色?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 141,
+      "start": 1191.047,
+      "end": 1191.048,
+      "speaker": "guest",
+      "text": "不喜歡。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 142,
+      "start": 1191.048,
+      "end": 1191.049,
+      "speaker": "host",
+      "text": "不喜歡,對。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 143,
+      "start": 1191.049,
+      "end": 1191.06,
+      "speaker": "host",
+      "text": "因為它把綠色就反射出去,如果你給一個植物,你你回去把你家的那個花盆,給上面如果套一個綠顏色的塑料袋,這個花過幾天就死了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 144,
+      "start": 1191.06,
+      "end": 1191.069,
+      "speaker": "host",
+      "text": "因為綠顏色的塑料袋把陽光的七種顏色的光一過濾,只讓綠光通過了,而綠光植物那個葉子又把那個綠光給反射出去了,它就沒吸收,就自己把自己餓死了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 145,
+      "start": 1191.069,
+      "end": 1191.07,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 146,
+      "start": 1191.07,
+      "end": 1191.072,
+      "speaker": "host",
+      "text": "哎,所以套一個袋就就掛了,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 147,
+      "start": 1191.072,
+      "end": 1191.074,
+      "speaker": "guest",
+      "text": "有朋友問這個多大孩子能讀。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 148,
+      "start": 1191.074,
+      "end": 1191.082,
+      "speaker": "host",
+      "text": "再給大家解釋一下啊,獨立閱讀能力的能讀的,就是九歲到十歲可以開始,一直讀到高中畢業都沒有問題。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 149,
+      "start": 1191.082,
+      "end": 1191.085,
+      "speaker": "guest",
+      "text": "當然家裡有比九歲還小的孩子這本書能不能買?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 150,
+      "start": 1191.085,
+      "end": 1191.088,
+      "speaker": "host",
+      "text": "嗯,那就要父母可能帶著給讀一讀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 151,
+      "start": 1191.088,
+      "end": 1191.089,
+      "speaker": "guest",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 152,
+      "start": 1191.089,
+      "end": 1191.093,
+      "speaker": "guest",
+      "text": "你現在拿他翻一翻,等到他過兩年他自己看,你再有嘛,對吧?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 153,
+      "start": 1191.093,
+      "end": 1191.094,
+      "speaker": "host",
+      "text": "對對對對對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 154,
+      "start": 1191.094,
+      "end": 1191.096,
+      "speaker": "guest",
+      "text": "早買總比晚買好。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 155,
+      "start": 1191.096,
+      "end": 1191.097,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 156,
+      "start": 1191.097,
+      "end": 1191.098,
+      "speaker": "guest",
+      "text": "總之是能用到的。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 157,
+      "start": 1191.098,
+      "end": 1191.1,
+      "speaker": "guest",
+      "text": "金明明退下吧。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 158,
+      "start": 1191.1,
+      "end": 1191.102,
+      "speaker": "host",
+      "text": "馬上馬上馬上啊,馬上走。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 159,
+      "start": 1191.102,
+      "end": 1191.103,
+      "speaker": "guest",
+      "text": "讓明明講,讓明明講。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 160,
+      "start": 1191.103,
+      "end": 1191.104,
+      "speaker": "host",
+      "text": "然後那個。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 161,
+      "start": 1191.105,
+      "end": 1191.108,
+      "speaker": "guest",
+      "text": "正好現在20萬人,讓明明多講一會。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 162,
+      "start": 1191.108,
+      "end": 1191.109,
+      "speaker": "host",
+      "text": "好像沒多少本吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 163,
+      "start": 1191.11,
+      "end": 1191.111,
+      "speaker": "guest",
+      "text": "沒有了,還有800本。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 164,
+      "start": 1191.111,
+      "end": 1191.112,
+      "speaker": "host",
+      "text": "只剩800本的是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 165,
+      "start": 1191.112,
+      "end": 1191.113,
+      "speaker": "guest",
+      "text": "把這800本講完吧。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 166,
+      "start": 1191.113,
+      "end": 1191.114,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 167,
+      "start": 1191.114,
+      "end": 1191.116,
+      "speaker": "host",
+      "text": "OKOKOK,明白了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 168,
+      "start": 1191.116,
+      "end": 1191.117,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 169,
+      "start": 1191.117,
+      "end": 1191.122,
+      "speaker": "host",
+      "text": "這是這是我給大家介紹的剛才一個礦石。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 170,
+      "start": 1191.122,
+      "end": 1191.123,
+      "speaker": "host",
+      "text": "你又想講的礦石的點嗎?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 171,
+      "start": 1191.123,
+      "end": 1191.124,
+      "speaker": "guest",
+      "text": "我我不講了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 172,
+      "start": 1191.124,
+      "end": 1191.131,
+      "speaker": "host",
+      "text": "然後剛才那個氣象密碼還有這一個植物王國就給大家介紹到這啊,下來剩下的讓宇輝給大家介紹啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 173,
+      "start": 1191.131,
+      "end": 1191.132,
+      "speaker": "host",
+      "text": "你來講吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 174,
+      "start": 1191.136,
+      "end": 1191.14,
+      "speaker": "guest",
+      "text": "好,我們正在給大家介紹的是DK的搜索百科這一套系列啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 175,
+      "start": 1191.14,
+      "end": 1191.148,
+      "speaker": "guest",
+      "text": "其實我們為什麼要讓孩子去觀察這些天體行星、花草樹木、魚鳥飛蟲,還有呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 176,
+      "start": 1191.149,
+      "end": 1191.15,
+      "speaker": "guest",
+      "text": "這個甚至包括這些岩石呢。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 177,
+      "start": 1191.15,
+      "end": 1191.157,
+      "speaker": "guest",
+      "text": "其實通過大量的觀察,看石明老師剛給大家講解了那麼多細緻的小的知識,其實很有意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 178,
+      "start": 1191.157,
+      "end": 1191.161,
+      "speaker": "guest",
+      "text": "就是你會發現這個過程中就極強的培養了孩子的好奇心。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 179,
+      "start": 1191.161,
+      "end": 1191.164,
+      "speaker": "guest",
+      "text": "好奇心、求知欲、想像力,我認為這三個是一個家人能給孩子留下最寶貴的東西。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 180,
+      "start": 1191.164,
+      "end": 1191.165,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 181,
+      "start": 1191.165,
+      "end": 1191.167,
+      "speaker": "guest",
+      "text": "愛因斯坦說過一句話。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 182,
+      "start": 1191.167,
+      "end": 1191.17,
+      "speaker": "guest",
+      "text": "說比知識更重要的是想是想像力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 183,
+      "start": 1191.17,
+      "end": 1191.171,
+      "speaker": "host",
+      "text": "想像力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 184,
+      "start": 1191.171,
+      "end": 1191.173,
+      "speaker": "guest",
+      "text": "對,我我我記得應該這句話是愛因斯坦說的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 185,
+      "start": 1191.173,
+      "end": 1191.182,
+      "speaker": "guest",
+      "text": "然後如果說大家對於好奇求知欲或者好奇心最強的一個人,那大家應該都聽過這個畫過蒙娜麗莎那個人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 186,
+      "start": 1191.182,
+      "end": 1191.183,
+      "speaker": "host",
+      "text": "達芬奇。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 187,
+      "start": 1191.183,
+      "end": 1191.184,
+      "speaker": "guest",
+      "text": "達芬奇。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 188,
+      "start": 1191.185,
+      "end": 1191.19,
+      "speaker": "guest",
+      "text": "讀達芬奇傳你會發現他從小長大就是對一切都充滿了好奇,他看到什麼他都好奇。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 189,
+      "start": 1191.19,
+      "end": 1191.199,
+      "speaker": "guest",
+      "text": "所以很多時候因為孩子想知道,所以他自己去查資料,自己去查網站,查到最後,他可能就會成為一個領域的專家了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 190,
+      "start": 1191.199,
+      "end": 1191.209,
+      "speaker": "guest",
+      "text": "好奇心對一個人成長特別重要,你看他們研究了很多最後事業有成的人,發現他們在成長的過程中,包括成為成年人以後,他還有很大的好奇,他們有時候把這個叫幼態持續。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 191,
+      "start": 1191.209,
+      "end": 1191.211,
+      "speaker": "host",
+      "text": "哎,我說的童心就是這個意思。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 192,
+      "start": 1191.211,
+      "end": 1191.214,
+      "speaker": "guest",
+      "text": "對,一直能夠保持這麼一種好奇,然後去探索,去追尋,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 193,
+      "start": 1191.214,
+      "end": 1191.216,
+      "speaker": "host",
+      "text": "你看大家都在說明明別走,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 194,
+      "start": 1191.216,
+      "end": 1191.218,
+      "speaker": "host",
+      "text": "明明想講可以再講一會,沒事,你接著講。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 195,
+      "start": 1191.218,
+      "end": 1191.227,
+      "speaker": "guest",
+      "text": "然後呢,剛才我們提到了好奇心,其實就是要促進孩子對一個東西感興趣,並且在他感知好奇心的時候,激勵他更多去探索。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 196,
+      "start": 1191.227,
+      "end": 1191.23,
+      "speaker": "guest",
+      "text": "然後最好你知道,由你給孩子講,最終變成孩子給你講。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 197,
+      "start": 1191.23,
+      "end": 1191.233,
+      "speaker": "guest",
+      "text": "因為他都知道一種學習法叫什麼學習法?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 198,
+      "start": 1191.233,
+      "end": 1191.238,
+      "speaker": "host",
+      "text": "我插一句,有個朋友說他老婆不拿手機點贊,他已經把他老婆扔出去了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 199,
+      "start": 1191.24,
+      "end": 1191.241,
+      "speaker": "guest",
+      "text": "把接回來。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 200,
+      "start": 1191.241,
+      "end": 1191.242,
+      "speaker": "guest",
+      "text": "快點。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 201,
+      "start": 1191.242,
+      "end": 1191.243,
+      "speaker": "host",
+      "text": "他生氣了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 202,
+      "start": 1191.243,
+      "end": 1191.245,
+      "speaker": "host",
+      "text": "這樣很危險呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 203,
+      "start": 1191.245,
+      "end": 1191.246,
+      "speaker": "host",
+      "text": "你這樣有點過了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 204,
+      "start": 1191.247,
+      "end": 1191.252,
+      "speaker": "host",
+      "text": "努力了多少年,一直成了了一次又一次的兄妹。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 205,
+      "start": 1191.252,
+      "end": 1191.255,
+      "speaker": "host",
+      "text": "我特別想問一句,你究竟有幾個好妹妹?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 206,
+      "start": 1191.255,
+      "end": 1191.26,
+      "speaker": "host",
+      "text": "然後這好不容易有媳婦的,現在因為不給你點贊,要把媳婦趕出去,你有點太狂了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 207,
+      "start": 1191.26,
+      "end": 1191.261,
+      "speaker": "guest",
+      "text": "趕快接去。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 208,
+      "start": 1191.261,
+      "end": 1191.262,
+      "speaker": "host",
+      "text": "謝人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 209,
+      "start": 1191.262,
+      "end": 1191.263,
+      "speaker": "host",
+      "text": "好,接著說書。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 210,
+      "start": 1191.263,
+      "end": 1191.265,
+      "speaker": "guest",
+      "text": "我們剛說那個叫費曼學習法。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 211,
+      "start": 1191.265,
+      "end": 1191.269,
+      "speaker": "guest",
+      "text": "就是你聽別人聽的話,你只能可能懂個230%。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 212,
+      "start": 1191.269,
+      "end": 1191.272,
+      "speaker": "guest",
+      "text": "你自己閱讀呢,你能懂個560%。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 213,
+      "start": 1191.272,
+      "end": 1191.277,
+      "speaker": "guest",
+      "text": "但是如果你自己了解完了給別人講,你能掌握個890%,當然這個數字在不同的說法中有各有差異。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 214,
+      "start": 1191.277,
+      "end": 1191.28,
+      "speaker": "guest",
+      "text": "但總之大家都理解一個原則,誰是把高中英語懂的最明白的人?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 215,
+      "start": 1191.281,
+      "end": 1191.282,
+      "speaker": "host",
+      "text": "老師。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 216,
+      "start": 1191.282,
+      "end": 1191.285,
+      "speaker": "guest",
+      "text": "因為他想給別人講明白,他自己就得先把那個弄明白。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 217,
+      "start": 1191.285,
+      "end": 1191.286,
+      "speaker": "guest",
+      "text": "對吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 218,
+      "start": 1191.286,
+      "end": 1191.296,
+      "speaker": "guest",
+      "text": "所以我在這給大家,我剛講第一個點是通過這些小的植物、動物、石頭這些東西,天氣現象去鼓勵孩子好奇心,你就問他為什麼葉子是綠色的?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 219,
+      "start": 1191.296,
+      "end": 1191.299,
+      "speaker": "guest",
+      "text": "哎,最後得出結論,葉子竟然是不喜歡綠色的,對吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 220,
+      "start": 1191.299,
+      "end": 1191.301,
+      "speaker": "guest",
+      "text": "為什麼要去看那些昆蟲?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 221,
+      "start": 1191.301,
+      "end": 1191.307,
+      "speaker": "guest",
+      "text": "那最後得出結論,昆蟲其實是最後跟人類一樣進化出來的生物,只不過它比人類壽命這個歷史要更為悠久。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 222,
+      "start": 1191.307,
+      "end": 1191.31,
+      "speaker": "guest",
+      "text": "剛才是第一個好奇心、求知欲、想像力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 223,
+      "start": 1191.31,
+      "end": 1191.314,
+      "speaker": "guest",
+      "text": "第二個就是剛給大家說到了,由被動學習到主動學習。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 224,
+      "start": 1191.314,
+      "end": 1191.317,
+      "speaker": "guest",
+      "text": "其實就是由聽到說的過程。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 225,
+      "start": 1191.317,
+      "end": 1191.323,
+      "speaker": "guest",
+      "text": "我們以前給大家講講說聽是說是影響力,像董宇輝這種巴巴說的,說是影響力,但聽是領導力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 226,
+      "start": 1191.323,
+      "end": 1191.324,
+      "speaker": "host",
+      "text": "你看孫老師,於老師。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 227,
+      "start": 1191.324,
+      "end": 1191.326,
+      "speaker": "host",
+      "text": "他就是聽得多,他說的少,對吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 228,
+      "start": 1191.326,
+      "end": 1191.329,
+      "speaker": "guest",
+      "text": "這個說是影響力,聽是領導力,這是在管理學裡頭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 229,
+      "start": 1191.329,
+      "end": 1191.333,
+      "speaker": "guest",
+      "text": "但是我們在學習過程裡頭,聽就是被動的,說就是主動的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 230,
+      "start": 1191.333,
+      "end": 1191.335,
+      "speaker": "guest",
+      "text": "費曼學習法大家可能聽過這個人。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 231,
+      "start": 1191.335,
+      "end": 1191.336,
+      "speaker": "guest",
+      "text": "對吧,費曼。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 232,
+      "start": 1191.336,
+      "end": 1191.338,
+      "speaker": "host",
+      "text": "他就是我們物理上那個費曼嗎?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 233,
+      "start": 1191.339,
+      "end": 1191.341,
+      "speaker": "host",
+      "text": "費曼物理學講義。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 234,
+      "start": 1191.341,
+      "end": 1191.342,
+      "speaker": "host",
+      "text": "非常著名的一套書。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 235,
+      "start": 1191.342,
+      "end": 1191.343,
+      "speaker": "host",
+      "text": "是一個人嗎?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 236,
+      "start": 1191.343,
+      "end": 1191.345,
+      "speaker": "guest",
+      "text": "他是他是什麼時代的人,你說的那個人?",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 237,
+      "start": 1191.346,
+      "end": 1191.349,
+      "speaker": "host",
+      "text": "啊,費曼,我腦子蒙住了,20世紀的吧。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 238,
+      "start": 1191.349,
+      "end": 1191.351,
+      "speaker": "guest",
+      "text": "那那應該是一個人,如果是20世紀那應該是一個人。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 239,
+      "start": 1191.351,
+      "end": 1191.358,
+      "speaker": "guest",
+      "text": "然後呢,所以費曼學習法的一個特點就是從聽到自己讀,從自己讀到自己講。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 240,
+      "start": 1191.358,
+      "end": 1191.363,
+      "speaker": "guest",
+      "text": "這樣一個轉變的過程非常重要,各位朋友們,大家知道當孩子大量的自動的開始給別人講的時候,他自己就絕對成為了一個專家了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 241,
+      "start": 1191.364,
+      "end": 1191.367,
+      "speaker": "guest",
+      "text": "因為你發現你想給別人講明白的時候,你自己是不是基礎知識得好?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 242,
+      "start": 1191.367,
+      "end": 1191.373,
+      "speaker": "guest",
+      "text": "第二個,而且你再給別人講的時候就講出了什麼,就講出了一種邏輯感,你會發現成年人講話都是關於假期安全,今天我說三點,第一,第二,第三。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 243,
+      "start": 1191.373,
+      "end": 1191.376,
+      "speaker": "guest",
+      "text": "他開始有邏輯性,他就完整了,所以讓孩子學會給你講,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 244,
+      "start": 1191.376,
+      "end": 1191.377,
+      "speaker": "host",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 245,
+      "start": 1191.378,
+      "end": 1191.379,
+      "speaker": "host",
+      "text": "然後講一下岩石嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 246,
+      "start": 1191.379,
+      "end": 1191.381,
+      "speaker": "guest",
+      "text": "講一下岩石,大家可能都在聽這個岩石。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 247,
+      "start": 1191.381,
+      "end": 1191.383,
+      "speaker": "guest",
+      "text": "講點岩石,這個書差不多就過了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 248,
+      "start": 1191.383,
+      "end": 1191.384,
+      "speaker": "host",
+      "text": "還還有幾本?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 249,
+      "start": 1191.385,
+      "end": 1191.386,
+      "speaker": "guest",
+      "text": "還有300多本。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 250,
+      "start": 1191.386,
+      "end": 1191.392,
+      "speaker": "host",
+      "text": "還有300多本吧,宇輝把這個講完,這個書今天完了之後估計啊,可能就上不來了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 251,
+      "start": 1191.392,
+      "end": 1191.393,
+      "speaker": "host",
+      "text": "你看賣完了吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 252,
+      "start": 1191.393,
+      "end": 1191.395,
+      "speaker": "guest",
+      "text": "因為這種很可能這種書出版社印的比較慢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 253,
+      "start": 1191.395,
+      "end": 1191.397,
+      "speaker": "host",
+      "text": "已經賣了三天了,三天四天了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 254,
+      "start": 1191.397,
+      "end": 1191.403,
+      "speaker": "guest",
+      "text": "大家能理解這種書其實主要成本在哪,第一是紙張,這種精緻的銅版紙很貴,如果是印刷的朋友都知道,第二個就是它印刷的這個過程。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 255,
+      "start": 1191.403,
+      "end": 1191.404,
+      "speaker": "host",
+      "text": "講完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 256,
+      "start": 1191.404,
+      "end": 1191.405,
+      "speaker": "guest",
+      "text": "加油。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 257,
+      "start": 1191.405,
+      "end": 1191.406,
+      "speaker": "host",
+      "text": "大家讓你別走。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 258,
+      "start": 1191.406,
+      "end": 1191.407,
+      "speaker": "guest",
+      "text": "我一會還得播呢。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 259,
+      "start": 1191.407,
+      "end": 1191.408,
+      "speaker": "host",
+      "text": "啊,你晚上還有是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 260,
+      "start": 1191.408,
+      "end": 1191.409,
+      "speaker": "guest",
+      "text": "對對對對對。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 261,
+      "start": 1191.41,
+      "end": 1191.412,
+      "speaker": "host",
+      "text": "好,那你休息一會去。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 262,
+      "start": 1191.412,
+      "end": 1191.414,
+      "speaker": "host",
+      "text": "大家讓明明休息一會,啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 263,
+      "start": 1191.414,
+      "end": 1191.416,
+      "speaker": "host",
+      "text": "生產隊的驢也得休息。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 264,
+      "start": 1191.417,
+      "end": 1191.418,
+      "speaker": "guest",
+      "text": "石頭。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 265,
+      "start": 1191.418,
+      "end": 1191.423,
+      "speaker": "guest",
+      "text": "我特別喜歡石頭的一個原因是因為他們曾經見證過這個星球的滄海巨變。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 266,
+      "start": 1191.423,
+      "end": 1191.426,
+      "speaker": "guest",
+      "text": "也因此具有了一種厚重感。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 267,
+      "start": 1191.426,
+      "end": 1191.43,
+      "speaker": "guest",
+      "text": "它往往是沉默的,但是它卻見證了一切,你不覺得這個很很浪漫嗎?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 268,
+      "start": 1191.43,
+      "end": 1191.434,
+      "speaker": "guest",
+      "text": "就像一個非常有智慧的老人,他經歷過了很多事情,但他從來不會主動給你講道理一樣。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 269,
+      "start": 1191.434,
+      "end": 1191.435,
+      "speaker": "guest",
+      "text": "他會聽你。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 270,
+      "start": 1191.436,
+      "end": 1191.441,
+      "speaker": "guest",
+      "text": "所以這就是我喜歡石頭的原因,就是我總是感性的把世界萬物都抽離抽象出一種一種特點,一種品質,賦予了一種人格。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 271,
+      "start": 1191.442,
+      "end": 1191.445,
+      "speaker": "guest",
+      "text": "可能是我我自己的毛病,我總喜歡刻意的去這個解釋。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 272,
+      "start": 1191.445,
+      "end": 1191.449,
+      "speaker": "guest",
+      "text": "但是我覺得這會讓我愛上這世間的萬物。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 273,
+      "start": 1191.449,
+      "end": 1191.456,
+      "speaker": "guest",
+      "text": "這就能解釋為什麼我愛明月,我愛清風,我愛星辰,我愛大江大河,我甚至愛野花野草,我也愛著沙粒。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 274,
+      "start": 1191.456,
+      "end": 1191.458,
+      "speaker": "guest",
+      "text": "身上可以抽象出很多人的特點。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 275,
+      "start": 1191.459,
+      "end": 1191.46,
+      "speaker": "host",
+      "text": "還有50本了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 276,
+      "start": 1191.46,
+      "end": 1191.461,
+      "speaker": "guest",
+      "text": "還有50本了。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 277,
+      "start": 1191.461,
+      "end": 1191.462,
+      "speaker": "host",
+      "text": "沒了嗎?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 278,
+      "start": 1191.462,
+      "end": 1191.463,
+      "speaker": "guest",
+      "text": "還有50本。",
+      "text_normalized": "",
+      "confidence": 0.96,
+      "chunk_id": 1
+    },
+    {
+      "idx": 279,
+      "start": 1191.463,
+      "end": 1191.464,
+      "speaker": "host",
+      "text": "50本,最後50本了啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 280,
+      "start": 1191.465,
+      "end": 1191.47,
+      "speaker": "guest",
+      "text": "之前於老師不是還跟幾個特別這個牛的專家他們去過北京的西山嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 281,
+      "start": 1191.47,
+      "end": 1191.476,
+      "speaker": "guest",
+      "text": "如果北京的朋友大家可以去帶帶他去看一下,說北京的西山其實是非常好的研究這個地理和岩石形成的一個特別好的地方。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 282,
+      "start": 1191.476,
+      "end": 1191.479,
+      "speaker": "guest",
+      "text": "就是說那兩條縫之間就是幾億年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 283,
+      "start": 1191.48,
+      "end": 1191.484,
+      "speaker": "guest",
+      "text": "有時候你聽那種時候,你發現你上下兩條石縫之間是幾億年,因為那幾億年裡頭地球進入了低溫期嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 284,
+      "start": 1191.484,
+      "end": 1191.492,
+      "speaker": "guest",
+      "text": "就是給大家所講的這個低溫導致了很多人種和物種滅絕,在那個溫度再升起來之後才有了現在這波的高溫,地球的高溫期。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 285,
+      "start": 1191.492,
+      "end": 1191.498,
+      "speaker": "guest",
+      "text": "在那個低溫期裡頭,比如說海洋它結冰了,所以很多東西沒有辦法繼續沉積,但到後來冰化的東西之後繼續沉積下去,沉積到底,時間長了就成了岩石。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 286,
+      "start": 1191.498,
+      "end": 1191.502,
+      "speaker": "guest",
+      "text": "那沉積的有可能是什麼?有可能動物,也有可能是植物的屍體,那人也是動物,對不對?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 287,
+      "start": 1191.502,
+      "end": 1191.505,
+      "speaker": "guest",
+      "text": "所以其實從這個角度去說,我們的身體跟石頭並無二異。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 288,
+      "start": 1191.506,
+      "end": 1191.507,
+      "speaker": "guest",
+      "text": "對吧?",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 289,
+      "start": 1191.507,
+      "end": 1191.508,
+      "speaker": "host",
+      "text": "是。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 290,
+      "start": 1191.508,
+      "end": 1191.512,
+      "speaker": "guest",
+      "text": "蓋啊,碳啊,鐵啊,這些東西身體裡都有。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 291,
+      "start": 1191.513,
+      "end": 1191.514,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 292,
+      "start": 1191.514,
+      "end": 1191.516,
+      "speaker": "guest",
+      "text": "人身體其實最多的就是碳了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 293,
+      "start": 1191.516,
+      "end": 1191.518,
+      "speaker": "guest",
+      "text": "然後再加的就是輕,輕二氧嘛,輕就是水。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 294,
+      "start": 1191.519,
+      "end": 1191.52,
+      "speaker": "guest",
+      "text": "然後也有鐵。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 295,
+      "start": 1191.52,
+      "end": 1191.524,
+      "speaker": "guest",
+      "text": "我以前給大家講過,人身體裡頭所有的鐵元素取出來可以組成一個7厘米長的釘子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 296,
+      "start": 1191.524,
+      "end": 1191.525,
+      "speaker": "guest",
+      "text": "就這麼誇張。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 297,
+      "start": 1191.527,
+      "end": 1191.532,
+      "speaker": "guest",
+      "text": "當然這些石頭的物理性質和化學性質和自然元素類這些,大家感興趣的話,可以其實是更多去搜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 298,
+      "start": 1191.532,
+      "end": 1191.533,
+      "speaker": "guest",
+      "text": "我不是特別專業。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 299,
+      "start": 1191.533,
+      "end": 1191.534,
+      "speaker": "host",
+      "text": "沒有了是吧?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 300,
+      "start": 1191.535,
+      "end": 1191.537,
+      "speaker": "guest",
+      "text": "我只是喜歡研究石頭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 301,
+      "start": 1191.537,
+      "end": 1191.54,
+      "speaker": "guest",
+      "text": "石頭有另外一個原因,其實是因為小時候我們那不是曾經有小時候開過金礦嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 302,
+      "start": 1191.54,
+      "end": 1191.545,
+      "speaker": "guest",
+      "text": "我我記得我特別小的時候,我們家的抽屜裡全部放著各種石頭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 303,
+      "start": 1191.545,
+      "end": 1191.546,
+      "speaker": "host",
+      "text": "金的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 304,
+      "start": 1191.546,
+      "end": 1191.55,
+      "speaker": "guest",
+      "text": "對,就說你撿到這塊叫自然金,其實就是它的金子含量比較高的話,那塊出來就能弄出好多金子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 305,
+      "start": 1191.55,
+      "end": 1191.553,
+      "speaker": "guest",
+      "text": "所以小時候經常我爸會帶我上上山。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 306,
+      "start": 1191.553,
+      "end": 1191.555,
+      "speaker": "guest",
+      "text": "他會帶我去觀察石頭。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 307,
+      "start": 1191.555,
+      "end": 1191.56,
+      "speaker": "guest",
+      "text": "就特別小的時候,你看我也不寫作業,家裡以前有礦嘛,他把我帶到山上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 308,
+      "start": 1191.56,
+      "end": 1191.569,
+      "speaker": "guest",
+      "text": "然後呢在春天去山上摘那個野花野草,然後看那個飛鳥,一個小鳥落在樹枝上,落在很低矮的灌木叢上,啾啾的鳴叫,然後在太陽中飛起,消失在春光裡。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 309,
+      "start": 1191.569,
+      "end": 1191.573,
+      "speaker": "guest",
+      "text": "然後山間的清泉奔騰,抓一隻小蝦米,抓個小螃蟹,很快樂,你知道山上。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 310,
+      "start": 1191.573,
+      "end": 1191.574,
+      "speaker": "host",
+      "text": "還是小孩子。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 311,
+      "start": 1191.574,
+      "end": 1191.576,
+      "speaker": "guest",
+      "text": "對,就很涼快又很舒服。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 312,
+      "start": 1191.576,
+      "end": 1191.585,
+      "speaker": "guest",
+      "text": "然後我爸一定會去,就是那礦裡頭會把那些石頭,大山深處石頭挖出來,倒在那個石堆上,然後他就會帶著我去水裡頭把那個洗一洗,給我說,這個裡頭含的什麼比較多,這個裡頭含的什麼比較多。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 313,
+      "start": 1191.585,
+      "end": 1191.59,
+      "speaker": "guest",
+      "text": "然後大概他就能說清楚這個石頭是怎麼樣形成,但其實我現在已經記不清了,我沒有他當年記得牢固了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 314,
+      "start": 1191.59,
+      "end": 1191.594,
+      "speaker": "guest",
+      "text": "但是那個過程充滿了美感,這就是我給當所說的,帶孩子去觀察世界,體驗世界。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 315,
+      "start": 1191.594,
+      "end": 1191.597,
+      "speaker": "guest",
+      "text": "培養他的好奇心、求知欲、想像力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 316,
+      "start": 1191.597,
+      "end": 1191.599,
+      "speaker": "guest",
+      "text": "那最終如果他能從說,從聽到說了,那這個孩子就開始不一樣了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 317,
+      "start": 1191.599,
+      "end": 1192.003,
+      "speaker": "guest",
+      "text": "來,接下來給大家帶來的是小王子,之前沒有買到的朋友,今天可以有多少本啊?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 318,
+      "start": 1192.003,
+      "end": 1192.004,
+      "speaker": "host",
+      "text": "今天上了一萬本。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 319,
+      "start": 1192.004,
+      "end": 1192.005,
+      "speaker": "guest",
+      "text": "今天上了一萬本啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 320,
+      "start": 1192.005,
+      "end": 1192.008,
+      "speaker": "guest",
+      "text": "小王子沒有買到的朋友們,今天可以自己去買了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 321,
+      "start": 1192.008,
+      "end": 1192.014,
+      "speaker": "guest",
+      "text": "有很多朋友說到小王子已經讀完了,收到額爾古納河已經讀完了,收到蘇東坡傳也已經讀完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 322,
+      "start": 1192.014,
+      "end": 1192.02,
+      "speaker": "guest",
+      "text": "讀完了之後呢,每個人在小王子這本書裡頭,其實看到喜歡的句子是不一樣的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 323,
+      "start": 1192.02,
+      "end": 1192.022,
+      "speaker": "guest",
+      "text": "我們通常喜歡的是什麼?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 324,
+      "start": 1192.022,
+      "end": 1192.031,
+      "speaker": "guest",
+      "text": "說what is essential is invisible to your eye,說真正重要的是眼睛看不見的,只有你用心感受到的東西才是真正重要的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 325,
+      "start": 1192.031,
+      "end": 1192.04,
+      "speaker": "guest",
+      "text": "我們都喜歡的重要的句子叫做it is the time that you have wasted for your rose that makes the rose so important,說你在玫瑰身上所花的時間,使得玫瑰重要。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 326,
+      "start": 1192.041,
+      "end": 1192.051,
+      "speaker": "guest",
+      "text": "我在6月9號活的,我記得在6月10號15號左右的時候,那一天人直播間裡有70萬人,我當時是說,我說我與這世間上千千萬萬個男生並無二異。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 327,
+      "start": 1192.051,
+      "end": 1192.059,
+      "speaker": "guest",
+      "text": "只是因為你們在這裡直播間的停留點贊,跟我互動的消息,這種陪伴的感受使我變得不同。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 328,
+      "start": 1192.059,
+      "end": 1192.063,
+      "speaker": "guest",
+      "text": "所以你可能在茫茫人海遇見我的時候,突然會有啊,董宇輝。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 329,
+      "start": 1192.063,
+      "end": 1192.068,
+      "speaker": "guest",
+      "text": "所以就是周杰倫的歌詞嘛,美的從來不是下雨天啊,美得不是下雨天,而是與你一起躲過雨的屋簷啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 330,
+      "start": 1192.068,
+      "end": 1192.072,
+      "speaker": "guest",
+      "text": "對不對?所以大家想想你們為什麼會不斷的懷念那個小時候?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 331,
+      "start": 1192.072,
+      "end": 1192.076,
+      "speaker": "guest",
+      "text": "你們為什麼會不斷想去看看舊的東西,去交舊的朋友,吃舊的食物?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 332,
+      "start": 1192.076,
+      "end": 1192.079,
+      "speaker": "guest",
+      "text": "那是因為你所花的時間和回憶讓它現在重要。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 333,
+      "start": 1192.079,
+      "end": 1192.086,
+      "speaker": "guest",
+      "text": "那這本書裡頭我相信一定都能找到那麼一句話,讓某一個成年人在深夜裡看到之後,潸然淚下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 334,
+      "start": 1192.086,
+      "end": 1192.087,
+      "speaker": "host",
+      "text": "這個。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 335,
+      "start": 1192.087,
+      "end": 1192.088,
+      "speaker": "host",
+      "text": "說這事還挺有意義。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 336,
+      "start": 1192.088,
+      "end": 1192.091,
+      "speaker": "guest",
+      "text": "只有真誠的溫情的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 337,
+      "start": 1192.092,
+      "end": 1192.095,
+      "speaker": "guest",
+      "text": "這些東西才能夠讓一個成年人潸然淚下。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 338,
+      "start": 1192.095,
+      "end": 1192.097,
+      "speaker": "guest",
+      "text": "我覺得這就是一種情感的力量。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 339,
+      "start": 1192.098,
+      "end": 1192.106,
+      "speaker": "guest",
+      "text": "我前兩天也說到了很多朋友們,比如說他們讀完書之後,他們會在抖音上跟我發些消息,甚至在我的發的動態下面評論。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 340,
+      "start": 1192.106,
+      "end": 1192.109,
+      "speaker": "guest",
+      "text": "就評論了很多都是小王子裡頭的金句。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 341,
+      "start": 1192.109,
+      "end": 1192.11,
+      "speaker": "host",
+      "text": "這個。",
+      "text_normalized": "",
+      "confidence": 0.99,
+      "chunk_id": 1
+    },
+    {
+      "idx": 342,
+      "start": 1192.11,
+      "end": 1192.111,
+      "speaker": "host",
+      "text": "說這事還挺有意義。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 343,
+      "start": 1192.111,
+      "end": 1192.112,
+      "speaker": "guest",
+      "text": "我們做這事真的很有意義。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 344,
+      "start": 1192.112,
+      "end": 1192.116,
+      "speaker": "guest",
+      "text": "這兩天我說到最多的就是第一個小王子讀完了,第二個額爾古納河右岸讀完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 345,
+      "start": 1192.116,
+      "end": 1192.118,
+      "speaker": "guest",
+      "text": "第三個就是蘇東坡傳讀完了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 346,
+      "start": 1192.118,
+      "end": 1192.12,
+      "speaker": "guest",
+      "text": "你知道這三個完全是不同的嘛?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 347,
+      "start": 1192.12,
+      "end": 1192.121,
+      "speaker": "host",
+      "text": "那兩個書間有沒?",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 348,
+      "start": 1192.121,
+      "end": 1192.123,
+      "speaker": "guest",
+      "text": "蘇東坡傳沒有了,但是那個。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 349,
+      "start": 1192.123,
+      "end": 1192.124,
+      "speaker": "guest",
+      "text": "額爾古納河右岸給大家談。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    },
+    {
+      "idx": 350,
+      "start": 1192.124,
+      "end": 1192.129,
+      "speaker": "guest",
+      "text": "你知道讀完額爾古納河右岸之後,很多人就說在原本平淡無奇的城市生活裡,在",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 1
+    }
+  ]
+}

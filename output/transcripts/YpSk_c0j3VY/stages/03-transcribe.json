@@ -1,0 +1,27 @@
+{
+  "stage": "transcribe",
+  "video_id": "YpSk_c0j3VY",
+  "status": "done",
+  "started_at": "2026-04-19T15:13:05.700073+08:00",
+  "finished_at": "2026-04-19T15:22:41.354609+08:00",
+  "duration_sec": 575.654536,
+  "inputs": [
+    "vocals.wav",
+    "chunks/*.wav"
+  ],
+  "outputs": [
+    "chunks/*.json"
+  ],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "model": "gemini-2.5-flash",
+    "chunks_transcribed": 5,
+    "chunks_failed": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "estimated_cost_usd": 0.0,
+    "prompt_version": "5bcae7cb3870"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "ingest",
+  "video_id": "BV1f64y1V7f2",
+  "status": "done",
+  "started_at": "2026-04-19T10:38:24.359671+08:00",
+  "finished_at": "2026-04-19T10:38:26.913112+08:00",
+  "duration_sec": 2.553441,
+  "inputs": [],
+  "outputs": [
+    "audio.m4a",
+    "source.json"
+  ],
+  "tool_versions": {
+    "yt-dlp": "2026.03.17"
+  },
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "url": "https://www.bilibili.com/video/BV1f64y1V7f2/",
+    "downloaded_bytes": 5056323,
+    "source_metadata": {
+      "video_id": "BV1f64y1V7f2",
+      "source": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1f64y1V7f2/",
+      "title": "董宇辉走红的直播片段",
+      "uploader": "无名的啾咪",
+      "duration_sec": 545.714
+    }
+  }
+}

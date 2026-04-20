@@ -1,0 +1,1506 @@
+{
+  "chunk_id": 4,
+  "start_offset": 4790.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 4790.0,
+      "end": 4794.1,
+      "speaker": "host",
+      "text": "这个才是我们所说的这个五谷杂粮啊，五谷呢其实是",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 1,
+      "start": 4794.1,
+      "end": 4799.2,
+      "speaker": "host",
+      "text": "我们所驯化的，它跟国外的那些玉米和红薯不一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 2,
+      "start": 4801.0,
+      "end": 4804.0,
+      "speaker": "host",
+      "text": "因为红薯和玉米是明才进入的中国。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 3,
+      "start": 4804.0,
+      "end": 4809.4,
+      "speaker": "host",
+      "text": "所以后来给大家讲过嘛，这个康乾盛世主要就是因为这些大产量的农作物的种植才造成的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 4,
+      "start": 4809.4,
+      "end": 4812.9,
+      "speaker": "host",
+      "text": "然后小米是我们所驯化的这个作物。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 5,
+      "start": 4812.9,
+      "end": 4814.0,
+      "speaker": "host",
+      "text": "它有一个特点是什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 6,
+      "start": 4814.0,
+      "end": 4818.3,
+      "speaker": "host",
+      "text": "小米的这个营养含量比较高，而且呢煮粥的时候特别容易熟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 7,
+      "start": 4818.3,
+      "end": 4824.0,
+      "speaker": "host",
+      "text": "再放一点枸杞啊，再放点大枣啊，很棒的，很棒的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 8,
+      "start": 4825.0,
+      "end": 4835.1,
+      "speaker": "host",
+      "text": "北方人种这个小麦中的，小米中的特别多，你尤其到了这个内蒙啊，陕北啊，山西啊，甘肃一些地方，都是在种小米的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 9,
+      "start": 4836.0,
+      "end": 4840.0,
+      "speaker": "host",
+      "text": "其实我们之前给大家提过宁夏，宁夏大家听着很干旱啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 10,
+      "start": 4840.0,
+      "end": 4844.0,
+      "speaker": "host",
+      "text": "宁夏下面其实也有，宁夏也种过水稻你知道不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 11,
+      "start": 4844.0,
+      "end": 4845.0,
+      "speaker": "host",
+      "text": "宁夏也种水稻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 12,
+      "start": 4845.0,
+      "end": 4890.0,
+      "speaker": "host",
+      "text": "其实能决定种不种水稻的，主要其实是因为就是就是看有没有就是看有没有水。因为到了夏天，北半球的熱量都夠。你看東北都能種米。東北都能種米，說明寧夏肯定也能種米，熱量是夠的，就看他把水夠不夠。寧夏有的地方是產米的。很難相信吧？跟很多人的預期不一樣。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 13,
+      "start": 4890.0,
+      "end": 4891.0,
+      "speaker": "host",
+      "text": "就民勤那个是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 14,
+      "start": 4891.0,
+      "end": 4892.0,
+      "speaker": "host",
+      "text": "这个有多少单？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 15,
+      "start": 4892.0,
+      "end": 4892.7,
+      "speaker": "host",
+      "text": "民勤这个瓜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 16,
+      "start": 4893.0,
+      "end": 4894.0,
+      "speaker": "host",
+      "text": "5000单是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 17,
+      "start": 4894.0,
+      "end": 4895.0,
+      "speaker": "guest",
+      "text": "还有。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 18,
+      "start": 4895.0,
+      "end": 4897.0,
+      "speaker": "host",
+      "text": "你看这个瓜，它的特点啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 19,
+      "start": 4897.0,
+      "end": 4900.0,
+      "speaker": "host",
+      "text": "就它的纸好像不是那种分离的这种纸。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 20,
+      "start": 4900.0,
+      "end": 4903.0,
+      "speaker": "host",
+      "text": "导演就很随意的砍了这么一刀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 21,
+      "start": 4903.0,
+      "end": 4905.0,
+      "speaker": "host",
+      "text": "应该也没咋让我吃。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 22,
+      "start": 4905.0,
+      "end": 4906.0,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 23,
+      "start": 4906.0,
+      "end": 4907.0,
+      "speaker": "host",
+      "text": "让我吃呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 24,
+      "start": 4907.0,
+      "end": 4908.0,
+      "speaker": "guest",
+      "text": "拿走。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 25,
+      "start": 4908.0,
+      "end": 4909.0,
+      "speaker": "host",
+      "text": "拿走是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 26,
+      "start": 4909.0,
+      "end": 4911.0,
+      "speaker": "host",
+      "text": "甘肃民勤的这个玉瓜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 27,
+      "start": 4912.0,
+      "end": 4913.0,
+      "speaker": "host",
+      "text": "玉姑米瓜啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 28,
+      "start": 4913.0,
+      "end": 4915.0,
+      "speaker": "host",
+      "text": "49块9两枚。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 29,
+      "start": 4915.0,
+      "end": 4918.0,
+      "speaker": "host",
+      "text": "这一个瓜又大概有有四斤左右吧。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 30,
+      "start": 4919.0,
+      "end": 4921.0,
+      "speaker": "host",
+      "text": "两个是八到五斤，是八到九斤是吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 31,
+      "start": 4921.0,
+      "end": 4923.0,
+      "speaker": "host",
+      "text": "嗯，那一个就是四斤到四斤半左右啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 32,
+      "start": 4924.0,
+      "end": 4927.0,
+      "speaker": "host",
+      "text": "民勤的瓜的特点就是甜，非常甜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 33,
+      "start": 4927.0,
+      "end": 4932.0,
+      "speaker": "host",
+      "text": "我先给大家讲过民勤这里特点就是95%的荒漠，95%的荒漠化。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 34,
+      "start": 4933.0,
+      "end": 4942.0,
+      "speaker": "host",
+      "text": "要不是因为我们在那片土地上继续的与自然的抗争和那么多人的继续的奋斗，可能那片土地现在全部都已经荒漠化了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 35,
+      "start": 4943.0,
+      "end": 4944.0,
+      "speaker": "host",
+      "text": "民勤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 36,
+      "start": 4945.0,
+      "end": 4947.0,
+      "speaker": "host",
+      "text": "甘肃民勤属于哪？民勤属于武威。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 37,
+      "start": 4949.0,
+      "end": 4950.0,
+      "speaker": "host",
+      "text": "武威。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 38,
+      "start": 4950.0,
+      "end": 4951.0,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 39,
+      "start": 4951.0,
+      "end": 4952.0,
+      "speaker": "host",
+      "text": "哎，你这你都记住了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 40,
+      "start": 4953.0,
+      "end": 4954.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 41,
+      "start": 4954.0,
+      "end": 4955.0,
+      "speaker": "host",
+      "text": "武威。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 42,
+      "start": 4956.0,
+      "end": 4957.0,
+      "speaker": "host",
+      "text": "可以啊，彭哥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 43,
+      "start": 4957.0,
+      "end": 4960.0,
+      "speaker": "host",
+      "text": "武威市，然后呢这个民勤县。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 44,
+      "start": 4961.0,
+      "end": 4962.0,
+      "speaker": "host",
+      "text": "民勤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 45,
+      "start": 4962.0,
+      "end": 4965.0,
+      "speaker": "host",
+      "text": "民勤的这个面积很大的，它是武威面积上的第一大。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 46,
+      "start": 4965.0,
+      "end": 4970.0,
+      "speaker": "host",
+      "text": "但是人口呢只有17万左右，而且城市人口据说只有6万左右，所以大家能看到其实大量都是农村人口。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 47,
+      "start": 4970.0,
+      "end": 4977.0,
+      "speaker": "host",
+      "text": "但是你如果在网上，前两天昨天网有一个抖音上有个视频火的，就是人们在开车，风来了，打了，风沙暴在后面跟着，看到那个没？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 48,
+      "start": 4977.0,
+      "end": 4979.0,
+      "speaker": "host",
+      "text": "像一堵墙一样袭来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 49,
+      "start": 4979.0,
+      "end": 4984.0,
+      "speaker": "host",
+      "text": "其实以前很多时候这个就是因为荒漠化严重，就是那种现象。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 50,
+      "start": 4984.0,
+      "end": 4990.0,
+      "speaker": "host",
+      "text": "所以在那裡生活的人們其實生活很艱苦，但是大家也知道就是那樣光照和就是那樣的土壤才能種出來這樣好吃的瓜。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 51,
+      "start": 4990.0,
+      "end": 4991.0,
+      "speaker": "host",
+      "text": "民勤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 52,
+      "start": 4991.0,
+      "end": 4995.0,
+      "speaker": "host",
+      "text": "以前95%荒漠化的地方，大家都觉得这个地方没有希望的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 53,
+      "start": 4995.0,
+      "end": 4999.0,
+      "speaker": "host",
+      "text": "但其实只要人们坚守，我们就可以把荒漠变成绿洲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 54,
+      "start": 4999.0,
+      "end": 5002.0,
+      "speaker": "host",
+      "text": "刚给大家讲的毛乌素沙漠，现在80%都已经是绿洲了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 55,
+      "start": 5003.0,
+      "end": 5004.0,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 56,
+      "start": 5004.0,
+      "end": 5006.0,
+      "speaker": "host",
+      "text": "跟自然的这种抗争啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 57,
+      "start": 5007.0,
+      "end": 5010.0,
+      "speaker": "host",
+      "text": "我们以前修的很多这种大的，大的工程啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 58,
+      "start": 5010.0,
+      "end": 5012.0,
+      "speaker": "host",
+      "text": "就是大家要知道这片土地上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 59,
+      "start": 5012.0,
+      "end": 5014.0,
+      "speaker": "host",
+      "text": "因为第一个，人们是真的勤劳。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 60,
+      "start": 5014.0,
+      "end": 5020.0,
+      "speaker": "host",
+      "text": "勤劳的背后是什么？勤劳的背后是没有办法，因为很多时候土地面积小，可耕种土地少，又贫瘠，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 61,
+      "start": 5020.0,
+      "end": 5026.0,
+      "speaker": "host",
+      "text": "然后第二个呢，又因为经常遇见天灾人祸，如果不互相帮助的话，你是很难度过那些欠收的年份的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 62,
+      "start": 5026.0,
+      "end": 5030.0,
+      "speaker": "host",
+      "text": "所以必须要勤劳，而且必须要合作，必须要团结。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 63,
+      "start": 5031.0,
+      "end": 5035.0,
+      "speaker": "host",
+      "text": "农业耕种的来到每一每一口粮食都不容易。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 64,
+      "start": 5035.0,
+      "end": 5037.0,
+      "speaker": "host",
+      "text": "所以呢，大家也经常的非常的节俭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 65,
+      "start": 5037.0,
+      "end": 5046.0,
+      "speaker": "host",
+      "text": "所以大家最后会发现，这就形成了这片土地上人们，比如说善于合作，然后彼此之间对彼此都很真诚，对吧？有朋自远方来啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 66,
+      "start": 5046.0,
+      "end": 5048.0,
+      "speaker": "host",
+      "text": "所以又构成了他们的国民性格。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 67,
+      "start": 5048.0,
+      "end": 5052.0,
+      "speaker": "host",
+      "text": "那这里头我们之前给大家讲过好几个非常重要的这些工程，比如说第一个。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 68,
+      "start": 5054.0,
+      "end": 5055.0,
+      "speaker": "host",
+      "text": "你看修长城。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 69,
+      "start": 5055.0,
+      "end": 5065.0,
+      "speaker": "host",
+      "text": "为什么要修长城？因为你知道现在像北京啊，河北啊，山西啊，甚至陕西北部这些地方，就是游牧民族以来，然后呢就遭受了灾难。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 70,
+      "start": 5065.0,
+      "end": 5068.0,
+      "speaker": "host",
+      "text": "然后没有办法，所以当时只能修长城。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 71,
+      "start": 5068.0,
+      "end": 5070.0,
+      "speaker": "host",
+      "text": "长城刚给大家讲的是谁组织修的？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 72,
+      "start": 5070.0,
+      "end": 5071.0,
+      "speaker": "host",
+      "text": "蒙恬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 73,
+      "start": 5071.0,
+      "end": 5076.0,
+      "speaker": "host",
+      "text": "当然后来在人写，不管是司马光写的资治通鉴，还是后来写的史记。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 74,
+      "start": 5076.0,
+      "end": 5086.0,
+      "speaker": "host",
+      "text": "大家在里头对于蒙恬的评价都特别差，大家说蒙恬呢就是根本不敢提出正确的建议，一味的就应着这个秦始皇的错误想法，然后呢劳民伤财。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 75,
+      "start": 5087.0,
+      "end": 5094.0,
+      "speaker": "host",
+      "text": "因为当时直接带着30万的士兵和预计有百万的编民一起去修建的长城，大家觉得这是劳民伤财。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 76,
+      "start": 5094.0,
+      "end": 5097.0,
+      "speaker": "host",
+      "text": "但是你要知道那么漫长的边境线是没有办法派将士常年守护的呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 77,
+      "start": 5097.0,
+      "end": 5105.0,
+      "speaker": "host",
+      "text": "所以这就能理解了，大家想要安定生活的强烈的愿望，所以你不能站在这个一个某一个点上去指责他们修长城。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 78,
+      "start": 5105.0,
+      "end": 5109.0,
+      "speaker": "host",
+      "text": "那你如果从现实，现实使用的角度去说，长城的价值其实是更高的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 79,
+      "start": 5110.0,
+      "end": 5110.5,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 80,
+      "start": 5112.0,
+      "end": 5115.0,
+      "speaker": "host",
+      "text": "如果没有长城的话，那安定会更少。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 81,
+      "start": 5115.0,
+      "end": 5120.0,
+      "speaker": "host",
+      "text": "当然除了长城之外，大家还知道我们修过什么？比如说修过秦的时候修过什么？都江堰大家听过吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 82,
+      "start": 5122.0,
+      "end": 5123.0,
+      "speaker": "host",
+      "text": "都江堰，李冰父子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 83,
+      "start": 5124.0,
+      "end": 5126.0,
+      "speaker": "host",
+      "text": "都江堰是在岷江上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 84,
+      "start": 5126.0,
+      "end": 5130.0,
+      "speaker": "host",
+      "text": "然后呢，就是因为都江堰的修建，所以成都平原2000年赖物产丰富呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 85,
+      "start": 5130.0,
+      "end": 5133.0,
+      "speaker": "host",
+      "text": "大家知道我们现在把成都叫做什么？叫做天府之国。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 86,
+      "start": 5134.0,
+      "end": 5134.5,
+      "speaker": "host",
+      "text": "听过吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 87,
+      "start": 5135.0,
+      "end": 5137.0,
+      "speaker": "host",
+      "text": "你知道天府之国最早是说哪的吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 88,
+      "start": 5137.0,
+      "end": 5145.0,
+      "speaker": "host",
+      "text": "天府之国最早不是说成都的，天府之国最早是说现在从长安到潼关中间这个叫渭河谷地，以前是说这的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 89,
+      "start": 5146.0,
+      "end": 5147.0,
+      "speaker": "host",
+      "text": "天府之国。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 90,
+      "start": 5147.0,
+      "end": 5149.0,
+      "speaker": "host",
+      "text": "因为大家知道自古，听过一句话叫自古关中儿女不外嫁嘛。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 91,
+      "start": 5150.0,
+      "end": 5152.0,
+      "speaker": "host",
+      "text": "因为家里能吃饱，农业社会能吃饱就是好地方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 92,
+      "start": 5152.0,
+      "end": 5158.0,
+      "speaker": "host",
+      "text": "后来也就是因为有了都江堰，所以才能让成都平原旱涝保收，因此才有了天府之国这么一说呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 93,
+      "start": 5159.0,
+      "end": 5160.0,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 94,
+      "start": 5160.0,
+      "end": 5161.0,
+      "speaker": "host",
+      "text": "天府之国。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 95,
+      "start": 5161.0,
+      "end": 5165.0,
+      "speaker": "host",
+      "text": "然后再接下来我们还给大家讲过一些其他的特别好的这个修的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 96,
+      "start": 5165.0,
+      "end": 5167.0,
+      "speaker": "host",
+      "text": "大家也知道河南的这个红旗渠听过吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 97,
+      "start": 5167.0,
+      "end": 5170.0,
+      "speaker": "host",
+      "text": "削了1400多个山头啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 98,
+      "start": 5170.0,
+      "end": 5172.0,
+      "speaker": "host",
+      "text": "从山上把水引过来，红旗渠你们听过吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 99,
+      "start": 5174.0,
+      "end": 5185.0,
+      "speaker": "host",
+      "text": "要不是这些巨大的工程，那可能大家想要这个修养生息，不管旱涝都保收，风雨中还能有非常安定的生活，很难很难。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 100,
+      "start": 5185.0,
+      "end": 5188.0,
+      "speaker": "host",
+      "text": "当然这样的工程数不胜数，大家后来知道了三峡大坝，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 101,
+      "start": 5191.0,
+      "end": 5198.0,
+      "speaker": "host",
+      "text": "我们改天，我我我晚上可以给大家再讲一讲，就是为什么我们这些年，我们大家的老板们叫基建狂魔，其实这四个字我们很骄傲，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 102,
+      "start": 5199.0,
+      "end": 5206.0,
+      "speaker": "host",
+      "text": "其实我们对于基建或者对于比如说像现在高铁啊，很多的高速这样的修建有一个非常重要的一个事件就是2008年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 103,
+      "start": 5206.0,
+      "end": 5207.0,
+      "speaker": "guest",
+      "text": "广州。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 104,
+      "start": 5207.0,
+      "end": 5208.0,
+      "speaker": "host",
+      "text": "你知道那个事情是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 105,
+      "start": 5208.0,
+      "end": 5209.0,
+      "speaker": "guest",
+      "text": "08年的广州。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 106,
+      "start": 5209.0,
+      "end": 5210.0,
+      "speaker": "host",
+      "text": "听过这个事是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 107,
+      "start": 5211.0,
+      "end": 5215.0,
+      "speaker": "host",
+      "text": "08年的广州的火车站滞留了有十几万人，整整滞留了六天。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 108,
+      "start": 5215.0,
+      "end": 5217.0,
+      "speaker": "host",
+      "text": "为什么呢？因为那年正好逢着南方动雨。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 109,
+      "start": 5217.0,
+      "end": 5219.0,
+      "speaker": "host",
+      "text": "那是多事之秋啊，那叫eventful。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 110,
+      "start": 5219.0,
+      "end": 5221.0,
+      "speaker": "host",
+      "text": "Yes。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 111,
+      "start": 5221.0,
+      "end": 5223.0,
+      "speaker": "host",
+      "text": "Event就大的事件。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 112,
+      "start": 5223.0,
+      "end": 5225.0,
+      "speaker": "host",
+      "text": "Eventful就是发生了很多大的事件。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 113,
+      "start": 5225.0,
+      "end": 5227.0,
+      "speaker": "host",
+      "text": "Eventful year。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 114,
+      "start": 5227.0,
+      "end": 5229.0,
+      "speaker": "host",
+      "text": "所以2008年是was an eventful year。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 115,
+      "start": 5229.0,
+      "end": 5231.0,
+      "speaker": "host",
+      "text": "广州大量的滞留。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 116,
+      "start": 5231.0,
+      "end": 5235.0,
+      "speaker": "host",
+      "text": "没有办法，都是扛着被子要回家的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 117,
+      "start": 5236.0,
+      "end": 5237.0,
+      "speaker": "host",
+      "text": "这叫务工人员。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 118,
+      "start": 5237.0,
+      "end": 5242.0,
+      "speaker": "host",
+      "text": "回家这种大的人口迁徙全世界只有在中国能找到，一年拉其实亿人的往返啊。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 119,
+      "start": 5243.0,
+      "end": 5244.0,
+      "speaker": "host",
+      "text": "没有办法。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 120,
+      "start": 5244.0,
+      "end": 5247.0,
+      "speaker": "host",
+      "text": "越来越多的人涌入了广州火车站。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 121,
+      "start": 5247.0,
+      "end": 5250.0,
+      "speaker": "host",
+      "text": "最后在里头没吃没喝的，甚至都晕倒在里头。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 122,
+      "start": 5250.0,
+      "end": 5252.0,
+      "speaker": "host",
+      "text": "然后呢不断地往火车上冲去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 123,
+      "start": 5252.0,
+      "end": 5253.0,
+      "speaker": "host",
+      "text": "但是能理解。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 124,
+      "start": 5253.0,
+      "end": 5256.0,
+      "speaker": "host",
+      "text": "都能理解，但是确实没有办法，运力没有办法恢复。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 125,
+      "start": 5256.0,
+      "end": 5260.0,
+      "speaker": "host",
+      "text": "然后因为南方动雨导致了很多电线其实它设备不足，供电不足，是断的。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 126,
+      "start": 5262.0,
+      "end": 5268.0,
+      "speaker": "host",
+      "text": "我们很多时候就像一个朴实，不善言辞，默默努力。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 127,
+      "start": 5268.0,
+      "end": 5270.0,
+      "speaker": "host",
+      "text": "看着有些笨拙的一个孩子一样。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 128,
+      "start": 5271.0,
+      "end": 5273.0,
+      "speaker": "host",
+      "text": "那年吃过亏之后，我们后来做了什么事情？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 129,
+      "start": 5275.0,
+      "end": 5279.0,
+      "speaker": "host",
+      "text": "没有过多的去诉苦，也没有过多的去抱怨，没有去伸张。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 130,
+      "start": 5279.0,
+      "end": 5281.0,
+      "speaker": "host",
+      "text": "而是扎扎实实的开始做自己该做的事情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 131,
+      "start": 5281.0,
+      "end": 5283.0,
+      "speaker": "host",
+      "text": "所以大家后来就看到了修了那么多的高铁。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 132,
+      "start": 5283.0,
+      "end": 5285.0,
+      "speaker": "host",
+      "text": "你现在再出门的时候，高铁很方便了，对吧？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 133,
+      "start": 5285.0,
+      "end": 5289.0,
+      "speaker": "host",
+      "text": "那包括从那年之后，大家知道那年的事情真的太多太多了。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 134,
+      "start": 5289.0,
+      "end": 5292.0,
+      "speaker": "host",
+      "text": "多到我们后来都，很难忘记那一年。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 135,
+      "start": 5292.0,
+      "end": 5293.0,
+      "speaker": "host",
+      "text": "那年我初三。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 136,
+      "start": 5294.0,
+      "end": 5298.0,
+      "speaker": "host",
+      "text": "我还记得我在操场上，操场上发现了，我塞在别人塞的老鼠洞里，我写的情书吗？",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 137,
+      "start": 5300.0,
+      "end": 5305.0,
+      "speaker": "host",
+      "text": "所以大家能理解这个很多修建的大的工程背后的一个唯一的初衷，就是国泰民安呀。",
+      "text_normalized": "",
+      "confidence": 0.97,
+      "chunk_id": 4
+    },
+    {
+      "idx": 138,
+      "start": 5306.0,
+      "end": 5308.0,
+      "speaker": "host",
+      "text": "就是让大家都能过上好的生活呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 139,
+      "start": 5308.0,
+      "end": 5309.0,
+      "speaker": "host",
+      "text": "这个到顿顿的时间了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 140,
+      "start": 5310.0,
+      "end": 5311.0,
+      "speaker": "host",
+      "text": "来，欢迎顿顿啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 141,
+      "start": 5311.0,
+      "end": 5312.0,
+      "speaker": "host",
+      "text": "大家已经开始呼吁顿顿。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 142,
+      "start": 5314.0,
+      "end": 5315.0,
+      "speaker": "guest",
+      "text": "辛苦啦。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 143,
+      "start": 5320.0,
+      "end": 5321.0,
+      "speaker": "host",
+      "text": "欢迎顿顿啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 144,
+      "start": 5321.0,
+      "end": 5322.0,
+      "speaker": "host",
+      "text": "好，那您说老师去休息一下吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 145,
+      "start": 5325.0,
+      "end": 5326.0,
+      "speaker": "guest",
+      "text": "别扣工资了。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 146,
+      "start": 5326.0,
+      "end": 5327.0,
+      "speaker": "host",
+      "text": "咱们真没工资扣了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 4
+    },
+    {
+      "idx": 147,
+      "start": 5327.0,
+      "end": 5328.0,
+      "speaker": "guest",
+      "text": "你们谨慎发言。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 148,
+      "start": 5328.0,
+      "end": 5330.0,
+      "speaker": "guest",
+      "text": "他们要扣于老师和那个小孙的。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    },
+    {
+      "idx": 149,
+      "start": 5330.0,
+      "end": 5331.0,
+      "speaker": "guest",
+      "text": "真的吓人。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 4
+    }
+  ]
+}

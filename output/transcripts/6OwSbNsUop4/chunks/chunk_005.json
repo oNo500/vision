@@ -1,0 +1,2026 @@
+{
+  "chunk_id": 5,
+  "start_offset": 5990.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 5990.0,
+      "end": 5996.0,
+      "speaker": "host",
+      "text": "那种山药一般是脆的，然后呢，细的山药呢，往往它是能够蒸或者煮完了，它是有那种糯的口感的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 1,
+      "start": 5999.22,
+      "end": 6002.33,
+      "speaker": "host",
+      "text": "然后里头也给大家带来这个削山药的这个小的刀子，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 2,
+      "start": 6003.73,
+      "end": 6007.58,
+      "speaker": "host",
+      "text": "然后还有这个山药粉，如果大家自己喜欢冲的话，可以拿它试着冲一下。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 3,
+      "start": 6009.13,
+      "end": 6018.18,
+      "speaker": "host",
+      "text": "山药有很好的这个作用，但是我在镜头前一个都不能说。因为大家都知道啊，所以我一个都不能说。想知道的可以自己去拍就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 4,
+      "start": 6020.13,
+      "end": 6023.78,
+      "speaker": "host",
+      "text": "刚才那个是因为我们放的时间久了，跟山药本身没有关系啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 5,
+      "start": 6024.93,
+      "end": 6026.13,
+      "speaker": "host",
+      "text": "这个山药是没事的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 6,
+      "start": 6026.33,
+      "end": 6027.93,
+      "speaker": "guest",
+      "text": "我们售后是肯定没有问题的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 7,
+      "start": 6028.03,
+      "end": 6029.23,
+      "speaker": "host",
+      "text": "售后是没问题的啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 8,
+      "start": 6030.03,
+      "end": 6039.63,
+      "speaker": "host",
+      "text": "有的朋友如果是确实有朋友可能会对山药的这个汁液有一些过敏，如果过敏的话，你就带着一个手套去去削就行了，家里有那种塑料手套也行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 9,
+      "start": 6040.43,
+      "end": 6059.13,
+      "speaker": "host",
+      "text": "因为大家知道这个在我们传统中国的饮食文化中山药对于人身体是有一些其他的这个好处的，但是那些呢全部都是一些违禁词。不语许说，所以我不能介绍，如果大家喜欢的话，可以在评论区全说，给其他朋友们提醒一下就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 10,
+      "start": 6060.33,
+      "end": 6068.03,
+      "speaker": "host",
+      "text": "呃，山药有个非常好的做法就是削完皮之后切成段，然后去蒸对吧？蒸出来之后放一点点那个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 11,
+      "start": 6068.43,
+      "end": 6068.73,
+      "speaker": "guest",
+      "text": "糖。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 12,
+      "start": 6069.23,
+      "end": 6076.83,
+      "speaker": "host",
+      "text": "糖。蜂蜜，桂花酱，或者是蓝莓的果酱，也可以。还有一个其实就是直接把这个煮粥。Yes。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 13,
+      "start": 6077.13,
+      "end": 6077.63,
+      "speaker": "guest",
+      "text": "炖排骨。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 14,
+      "start": 6078.33,
+      "end": 6078.63,
+      "speaker": "guest",
+      "text": "煲汤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 15,
+      "start": 6079.03,
+      "end": 6079.33,
+      "speaker": "guest",
+      "text": "糖醋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 16,
+      "start": 6079.83,
+      "end": 6081.33,
+      "speaker": "host",
+      "text": "糖醋吗？这个可以糖醋吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 17,
+      "start": 6081.53,
+      "end": 6081.83,
+      "speaker": "guest",
+      "text": "可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 18,
+      "start": 6082.43,
+      "end": 6083.33,
+      "speaker": "host",
+      "text": "我没吃过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 19,
+      "start": 6083.33,
+      "end": 6083.83,
+      "speaker": "guest",
+      "text": "清炒木耳。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 20,
+      "start": 6084.23,
+      "end": 6089.43,
+      "speaker": "host",
+      "text": "还可以清炒，对，清炒木耳我吃过，拿山药跟木耳清炒可以。很健康的食物啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 21,
+      "start": 6089.83,
+      "end": 6090.13,
+      "speaker": "guest",
+      "text": "拔丝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 22,
+      "start": 6090.33,
+      "end": 6090.63,
+      "speaker": "guest",
+      "text": "拔丝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 23,
+      "start": 6090.93,
+      "end": 6091.83,
+      "speaker": "host",
+      "text": "山药什么？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 24,
+      "start": 6091.83,
+      "end": 6092.53,
+      "speaker": "guest",
+      "text": "山药排骨汤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 25,
+      "start": 6092.63,
+      "end": 6094.03,
+      "speaker": "host",
+      "text": "山药排骨汤，Yes。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 26,
+      "start": 6094.03,
+      "end": 6094.63,
+      "speaker": "guest",
+      "text": "拔丝山药。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 27,
+      "start": 6095.03,
+      "end": 6096.33,
+      "speaker": "host",
+      "text": "我会做拔丝红薯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 28,
+      "start": 6097.23,
+      "end": 6100.63,
+      "speaker": "host",
+      "text": "对。不会做菜的新东方老师不是好销售。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 29,
+      "start": 6101.33,
+      "end": 6137.23,
+      "speaker": "host",
+      "text": "然后我以前给大家讲过，我说我在刚毕业那两年，因为当时特别穷嘛，跟其他两个老师合租。然后呢，每次回家之后因为自己要自己做饭吃，因为那样的为了省钱，要不然生活费不够。我当时记得我给他们还做过这个拔丝红薯。浪费了很多的油，你要先把红薯炸成软的块，就炸炸里头熟了，然后再去起那个倒入糖，然后起那个沫，等它起沫的时候，你不能太早，因为太早的话，它那个沫没有起来，可能这个就拉不出来丝了，因为糖没有彻底融化。你也不能太晚，因为太晚了，糖就糊了，它就苦了。它就苦了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 30,
+      "start": 6138.13,
+      "end": 6159.33,
+      "speaker": "host",
+      "text": "它就是那个对，焦糖色，它刚起沫的时候，然后赶紧把那个炸好的红薯块倒进去。不是，我在卖山药呢，我怎么讲红薯。大家可以试着用山药去做一下拔丝的，导演刚才说可以拔丝，你们可以试一下啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 31,
+      "start": 6160.53,
+      "end": 6168.03,
+      "speaker": "host",
+      "text": "我我当时就是那样试的，而且成功了，成功一次，信心大增，然后以后一直那样做，糟蹋了很多的油，嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 32,
+      "start": 6168.63,
+      "end": 6171.33,
+      "speaker": "guest",
+      "text": "你浪费的油是你对美好的向往。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 33,
+      "start": 6171.83,
+      "end": 6175.33,
+      "speaker": "host",
+      "text": "哎呀，导演说那不叫浪费啊，那是对美好的向往，嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 34,
+      "start": 6178.03,
+      "end": 6180.73,
+      "speaker": "host",
+      "text": "这个就是大家所知道的温县的山药啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 35,
+      "start": 6183.33,
+      "end": 6185.43,
+      "speaker": "host",
+      "text": "很经典的这个产地的山药。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 36,
+      "start": 6185.63,
+      "end": 6187.63,
+      "speaker": "guest",
+      "text": "这个是礼盒装的，不然也可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 37,
+      "start": 6187.83,
+      "end": 6188.83,
+      "speaker": "host",
+      "text": "礼盒装的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 38,
+      "start": 6190.73,
+      "end": 6191.23,
+      "speaker": "host",
+      "text": "焦作。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 39,
+      "start": 6192.23,
+      "end": 6195.83,
+      "speaker": "guest",
+      "text": "我们平时吃的同学还说可以做第三鲜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 40,
+      "start": 6196.13,
+      "end": 6198.53,
+      "speaker": "host",
+      "text": "第三鲜，对对对对对，第三鲜。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 41,
+      "start": 6200.73,
+      "end": 6203.93,
+      "speaker": "host",
+      "text": "山药像这种初级农产品啊，大家就不用担心了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 42,
+      "start": 6204.73,
+      "end": 6211.73,
+      "speaker": "host",
+      "text": "初级农产品一般它都这个基本上从地里出来，可能中间再经一层就是这个快递小哥，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 43,
+      "start": 6218.03,
+      "end": 6221.13,
+      "speaker": "host",
+      "text": "有朋友说这个有咖啡吗？我们现在有咖啡吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 44,
+      "start": 6222.53,
+      "end": 6225.33,
+      "speaker": "host",
+      "text": "如果有的你给他谈，如果没有的话就算了，好吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 45,
+      "start": 6226.43,
+      "end": 6230.23,
+      "speaker": "host",
+      "text": "想要的朋友自己去拍啊，这个是山药。OK。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 46,
+      "start": 6231.03,
+      "end": 6234.43,
+      "speaker": "host",
+      "text": "来下一个是 有机玉米粉，玉米糊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 47,
+      "start": 6237.93,
+      "end": 6259.83,
+      "speaker": "host",
+      "text": "各位朋友们，食物分为普通的和比如说我们所说的绿色的那些还有有机的。有机的产品它确实本来成本就高。这个玉米粉是可以早餐起来冲一下的，直接冲成糊。就像大家去吃一个叫李先生的牛肉我本人吃过，牛肉面吃过吗？它里头就有一个玉米糊。就那个喝着玉米糊的那个玉米汁。其实你拿这个冲一下，口感比那个甚至会更好一些，因为我前两天试过一次。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 48,
+      "start": 6260.83,
+      "end": 6266.53,
+      "speaker": "host",
+      "text": "很简单，直接把它冲开。你可以拿一个透明的杯子，我可以把它倒出来给大家展示一下吗？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 49,
+      "start": 6270.63,
+      "end": 6274.43,
+      "speaker": "host",
+      "text": "然后热水直接冲就行，非常的方便。有一种甜味。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 50,
+      "start": 6275.33,
+      "end": 6280.43,
+      "speaker": "host",
+      "text": "有机玉米粉啊，它的配料只有一个东西就是玉米，有机玉米啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 51,
+      "start": 6281.13,
+      "end": 6283.73,
+      "speaker": "host",
+      "text": "哈哈，这个颜色可能大家看不太出来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 52,
+      "start": 6284.63,
+      "end": 6287.43,
+      "speaker": "host",
+      "text": "大家看到了没？等我给个近景看一下啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 53,
+      "start": 6290.23,
+      "end": 6292.93,
+      "speaker": "host",
+      "text": "直接用热水冲就行，玉米粉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 54,
+      "start": 6296.43,
+      "end": 6297.73,
+      "speaker": "host",
+      "text": "哎，不好意思。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 55,
+      "start": 6299.63,
+      "end": 6300.33,
+      "speaker": "host",
+      "text": "洒了一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 56,
+      "start": 6302.03,
+      "end": 6339.03,
+      "speaker": "host",
+      "text": "非常方便，然后自己早餐可以吃。或者下午你在办公室里突然感觉到自己反应速度有些慢，然后有点缺能量，你也可以。因为我因为常年睡眠差，而且这个饮食也不太好，胃口不太好，所以我经常在下午可能办公室里工作的工作，我突然发现自己就脑子反应速度很慢，就困了就。然后我这个时候我就会干嘛？我就会去迅速补充一些糖嘛，对吧？你要么喝一点可乐那些东西。或者你可以冲一个这个玉米糊，玉米粉。因为它它能迅速补充你身体的这个碳水化合物，最终其实转化成了一些葡萄糖，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 57,
+      "start": 6340.03,
+      "end": 6344.33,
+      "speaker": "guest",
+      "text": "对，这个身体的，有腰，对吧，热量比较低一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 58,
+      "start": 6344.73,
+      "end": 6346.23,
+      "speaker": "host",
+      "text": "这个热量比较低是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 59,
+      "start": 6346.53,
+      "end": 6348.83,
+      "speaker": "guest",
+      "text": "一包的话是等于一个苹果的热量。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 60,
+      "start": 6349.13,
+      "end": 6351.63,
+      "speaker": "host",
+      "text": "一包等于一个苹果的热量。OK。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 61,
+      "start": 6352.03,
+      "end": 6355.33,
+      "speaker": "guest",
+      "text": "它还有一股奶香味，我那天泡了一杯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 62,
+      "start": 6356.03,
+      "end": 6357.03,
+      "speaker": "guest",
+      "text": "奶香味，泡了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 63,
+      "start": 6358.03,
+      "end": 6362.43,
+      "speaker": "host",
+      "text": "导演偷偷喝了一次是吧，有奶香味啊。确实口感挺好的，我那天也喝过一次，嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 64,
+      "start": 6364.03,
+      "end": 6369.03,
+      "speaker": "host",
+      "text": "如果你从来没有尝过这个玉米糊啊，你可以试一次。试一次，还挺喜欢的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 65,
+      "start": 6370.83,
+      "end": 6425.53,
+      "speaker": "host",
+      "text": "有朋友说大脑思考需要糖分，对，很多人说这个为什么吃完那些会困。注意，你困是因为你吃的太多了。你不管吃什么，吃多你都会困，因为你吃太多了之后你肠胃消化，它是需要这个蠕动的对吧？你血液就大量的就在肠胃附近的，你大脑缺血造成的困。并不是因为你这个吃了这个淀粉导致你困。不管你吃什么，只要吃多你都容易困，因为你大脑缺血了。然后但另外一个，其实很多时候大家我们说不要过度的或者单纯的吃米面这种东西，不要单纯只吃碳水，因为碳水吃太多了，你身体胰岛素提前就被消耗光了。人类在百万年的进化过程中，其实你想大量吃的是什么？是肉啊，对吧？你打打猎或者吃的一些果子或者草啊这些东西，其实吃这些你身体已经适应。人类驯化小麦和水稻都是一万年以内的事情。人类能把水水稻小麦吃饱都是几十年的事情。你想想几十年前，百年前以前，有多少人说他真能想吃多少就吃饱的，对吧？没有那么大的科技和农业技术的发展是不可能支撑当时那么多人的那个需求的。所以以前是很难吃饱的，现在因为米和面吃太饱了，迅速吃太饱了，所以大家会出现各种血糖的问题。这个如果血糖有问题的朋友就不要拍了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 66,
+      "start": 6426.33,
+      "end": 6428.73,
+      "speaker": "host",
+      "text": "因为玉米它肯定还是淀粉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 67,
+      "start": 6429.43,
+      "end": 6454.73,
+      "speaker": "host",
+      "text": "然后呢，刚才大家又提到一个点，就是人是需要这个这个淀粉的，是肯定的，因为它会转化为葡萄糖，然后我之前给大家说过，人在思考呀，回忆呀这种，其实你的神经元它只能消耗比较小的这种营养，你像葡萄糖就可以，但你像脂肪啊，蛋白质它就太大颗粒了，你的神经元是没有办法消化掉的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 68,
+      "start": 6455.33,
+      "end": 6456.23,
+      "speaker": "guest",
+      "text": "这个拍光了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 69,
+      "start": 6456.53,
+      "end": 6457.43,
+      "speaker": "host",
+      "text": "拍光了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 70,
+      "start": 6457.63,
+      "end": 6458.03,
+      "speaker": "guest",
+      "text": "补不了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 71,
+      "start": 6458.73,
+      "end": 6461.03,
+      "speaker": "host",
+      "text": "喜欢的朋友可以自己去试一下啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 72,
+      "start": 6462.03,
+      "end": 6463.63,
+      "speaker": "host",
+      "text": "这是一些小知识啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 73,
+      "start": 6464.73,
+      "end": 6472.63,
+      "speaker": "host",
+      "text": "高高，高中可能学过吧，高中没学过的话，其实我也不是高中学的，我是后来看一本书叫做考神脑科学里头提到的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 74,
+      "start": 6476.23,
+      "end": 6479.93,
+      "speaker": "host",
+      "text": "来下一个是95纯虾排。虾饼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 75,
+      "start": 6482.33,
+      "end": 6484.33,
+      "speaker": "host",
+      "text": "稍微在锅里头煎一下就好了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 76,
+      "start": 6484.63,
+      "end": 6484.83,
+      "speaker": "guest",
+      "text": "对。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 77,
+      "start": 6485.83,
+      "end": 6490.83,
+      "speaker": "host",
+      "text": "虾仁、淀粉、鸡蛋清、白砂糖、食用盐、植物油、味精等。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 78,
+      "start": 6494.63,
+      "end": 6497.03,
+      "speaker": "guest",
+      "text": "老师你知道为什么叫95纯虾排？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 79,
+      "start": 6497.43,
+      "end": 6497.73,
+      "speaker": "host",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 80,
+      "start": 6497.73,
+      "end": 6498.83,
+      "speaker": "guest",
+      "text": "为什么叫95纯虾排？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 81,
+      "start": 6499.03,
+      "end": 6529.03,
+      "speaker": "host",
+      "text": "那是因为虾仁的含量在95%以上啊。所以剩下的5%就是一些比如说动物脂肪啊或者蛋清。大家知道一般虾滑里头都必要放一点点猪的肥膘或者蛋清，为什么？因为不放那两个，虾煮的时候就会散开，散开的话，就凝结不到一块了，口感就不怎么好了。所以大家把这个蛋清和猪肉肥膘加在里头的时候，它煮第一个不会散开，第二个完了它的口感会更加的Q弹，而且能吃的更香一些，因为你想嘛，香味嘛，对吧？鸡蛋会让它凝结，猪肉肥膘会给它提供一种汁水，并且散发出香味，所以这就是通常做法。一般情况下，比如说就看那两个加的多少的，比如说那两个加的少一点，那虾的含量就得高，那两个加的多一点，虾的含量就少，仅此而已。今天是给大家有什么送的是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 82,
+      "start": 6529.33,
+      "end": 6531.23,
+      "speaker": "guest",
+      "text": "送那个番茄沙司两个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 83,
+      "start": 6532.03,
+      "end": 6533.83,
+      "speaker": "host",
+      "text": "Sauce，OK，番茄酱两个。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 84,
+      "start": 6535.23,
+      "end": 6539.33,
+      "speaker": "host",
+      "text": "沙司，Sauce，like ketchup，ketchup就是番茄酱的意思啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 85,
+      "start": 6540.43,
+      "end": 6541.43,
+      "speaker": "host",
+      "text": "番茄沙司。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 86,
+      "start": 6542.43,
+      "end": 6559.83,
+      "speaker": "host",
+      "text": "怎么做都好吃，全家人都爱吃。家里有小孩的话，其实可以自己拍一些。或者你自己是一个特别精致的，热爱食物，热爱一些精致食物的朋友，你也可以试一试，因为虾本身都是高蛋白低脂肪的这个食物。比较方便，稍微锅里头倒一些油低温煎一下，不要温度太高，温度太高可能就煎糊了。喜欢的朋友自己去拍啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 87,
+      "start": 6561.73,
+      "end": 6564.43,
+      "speaker": "host",
+      "text": "还有玉米粉，玉米粉咱现在是不是没有了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 88,
+      "start": 6564.63,
+      "end": 6565.93,
+      "speaker": "guest",
+      "text": "没有了，卖光了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 89,
+      "start": 6567.03,
+      "end": 6570.43,
+      "speaker": "guest",
+      "text": "我们大概明天的话，明天的话有一个安全库存是有限的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 90,
+      "start": 6571.03,
+      "end": 6599.93,
+      "speaker": "host",
+      "text": "每天的安全库存是有限的，因为是，我们现在直播间里还有接近30万人呢。就是不管什么产品在我们直播间里，农产品啊，就迅速就空了。大家又得知道农产品没有办法像工业制成品一样，你今天说3000，马力全开3000，你要3万，几个生产线马力全开3万都行。农产品很多时候它的特点就是你得保持克制和耐心，喜欢是放肆，但爱是克制，农产品就是爱。它是克制，就比如说这个地方今天只有5000单，想要再要，没有。种不出来。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 91,
+      "start": 6600.83,
+      "end": 6602.93,
+      "speaker": "host",
+      "text": "来下一个是褚橙的橙汁啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 92,
+      "start": 6603.43,
+      "end": 6604.03,
+      "speaker": "host",
+      "text": "NFC。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 93,
+      "start": 6604.63,
+      "end": 6609.53,
+      "speaker": "host",
+      "text": "NFC就是not from concentrated，not from concentrated什么意思呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 94,
+      "start": 6611.53,
+      "end": 6613.93,
+      "speaker": "host",
+      "text": "Concentrated叫做浓缩的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 95,
+      "start": 6615.53,
+      "end": 6624.53,
+      "speaker": "host",
+      "text": "Concentrated，n叫做not from concentrated。叫NFC。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 96,
+      "start": 6625.33,
+      "end": 6627.73,
+      "speaker": "host",
+      "text": "Concentrated叫做浓缩的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 97,
+      "start": 6631.53,
+      "end": 6633.53,
+      "speaker": "host",
+      "text": "这是不是来自浓缩的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 98,
+      "start": 6633.93,
+      "end": 6645.63,
+      "speaker": "host",
+      "text": "为什么会这么说呢？大家知道在果汁这个行业里头，其实我们以前可能喝果汁喝的少一些。国外人喝果汁喝的特别多，对吧？It's like everybody drink juice or milk for breakfast。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 99,
+      "start": 6646.73,
+      "end": 6682.63,
+      "speaker": "host",
+      "text": "果汁在运输和保存的过程中，你得降低成本，所以他们就浓缩。所以以前榨出来可能是十杯，我浓缩之后是一杯，我只运输这一杯，加工这一杯。然后我需要卖给你的时候，你再我在再临时加水就行了，它其实就是经过了浓缩再加水的一个过程。那那样它其实减少的是中间的很多运输和保存的成本，但是却影响了一些口感，或者是营养啊。然后呢，现在就流行这种NFC，就是not from concentrated的意思，其实就是它就是直接鲜榨的原汁，没有经过中间的浓缩，也没有经过二次的加水。它本来就保留了当时榨出来果汁的口感和味道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 100,
+      "start": 6683.03,
+      "end": 6683.33,
+      "speaker": "host",
+      "text": "OK。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 101,
+      "start": 6684.33,
+      "end": 6688.33,
+      "speaker": "host",
+      "text": "NFC就是not from concentrated的褚橙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 102,
+      "start": 6689.23,
+      "end": 6693.13,
+      "speaker": "host",
+      "text": "我相信每个人应该都曾经被褚老爷子的故事感动过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 103,
+      "start": 6696.33,
+      "end": 6703.83,
+      "speaker": "host",
+      "text": "一个男的可以被打倒，但是他得有再次站起来的这种精神。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 104,
+      "start": 6705.33,
+      "end": 6711.83,
+      "speaker": "host",
+      "text": "褚老爷子他知道，等他确实犯了一些不该犯的错，这个我们必须承认的啊，曾经。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 105,
+      "start": 6713.63,
+      "end": 6719.83,
+      "speaker": "host",
+      "text": "家里很穷，兄弟几个都很穷，都到了那么大年龄的时候，生活还是很苦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 106,
+      "start": 6720.43,
+      "end": 6724.43,
+      "speaker": "host",
+      "text": "后来做了云南卷烟厂的厂长，效益特别好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 107,
+      "start": 6724.93,
+      "end": 6728.93,
+      "speaker": "host",
+      "text": "他在退休的时候呢，决定跟兄弟们分一笔钱，不应该分的钱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 108,
+      "start": 6731.03,
+      "end": 6733.83,
+      "speaker": "host",
+      "text": "后来就进了监狱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 109,
+      "start": 6735.03,
+      "end": 6737.03,
+      "speaker": "host",
+      "text": "70多岁，保外就医。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 110,
+      "start": 6737.73,
+      "end": 6741.73,
+      "speaker": "host",
+      "text": "我时常在想，如果我人生突然走误入了一段歧途，我会怎么样后悔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 111,
+      "start": 6742.43,
+      "end": 6751.33,
+      "speaker": "host",
+      "text": "我就如之前给大家所描述的，在风雨交加的夜里，喝醉了，拍着自己肌肉松弛的大腿，告诉我的子孙说，爷爷这一生就到此为止了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 112,
+      "start": 6752.33,
+      "end": 6753.53,
+      "speaker": "host",
+      "text": "爷爷曾经辉煌过。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 113,
+      "start": 6755.03,
+      "end": 6759.33,
+      "speaker": "host",
+      "text": "爷爷也失落过，爷爷贫穷过，爷爷也富裕过。对不起，爷爷犯了错。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 114,
+      "start": 6764.23,
+      "end": 6768.63,
+      "speaker": "host",
+      "text": "很有可能很多人的故事就那样一生就结束了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 115,
+      "start": 6769.03,
+      "end": 6771.93,
+      "speaker": "host",
+      "text": "好几天后带着遗憾就结束了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 116,
+      "start": 6773.03,
+      "end": 6774.43,
+      "speaker": "host",
+      "text": "但褚老爷子不是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 117,
+      "start": 6775.33,
+      "end": 6778.03,
+      "speaker": "host",
+      "text": "他决定要再次东山再起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 118,
+      "start": 6779.33,
+      "end": 6782.83,
+      "speaker": "host",
+      "text": "很多时候他甚至就只是不愿意输给自己。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 119,
+      "start": 6783.63,
+      "end": 6785.63,
+      "speaker": "host",
+      "text": "扛着锄头上山种橙子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 120,
+      "start": 6786.33,
+      "end": 6791.93,
+      "speaker": "host",
+      "text": "他种橙子那个山特别的硬景叫做哀牢山。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 121,
+      "start": 6792.73,
+      "end": 6796.93,
+      "speaker": "host",
+      "text": "你注意这几个字，哀牢山。在云南。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 122,
+      "start": 6798.33,
+      "end": 6803.93,
+      "speaker": "host",
+      "text": "一个70多岁的老人愿意上山种橙子来完成自己的二次创业。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 123,
+      "start": 6804.93,
+      "end": 6814.93,
+      "speaker": "host",
+      "text": "我在第一次听到这个故事时，我无法理解，我说你是有多大的勇气与智慧，你敢藐视生命带来的苦难，或者你逐渐老去的身体。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 124,
+      "start": 6815.23,
+      "end": 6818.43,
+      "speaker": "host",
+      "text": "你上山种橙子去，你想挣钱来点来点快的呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 125,
+      "start": 6819.23,
+      "end": 6823.43,
+      "speaker": "host",
+      "text": "这就是一个人笃定和自信，他选择了上山种橙子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 126,
+      "start": 6824.23,
+      "end": 6827.73,
+      "speaker": "host",
+      "text": "橙子终于挂果了，发现品质不太好，毁了，再种。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 127,
+      "start": 6828.43,
+      "end": 6830.43,
+      "speaker": "host",
+      "text": "我听到那里我更觉得优秀了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 128,
+      "start": 6831.33,
+      "end": 6833.73,
+      "speaker": "host",
+      "text": "我是无论如何没有这样的勇气的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 129,
+      "start": 6834.23,
+      "end": 6841.53,
+      "speaker": "host",
+      "text": "所以我们时常在读一些人的故事的时候，好像也从侧面提醒了自己。提醒了自己应该是怎么去做。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 130,
+      "start": 6842.53,
+      "end": 6848.03,
+      "speaker": "host",
+      "text": "98块钱12瓶，因为是NFC，它确实相比普通的果汁成本要高一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 131,
+      "start": 6850.83,
+      "end": 6855.83,
+      "speaker": "host",
+      "text": "我后来在当老师的时候，曾经给我班里的学生们讲过这段故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 132,
+      "start": 6857.23,
+      "end": 6858.03,
+      "speaker": "host",
+      "text": "我说",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 133,
+      "start": 6860.13,
+      "end": 6862.63,
+      "speaker": "host",
+      "text": "不要害怕人生会摔倒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 134,
+      "start": 6864.13,
+      "end": 6867.03,
+      "speaker": "host",
+      "text": "不要害怕人生偶尔会误入歧途。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 135,
+      "start": 6868.53,
+      "end": 6874.23,
+      "speaker": "host",
+      "text": "只要你始终心怀希望与坚定，你终将能够走在阳光明媚的路上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 136,
+      "start": 6875.33,
+      "end": 6880.63,
+      "speaker": "host",
+      "text": "请我们不要忘记那个70多岁扛着锄头上山种橙子的老人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 137,
+      "start": 6881.53,
+      "end": 6886.73,
+      "speaker": "host",
+      "text": "他在91岁还是92岁那一年离开的。前几年其实，时间不久。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 138,
+      "start": 6888.33,
+      "end": 6890.23,
+      "speaker": "host",
+      "text": "褚橙后来被大家叫做励志橙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 139,
+      "start": 6891.13,
+      "end": 6896.03,
+      "speaker": "host",
+      "text": "好像人们只要吃着他种的橙子的时候，都能从其中体会到他的品质一样。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 140,
+      "start": 6897.03,
+      "end": 6900.93,
+      "speaker": "host",
+      "text": "我们喜欢给食物赋予回忆，赋予美好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 141,
+      "start": 6901.73,
+      "end": 6906.03,
+      "speaker": "host",
+      "text": "我们后来好像从褚老爷子的橙子中也赋予了这个橙子品质。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 142,
+      "start": 6907.43,
+      "end": 6909.23,
+      "speaker": "host",
+      "text": "就是那个经典的产地。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 143,
+      "start": 6910.03,
+      "end": 6912.33,
+      "speaker": "host",
+      "text": "就是那个恰到好处的海拔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 144,
+      "start": 6913.43,
+      "end": 6922.73,
+      "speaker": "host",
+      "text": "就是那个独特的品种，因为其实云南那个冰糖橙其实并不大，它比较小，但是皮薄，酸甜度恰恰好。它不是纯甜，但它也不酸，酸甜度恰恰好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 145,
+      "start": 6925.03,
+      "end": 6939.73,
+      "speaker": "host",
+      "text": "我当时在给孩子们讲的那段故事的时候，我告诉他们跟别人经历的苦难相比，可能一次两次你考试没有考好，其实根本没有那么大的影响，它一定不会影响到你一生。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 146,
+      "start": 6940.43,
+      "end": 6948.83,
+      "speaker": "host",
+      "text": "其实跟别人所经历的起落相比，那个女生不喜欢你，今天老师批评了你，妈妈责备了你。看起来都没那么重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 147,
+      "start": 6949.43,
+      "end": 6961.83,
+      "speaker": "host",
+      "text": "我以前在当老师的时候，总是喜欢絮絮叨叨，总是喜欢把这些事情教给自己的孩子们，因为我有时候看到一些孩子特别脆弱。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 148,
+      "start": 6962.53,
+      "end": 6969.93,
+      "speaker": "host",
+      "text": "大家时常会读到一些新闻，看很多孩子可能脆弱的时候，我其实内心是很痛苦的，我觉得一定是他的教育者们没有把话说给他。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 149,
+      "start": 6971.03,
+      "end": 6977.93,
+      "speaker": "host",
+      "text": "所以我以前当老师的时候，给很多孩子，给每一届的孩子都会去讲褚老爷子的故事，讲他的褚橙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 150,
+      "start": 6978.33,
+      "end": 6982.93,
+      "speaker": "host",
+      "text": "现在不是种褚橙的时间啊，所以现在只能有这个鲜榨的这个橙汁。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 151,
+      "start": 6983.43,
+      "end": 6991.03,
+      "speaker": "host",
+      "text": "如果您自己喜欢的话，您可以去买，如果您觉得这个价格偏高呢，您也可以理性购物。完全看个人的需求去消费。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 152,
+      "start": 6993.53,
+      "end": 6995.73,
+      "speaker": "guest",
+      "text": "Yes，那个是我的杯子，谢谢啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 153,
+      "start": 6996.53,
+      "end": 6997.93,
+      "speaker": "guest",
+      "text": "我们只有500单了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 154,
+      "start": 6999.63,
+      "end": 7001.63,
+      "speaker": "guest",
+      "text": "卖完就没有办法补了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 155,
+      "start": 7004.73,
+      "end": 7006.13,
+      "speaker": "host",
+      "text": "只剩500单了是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 156,
+      "start": 7006.33,
+      "end": 7006.63,
+      "speaker": "guest",
+      "text": "是的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 157,
+      "start": 7007.53,
+      "end": 7007.83,
+      "speaker": "host",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 158,
+      "start": 7013.13,
+      "end": 7014.13,
+      "speaker": "host",
+      "text": "云南玉溪的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 159,
+      "start": 7014.73,
+      "end": 7018.93,
+      "speaker": "host",
+      "text": "呃，如果有云南的朋友可能对褚老爷子故事要更了解一些。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 160,
+      "start": 7019.33,
+      "end": 7023.43,
+      "speaker": "host",
+      "text": "所以我后来给孩子们讲，我说人生短期拼的是智力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 161,
+      "start": 7023.93,
+      "end": 7025.73,
+      "speaker": "host",
+      "text": "聪明重要不？聪明重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 162,
+      "start": 7027.63,
+      "end": 7033.93,
+      "speaker": "host",
+      "text": "但因为聪明就一定能成功吗？其实不是，很多人就因为太聪明了，一眼就看清楚了，很多事情其实可以是投机取巧的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 163,
+      "start": 7035.03,
+      "end": 7039.93,
+      "speaker": "host",
+      "text": "所以总是寻求投机取巧，以至于最后聪明反被聪明误。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 164,
+      "start": 7040.63,
+      "end": 7042.93,
+      "speaker": "host",
+      "text": "人生短期拼的是智力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 165,
+      "start": 7043.83,
+      "end": 7046.43,
+      "speaker": "host",
+      "text": "中期啊，其实拼的是毅力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 166,
+      "start": 7047.83,
+      "end": 7049.53,
+      "speaker": "host",
+      "text": "总是比别人扛打。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 167,
+      "start": 7050.43,
+      "end": 7051.93,
+      "speaker": "host",
+      "text": "总是比别人扛造。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 168,
+      "start": 7052.53,
+      "end": 7056.03,
+      "speaker": "host",
+      "text": "总是比别人充满了韧性。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 169,
+      "start": 7057.43,
+      "end": 7059.93,
+      "speaker": "host",
+      "text": "所以总是能够从谷底再次跃起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 170,
+      "start": 7063.43,
+      "end": 7068.03,
+      "speaker": "host",
+      "text": "短期拼智力，中期拼毅力，长期拼体力。想喝一个是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 171,
+      "start": 7068.63,
+      "end": 7070.33,
+      "speaker": "guest",
+      "text": "因为我们这边已经卖光了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 172,
+      "start": 7070.93,
+      "end": 7076.33,
+      "speaker": "host",
+      "text": "已经卖光了，没法卖了，所以样品也不用了，所以你喝了是吧？厂商这个样品退不了，对不起，导演喝了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 173,
+      "start": 7077.03,
+      "end": 7080.23,
+      "speaker": "host",
+      "text": "我喝这瓶是属于正常耗损，你喝这个就完全属于。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 174,
+      "start": 7080.63,
+      "end": 7082.33,
+      "speaker": "guest",
+      "text": "不属于你的正常耗损。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 175,
+      "start": 7084.43,
+      "end": 7085.73,
+      "speaker": "host",
+      "text": "长期拼体力啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 176,
+      "start": 7087.03,
+      "end": 7091.43,
+      "speaker": "host",
+      "text": "只有到了六七十岁的时候，你才知道一个好的身体是多么的重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 177,
+      "start": 7093.03,
+      "end": 7098.93,
+      "speaker": "host",
+      "text": "那时候你拥有大量的时间，手头可能还有一点点钱。你想吃，想玩，想去看这个世界。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 178,
+      "start": 7099.83,
+      "end": 7102.43,
+      "speaker": "host",
+      "text": "你后来才发现其实你的身体已经不行了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 179,
+      "start": 7103.13,
+      "end": 7105.93,
+      "speaker": "host",
+      "text": "等一会29岁，好像讲出来一个92岁人的故事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 180,
+      "start": 7106.13,
+      "end": 7108.83,
+      "speaker": "guest",
+      "text": "来了来了，来补库存了，厂商反应太快了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 181,
+      "start": 7109.23,
+      "end": 7113.63,
+      "speaker": "host",
+      "text": "厂商说有库存是吧？厂商反应太快了，那你直接上吧。嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 182,
+      "start": 7114.93,
+      "end": 7115.93,
+      "speaker": "guest",
+      "text": "来，我再还给你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 183,
+      "start": 7116.63,
+      "end": 7127.93,
+      "speaker": "host",
+      "text": "因为虽然，你喝吧，你喝吧，你喝吧，那一单我掏了，嗯。虽然我才29岁，但是我确实身体像92岁，因为常年失眠，浑身疼。所以尤其在那个时候，我就给他们说，人生长期一定拼的是体力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 184,
+      "start": 7128.63,
+      "end": 7130.23,
+      "speaker": "host",
+      "text": "真的是在拼体力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 185,
+      "start": 7130.83,
+      "end": 7133.53,
+      "speaker": "host",
+      "text": "我现在就明显感觉体力比之前差好多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 186,
+      "start": 7134.03,
+      "end": 7138.03,
+      "speaker": "host",
+      "text": "我在25岁之前生猛，特别生猛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 187,
+      "start": 7138.73,
+      "end": 7141.03,
+      "speaker": "host",
+      "text": "真的是生龙活虎那种猛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 188,
+      "start": 7142.03,
+      "end": 7143.23,
+      "speaker": "host",
+      "text": "熬夜，没事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 189,
+      "start": 7143.93,
+      "end": 7146.23,
+      "speaker": "host",
+      "text": "连续工作十几个小时，没事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 190,
+      "start": 7147.33,
+      "end": 7152.03,
+      "speaker": "host",
+      "text": "失眠了睡不着，我干脆起床去跑步，一直跑到天亮，没事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 191,
+      "start": 7153.23,
+      "end": 7154.93,
+      "speaker": "host",
+      "text": "那会饭量也还可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 192,
+      "start": 7155.53,
+      "end": 7157.93,
+      "speaker": "host",
+      "text": "但现在我迅速发现自己身体变差了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 193,
+      "start": 7158.53,
+      "end": 7160.63,
+      "speaker": "host",
+      "text": "人生长期一定拼的是体力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 194,
+      "start": 7161.23,
+      "end": 7166.43,
+      "speaker": "host",
+      "text": "有时候人生会难一段时间，但一定不要忘记好好吃饭，好好睡觉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 195,
+      "start": 7167.23,
+      "end": 7170.23,
+      "speaker": "host",
+      "text": "你的身体比什么都重要。比什么都重要。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 196,
+      "start": 7171.13,
+      "end": 7171.43,
+      "speaker": "host",
+      "text": "OK。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 197,
+      "start": 7175.33,
+      "end": 7178.43,
+      "speaker": "host",
+      "text": "万古江河适合七年级吗？七年级可以。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 198,
+      "start": 7179.33,
+      "end": 7181.63,
+      "speaker": "host",
+      "text": "那就是初一，为什么叫七年级呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 199,
+      "start": 7182.73,
+      "end": 7186.03,
+      "speaker": "host",
+      "text": "七岁还是七年级？如果七岁的话，可能有点有点难了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 200,
+      "start": 7187.83,
+      "end": 7191.93,
+      "speaker": "host",
+      "text": "人生短期拼智力，中期拼毅力，长期拼体力。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    },
+    {
+      "idx": 201,
+      "start": 7192.73,
+      "end": 7193.43,
+      "speaker": "host",
+      "text": "到最后他",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 5
+    }
+  ]
+}

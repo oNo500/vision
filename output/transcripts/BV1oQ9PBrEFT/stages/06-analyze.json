@@ -1,0 +1,26 @@
+{
+  "stage": "analyze",
+  "video_id": "BV1oQ9PBrEFT",
+  "status": "done",
+  "started_at": "2026-04-20T21:09:46.020515+08:00",
+  "finished_at": "2026-04-20T21:09:58.209108+08:00",
+  "duration_sec": 12.188593,
+  "inputs": [
+    "raw.json"
+  ],
+  "outputs": [
+    "summary.md",
+    "style.json"
+  ],
+  "tool_versions": {},
+  "pipeline_version": "0.1.0",
+  "error": null,
+  "extra": {
+    "model": "gemini-2.5-flash",
+    "tokens_in": 5144,
+    "tokens_out": 1690,
+    "estimated_cost_usd": 0.0057682,
+    "segments_in": 248,
+    "segments_filtered_out": 228
+  }
+}

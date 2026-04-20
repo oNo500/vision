@@ -1,0 +1,3596 @@
+{
+  "chunk_id": 3,
+  "start_offset": 3590.0,
+  "segments": [
+    {
+      "idx": 0,
+      "start": 3590.0,
+      "end": 3590.09,
+      "speaker": "host",
+      "text": "嗯，這個送到保活嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 1,
+      "start": 3590.09,
+      "end": 3590.14,
+      "speaker": "guest",
+      "text": "保活。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 2,
+      "start": 3590.14,
+      "end": 3590.23,
+      "speaker": "host",
+      "text": "保活啊，那如果死了怎麼辦？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 3,
+      "start": 3590.23,
+      "end": 3590.32,
+      "speaker": "guest",
+      "text": "包賠。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 4,
+      "start": 3590.32,
+      "end": 3590.41,
+      "speaker": "host",
+      "text": "聯繫收貨包賠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 5,
+      "start": 3590.41,
+      "end": 3590.48,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 6,
+      "start": 3590.48,
+      "end": 3590.98,
+      "speaker": "host",
+      "text": "哇，真爽。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 7,
+      "start": 3605.17,
+      "end": 3605.86,
+      "speaker": "host",
+      "text": "檸檬汁。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 8,
+      "start": 3606.86,
+      "end": 3607.36,
+      "speaker": "host",
+      "text": "看這有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 9,
+      "start": 3608.26,
+      "end": 3609.56,
+      "speaker": "host",
+      "text": "不影響，不影響。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 10,
+      "start": 3610.36,
+      "end": 3612.96,
+      "speaker": "host",
+      "text": "但大部分擠檸檬汁其實生，生吃生擠檸檬汁呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 11,
+      "start": 3613.46,
+      "end": 3614.56,
+      "speaker": "host",
+      "text": "我等會給你找個視頻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 12,
+      "start": 3614.96,
+      "end": 3617.06,
+      "speaker": "host",
+      "text": "我當時去巴塞羅那，地中海邊嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 13,
+      "start": 3617.46,
+      "end": 3618.46,
+      "speaker": "host",
+      "text": "有點辣包辣大殼的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 14,
+      "start": 3618.76,
+      "end": 3619.66,
+      "speaker": "host",
+      "text": "然後去那個海鮮市場。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 15,
+      "start": 3619.96,
+      "end": 3621.06,
+      "speaker": "host",
+      "text": "他就是現場給你起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 16,
+      "start": 3621.46,
+      "end": 3621.76,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.9,
+      "chunk_id": 3
+    },
+    {
+      "idx": 17,
+      "start": 3622.06,
+      "end": 3623.36,
+      "speaker": "host",
+      "text": "起開之後給你捏點檸檬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 18,
+      "start": 3623.86,
+      "end": 3625.86,
+      "speaker": "host",
+      "text": "然後巴利從那會給倒出去，然後一喝。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 19,
+      "start": 3626.36,
+      "end": 3627.26,
+      "speaker": "host",
+      "text": "很鮮，特別鮮。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 20,
+      "start": 3627.66,
+      "end": 3630.06,
+      "speaker": "host",
+      "text": "但是不建議大量生吃，因為生吃肯定有寄生蟲的，小孩不要生吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 21,
+      "start": 3630.46,
+      "end": 3630.76,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 22,
+      "start": 3631.06,
+      "end": 3632.16,
+      "speaker": "host",
+      "text": "成年人也不要生吃，生吃什麼生吃？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 23,
+      "start": 3632.56,
+      "end": 3633.86,
+      "speaker": "host",
+      "text": "哇，這雙頭特別大。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 24,
+      "start": 3634.46,
+      "end": 3635.86,
+      "speaker": "host",
+      "text": "我這有水沒事，不開了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 25,
+      "start": 3641.26,
+      "end": 3644.06,
+      "speaker": "host",
+      "text": "擠上檸檬之後這個味道果然真的太棒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 26,
+      "start": 3649.36,
+      "end": 3690.16,
+      "speaker": "host",
+      "text": "我給你找找我那個視頻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 27,
+      "start": 3690.16,
+      "end": 3692.06,
+      "speaker": "host",
+      "text": "有朋友說單身狗不能吃生蠔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 28,
+      "start": 3692.36,
+      "end": 3693.06,
+      "speaker": "guest",
+      "text": "為什麼？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 29,
+      "start": 3696.06,
+      "end": 3697.66,
+      "speaker": "host",
+      "text": "騙我一次，錯在你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 30,
+      "start": 3698.06,
+      "end": 3699.16,
+      "speaker": "host",
+      "text": "騙我兩次，錯在我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 31,
+      "start": 3699.56,
+      "end": 3700.46,
+      "speaker": "host",
+      "text": "那信你兩次。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 32,
+      "start": 3703.46,
+      "end": 3704.66,
+      "speaker": "host",
+      "text": "我給你找找那個視頻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 33,
+      "start": 3709.46,
+      "end": 3709.76,
+      "speaker": "host",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 34,
+      "start": 3710.56,
+      "end": 3711.46,
+      "speaker": "host",
+      "text": "等會給你個心情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 35,
+      "start": 3711.86,
+      "end": 3713.06,
+      "speaker": "host",
+      "text": "這是當時在在巴塞羅那的時候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 36,
+      "start": 3713.46,
+      "end": 3714.66,
+      "speaker": "host",
+      "text": "他給你剛起開的，還是活的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 37,
+      "start": 3714.96,
+      "end": 3716.56,
+      "speaker": "host",
+      "text": "然後呢，我不知道要不要倒裡頭的水，但是我把那個給倒了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 38,
+      "start": 3716.76,
+      "end": 3717.56,
+      "speaker": "host",
+      "text": "因為那是海水。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 39,
+      "start": 3717.86,
+      "end": 3719.36,
+      "speaker": "host",
+      "text": "新鮮的其實它不腥，然後捏一點檸檬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 40,
+      "start": 3719.66,
+      "end": 3720.06,
+      "speaker": "guest",
+      "text": "啊？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 41,
+      "start": 3720.46,
+      "end": 3721.06,
+      "speaker": "guest",
+      "text": "它乾淨嗎？",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 42,
+      "start": 3721.46,
+      "end": 3722.36,
+      "speaker": "host",
+      "text": "都是那樣吃的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 43,
+      "start": 3726.46,
+      "end": 3727.16,
+      "speaker": "guest",
+      "text": "難以置信。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 44,
+      "start": 3727.66,
+      "end": 3728.36,
+      "speaker": "host",
+      "text": "懂我意思嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 45,
+      "start": 3728.66,
+      "end": 3728.96,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 46,
+      "start": 3729.36,
+      "end": 3730.46,
+      "speaker": "host",
+      "text": "但是不建議生吃，不建議生吃，不要生吃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 47,
+      "start": 3730.76,
+      "end": 3732.06,
+      "speaker": "host",
+      "text": "我們的這個可能標準是達不到的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 48,
+      "start": 3732.46,
+      "end": 3735.06,
+      "speaker": "host",
+      "text": "而且就算能達到生吃裡頭肯定也有寄生蟲啊，不建議。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 49,
+      "start": 3735.46,
+      "end": 3737.36,
+      "speaker": "host",
+      "text": "有朋友說給明明剩一個，沒事還有呢，明明來再爭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 50,
+      "start": 3737.66,
+      "end": 3738.46,
+      "speaker": "guest",
+      "text": "明明粉絲不少啊。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 51,
+      "start": 3738.76,
+      "end": 3740.26,
+      "speaker": "host",
+      "text": "明明現在的粉絲特別多，明明的粉絲每天晚上跟我建議。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 52,
+      "start": 3740.46,
+      "end": 3742.26,
+      "speaker": "guest",
+      "text": "每次都他們都會說給明明留一點。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 53,
+      "start": 3742.56,
+      "end": 3743.26,
+      "speaker": "host",
+      "text": "真的是。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 54,
+      "start": 3744.46,
+      "end": 3748.46,
+      "speaker": "host",
+      "text": "昨晚很多明明的粉絲私信給我提出了很多非常直接深刻的工作建議。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 55,
+      "start": 3748.86,
+      "end": 3749.96,
+      "speaker": "host",
+      "text": "我一個個的回復收到，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 56,
+      "start": 3750.36,
+      "end": 3753.26,
+      "speaker": "host",
+      "text": "董宇輝，我以前是因為認識你，認識的明明，但現在我只愛明明。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 57,
+      "start": 3753.66,
+      "end": 3754.46,
+      "speaker": "host",
+      "text": "好事，好事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 58,
+      "start": 3757.66,
+      "end": 3758.66,
+      "speaker": "host",
+      "text": "生蠔箱子你拍了啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 59,
+      "start": 3760.46,
+      "end": 3761.16,
+      "speaker": "host",
+      "text": "什麼價格導演？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 60,
+      "start": 3761.26,
+      "end": 3761.56,
+      "speaker": "guest",
+      "text": "88。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 61,
+      "start": 3761.76,
+      "end": 3762.06,
+      "speaker": "host",
+      "text": "88。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 62,
+      "start": 3762.26,
+      "end": 3762.56,
+      "speaker": "guest",
+      "text": "四斤。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 63,
+      "start": 3762.76,
+      "end": 3763.06,
+      "speaker": "host",
+      "text": "四斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 64,
+      "start": 3763.26,
+      "end": 3763.56,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 65,
+      "start": 3763.66,
+      "end": 3764.16,
+      "speaker": "host",
+      "text": "還行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 66,
+      "start": 3765.56,
+      "end": 3766.46,
+      "speaker": "host",
+      "text": "都是這麼大的對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 67,
+      "start": 3766.66,
+      "end": 3768.06,
+      "speaker": "guest",
+      "text": "對，應該差不多三到四點五。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 68,
+      "start": 3768.36,
+      "end": 3768.66,
+      "speaker": "host",
+      "text": "哦。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 69,
+      "start": 3768.96,
+      "end": 3769.76,
+      "speaker": "host",
+      "text": "三到五兩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 70,
+      "start": 3769.96,
+      "end": 3770.76,
+      "speaker": "guest",
+      "text": "三到四點五兩。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 71,
+      "start": 3770.96,
+      "end": 3771.86,
+      "speaker": "host",
+      "text": "三到四點五兩。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 72,
+      "start": 3772.16,
+      "end": 3772.66,
+      "speaker": "host",
+      "text": "保活。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 73,
+      "start": 3773.06,
+      "end": 3774.66,
+      "speaker": "host",
+      "text": "如果我收到是死的,我就聯繫客服給我賠。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 74,
+      "start": 3774.76,
+      "end": 3775.06,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 75,
+      "start": 3775.26,
+      "end": 3776.16,
+      "speaker": "host",
+      "text": "拍照就行，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 76,
+      "start": 3776.26,
+      "end": 3776.56,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 77,
+      "start": 3780.46,
+      "end": 3782.06,
+      "speaker": "host",
+      "text": "來，咱今天還有什麼書，除了剛才那些？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 78,
+      "start": 3782.26,
+      "end": 3782.56,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 79,
+      "start": 3782.96,
+      "end": 3784.36,
+      "speaker": "host",
+      "text": "大家想要聽課了，我給大家講一講課。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 80,
+      "start": 3786.56,
+      "end": 3787.46,
+      "speaker": "guest",
+      "text": "我們有那個。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 81,
+      "start": 3788.86,
+      "end": 3789.46,
+      "speaker": "guest",
+      "text": "這幾個都有。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 82,
+      "start": 3789.76,
+      "end": 3790.96,
+      "speaker": "host",
+      "text": "人類群星閃耀時，拿來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 83,
+      "start": 3791.36,
+      "end": 3791.86,
+      "speaker": "host",
+      "text": "終於到了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 84,
+      "start": 3792.16,
+      "end": 3792.96,
+      "speaker": "host",
+      "text": "給大家講一講拿破崙。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 85,
+      "start": 3793.46,
+      "end": 3794.86,
+      "speaker": "host",
+      "text": "大家對拿破崙真的是愛得深沉啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 86,
+      "start": 3795.26,
+      "end": 3795.86,
+      "speaker": "host",
+      "text": "好事，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 87,
+      "start": 3796.26,
+      "end": 3797.26,
+      "speaker": "host",
+      "text": "好事，每天來讀書學習。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 88,
+      "start": 3801.36,
+      "end": 3803.36,
+      "speaker": "host",
+      "text": "呃，把人類群星閃耀時那本書你們這沒有是吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 89,
+      "start": 3803.46,
+      "end": 3804.46,
+      "speaker": "guest",
+      "text": "要不我們先講這個吧。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 90,
+      "start": 3804.66,
+      "end": 3805.76,
+      "speaker": "host",
+      "text": "不，書在你到我公位上去取。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 91,
+      "start": 3805.96,
+      "end": 3806.66,
+      "speaker": "host",
+      "text": "你知道我公位不？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 92,
+      "start": 3806.76,
+      "end": 3807.06,
+      "speaker": "guest",
+      "text": "知道。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 93,
+      "start": 3807.16,
+      "end": 3809.06,
+      "speaker": "host",
+      "text": "對，你去吧，有一本紅色皮的那個，人類群星閃耀時。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 94,
+      "start": 3809.46,
+      "end": 3810.06,
+      "speaker": "host",
+      "text": "大家說怎麼了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 95,
+      "start": 3810.46,
+      "end": 3811.26,
+      "speaker": "host",
+      "text": "什麼時候去外面？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 96,
+      "start": 3811.56,
+      "end": 3814.06,
+      "speaker": "host",
+      "text": "呃，明天我們就會去平谷戶外的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 97,
+      "start": 3814.36,
+      "end": 3816.06,
+      "speaker": "host",
+      "text": "給平谷的果農們帶桃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 98,
+      "start": 3816.36,
+      "end": 3818.26,
+      "speaker": "host",
+      "text": "大家知道北京平谷的桃是非常出名的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 99,
+      "start": 3818.56,
+      "end": 3818.86,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 100,
+      "start": 3819.36,
+      "end": 3822.06,
+      "speaker": "host",
+      "text": "然後呢，預計下星期可能就會去一次黑龍江。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 101,
+      "start": 3822.36,
+      "end": 3823.76,
+      "speaker": "host",
+      "text": "然後呢，俞老師這兩天不是在雲南嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 102,
+      "start": 3824.06,
+      "end": 3828.26,
+      "speaker": "host",
+      "text": "因為都得考察確定產品之後，得跟當地的一些商務廳啊，基本都是跟政府合作的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 103,
+      "start": 3828.26,
+      "end": 3830.66,
+      "speaker": "host",
+      "text": "所以這樣能夠減少中間環節，盡可能讓農民多掙錢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 104,
+      "start": 3830.96,
+      "end": 3831.86,
+      "speaker": "host",
+      "text": "也是我們的初心嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 105,
+      "start": 3832.26,
+      "end": 3836.06,
+      "speaker": "host",
+      "text": "然後呢，之前跟陝西省政府其實也商量過了，但是因為最近一段時間西安可能不太方便嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 106,
+      "start": 3836.36,
+      "end": 3837.46,
+      "speaker": "host",
+      "text": "等過幾天西安。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 107,
+      "start": 3837.86,
+      "end": 3839.06,
+      "speaker": "host",
+      "text": "哎，這些都已經敲定好了，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 108,
+      "start": 3839.36,
+      "end": 3841.26,
+      "speaker": "host",
+      "text": "也希望有機會能夠與大家相遇，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 109,
+      "start": 3841.66,
+      "end": 3844.06,
+      "speaker": "host",
+      "text": "88大概幾個剛才的這個生蠔？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 110,
+      "start": 3844.46,
+      "end": 3847.06,
+      "speaker": "host",
+      "text": "一個是三到四點五兩，大概多少個一共？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 111,
+      "start": 3847.36,
+      "end": 3848.26,
+      "speaker": "host",
+      "text": "我可以算出來嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 112,
+      "start": 3848.56,
+      "end": 3849.26,
+      "speaker": "host",
+      "text": "88幾斤？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 113,
+      "start": 3849.36,
+      "end": 3849.66,
+      "speaker": "guest",
+      "text": "四斤。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 114,
+      "start": 3849.86,
+      "end": 3850.26,
+      "speaker": "host",
+      "text": "四斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 115,
+      "start": 3850.66,
+      "end": 3852.96,
+      "speaker": "host",
+      "text": "四斤，一斤一個三到，那一個基本就是三個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 116,
+      "start": 3853.26,
+      "end": 3854.06,
+      "speaker": "host",
+      "text": "是這意思嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 117,
+      "start": 3854.16,
+      "end": 3854.46,
+      "speaker": "guest",
+      "text": "對。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 118,
+      "start": 3854.86,
+      "end": 3855.96,
+      "speaker": "host",
+      "text": "一斤就是三到四個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 119,
+      "start": 3856.16,
+      "end": 3856.66,
+      "speaker": "host",
+      "text": "你說四斤。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 120,
+      "start": 3856.86,
+      "end": 3857.96,
+      "speaker": "guest",
+      "text": "一斤是二到三個。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 121,
+      "start": 3858.16,
+      "end": 3859.06,
+      "speaker": "host",
+      "text": "二到三個。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 122,
+      "start": 3861.46,
+      "end": 3862.96,
+      "speaker": "guest",
+      "text": "三個來算的話，四斤。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 123,
+      "start": 3863.16,
+      "end": 3865.26,
+      "speaker": "host",
+      "text": "那就是十個左右，八到十二，十個左右。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 124,
+      "start": 3865.46,
+      "end": 3865.76,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 125,
+      "start": 3866.06,
+      "end": 3866.66,
+      "speaker": "host",
+      "text": "大生蠔。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 126,
+      "start": 3867.26,
+      "end": 3869.16,
+      "speaker": "host",
+      "text": "差不多吧，現在這個季節買大生蠔差不多。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 127,
+      "start": 3869.46,
+      "end": 3870.76,
+      "speaker": "host",
+      "text": "人類群星閃耀是兩本啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 128,
+      "start": 3871.06,
+      "end": 3871.86,
+      "speaker": "host",
+      "text": "都一樣，都一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 129,
+      "start": 3872.16,
+      "end": 3874.46,
+      "speaker": "host",
+      "text": "大家需要自己拍，我之前給大家講過這套書特別好，特別值得一讀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 130,
+      "start": 3874.86,
+      "end": 3877.46,
+      "speaker": "host",
+      "text": "尤其是你自己平常不知道讀什麼書。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 131,
+      "start": 3877.76,
+      "end": 3882.26,
+      "speaker": "host",
+      "text": "很多朋友私信我說老師啊，董老師，我特別想要培養一種一種知識的體系。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 132,
+      "start": 3882.56,
+      "end": 3886.66,
+      "speaker": "host",
+      "text": "就是很多人說感覺我在講歷史的時候，可以通過很多的瞬間把歷史串起來一條線。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 133,
+      "start": 3886.96,
+      "end": 3889.36,
+      "speaker": "host",
+      "text": "當然這個其實是沒有咱，這個真的是沒有咱，我做不到。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 134,
+      "start": 3889.66,
+      "end": 3893.96,
+      "speaker": "host",
+      "text": "我能那樣講的一個主要原因其實是因為以前高中大家上過課裡頭都是那樣講的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 135,
+      "start": 3894.26,
+      "end": 3895.66,
+      "speaker": "host",
+      "text": "人類歷史何其漫長啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 136,
+      "start": 3896.06,
+      "end": 3896.46,
+      "speaker": "host",
+      "text": "對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 137,
+      "start": 3896.86,
+      "end": 3900.46,
+      "speaker": "host",
+      "text": "我們短暫的一生七八十年，怎麼可能把所有的事情都記在心裡，是不可能做到的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 138,
+      "start": 3900.76,
+      "end": 3901.66,
+      "speaker": "host",
+      "text": "也因此呢，",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 139,
+      "start": 3904.56,
+      "end": 3906.06,
+      "speaker": "host",
+      "text": "稍等一下，稍等一下，不好意思。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 140,
+      "start": 3906.66,
+      "end": 3908.06,
+      "speaker": "host",
+      "text": "我們不可能把所有事情都記住。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 141,
+      "start": 3908.36,
+      "end": 3911.26,
+      "speaker": "host",
+      "text": "因此只能找到一些極其重要的瞬間放在那裡頭。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 142,
+      "start": 3911.66,
+      "end": 3912.06,
+      "speaker": "host",
+      "text": "那",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 143,
+      "start": 3912.86,
+      "end": 3913.36,
+      "speaker": "host",
+      "text": "導演。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 144,
+      "start": 3913.76,
+      "end": 3914.06,
+      "speaker": "guest",
+      "text": "嗯。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 145,
+      "start": 3914.46,
+      "end": 3915.36,
+      "speaker": "host",
+      "text": "給換本就行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 146,
+      "start": 3916.06,
+      "end": 3920.96,
+      "speaker": "host",
+      "text": "所以我們只能通過一些記住非常重要的瞬間，通過那些瞬間把人類歷史給貫穿起來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 147,
+      "start": 3926.06,
+      "end": 3928.56,
+      "speaker": "host",
+      "text": "這些瞬間就是這本書記錄的一些特點。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 148,
+      "start": 3928.86,
+      "end": 3931.06,
+      "speaker": "host",
+      "text": "它有兩本，一個原稿其實是14個瞬間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 149,
+      "start": 3931.36,
+      "end": 3932.76,
+      "speaker": "host",
+      "text": "這本書一共只選了10個瞬間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 150,
+      "start": 3933.06,
+      "end": 3938.66,
+      "speaker": "host",
+      "text": "這種寫的手法就跟前兩天這個越南老師來給大家所寫那個中國的那個歷史一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 151,
+      "start": 3938.96,
+      "end": 3939.96,
+      "speaker": "host",
+      "text": "考古史一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 152,
+      "start": 3940.26,
+      "end": 3945.26,
+      "speaker": "host",
+      "text": "你不可能把幾十年或者幾十萬年，甚至百萬年的事情全部記錄下來，你只能選一些重要瞬間去記錄。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 153,
+      "start": 3945.56,
+      "end": 3947.06,
+      "speaker": "host",
+      "text": "那這些重要瞬間裡都有什麼呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 154,
+      "start": 3947.36,
+      "end": 3951.96,
+      "speaker": "host",
+      "text": "這裡頭講到了幾個，第一個，那天給大家講到了土耳其人攻破了軍事坦丁堡的陷落，對吧，記得吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 155,
+      "start": 3952.46,
+      "end": 3954.96,
+      "speaker": "host",
+      "text": "軍事坦丁堡的陷落，啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 156,
+      "start": 3955.36,
+      "end": 3960.46,
+      "speaker": "host",
+      "text": "軍事坦丁堡的陷落意味著歐洲的中世紀結束了，這是一個極具具有歷史意義的一個時刻。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 157,
+      "start": 3960.76,
+      "end": 3961.56,
+      "speaker": "host",
+      "text": "中世紀結束了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 158,
+      "start": 3961.96,
+      "end": 3963.46,
+      "speaker": "host",
+      "text": "中世紀結束之後的60年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 159,
+      "start": 3963.76,
+      "end": 3966.66,
+      "speaker": "host",
+      "text": "這本書講的第二個瞬間就是人類發現了太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 160,
+      "start": 3966.96,
+      "end": 3968.46,
+      "speaker": "host",
+      "text": "開始了這個環球航行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 161,
+      "start": 3971.66,
+      "end": 3972.76,
+      "speaker": "host",
+      "text": "大家自己找一找啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 162,
+      "start": 3973.06,
+      "end": 3976.36,
+      "speaker": "host",
+      "text": "第二個緊接著就是巴爾沃亞，不朽的逃亡者，巴爾沃亞。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 163,
+      "start": 3976.76,
+      "end": 3978.46,
+      "speaker": "host",
+      "text": "第二個就是巴爾沃亞。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 164,
+      "start": 3983.46,
+      "end": 3985.46,
+      "speaker": "host",
+      "text": "前後兩個事情之間隔了這個60年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 165,
+      "start": 3985.76,
+      "end": 3987.86,
+      "speaker": "host",
+      "text": "如果大家要記住來，請你記住這個在歷史上。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 166,
+      "start": 3988.16,
+      "end": 3990.76,
+      "speaker": "host",
+      "text": "非常重要的數字，如果你家裡有孩子的話，這個數字尤其要記住。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 167,
+      "start": 3991.06,
+      "end": 3993.46,
+      "speaker": "host",
+      "text": "因為很多時候在學歷史必須記住這個數字。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 168,
+      "start": 3993.76,
+      "end": 4000.66,
+      "speaker": "host",
+      "text": "就是1453年的5月29號，這一天軍事坦丁堡陷落。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 169,
+      "start": 4000.96,
+      "end": 4005.06,
+      "speaker": "host",
+      "text": "然後就是我們所說的東東羅馬帝國，或者說拜占庭帝國被攻破了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 170,
+      "start": 4005.36,
+      "end": 4007.86,
+      "speaker": "host",
+      "text": "60年後這個叫做，那加個60，1513年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 171,
+      "start": 4008.16,
+      "end": 4013.46,
+      "speaker": "host",
+      "text": "在1513年，然後9月25日，巴爾沃亞發現了我們現在所說的太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 172,
+      "start": 4013.76,
+      "end": 4016.06,
+      "speaker": "host",
+      "text": "但其實當時他把那個叫做大南洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 173,
+      "start": 4016.36,
+      "end": 4017.56,
+      "speaker": "host",
+      "text": "他把那叫大南洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 174,
+      "start": 4017.86,
+      "end": 4020.66,
+      "speaker": "host",
+      "text": "因為在那個之前哥倫布已經發現了這個美洲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 175,
+      "start": 4020.96,
+      "end": 4022.46,
+      "speaker": "host",
+      "text": "但其實哥倫布當時把那個找錯了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 176,
+      "start": 4022.76,
+      "end": 4024.06,
+      "speaker": "host",
+      "text": "哥倫布以為他找到世界的東方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 177,
+      "start": 4024.36,
+      "end": 4026.86,
+      "speaker": "host",
+      "text": "大家都渴望去世界的東方嘛，對我曾經給大家講過為什麼要去世界的東方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 178,
+      "start": 4027.16,
+      "end": 4028.66,
+      "speaker": "host",
+      "text": "這塊有世界地圖嗎？這只有中國地圖。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 179,
+      "start": 4028.96,
+      "end": 4030.16,
+      "speaker": "host",
+      "text": "導演你幫我找一找世界地圖。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 180,
+      "start": 4030.26,
+      "end": 4030.56,
+      "speaker": "guest",
+      "text": "好。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 181,
+      "start": 4030.86,
+      "end": 4033.46,
+      "speaker": "host",
+      "text": "對，幫我找找世界地圖，把大家給這塊把知識梳理清楚啊，再往後說。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 182,
+      "start": 4037.66,
+      "end": 4040.06,
+      "speaker": "host",
+      "text": "其實這些瞬間裡頭都是可以聯繫起來的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 183,
+      "start": 4040.36,
+      "end": 4043.66,
+      "speaker": "host",
+      "text": "而且都可以聯繫到非常有意思的，非常有趣的知識。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 184,
+      "start": 4044.06,
+      "end": 4046.06,
+      "speaker": "host",
+      "text": "世界地圖，對對對，就這個，拿來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 185,
+      "start": 4046.36,
+      "end": 4047.66,
+      "speaker": "host",
+      "text": "對對對，謝謝，謝謝，來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 186,
+      "start": 4050.96,
+      "end": 4053.86,
+      "speaker": "host",
+      "text": "我給大家展示一下，來你們可以邊聽邊做筆記啊，來看這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 187,
+      "start": 4054.16,
+      "end": 4054.76,
+      "speaker": "host",
+      "text": "看這啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 188,
+      "start": 4055.76,
+      "end": 4056.06,
+      "speaker": "host",
+      "text": "呃。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 189,
+      "start": 4057.06,
+      "end": 4057.96,
+      "speaker": "host",
+      "text": "大家說怎麼了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 190,
+      "start": 4058.26,
+      "end": 4059.56,
+      "speaker": "host",
+      "text": "考古類的書是幾號鏈接？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 191,
+      "start": 4059.86,
+      "end": 4063.36,
+      "speaker": "host",
+      "text": "現在我給大家這本書叫做人類群星閃耀時，這本書就值得一讀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 192,
+      "start": 4063.66,
+      "end": 4063.96,
+      "speaker": "host",
+      "text": "啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 193,
+      "start": 4064.36,
+      "end": 4065.46,
+      "speaker": "host",
+      "text": "這本書就值得一讀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 194,
+      "start": 4065.76,
+      "end": 4066.76,
+      "speaker": "host",
+      "text": "還有朋友說怎麼了？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 195,
+      "start": 4067.06,
+      "end": 4067.76,
+      "speaker": "host",
+      "text": "考明明。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 196,
+      "start": 4068.16,
+      "end": 4069.16,
+      "speaker": "host",
+      "text": "明明一會幾點來啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 197,
+      "start": 4069.26,
+      "end": 4069.86,
+      "speaker": "guest",
+      "text": "馬上就來了。",
+      "text_normalized": "",
+      "confidence": 0.95,
+      "chunk_id": 3
+    },
+    {
+      "idx": 198,
+      "start": 4070.06,
+      "end": 4071.46,
+      "speaker": "host",
+      "text": "馬上就來了，不急，大家等一會啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 199,
+      "start": 4071.86,
+      "end": 4073.76,
+      "speaker": "host",
+      "text": "我跟明明呢，我們倆真的是願中兄弟。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 200,
+      "start": 4074.96,
+      "end": 4078.46,
+      "speaker": "host",
+      "text": "呃，之前給大家講過，明明的舅媽是我大姨父的妹妹。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 201,
+      "start": 4078.86,
+      "end": 4079.66,
+      "speaker": "host",
+      "text": "所以我們倆。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 202,
+      "start": 4080.86,
+      "end": 4082.46,
+      "speaker": "host",
+      "text": "我覺得是有一種天然的親近感的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 203,
+      "start": 4082.76,
+      "end": 4085.06,
+      "speaker": "host",
+      "text": "而且在去年特別難那會，我們倆當時合租嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 204,
+      "start": 4085.36,
+      "end": 4087.36,
+      "speaker": "host",
+      "text": "當然是合租啊，不是同居啊，中間隔著一堵牆呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 205,
+      "start": 4087.66,
+      "end": 4088.76,
+      "speaker": "host",
+      "text": "一起堅持到今天。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 206,
+      "start": 4089.06,
+      "end": 4092.86,
+      "speaker": "host",
+      "text": "也因為都來自同樣的地方，明明小時候在商洛長大，那我外婆家就是商洛的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 207,
+      "start": 4093.16,
+      "end": 4096.76,
+      "speaker": "host",
+      "text": "所以很多個平行時空裡頭可能我們倆是見過面的，但確實可能小時候沒有打過招呼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 208,
+      "start": 4097.06,
+      "end": 4100.86,
+      "speaker": "host",
+      "text": "後來在西安的時候他是初中的物理主管，我是高中的英語的教研主管。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 209,
+      "start": 4101.16,
+      "end": 4102.86,
+      "speaker": "host",
+      "text": "然後來到北京之後就一起共事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 210,
+      "start": 4103.16,
+      "end": 4106.86,
+      "speaker": "host",
+      "text": "其實共事了很多年了，所以我們倆之間有一種互相理解。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 211,
+      "start": 4107.16,
+      "end": 4109.76,
+      "speaker": "host",
+      "text": "因為又有相同的生活經歷，所以又極其的共情。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 212,
+      "start": 4110.0599999999995,
+      "end": 4111.46,
+      "speaker": "host",
+      "text": "然後呢，性格又很相似。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 213,
+      "start": 4111.76,
+      "end": 4112.96,
+      "speaker": "host",
+      "text": "對吧，都屬於一種悶騷型的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 214,
+      "start": 4113.36,
+      "end": 4115.26,
+      "speaker": "host",
+      "text": "所以又非常的懂懂對方吧。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 215,
+      "start": 4115.5599999999995,
+      "end": 4118.46,
+      "speaker": "host",
+      "text": "所以當然我們倆可能有時候在一塊這個直播的時候顯得比較放肆。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 216,
+      "start": 4118.76,
+      "end": 4119.46,
+      "speaker": "host",
+      "text": "胡說八道。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 217,
+      "start": 4119.76,
+      "end": 4120.96,
+      "speaker": "host",
+      "text": "他黑我，我黑他，互黑。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 218,
+      "start": 4121.26,
+      "end": 4123.66,
+      "speaker": "host",
+      "text": "其實這就像你跟你關係特別好的朋友之間的相處一樣。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 219,
+      "start": 4123.96,
+      "end": 4124.5599999999995,
+      "speaker": "host",
+      "text": "對不對？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 220,
+      "start": 4125.36,
+      "end": 4128.0599999999995,
+      "speaker": "host",
+      "text": "當然有時候我比如說我們倆開玩笑，其實彼此心裡沒啥，但是觀眾們會心疼。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 221,
+      "start": 4128.36,
+      "end": 4129.16,
+      "speaker": "host",
+      "text": "觀眾們會說。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 222,
+      "start": 4129.46,
+      "end": 4132.46,
+      "speaker": "host",
+      "text": "董宇輝，你今天把我們家明明黑的太慘了，我說對不起，對不起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 223,
+      "start": 4132.76,
+      "end": 4136.16,
+      "speaker": "host",
+      "text": "然後也有朋友給明明說，明明，你今天看董宇輝的時候眼神不對勁。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 224,
+      "start": 4136.46,
+      "end": 4137.76,
+      "speaker": "host",
+      "text": "明明說對不起，對不起。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 225,
+      "start": 4138.0599999999995,
+      "end": 4139.36,
+      "speaker": "host",
+      "text": "其實我們倆之間沒啥，沒啥。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 226,
+      "start": 4139.66,
+      "end": 4140.86,
+      "speaker": "host",
+      "text": "大家不用擔心啊，沒事。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 227,
+      "start": 4141.16,
+      "end": 4142.96,
+      "speaker": "host",
+      "text": "男生哪有那麼多事情，沒事，沒事，來。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 228,
+      "start": 4143.66,
+      "end": 4147.46,
+      "speaker": "host",
+      "text": "之前世界從西，這個大家知道西漢，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 229,
+      "start": 4147.76,
+      "end": 4148.26,
+      "speaker": "host",
+      "text": "西漢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 230,
+      "start": 4148.5599999999995,
+      "end": 4150.66,
+      "speaker": "host",
+      "text": "就是漢武帝大敗匈奴之後，世界的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 231,
+      "start": 4151.16,
+      "end": 4153.36,
+      "speaker": "host",
+      "text": "又在這裡，西安，看到這個點了沒？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 232,
+      "start": 4153.66,
+      "end": 4154.76,
+      "speaker": "host",
+      "text": "西安在這裡啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 233,
+      "start": 4155.0599999999995,
+      "end": 4155.66,
+      "speaker": "host",
+      "text": "在這裡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 234,
+      "start": 4156.0599999999995,
+      "end": 4161.96,
+      "speaker": "host",
+      "text": "從這裡一路貨物沿著過了新疆的山脈之間的古地，一路走走走走，走到哪裡呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 235,
+      "start": 4162.26,
+      "end": 4163.0599999999995,
+      "speaker": "host",
+      "text": "走到了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 236,
+      "start": 4163.76,
+      "end": 4164.46,
+      "speaker": "host",
+      "text": "找一找。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 237,
+      "start": 4164.86,
+      "end": 4165.66,
+      "speaker": "host",
+      "text": "哎，找不到了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 238,
+      "start": 4166.0599999999995,
+      "end": 4166.66,
+      "speaker": "host",
+      "text": "地方在哪？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 239,
+      "start": 4167.0599999999995,
+      "end": 4168.46,
+      "speaker": "host",
+      "text": "羅馬，羅馬在這，大家看這啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 240,
+      "start": 4168.76,
+      "end": 4169.86,
+      "speaker": "host",
+      "text": "這個點，看到這個點了沒？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 241,
+      "start": 4170.26,
+      "end": 4171.76,
+      "speaker": "host",
+      "text": "羅馬特別小，發現沒，這個黑點。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 242,
+      "start": 4172.0599999999995,
+      "end": 4172.96,
+      "speaker": "host",
+      "text": "我給你頓個黑點啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 243,
+      "start": 4173.36,
+      "end": 4178.46,
+      "speaker": "host",
+      "text": "人們就把香料、絲綢、茶葉跨過了漫長的大路線，一直送到了羅馬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 244,
+      "start": 4178.76,
+      "end": 4181.0599999999995,
+      "speaker": "host",
+      "text": "東西之間的交流是正常的，是順暢的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 245,
+      "start": 4181.36,
+      "end": 4182.66,
+      "speaker": "host",
+      "text": "所以歷史也是穩定的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 246,
+      "start": 4182.96,
+      "end": 4186.26,
+      "speaker": "host",
+      "text": "但是後來，你看他這個過程是不是要經歷土耳其這裡啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 247,
+      "start": 4186.5599999999995,
+      "end": 4188.66,
+      "speaker": "host",
+      "text": "要經歷我們現在所說的這個中亞。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 248,
+      "start": 4188.96,
+      "end": 4193.96,
+      "speaker": "host",
+      "text": "所以後來隨著土耳其人的崛起，土耳其人佔領了這裡，我們所說的這個，你看現在這，這，看這，導演這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 249,
+      "start": 4194.26,
+      "end": 4195.0599999999995,
+      "speaker": "host",
+      "text": "伊斯坦布爾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 250,
+      "start": 4195.36,
+      "end": 4197.46,
+      "speaker": "host",
+      "text": "進景啊，足夠近的進景，非常近的進景。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 251,
+      "start": 4197.76,
+      "end": 4198.76,
+      "speaker": "host",
+      "text": "近到極致了沒現在？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 252,
+      "start": 4199.0599999999995,
+      "end": 4200.46,
+      "speaker": "host",
+      "text": "已經近的極致了，這個鏡頭不行啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 253,
+      "start": 4200.76,
+      "end": 4203.86,
+      "speaker": "host",
+      "text": "這伊斯坦布爾，伊斯坦布爾就是我們所說的軍事坦丁堡陷落了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 254,
+      "start": 4204.16,
+      "end": 4206.0599999999995,
+      "speaker": "host",
+      "text": "就是剛才所說的1453年陷落了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 255,
+      "start": 4206.36,
+      "end": 4209.66,
+      "speaker": "host",
+      "text": "所以你看從長安來的貨物一路都走到這了，但是過不去，到不了羅馬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 256,
+      "start": 4209.96,
+      "end": 4214.96,
+      "speaker": "host",
+      "text": "土耳其人崛起之後，陸地沒有辦法再走通了，所以歐洲人又很渴望瓷器、絲綢和香料、茶葉。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 257,
+      "start": 4215.26,
+      "end": 4221.76,
+      "speaker": "host",
+      "text": "所以他們只能，而且他們聽完馬可波羅跟你說牆上都是寶石，頭頂都是金子，房頂都是金子，他們太期待了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 258,
+      "start": 4222.0599999999995,
+      "end": 4227.5599999999995,
+      "speaker": "host",
+      "text": "所以他們就想著，比如說繞過這個非洲，繞過好望角，從這過印度洋，然後到中國呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 259,
+      "start": 4227.86,
+      "end": 4230.26,
+      "speaker": "host",
+      "text": "第一個認知走到這塊，剛過來就回去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 260,
+      "start": 4230.5599999999995,
+      "end": 4231.66,
+      "speaker": "host",
+      "text": "第一個認知走到這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 261,
+      "start": 4231.96,
+      "end": 4233.36,
+      "speaker": "host",
+      "text": "都沒到印度洋就回去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 262,
+      "start": 4233.66,
+      "end": 4237.76,
+      "speaker": "host",
+      "text": "第二個人呢，直接一出港就被風刮刮跑了，從那繞了一圈繞到哪去了，繞到這來去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 263,
+      "start": 4238.0599999999995,
+      "end": 4239.0599999999995,
+      "speaker": "host",
+      "text": "第二個人是誰呀？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 264,
+      "start": 4239.36,
+      "end": 4240.26,
+      "speaker": "host",
+      "text": "第二個人是誰？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 265,
+      "start": 4240.5599999999995,
+      "end": 4241.46,
+      "speaker": "host",
+      "text": "第二個人是誰？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 266,
+      "start": 4241.76,
+      "end": 4242.46,
+      "speaker": "host",
+      "text": "哥倫布。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 267,
+      "start": 4242.86,
+      "end": 4244.76,
+      "speaker": "host",
+      "text": "所以哥倫布其實他直接跑錯了，他跑到這來了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 268,
+      "start": 4245.0599999999995,
+      "end": 4248.26,
+      "speaker": "host",
+      "text": "但他以為自己走對，他以為他來到，他以為來到印度或者中國了呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 269,
+      "start": 4248.5599999999995,
+      "end": 4253.0599999999995,
+      "speaker": "host",
+      "text": "因為當時大家都喜歡印度的，也有茶葉嘛，對吧，中國也有茶葉，絲器香料這些，印度也有大量的香料嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 270,
+      "start": 4253.36,
+      "end": 4254.36,
+      "speaker": "host",
+      "text": "他其實跑錯了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 271,
+      "start": 4254.66,
+      "end": 4255.5599999999995,
+      "speaker": "host",
+      "text": "但他不知道呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 272,
+      "start": 4255.86,
+      "end": 4260.66,
+      "speaker": "host",
+      "text": "所以他看著這邊土著人頭上射箭那些人，頭上插著羽毛，他管他叫Indians。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 273,
+      "start": 4260.96,
+      "end": 4263.26,
+      "speaker": "host",
+      "text": "這就能解釋為什麼現在美洲的人民叫印第安人呢？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 274,
+      "start": 4263.5599999999995,
+      "end": 4264.96,
+      "speaker": "host",
+      "text": "Indians其實是不是印度人的意思啊？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 275,
+      "start": 4265.26,
+      "end": 4267.46,
+      "speaker": "host",
+      "text": "他跑錯了，他以為他到印度了，所以把這塊叫Indians。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 276,
+      "start": 4267.76,
+      "end": 4270.16,
+      "speaker": "host",
+      "text": "但是呢，他盛名在外，你又不能站起來說他錯了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 277,
+      "start": 4270.46,
+      "end": 4271.0599999999995,
+      "speaker": "host",
+      "text": "對不對？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 278,
+      "start": 4271.46,
+      "end": 4274.0599999999995,
+      "speaker": "host",
+      "text": "就是你要挑戰前輩的權威的時候，有時候冒著生命危險的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 279,
+      "start": 4274.36,
+      "end": 4276.5599999999995,
+      "speaker": "host",
+      "text": "所以巴爾沃亞當年到這裡的時候。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 280,
+      "start": 4276.96,
+      "end": 4278.26,
+      "speaker": "host",
+      "text": "他把這片路叫新大陸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 281,
+      "start": 4278.5599999999995,
+      "end": 4282.0599999999995,
+      "speaker": "host",
+      "text": "但他自己心裡知道這不是我們要找的中國與印度，不是世界的東方。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 282,
+      "start": 4282.36,
+      "end": 4283.16,
+      "speaker": "host",
+      "text": "他沒有辦法。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 283,
+      "start": 4283.46,
+      "end": 4284.66,
+      "speaker": "host",
+      "text": "他就說這叫新大陸。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 284,
+      "start": 4285.0599999999995,
+      "end": 4288.0599999999995,
+      "speaker": "host",
+      "text": "巴爾沃亞其實是一個，現在用現在的話來說，其實是一個罪犯嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 285,
+      "start": 4288.36,
+      "end": 4289.46,
+      "speaker": "host",
+      "text": "他其實是戴罪立功的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 286,
+      "start": 4289.76,
+      "end": 4294.26,
+      "speaker": "host",
+      "text": "他想要迅速的掙錢，他想要佔有這些殖民地，因為當時呢，只要你佔有了這裡，這個錢就屬於你了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 287,
+      "start": 4294.5599999999995,
+      "end": 4295.86,
+      "speaker": "host",
+      "text": "他想要佔領這片。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 288,
+      "start": 4296.16,
+      "end": 4300.26,
+      "speaker": "host",
+      "text": "然後他從這之後過了現在的這個中美這裡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 289,
+      "start": 4300.5599999999995,
+      "end": 4302.5599999999995,
+      "speaker": "host",
+      "text": "然後第一次他看見了這片海洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 290,
+      "start": 4302.86,
+      "end": 4307.0599999999995,
+      "speaker": "host",
+      "text": "所以這片海洋是歐洲人發現的最晚的，就是世界上最大這片海洋叫做太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 291,
+      "start": 4307.36,
+      "end": 4309.16,
+      "speaker": "host",
+      "text": "他是發，他是歐洲人發現最晚的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 292,
+      "start": 4309.46,
+      "end": 4313.46,
+      "speaker": "host",
+      "text": "他在發現之後的，他當時管這片海叫做大南洋，他其實並沒有把這個定義為太平洋，他叫大南洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 293,
+      "start": 4313.76,
+      "end": 4314.86,
+      "speaker": "host",
+      "text": "直到好多年後。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 294,
+      "start": 4315.96,
+      "end": 4317.66,
+      "speaker": "host",
+      "text": "好幾年後也沒有好多年後。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 295,
+      "start": 4317.96,
+      "end": 4320.26,
+      "speaker": "host",
+      "text": "麥哲倫完成了第一次人類的環球航行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 296,
+      "start": 4320.5599999999995,
+      "end": 4326.36,
+      "speaker": "host",
+      "text": "他從歐洲出發，過去繞著大西洋，繞到了這個美洲，從美洲過來之後走到了太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 297,
+      "start": 4326.66,
+      "end": 4331.36,
+      "speaker": "host",
+      "text": "從太平洋這塊過來，然後又走印度洋，走印度洋之後又從大西洋回到了歐洲。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 298,
+      "start": 4331.66,
+      "end": 4334.76,
+      "speaker": "host",
+      "text": "那是巴爾沃亞發現了太平洋之後的幾年。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 299,
+      "start": 4335.0599999999995,
+      "end": 4337.46,
+      "speaker": "host",
+      "text": "人類第一次才完成了環球航行。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 300,
+      "start": 4337.76,
+      "end": 4340.86,
+      "speaker": "host",
+      "text": "所以其實太平洋我們一直就知道，但歐洲人發現的是特別晚的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 301,
+      "start": 4341.16,
+      "end": 4345.26,
+      "speaker": "host",
+      "text": "但這本書裡頭他給你說的是人類發現的最後一塊大洋是太平洋。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 302,
+      "start": 4345.5599999999995,
+      "end": 4348.0599999999995,
+      "speaker": "host",
+      "text": "那其實他所說的人類就是以他們的視角去看的，對吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 303,
+      "start": 4348.36,
+      "end": 4349.96,
+      "speaker": "host",
+      "text": "我們當然知道太平洋的存在啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 304,
+      "start": 4350.96,
+      "end": 4351.96,
+      "speaker": "host",
+      "text": "所以這是剛才這塊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 305,
+      "start": 4352.26,
+      "end": 4354.5599999999995,
+      "speaker": "host",
+      "text": "那我們接下來再繼續說，來請大家在評論區回答我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 306,
+      "start": 4354.86,
+      "end": 4357.46,
+      "speaker": "host",
+      "text": "哪一年軍事坦丁堡陷落，回答我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 307,
+      "start": 4357.76,
+      "end": 4359.5599999999995,
+      "speaker": "host",
+      "text": "回答我哪一年軍事坦丁堡陷落，快。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 308,
+      "start": 4359.86,
+      "end": 4361.5599999999995,
+      "speaker": "host",
+      "text": "哪一年軍事坦丁堡陷落？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 309,
+      "start": 4362.0599999999995,
+      "end": 4363.66,
+      "speaker": "host",
+      "text": "我剛才說過，你看這朋友又忘了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 310,
+      "start": 4363.96,
+      "end": 4366.0599999999995,
+      "speaker": "host",
+      "text": "教了半天發現只把自己教明白。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 311,
+      "start": 4366.36,
+      "end": 4369.0599999999995,
+      "speaker": "host",
+      "text": "董宇輝，我要不回答問題，你真以為你自己教的很好呢。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 312,
+      "start": 4369.36,
+      "end": 4371.0599999999995,
+      "speaker": "host",
+      "text": "來，1453年，記住這個日子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 313,
+      "start": 4371.36,
+      "end": 4374.96,
+      "speaker": "host",
+      "text": "1453年軍事坦丁堡陷落，軍事坦丁堡在哪？這這，伊斯坦布爾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 314,
+      "start": 4375.26,
+      "end": 4376.0599999999995,
+      "speaker": "host",
+      "text": "羅馬在這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 315,
+      "start": 4376.36,
+      "end": 4378.0599999999995,
+      "speaker": "host",
+      "text": "羅馬在這，軍事坦丁堡在這，長安在這。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 316,
+      "start": 4378.36,
+      "end": 4384.36,
+      "speaker": "host",
+      "text": "那些駱駝商隊帶著絲綢、茶葉、瓷器一路走走走走，走到這的時候被攔住了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 317,
+      "start": 4384.66,
+      "end": 4386.76,
+      "speaker": "host",
+      "text": "走到這攔住，因為土耳其人攔住的，他們走不過去了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 318,
+      "start": 4387.0599999999995,
+      "end": 4388.5599999999995,
+      "speaker": "host",
+      "text": "他們當時路線是這樣子的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 319,
+      "start": 4389.0599999999995,
+      "end": 4389.86,
+      "speaker": "host",
+      "text": "才能到羅馬。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 320,
+      "start": 4390.16,
+      "end": 4391.86,
+      "speaker": "host",
+      "text": "走不過氣，絲綢過不去，茶葉過不去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 321,
+      "start": 4392.16,
+      "end": 4393.46,
+      "speaker": "host",
+      "text": "歐洲人想要的東西過不去。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 322,
+      "start": 4393.76,
+      "end": 4395.5599999999995,
+      "speaker": "host",
+      "text": "你知道絲綢和茶葉在歐洲是多麼受歡迎嗎？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 323,
+      "start": 4395.86,
+      "end": 4397.16,
+      "speaker": "host",
+      "text": "越禁止的東西越受歡迎。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 324,
+      "start": 4397.46,
+      "end": 4403.0599999999995,
+      "speaker": "host",
+      "text": "你知道當時其實在羅馬大家是禁止絲綢的，為什麼？因為他們原來穿的東西，比如說羊毛或者是麻布也其實比較比較大比較硬的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 325,
+      "start": 4403.36,
+      "end": 4404.76,
+      "speaker": "host",
+      "text": "顯示不出你的身材。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 326,
+      "start": 4405.0599999999995,
+      "end": 4408.16,
+      "speaker": "host",
+      "text": "但是絲綢是不是很柔軟，很輕薄，甚至你的身材都能看見。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 327,
+      "start": 4408.46,
+      "end": 4412.76,
+      "speaker": "host",
+      "text": "因為在宗教裡頭大家覺得啊，那看到你身材不好，甚至覺得就要禁止，對不對？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 328,
+      "start": 4413.0599999999995,
+      "end": 4415.66,
+      "speaker": "host",
+      "text": "他甚至是一個讓人引起不好幻想的東西。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 329,
+      "start": 4415.96,
+      "end": 4418.76,
+      "speaker": "host",
+      "text": "但是越進越受歡迎，因為絲綢很輕盈，穿上很美，很舒服。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 330,
+      "start": 4419.0599999999995,
+      "end": 4419.96,
+      "speaker": "host",
+      "text": "絲綢都是貴族才穿的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 331,
+      "start": 4420.26,
+      "end": 4424.16,
+      "speaker": "host",
+      "text": "當時能夠用瓷器去喝茶葉的，都是真的都是貴族，都有錢人。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 332,
+      "start": 4424.46,
+      "end": 4428.96,
+      "speaker": "host",
+      "text": "所以大家對這個的渴望忍不住，而且這個馬可波羅從中國回來之後告訴你。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 333,
+      "start": 4429.26,
+      "end": 4432.26,
+      "speaker": "host",
+      "text": "北，就是現在的北京，上都當時元的首都嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 334,
+      "start": 4432.5599999999995,
+      "end": 4435.0599999999995,
+      "speaker": "host",
+      "text": "然後呢，牆上都是金子，房頂都是寶石，大家忍不住呀。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 335,
+      "start": 4435.36,
+      "end": 4437.96,
+      "speaker": "host",
+      "text": "找找找，終於經過了60年的探索。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 336,
+      "start": 4438.26,
+      "end": 4439.66,
+      "speaker": "host",
+      "text": "60年，剛才回答151453。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 337,
+      "start": 4439.96,
+      "end": 4441.26,
+      "speaker": "host",
+      "text": "那哪一年發現了太平洋？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 338,
+      "start": 4441.5599999999995,
+      "end": 4442.76,
+      "speaker": "host",
+      "text": "加上60是多少？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 339,
+      "start": 4443.0599999999995,
+      "end": 4444.5599999999995,
+      "speaker": "host",
+      "text": "加上60是多少？請大家回答我。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 340,
+      "start": 4444.86,
+      "end": 4447.66,
+      "speaker": "host",
+      "text": "有朋友說董宇輝你是沒有眼睛嗎？我一直在問，有。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 341,
+      "start": 4447.96,
+      "end": 4450.46,
+      "speaker": "host",
+      "text": "你把你屏幕截個圖搓大，你看到一個縫隙啊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 342,
+      "start": 4450.76,
+      "end": 4452.76,
+      "speaker": "host",
+      "text": "1513年，1513年，非常棒，非常棒。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 343,
+      "start": 4453.0599999999995,
+      "end": 4456.0599999999995,
+      "speaker": "host",
+      "text": "大家今天記住兩個數字，第一個叫1453是軍事坦丁堡陷落的時間。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 344,
+      "start": 4456.36,
+      "end": 4460.5599999999995,
+      "speaker": "host",
+      "text": "軍事坦丁堡陷落之後，土耳其把人把這個名字改成了伊斯坦布爾。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 345,
+      "start": 4460.86,
+      "end": 4469.0599999999995,
+      "speaker": "host",
+      "text": "當然在周杰倫的歌裡頭大家聽過，他們寫的方面叫這個伊斯坦堡，我來到伊斯坦堡，就像是童話故事有教堂有城堡。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 346,
+      "start": 4469.36,
+      "end": 4470.0599999999995,
+      "speaker": "host",
+      "text": "聽過吧？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 347,
+      "start": 4470.36,
+      "end": 4471.66,
+      "speaker": "host",
+      "text": "不同地方翻譯不一樣嘛。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 348,
+      "start": 4472.86,
+      "end": 4473.96,
+      "speaker": "host",
+      "text": "然後呢，大家看這塊。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 349,
+      "start": 4474.26,
+      "end": 4478.36,
+      "speaker": "host",
+      "text": "所以經過了60年，因為陸地不再貫通的時候，人類就想要去發現海洋的文明。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 350,
+      "start": 4478.66,
+      "end": 4482.0599999999995,
+      "speaker": "host",
+      "text": "所以東西的交流和人們之間的互通其實是非常重要的。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 351,
+      "start": 4482.36,
+      "end": 4484.5599999999995,
+      "speaker": "host",
+      "text": "只要中間有停頓，人類就會找到新的方式。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 352,
+      "start": 4484.86,
+      "end": 4492.96,
+      "speaker": "host",
+      "text": "也是因為這個人類開始了航海大探索，然後文藝復興啟蒙運動之後，歐洲是不是開始普通的百姓，他們對於這個科技的掌握和知識的掌握也來多了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 353,
+      "start": 4493.26,
+      "end": 4496.76,
+      "speaker": "host",
+      "text": "民主的掌握也來多了之後，人們就要開始探索一個更好的社會的雛形了。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 354,
+      "start": 4497.0599999999995,
+      "end": 4499.5599999999995,
+      "speaker": "host",
+      "text": "那最歐洲最喜歡鬧革命的哪個國家？",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 355,
+      "start": 4499.86,
+      "end": 4501.5599999999995,
+      "speaker": "host",
+      "text": "動不動就遊行罷工的時代。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 356,
+      "start": 4501.86,
+      "end": 4502.46,
+      "speaker": "host",
+      "text": "法國。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 357,
+      "start": 4502.96,
+      "end": 4503.46,
+      "speaker": "host",
+      "text": "法國。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    },
+    {
+      "idx": 358,
+      "start": 4503.96,
+      "end": 4504.86,
+      "speaker": "host",
+      "text": "有一個段子。",
+      "text_normalized": "",
+      "confidence": 0.98,
+      "chunk_id": 3
+    }
+  ]
+}
